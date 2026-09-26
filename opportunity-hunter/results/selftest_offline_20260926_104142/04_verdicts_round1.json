@@ -1,0 +1,67 @@
+{
+  "C01": {
+    "candidate_id": "C01",
+    "verdict": "NEEDS_MORE_EVIDENCE",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "competition"
+    ],
+    "remaining_uncertainties": [],
+    "missing_info_requests": [
+      {
+        "question": "Do clinics pay for reminder tools?",
+        "route_to": "payment"
+      }
+    ],
+    "survival_notes": "",
+    "summary": "mock"
+  },
+  "C02": {
+    "candidate_id": "C02",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "free incumbents dominate",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://example.org/free",
+            "summary": "free app"
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "competition"
+    ],
+    "remaining_uncertainties": [],
+    "missing_info_requests": [],
+    "survival_notes": "",
+    "summary": "mock"
+  },
+  "C03": {
+    "candidate_id": "C03",
+    "verdict": "SURVIVED",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "competition"
+    ],
+    "remaining_uncertainties": [],
+    "missing_info_requests": [],
+    "survival_notes": "",
+    "summary": "mock"
+  },
+  "C04": {
+    "candidate_id": "C04",
+    "verdict": "SURVIVED",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "competition"
+    ],
+    "remaining_uncertainties": [],
+    "missing_info_requests": [],
+    "survival_notes": "",
+    "summary": "mock"
+  }
+}

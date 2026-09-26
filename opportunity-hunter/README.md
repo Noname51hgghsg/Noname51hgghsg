@@ -103,3 +103,12 @@ python -m hunter run --budget 30 --parallel 4 --agents problem_hunter,b2b_hunter
 
 See section 9 of the final report. Main ones: the built-in WebSearch is not a Saudi-localized Google; social
 platforms (X/TikTok/LinkedIn) are mostly login-gated; LLM judgements are not a substitute for customer interviews.
+
+## Latest run (2026-09-26)
+
+- Final report: [`reports/final_report.md`](reports/final_report.md) (pass 1 before gap research: `reports/final_report_pass1.md`)
+- Run `full_20260926` (discovery → Killer round 1) + `full_20260926_pass2` (resumed: gap research → Killer final → synthesis)
+  via `python -m hunter run --resume-from full_20260926 --run-id full_20260926_pass2`
+- 41 real agent processes, 21 agent types, 0 failures · 401 web searches · 113 page fetches · $25.83 total
+- 101 raw signals → 20 validated candidates (+37 backlog) → Killer: 3 survived, 17 rejected
+- Self-tests: `logs/selftest_offline_*/selftest_result.txt` (15/15), `logs/selftest_live_*/selftest_result.txt` (11/11)

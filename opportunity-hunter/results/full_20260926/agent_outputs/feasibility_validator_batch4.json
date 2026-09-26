@@ -1,0 +1,265 @@
+{
+  "results": [
+    {
+      "candidate_id": "C16",
+      "stack": {
+        "frontend": "Next.js/React (Vercel) — simple form + template preview + PDF export",
+        "backend": "Next.js API routes or lightweight Python FastAPI for AI orchestration",
+        "database": "Supabase Postgres (user accounts, saved CV drafts)",
+        "authentication": "Supabase Auth / Firebase Auth (email or phone OTP)",
+        "ai": "OpenAI GPT-4o-mini or Claude API for bilingual AR/EN CV drafting, ATS-keyword tuning; templated PDF rendering (react-pdf/WeasyPrint)",
+        "apis": "PDF generation library; optional LinkedIn-profile paste-in parsing (no scraping)",
+        "hosting": "Vercel + Supabase (free/low tiers sufficient at MVP scale)",
+        "payments": "Moyasar or Tap for one-time SAR charge (Mada + card + Apple Pay)",
+        "integrations": "None required for MVP; email delivery (Resend/SendGrid) optional"
+      },
+      "mvp_scope": [
+        "AR/EN CV builder with 2-3 Saudi-market templates (GOV vs private-sector style)",
+        "AI tailoring: paste job description → auto-tailored bullet points/keywords",
+        "One-time payment per generated CV (10-30 SAR) via Moyasar/Tap",
+        "PDF download; basic account to re-edit/regenerate"
+      ],
+      "mvp_cost_sar_low": 400,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "~150-300 SAR (AI API usage + hosting + per-transaction payment fees)",
+      "build_time_weeks": "2-3 weeks",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Freelance business/professional license or Commercial Registration + Maroof registration typically needed to legitimately accept online payments as a business",
+          "url": "https://mc.gov.sa/en/eservices/Pages/ServiceDetails.aspx?sID=47",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "PDPL: CVs contain personal data (name, contact, employment history) — must implement consent, basic data-subject rights, and register as data controller if handling PII at scale",
+          "url": "https://www.enzuzo.com/blog/saudi-arabia-personal-data-protection-law-pdpl",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "ZATCA VAT registration required once revenue crosses mandatory threshold",
+          "url": "https://ahysp.com/online-business-in-saudi-arabia-legal-guide-for-entrepreneurs-and-investors/",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "Payment gateway fee schedules vary by provider (Moyasar/Tap/PayTabs) and were not independently fetched this session — setup fees for some KSA gateways reportedly reach up to 1,500 SAR per one search source, which could exceed the low end of budget; needs direct quote comparison before committing."
+      ],
+      "blockers": [],
+      "summary": "Straightforward AI CRUD app; standard stack, no hard integrations. Main open question is market saturation from free AI tools (ChatGPT/LambaCV) and $5 freelancers rather than technical feasibility. Solo-buildable in 2-3 weeks within budget if a low/no-setup-fee payment gateway is chosen."
+    },
+    {
+      "candidate_id": "C17",
+      "stack": {
+        "frontend": "Next.js chat/wizard UI (AR-first, bilingual)",
+        "backend": "Python FastAPI: dispute-type classifier + document-assembly pipeline",
+        "database": "Supabase Postgres — minimal retention of case data by design (privacy-first)",
+        "authentication": "Phone OTP or anonymous session + optional account",
+        "ai": "Claude/GPT for classification + RAG over a curated knowledge base of Ejar/CST/MoC/CPA rules; drafts complaint text/checklist",
+        "apis": "None official — no public API exists for third-party submission to Najiz/Ejar/CST/Balagh Tijari; output must be manually copy-pasted or printed by the user",
+        "hosting": "Vercel + Supabase",
+        "payments": "Moyasar/Tap for small one-time fee per generated complaint packet",
+        "integrations": "None required for MVP; WhatsApp notification channel optional later"
+      },
+      "mvp_scope": [
+        "Cover 1-2 highest-signal dispute types first (e.g., e-commerce return/exchange dispute + gym-membership refund) to limit legal-content scope",
+        "Guided intake → AI classification → document checklist + drafted complaint text for the correct free government channel",
+        "Explicit 'informational only, not legal advice' framing throughout",
+        "One-time fee per generated packet"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 1000,
+      "monthly_run_cost_sar": "~200-400 SAR (AI usage + hosting + content-maintenance overhead)",
+      "build_time_weeks": "6-8 weeks",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Law Practice System (نظام المحاماة): pleading/representation before courts and formal legal consultation is restricted to licensed lawyers registered with the Saudi Bar Association — a tool that drafts legal complaint text risks being characterized as unauthorized legal practice if it strays from pure information/template assembly into advice or representation",
+          "url": "https://sba.gov.sa/wp-content/uploads/2022/05/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9-%D9%88%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%AA%D9%87-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "PDPL applies to dispute data collected (financial/tenancy/personal details) — consent, minimal retention, and data-subject rights needed",
+          "url": "https://www.enzuzo.com/blog/saudi-arabia-personal-data-protection-law-pdpl",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "Freelance license/CR + Maroof for payment acceptance",
+          "url": "https://mc.gov.sa/en/eservices/Pages/ServiceDetails.aspx?sID=47",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "Underlying regulation text (Ejar rent-freeze rules, CST complaint procedure, MoC return-policy rules) changes over time (e.g., 2025 Ejar updates) and must be manually tracked/updated by the founder — no official API feed exists",
+        "No public API to auto-submit to Najiz/Ejar/CST/Balagh Tijari; user must self-submit, limiting the tool to document-prep only"
+      ],
+      "blockers": [
+        "Ambiguous legal boundary between 'informational document assembly' and 'unauthorized legal practice/consultation' under نظام المحاماة — needs careful product framing and ideally a legal opinion before launch",
+        "Underlying government complaint channels (Najiz, CST, Balagh Tijari, CPA) are free, so willingness-to-pay for a document-prep layer is unproven (no payment evidence found, only complaint/confusion evidence)",
+        "Multi-domain scope (rental, gym, e-commerce, delivery) each has its own evolving rules — content-accuracy maintenance burden is nontrivial for a solo founder without legal training"
+      ],
+      "summary": "Technically a moderate AI+RAG build (6-8 weeks), but the real risk is regulatory/legal positioning (practicing-law boundary) plus unproven monetization against free official channels. Recommend narrowing to 1 dispute type and strict 'template, not advice' framing before any wider build."
+    },
+    {
+      "candidate_id": "C18",
+      "stack": {
+        "frontend": "Next.js guided wizard (AR)",
+        "backend": "Lightweight Python/Node rules engine (90+30 day deadline tracker) + AI drafting layer",
+        "database": "Supabase Postgres",
+        "authentication": "Phone OTP",
+        "ai": "Claude/GPT to draft Musaned complaint text from official templates and to explain applicable remedy options",
+        "apis": "None official — no public Musaned API for third-party submission",
+        "hosting": "Vercel + Supabase",
+        "payments": "Moyasar/Tap, small one-time fee",
+        "integrations": "Optional WhatsApp reminders for the 90+30 day clock (nice-to-have, adds BSP cost)"
+      },
+      "mvp_scope": [
+        "Single dispute domain: recruitment-office delays/non-matching worker/deposit refund",
+        "Deadline tracker for the 90+30 day window",
+        "AI-drafted Musaned complaint text + document checklist",
+        "One-time fee per packet"
+      ],
+      "mvp_cost_sar_low": 400,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "~150-300 SAR (AI usage + hosting)",
+      "build_time_weeks": "3-4 weeks",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Law Practice System (نظام المحاماة) — same unauthorized-legal-practice risk as C17, though Musaned complaints are administrative (not court pleadings), somewhat lowering exposure vs. C17's broader legal-drafting scope",
+          "url": "https://sba.gov.sa/wp-content/uploads/2022/05/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9-%D9%88%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%AA%D9%87-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "PDPL — handling personal/employment data of domestic workers and employers",
+          "url": "https://www.enzuzo.com/blog/saudi-arabia-personal-data-protection-law-pdpl",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "Musaned complaint process was updated in 2025 (per evidence) — rules/timelines must be kept current with no official API to verify against",
+        "No public statistic on annual Musaned complaint volume to size the market"
+      ],
+      "blockers": [
+        "Official Musaned process (plus free 19911 hotline) is government-run and free, so willingness-to-pay for a paid helper layer is unproven",
+        "Same legal-practice-boundary ambiguity as C17, though narrower/administrative scope reduces (does not eliminate) the risk"
+      ],
+      "summary": "Narrower and faster to build than C17 (3-4 weeks, single domain), technically MODERATE. Main risks are monetization against a free official government channel and residual legal-practice-boundary ambiguity — mitigate with strict informational framing."
+    },
+    {
+      "candidate_id": "C19",
+      "stack": {
+        "frontend": "Next.js B2B dashboard with intake questionnaire",
+        "backend": "Python FastAPI rules-engine mapping product description → risk tier + RAG over policy/PDPL/NCA source texts",
+        "database": "Postgres (Supabase or KSA-region cloud for data residency comfort)",
+        "authentication": "Email/password, optional SSO for B2B",
+        "ai": "Claude/GPT for document generation (data-governance record, risk assessment, monitoring-log templates)",
+        "apis": "None official — SDAIA has no public compliance-classification API; content must be manually encoded from policy text and updated as the draft evolves",
+        "hosting": "Vercel/Supabase or AWS Bahrain region",
+        "payments": "Moyasar/Tap for B2B subscription or per-assessment invoicing",
+        "integrations": "None required for MVP"
+      },
+      "mvp_scope": [
+        "Self-assessment questionnaire classifying an AI product against the draft SDAIA risk tiers (critical/high/limited/low)",
+        "Auto-generated documentation templates (data governance record, risk assessment, monitoring log) mapped to PDPL overlaps",
+        "Manual update process to keep pace with the still-draft policy"
+      ],
+      "mvp_cost_sar_low": 600,
+      "mvp_cost_sar_high": 1200,
+      "monthly_run_cost_sar": "~300-600 SAR (AI usage + hosting; likely low user volume at MVP stage)",
+      "build_time_weeks": "6-8 weeks",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "SDAIA Responsible AI Policy is still a DRAFT under public consultation (opened 3 Apr 2026, closed 3 May 2026 per source) — not yet binding law; final requirements, timelines and enforcement scope are unconfirmed",
+          "url": "https://accesspartnership.com/opinion/saudi-arabia-moves-to-operationalise-responsible-ai-governance/",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "PDPL compliance overlaps with any AI-governance documentation the tool generates (data controller registration, DPO, breach notification)",
+          "url": "https://www.enzuzo.com/blog/saudi-arabia-personal-data-protection-law-pdpl",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "Final text of the Responsible AI Policy not yet published — building against a draft risks the product needing significant rework once/if finalized",
+        "No public registry of which small Saudi AI/SaaS vendors currently sell to government/regulated sectors, making market sizing unverifiable"
+      ],
+      "blockers": [
+        "Regulatory target is a moving/unfinalized draft — core product logic (risk-tier classification, required docs) could change materially before or after any launch",
+        "B2B compliance tooling typically requires buyer trust/credibility that an unknown solo founder lacks, especially for government-adjacent risk products; enterprise sales cycles are long",
+        "Unverified near-term market size — global GRC-for-AI vendors (Credo AI, Holistic AI) could localize into Saudi first"
+      ],
+      "summary": "Technically a moderate AI-document-generation build, but commercially premature: the regulation it depends on is still in draft with an unconfirmed finalization timeline, and B2B compliance sales require credibility a solo unknown founder will struggle to establish quickly. Feasible to prototype cheaply, but timing/market risk is the dominant issue, not engineering."
+    },
+    {
+      "candidate_id": "C20",
+      "stack": {
+        "frontend": "Next.js marketplace/directory UI",
+        "backend": "Node/Python matching engine + notification system",
+        "database": "Postgres (Supabase)",
+        "authentication": "CR upload/verification for contractors; phone/email for individual tradespeople",
+        "ai": "Claude/GPT to auto-generate compliance-document checklists from tender requirements; resume/credential parsing",
+        "apis": "None official — no public tender-feed API found for Expo 2030/World Cup 2034 packages; would require manual aggregation or direct partnerships with main contractors",
+        "hosting": "Vercel + Supabase",
+        "payments": "Moyasar/Tap for B2B subscription and/or lead-fee billing",
+        "integrations": "None confirmed available"
+      },
+      "mvp_scope": [
+        "Narrow directory: verified subcontractors/tradespeople list credentials/certs/availability",
+        "Manual (non-automated) alerting when a founder-curated tender/package is found",
+        "AI-generated compliance-document checklist per package"
+      ],
+      "mvp_cost_sar_low": 700,
+      "mvp_cost_sar_high": 1500,
+      "monthly_run_cost_sar": "~300-600 SAR (hosting + AI usage; excludes any manual sales/outreach effort)",
+      "build_time_weeks": "8-12 weeks",
+      "complexity": "HARD",
+      "solo_founder_feasible": false,
+      "regulatory": [
+        {
+          "requirement": "Recruiting, placing, or subcontracting workers for compensation requires an MHRSD license; a platform that matches/places individual skilled labour for a fee likely falls under this regime — a 'hard licence' the founder constraints flag to avoid",
+          "url": "https://www.hrsd.gov.sa/en/%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "Commercial Registration + Maroof for standard B2B SaaS payment acceptance",
+          "url": "https://mc.gov.sa/en/eservices/Pages/ServiceDetails.aspx?sID=47",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "No public tender-feed API for Expo 2030/World Cup 2034 construction packages",
+        "Whether announced Q3 2026 construction ramp-up is actually on schedule is unconfirmed",
+        "No visibility into whether main EPC/general contractors' procurement systems would accept or trust a third-party matching tool"
+      ],
+      "blockers": [
+        "Classic two-sided marketplace cold-start problem requiring simultaneous trusted supply (certified subcontractors/workers) and demand (main-contractor buy-in) — very hard for one person with no construction-industry relationships or track record",
+        "If the product places individual workers for a fee, it likely needs an MHRSD recruitment-agency license — explicitly the kind of hard licence solo founders should avoid per constraints",
+        "Giga-project procurement is typically relationship-driven and pre-qualification-based, not open-marketplace-based, undermining the core value proposition for an unknown new entrant",
+        "Speculative/future-timeline opportunity (FUTURE_HYPOTHESIS) — no confirmed near-term demand signal beyond macro construction-pipeline announcements"
+      ],
+      "summary": "Even a narrowed MVP (directory + manual matching) faces a hard two-sided cold-start problem plus a plausible MHRSD recruitment-licensing requirement — one of the licence types the founder constraints explicitly flag to avoid. Not realistically solo-feasible at the scale implied by giga-project construction; at best a very thin lead-gen directory with uncertain traction."
+    }
+  ],
+  "queries_used": [
+    "Moyasar payment gateway pricing fees Saudi Arabia",
+    "PDPL Saudi Arabia Personal Data Protection Law requirements SDAIA compliance",
+    "ممارسة المحاماة بدون ترخيص السعودية استشارات قانونية نظام المحاماة",
+    "SDAIA Responsible AI Policy draft risk tiers requirements documentation",
+    "Maroof freelance license Saudi Arabia digital services registration requirement online business",
+    "recruitment agency license Saudi Arabia HRSD private employment agency staffing platform requirement"
+  ],
+  "limitations": [
+    "All findings in this validation rest on WebSearch snippets/summaries; no WebFetch calls were used this session, so no source page was read in full — figures (e.g., Moyasar fee percentages, gateway setup fees) come from secondary aggregator summaries, not directly verified primary pages.",
+    "Did not fetch the full نظام المحاماة (Law Practice System) text or its executive regulations to precisely delineate the boundary between permitted 'informational/template' tools and prohibited 'legal consultation/practice' — this is a material open legal question for C17 and C18 that a lawyer should review before build.",
+    "Did not fetch the full SDAIA draft Responsible AI Policy document; relied on secondary law-firm/consultancy summaries of its risk tiers and obligations.",
+    "Payment gateway pricing (Moyasar/Tap/PayTabs) figures conflict across sources found (2.2-2.9% range, setup fees up to 1,500 SAR per one source); actual current pricing should be confirmed directly with each provider before budgeting.",
+    "Could not verify whether MHRSD's recruitment-agency licensing regime would apply specifically to a B2B subcontractor/tender-matching platform (as opposed to individual worker placement) — this distinction matters for C20's feasibility and was not resolved with certainty.",
+    "No verified data on actual complaint/dispute volumes (Musaned, Ejar, MoC) beyond aggregate/anecdotal figures already noted by the source agents; market sizing for C17/C18 monetization remains unverified.",
+    "Search budget used: 6 of 10 allowed searches, 0 of 6 allowed fetches — remaining budget was not needed to reach a defensible feasibility judgement for all 5 candidates, but deeper primary-source verification (especially of نظام المحاماة text and SDAIA draft policy text) would strengthen confidence on C17, C18, C19."
+  ]
+}

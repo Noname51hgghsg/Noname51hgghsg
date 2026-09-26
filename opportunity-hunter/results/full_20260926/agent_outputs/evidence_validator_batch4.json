@@ -1,0 +1,370 @@
+{
+  "results": [
+    {
+      "candidate_id": "C16",
+      "summary": "Problem and market-model evidence both hold up well and are now stronger than in the original discovery: real freelance marketplace demand exists at multiple price points, and paid Saudi-specific CV services with confirmed pricing (15-169 SAR) coexist with $5 freelancer gigs and free AI tools. Main open risk (commoditization by free AI tools) remains unresolved.",
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "DIRECT",
+      "claims": [
+        {
+          "claim": "A buyer posted on Mostaql specifically requesting a CV for Saudi job applications.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://mostaql.com/project/786867-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%B9%D9%84%D9%89-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+              "title": "سيرة ذاتية للتقديم على وظائف في المملكة العربية السعودية | مستقل"
+            }
+          ],
+          "note": "Re-confirmed via search: title/listing exists exactly as cited. Search snippet did not surface a budget figure."
+        },
+        {
+          "claim": "Freelancers on Khamsat sell full professional CV-writing gigs at ~$5.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://khamsat.com/writing/resume-writing/676212-%D8%B9%D9%85%D9%84-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D9%82%D8%A7%D8%A8%D9%84-5-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+              "title": "عمل سيرة ذاتية احترافية مقابل 5 دولار - خمسات"
+            }
+          ],
+          "note": "Direct live gig listing confirms the $5 price point cited by discovery agent, upgrading it from an unverified summary to DIRECT."
+        },
+        {
+          "claim": "Dedicated commercial CV-writing services for the Saudi market (CV-SA) have real, confirmed price points.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://sa.labeb.com/article/professional-bilingual-cv-writing-service-arabic-and-english-1-week-sa-2026-10179",
+              "title": "مقارنة أسعار خدمة كتابة سيرة ذاتية احترافية في السعودية 2026"
+            }
+          ],
+          "note": "Aggregator/comparison article (per search snippet) reports Arabic-only design at 15 SAR, English at 20 SAR, bilingual at 25 SAR, and a fuller professional package at 169 SAR. Not fetched directly from CV-SA's own pricing page, so classified as strong indirect rather than direct."
+        },
+        {
+          "claim": "Market model works: multiple paying competitors exist across price tiers ($5 freelancers to 169 SAR agencies) alongside free AI tools (LambaCV).",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://lambacv.com/",
+              "title": "أنشئ سيرتك الذاتية مجاناً بالذكاء الاصطناعي | لمبة - LambaCV"
+            },
+            {
+              "url": "https://www.cvksa.com/",
+              "title": "CVKSA"
+            }
+          ],
+          "note": "Confirms a real market with both paid and free incumbents; the free-tool presence is the key competitive risk, not disproven this session."
+        }
+      ],
+      "demand_signals": [
+        "Live Mostaql project request for a Saudi-specific CV",
+        "Multiple active Khamsat gig listings and buyer requests for CV writing",
+        "Multiple independent SEO/blog pages specifically targeting 'كيفية كتابة سيرة ذاتية للسعودية 2026' style queries, indicating active search volume"
+      ],
+      "new_sources": [
+        {
+          "url": "https://khamsat.com/writing/resume-writing/676212-%D8%B9%D9%85%D9%84-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D9%82%D8%A7%D8%A8%D9%84-5-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+          "title": "عمل سيرة ذاتية احترافية مقابل 5 دولار - خمسات",
+          "summary": "Live $5 CV-writing gig confirming the freelancer price point cited by the discovery agent."
+        },
+        {
+          "url": "https://sa.labeb.com/article/professional-bilingual-cv-writing-service-arabic-and-english-1-week-sa-2026-10179",
+          "title": "مقارنة أسعار خدمة كتابة سيرة ذاتية احترافية في السعودية 2026",
+          "summary": "Price comparison showing 15-25 SAR basic design tiers and a 169 SAR full professional package, giving concrete price anchors for the proposed 10-30 SAR one-time fee model."
+        },
+        {
+          "url": "https://lambacv.com/",
+          "title": "لمبة - LambaCV",
+          "summary": "Free AI-powered ATS-compliant Arabic CV builder — the main commoditization risk for this candidate."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C17",
+      "summary": "The underlying regulatory complexity across all four dispute types (Ejar registration/rent-freeze, gym refunds, MoC returns, CST delivery complaints) is well-confirmed by official and news sources. However, the MoC statistic needs a correction: the official Q2 2026 bulletin distinguishes ~151,000 inspection visits, ~137,000 'balagh' (reports/tips) and ~17,000 formal 'shakwa' (consumer complaints) — the candidate's evidence conflated these. No direct evidence of any AI complaint-drafting tool with paying customers was found; existing paid alternatives are law-firm consultations (price unconfirmed) and free government portals.",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "claims": [
+        {
+          "claim": "MoC processed 137,000+ consumer complaints in Q2 2026, largest category = online store returns/exchange violations.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://ajel.sa/local/0qkualtnx",
+              "title": "137 ألف بلاغ في 3 أشهر.. «عاجل» ترصد خريطة بلاغات المستهلكين والمتاجر الإلكترونية في الصدارة"
+            },
+            {
+              "url": "https://www.alraimedia.com/article/1775690",
+              "title": "التجارة: استقبال أكثر من 17 ألف شكوى وتحرير 5155 محضر ضبط في الربع الثاني من 2026"
+            }
+          ],
+          "note": "CORRECTION to discovery claim: official MoC Q2 2026 bulletin reports ~151,000 inspection visits, ~137,000 'بلاغ' (reports/tips, largest category = e-commerce returns), and separately ~17,000 formal 'شكوى' (consumer complaints) plus 5,155 violation citations. The candidate's evidence merged 'بلاغ' and 'شكوى' as if identical; they appear to be different reporting categories in MoC's own terminology. Directionally still supports high complaint/report volume in this space, but the specific 137,000 number should not be read as '137,000 formal complaints'."
+        },
+        {
+          "claim": "Ejar rent-freeze (5 years, effective 25 Sept 2025) and the 60-day unilateral-registration objection window are real and currently in force.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://www.ejar.sa/ar/faqregulation",
+              "title": "الأحكام النظامية الجديدة لضبط العلاقة الإيجارية | إيجار"
+            },
+            {
+              "url": "https://www.alarabiya.net/aswaq/realestate/2025/09/25/",
+              "title": "إيقاف الزيادة السنوية في إيجارات العقارات داخل الرياض لـ5 سنوات"
+            }
+          ],
+          "note": "Confirmed directly on Ejar's own official FAQ/regulation page plus corroborating news; upgrades the original STRONG_INDIRECT rent-freeze claim to DIRECT."
+        },
+        {
+          "claim": "Gym membership refund disputes (branch closures, freeze fees) are a recurring, regulator-recognized problem.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://x.com/Consumer_Eye/status/1599260178276581376",
+              "title": "عين المستهلك (GSA consumer-protection account) on gym refund rights"
+            },
+            {
+              "url": "https://justice-lawhome.com/gym-branch-closed-membership-refund-saudi/",
+              "title": "استرداد اشتراك النادي الرياضي بعد إغلاق الفرع"
+            }
+          ],
+          "note": "An official consumer-protection social account and multiple independent legal-content sites both address this exact scenario, corroborating recurrence, though still not proof of payment for a tool."
+        },
+        {
+          "claim": "A self-serve AI complaint-drafting tool has paying customers (market model).",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "No competing product of this type was found in this session; only paid law-firm consultations (fees unconfirmed) and free government portals (Ejar, Balagh Tijari, CST, Najiz) were found. Market-model evidence for THIS specific tool concept is absent — existing_solutions are all either free official channels or professional legal services, not self-serve SaaS."
+        }
+      ],
+      "demand_signals": [
+        "At least 6 independently-run Arabic legal-content sites (agl.sa, law-zamzami.com, lawzeyad.sa, thelawsa.com, justice-lawhome.com) each publish near-identical step-by-step guides for gym, delivery, landlord and recruitment complaints — a proxy for sustained search demand",
+        "Official GSA consumer-protection account (@Consumer_Eye) fielding public refund-rights questions on X"
+      ],
+      "new_sources": [
+        {
+          "url": "https://www.ejar.sa/ar/faqregulation",
+          "title": "الأحكام النظامية الجديدة لضبط العلاقة الإيجارية | إيجار",
+          "summary": "Official Ejar/REGA page directly confirming the 5-year Riyadh rent freeze and the 60-day objection window mechanics."
+        },
+        {
+          "url": "https://www.alraimedia.com/article/1775690",
+          "title": "التجارة: استقبال أكثر من 17 ألف شكوى وتحرير 5155 محضر ضبط في الربع الثاني من 2026",
+          "summary": "Shows the MoC Q2 2026 bulletin actually separates 'بلاغ' (137k) from formal 'شكوى' (17k) — important correction to the merged discovery-agent figure."
+        },
+        {
+          "url": "https://x.com/Consumer_Eye/status/1599260178276581376",
+          "title": "عين المستهلك on gym refund rights",
+          "summary": "Official Saudi consumer-protection social account confirming the 48-hour refund right and hotline for gym/club complaints."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C18",
+      "summary": "The underlying process complexity (90+30 day rule, escalating penalties, refund/replacement options) is confirmed directly by Musaned's own official statements and independent news, going beyond the original discovery evidence with specific penalty figures. However, no evidence was found that anyone pays for a private helper tool — the only paid alternative found is unpriced law-firm consultation content; the core Musaned complaint channel itself is free and government-run.",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "claims": [
+        {
+          "claim": "Musaned has an official electronic complaint-intake service for the domestic labor sector.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://www.spa.gov.sa/w1477697",
+              "title": "\"مساند\" تتيح خدمة استقبال الشكاوى في قطاع العمالة المنزلية إلكترونياً"
+            },
+            {
+              "url": "https://www.hrsd.gov.sa/en/ministry-services/services/%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%B4%D9%83%D8%A7%D9%88%D9%8A-%D8%A7%D9%84%D9%8A-%D9%85%D9%83%D8%A7%D8%AA%D8%A8-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%82%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A%D8%A9",
+              "title": "تقديم شكاوي الي مكاتب الاستقدام الأهلية | HRSD"
+            }
+          ],
+          "note": "Confirmed by official SPA (Saudi Press Agency) news and HRSD's own service page — upgraded from search-snippet-only to DIRECT via official government sources."
+        },
+        {
+          "claim": "90+30 day delay rule with specific escalating penalties (15% of contract value after 90 days, daily escalating fine, full refund mandatory at 120 days).",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://x.com/Musaned_DL/status/2011198378382688711",
+              "title": "Musaned official X account explaining the 90+30 day rule and client options"
+            },
+            {
+              "url": "https://www.arrajol.com/content/395665/",
+              "title": "بعد تجاوز مهلة الـ 90 يومًا.. إجراءات حاسمة من «مساند»"
+            }
+          ],
+          "note": "Musaned's own official account and a corroborating news article confirm mechanics with more precise penalty figures (15% penalty, escalating daily fine, 120-day full refund trigger) than the original discovery evidence contained — this is new, more detailed confirmation of process complexity."
+        },
+        {
+          "claim": "Families would pay for a private helper tool distinct from the free official Musaned process.",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "No pricing or customer evidence found for any private tool addressing this. Only paid alternative identified is law-firm consultation content (agl.sa, law-zamzami.com) with no confirmed fees; official Musaned channel is free, automated, and increasingly detailed in its own public communications, which may reduce the need for a third-party explainer."
+        }
+      ],
+      "demand_signals": [
+        "Multiple independent third-party legal/blog sites (isteqdamejaz.com, justice-lawhome.com, mz-mz.net, agl.sa, law-zamzami.com) all publishing guides on this exact process, suggesting sustained search interest",
+        "Musaned's own X account actively fielding individual public questions about the 90-day rule, suggesting real recurring confusion"
+      ],
+      "new_sources": [
+        {
+          "url": "https://www.spa.gov.sa/w1477697",
+          "title": "\"مساند\" تتيح خدمة استقبال الشكاوى في قطاع العمالة المنزلية إلكترونياً",
+          "summary": "Official SPA confirmation of the Musaned e-complaint service, strengthening problem-context evidence."
+        },
+        {
+          "url": "https://www.arrajol.com/content/395665/",
+          "title": "بعد تجاوز مهلة الـ 90 يومًا.. إجراءات حاسمة من «مساند»",
+          "summary": "Confirms specific 15% penalty and 120-day refund trigger, adding precision to the discovery agent's general description of the delay-remedy process."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C19",
+      "summary": "The core regulatory-trigger claim is solidly confirmed by an official Saudi Press Agency article: SDAIA did open public consultation on a draft Responsible AI Policy with a 4-tier risk framework, with submissions due by 3 May 2026. Since today is 26 Sept 2026, the consultation window has already closed — whether the policy was finalized into binding law is unknown and unverified this session, which is the single most important open question for this future-hypothesis candidate. Market-model evidence remains pure hypothesis; no localized competing compliance tool was found.",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "HYPOTHESIS",
+      "claims": [
+        {
+          "claim": "SDAIA opened public consultation on a draft Responsible AI Policy (April 2026) with a four-tier risk classification (critical/high/limited/low).",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://www.spa.gov.sa/en/N2551533",
+              "title": "SDAIA Invites Public, Entities to Share Views on Responsible AI Policy Draft"
+            },
+            {
+              "url": "https://www.dataguidance.com/news/saudi-arabia-sdaia-opens-public-consultation-responsible-AI-policy",
+              "title": "SDAIA opens public consultation on Responsible AI Policy"
+            }
+          ],
+          "note": "Confirmed via official Saudi Press Agency (SPA) title and an independent regulatory-tracking site (DataGuidance); consultation submissions were due by 3 May 2026. Since 'today' in this run is 26 Sept 2026, the consultation is closed but finalization status is unverified — this is the key unresolved risk for the candidate's FUTURE_HYPOTHESIS framing."
+        },
+        {
+          "claim": "The draft policy includes registration requirements, AI ethics labelling, audit/assurance obligations for high-risk systems, and a regulatory sandbox.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://accesspartnership.com/opinion/saudi-arabia-moves-to-operationalise-responsible-ai-governance/",
+              "title": "Saudi Arabia moves to operationalise responsible AI governance"
+            },
+            {
+              "url": "https://digitalpolicyalert.org/change/19003-responsible-ai-policy",
+              "title": "Design requirement in Responsible Artificial Intelligence Policy - Digital Policy Alert"
+            }
+          ],
+          "note": "Corroborated by two independent policy-tracking sources describing the same mechanisms, consistent with the SPA announcement."
+        },
+        {
+          "claim": "A market for AI-governance compliance tooling exists with paying customers, transferable to this Saudi-specific niche.",
+          "classification": "HYPOTHESIS",
+          "sources": [],
+          "note": "No evidence gathered this session of any localized (Saudi) or global GRC-for-AI vendor with confirmed Saudi customers paying specifically for SDAIA-policy compliance; global players (Credo AI, Holistic AI) were only mentioned as an unverified competitive risk in the original candidate, not confirmed here."
+        }
+      ],
+      "demand_signals": [
+        "NO RELIABLE EVIDENCE FOUND of active demand signals (e.g., job postings, freelance requests) specifically for SDAIA-policy compliance help; this remains a pure future-regulation-driven hypothesis"
+      ],
+      "new_sources": [
+        {
+          "url": "https://www.spa.gov.sa/en/N2551533",
+          "title": "SDAIA Invites Public, Entities to Share Views on Responsible AI Policy Draft",
+          "summary": "Official government confirmation of the consultation and its May 3, 2026 submission deadline — strengthens the regulatory-trigger evidence but also flags that, as of the run date, the consultation period has already closed with finalization status unknown."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C20",
+      "summary": "Expo 2030 construction progress itself (excavation, service corridor, pavilion timeline) is well-confirmed by multiple independent, reputable outlets. However, an important newly-found contradicting signal emerged: multiple August 2026 reports (AGBI, Salaam Gateway) describe Saudi construction hiring SLOWING sharply due to a giga-project 'rejig' (NEOM and other projects being re-scoped/delayed due to cost pressures), with construction workforce growth decelerating from 32-41%/year to just 6% in Q1 2026. This materially weakens the 'acute shortage driving urgent demand for a matching tool' thesis — the labor-market picture is now mixed, not a clean shortage story.",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "claims": [
+        {
+          "claim": "Expo 2030 construction (excavation, service corridor, pavilion works) is actively progressing on the announced timeline.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://www.arabnews.com/node/2644200/amp",
+              "title": "Built to last: Expo 2030 Riyadh showcases delivery progress, legacy plans"
+            },
+            {
+              "url": "https://www.meed.com/expo-2030-riyadh-construction-gathers-pace",
+              "title": "Expo 2030 Riyadh construction gathers pace"
+            }
+          ],
+          "note": "Confirmed by multiple independent reputable outlets (Arab News, MEED, Zawya, Saudi Gazette) citing 8M m3 excavation complete, 2km of 7.5km service corridor complete, pavilion groundbreaking likely Q3 2026 — consistent with the discovery agent's claim."
+        },
+        {
+          "claim": "Acute skilled-labour/subcontractor shortage is driving urgent demand for a matching tool.",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "url": "https://www.agbi.com/analysis/construction/2026/08/saudi-construction-hiring-slows-following-giga-project-rejig/",
+              "title": "Saudi construction hiring slows following giga-project rejig - AGBI"
+            },
+            {
+              "url": "https://salaamgateway.com/story/saudi-construction-hiring-slows-sharply-as-giga-project-ambitions-are-scaled-back",
+              "title": "Saudi construction hiring slows sharply as giga-project ambitions are scaled back - Salaam Gateway"
+            }
+          ],
+          "note": "CONTRADICTING EVIDENCE found: per search snippets, construction-sector worker registrations grew only 6% YoY in Q1 2026 (365,562 vs 345,005), a sharp deceleration from 32% (2025) and 41% (2024) growth, attributed to NEOM and other giga-projects being rescoped/delayed due to cost pressures. This downgrades the shortage-driven-urgency claim from STRONG_INDIRECT to WEAK/mixed — Expo 2030 specifically may still be ramping, but the broader giga-project labor-demand wave the candidate leans on appears to be cooling, not accelerating."
+        },
+        {
+          "claim": "200,000+ skilled-worker shortage figure cited by workforce research reports.",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "url": "https://www.mahadmanpowers.co.in/research/saudi-arabia-construction-workforce-report-2026/",
+              "title": "Saudi Arabia Construction Workforce Report 2026 - Mahad Manpower Research"
+            }
+          ],
+          "note": "Source is a manpower/staffing agency's own marketing research report — a vendor with commercial interest in overstating shortage severity; treated as WEAK, not corroborated by an independent/official source this session."
+        },
+        {
+          "claim": "A dedicated SME-facing subcontractor/tender-matching marketplace has paying customers (market model).",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "expo2030.co (existing_solutions entry) was checked only via search snippets and appears to be a tender/news intelligence feed (expo2030.co/signals), not a subcontractor-matching marketplace with paying SME customers. No comparable product-with-customers was found this session."
+        }
+      ],
+      "demand_signals": [
+        "NO RELIABLE EVIDENCE FOUND of direct demand signals (e.g., subcontractor job-board postings, freelance requests) specifically for a tender-matching tool"
+      ],
+      "new_sources": [
+        {
+          "url": "https://www.agbi.com/analysis/construction/2026/08/saudi-construction-hiring-slows-following-giga-project-rejig/",
+          "title": "Saudi construction hiring slows following giga-project rejig",
+          "summary": "Reports construction workforce growth decelerated sharply to 6% YoY in Q1 2026 amid NEOM/giga-project rescoping — important counter-evidence to the shortage thesis underpinning this candidate."
+        },
+        {
+          "url": "https://salaamgateway.com/story/saudi-construction-hiring-slows-sharply-as-giga-project-ambitions-are-scaled-back",
+          "title": "Saudi construction hiring slows sharply as giga-project ambitions are scaled back",
+          "summary": "Corroborates the AGBI finding independently — giga-project ambitions being scaled back, tempering labor-demand urgency."
+        },
+        {
+          "url": "https://expo2030.co/signals/",
+          "title": "Expo 2030 Intelligence Feed — Tenders, Contracts, Pavilions",
+          "summary": "Shows the existing competitor is a tender/news intelligence feed rather than an SME subcontractor-matching marketplace, leaving the specific matching-platform niche seemingly unaddressed but also unproven as a paid model."
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "مستقل سيرة ذاتية للتقديم على وظائف السعودية",
+    "CV-SA سيرة ذاتية احترافية السعودية سعر",
+    "وزارة التجارة شكاوى المستهلكين الربع الثاني 2026 137000",
+    "Musaned شكاوى مكاتب استقدام خدمة إلكترونية",
+    "SDAIA Responsible AI Policy draft consultation April 2026 risk tiers",
+    "خمسات كتابة سيرة ذاتية 5 دولار السعودية",
+    "تجميد الإيجار الرياض 5 سنوات إيجار تسجيل عقد اعتراض",
+    "استرداد اشتراك نادي رياضي بعد إغلاق فرع شكوى",
+    "شكوى مكتب استقدام مساند تجاوز 90 يوم استبدال عاملة",
+    "Expo 2030 Riyadh construction progress September 2026 excavation main works",
+    "Saudi construction skilled labour shortage 2026 giga projects subcontractors"
+  ],
+  "limitations": [
+    "WebFetch tool failed for all attempted URLs this session ('proxy refused the connection'), so all validation rests on WebSearch snippets/synthesis rather than fully-read source pages; where a snippet came from a secondary aggregator (e.g. sa.labeb.com price comparison) rather than the primary source, this is noted explicitly.",
+    "Could not independently verify whether SDAIA's Responsible AI Policy (consultation closed 3 May 2026) has since been finalized into binding law, since the run date (26 Sept 2026) is after the consultation window but no post-consultation status update was found in the searches performed.",
+    "Search budget (11 of 14 searches used) was allocated roughly 2 per candidate; some secondary/tertiary claims per candidate (e.g. exact law-firm consultation fees for C17/C18, expo2030.co's precise product features for C20) were not independently re-verified due to budget constraints and are carried over as NO RELIABLE EVIDENCE FOUND or WEAK from the original discovery evidence.",
+    "Arabic-language government bulletins (e.g. MoC Q2 2026 consumer bulletin) were only accessed via news-site summaries/snippets, not the original ministry PDF/press release, so the 137,000 vs 17,000 figure distinction should be treated as indicative rather than definitive."
+  ]
+}

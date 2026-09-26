@@ -1,0 +1,456 @@
+{
+  "agent": "future_opportunity_hunter",
+  "signals": [
+    {
+      "opportunity_id": "FUT-01",
+      "problem": "If Expo 2030 (excavation/main works starting Q3 2026, pavilion construction from mid-2026) and the 2034 World Cup construction programme ramp up as scheduled, small and mid-size subcontractors and skilled tradespeople will likely face a fragmented, opaque tender/subcontracting market and acute shortages of certified project managers, engineers and skilled labour (Dubai Expo 2020 peaked at 30,000+ onsite contractors) — creating demand for tools that match verified subcontractors/workers to giga-project tenders and track compliance documentation.",
+      "customer": "Small/mid subcontractors, independent skilled tradespeople and site labour agencies bidding into Expo 2030 / World Cup 2034 supply chains",
+      "segment": "B2B",
+      "sector": "Construction / Events infrastructure",
+      "market": "Saudi Arabia (Riyadh primarily)",
+      "source": "Web search (construction industry press, Expo/World Cup intelligence sites)",
+      "evidence": [
+        {
+          "claim": "Expo 2030 Riyadh Company plans to begin construction on key buildings in Q3 2026; pavilion works begin mid-2026; 8M m3 of excavation done and 2km of a planned 7.5km service corridor complete as of mid-2026.",
+          "url": "https://expo2030.co/briefings/expo-2030-pavilion-timeline/",
+          "source_title": "Pavilion Construction Timeline — Expo 2030 Riyadh",
+          "summary": "Construction timeline and progress data per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Rapid Expo-driven construction requires large numbers of engineers, project managers and skilled workers; comparable Dubai 2020 Expo saw 30,000+ onsite contractors at peak.",
+          "url": "https://tascoutsourcing.sa/en/insights/7-changes-in-the-saudi-construction-sector-driven-by-riyadh-expo-2030",
+          "source_title": "7 Changes in the Saudi Construction Sector Driven by Riyadh Expo 2030",
+          "summary": "HR/workforce outsourcing firm analysis of Expo-driven labour demand, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Demand for 555,000 new residential units by 2030 and 275,000+ new hotel rooms tied to Expo/World Cup pipeline.",
+          "url": "https://www.venturesonsite.com/riyadh-expo-2030-and-fifa-world-cup-2034",
+          "source_title": "Riyadh expo 2030 and fifa world cup 2034 - venturesonsite",
+          "summary": "Construction demand figures for combined Expo/World Cup pipeline, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Expo 2030 — Construction & Project Intelligence Platform (expo2030.co)",
+          "url": "https://expo2030.co/",
+          "notes": "Already tracks Expo construction/tender progress at a macro level; unclear if it does subcontractor-to-tender matching or worker credential verification for SMEs."
+        }
+      ],
+      "workaround": "Subcontractors currently rely on personal networks, general contractor pre-qualification lists and manual paperwork to find and win work packages; no evidence yet of a dedicated SME-facing matching tool.",
+      "potential_solution": "Lightweight SaaS/marketplace (Arabic/English) where certified subcontractors and skilled tradespeople list credentials, safety certs and availability, and get matched/alerted to tender packages and RFQs published by main contractors on Expo/World Cup projects; add automated compliance-document checklist generation.",
+      "business_model": "B2B SaaS subscription for contractors + optional lead-fee for matched tender opportunities",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no verified figures on what subcontractors currently spend on tender-sourcing or workforce staffing agencies)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether main contractors would allow/require a third-party tool in their procurement flow",
+        "Actual pace of construction start vs. announced Q3 2026 timeline",
+        "Whether existing expo2030.co or similar intelligence platforms already serve this SME segment"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-02",
+      "problem": "If Saudi Arabia proceeds with plans for 180,000–230,000+ new hotel rooms by 2034 (FIFA requires 60,000 rooms per host city; national inventory is only ~500,000 rooms today), a structural shortage of trained hospitality operations staff and international-standard revenue/booking-management capability will likely hit newly opened independent and mid-market hotels first — creating demand for affordable hotel-ops software and staff upskilling tools tailored to first-time operators.",
+      "customer": "Independent/first-time hotel operators and small hotel groups opening properties ahead of World Cup 2034 in secondary cities (outside the big international-chain-managed properties)",
+      "segment": "B2B",
+      "sector": "Hospitality / Tourism infrastructure",
+      "market": "Saudi Arabia (Riyadh, Jeddah, host cities)",
+      "source": "Web search (hospitality/consulting analysis)",
+      "evidence": [
+        {
+          "claim": "Saudi Arabia has ~500,000 hotel rooms nationally; FIFA requires 60,000 rooms per host city; plan is for 230,000+ hotel units by 2034, including 127,000 in Riyadh and 40,000 in Jeddah.",
+          "url": "https://alphaconsultancy.sa/en/resources/fifa-world-cup-2034-saudi-arabia-business",
+          "source_title": "Saudi Arabia 2034 FIFA World Cup: The Business Case for Entering Now",
+          "summary": "Hotel supply figures and FIFA room requirements, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "The hospitality supply-demand gap is described as structural, with 'the operational expertise to run high-volume, international-standard hospitality' not existing at the scale required.",
+          "url": "https://riyadh2030.ai/intelligence/fifa-2034-preparations/",
+          "source_title": "FIFA 2034 World Cup Preparations — Stadium Program, Infrastructure Investment, and Delivery Timeline Assessment",
+          "summary": "Analysis explicitly naming operational-expertise gap as structural, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Saudi Arabia to build more than 180,000 hotel rooms and serviced apartments by 2034 across host cities.",
+          "url": "https://www.constructionweekonline.com/projects-tenders/fifa-world-cup-2034-saudi-to-build-180000-hotel-rooms-and-apartments",
+          "source_title": "FIFA World Cup 2034: Saudi to build 180,000 hotel rooms and apartments",
+          "summary": "Construction industry press confirming room-build target, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Hotels typically hire foreign hospitality consultants or international chain management contracts to bring operational standards; costly and inaccessible for small/independent operators.",
+      "potential_solution": "Affordable, Arabic-first SaaS bundling revenue-management, channel-manager integration and short e-learning modules (built on top of existing PMS/OTA APIs) targeted at new independent hotel operators; could start as a lightweight booking/rate-optimization tool.",
+      "business_model": "B2B SaaS subscription per property + paid staff-training content",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on specific current spend by independent Saudi hotels on ops software/consulting",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether small independent hotels (vs. international chains) will make up a meaningful share of the new 2034 room stock",
+        "Global hotel-ops SaaS market is crowded (Cloudbeds, Mews) — unclear localization gap size",
+        "Actual delivery pace vs. 2034 deadline"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-03",
+      "problem": "If SDAIA's Responsible AI Policy (public consultation opened April 2026, risk-tiering into critical/high/limited/low with documentation, testing and monitoring obligations) is finalized and enforced as a procurement/compliance requirement for anyone selling AI products to government or regulated sectors, Saudi AI/SaaS startups and vendors will likely need lightweight compliance tooling to classify their AI systems, generate required documentation and track overlapping obligations (PDPL, SAMA/SFDA, NCA) — a gap current small vendors cannot fill with in-house legal teams.",
+      "customer": "Small/mid Saudi AI and SaaS vendors selling to government entities or regulated sectors (finance, health)",
+      "segment": "B2B",
+      "sector": "AI / GovTech compliance",
+      "market": "Saudi Arabia",
+      "source": "Web search (SDAIA official framing, compliance/legal advisory articles)",
+      "evidence": [
+        {
+          "claim": "In November 2025 SDAIA released a mandatory AI Adoption Framework for public-sector entities covering data governance, model accountability, transparency, human oversight and risk management.",
+          "url": "https://www.6clicks.com/resources/blog/saudi-arabia-year-of-ai-sdaia-ai-adoption-framework-governance",
+          "source_title": "Saudi Arabia's AI governance: SDAIA framework for 2026",
+          "summary": "Describes mandatory framework and 2026 'Year of AI' designation, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025-11 (per snippet)"
+        },
+        {
+          "claim": "In April 2026 SDAIA opened public consultation on a draft Responsible AI Policy with a four-tier risk classification (critical/high/limited/low), each carrying documentation, testing and monitoring obligations.",
+          "url": "https://accesspartnership.com/opinion/saudi-arabia-moves-to-operationalise-responsible-ai-governance/",
+          "source_title": "Saudi Arabia moves to operationalise responsible AI governance",
+          "summary": "Describes draft policy risk tiers and consultation timing, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-04 (per snippet)"
+        },
+        {
+          "claim": "A single AI product may simultaneously fall under SDAIA's Responsible AI Policy, PDPL, SAMA/SFDA rules and NCA cybersecurity controls, making AI governance a procurement requirement rather than optional.",
+          "url": "https://waqi.ai/blog/what-is-sdaia-saudi-arabia-data-ai-authority-explained-business-2026",
+          "source_title": "What Is SDAIA? Saudi Arabia's Data and AI Authority Explained for Business Owners",
+          "summary": "Vendor explainer on multi-regulator overlap, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per snippet)"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Larger companies hire compliance consultants/lawyers; small vendors likely currently ignore or manually attempt PDPL/SDAIA paperwork with no dedicated tool (no evidence found of current spend).",
+      "potential_solution": "A Claude/GPT-powered compliance assistant that ingests a company's AI product description, auto-classifies it against SDAIA's risk tiers, and generates the required documentation templates (data governance record, risk assessment, monitoring log) mapped to PDPL/NCA overlaps.",
+      "business_model": "B2B SaaS subscription or per-assessment fee",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether the Responsible AI Policy consultation (April 2026) will be finalized into binding law and on what timeline",
+        "Whether enforcement will initially target only large/government-facing vendors, leaving little demand from small startups",
+        "Global GRC-for-AI tools (Credo AI, Holistic AI etc.) may localize into Saudi first — competitive risk not verified"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-04",
+      "problem": "If SAMA's new open banking licensing regime (full licensing began 26 March 2026, replacing sandbox/bilateral pilots) matures over the next 1-3 years with more licensed Account-Information/Payment-Initiation providers (e.g., Lean Technologies), small e-commerce merchants and SMEs will likely want lightweight cash-flow/personal-finance apps built on top of licensed open-banking APIs — without needing a banking licence themselves, since they'd integrate via an already-licensed AISP rather than becoming one.",
+      "customer": "SMEs needing automated cash-flow visibility, and individual consumers wanting account-aggregation personal finance apps",
+      "segment": "HYBRID",
+      "sector": "Fintech (non-licensed layer on top of open banking)",
+      "market": "Saudi Arabia",
+      "source": "Web search (SAMA official announcement, fintech press)",
+      "evidence": [
+        {
+          "claim": "SAMA announced commencement of full open banking licensing on 26 March 2026, following completion of the regulatory sandbox; a pilot/sandbox/bilateral bank agreement is no longer sufficient — a formal SAMA licence is required for AIS/PIS/CAF services.",
+          "url": "https://spa.gov.sa/en/N2546753",
+          "source_title": "SAMA Commences Licensing of Fintech Companies to Provide Open Banking Services",
+          "summary": "Official Saudi Press Agency announcement of the licensing regime transition.",
+          "evidence_type": "DIRECT",
+          "published": "2026-03-26"
+        },
+        {
+          "claim": "Lean Technologies secured Saudi Arabia's first open banking licence from SAMA.",
+          "url": "https://thefintechtimes.com/lean-technologies-secures-saudi-arabias-first-open-banking-license-from-sama/",
+          "source_title": "Lean Technologies Secures Saudi Arabia's First Open Banking License From SAMA",
+          "summary": "Confirms a licensed API provider now exists that non-bank apps could build on top of.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Lean Technologies",
+          "url": "https://thefintechtimes.com/lean-technologies-secures-saudi-arabias-first-open-banking-license-from-sama/",
+          "notes": "Licensed open-banking infrastructure provider — an enabler a solo founder could build a consumer/SME app on top of, rather than a direct competitor."
+        }
+      ],
+      "workaround": "SMEs currently reconcile cash flow manually via bank statements/Excel; consumers use manual budgeting apps without bank-linked data (no direct evidence collected on current tool spend).",
+      "potential_solution": "A consumer/SME finance app that uses a licensed AISP's API (e.g., Lean) to aggregate accounts and give automated cash-flow forecasts/budgeting — avoiding the need for the founder to hold a SAMA licence.",
+      "business_model": "B2C/B2B SaaS subscription or freemium with paid tier",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "API access terms/cost for a solo founder to build on a licensed AISP's platform",
+        "Whether building any app that touches financial account data triggers its own licensing requirement in Saudi Arabia",
+        "Actual consumer/SME demand for such an app vs. reliance on bank-native apps"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-05",
+      "problem": "If mandatory Compulsory Health Insurance (CHI) benefit tiers keep widening (private insurance projected at ~35% of total healthcare spend by 2026, tiers ranging SAR 600 to SAR 12,000/year) alongside privatization of ~290 hospitals and ~2,300 primary health centers, small/mid employers will likely struggle to select, budget and administer the right CHI category for staff and track compliance renewals — a recurring administrative pain with real cost exposure if under-insured.",
+      "customer": "SME employers (HR/finance staff) managing mandatory employee health insurance",
+      "segment": "B2B",
+      "sector": "HealthTech / InsurTech (compliance layer, not underwriting)",
+      "market": "Saudi Arabia",
+      "source": "Web search (insurance/healthcare policy analysis)",
+      "evidence": [
+        {
+          "claim": "CHI 2026 tiers: Category A (mandatory minimum, SAR 600-1,200/yr), Category B (SAR 1,500-3,000/yr), Category C (comprehensive, SAR 4,000-12,000/yr).",
+          "url": "https://truescho.com/en/blog/health-insurance-expats-saudi-arabia-2026",
+          "source_title": "Health Insurance in Saudi Arabia for Expats 2026: Costs, CHI Rules, Best Providers",
+          "summary": "Breakdown of CHI mandatory coverage tiers and price ranges, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Private medical insurance projected to comprise ~35% of total healthcare spending by 2026, driven by mandatory coverage for private-sector employees/expatriates and widening Council of Health Insurance benefit requirements.",
+          "url": "https://vision2030.ai/analysis/saudi-health-sector-transformation-moh-privatization-insurance-digital-health/",
+          "source_title": "Saudi MOH Health Transformation: Insurance and Digital Health",
+          "summary": "Analysis of privatization and insurance-share growth, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Vision 2030 targets raising private sector share of healthcare delivery from 40% to 65% by 2030, with privatization covering ~290 hospitals and ~2,300 primary health centers.",
+          "url": "https://vision2030.ai/investment/guides/healthcare-investment/",
+          "source_title": "Healthcare Private Investment in Saudi Arabia | Vision 2030 Guide",
+          "summary": "Privatization scale figures, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "SMEs likely rely on insurance brokers (commission-based, not software) to pick a CHI tier; no evidence of a self-serve digital comparison/compliance tracker found.",
+      "potential_solution": "A simple SaaS/portal for SME HR to compare CHI tiers, calculate cost per headcount, track renewal deadlines and flag compliance gaps — could integrate with CHI/Council of Health Insurance public data if available via API.",
+      "business_model": "B2B SaaS subscription, or lead-referral fee from insurance brokers",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on SME broker fees or admin time spent on CHI compliance",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether CHI/Council of Health Insurance exposes any public data or API a founder could build against",
+        "Whether insurance brokers already offer this comparison as a free service, reducing willingness to pay",
+        "Actual timeline of further CHI tier changes"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-06",
+      "problem": "If female labor-force participation keeps rising (33.9% in Q1 2026, up from 17.8% in 2018) and childcare mandates for large employers keep expanding, employers above the size threshold required to provide/subsidize childcare will likely need help finding/vetting licensed nurseries and administering government subsidy claims (e.g., Qurrah) — especially in secondary cities where infrastructure lags.",
+      "customer": "HR departments of large private-sector employers subject to childcare-provision mandates; secondary-city working mothers",
+      "segment": "B2B",
+      "sector": "HR-Tech / Childcare",
+      "market": "Saudi Arabia (secondary cities especially)",
+      "source": "Web search (labour market/Vision 2030 analysis)",
+      "evidence": [
+        {
+          "claim": "Female labor force participation reached 36.3% in Q1 2025 and 33.9% in Q1 2026, up from ~17.8% in 2018; childcare deficits are cited as a remaining binding constraint.",
+          "url": "https://investriyadh.ai/intelligence/women-workforce/",
+          "source_title": "Women in Saudi Arabia's Workforce: From 17% to 33%",
+          "summary": "Participation-rate trend and named childcare constraint, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Employers above defined size thresholds are required to provide or subsidize childcare facilities (Qurrah subsidy programme), addressing one of the most binding practical barriers to mothers' workforce participation; sustaining growth depends on expanding childcare/transport infrastructure to secondary cities.",
+          "url": "https://vision2030.ai/analysis/women-workforce/",
+          "source_title": "Saudi Women Workforce: 17% to 36% Vision 2030 Progress",
+          "summary": "Describes childcare mandate and infrastructure gap in secondary cities, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qurrah",
+          "url": "https://vision2030.ai/analysis/women-workforce/",
+          "notes": "Existing government subsidized-childcare programme; unclear if it includes a digital marketplace for employers to find/vet licensed nurseries — no direct evidence found of such a tool."
+        }
+      ],
+      "workaround": "Employers likely negotiate ad-hoc arrangements with individual nurseries or pay cash subsidies without a structured vetting/marketplace tool (no direct evidence collected).",
+      "potential_solution": "A marketplace/compliance tool matching employers to licensed nurseries near workplaces, automating Qurrah subsidy paperwork and tracking mandate compliance by employer size.",
+      "business_model": "B2B SaaS subscription for HR teams + placement fee from nurseries",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Exact employer-size threshold and enforcement mechanism for the childcare mandate",
+        "Whether Qurrah already includes a nursery-matching digital tool",
+        "Actual nursery licensing/supply data in secondary cities"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-07",
+      "problem": "If Saudi inbound tourism keeps scaling toward stated Vision 2030 targets (already ~122M annual visits per one source) faster than the supply of Destination Management Companies (DMCs) and trained tour operators, small licensed tour guides/boutique operators will likely need simple booking/itinerary/payment tools to capture demand that larger DMCs can't service — since the sourced analysis explicitly names 'a shortage of capable DMCs' as a bottleneck after visa issuance succeeded.",
+      "customer": "Independent/small licensed tour guides and boutique local tour operators in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "Tourism / Travel-Tech",
+      "market": "Saudi Arabia",
+      "source": "Web search (tourism industry analysis)",
+      "evidence": [
+        {
+          "claim": "Saudi Arabia is approaching ~122M annual visits; known weaknesses in the tourism value chain include a workforce still being trained and a shortage of capable DMCs to turn visitor numbers into experiences — visa issuance succeeded but post-arrival operational capacity is the bottleneck.",
+          "url": "https://www.soogk.com/saudi-arabia-booked-122-million-visitors-it-doesnt-yet-have-the-companies-to-run-their-trips/",
+          "source_title": "Saudi Arabia Built the Destinations. Now It Needs the Operators.",
+          "summary": "Explicit framing of the operator/DMC capacity gap versus visitor-number growth, per search snippet (full page fetch failed due to proxy error).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Tourists and travel agents likely rely on informal referrals, international OTAs, or ad-hoc WhatsApp bookings with independent guides; no evidence found of a dedicated Saudi small-operator booking platform.",
+      "potential_solution": "A lightweight booking/itinerary-builder + payment tool for independent licensed tour guides and boutique operators, letting them list availability and take direct bookings without needing a full DMC back-office.",
+      "business_model": "B2B SaaS subscription or per-booking commission",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether small independent guides are legally allowed to book/operate without going through a licensed DMC/tour company",
+        "Full soogk.com article content could not be fetched (proxy error) — relying on search snippet only",
+        "Whether international OTAs (GetYourGuide, Viator) already fill this niche in Saudi Arabia"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-08",
+      "problem": "If EV adoption accelerates as planned (Ceer's first model launching Q4 2026; EVIQ targeting 5,000 fast chargers/1,000 hubs by 2030) from today's <1% penetration and ~1,200 public chargers concentrated in Riyadh/Jeddah/NEOM, early EV buyers in secondary cities will likely face charger-reliability/availability uncertainty and a lack of EV-trained repair garages — creating demand for a crowdsourced charger-status app and an EV-service booking marketplace.",
+      "customer": "Early EV owners and fleet operators in Saudi Arabia, especially outside Riyadh/Jeddah/NEOM",
+      "segment": "B2C",
+      "sector": "Mobility / EV-Tech",
+      "market": "Saudi Arabia",
+      "source": "Web search (EV market/infrastructure analysis)",
+      "evidence": [
+        {
+          "claim": "EV penetration is under 1% (~70,000 vehicles); Saudi Arabia has ~1,200 public chargers concentrated mainly in Riyadh, Jeddah and NEOM, with smaller cities/rural areas underserved; EVIQ (PIF/SEC JV) targets 5,000 fast chargers and 1,000 hubs by 2030.",
+          "url": "https://saudimarketresearchconsulting.com/insights/articles/closing-the-charging-gap-saudi-arabia-ev-charging-infrastructure-gap-and-the-2026-operator-opportunity",
+          "source_title": "Saudi Arabia EV Charging Infrastructure Gap 2026 Guide",
+          "summary": "Charger count, geographic concentration and 2030 targets, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Ceer, PIF-backed EV brand partnered with BMW/Foxconn, announced its first model launch for Q4 2026 with production beginning late 2025.",
+          "url": "https://www.anariev.com/strategic-assessment-of-saudi-arabia-ev-charging-infrastructure-market/",
+          "source_title": "Accelerating Toward a Sustainable Future: Strategic Assessment of Saudi Arabia's EV Charging Infrastructure Market",
+          "summary": "Ceer launch timeline confirming imminent EV volume growth, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "EVIQ (PIF/SEC)",
+          "url": "https://saudimarketresearchconsulting.com/insights/articles/closing-the-charging-gap-saudi-arabia-ev-charging-infrastructure-gap-and-the-2026-operator-opportunity",
+          "notes": "Government/utility JV building physical charger network; does not appear to be a consumer-facing charger-status/reliability app per snippet."
+        }
+      ],
+      "workaround": "EV owners likely rely on manufacturer apps or word-of-mouth to find working chargers; no evidence found of a Saudi-specific crowdsourced charger-status app.",
+      "potential_solution": "A crowdsourced charger-availability/reliability app (PlugShare-style) plus a marketplace connecting EV owners to EV-trained repair/service garages, launched ahead of the Ceer-driven demand ramp.",
+      "business_model": "B2C freemium app with paid fleet-tier for EV fleet operators; garage-marketplace commission",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether global apps like PlugShare already have adequate Saudi coverage, reducing local-build justification",
+        "Actual pace of EV sales growth post-Ceer launch",
+        "Whether EVIQ or manufacturers plan their own consumer charger-status app"
+      ]
+    },
+    {
+      "opportunity_id": "FUT-09",
+      "problem": "If the wave of Saudi family-business founders now aged over 55 (23% of founders, per KPMG-cited data) continues without formal succession plans (59% reportedly lack one; 75% lack a family charter), a growing number of small/mid family businesses over the next 1-3 years will likely need affordable, lightweight governance tools (ownership tracking, family council minutes, basic charter templates) since full Big-4 consulting engagements are priced for large conglomerates, not SMEs.",
+      "customer": "Owners/next-generation members of small and mid-size Saudi family businesses (below the size that engages Big-4 succession consulting)",
+      "segment": "B2B",
+      "sector": "Governance / Legal-Tech (family business)",
+      "market": "Saudi Arabia",
+      "source": "Web search (KPMG/Grant Thornton/INSEAD analysis)",
+      "evidence": [
+        {
+          "claim": "Family businesses make up 63% of the Saudi private sector; most were founded in the 1960s-70s oil boom and are now facing their first major succession challenge, with 23% of founders aged over 55.",
+          "url": "https://knowledge.insead.edu/family-business/saudi-arabia-tackles-succession-decades",
+          "source_title": "Saudi Arabia Tackles the 'Succession Decades'",
+          "summary": "INSEAD analysis of demographic succession wave, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "59% of Saudi family businesses lack a clear succession plan and ~75% do not have an established family charter.",
+          "url": "https://saudigazette.com.sa/article/631425/BUSINESS/KPMG-Conflict-resolution-and-succession-planning-in-Saudi-family-businesses",
+          "source_title": "KPMG: Conflict resolution and succession planning in Saudi family businesses",
+          "summary": "KPMG-sourced statistics on succession-plan and charter gaps, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "KPMG / Grant Thornton family-business advisory practices",
+          "url": "https://kpmg.com/sa/en/insights/private-enterprise/succession-planning-in-family-businesses.html",
+          "notes": "High-touch consulting services for succession planning; priced for larger family offices/conglomerates, not accessible to small family SMEs — a productized/software alternative is unaddressed per available evidence."
+        }
+      ],
+      "workaround": "Most affected businesses currently do nothing formal (per the 59%/75% gap statistics) or rely on informal family discussions; larger ones hire Big-4 consultants.",
+      "potential_solution": "A lightweight SaaS providing family-charter templates, ownership/cap-table tracking, meeting-minutes logging and basic conflict-resolution workflows for small family businesses that can't afford Big-4 engagements.",
+      "business_model": "B2B SaaS subscription (low monthly fee) or one-time template/document package",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "LOW",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on what small family businesses currently spend on succession advisory (large ones reportedly hire KPMG/Grant Thornton per above sources, but SME-tier spend is unverified)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether small family-business owners would trust a software tool vs. wanting a human advisor for sensitive family/ownership matters",
+        "Actual willingness to pay for a DIY governance tool versus doing nothing",
+        "Legal validity of DIY-generated family charters/documents in Saudi courts"
+      ]
+    }
+  ],
+  "queries_used": [
+    "Saudi Arabia Expo 2030 Riyadh preparation timeline construction workforce 2026",
+    "Saudi Arabia World Cup 2034 hospitality hotel supply gap preparation",
+    "SDAIA Saudi Arabia AI regulation policy 2026 compliance companies",
+    "SAMA open banking framework Saudi Arabia fintech licence 2026",
+    "Saudi Arabia family business succession planning ageing owners next generation",
+    "Saudi Arabia EV adoption charging infrastructure gap 2026 Ceer electric vehicle",
+    "Saudi Arabia healthcare privatization insurance mandatory expansion 2026 CHI",
+    "Saudi Arabia female workforce participation rate 2026 childcare nursery gap",
+    "Saudi Arabia tourism visa growth 2026 tour guide operators shortage",
+    "\"Expo 2030\" OR \"World Cup 2034\" Saudi Arabia temporary workforce housing accommodation labor"
+  ],
+  "limitations": [
+    "WebFetch tool failed for all 3 attempted URLs ('proxy refused the connection') — all evidence in this run is based on WebSearch result snippets/summaries rather than fully fetched and verified source pages; claims are labeled accordingly and evidence_type is capped at STRONG_INDIRECT or WEAK where full-page verification was not possible.",
+    "Search budget (10 queries) was fully used on breadth across 9 thematic areas (Expo 2030, World Cup 2034, SDAIA AI regulation, SAMA open banking, family business succession, EV adoption, healthcare privatization/CHI, female workforce/childcare, tourism/DMC shortage); no queries were run in Arabic due to budget constraints, which may have missed Arabic-language complaint threads or local forum discussion that would strengthen pain evidence.",
+    "No direct evidence was found for existing local competitors/tools in most areas (SDAIA AI compliance tooling, CHI comparison tools, childcare marketplace, family business governance SaaS, EV charger app) — absence of evidence is not proof of absence of competitors; a dedicated competitor search per opportunity was not possible within budget.",
+    "All Saudi-specific statistics (participation rates, room counts, charger counts, succession-plan percentages) were taken from single search-snippet sources without independent cross-verification against a second source, due to fetch failures preventing deeper verification.",
+    "None of the 9 signals could be confirmed with payment/willingness-to-pay evidence — all are genuinely forward-looking (FUTURE_HYPOTHESIS) inferences from documented regulatory/demographic/infrastructure trends, per the agent's mandate."
+  ]
+}

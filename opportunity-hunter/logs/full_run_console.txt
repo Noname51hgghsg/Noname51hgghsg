@@ -1,0 +1,150 @@
+[10:42:01] ORCHESTRATOR run full_20260926 started (mode=full, max_parallel=6, budget=$60.0)
+[10:42:01] ORCHESTRATOR === STAGE 1_DISCOVERY started ===
+[10:42:01] PROBLEM_HUNTER[problem_hunter] started
+[10:42:01] B2C_HUNTER[b2c_hunter] started
+[10:42:01] B2B_PAIN_HUNTER[b2b_hunter] started
+[10:42:01] COMPLAINT_HUNTER[complaint_hunter] started
+[10:42:01] WHATSAPP_EXCEL_HUNTER[whatsapp_excel_hunter] started
+[10:42:01] JOB_SIGNAL_AGENT[jobs_signal_hunter] started
+[10:44:36] JOB_SIGNAL_AGENT completed in 154.2s — searches=12 fetches=5 cache_hits=0 blocked=0 turns=19 cost=$0.511 pid=2285
+[10:44:36] FOREIGN_MODEL_AGENT[foreign_model_hunter] started
+[10:45:23] B2C_HUNTER completed in 201.4s — searches=12 fetches=6 cache_hits=0 blocked=1 turns=21 cost=$0.584 pid=2281
+[10:45:23] COMPETITION_GAP_AGENT[competition_hunter] started
+[10:45:44] PROBLEM_HUNTER completed in 222.4s — searches=12 fetches=6 cache_hits=0 blocked=1 turns=21 cost=$0.590 pid=2280
+[10:45:44] GAP_AGENT[gap_hunter] started
+[10:45:45] B2B_PAIN_HUNTER completed in 223.9s — searches=12 fetches=4 cache_hits=0 blocked=0 turns=18 cost=$0.587 pid=2282
+[10:45:45] AI_OPPORTUNITY_AGENT[ai_opportunity_hunter] started
+[10:46:07] WHATSAPP_EXCEL_HUNTER completed in 245.5s — searches=12 fetches=2 cache_hits=0 blocked=1 turns=17 cost=$0.648 pid=2284
+[10:46:07] MARKET_CHANGE_AGENT[market_change_hunter] started
+[10:46:21] COMPLAINT_HUNTER completed in 259.1s — searches=12 fetches=6 cache_hits=0 blocked=2 turns=22 cost=$0.633 pid=2283
+[10:46:21] FUTURE_AGENT[future_opportunity_hunter] started
+[10:48:46] FOREIGN_MODEL_AGENT completed in 250.8s — searches=14 fetches=4 cache_hits=0 blocked=1 turns=21 cost=$0.678 pid=2968
+[10:48:46] INDIVIDUAL_AGENT[individual_problem_hunter] started
+[10:49:24] GAP_AGENT completed in 220.0s — searches=12 fetches=3 cache_hits=0 blocked=3 turns=20 cost=$0.604 pid=3188
+[10:49:26] AI_OPPORTUNITY_AGENT completed in 221.1s — searches=12 fetches=5 cache_hits=0 blocked=0 turns=19 cost=$0.610 pid=3222
+[10:49:41] COMPETITION_GAP_AGENT completed in 257.9s — searches=12 fetches=6 cache_hits=0 blocked=1 turns=21 cost=$0.623 pid=3100
+[10:49:52] FUTURE_AGENT completed in 211.1s — searches=10 fetches=3 cache_hits=0 blocked=0 turns=15 cost=$0.515 pid=3431
+[10:50:17] MARKET_CHANGE_AGENT completed in 250.1s — searches=12 fetches=3 cache_hits=0 blocked=2 turns=19 cost=$0.621 pid=3356
+[10:52:17] INDIVIDUAL_AGENT completed in 210.5s — searches=12 fetches=5 cache_hits=0 blocked=0 turns=19 cost=$0.598 pid=3794
+[10:52:17] PROBLEM_HUNTER returned 6 signals (12 queries reported)
+[10:52:17] B2B_PAIN_HUNTER returned 9 signals (12 queries reported)
+[10:52:17] B2C_HUNTER returned 8 signals (12 queries reported)
+[10:52:17] COMPLAINT_HUNTER returned 6 signals (12 queries reported)
+[10:52:17] WHATSAPP_EXCEL_HUNTER returned 10 signals (12 queries reported)
+[10:52:17] JOB_SIGNAL_AGENT returned 8 signals (12 queries reported)
+[10:52:17] FOREIGN_MODEL_AGENT returned 6 signals (15 queries reported)
+[10:52:17] COMPETITION_GAP_AGENT returned 7 signals (12 queries reported)
+[10:52:17] GAP_AGENT returned 6 signals (12 queries reported)
+[10:52:17] AI_OPPORTUNITY_AGENT returned 8 signals (12 queries reported)
+[10:52:17] MARKET_CHANGE_AGENT returned 10 signals (12 queries reported)
+[10:52:17] FUTURE_AGENT returned 9 signals (10 queries reported)
+[10:52:17] INDIVIDUAL_AGENT returned 8 signals (12 queries reported)
+[10:52:17] ORCHESTRATOR discovery complete: 13/13 agents succeeded, 101 raw signals
+[10:52:17] ORCHESTRATOR === STAGE 1_DISCOVERY finished in 615.7s ===
+[10:52:17] ORCHESTRATOR === STAGE 2_DEDUPLICATION started ===
+[10:52:17] DEDUP deterministic pass: 101 → 101 signals (0 near-duplicates merged)
+[10:52:17] CONSOLIDATOR[consolidator] started
+[10:58:53] CONSOLIDATOR completed in 396.0s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=2 cost=$0.699 pid=4087
+[10:58:53] ORCHESTRATOR deduplication complete: 20 candidates, 37 backlog, 2 discarded groups
+[10:58:53] ORCHESTRATOR === STAGE 2_DEDUPLICATION finished in 396.1s ===
+[10:58:53] ORCHESTRATOR === STAGE 3_VALIDATION started ===
+[10:58:53] ORCHESTRATOR dispatching 16 validator jobs (4 validators × 4 batches)
+[10:58:53] EVIDENCE_VALIDATOR[batch1] started
+[10:58:53] EVIDENCE_VALIDATOR[batch4] started
+[10:58:53] PAYMENT_VALIDATOR[batch1] started
+[10:58:53] EVIDENCE_VALIDATOR[batch3] started
+[10:58:53] EVIDENCE_VALIDATOR[batch2] started
+[10:58:53] PAYMENT_VALIDATOR[batch2] started
+[11:01:32] PAYMENT_VALIDATOR[batch1] completed in 158.5s — searches=11 fetches=2 cache_hits=0 blocked=0 turns=15 cost=$0.557 pid=4388
+[11:01:32] PAYMENT_VALIDATOR[batch3] started
+[11:01:51] EVIDENCE_VALIDATOR[batch1] completed in 178.1s — searches=11 fetches=0 cache_hits=0 blocked=0 turns=13 cost=$0.588 pid=4386
+[11:01:51] PAYMENT_VALIDATOR[batch4] started
+[11:01:53] PAYMENT_VALIDATOR[batch2] completed in 179.7s — searches=14 fetches=6 cache_hits=0 blocked=1 turns=23 cost=$0.624 pid=4391
+[11:01:53] COMPETITION_VALIDATOR[batch1] started
+[11:02:50] EVIDENCE_VALIDATOR[batch2] completed in 236.5s — searches=14 fetches=3 cache_hits=0 blocked=0 turns=19 cost=$0.720 pid=4390
+[11:02:50] COMPETITION_VALIDATOR[batch2] started
+[11:02:51] EVIDENCE_VALIDATOR[batch3] completed in 237.4s — searches=14 fetches=4 cache_hits=0 blocked=0 turns=20 cost=$0.694 pid=4389
+[11:02:51] COMPETITION_VALIDATOR[batch3] started
+[11:03:10] EVIDENCE_VALIDATOR[batch4] completed in 256.9s — searches=11 fetches=2 cache_hits=0 blocked=0 turns=15 cost=$0.594 pid=4387
+[11:03:10] COMPETITION_VALIDATOR[batch4] started
+[11:04:00] PAYMENT_VALIDATOR[batch3] completed in 148.4s — searches=13 fetches=4 cache_hits=0 blocked=0 turns=19 cost=$0.575 pid=5092
+[11:04:00] FEASIBILITY_VALIDATOR[batch1] started
+[11:04:25] PAYMENT_VALIDATOR[batch4] completed in 153.2s — searches=10 fetches=2 cache_hits=0 blocked=0 turns=14 cost=$0.491 pid=5162
+[11:04:25] FEASIBILITY_VALIDATOR[batch2] started
+[11:05:56] COMPETITION_VALIDATOR[batch1] completed in 243.2s — searches=11 fetches=1 cache_hits=0 blocked=0 turns=15 cost=$0.725 pid=5194
+[11:05:56] FEASIBILITY_VALIDATOR[batch3] started
+[11:07:30] COMPETITION_VALIDATOR[batch2] completed in 280.2s — searches=12 fetches=3 cache_hits=0 blocked=0 turns=18 cost=$0.760 pid=5406
+[11:07:30] FEASIBILITY_VALIDATOR[batch4] started
+[11:07:49] FEASIBILITY_VALIDATOR[batch1] completed in 229.2s — searches=8 fetches=0 cache_hits=1 blocked=0 turns=11 cost=$0.540 pid=5735
+[11:08:28] FEASIBILITY_VALIDATOR[batch2] completed in 243.6s — searches=9 fetches=0 cache_hits=0 blocked=0 turns=11 cost=$0.576 pid=5841
+[11:08:33] COMPETITION_VALIDATOR[batch3] completed in 342.6s — searches=14 fetches=4 cache_hits=0 blocked=0 turns=21 cost=$0.908 pid=5440
+[11:09:25] FEASIBILITY_VALIDATOR[batch3] completed in 208.9s — searches=7 fetches=1 cache_hits=0 blocked=0 turns=10 cost=$0.428 pid=6035
+[11:09:37] COMPETITION_VALIDATOR[batch4] completed in 386.8s — searches=14 fetches=5 cache_hits=0 blocked=1 turns=23 cost=$0.893 pid=5542
+[11:11:05] FEASIBILITY_VALIDATOR[batch4] completed in 215.1s — searches=6 fetches=0 cache_hits=0 blocked=0 turns=8 cost=$0.418 pid=6239
+[11:11:05] VALIDATION C01: problem_evidence=DIRECT pays_now=YES market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C02: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C03: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=WEAK_MARKET complexity=EASY
+[11:11:05] VALIDATION C04: problem_evidence=DIRECT pays_now=YES market=WEAK_MARKET complexity=MODERATE
+[11:11:05] VALIDATION C05: problem_evidence=STRONG_INDIRECT pays_now=YES market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C06: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C07: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=WEAK_MARKET complexity=MODERATE
+[11:11:05] VALIDATION C08: problem_evidence=WEAK pays_now=PARTIAL market=WEAK_MARKET complexity=MODERATE
+[11:11:05] VALIDATION C09: problem_evidence=STRONG_INDIRECT pays_now=YES market=SATURATED complexity=MODERATE
+[11:11:05] VALIDATION C10: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=EASY
+[11:11:05] VALIDATION C11: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=WEAK_MARKET complexity=EASY
+[11:11:05] VALIDATION C12: problem_evidence=STRONG_INDIRECT pays_now=YES market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C13: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=EASY
+[11:11:05] VALIDATION C14: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C15: problem_evidence=WEAK pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C16: problem_evidence=DIRECT pays_now=YES market=COMPETITIVE complexity=EASY
+[11:11:05] VALIDATION C17: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[11:11:05] VALIDATION C18: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=WEAK_MARKET complexity=MODERATE
+[11:11:05] VALIDATION C19: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=WEAK_MARKET complexity=MODERATE
+[11:11:05] VALIDATION C20: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=HARD
+[11:11:05] ORCHESTRATOR === STAGE 3_VALIDATION finished in 731.9s ===
+[11:11:05] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 started ===
+[11:11:05] KILLER_AGENT[r1_batch1] started
+[11:11:05] KILLER_AGENT[r1_batch3] started
+[11:11:05] KILLER_AGENT[r1_batch4] started
+[11:11:05] KILLER_AGENT[r1_batch2] started
+[11:13:28] KILLER_AGENT[r1_batch4] completed in 143.2s — searches=4 fetches=0 cache_hits=0 blocked=0 turns=6 cost=$0.443 pid=6498
+[11:14:25] KILLER_AGENT[r1_batch1] completed in 200.2s — searches=8 fetches=0 cache_hits=0 blocked=0 turns=10 cost=$0.662 pid=6496
+[11:14:46] KILLER_AGENT[r1_batch2] completed in 220.8s — searches=7 fetches=0 cache_hits=0 blocked=0 turns=9 cost=$0.635 pid=6499
+[11:15:01] KILLER_AGENT[r1_batch3] completed in 236.2s — searches=8 fetches=2 cache_hits=0 blocked=0 turns=12 cost=$0.667 pid=6497
+[11:15:01] KILLER_AGENT C01 → SURVIVED
+[11:15:01] KILLER_AGENT C02 → REJECTED
+[11:15:01] KILLER_AGENT C03 → REJECTED
+[11:15:01] KILLER_AGENT C04 → SURVIVED
+[11:15:01] KILLER_AGENT C05 → REJECTED (The exact proposed product already exists, live, from a local vendor: Watily offers a What)
+[11:15:01] KILLER_AGENT C06 → REJECTED (The two target distribution platforms (Salla and Zid) already natively require/validate th)
+[11:15:01] KILLER_AGENT C07 → REJECTED
+[11:15:01] KILLER_AGENT C08 → SURVIVED
+[11:15:01] KILLER_AGENT C09 → REJECTED (A SABER Shipment/Product Certificate of Conformity can legally only be issued by a SASO-ac)
+[11:15:01] KILLER_AGENT C10 → SURVIVED
+[11:15:01] KILLER_AGENT C11 → REJECTED
+[11:15:01] KILLER_AGENT C12 → REJECTED (A direct AI competitor (ListaPro.ai) already exists live, paid, and positively reviewed, d)
+[11:15:01] KILLER_AGENT C13 → REJECTED
+[11:15:01] KILLER_AGENT C14 → REJECTED (Munsit is a live, dedicated Gulf/Saudi-dialect (explicitly Najdi and Hijazi) Arabic speech)
+[11:15:01] KILLER_AGENT C15 → REJECTED
+[11:15:01] KILLER_AGENT C16 → REJECTED (NoorCV is a genuinely free (no premium tier, no hidden costs, no credit card ever) bilingu)
+[11:15:01] KILLER_AGENT C17 → REJECTED
+[11:15:01] KILLER_AGENT C18 → REJECTED
+[11:15:01] KILLER_AGENT C19 → REJECTED (Fresh search confirms the SDAIA Responsible AI Policy consultation closed 3 May 2026 and, )
+[11:15:01] KILLER_AGENT C20 → REJECTED (Fresh search confirms that providing recruitment/labor-matching services without an MHRSD ; The candidate's own feasibility validator explicitly concluded solo_founder_feasible: fals)
+[11:15:01] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 finished in 236.3s ===
+[11:15:01] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 started ===
+[11:15:01] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 finished in 0.0s ===
+[11:15:01] ORCHESTRATOR no evidence gaps detected — skipping additional research
+[11:15:01] ORCHESTRATOR === STAGE 8_SYNTHESIS started ===
+[11:15:01] OPPORTUNITY_SYNTHESIZER[synthesizer] started
+[11:32:33] OPPORTUNITY_SYNTHESIZER completed in 1051.6s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=5 cost=$2.012 pid=6951
+[11:32:33] OPPORTUNITY_SYNTHESIZER 4 golden, 12 hidden gems, 5 foreign models
+[11:32:33] ORCHESTRATOR === STAGE 8_SYNTHESIS finished in 1051.6s ===
+[11:32:33] ORCHESTRATOR === STAGE 9_REPORT started ===
+[11:32:33] REPORT written to /home/user/Noname51hgghsg/opportunity-hunter/reports/final_report.md
+[11:32:33] ORCHESTRATOR === STAGE 9_REPORT finished in 0.0s ===
+[11:32:33] ORCHESTRATOR run finished: {"agent_processes_launched": 35, "agent_tasks_executed": 35, "distinct_agent_types_run": 20, "agent_tasks_succeeded": 35, "agent_tasks_failed": 0, "agent_tasks_skipped": 0, "agent_cache_hits": 0, "web_searches": 362, "web_fetches": 97, "search_cache_hits": 1, "budget_blocked_tool_calls": 14, "raw_signals": 101, "after_exact_dedup": 101, "candidates_validated": 20, "backlog": 37, "gap_research_requests": 0, "survived_killer": 4, "rejected_by_killer": 16, "undecided": 0, "total_cost_usd": 23.012}
+
+Final report: /home/user/Noname51hgghsg/opportunity-hunter/reports/final_report.md
+{'agent_processes_launched': 35, 'agent_tasks_executed': 35, 'distinct_agent_types_run': 20, 'agent_tasks_succeeded': 35, 'agent_tasks_failed': 0, 'agent_tasks_skipped': 0, 'agent_cache_hits': 0, 'web_searches': 362, 'web_fetches': 97, 'search_cache_hits': 1, 'budget_blocked_tool_calls': 14, 'raw_signals': 101, 'after_exact_dedup': 101, 'candidates_validated': 20, 'backlog': 37, 'gap_research_requests': 0, 'survived_killer': 4, 'rejected_by_killer': 16, 'undecided': 0, 'total_cost_usd': 23.012}
+EXIT=0

@@ -1,0 +1,358 @@
+{
+  "agent": "gap_hunter",
+  "signals": [
+    {
+      "opportunity_id": "GAP-01",
+      "problem": "Salla/Zid merchants who use ERP/accounting systems other than the officially-integrated ones (e.g. Odoo) — or who need custom mapping (multi-branch, custom chart of accounts, cost centers) — cannot rely on the native app-store connectors and repeatedly hire freelancers to build one-off programmatic links between their store and their accounting system.",
+      "customer": "Saudi Salla/Zid merchants running Odoo or a custom-configured accounting/ERP setup instead of the officially supported apps (Qoyod/Daftra/Wafeq default configs)",
+      "segment": "B2B",
+      "sector": "E-commerce / Accounting SaaS",
+      "market": "Saudi Arabia",
+      "source": "Mostaql freelance project listings",
+      "evidence": [
+        {
+          "claim": "Multiple merchants pay freelancers on Mostaql specifically to build a programmatic (custom-coded) link between Salla and their Odoo accounting instance, rather than use an app-store connector.",
+          "url": "https://mostaql.com/project/790254-%D8%B1%D8%A8%D8%B7-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D9%88%D8%AF%D9%88-odoo%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%8A-%D9%85%D8%B9-%D9%85%D9%86%D8%B5%D8%A9-%D8%B3%D9%84%D9%87-%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9",
+          "source_title": "ربط برنامج اودو المحاسبي مع منصة سله | مستقل",
+          "summary": "Freelance project brief asking specifically for Odoo-Salla integration, seen in search result listing (per search snippet, page not fetched).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate project explicitly requests programmatic (‘برمجيا’) linking between Salla and Qoyod, even though Qoyod has an official Salla app in the app store — implying the standard connector doesn't cover this merchant's setup.",
+          "url": "https://mostaql.com/project/972765-%D8%A7%D9%84%D8%B1%D8%A8%D8%B7-%D8%A8%D9%8A%D9%86-%D8%B3%D9%84%D8%A9-%D9%88%D9%82%D9%8A%D9%88%D8%AF-%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7",
+          "source_title": "الربط بين سلة وقيود (برمجيا) | مستقل",
+          "summary": "Project title/listing found in search results indicating demand for a custom-coded Salla-Qoyod link (per search snippet, could not fetch full brief due to proxy error).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Qoyod and Wafeq both offer official native Salla/Zid app-store connectors that auto-sync orders into invoices/journal entries.",
+          "url": "https://apps.salla.sa/en/app/1732341478",
+          "source_title": "Qoyod - Salla App Store",
+          "summary": "Official Salla App Store listing for Qoyod, confirming a native integration exists for the default use case.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qoyod Salla/Zid connector",
+          "url": "https://www.qoyod.com/en/marketplace/e-commerce/zid/",
+          "notes": "Native integration; covers standard single-entity, single-currency setups per Qoyod's own docs."
+        },
+        {
+          "name": "Wafeq Salla integration",
+          "url": "https://www.wafeq.com/en/wafeq-help/integrations/configuring-salla-integration-with-wafeq",
+          "notes": "Summarizes daily orders into one invoice; may not fit merchants needing per-order or multi-branch detail."
+        }
+      ],
+      "workaround": "Merchants hire freelancers on Mostaql to build bespoke API scripts (Salla API + Odoo/Qoyod API) rather than use, or in addition to, the official app-store connector.",
+      "potential_solution": "A configurable middleware (built on public Salla/Zid Open APIs and Odoo/Qoyod/Daftra APIs) that supports custom field mapping, multi-branch, multi-currency and cost-center scenarios that the default app-store connectors don't cover — sold as a subscription per store.",
+      "business_model": "SaaS subscription (per connected store/month) or one-time setup + small monthly maintenance fee",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "Merchants pay freelancers per-project on Mostaql for custom integration work (amount not visible without login; per search snippet only).",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual freelance project budgets (Mostaql hides amounts from search snippets/without login)",
+        "Whether Salla/Zid's official Open API already exposes everything needed, making this purely a 'no low-code connector exists yet' gap rather than an API gap",
+        "How many merchants this affects vs. isolated one-off cases"
+      ]
+    },
+    {
+      "opportunity_id": "GAP-02",
+      "problem": "Merchants selling simultaneously on Salla/Zid + Noon + Amazon.sa (+ Trendyol) must manually keep inventory, prices and listings in sync across channels; Salla's own product-feedback board shows this as an unresolved, merchant-requested feature, and merchants pay freelancers to build custom sync scripts.",
+      "customer": "Multi-channel Saudi e-commerce sellers (Salla/Zid store + Noon/Amazon.sa/Trendyol marketplace presence)",
+      "segment": "B2B",
+      "sector": "E-commerce",
+      "market": "Saudi Arabia",
+      "source": "Salla feature-request board, Mostaql freelance listings",
+      "evidence": [
+        {
+          "claim": "Merchants have publicly requested on Salla's own ideas/feedback platform the ability to sync inventory between their Salla store and Amazon/Noon Saudi.",
+          "url": "https://features.salla.sa/ideas/SUG-I-9363",
+          "source_title": "امكانية ربط مخزون سلة في امازون ونون السعودي | منصة المقترحات",
+          "summary": "Open feature request on Salla's official suggestion board asking for Amazon/Noon inventory sync, indicating the need is not yet natively met (per search snippet).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple separate Mostaql projects ask for custom import/sync of products between Amazon/Noon and a Salla store.",
+          "url": "https://mostaql.com/project/776977-%D8%B1%D8%A8%D8%B7-%D9%85%D8%AA%D8%AC%D8%B1-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%B9%D9%84%D9%89-%D8%B3%D9%84%D8%A9-%D8%A8%D9%85%D9%86%D8%B5%D8%A9-%D9%86%D9%88%D9%86-%D8%A3%D9%88-%D8%A3%D9%85%D8%A7%D8%B2%D9%88%D9%86",
+          "source_title": "ربط متجر إلكتروني على سلة بمنصة نون أو أمازون | مستقل",
+          "summary": "Freelance project listing requesting a Salla-to-Noon/Amazon store link (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A third-party paid app ('Linker / لنكر البائعين') already exists specifically to centralize sales, stock and pricing across Noon, Amazon and Trendyol for Salla-type sellers.",
+          "url": "https://www.tiktok.com/@sallatips/video/7541502267648773384",
+          "source_title": "طريق ربط متجرك في منصة سلة مع نون، أمازون وترنديول | TikTok",
+          "summary": "Social content promoting a third-party 'Linker' app for multi-marketplace sync, confirming a paid market already exists for this gap (per search snippet; TikTok content not independently verified).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Linker (لنكر البائعين)",
+          "url": "https://www.tiktok.com/@sallatips/video/7541502267648773384",
+          "notes": "Third-party centralization tool for Noon/Amazon/Trendyol; found via social promo, not verified via its own site/pricing page."
+        }
+      ],
+      "workaround": "Manual re-listing and stock updates across each marketplace, or ad hoc freelancer scripts, or adopting a third-party tool like Linker.",
+      "potential_solution": "A lightweight, affordably-priced multi-channel inventory/price sync connector focused specifically on the Salla/Zid + Noon/Amazon.sa combination, undercutting existing tools and covering marketplaces the incumbents don't.",
+      "business_model": "SaaS subscription tiered by number of SKUs/channels",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for exact amounts merchants pay Linker or freelancers; existence of a paid competitor implies willingness to pay but price unverified.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Noon and Amazon.sa expose public seller APIs a solo founder could legally use (not directly confirmed in this session)",
+        "Pricing and market share of the existing 'Linker' competitor",
+        "Volume of demand beyond the few examples found"
+      ]
+    },
+    {
+      "opportunity_id": "GAP-03",
+      "problem": "Property management companies/brokers must manually register and manage lease contracts, renewals and payment tracking inside the Ejar (REGA) national rental platform; for portfolios of any real size this is described as a major operational bottleneck.",
+      "customer": "Saudi property management companies and real-estate brokers managing multiple rental units",
+      "segment": "B2B",
+      "sector": "PropTech / Real Estate",
+      "market": "Saudi Arabia",
+      "source": "Vendor content, developer guides",
+      "evidence": [
+        {
+          "claim": "Ejar registration is described as 'the #1 operational bottleneck for Saudi property managers,' with guides covering the full API flow from auth to bulk registration and rejection-code handling.",
+          "url": "https://yarn.com.sa/resources/ejar-api-integration-developer-guide/",
+          "source_title": "EJAR API Integration: Developer Guide - Yarn Cloud Technologies",
+          "summary": "Vendor developer-guide content describing Ejar registration as the top operational bottleneck for property managers (per search snippet; full page could not be fetched due to a proxy error in this session).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "For portfolios exceeding 500 units, Ejar integration is claimed to eliminate over 60 hours of manual administrative work per month.",
+          "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+          "source_title": "Ejar API Integration Software Development in Saudi Arabia (2026 Guide)",
+          "summary": "Vendor marketing content citing a 60-hours/month manual-work figure for large (500+ unit) portfolios (per search snippet; vendor-authored, unverified independently).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "API access to Ejar requires Saudi commercial registration, REGA developer/property-manager registration, PDPL data-privacy compliance certification, and a technical security assessment.",
+          "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+          "source_title": "Ejar API Integration Software Development in Saudi Arabia (2026 Guide)",
+          "summary": "Lists formal regulatory/registration prerequisites for using the Ejar API (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Established platforms (JEWARA, Property Automate) already have direct/approved API integration with Ejar for contract drafting and registration.",
+          "url": "https://propertyautomate.com/news/propgoto-ejar-integration-saudi-arabia",
+          "source_title": "Property Automate receives approval to integrate EJAR",
+          "summary": "Confirms incumbents already hold approved Ejar integrations, targeting larger property managers.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "JEWARA",
+          "url": "https://jewara.com/en/",
+          "notes": "Real-estate OS with direct Ejar API integration, appears enterprise-focused."
+        },
+        {
+          "name": "Property Automate",
+          "url": "https://propertyautomate.com/news/propgoto-ejar-integration-saudi-arabia",
+          "notes": "Received approval for Ejar integration; targets larger portfolios."
+        }
+      ],
+      "workaround": "Small/mid-size landlords and brokers manually enter and track contracts on Ejar's own portal rather than through an integrated system.",
+      "potential_solution": "A stripped-down assistant tool for small landlords/brokers (a handful to a few dozen units) who are underserved by enterprise platforms — potentially without needing full Ejar API access (e.g., guided data-entry / reminder / renewal-tracking tool), avoiding the heavy REGA registration barrier.",
+      "business_model": "Subscription per unit/month",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for actual amounts spent; only vendor claims of time saved were found.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether small property managers (below enterprise scale) can even get Ejar API access without going through a licensed aggregator",
+        "Real registration/approval timeline and cost for REGA developer status",
+        "Whether the founder-constraint 'avoid hard licences' rules this opportunity out entirely — full API route looks HARD; only a non-API assistant tool would fit a solo founder"
+      ]
+    },
+    {
+      "opportunity_id": "GAP-04",
+      "problem": "Small businesses without a full HR/payroll suite must manually keep Qiwa (labor contracts), Mudad (wage protection payroll upload) and GOSI (social insurance) in sync; content warns that any change must be reflected same-day across all three or the business risks financial/regulatory penalties.",
+      "customer": "Small Saudi businesses (a few to ~50 employees) doing HR/payroll administration without an integrated HR platform",
+      "segment": "B2B",
+      "sector": "HR Tech / GovTech compliance",
+      "market": "Saudi Arabia",
+      "source": "HR vendor blog content (search snippets only)",
+      "evidence": [
+        {
+          "claim": "Any modification made in Qiwa must be mirrored in Mudad and GOSI the same day; delaying synchronization by even a few days can trigger regulatory violations with financial and administrative costs.",
+          "url": "https://noqta.tn/ar/blog/qiwa-integration-hr-systems-saudi-nitaqat-2026",
+          "source_title": "دليل تكامل منصة قوى مع أنظمة الموارد البشرية 2026",
+          "summary": "Vendor blog stating the same-day cross-sync requirement between Qiwa/Mudad/GOSI and the penalty risk of delay (per search snippet, not independently fetched).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A payroll run on Mudad cannot be filed unless the employee is already registered in GOSI, and a Qiwa work-permit renewal cannot proceed unless GOSI monthly contributions are paid up to date — i.e. the three systems are interdependent but not natively linked for the employer.",
+          "url": "https://arbahbank.com/is-qiwa-platform-linked-to-social-insurance-gosi/",
+          "source_title": "هل منصة قوي مرتبطة بالتامينات؟",
+          "summary": "Article describing the interdependency between Qiwa, Mudad and GOSI compliance steps (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Bayzat",
+          "url": "https://www.bayzat.com/ar/ksa/blog/%D9%85%D8%A7-%D9%87%D9%8A-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D9%8F%D8%AF%D8%AF-%D9%88%D9%85%D8%A7-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%82%D8%AF%D9%85%D9%87%D8%A7/",
+          "notes": "Full HR/payroll platform automating Qiwa/Mudad/GOSI compliance; enterprise-oriented pricing likely out of reach for micro-businesses."
+        },
+        {
+          "name": "ZenHR",
+          "url": "https://www.zenhr.com/ar/home",
+          "notes": "Regional HR suite covering GOSI/WPS compliance."
+        }
+      ],
+      "workaround": "Micro-business owners/HR admins track changes manually across three separate government portals, often in spreadsheets, relying on memory/calendars to stay same-day compliant.",
+      "potential_solution": "A lightweight compliance-checklist/reminder tool (not a full payroll suite) that watches for changes and reminds/guides the small-business owner to update all three portals same-day — avoiding the cost of full HR suites, no deep API integration required if government APIs aren't public.",
+      "business_model": "Low-cost monthly subscription per company (micro-SME tier)",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND — no direct complaint, freelance request, or payment data found in this session (search budget was exhausted before a targeted Mostaql/complaint search could run).",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether GOSI/Mudad/Qiwa expose any public API a third party could legally use, or whether this is a portal-only (no-API) situation",
+        "Whether any direct complaints/freelance requests exist for this specific pain (not confirmed — evidence here is vendor-content only)",
+        "Real penalty amounts and how often small businesses actually get penalized for delayed sync"
+      ]
+    },
+    {
+      "opportunity_id": "GAP-05",
+      "problem": "Small service businesses (salons, home-service spas, small restaurants) that don't want to buy a full vertical SaaS suite still need to connect WhatsApp Business (for customer bookings/orders) to whatever booking/POS system they already use; several separate Mostaql projects show businesses commissioning bespoke WhatsApp Business API integrations from scratch each time.",
+      "customer": "Small Saudi salons, spas and restaurants without an existing vertical SaaS subscription",
+      "segment": "B2B",
+      "sector": "SMB Software / Vertical SaaS",
+      "market": "Saudi Arabia",
+      "source": "Mostaql freelance listings; competing vertical SaaS products",
+      "evidence": [
+        {
+          "claim": "A business commissioned a custom-built platform combining a booking website, admin dashboard and WhatsApp Business API integration for a home salon/spa service — built from scratch rather than bought off-the-shelf.",
+          "url": "https://mostaql.com/project/1259407-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%86%D8%B5%D8%A9-%D8%AD%D8%AC%D8%B2-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%B5%D8%A7%D9%84%D9%88%D9%86-%D9%88%D8%B3%D8%A8%D8%A7-%D9%85%D9%86%D8%B2%D9%84%D9%8A-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%84%D9%88%D8%AD%D8%A9-%D8%AA%D8%AD%D9%83%D9%85-%D8%AA%D9%83%D8%A7%D9%85%D9%84-%D9%85%D8%B9-whatsapp-business-api",
+          "source_title": "تطوير منصة حجز خدمات صالون وسبا منزلي (...تكامل مع WhatsApp Business API) | مستقل",
+          "summary": "Freelance project brief for a bespoke booking + WhatsApp Business API build (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple existing Saudi vertical SaaS products (Rowabi cashier, BeautyPro, OJlinker) already sell WhatsApp-integrated booking/ordering as a paid feature to salons/restaurants, evidencing willingness to pay for this connection.",
+          "url": "https://www.rowa.sa/",
+          "source_title": "روابي كاشير | نظام كاشير سحابي + طلبات واتساب + مخزون تلقائي من الفواتير",
+          "summary": "Product page for a cloud POS that receives WhatsApp orders directly and auto-updates inventory from supplier invoices — a paid, live product.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Rowabi (روابي)",
+          "url": "https://www.rowa.sa/",
+          "notes": "Cloud POS + WhatsApp ordering + auto inventory, aimed at restaurants/shops."
+        },
+        {
+          "name": "BeautyPro",
+          "url": "https://asl.sa/beauty-salons/",
+          "notes": "Salon management suite with WhatsApp notifications, bookings, billing."
+        },
+        {
+          "name": "OJlinker",
+          "url": "https://ojlinker.com.sa/",
+          "notes": "AI-driven WhatsApp salon booking automation."
+        }
+      ],
+      "workaround": "Businesses either buy one of the existing vertical SaaS suites (which bundle far more than just the WhatsApp connection) or pay a freelancer to build a one-off custom integration.",
+      "potential_solution": "A narrow, cheap 'WhatsApp-to-any-POS/booking-tool' middleware (using WhatsApp Business API / Cloud API) for businesses that already have a POS/booking tool they like and just want the WhatsApp layer added, instead of switching to a full vertical suite.",
+      "business_model": "Low monthly SaaS fee per WhatsApp number/business",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "Existing vertical SaaS products (Rowabi, BeautyPro, OJlinker) are live paid products, implying a real market pays for this capability, though bundled with more features; exact price NO RELIABLE EVIDENCE FOUND in this session.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Pricing of Rowabi/BeautyPro/OJlinker (not found this session)",
+        "Whether businesses actually want an unbundled WhatsApp-only layer vs. a full suite (not confirmed — could be false demand if bundling is preferred)",
+        "WhatsApp Cloud API official access/cost constraints for a solo founder reselling this"
+      ]
+    },
+    {
+      "opportunity_id": "GAP-06",
+      "problem": "Sellers who list on Noon.com/Amazon.sa marketplaces (in addition to or instead of a Salla/Zid store) do not get the kind of native ZATCA-compliant accounting sync that Salla/Zid merchants get via Qoyod/Wafeq/Daftra apps, since Qoyod/Wafeq's marketplace integrations found in this research were specific to Salla/Zid/Shopify — no evidence of a native Noon/Amazon.sa-to-accounting connector was found.",
+      "customer": "Saudi sellers on Noon.com/Amazon.sa marketplaces needing ZATCA e-invoicing and bookkeeping",
+      "segment": "B2B",
+      "sector": "Accounting / E-invoicing compliance",
+      "market": "Saudi Arabia",
+      "source": "Search results across Qoyod/Wafeq integration pages",
+      "evidence": [
+        {
+          "claim": "Qoyod's marketplace integration page (this session) only surfaces Salla, Zid, and Shopify connectors — no Noon or Amazon.sa connector was found in the results.",
+          "url": "https://www.qoyod.com/en/marketplace/e-commerce/zid/",
+          "source_title": "Zid E-commerce Integration with Qoyod",
+          "summary": "Qoyod's own integration pages found in search results list Salla/Zid/Shopify, not Noon/Amazon.sa, suggesting a coverage gap (absence of evidence, not confirmed absence).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Sellers likely export order reports from Noon/Amazon.sa seller portals and manually enter them into accounting software / prepare ZATCA invoices manually.",
+      "potential_solution": "A connector that pulls Noon.com/Amazon.sa seller order/settlement data and generates ZATCA-compliant e-invoices, feeding into Qoyod/Daftra/Wafeq via their existing general APIs.",
+      "business_model": "SaaS subscription per marketplace account",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Noon.com/Amazon.sa even expose seller-side order/settlement APIs usable by third parties (not verified this session — this is the single biggest unknown; without such an API this is not buildable as a clean integration)",
+        "Whether a dedicated Noon/Amazon-to-accounting connector already exists under a name not surfaced in these searches",
+        "How many Saudi sellers rely on Noon/Amazon.sa as primary channel vs. Salla/Zid"
+      ]
+    }
+  ],
+  "queries_used": [
+    "Salla app marketplace محاسبة ربط Qoyod Wafeq",
+    "مطلوب مبرمج ربط سلة مع برنامج محاسبة مستقل",
+    "Zid app store integration accounting ZATCA e-invoicing",
+    "مطلوب ربط قيود GOSI مدد قوى موارد بشرية مستقل",
+    "Ejar API integration property management Saudi",
+    "إدخال يدوي فواتير سلة زد محاسبة تعبت",
+    "مستقل ربط شحن سلة زد سمسا أرامكس تتبع الشحنات",
+    "مستقل ربط نون امازون مخزون محاسبة multi-channel",
+    "مستقل ربط واتساب نظام حجوزات كاشير مطعم صالون",
+    "مستقل ربط قوى مدد تأمينات موارد بشرية أتمتة",
+    "Qoyod Zid integration limitations plan price sync inventory review complaint",
+    "مستقل ربط عقاري إيجار تحصيل دفع منصة عقارات"
+  ],
+  "limitations": [
+    "WebFetch tool failed with 'proxy refused the connection' for every attempted fetch in this session (3 attempts), so all evidence below is based on WebSearch result snippets only, not verified full-page content — this is flagged per-claim as WEAK evidence and noted explicitly.",
+    "Web search budget (12 queries) was exhausted before I could run planned searches on NPHIES/insurance-claims integration pain and direct job-board evidence (Bayt/LinkedIn) for Salla/Zid API developer hiring demand — these lines of inquiry are not covered in the signals.",
+    "Mostaql/Khamsat project pages could not be opened to see actual budgets, full briefs, or client responses (only titles/snippets from search results were visible), so demand strength (how much money actually changes hands) is under-verified.",
+    "Shipping-company integration (SMSA/Aramex) with Salla/Zid appears to already be natively solved via official help-center articles found in this session, so it was excluded as a live opportunity rather than forced into a signal.",
+    "Could not verify whether Noon.com or Amazon.sa expose any public seller APIs — GAP-06 is speculative and should be treated as the weakest signal in this set pending API-availability confirmation.",
+    "No direct consumer/business complaint threads (Reddit, X, forums) were found for the Qiwa/Mudad/GOSI sync pain (GAP-04) — evidence there is vendor-blog content only, not a demonstrated freelancer/complaint market."
+  ]
+}

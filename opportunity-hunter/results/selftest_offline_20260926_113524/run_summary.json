@@ -1,0 +1,48 @@
+{
+  "run_id": "selftest_offline_20260926_113524",
+  "resumed_from": null,
+  "mode": "selftest_offline",
+  "status": "completed",
+  "elapsed_sec": 11.8,
+  "counts": {
+    "agent_processes_launched": 32,
+    "agent_tasks_executed": 28,
+    "distinct_agent_types_run": 21,
+    "agent_tasks_succeeded": 27,
+    "agent_tasks_failed": 1,
+    "agent_tasks_skipped": 0,
+    "agent_cache_hits": 0,
+    "web_searches": 28,
+    "web_fetches": 0,
+    "search_cache_hits": 0,
+    "budget_blocked_tool_calls": 0,
+    "raw_signals": 14,
+    "after_exact_dedup": 4,
+    "candidates_validated": 4,
+    "backlog": 0,
+    "gap_research_requests": 2,
+    "survived_killer": 3,
+    "rejected_by_killer": 1,
+    "undecided": 0,
+    "total_cost_usd": 0
+  },
+  "stage_times_sec": {
+    "1_DISCOVERY": 4.7,
+    "2_DEDUPLICATION": 1.0,
+    "3_VALIDATION": 2.0,
+    "4_KILLER_ROUND_1": 1.0,
+    "5_GAP_DETECTION_R1": 0.0,
+    "6_ADDITIONAL_RESEARCH_R1": 1.0,
+    "7_KILLER_FINAL_R1": 1.0,
+    "8_SYNTHESIS": 1.0,
+    "9_REPORT": 0.0
+  },
+  "failures": [
+    {
+      "agent": "gap_hunter",
+      "label": "gap_hunter",
+      "status": "failed",
+      "error": "mock failure: simulated permanent crash"
+    }
+  ]
+}

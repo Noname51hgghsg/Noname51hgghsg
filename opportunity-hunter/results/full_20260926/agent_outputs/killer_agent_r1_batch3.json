@@ -1,0 +1,239 @@
+{
+  "results": [
+    {
+      "candidate_id": "C11",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "WEAK_PAIN",
+          "reason": "The mandatory core legal step this product wraps (Maroof registration) is confirmed by Maroof's own official account to be free and to take only seconds with a few steps — undercutting the premise that social-media sellers need a paid guided wizard to get through it. The heavier compliance items (CR, ZATCA Fatoorah, 7-day return disclosures) are real, but the flagship 'Maroof onboarding' hook of the product is demonstrably already trivial per the regulator itself.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://twitter.com/maroof_sa/status/814795734864248834?lang=ar",
+              "summary": "Official Maroof account: 'التسجيل في #معروف بدون أي رسوم وبسيط جداً، ما يتطلّب غير ثواني وخطوات معدودة' (Maroof registration is free and very simple, taking only seconds and a few steps)."
+            },
+            {
+              "url": "https://manayr.com/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%88%D9%81/",
+              "summary": "Guide confirms registration flow is: log in via Nafath, pick activity type, enter store info, upload ID/CR — a short self-serve flow, not a complex multi-step process needing hand-holding."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "No demand evidence was found anywhere (freelance marketplaces, forums) for a paid all-in-one formalization wizard specifically. The only paid analogues found are cheap human facilitation agencies for the underlying free/near-free government paperwork (Maroof cert ~75 SAR via Lahint, CR issuance ~200 SAR via agencies) — evidence people pay humans for a small annoying task, not that they would buy a SaaS product for it. The dossier's own payment_validator independently reached the same PARTIAL/unproven conclusion.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://lahint.sa/ar/services/issuance-of-maarouf-certificate",
+              "summary": "Facilitation agency charges ~75 SAR to help obtain a Maroof certificate that is officially free and (per Maroof's own account) takes seconds to get directly."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "STRONG_COMPETITOR (Maroof itself)",
+        "NO_WILLINGNESS_TO_PAY",
+        "WEAK_PAIN",
+        "SMALL_MARKET (unregistered seller population size)"
+      ],
+      "remaining_uncertainties": [
+        "Actual size of the still-unregistered informal social-seller population is unknown — if very large and enforcement escalates, panic-driven demand for a compliance wrapper could still emerge",
+        "Whether bundling ZATCA Fatoorah setup guidance (a genuinely more complex step) rather than leading with Maroof could preserve a thinner but real value proposition"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "Would need direct evidence (e.g., a Mostaql/Khamsat request, a forum thread, or a pilot) that sellers will pay specifically for guidance beyond what Maroof's own seconds-long free flow and existing cheap CR agencies already provide, ideally centered on the harder ZATCA/Fatoorah step rather than Maroof.",
+      "summary": "Killed on two MAJOR, evidence-backed grounds: the flagship mandatory step (Maroof) is officially free and near-instant per Maroof's own account, and no evidence of demand for a paid wizard product (vs. cheap human facilitation of adjacent paperwork) was found anywhere."
+    },
+    {
+      "candidate_id": "C12",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "A direct AI competitor (ListaPro.ai) already exists live, paid, and positively reviewed, distributed through both Salla's and Shopify's official app stores — the exact discovery channel this candidate would need. It performs near-identical AI product-listing creation (from barcodes/images) plus multi-channel/inventory sync, with flexible subscription pricing. Additionally, Salla's own first-party 'Store Tools – AI Describer' app is embedded directly in the merchant dashboard merchants already use, giving zero-friction, trusted incumbency on top of the third-party competitor. Two independent, already-distributed players covering the same job leaves no credible wedge for a solo founder entering head-on with the same 'AI generates Arabic listings' pitch.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://apps.salla.sa/en/app/1532783652",
+              "summary": "ListaPro listed as a live, installed app in Salla's official App Store."
+            },
+            {
+              "url": "https://listapro.ai/pricing/",
+              "summary": "ListaPro offers monthly subscription plans scaled to product/channel count, with a free trial — a real paid product, not just marketing content."
+            },
+            {
+              "url": "https://apps.shopify.com/lista-pro",
+              "summary": "Same ListaPro product also listed in Shopify's App Store, confirming it is a mature, multi-platform, actively distributed product with user reviews praising time savings."
+            },
+            {
+              "url": "https://apps.salla.sa/en/app/709062167",
+              "summary": "Salla's own first-party 'AI Describer' app embedded in the merchant dashboard, generating/saving AI product descriptions natively."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "STRONG_COMPETITOR (searched ListaPro pricing/reviews, Salla/Zid native AI tools)",
+        "NO_WILLINGNESS_TO_PAY",
+        "HIGH_CAC (app-store distribution advantage of incumbents)"
+      ],
+      "remaining_uncertainties": [
+        "Whether ListaPro/Salla's native tool can actually ingest a messy raw supplier spreadsheet with arbitrary columns (true bulk catalogue migration) as opposed to one-image/barcode-at-a-time creation — if not, a narrow 'spreadsheet-to-live-catalogue migration' wedge could theoretically still exist",
+        "ListaPro's exact price points and real customer count were not confirmable this session (fetch blocked), so the price-undercut wedge size is unverified"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "Not recommended to pursue as framed. A narrower angle (pure bulk CSV/Excel-to-live-listing migration for suppliers with messy data, positioned as a complement to, not replacement for, ListaPro/Salla's native describer) might survive, but that is a materially different, narrower product than the one described.",
+      "summary": "FATAL STRONG_COMPETITOR: a live, paid, reviewed AI listing app (ListaPro) already occupies this exact niche in both Salla's and Shopify's official app stores, compounded by Salla's own native AI Describer tool — leaving no credible wedge for the product as currently scoped."
+    },
+    {
+      "candidate_id": "C13",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "At least six dedicated Saudi/Arabic contractor ERP or accounting products already explicitly market مستخلصات (progress-payment certificate) tracking features: Daftra, Bonyan ERP, Buildo, Orchida Soft, Sdeed, and BuildERP (muqawil-erp.com, which has a dedicated 'إدارة المستخلصات' product page). This is a considerably more crowded space than the candidate's original framing suggested.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://muqawil-erp.com/progress-claims/",
+              "summary": "BuildERP offers a dedicated progress-claims (مستخلصات) management module — another established competitor not in the original candidate dossier."
+            },
+            {
+              "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+              "summary": "Bonyan ERP content-markets directly against this exact pain point."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "Free مستخلص Excel templates are already abundant and actively distributed — including by an ERP vendor itself (Daftra) as a free lead-generation template, plus multiple standalone free-template sites — matching exactly the manual Excel workaround this candidate targets. Given the candidate's own open question ('would contractors pay for tracking vs. just wanting faster payment') and evidence that the real crisis driver is late owner/government payment orders (not a documentation gap — a named official body reported ~70% of certificates lacked a payment order), a lightweight paid tracker does not address the root cause and competes against free substitutes for the documentation side.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.daftra.com/templates/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5-%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA",
+              "summary": "Free downloadable مستخلص Excel template, offered by an ERP vendor itself, directly substituting for the proposed paid tool's core function."
+            },
+            {
+              "url": "https://www.droosmep.com/2024/10/contracting-invoice-excel-sheet-sample.html",
+              "summary": "Another free مستخلص Excel sheet template widely available for contractors/engineers."
+            },
+            {
+              "url": "https://www.argaam.com/ar/article/articledetail/id/502380",
+              "summary": "Official Contractors Authority statistic: ~70% of progress-payment certificates had no payment order issued — confirming the core pain is a payment/financing delay, not a documentation/tracking gap that software can fix."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "STRONG_COMPETITOR (searched for additional ERP/mustakhlas competitors)",
+        "NO_WILLINGNESS_TO_PAY (searched for free Excel template availability)",
+        "WEAK_PAIN (root cause is financing, not tracking)"
+      ],
+      "remaining_uncertainties": [
+        "None of the confirmed ERP competitors were verified to offer a mobile-first, photo-per-line-item, WhatsApp-shareable point solution specifically — a narrow wedge might exist if small subcontractors truly prefer simplicity over free Excel, but no evidence of that preference was found",
+        "Real-world pricing/adoption of the 6 named ERP competitors among truly small subcontractors (vs. mid/large contractors) is unconfirmed either way"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "Would need direct evidence that small subcontractors, faced with free Excel templates and several existing ERPs, would actually pay for a narrower mobile tool — e.g. a Mostaql/Khamsat request for exactly this kind of lightweight app (not a one-off custom Excel build).",
+      "summary": "Killed on two MAJOR grounds: a more crowded competitive field of established مستخلصات-tracking ERPs than originally assessed, plus strong evidence that free Excel templates already satisfy the documentation workaround while the real driver of the pain (~70% of certificates lack a payment order, per an official body) is a payment/financing problem no tracking software fixes."
+    },
+    {
+      "candidate_id": "C14",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "Munsit is a live, dedicated Gulf/Saudi-dialect (explicitly Najdi and Hijazi) Arabic speech-to-text and meeting-notes product with published, self-serve, pay-as-you-go pricing starting at roughly $0.129 per audio hour (~$8/month for ~100 minutes) — dramatically cheaper than the ~$5/audio-hour freelancer rate this candidate is built to undercut. It ships mobile apps on Google Play and the App Store, claims #1 ranking on the HuggingFace open Arabic ASR leaderboard, and offers structured meeting notes (speakers, action items, Arabic summary) matching this candidate's exact proposed feature set. This leaves essentially no price, feature, or distribution wedge for a solo founder entering head-on.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://munsit.com/",
+              "summary": "Munsit markets itself as '#1 Arabic Speech Recognition Platform with 25+ dialects support', explicitly including Saudi Najdi and Hijazi dialects."
+            },
+            {
+              "url": "https://munsit.com/blog/introducing-munsit-the-first-arabic-speech-to-text-app-built-for-you",
+              "summary": "Product announcement confirming both real-time meeting transcription and file-based transcription with structured output."
+            },
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.munsit.android",
+              "summary": "MunsitAI is a live, installed mobile app on Google Play, confirming real distribution, not just a landing page."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "STRONG_COMPETITOR (searched Munsit pricing/target customer)",
+        "TECHNICAL (Gulf-dialect ASR accuracy)",
+        "NO_WILLINGNESS_TO_PAY"
+      ],
+      "remaining_uncertainties": [
+        "Munsit's real-world accuracy on informal spoken Gulf dialect (vs. its own marketing claims) was not independently tested this session",
+        "Whether the demand skewed toward religious/lecture content on Khamsat/Mostaql would still prefer human transcription over any AI tool for trust/accuracy reasons, which could theoretically leave a thin niche — but this would apply equally against Munsit and against this candidate"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "Not recommended as framed. Any surviving angle would need to be a narrow content-vertical (e.g., religious-lecture-specific formatting/tashkeel) explicitly differentiated from Munsit's general-purpose product, with hands-on accuracy testing first.",
+      "summary": "FATAL STRONG_COMPETITOR: Munsit already is the exact proposed product — a live, cheap, self-serve, Saudi/Gulf-dialect-tuned Arabic transcription and meeting-notes tool with mobile app distribution — undercutting the candidate's own price-vs-freelancer value proposition by roughly 40x."
+    },
+    {
+      "candidate_id": "C15",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The core invoice-generation feature this product is built around is already commoditized and free: multiple ZATCA/VAT-compliant invoice generators are available at no cost (arabtoolbox's own generator is explicitly advertised as free; ALZERP, Fatorli, Fatoora.app similarly free), and free وثيقة العمل الحر invoice templates are also readily available. The underlying وثيقة العمل الحر document itself is also confirmed free to obtain, with VAT only applying above 375,000 SAR/year (a threshold most freelancers likely never cross).",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://arabtoolbox.com/tools/vat-invoice-generator",
+              "summary": "A ZATCA/VAT invoice generator advertised and offered explicitly as free — a direct free substitute for the candidate's core invoicing feature."
+            },
+            {
+              "url": "https://fawater.net/templates/%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%B9%D9%85%D9%84-%D8%AD%D8%B1",
+              "summary": "Free invoice template specifically for وثيقة العمل الحر / freelance work document holders."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "The dossier's own payment_validator, after searching for payment evidence, explicitly concluded willingness-to-pay for this specific niche tool is 'PARTIAL at best, weighted toward NO,' and found no evidence at all that anyone pays for the payment-delay/reminder-tracking half of the proposed product — the one differentiator not already covered by free tools or the platform-native (free) Khamsat/Mostaql escrow mechanism.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://khamsat.com/community/general/387001-%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%AA%D8%A3%D8%AE%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%89-%D9%81%D9%89-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
+              "summary": "The only payment-delay evidence found concerns platform-native (free) escrow mitigation on Khamsat, not evidence of demand for a paid off-platform reminder tool."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "STRONG_COMPETITOR (free invoice generator availability)",
+        "NO_WILLINGNESS_TO_PAY",
+        "SMALL_MARKET (freelancers near VAT threshold)"
+      ],
+      "remaining_uncertainties": [
+        "Whether a narrow 'am I above the VAT threshold' guidance-only product (skipping invoicing entirely, which is free/commoditized) could find payers has not been tested — no demand signal was found either way",
+        "Population size of freelance-document holders actually near/above the 187,500-375,000 SAR VAT thresholds is unknown, which bounds the addressable market for even a narrow guidance product"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "The invoicing feature should be dropped entirely (it's free and commoditized); only a standalone VAT-threshold-guidance or payment-chasing product could theoretically survive, but no demand evidence exists for either in isolation.",
+      "summary": "Killed on two MAJOR grounds: the core invoicing feature is already free and commoditized across multiple tools, and the dossier's own payment validation concluded willingness-to-pay is weighted toward NO with zero evidence anyone pays for the proposed payment-reminder differentiator."
+    }
+  ],
+  "queries_used": [
+    "ListaPro Salla app pricing reviews",
+    "Munsit.com pricing SAR subscription Arabic transcription",
+    "\"وثيقة العمل الحر\" فاتورة تطبيق مجاني ضريبة",
+    "مستخلصات مقاولين برنامج مجاني اكسل تتبع تطبيق جوال",
+    "Maroof تسجيل خطوات سهل بسيط تجربة",
+    "Listapro Salla app reviews installs \"ريال\" OR \"$\" شهري سعر",
+    "Munsit Arabic speech to text enterprise customers pricing \"per user\" OR \"per month\"",
+    "مقاول باطن \"المشكلة مو\" OR \"ما احتاج برنامج\" تأخير دفعات مستخلص"
+  ],
+  "limitations": [
+    "WebFetch to listapro.ai/pricing and munsit.com was blocked by the proxy ('proxy refused the connection'); conclusions about these competitors rely on WebSearch snippets rather than directly fetched pages.",
+    "Could not independently verify ListaPro's or Munsit's exact current pricing tiers/customer counts beyond what search snippets and their own blog/marketing pages disclosed.",
+    "Did not re-verify every claim already validated by the upstream evidence/payment/competition/feasibility validators in the dossiers; this pass focused search budget on the highest-leverage attack vectors (competitor discovery and free-substitute discovery) for each candidate.",
+    "Arabic-language forum/complaint searches for C13 did not surface individual named complainant posts explicitly refusing to pay for software (only aggregate news/blog content), so the 'financing not software' framing rests on official statistics plus logical inference rather than direct quotes."
+  ]
+}

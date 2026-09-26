@@ -1,0 +1,252 @@
+{
+  "results": [
+    {
+      "candidate_id": "C11",
+      "stack": {
+        "frontend": "Next.js/React (Arabic RTL) guided wizard + checklist UI, mobile-first",
+        "backend": "Node.js (Next.js API routes) for wizard logic, reminders, user accounts",
+        "database": "Postgres (Supabase) storing business profile, checklist progress, reminder schedule",
+        "authentication": "Supabase Auth / phone OTP (common pattern for KSA consumer/small-biz apps)",
+        "ai": "Claude/GPT API to answer freeform questions about CR/Maroof steps and generate a personalized step-by-step plan from user inputs (business type, sales channel, revenue)",
+        "apis": "No official Maroof or Business Platform (business.sa) public API found in this session — product cannot auto-submit registrations, only guide/link users to the government portals",
+        "hosting": "Vercel (app) + Supabase (DB) — note PDPL data-residency caveat below",
+        "payments": "Moyasar (flat ~2.5% per transaction, no monthly fee, Mada/STC Pay/Apple Pay support) for one-time setup fee or subscription",
+        "integrations": "Deep-links to Maroof (maroof.sa) and Business Platform (business.sa); optional links to Salla/Zid/Fatoorah for store+invoicing setup; no ZATCA e-invoicing engine in MVP"
+      },
+      "mvp_scope": [
+        "Onboarding questionnaire (channel, revenue, business type) generating a personalized checklist",
+        "Step-by-step guided content for CR + Maroof/Business Platform registration with direct deep-links",
+        "Progress tracker + email/SMS reminders for incomplete steps and renewal dates",
+        "Basic reference guide to 7-day return policy and required pre-purchase disclosures (content, not enforcement)",
+        "Explicitly OUT of MVP scope: actual ZATCA e-invoicing generation/integration (kept as a linked recommendation to third-party tools)"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "~50-150 SAR (hosting + low-volume LLM calls + SMS/email reminders)",
+      "build_time_weeks": "3-4",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Maroof registration is free (SAR 0) and requires only a CR or freelance certificate + bank account — the underlying government process itself has no cost, so this product only monetizes guidance/convenience, not access.",
+          "url": "https://watily.com/blog/en/saudi-maroof-online-store-registration-2026/",
+          "severity": "LOW"
+        },
+        {
+          "requirement": "Ministry of Commerce is steering store owners toward the newer Business Platform (business.sa) instead of/alongside Maroof, creating positioning ambiguity for a 'Maroof wizard' product.",
+          "url": "https://xo.sa/en/blog/maroof-and-cr-for-online-stores/",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "PDPL — personal data collected in Saudi Arabia must generally remain in-Kingdom unless the destination has adequate protection (SDAIA-determined) or contractual safeguards exist; affects where you host user/business profile data.",
+          "url": "https://incountry.com/blog/saudi-arabia-data-sovereignty-policies-and-requirements/",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "ZATCA e-invoicing becomes mandatory once merchants cross the applicable Phase 2 wave/VAT threshold — referenced but excluded from this product's MVP.",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "No public Maroof/business.sa API found — cannot auto-file registrations on the user's behalf, only guide them (limits differentiation vs. free official instructions)",
+        "No confirmed data on the actual size of the still-unregistered informal seller population"
+      ],
+      "blockers": [
+        "Core government registration (Maroof) is free and, per search, already simple (CR/freelance cert + bank account) — the value proposition rests entirely on convenience/hand-holding, which a well-written free blog post could partly substitute",
+        "No automation possible without an official API, so the product is a content/checklist wrapper rather than a technical integration — easy to build but also easy to copy, low technical moat",
+        "Ambiguity between Maroof and the newer Business Platform could confuse product positioning and require ongoing content updates as government process changes"
+      ],
+      "summary": "Technically an EASY build for a solo founder (guided checklist + reminders + LLM Q&A, no hard integrations) at low cost (~500-900 SAR MVP). Main risk is not technical feasibility but business model: Maroof registration itself is free and reportedly simple, and no official API exists to automate filing, so the product can only add convenience/content value, not automation — this is a market-fit risk, not a build blocker. PDPL data-residency and the Maroof→Business Platform transition are manageable but require attention to hosting choice and content freshness."
+    },
+    {
+      "candidate_id": "C12",
+      "stack": {
+        "frontend": "Next.js/React merchant dashboard (bulk upload, review/edit AI-generated listings)",
+        "backend": "Node.js service handling CSV/photo ingestion, calling AI + Salla/Zid APIs",
+        "database": "Postgres for job queue, generated content drafts, merchant OAuth tokens",
+        "authentication": "Salla/Zid OAuth 2.0 (confirmed public docs) for merchant store connection + own account login",
+        "ai": "Claude/GPT-4 (with vision) for generating Arabic SEO product titles/descriptions from spreadsheet + photos",
+        "apis": "Salla Merchant API (docs.salla.dev, OAuth2, /admin/v2/products create/list endpoints confirmed) and Zid Merchant API (docs.zid.sa, confirmed Create Product / variants / categories endpoints) — both publicly documented and usable by third-party developers",
+        "hosting": "Vercel/Railway for app + worker for bulk jobs",
+        "payments": "Moyasar (~2.5% flat, no monthly fee) for per-product or subscription billing",
+        "integrations": "Direct Salla/Zid API integration for bulk publish; CSV/Excel import for supplier catalogues"
+      },
+      "mvp_scope": [
+        "Connect Salla or Zid store via OAuth",
+        "Upload supplier CSV/spreadsheet + product photos",
+        "AI generates Arabic title, description, and category suggestion per product",
+        "Merchant reviews/edits drafts in a simple table UI, then bulk-publishes via Salla/Zid API",
+        "Basic usage-based or per-catalogue-size subscription billing via Moyasar"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "~150-400 SAR (AI API usage scales with catalogue volume + hosting)",
+      "build_time_weeks": "4-6",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Handling merchant/customer data through Salla/Zid APIs falls under PDPL general obligations (consent, data minimization); no special sector licence required beyond standard business registration.",
+          "url": "https://incountry.com/blog/saudi-arabia-data-sovereignty-policies-and-requirements/",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "Relies on merchant-supplied spreadsheets/photos being reasonably complete — quality of AI output depends on input data quality",
+        "If distributing via Salla/Zid's official App Marketplace (for discovery), each platform's app review/approval process could add delay beyond pure build time, though a standalone tool using merchant-provided API keys can bypass this for early customers"
+      ],
+      "blockers": [
+        "None found that block a solo build — both Salla and Zid expose public, documented, OAuth-based Merchant APIs with product create/list endpoints, which is DIRECT evidence this is technically buildable without special partnership access"
+      ],
+      "summary": "Feasible MODERATE-complexity solo build: both Salla and Zid publish public developer documentation (OAuth2, product CRUD endpoints) confirmed via docs.salla.dev and docs.zid.sa, so the core integration risk is low. Main effort is the AI content pipeline (bulk generation + review UI) and handling messy merchant data, not platform access. Existing manual listing services (~200 SAR/batch per one vendor, weak evidence) show sellers already pay for this task, but that evidence is thin on price/currency — worth confirming before pricing the product."
+    },
+    {
+      "candidate_id": "C13",
+      "stack": {
+        "frontend": "Next.js/React PWA, mobile-first (site visits happen on phones)",
+        "backend": "Node.js API for project/line-item CRUD, % completion math, deduction calculations",
+        "database": "Postgres for projects, line items, photos, certificate history",
+        "authentication": "Phone OTP or email/password (simple, contractor-friendly)",
+        "ai": "Not required for MVP; optional future OCR to import BOQ line items from PDF/Excel",
+        "apis": "None required — self-contained record-keeping tool; PDF generation via a library (e.g., Puppeteer/pdf-lib) for the shareable certificate",
+        "hosting": "Vercel/Railway + object storage (Supabase Storage/S3) for site photos",
+        "payments": "Moyasar for monthly per-project or per-seat subscription",
+        "integrations": "wa.me deep-links to share generated PDF certificates over WhatsApp (no WhatsApp Business API/BSP fees needed for MVP, since it's just opening a chat with an attached file, not automated messaging)"
+      },
+      "mvp_scope": [
+        "Create project, add line items with contract value and % complete",
+        "Attach photos as proof of completed work per line item",
+        "Auto-calculate running totals, deductions, and amount due",
+        "Generate a shareable PDF progress certificate",
+        "Simple aging view showing outstanding/unapproved certificates for follow-up"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 800,
+      "monthly_run_cost_sar": "~50-100 SAR (basic hosting, storage for photos, PDF generation, no AI/3rd-party API costs)",
+      "build_time_weeks": "3-5",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [
+        "None technical — all data (line items, % complete, photos) is user-supplied; no external data source or API dependency"
+      ],
+      "blockers": [
+        "No regulatory or technical blockers found. The main open risk (per the candidate's own open_questions) is commercial, not feasibility: whether small contractors would pay for a tracking tool versus wanting faster payment (a financing problem, not a software problem) — evidence for this candidate is WEAK/anecdotal (news article + blog posts) and does not establish willingness to pay."
+      ],
+      "summary": "The most straightforward MVP of the five: plain CRUD + photo upload + PDF generation + simple aging view, no AI, no external APIs, no licences. EASY complexity, buildable in 3-5 weeks solo at very low cost. Existing competitors (Buildo, Bonyan ERP, Orchida Soft) confirm full contracting-ERP alternatives exist at a higher price/complexity tier, supporting room for a cheaper, simpler point solution — but no direct pricing evidence for what small contractors currently pay, so willingness-to-pay remains unvalidated (flagged in the source candidate's own open questions)."
+    },
+    {
+      "candidate_id": "C14",
+      "stack": {
+        "frontend": "Next.js/React simple upload UI + transcript/minutes viewer with speaker labels",
+        "backend": "Node.js orchestrating file upload, ASR API call, and LLM post-processing",
+        "database": "Postgres/Supabase for job metadata, transcripts; temporary object storage for audio files (auto-delete after processing for privacy)",
+        "authentication": "Email/phone login",
+        "ai": "Third-party Arabic-capable ASR API (e.g., Speechmatics — claims up to 96% word accuracy on Arabic; or Deepgram Nova-3; or Cohere Transcribe Arabic — reported to outperform Whisper on Gulf/Emirati dialect benchmarks) for transcription, plus Claude/GPT for structuring into meeting minutes with action items and Arabic summary",
+        "apis": "Speechmatics / Deepgram / Cohere Transcribe API (exact per-minute pricing NOT confirmed in this session — a WebFetch attempt to compare pricing failed due to a proxy error)",
+        "hosting": "Vercel + object storage for temporary audio files",
+        "payments": "Moyasar, pay-per-audio-minute or monthly subscription",
+        "integrations": "None required beyond the chosen ASR vendor's API"
+      },
+      "mvp_scope": [
+        "Upload audio file (meeting/lecture recording)",
+        "Call a Gulf-dialect-capable ASR API to transcribe",
+        "LLM post-processes into a structured Arabic summary with speaker turns and action items",
+        "Export as text/PDF/Word",
+        "Pay-per-minute or credit-based billing"
+      ],
+      "mvp_cost_sar_low": 700,
+      "mvp_cost_sar_high": 1000,
+      "monthly_run_cost_sar": "~200-500 SAR (usage-based ASR API costs scale with audio volume; exact per-minute rates unconfirmed)",
+      "build_time_weeks": "3-5",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Uploaded meeting/lecture audio likely contains personal data (voices, names discussed); PDPL general obligations apply (consent, data minimization, cross-border transfer rules if the ASR vendor processes data outside KSA).",
+          "url": "https://incountry.com/blog/saudi-arabia-data-sovereignty-policies-and-requirements/",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "Product quality depends entirely on a third-party ASR vendor's actual accuracy on Saudi/Gulf dialect specifically — evidence is mixed: one source states 'Whisper fails at handling Saudi/Gulf dialect,' another benchmark (on Emirati Arabic) shows Whisper-large-v3 competitive with or better than some rivals, while vendor marketing (Speechmatics, Cohere) claims to beat Whisper — this needs hands-on testing before committing to a vendor",
+        "Exact per-minute API pricing for Speechmatics/Deepgram/Cohere not confirmed in this session (fetch attempt failed) — needed to validate unit economics against the ~$5/audio-hour freelancer benchmark"
+      ],
+      "blockers": [
+        "None outright blocking, but real technical risk: if the chosen ASR vendor's Gulf-dialect accuracy is not clearly better than free/cheap generic Whisper, the product's core value proposition (quality gap vs. AI) weakens — must validate with real Gulf-dialect audio samples before launch",
+        "Unit economics unverified: need confirmed per-minute vendor pricing to know if undercutting the ~$5/audio-hour freelancer rate (itself only WEAK evidence) is actually profitable"
+      ],
+      "summary": "MODERATE complexity, feasible solo as an API-wrapper product (no need to train/host own ASR model — commercial Arabic-capable ASR APIs exist and are reachable by a solo developer). However, evidence on Gulf-dialect accuracy is genuinely mixed across sources found this session, and exact vendor pricing could not be confirmed (a pricing-comparison fetch failed), so both the technical differentiation claim and the unit-economics claim need direct validation with real audio samples and vendor quotes before building."
+    },
+    {
+      "candidate_id": "C15",
+      "stack": {
+        "frontend": "Next.js/React dashboard for income entry, VAT-threshold status, invoice generation, payment reminders",
+        "backend": "Node.js for VAT threshold logic, invoice numbering/QR generation, reminder scheduling",
+        "database": "Postgres for income records, invoices, client contacts, reminder log",
+        "authentication": "Email/phone login",
+        "ai": "Claude/GPT for a guided Q&A ('am I above the VAT threshold?', plain-language explanation of obligations) and drafting polite payment-reminder messages",
+        "apis": "ZATCA Fatoora e-invoicing — Phase 1 (QR-code, no live clearance) is buildable directly; full Phase 2 (CSR/CSID onboarding, cryptographic stamping, real-time clearance/reporting API) is materially harder and best handled via an existing third-party ZATCA-compliance middleware/API rather than raw implementation, since Phase 2 requires X.509 certs, SHA-256 hash chains and live API calls to ZATCA's Fatoora platform",
+        "hosting": "Vercel/Supabase, with attention to PDPL data-residency for financial/income data",
+        "payments": "Moyasar (flat ~2.5%, no monthly fee) for subscription billing — the product must stay a tracker/reminder and NOT hold or move client funds itself, to avoid crossing into SAMA-regulated payment-services territory",
+        "integrations": "wa.me links for payment-reminder nudges (no BSP needed for MVP); optional integration with a third-party Fatoora-compliance vendor for Phase 2 clients"
+      },
+      "mvp_scope": [
+        "Income entry + VAT-threshold calculator (flags approach to 187,500/375,000 SAR thresholds)",
+        "Simple compliant invoice generator (Phase-1-style: QR code, required fields) as PDF",
+        "Client/invoice tracking with due-date and automated reminder nudges (email/WhatsApp link)",
+        "Plain-language guidance chatbot on freelancer VAT obligations",
+        "Explicitly OUT of MVP: live ZATCA Phase 2 clearance/reporting API integration and any client-fund holding/escrow feature"
+      ],
+      "mvp_cost_sar_low": 700,
+      "mvp_cost_sar_high": 1000,
+      "monthly_run_cost_sar": "~100-300 SAR (hosting + LLM usage; add vendor fee if using a third-party Fatoora middleware for Phase 2 clients)",
+      "build_time_weeks": "5-8",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "ZATCA e-invoicing Phase 2 requires CSR/CSID onboarding, X.509 digital signatures, SHA-256 invoice hash chains and live API integration with ZATCA's Fatoora platform — materially more complex than a basic invoice generator; scoping MVP to Phase-1-style compliant invoices avoids this for most micro-freelancers.",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/Introduction/Pages/Roll-out-phases.aspx",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "VAT registration is mandatory above 375,000 SAR/year revenue and optional between 187,500-375,000 SAR (per third-party summary, not independently re-verified against the official ZATCA source this session).",
+          "url": "https://e-invoice.io/en/%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AF%D9%84%D9%8A%D9%84-%D8%B4%D8%A7%D9%85%D9%84-2/",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "Financial/income data handling falls under PDPL general obligations (data residency/adequacy for cross-border processing).",
+          "url": "https://incountry.com/blog/saudi-arabia-data-sovereignty-policies-and-requirements/",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "No confirmed data on how many freelance-document holders are near/above VAT thresholds, or what share work with off-platform direct clients (population size unverified)",
+        "Real pricing/adequacy of existing competitor tools (fawtar.app, arabtoolbox ZATCA generator) not independently confirmed this session"
+      ],
+      "blockers": [
+        "If the target segment actually needs live ZATCA Phase 2 integration (not just Phase 1 QR invoices), building that directly is a genuine HARD-complexity undertaking (cryptographic onboarding, real-time API) that a solo founder should outsource to an existing compliance middleware rather than build from scratch — must scope MVP carefully to Phase-1/threshold-guidance only",
+        "Must avoid any feature that holds or transfers client funds on the freelancer's behalf, which would risk requiring a SAMA payment-services licence — this boundary was not independently verified with an official SAMA source in this session and should be treated as a hard product-design constraint"
+      ],
+      "summary": "Feasible as a MODERATE-complexity solo build IF scoped tightly to VAT-threshold guidance + Phase-1-style compliant invoicing + reminder tracking, avoiding both live ZATCA Phase 2 clearance integration and any fund-holding feature (both of which would push this toward HARD/regulated territory). ZATCA Phase 2's real technical requirements (CSR/CSID, X.509 certs, hash chains) are confirmed via ZATCA's own site and are non-trivial; a disciplined MVP scope keeps this buildable within budget and timeline, but scope creep toward full Phase-2 compliance or payment-holding would meaningfully raise both complexity and regulatory risk."
+    }
+  ],
+  "queries_used": [
+    "Maroof certification registration requirements cost Saudi Ministry of Commerce",
+    "ZATCA Fatoora e-invoicing API integration requirements developers phase 2",
+    "Salla API public developer documentation OAuth products",
+    "Zid API developer documentation products create",
+    "Saudi PDPL personal data protection law data localization requirements cloud hosting",
+    "Arabic Gulf dialect speech to text API accuracy Whisper 2026",
+    "Moyasar Tap payments pricing fees Saudi Arabia API integration"
+  ],
+  "limitations": [
+    "WebFetch to munsit.com/blog/best-arabic-speech-to-text failed ('proxy refused connection') — could not confirm exact per-minute pricing for Speechmatics/Deepgram Nova-3/Cohere Transcribe Arabic, so C14 unit economics vs. the ~$5/audio-hour freelancer benchmark remain unverified with hard numbers.",
+    "No official public API found for Maroof (maroof.sa) or the newer Business Platform (business.sa) — C11's feasibility assessment assumes a content/checklist wrapper, not automated form-filing, since no API access could be confirmed.",
+    "Did not independently verify with an official SAMA source the exact boundary at which a payment-reminder/tracking feature (C13, C15) would cross into requiring a SAMA payment-services licence; treated as a design constraint based on general founder-constraints guidance rather than a fetched regulation.",
+    "VAT registration thresholds (375,000 / 187,500 SAR) for C15 are taken from a third-party summary (e-invoice.io) carried over from the input evidence, not independently re-verified against ZATCA's own official page in this session.",
+    "Used 7 of 10 available searches and attempted 1 of 6 fetches (which failed); prioritized the highest-value regulatory/technical queries over exhaustive coverage, so some secondary details (e.g., exact ASR vendor pricing, official SAMA payment-licence thresholds) remain unconfirmed and are flagged above rather than guessed."
+  ]
+}

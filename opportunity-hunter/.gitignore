@@ -1,7 +1,8 @@
 .env
 __pycache__/
 *.pyc
-database/*.db
-database/*.db-*
+database/search_cache.db*
+database/*.db-wal
+database/*.db-shm
 results/*/_work/
 results/*/selftest.db*

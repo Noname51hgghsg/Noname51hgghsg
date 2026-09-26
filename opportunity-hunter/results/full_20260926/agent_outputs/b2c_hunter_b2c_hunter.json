@@ -1,0 +1,412 @@
+{
+  "agent": "b2c_hunter",
+  "signals": [
+    {
+      "opportunity_id": "B2C-01",
+      "problem": "Homeowners/renters need trustworthy, fast home maintenance (AC, plumbing, electrical) but face a fragmented market of many competing apps and informal technicians with inconsistent quality/pricing.",
+      "customer": "Urban households (Riyadh/Jeddah/Dammam) needing AC, plumbing, electrical or painting work",
+      "segment": "B2C",
+      "sector": "Home services",
+      "market": "Saudi Arabia",
+      "source": "Web search (Arabic) for Saudi home-maintenance apps",
+      "evidence": [
+        {
+          "claim": "At least 6-7 competing home-maintenance apps (Dari, Maharah, Serve, GARO, Taskty, B8ak) already operate in Saudi Arabia, each promising fast technician dispatch.",
+          "url": "https://www.bayut.sa/blog/%D9%85%D9%82%D8%AA%D8%B7%D9%81%D8%A7%D8%AA/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B2%D9%84/",
+          "source_title": "ما هي أفضل تطبيقات صيانة المنازل في السعودية؟ | مدونة بيوت السعودية",
+          "summary": "Blog post lists multiple competing Saudi home-maintenance apps, indicating an active but fragmented market (per search snippet, page not fetched).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "serve.sa markets itself with a free-inspection hook ('اطلب والكشف مجانا'), implying the paid step is the actual repair — a common lead-gen model in this space.",
+          "url": "https://serve.sa/",
+          "source_title": "تطبيق سيرف للصيانة المنزلية",
+          "summary": "Landing page copy for a Riyadh-focused maintenance app offering AC/plumbing/electrical/painting dispatch (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Serve (سيرف)",
+          "url": "https://serve.sa/",
+          "notes": "Riyadh-focused technician dispatch app"
+        },
+        {
+          "name": "GARO",
+          "url": "https://www.garoapp.com/",
+          "notes": "General home maintenance marketplace app"
+        }
+      ],
+      "workaround": "Households call individual technicians found via WhatsApp/Haraj referrals, or use one of several competing apps with unknown consistency.",
+      "potential_solution": "Niche, quality-verified maintenance booking service for a specific under-served city/service (e.g. AC servicing subscription with fixed pricing and technician ratings) rather than competing head-on with incumbents.",
+      "business_model": "Commission per job + optional maintenance subscription (seasonal AC service plans)",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no specific price points fetched/confirmed this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual price points and margins of incumbents",
+        "Whether any incumbent has real traction (download counts, revenue) — not verified this session",
+        "Whether a solo founder can differentiate against several funded competitors"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-02",
+      "problem": "Parents need private tutors for their children and currently rely on scattered WhatsApp numbers, Haraj listings and dozens of near-identical small websites with no vetting, reviews or standardised pricing.",
+      "customer": "Parents of school-age children in Riyadh and other major cities",
+      "segment": "B2C",
+      "sector": "Education",
+      "market": "Saudi Arabia",
+      "source": "Web search (Arabic) for private tutor requests",
+      "evidence": [
+        {
+          "claim": "Multiple independent single-purpose websites (my-teacherprivate.com, privateteachersa.com, my-private-teacher.com, alnajah-teachers.com) exist purely to list phone/WhatsApp numbers for private tutors in Riyadh, each competing for the same demand.",
+          "url": "https://privateteachersa.com/",
+          "source_title": "الرئيسية - معلمين ومعلمات خصوصي في الرياض",
+          "summary": "Landing page offering private tutors in Riyadh via WhatsApp contact, one of several nearly identical sites found (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Haraj (general classifieds site) has an active category of private-tutor listings, showing organic demand outside dedicated tutoring platforms.",
+          "url": "https://haraj.com.sa/en/search/%D9%85%D8%AF%D8%B1%D8%B3%20%D8%AE%D8%B5%D9%88%D8%B5%D9%8A/",
+          "source_title": "افضل عروض (مدرس خصوصي) جديد و مستعمل في السعودية",
+          "summary": "Classifieds search results for private tutors on Haraj (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "My Teacher",
+          "url": "https://my-teacherprivate.com/",
+          "notes": "WhatsApp-first tutor matching site"
+        },
+        {
+          "name": "معلم السعودية",
+          "url": "https://teachersuadi.cloud/index",
+          "notes": "Claims to be a 'platform' for private lessons"
+        }
+      ],
+      "workaround": "Parents cold-call numbers on classifieds/single-page sites with no vetting, reviews, or price transparency; matching is manual via WhatsApp.",
+      "potential_solution": "Lightweight vetted-tutor marketplace with reviews, subject/grade filters and transparent hourly rates, monetised via a small booking/commission fee — differentiated by trust signals the current fragmented sites lack.",
+      "business_model": "Commission per booked session or lead-fee to tutors",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no confirmed hourly rate found this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual hourly rates parents pay",
+        "Whether parents would pay a platform fee on top of tutor rate, or expect it free",
+        "Tutor supply-side willingness to pay for leads"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-03",
+      "problem": "Parents struggle with registration and day-to-day use of the mandatory government school platform 'Madrasati', generating visible public complaints, yet cannot avoid using it since it's the official channel for grades/homework.",
+      "customer": "Parents of public/private school students in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Education / EdTech",
+      "market": "Saudi Arabia",
+      "source": "News article on Madrasati registration complaints",
+      "evidence": [
+        {
+          "claim": "Many parents publicly complained (a wave of criticism on Twitter) that Madrasati registration procedures were long and difficult.",
+          "url": "https://www.alwatan.com.sa/article/1054515",
+          "source_title": "شكوى من تعقيدات التسجيل في منصة مدرستي - جريدة الوطن السعودية",
+          "summary": "Al-Watan newspaper article reporting parent complaints about complicated Madrasati registration (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Madrasati official support",
+          "url": "https://www.backtoschool.sa/tickets",
+          "notes": "Government ticketing system for platform issues"
+        }
+      ],
+      "workaround": "Parents vent on social media and submit tickets to official support; no independent tool simplifies the platform for them.",
+      "potential_solution": "An unofficial companion app/browser extension (built on public info, not scraping credentials insecurely) that aggregates Madrasati notifications, translates/simplifies homework and grade updates, and sends WhatsApp/SMS digest summaries to parents.",
+      "business_model": "Freemium subscription for busy parents (e.g. 10-20 SAR/month for consolidated notifications)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Madrasati exposes any public/parent-side API or only a closed login portal (login-gated = technically hard/risky to build against)",
+        "Whether parents would pay for a convenience layer on top of a free mandatory government platform",
+        "Current severity of complaints (article date unknown, could be dated)"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-04",
+      "problem": "Consumers who cancel or freeze gym memberships (e.g. after a branch closes) report gyms refusing refunds for unused time or forcing branch transfers instead of refunding, per contract terms that heavily favour the club.",
+      "customer": "Gym/fitness club members in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Fitness / Consumer rights",
+      "market": "Saudi Arabia",
+      "source": "Web search on gym membership freeze/refund complaints",
+      "evidence": [
+        {
+          "claim": "A legal-advice article specifically addresses the scenario of a gym closing a branch and members being refused a refund for the remaining membership value.",
+          "url": "https://justice-lawhome.com/gym-branch-closed-membership-refund-saudi/",
+          "source_title": "استرداد اشتراك النادي الرياضي بعد إغلاق الفرع",
+          "summary": "Legal guidance page dedicated to gym-branch-closure refund disputes, implying this is a recurring real dispute type in Saudi Arabia (per search snippet, not fetched due to budget).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Fitness Time's own terms show freeze fees (e.g. an administrative fee per month of freeze) and non-refundable membership fees after 2 days, illustrating consumer-unfavourable contract terms across the industry.",
+          "url": "https://www.fitnesstime.com.sa/ar-sa/subscription-contract-terms-and-conditions",
+          "source_title": "Subscription Contract Terms & Conditions - Fitness Time",
+          "summary": "Official contract terms page showing freeze fees and non-refundable membership clauses (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Consumers who feel wronged must individually research consumer-protection law or hire a lawyer; no self-serve tool exists to generate a formal complaint/demand letter.",
+      "potential_solution": "A simple AI-assisted web tool where consumers describe their subscription dispute (gym, telecom, etc.) and get an auto-generated formal complaint letter/CPA (Consumer Protection Association) submission text in Arabic, for a small one-time fee.",
+      "business_model": "Pay-per-document (one-time fee, e.g. 20-50 SAR) for generated complaint/demand letter",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "How frequently these disputes actually occur (no volume/statistics found)",
+        "Whether consumers would pay for a document instead of using free CPA (Consumer Protection Association) channels",
+        "Legal accuracy requirements — risk of this bordering on unauthorised legal advice"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-05",
+      "problem": "Vehicle owners can be blocked from renewing their car registration (استمارة) if they have unpaid traffic fines, and forgetting to renew triggers an escalating penalty (100 SAR per year late) — a completely avoidable cost caused by poor visibility into fines and renewal dates.",
+      "customer": "Private car owners in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Automotive / Government services",
+      "market": "Saudi Arabia",
+      "source": "Web search on vehicle registration renewal and traffic fines",
+      "evidence": [
+        {
+          "claim": "Traffic authorities confirmed that registration renewal is blocked if the owner has an active service-suspension due to unpaid fines, until those fines are settled.",
+          "url": "https://ajel.sa/thehour/uhfo6wua3",
+          "source_title": "هل يمكن تجديد استمارة السيارة في حال وجود مخالفات؟ المرور يجيب",
+          "summary": "News Q&A confirming that outstanding traffic fines can block vehicle registration renewal (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A late-renewal penalty of 100 SAR is added for every year the registration (استمارة) has expired.",
+          "url": "https://alsaudialyaum.com/news/73384",
+          "source_title": "غرامة عدم تجديد استمارة السيارة في السعودية 1446 ماذا يجب أن تعرف؟",
+          "summary": "Article stating the exact late-renewal fine amount for expired vehicle registration (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Absher",
+          "url": "https://www.absher.sa",
+          "notes": "Official government portal handles the transaction but is reactive, not a proactive personal-reminder/aggregator tool"
+        }
+      ],
+      "workaround": "Owners must remember to periodically check Absher manually for fines and expiry dates; several third-party blog/service sites exist purely to explain the renewal steps, implying confusion/demand for simpler guidance.",
+      "potential_solution": "A personal vehicle-document reminder app (registration expiry, insurance renewal, Istimara, periodic inspection) that sends proactive WhatsApp/SMS/push alerts weeks before deadlines and links directly to the right Absher/Saher step — similar to how expat/visa-reminder tools work.",
+      "business_model": "Freemium: free basic reminder, paid tier (small annual fee) for multi-vehicle/family tracking and priority alerts",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no paid reminder-app pricing found this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Absher/Saher expose any public API for pulling personal fines/expiry data without login (likely they don't — would require the user to self-input dates manually, reducing product stickiness)",
+        "Whether consumers would pay for something Absher already technically shows if they remember to check",
+        "Actual frequency of missed renewals (no statistics found)"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-06",
+      "problem": "Tenants whose landlords refuse to register the lease on the official Ejar platform have no easy way to force registration or document it for a REGA complaint, despite it being their legal right.",
+      "customer": "Renters (tenants) in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Housing / PropTech",
+      "market": "Saudi Arabia",
+      "source": "Legal/regulatory search on Ejar tenant rights",
+      "evidence": [
+        {
+          "claim": "If a landlord refuses to register the tenancy contract on Ejar, the law gives the tenant the right to request registration themselves, and tenants can file a complaint with the Real Estate General Authority (REGA).",
+          "url": "https://www.trowers.com/insights/2025/august/saudi-arabia---landlord-and-tenant",
+          "source_title": "Saudi Arabia - Landlord and Tenant | Trowers & Hamlins law firm",
+          "summary": "Law-firm insight article describing the Ejar registration obligation and the tenant's right to file a complaint if the landlord doesn't comply (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2025-08 (per article title)"
+        },
+        {
+          "claim": "Saudi authorities have seized/flagged tens of thousands of unregistered paper lease contracts, showing non-compliance with Ejar registration is widespread.",
+          "url": "https://gulfnews.com/world/gulf/saudi/saudi-authorities-crack-down-on-30000-rental-contract-violations-1.74346662",
+          "source_title": "Saudi authorities crack down on 30,000 rental contract violations",
+          "summary": "News report on a large enforcement action against unregistered rental contracts, implying the underlying tenant-side problem is common (per search snippet).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Ejar official help",
+          "url": "https://www.ejar.sa/en/help",
+          "notes": "Official support channel, not a self-serve tenant-advocacy tool"
+        }
+      ],
+      "workaround": "Tenants must navigate REGA's complaint process manually with no simplified guide/document generator specific to 'landlord refuses Ejar registration' cases.",
+      "potential_solution": "A simple Arabic-first web tool that walks a tenant through the exact steps and generates the REGA complaint text/checklist for landlord non-registration disputes, and explains how to self-register per the law.",
+      "business_model": "One-time small fee per generated complaint packet, or ad-supported free guide with a paid 'expedited checklist' tier",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual volume of tenants affected (only aggregate enforcement numbers found, not tenant-complaint volume)",
+        "Whether tenants would pay for this vs. free REGA channels",
+        "Whether REGA's own process is already simple enough to not need a helper tool"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-07",
+      "problem": "Pet owners needing veterinary care or pet transport must piece together services from a scattered set of small apps/sites (home-vet visits, pet delivery, classifieds) with no single trusted place to book and compare.",
+      "customer": "Pet owners in Saudi Arabia (cats, dogs, birds)",
+      "segment": "B2C",
+      "sector": "Pets",
+      "market": "Saudi Arabia",
+      "source": "Web search on home vet and pet delivery services",
+      "evidence": [
+        {
+          "claim": "VetWay offers home-visit veterinary services in Saudi Arabia with same-day or next-day booking, including lab tests done at the owner's home.",
+          "url": "https://vetsways.com/",
+          "source_title": "VetWay – طبيب بيطري – زيارة منزلية – السعودية",
+          "summary": "Service landing page describing home-visit vet booking (per search snippet, not fetched this session due to budget exhaustion).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate 'Pet Delivery' app exists purely to connect pet owners with delivery couriers for transporting animals, tracked order-style.",
+          "url": "https://play.google.com/store/apps/details?id=com.petjo.pet_dilivary&hl=ar",
+          "source_title": "Pet Delivery - التطبيقات على Google Play",
+          "summary": "App store listing for a pet-transport-only app, distinct from the vet-visit service (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "VetWay",
+          "url": "https://vetsways.com/",
+          "notes": "Home-visit vet booking"
+        },
+        {
+          "name": "Pet Delivery",
+          "url": "https://play.google.com/store/apps/details?id=com.petjo.pet_dilivary&hl=ar",
+          "notes": "Pet transport/courier app"
+        }
+      ],
+      "workaround": "Owners use separate apps/classifieds for vet visits vs. transport vs. buying pets, with no unified booking experience.",
+      "potential_solution": "A single light marketplace/booking layer aggregating home-vet visits, grooming, sitting and transport for pet owners in one city, monetised via booking commission.",
+      "business_model": "Commission per booking",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no pricing confirmed this session — VetWay fetch failed due to budget)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual pricing of home-vet visits",
+        "Market size — pet ownership rate in Saudi Arabia not verified this session",
+        "Whether existing players already cover most demand adequately"
+      ]
+    },
+    {
+      "opportunity_id": "B2C-08",
+      "problem": "Families organising weddings/parties must manually call or WhatsApp dozens of near-identical small planning companies (each with its own single-page website) with no way to compare portfolios, prices or reviews in one place.",
+      "customer": "Families planning weddings/events in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Events / Weddings",
+      "market": "Saudi Arabia",
+      "source": "Web search on wedding/party planners in Riyadh",
+      "evidence": [
+        {
+          "claim": "Numerous small, near-identical wedding/party planning company websites exist, each listing only a phone number and generic service description, with no visible pricing or comparison mechanism ('اتصل الآن' call-now pages).",
+          "url": "https://www.elfaahd.com/%D8%B4%D8%B1%D9%83%D8%A9-%D8%AA%D9%86%D8%B3%D9%8A%D9%82-%D8%AD%D9%81%D9%84%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/",
+          "source_title": "شركة تنسيق حفلات بالرياض - الفهد",
+          "summary": "Example of a single-page 'call now' wedding-planning company site typical of this fragmented market (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated wedding-vendor directory (zafaf.net) exists for Riyadh, showing there is enough demand to sustain a vendor-listing business, though it appears to be a directory rather than a booking/comparison platform.",
+          "url": "https://saudi-arabia.zafaf.net/wedding-planning/riyadh",
+          "source_title": "تنسيق حفلات زواج بالرياض - زفاف.نت",
+          "summary": "Existing vendor directory for wedding planning in Riyadh (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Zafaf.net",
+          "url": "https://saudi-arabia.zafaf.net/wedding-planning/riyadh",
+          "notes": "Vendor directory, not a transparent price/booking comparison tool"
+        }
+      ],
+      "workaround": "Families call multiple vendors individually to get quotes, with no standard pricing transparency.",
+      "potential_solution": "A lightweight vendor-comparison and quote-request platform (Saudi 'Zola'-lite) where families submit one request and get standardized quotes back, monetised via vendor lead fees.",
+      "business_model": "Lead-generation fee charged to vendors per qualified inquiry",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "LOW",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no vendor pricing confirmed this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether vendors would pay for leads or expect free listings",
+        "Whether zafaf.net or similar directories already capture most of this demand",
+        "Actual wedding-planning spend levels in Saudi Arabia (no source found this session)"
+      ]
+    }
+  ],
+  "queries_used": [
+    "تطبيق سعودي تقييمات سيئة صيانة منزلية",
+    "طلب مدرس خصوصي الرياض سعر مجموعة واتساب",
+    "Saudi app reviews complaints Ejar rental contract problem",
+    "مشكلة تجديد استمارة السيارة تذكير مخالفات المرور السعودية",
+    "خادمة منزلية توصيل الرياض مشكلة تطبيق مساند شكوى",
+    "Saudi Reddit r/saudiarabia complain app tutoring domestic worker",
+    "تطبيق مدرستي شكوى مشكلة أولياء الأمور 2025",
+    "إلغاء عضوية نادي رياضي السعودية مشكلة اشتراك تجميد",
+    "منظم حفلات زواج السعودية سعر تنسيق حفلات مستقل",
+    "تطبيق نسك تقييمات مشكلة حجاج معتمرين تصريح",
+    "بيطري منزلي الرياض سعر توصيل طلبات تطبيق حيوانات",
+    "شكوى تطبيق مقارنة اسعار البقالة السعودية توفير"
+  ],
+  "limitations": [
+    "All 6 WebFetch attempts failed (proxy refused connection / budget exhausted before any page content could actually be retrieved), so every piece of evidence in this run is based on WebSearch snippets only, not full-page verification — evidence_type was downgraded to WEAK across the board to reflect this, per the evidence discipline rules.",
+    "Could not verify actual prices, review counts/ratings, or download numbers for any app mentioned (Madrasati, gym apps, VetWay, Fustog, Mqadi, Serve, etc.) because fetches were unavailable.",
+    "X/TikTok/Reddit/Instagram content is largely login-gated or returned no Saudi-specific threads in the searches run; consumer complaint volume for several signals (gym refunds, Ejar registration, domestic worker fraud) could not be quantified.",
+    "12/12 web searches and 6/6 web fetches were used; no further verification possible within this session's budget.",
+    "Dropped a grocery price-comparison signal after finding 3 existing free apps (Fustog, Mqadi, Pricena) already serving this need with no clear monetization gap for a new solo entrant — judged too saturated to include as a strong opportunity.",
+    "Dropped a domestic-worker-fraud-verification idea as too speculative (only government warning articles found, no evidence of a paid product gap)."
+  ]
+}

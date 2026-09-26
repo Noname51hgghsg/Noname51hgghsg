@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "candidate_id": "C10",
+      "answers": [
+        {
+          "question": "Do global competitors (Enzuzo, CookieHub, TermsFeed, privacypolicygenerator.info) have Arabic-language UI or Saudi-specific breach-notification/DPO-workflow depth tied to SDAIA enforcement patterns?",
+          "finding": "PARTIAL",
+          "answer": "No direct evidence found that any of these four tools offer Arabic-language UI or Saudi/PDPL-specific breach-notification or DPO workflows. Enzuzo's policy generator explicitly lists 25+ supported languages (English, French, German, Italian, Portuguese, Spanish, Dutch, etc.) and Arabic is NOT in that list, with Enzuzo's own blog noting they 'will be adding more languages in the near future' (implying Arabic isn't there yet). TermsFeed's own blog discusses the general importance of translating privacy policies but gives no evidence it generates Arabic output or has PDPL-specific templates. No search surfaced Saudi/PDPL breach-notification or DPO-workflow features for any of the four tools. This is consistent with (but does not prove beyond doubt) the candidate's claimed wedge — absence of evidence for Arabic/PDPL depth in global tools, not proof they lack it entirely.",
+          "sources": [
+            {
+              "title": "Free Privacy Policy Generator for Websites, Apps & More! | Enzuzo",
+              "url": "https://www.enzuzo.com/privacy-policy-generator"
+            },
+            {
+              "title": "Privacy Policies and Language Choices - TermsFeed",
+              "url": "https://www.termsfeed.com/blog/privacy-policy-language/"
+            }
+          ]
+        },
+        {
+          "question": "Is current SDAIA enforcement (48 decisions/year) concentrated on large/foreign firms vs. small local SMEs?",
+          "finding": "NO_RELIABLE_EVIDENCE_FOUND",
+          "answer": "Public sources confirm SDAIA issued 48 formal enforcement decisions in the past year (as of early 2026) covering violations such as processing without legal basis, marketing without consent, inadequate technical/organizational safeguards, and unauthorized disclosure — 'across multiple sectors and industries.' However, no source names specific companies, sectors, or company sizes/types (large/foreign vs. small local SME) that were targeted. SDAIA's announcements describe the 48 decisions collectively without identifying individual organizations or their size/origin. Two potentially more detailed sources (IAPP article, Global Privacy & Security Compliance Blog article on 'Active Enforcement') could not be fetched due to a proxy connection error in this session, so a deeper breakdown may exist but was not accessible here.",
+          "sources": [
+            {
+              "title": "Saudi Arabia's data protection authority steps up enforcement | IAPP",
+              "url": "https://iapp.org/news/a/saudi-arabia-s-data-protection-authority-steps-up-enforcement"
+            },
+            {
+              "title": "Active Enforcement of Saudi Arabia Privacy Regime: Implications for Businesses | Global Privacy & Security Compliance Blog",
+              "url": "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/"
+            }
+          ]
+        },
+        {
+          "question": "What is the confirmed SAR pricing for local competitors (Hala Privacy, SecureLink, Ghaim) and evidence of actual customer volume for any player in this space?",
+          "finding": "FOUND",
+          "answer": "Hala Privacy: pricing IS disclosed — starts at SAR 3,000,000 for a baseline PDPL compliance package (4-week implementation sprint covering PDPL, Implementing Regulation, and SDAIA Guidelines), explicitly positioned for SMEs per their own site; they also list case studies claiming completed SDAIA PDPL program projects (customer-volume evidence, though not a count). SecureLink: no public pricing found — their PDPL compliance page states pricing depends on business size, users, locations, infrastructure complexity, etc., and requires a custom quote; no customer volume disclosed. Ghaim: no public pricing found — their AWS Marketplace listing requires a private offer/custom quote for pricing; no customer volume disclosed in search results. Overall: only one of the three local competitors (Hala Privacy) has a disclosed SAR price point (SAR 3M), which is far above the founder's target SME segment budget and suggests local incumbents target larger/enterprise clients, not the low-cost self-serve SME niche the candidate is targeting — a potential wedge, but customer counts remain unconfirmed for all three.",
+          "sources": [
+            {
+              "title": "Saudi Personal Data Protection Law PDPL Compliance Services Hala Privacy",
+              "url": "https://halaprivacy.com/"
+            },
+            {
+              "title": "Case Studies - Hala Privacy - Successful SDAIA PDPL Program Projects",
+              "url": "https://halaprivacy.com/case-studies/"
+            },
+            {
+              "title": "PDPL Compliance Saudi Arabia | Personal Data Protection Law Services",
+              "url": "https://www.securelink.sa/pdpl-compliance-saudi-arabia/"
+            },
+            {
+              "title": "AWS Marketplace: Ghaim Saudi Arabia PDPL Compliance & Data Privacy Package",
+              "url": "https://aws.amazon.com/marketplace/pp/prodview-iaast74alj2vq"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "Hala Privacy PDPL pricing SAR Saudi",
+    "SDAIA PDPL violation fine enforcement 2025 company",
+    "Ghaim PDPL compliance platform Saudi pricing",
+    "SecureLink PDPL Saudi compliance service pricing",
+    "Enzuzo Arabic language support privacy policy generator",
+    "\"PDPL\" fine SDAIA company name 2025 2026 announcement",
+    "termsfeed privacy policy Arabic language support"
+  ],
+  "limitations": [
+    "Two potentially high-value sources on SDAIA enforcement targeting patterns (IAPP article, globalprivacyblog.com article) could not be fetched in this session due to 'proxy refused the connection' errors, limiting depth on the large/foreign vs small-SME enforcement question.",
+    "No official SDAIA enforcement register or named-case database was found/accessible; all enforcement figures come from secondary law-firm/blog summaries citing SDAIA's aggregate '48 decisions' announcement, not primary SDAIA source documents.",
+    "Could not directly verify CookieHub's or privacypolicygenerator.info's language/localization features within the search budget; only Enzuzo and TermsFeed were directly checked.",
+    "Hala Privacy's SAR 3,000,000 price point comes from a WebSearch AI-generated summary of their site content, not a directly fetched pricing page in this session — treat as STRONG_INDIRECT rather than fully verified DIRECT evidence."
+  ]
+}

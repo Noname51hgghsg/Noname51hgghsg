@@ -1,0 +1,116 @@
+{
+  "C01": {
+    "candidate_id": "C01",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The exact niche this candidate targets — a radically cheap, simplified ZATCA Phase-2 e-invoicing tool for the smallest merchants, priced 'far below full ERP suites' — is already fully occupied by multiple live, Saudi-localized, ZATCA Phase-2-compliant products priced at or below what a solo founder could sustainably charge. BizzSols (bizzsols.com) sells a full ZATCA Phase-2 compliant product at SAR 49/month that already includes QR codes, digital signatures, automatic XML submission to ZATCA, credit/debit notes, VAT reports, inventory tracking AND bank reconciliation — i.e. more features than the candidate's proposed 6-8 week MVP, at a price a solo founder's own unit-economics analysis (in the dossier) shows is barely profitable once payment-processing fees (4-7% of a 60 SAR charge) are counted. Bridge Bills (52 SAR/mo), Fatoora Cloud (75 SAR/mo, 'zero setup'), and FatooraPlus (99 SAR/mo) fill every price point up to Qoyod's established ~120-207 SAR/mo tier, and Zoho Invoice markets itself as free Saudi VAT e-invoicing software with ZATCA QR/XML generation. This collectively closes the low-price wedge the candidate's differentiation strategy depends on — there is no discovered price point or feature gap left for a solo-built entrant to occupy profitably.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://www.bizzsols.com/",
+            "summary": "Live commercial product: 'fully ZATCA Phase 2 compliant invoicing for Saudi businesses... starting at 49 SAR/month' with QR codes, digital signatures, automatic XML submission, inventory, full accounting incl. bank reconciliation."
+          },
+          {
+            "url": "https://bridgesuite.app/blog/bridge-bills/best-billing-software-in-saudi-arabia-2026/",
+            "summary": "Bridge Bills priced at 52 SAR/month (promo), another sub-60-SAR ZATCA-compliant competitor already in market (per dossier additional_research)."
+          },
+          {
+            "url": "https://www.zoho.com/sa/invoice/",
+            "summary": "Zoho Invoice markets itself as free VAT e-invoicing software for Saudi small businesses, with ZATCA QR/XML generation included, per its own Saudi-localized marketing page."
+          },
+          {
+            "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+            "summary": "Qoyod (established Saudi brand) already has paying customers at 120-600 SAR/month, confirming a mature, well-distributed local incumbent with brand trust already serves this segment."
+          }
+        ]
+      },
+      {
+        "category": "WEAK_PAIN",
+        "reason": "Beyond the regulatory forcing function itself (which is DIRECT/solid), the specific 'pain points' cited to justify why merchants need a NEW simplified tool (vendor-support gaps, integration difficulty, no IT staff) are sourced almost entirely from competing vendors' own marketing blogs (Qoyod, Constant Labs, Qeemah), not independent user complaints — the evidence_validator explicitly flagged this as still WEAK and uncorroborated by real merchant complaint threads.",
+        "severity": "MINOR",
+        "evidence": [
+          {
+            "url": "https://www.qoyod.com/blog/e-invoicing/%D8%B4%D9%83%D8%A7%D9%88%D9%89-%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/",
+            "summary": "The primary 'pain point' evidence is a competitor's own marketing blog, not an independent complaint source."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for cheap/free incumbents (BizzSols, Bridge Bills) that could close the candidate's price-based differentiation angle — found confirmed live products undercutting the candidate's target price with MORE features",
+      "Checked Zoho Invoice's free-tier ZATCA claim to see if a globally-distributed free competitor already serves this segment",
+      "Checked whether ZATCA requires accredited-provider status as a regulatory blocker (per dossier: it does not, so this attack does not add a kill reason)",
+      "Re-examined whether the cited 'integration difficulty' pain points come from independent complaints or vendor marketing (found: vendor marketing)"
+    ],
+    "remaining_uncertainties": [
+      "BizzSols/Bridge Bills/Fatoora Cloud/FatooraPlus customer counts and real market traction (brand awareness/distribution) are not confirmed — it's possible these are small, low-traction players despite live pricing pages",
+      "Whether Zoho Invoice's free tier genuinely includes full Phase-2 clearance/reporting submission or only basic QR/XML generation (Zoho's own community post is ambiguous, suggesting full Phase 2 may require a paid Zoho Books plan)"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "This candidate could only survive with a materially different angle than 'cheap simplified ZATCA tool' — e.g., a vertical-specific play (a single industry with unmet ZATCA needs) or a non-price differentiator (e.g., voice/WhatsApp-native invoice creation with zero dashboard) that isn't already covered by BizzSols/Fatoora Cloud/Zoho. As scoped, the core price-based wedge is closed by existing evidence.",
+    "summary": "Killed primarily on STRONG_COMPETITOR: at least four Saudi-localized, ZATCA Phase-2-compliant products (BizzSols 49 SAR/mo, Bridge Bills 52 SAR/mo, Fatoora Cloud 75 SAR/mo, FatooraPlus 99 SAR/mo) already occupy the exact low-price micro-merchant niche this candidate targets, with BizzSols offering MORE functionality (inventory + full accounting + bank reconciliation) than the candidate's proposed MVP at a price that the candidate's own unit-economics research shows is barely sustainable once payment fees are subtracted. Zoho additionally offers a free, globally-distributed alternative. This closes the candidate's core price/simplicity differentiation angle."
+  },
+  "C04": {
+    "candidate_id": "C04",
+    "verdict": "SURVIVED",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "Searched for AI bookkeeping/invoice-OCR/reconciliation SaaS specifically targeting Saudi SMEs to find a direct self-serve competitor — found only enterprise/RPA-oriented Arabic OCR (Sanad.ai) and one ambiguous LinkedIn-marketed tool (InvoXtract, Arabic invoice extraction), neither confirmed as an accessible self-serve micro-SME product",
+      "Checked whether Zoho Books' automatic bank-feed reconciliation (a built-in free/low-cost feature many SMEs already use) covers Saudi banks, which would neutralize the reconciliation angle — found Zoho's bank-feed partners are Yodlee/Token/Plaid, none confirmed to support Saudi retail/business bank accounts, so manual CSV/PDF upload remains the norm and the gap likely persists",
+      "Attacked willingness-to-pay via cheap freelancer competition already serving this exact task on Mostaql",
+      "Attacked technical feasibility via Arabic OCR accuracy limits on messy/handwritten invoices",
+      "Attacked trust/liability angle: whether VAT-sensitive AI reconciliation requires human-in-the-loop review, raising operating complexity/cost beyond a pure SaaS"
+    ],
+    "remaining_uncertainties": [
+      "Real Arabic OCR accuracy on messy, stamped, handwritten Saudi supplier invoices is unverified (benchmarks show ~90-96% on cleaner data, but real-world local invoices likely score lower, requiring a human-correction workflow)",
+      "Exact freelancer/Mostaql piece rates for invoice data entry remain unknown, so it's unclear how much price headroom exists to undercut the cheap-labor alternative",
+      "Whether customers will trust an AI tool over a human accountant for VAT-sensitive reconciliation without a costly human-in-the-loop QA layer that erodes the pure-SaaS margin advantage",
+      "No proof yet that any customer has said they would pay specifically for an AI version rather than continuing to hire freelancers ad hoc"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Problem evidence (recurring outsourced bookkeeping/invoice-entry demand) is DIRECT and re-confirmed independently this round. No direct, accessible self-serve AI competitor targeting Saudi micro-SMEs was found despite specific searching — the closest tech (Sanad.ai) is enterprise/RPA-positioned, not a self-serve SaaS. Recommend the founder validate with 5-10 target SMEs on (a) actual current freelancer/accountant spend and (b) willingness to trust AI output with a lightweight human-review step before building.",
+    "summary": "Could not kill this candidate. Strong, DIRECT, repeated demand signal for the underlying manual task (Mostaql postings, outsourced bookkeeping firms charging SAR 1,500-5,000+/month) and no direct micro-SME-accessible AI competitor was found. Main risks (Arabic OCR accuracy, human-in-the-loop trust requirement, cheap freelancer competition) are real but are MAJOR execution risks requiring mitigation, not fatal kill reasons with hard evidence of failure."
+  },
+  "C08": {
+    "candidate_id": "C08",
+    "verdict": "SURVIVED",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "Searched (Arabic) for existing lightweight WhatsApp-based technician-tracking tools for small Saudi maintenance companies — found only consumer-facing marketplaces (Fanni, Manjez/Scrub-type apps) that connect end-customers to technicians, not back-office dispatch/tracking tools for a maintenance company to manage its own crew, confirming the competition_validator's gap finding",
+      "Attacked problem-evidence strength: confirmed via dossier's own additional_research that the key '~38% digital adoption' statistic is a copy-pasted, unverifiable SEO figure repeated across unrelated vendor blogs with no primary source — a real evidence-quality problem",
+      "Attacked willingness-to-pay: dossier's additional_research found some small maintenance operators explicitly request a one-time Excel sheet/freelance build instead of a recurring SaaS subscription, suggesting price sensitivity",
+      "Checked whether Daftra's maintenance module already covers field-technician dispatch (would close the gap) — confirmed it targets walk-in repair centers/auto workshops, not mobile field technicians, per dossier's additional_research, so the gap remains open"
+    ],
+    "remaining_uncertainties": [
+      "Core problem evidence remains WEAK — mostly vendor-marketing blog claims, with the key market-sizing statistic discredited as an unverifiable recycled figure; no independent complaint threads from actual maintenance-company owners were found",
+      "Mixed willingness-to-pay signal: some small operators explicitly prefer one-time Excel/freelance tools over recurring SaaS (2-3 Mostaql postings, weak sample), while other local vendors (Mutflex) do sell live subscription products into this exact segment — net direction unclear",
+      "Actual SAR pricing of local incumbents (Mutflex, SaudiSoftware.co) could not be confirmed (pages blocked), so it's unknown whether a solo founder can realistically underprice them",
+      "True market size of the 1-10 technician segment in Saudi Arabia is not quantified anywhere in the dossier"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "This is the most evidence-thin candidate of the batch, but the specific gap (an internal dispatch/tracking tool for the maintenance company itself, as distinct from consumer marketplaces and walk-in-center software) was independently re-confirmed as open in this round. Two plausible MAJOR risks exist (weak/unreliable problem evidence; ambiguous recurring-fee willingness) but neither is backed by strong enough evidence alone to be FATAL, and they don't clearly combine to meet the 2-MAJOR bar given real local vendors (Mutflex) do sell subscriptions into this segment. Recommend direct outreach to 5-10 small maintenance company owners before building, specifically to test recurring-fee tolerance vs one-time-tool preference.",
+    "summary": "Not killed, but survives on thin ice: the specific product niche (dispatch/status-tracking for maintenance-company-owned technicians) appears genuinely open based on fresh searching, but the underlying pain evidence is weak/vendor-sourced and one key market statistic was found to be an unverifiable recycled SEO number. Willingness to pay for a RECURRING fee (vs. a cheap one-time Excel tool) is ambiguous from the evidence available."
+  },
+  "C10": {
+    "candidate_id": "C10",
+    "verdict": "SURVIVED",
+    "kill_reasons": [],
+    "attacks_attempted": [
+      "Searched for a free SDAIA-provided self-serve compliance tool that could substitute for a paid product — found SDAIA does offer a free 'self-assessment' tool (dgp.sdaia.gov.sa) that scores a business's compliance level against PDPL requirements, but it does not generate documents (privacy policy, consent banners, breach-notification templates), so it only partially overlaps with the candidate's proposed feature set",
+      "Re-confirmed Enzuzo (the closest cheap global competitor) lacks Arabic-language support (25+ languages listed, Arabic absent, per Enzuzo's own materials) — the Arabic-first wedge remains intact",
+      "Searched for evidence that selling PDPL 'compliance software' without a legal license creates unauthorized-practice-of-law risk in Saudi Arabia — found no evidence of such a licensing requirement or enforcement precedent",
+      "Checked local law-firm/consultant pricing (Hala Privacy) confirmed at SAR 3,000,000 — far above SME budgets, reinforcing that local paid options target large/enterprise clients, leaving the SME self-serve price tier open"
+    ],
+    "remaining_uncertainties": [
+      "It remains unconfirmed whether SDAIA's current enforcement wave (48 decisions) is concentrated on large/foreign companies or already reaching small local SMEs — this materially affects urgency and willingness-to-pay for the target segment (dossier explicitly flags this as NO_RELIABLE_EVIDENCE_FOUND)",
+      "SDAIA's free self-assessment tool could evolve to cover more of the value chain (e.g., adding document generation) in the future, which would erode the wedge — not evidenced today but a plausible platform risk",
+      "No confirmed SAR pricing exists for what actual Saudi SMEs would pay for a stripped-down self-serve tool (as opposed to Hala Privacy's enterprise-priced SAR 3M offering)",
+      "Legal-liability exposure for a non-lawyer solo founder selling 'compliance' templates/tooling in Saudi Arabia was not deeply tested against local Bar/legal-practice regulations beyond a general web search — some residual regulatory risk cannot be fully ruled out"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "The core wedge (Arabic-first, SDAIA-specific, SME-priced self-serve compliance tooling) survives fresh attack: global cheap tools (Enzuzo, CookieHub, TermsFeed) lack confirmed Arabic support, the free SDAIA tool only assesses rather than generates documents, and local paid alternatives (Hala Privacy) are priced for enterprise, not SMEs. The single biggest open risk for the founder is unproven urgency among small local SMEs specifically (vs. large/foreign firms) — this should be validated via a handful of direct conversations with Saudi SME owners before investing build time.",
+    "summary": "Not killed. Fresh searches reconfirmed the Arabic-language/SDAIA-specific gap in existing cheap global tools and found SDAIA's own free tool only partially overlaps (self-assessment, not document generation). No fatal regulatory, competitive, or payment-refusal evidence was found; the main remaining risk is unconfirmed enforcement urgency for small local SMEs specifically, which is a genuine uncertainty rather than a proven kill reason."
+  }
+}

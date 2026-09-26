@@ -1,0 +1,349 @@
+{
+  "agent": "foreign_model_hunter",
+  "signals": [
+    {
+      "opportunity_id": "FM-01",
+      "problem": "Small-to-mid property managers/landlords in Saudi Arabia who use Western property management platforms (Buildium, AppFolio) get software with no EJAR (Saudi rental contract registration) integration, no ZATCA e-invoicing, and no Arabic UI — forcing them back onto spreadsheets or manual processes for the local-compliance parts of the job.",
+      "customer": "Small/mid independent property management companies and multi-unit landlords (roughly 5-500 units) in Saudi cities",
+      "segment": "B2B",
+      "sector": "PropTech",
+      "market": "Saudi Arabia",
+      "source": "Web search (Yarn Cloud Technologies KSA PMS comparison page, Capterra/SoftwareConnect comparison pages, PRNewswire market report)",
+      "evidence": [
+        {
+          "claim": "Buildium has no meaningful presence in Saudi Arabia, lacks EJAR compliance, ZATCA integration, and Arabic language support",
+          "url": "https://yarn.com.sa/resources/pms-comparison/",
+          "source_title": "Property Management Software Comparison for Saudi Arabia - Yarn Cloud Technologies",
+          "summary": "Per search snippet (page could not be fetched directly - proxy error): Saudi-focused vendor page states foreign PMS tools like Buildium/AppFolio lack local regulatory integrations (EJAR, ZATCA) and Arabic support, recommending Saudi operators skip them.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Buildium and AppFolio are named as key global players referenced in UAE/Saudi property management software market reports, confirming foreign tools are used/considered in the region without confirmed localization",
+          "url": "https://www.prnewswire.co.uk/news-releases/property-management-software-market-outlook-in-u-a-e-and-saudi-arabia-exclusive-report-by-p-amp-s-intelligence-809041562.html",
+          "source_title": "Property Management Software Market Outlook in U.A.E. and Saudi Arabia - PRNewswire",
+          "summary": "Per search snippet: market report lists Buildium, AppFolio, Rent Manager etc. as key vendors referenced for the KSA/UAE PMS market.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Buildium",
+          "url": "https://www.buildium.com/",
+          "notes": "US-focused property management SaaS; per Yarn Cloud Technologies snippet, not localized for EJAR/ZATCA/Arabic"
+        },
+        {
+          "name": "AppFolio",
+          "url": "https://capterra.com/compare/47428-92228/Buildium-Property-Management-Software-vs-AppFolio-Property-Manager",
+          "notes": "US property management SaaS; limited KSA-specific tailoring per search snippet"
+        }
+      ],
+      "workaround": "Property managers likely use spreadsheets, WhatsApp, and/or separate enterprise ERP modules to bridge EJAR registration and ZATCA e-invoicing gaps left by foreign PMS tools (not directly confirmed by a complaint source, but the localization gap itself is directly stated by a Saudi vendor page).",
+      "potential_solution": "Arabic-first, mobile-friendly property management SaaS with native EJAR contract integration, ZATCA Phase-2 e-invoicing, mada/STC Pay rent collection, and WhatsApp tenant reminders — targeted at small/mid property managers rather than large enterprise landlords.",
+      "business_model": "Per-unit or per-property monthly SaaS subscription",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no confirmed pricing/spend figures for Saudi property managers on PMS tools)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether existing local competitors (not named in results) already fully solve EJAR/ZATCA integration",
+        "Actual willingness to pay and typical unit-count of the target customer segment",
+        "Could not fetch the Yarn Cloud Technologies page directly (proxy error) to confirm full context of the claim"
+      ]
+    },
+    {
+      "opportunity_id": "FM-02",
+      "problem": "Salon/spa owners in Saudi Arabia who list on Fresha's marketplace pay a 20% commission on bookings sourced through the marketplace, on top of a subscription fee, cutting into thin service margins.",
+      "customer": "Independent salons, barbershops, spas in Saudi cities",
+      "segment": "B2B",
+      "sector": "Beauty & Wellness booking SaaS",
+      "market": "Saudi Arabia",
+      "source": "Web search (Blyssbook 'Best Salon Software in Saudi Arabia 2026' blog, Fresha pricing/marketing pages)",
+      "evidence": [
+        {
+          "claim": "Fresha has SAR pricing starting from SAR 52/month but charges 20% commission on every booking made through their marketplace",
+          "url": "https://blyssbook.com/blog/best-salon-software-saudi-arabia-2026",
+          "source_title": "Best Salon Software in Saudi Arabia 2026 | Blyssbook Blog",
+          "summary": "Per search snippet (Fresha pricing page fetch failed due to proxy error): comparison blog explicitly states Fresha's KSA pricing model combines a low base subscription with a 20% marketplace commission, flagged as 'a significant consideration for salon owners in the Kingdom.'",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Fresha operates in Saudi Arabia and is positioned as the world's largest beauty/wellness booking platform",
+          "url": "https://www.fresha.com/for-business/salon",
+          "source_title": "Best Hair & Beauty Salon Booking Software - Fresha",
+          "summary": "Per search snippet: Fresha markets itself for salons/spas globally including presence relevant to Saudi Arabia.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Fresha",
+          "url": "https://www.fresha.com/pricing",
+          "notes": "Low subscription + 20% marketplace commission model, per search snippet"
+        },
+        {
+          "name": "Vagaro",
+          "url": "https://www.vagaro.com/pro/salon-software",
+          "notes": "Global salon/spa software, subscription-based; KSA-specific fee structure not confirmed"
+        }
+      ],
+      "workaround": "Salons may push customers to book directly (avoiding marketplace commission) via Instagram/WhatsApp instead of Fresha's discovery marketplace, or simply absorb the 20% cut.",
+      "potential_solution": "Flat-fee (no commission) Arabic-first salon booking + POS SaaS with mada/STC Pay/Tabby integration, WhatsApp booking confirmations and reminders, and ZATCA-compliant invoicing.",
+      "business_model": "Flat monthly SaaS subscription (no per-booking commission), tiered by number of staff/chairs",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "Fresha: ~SAR 52/month subscription + 20% commission on marketplace-sourced bookings (per Blyssbook blog, search snippet only, not independently verified on Fresha's own pricing page due to fetch failure)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether the 20% commission applies to all bookings or only marketplace-discovered ones (direct booking links may be commission-free)",
+        "Could not fetch Fresha's own pricing page to confirm the figure directly (proxy error)",
+        "No direct salon-owner complaint found (only a third-party comparison blog's characterization)"
+      ]
+    },
+    {
+      "opportunity_id": "FM-03",
+      "problem": "Global freelancer/consultant business tools (Bonsai, HoneyBook) bundle proposals, contracts and invoicing in one flow, but are not ZATCA Phase-2 compliant for Saudi clients; Saudi-compliant invoicing tools (Zoho Invoice, Qoyod, Wafeq) are accounting-first and not built around the freelancer's proposal-to-signed-contract-to-paid-invoice workflow.",
+      "customer": "Solo freelancers and independent consultants (designers, developers, marketers, translators) serving Saudi clients",
+      "segment": "HYBRID",
+      "sector": "Freelancer tools / invoicing SaaS",
+      "market": "Saudi Arabia",
+      "source": "Web search (Bonsai/HoneyBook comparison articles, ZATCA e-invoicing solution roundups)",
+      "evidence": [
+        {
+          "claim": "Bonsai/HoneyBook bundle contracts, proposals, invoicing, and payments for freelancers, but neither is described as ZATCA-compliant in any Saudi context found",
+          "url": "https://agiled.app/compare/bonsai-vs-honeybook",
+          "source_title": "Bonsai vs HoneyBook (2026): Honest Comparison | Agiled",
+          "summary": "Per search snippet: describes Bonsai/HoneyBook's proposal-contract-invoice-payment flow for freelancers; no mention of GCC/ZATCA compliance features.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Saudi ZATCA-compliant invoicing options for small businesses/freelancers (Zoho Invoice, Qoyod, Fatoora app) exist but are positioned as generic invoicing/accounting tools, not integrated proposal-to-payment freelance workflows",
+          "url": "https://www.refrens.com/grow/e-invoicing-software-in-saudi-arabia/",
+          "source_title": "Stay ZATCA Compliant: Top E-Invoicing Software in Saudi Arabia",
+          "summary": "Per search snippet: lists Zoho Invoice as free e-invoicing for freelancers/small businesses, and Qoyod/Wafeq for SMEs, all focused on invoicing/accounting rather than the full contract+proposal workflow.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Bonsai",
+          "url": "https://www.hellobonsai.com/",
+          "notes": "Global freelancer contracts/invoicing/proposals tool, now under Zoom; no confirmed ZATCA compliance"
+        },
+        {
+          "name": "HoneyBook",
+          "url": "https://www.honeybook.com/blog/freelance-software",
+          "notes": "US/Canada-focused proposal-to-payment tool for creatives; no confirmed KSA/ZATCA support"
+        },
+        {
+          "name": "Zoho Invoice / Qoyod / Fatoora app",
+          "url": "https://www.refrens.com/grow/e-invoicing-software-in-saudi-arabia/",
+          "notes": "ZATCA-compliant invoicing tools but not freelance-proposal-workflow specific"
+        }
+      ],
+      "workaround": "Freelancers likely stitch together a global proposal/contract tool with a separate ZATCA-compliant invoicing tool, duplicating client/deal data across two systems (inferred, not directly confirmed by a complaint source).",
+      "potential_solution": "Bilingual (AR/EN) proposal + e-signature contract + ZATCA Phase-2 invoice tool built specifically for solo freelancers/consultants, with mada/STC Pay/Apple Pay payment collection links.",
+      "business_model": "Freemium with paid monthly tier per active client/proposal volume",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "No direct evidence of freelancers actually complaining about combining two tools — this is inferred from the feature gap, not from a first-hand complaint",
+        "Size of the addressable Saudi freelance/consultant population willing to pay for a dedicated tool",
+        "Whether Mostaql/Khamsat freelancers already have a preferred workaround not surfaced in search"
+      ]
+    },
+    {
+      "opportunity_id": "FM-04",
+      "problem": "Micro home-service contractors (AC repair, plumbing, electrical, cleaning) in Saudi Arabia have only two realistic software options surfaced in search: enterprise-grade ERP (e.g., Focus Softnet) built for larger companies, or unlocalized Western tools (Jobber, Housecall Pro, ServiceTitan) — nothing lightweight and WhatsApp-native for a 1-10 technician business.",
+      "customer": "Micro/small home-service businesses (HVAC, plumbing, electrical, cleaning) with 1-10 technicians",
+      "segment": "B2B",
+      "sector": "Field service management SaaS",
+      "market": "Saudi Arabia",
+      "source": "Web search (Focus Softnet, multitech.sa HVAC blog, Jobber/Housecall Pro comparison pages)",
+      "evidence": [
+        {
+          "claim": "Approximately 38% of HVAC contractors in the UAE and Saudi Arabia use digital dispatch and scheduling software",
+          "url": "https://multitech.sa/how-hvac-field-service-software-agreements-improve-efficiency-in-saudi-buildings/",
+          "source_title": "How HVAC Field Service Software & Agreements Improve Efficiency in Saudi Buildings? - Multitech",
+          "summary": "Per search snippet: a Saudi-based vendor blog cites a ~38% digital-adoption figure for HVAC contractors in UAE+Saudi combined, implying a majority still rely on manual/paper-based scheduling. Methodology of the stat is not verifiable from the snippet alone.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Focus Softnet provides Field Service Management ERP software across major Saudi cities (Riyadh, Jeddah, Dammam, Al-Khobar), and Jobber/Housecall Pro are positioned as Western SMB tools ($19-$79/user/month) without confirmed Saudi localization",
+          "url": "https://www.focussoftnet.com/sa/field-service-management-erp-software",
+          "source_title": "Best Field Service Management System in Saudi Arabia - Focus Softnet",
+          "summary": "Per search snippet: only enterprise ERP vendor found serving Saudi field-service market directly; no lightweight, localized, solo-friendly competitor surfaced.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Focus Softnet FSM ERP",
+          "url": "https://www.focussoftnet.com/sa/field-service-management-erp-software",
+          "notes": "Enterprise ERP, likely priced/scoped for larger companies, not solo contractors"
+        },
+        {
+          "name": "Jobber",
+          "url": "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/",
+          "notes": "Starts at $19/user/month in the US; no confirmed KSA localization (Arabic, ZATCA, local payments)"
+        },
+        {
+          "name": "Housecall Pro",
+          "url": "https://www.housecallpro.com/",
+          "notes": "Over 200,000 field service professionals globally per its own marketing; starts ~$59/user/month; no confirmed KSA presence"
+        }
+      ],
+      "workaround": "Micro contractors likely coordinate jobs via phone calls and WhatsApp and issue paper/manual invoices (inferred from the digital-adoption gap statistic, not from a direct first-hand complaint).",
+      "potential_solution": "Mobile-first, WhatsApp-integrated job scheduling, quoting and ZATCA e-invoicing app priced per technician, deliberately scoped below enterprise ERP complexity and price.",
+      "business_model": "Per-technician monthly SaaS subscription",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for Saudi-specific spend; US pricing benchmarks only (Jobber $19/user/mo, Housecall Pro ~$59/user/mo) which may not reflect KSA willingness to pay",
+      "confidence": "LOW",
+      "unknowns": [
+        "Reliability/methodology of the '38% digital adoption' statistic (single vendor blog, undated)",
+        "Whether an existing lightweight local competitor was simply not surfaced by search",
+        "Actual price sensitivity of 1-10 person contractor businesses"
+      ]
+    },
+    {
+      "opportunity_id": "FM-05",
+      "problem": "Outside the restaurant vertical (which is served by SIRA), Saudi SMEs such as salons, clinics, auto workshops, and small real-estate agencies have no dedicated Arabic-first tool to systematically request and manage Google/other reviews, unlike the US market where Podium/Birdeye serve this need broadly.",
+      "customer": "Local service SMEs (salons, clinics, auto workshops, real estate agents) outside food service",
+      "segment": "B2B",
+      "sector": "Reputation management / MarTech SaaS",
+      "market": "Saudi Arabia",
+      "source": "Web search (Podium/Birdeye comparison pages, SIRA Saudi/Egypt restaurant review blog)",
+      "evidence": [
+        {
+          "claim": "SIRA is presented as a Saudi/Egypt-relevant reputation tool, but it is explicitly focused on restaurant review management, not broader SME verticals",
+          "url": "https://getsira.ai/blog/%D8%A3%D9%81%D8%B6%D9%84-%D8%A8%D8%B1%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%AA%D9%82%D9%8A%D9%8A%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85-%D9%81%D9%8A-%D8%B9%D8%A7%D9%85-2026",
+          "source_title": "SIRA | أفضل برامج إدارة تقييمات المطاعم في عام 2026",
+          "summary": "Per search snippet: the only Saudi/Egypt-relevant reputation-management vendor surfaced by search is explicitly restaurant/food-service focused (native Arabic AI, delivery-platform integration), leaving other SME verticals apparently unaddressed.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Podium and Birdeye are established US reputation-management platforms with strong review scores (Birdeye: 99% G2 satisfaction score, 4.7/5 on Capterra from ~700 reviews) proving the model works with real paying customers, but no Saudi-specific presence was found in search",
+          "url": "https://birdeye.com/alternatives/podium-alternatives/",
+          "source_title": "Top 7 Podium Alternatives & Competitors in 2026 | Birdeye",
+          "summary": "Per search snippet: confirms Birdeye/Podium have strong customer satisfaction/review volume in their home market, evidencing the business model works, but search found no confirmation either operates for/serves Saudi SMEs directly.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "SIRA",
+          "url": "https://getsira.ai/",
+          "notes": "Arabic-first, Saudi/Egypt-relevant, but restaurant-vertical only per search snippet"
+        },
+        {
+          "name": "Podium",
+          "url": "https://www.podium.com/article/why-podiums-reviews-tool-is-the-best-reputation-management-software",
+          "notes": "US-focused; no confirmed KSA presence"
+        },
+        {
+          "name": "Birdeye",
+          "url": "https://birdeye.com/alternatives/podium-alternatives/",
+          "notes": "US-focused; no confirmed KSA presence"
+        }
+      ],
+      "workaround": "SME owners likely ask satisfied customers for Google reviews manually via WhatsApp with no systematic tracking or automation (inferred; not a directly sourced complaint).",
+      "potential_solution": "WhatsApp-based automated review-request and reputation dashboard for non-restaurant SMEs (salons, clinics, workshops, real estate agents), Arabic-first, with Google Business Profile integration.",
+      "business_model": "Monthly SaaS subscription per business location",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "This is primarily an absence-of-competitor finding, not a directly sourced customer complaint — real pain intensity is unconfirmed",
+        "Whether SIRA or another local player already quietly serves non-restaurant SMEs without being surfaced in search",
+        "Willingness to pay for this category in Saudi Arabia specifically"
+      ]
+    },
+    {
+      "opportunity_id": "FM-06",
+      "problem": "Clio (the dominant global legal practice management platform, used by 400,000+ legal professionals in 130+ countries) has no confirmed Saudi Arabia presence or ZATCA/Arabic localization found in search, suggesting small/solo Saudi law firms may lack an equivalent all-in-one case-management + billing + document tool.",
+      "customer": "Solo lawyers and small law firms in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "Legal tech SaaS",
+      "market": "Saudi Arabia",
+      "source": "Web search (Clio product pages, Saudi legal software search)",
+      "evidence": [
+        {
+          "claim": "Clio is trusted by 400,000+ legal professionals in more than 130 countries and approved by 100+ bar associations, but search for a Saudi-specific angle returned no information about Clio's use or availability in Saudi Arabia",
+          "url": "https://www.clio.com/manage/",
+          "source_title": "Clio Manage | The #1 Legal Practice Management Solution for Law Firms",
+          "summary": "Per search snippet: confirms Clio's large global customer base (proving the business model), but explicitly notes the search did not surface any Saudi Arabia-specific presence, local partner, or Arabic/ZATCA support.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Clio",
+          "url": "https://www.clio.com/",
+          "notes": "Global legal practice management leader; no confirmed KSA localization or presence found"
+        }
+      ],
+      "workaround": "NO RELIABLE EVIDENCE FOUND for how Saudi solo lawyers currently manage cases/billing (no direct complaint or workaround source found; this signal rests mainly on the absence of a localized competitor).",
+      "potential_solution": "Arabic-first legal case/document/billing management SaaS for solo lawyers and small firms, with ZATCA-compliant billing.",
+      "business_model": "Per-user monthly SaaS subscription",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether a Saudi legal-tech competitor exists but simply wasn't surfaced by this search",
+        "Whether solo Saudi lawyers even use software for practice management vs. paper/manual processes (unverified)",
+        "Regulatory/professional-body constraints on legal software in Saudi Arabia were not researched"
+      ]
+    }
+  ],
+  "queries_used": [
+    "Jobber Housecall Pro field service management software pricing customers",
+    "field service management software Saudi Arabia contractors HVAC plumbers",
+    "Fresha Vagaro salon booking software Saudi Arabia صالونات حجز",
+    "Buildium AppFolio property management software Saudi Arabia equivalent إدارة عقارات",
+    "Clio legal practice management software law firm Saudi Arabia محاماة برنامج",
+    "Bonsai HoneyBook freelancer invoicing proposals contracts revenue",
+    "Mindbody GymMaster gym management software Saudi Arabia نوادي رياضية برنامج",
+    "MarketMan restaurant inventory management software Saudi Arabia مطاعم مخزون",
+    "Deputy When I Work employee scheduling attendance software Saudi Arabia موظفين جدولة",
+    "Podium Birdeye reputation management reviews software Saudi Arabia small business",
+    "dental clinic practice management software Saudi Arabia عيادات أسنان برنامج",
+    "trucking dispatch software SME logistics Saudi Arabia شركات نقل برنامج جدولة",
+    "بديل Podium Birdeye إدارة التقييمات السعودية طلب تقييم عملاء",
+    "freelancer invoicing ZATCA compliant tool Saudi consultants proposals contracts مستقل فاتورة",
+    "بديل Clio برنامج إدارة مكاتب المحاماة السعودية"
+  ],
+  "limitations": [
+    "WebFetch tool failed for every attempted URL in this session ('proxy refused the connection') — including Fresha pricing, Yarn.com.sa PMS comparison, ZATCA solution providers directory, and Jobber/Housecall Pro comparison pages. All evidence below therefore relies on WebSearch result snippets rather than directly fetched/verified page content, which is reflected in downgraded evidence_type (mostly WEAK/STRONG_INDIRECT) and lower confidence scores.",
+    "Search budget was exhausted at 14/14 queries; the 15th query ('بديل Clio السعودية') returned a budget-exhausted error and was not executed as a separate search — evidence for FM-06 relies only on the earlier Clio query.",
+    "Several categories investigated (restaurant inventory — dominated by Foodics; employee attendance/scheduling — served by Bayzat/Jisr/Daftra; dental clinic management — served by Dentolize/DentoSoft/Cloudpital; gym management — already used via global tools in KSA/UAE per search) appeared to already have adequate local or regional solutions, so they were deliberately excluded as signals rather than forced into weak opportunities.",
+    "No Arabic-language forum/Reddit/Mostaql/Khamsat complaint threads were found or examined directly for any of these categories within the search budget — all 'pain' signals are inferred from competitor/localization-gap analysis rather than first-hand user complaints, which is the weakest form of pain evidence per the evidence discipline rules.",
+    "Could not verify actual Saudi pricing, customer counts, or spend for any of the foreign tools (Bonsai, HoneyBook, Clio, Podium, Birdeye, Mindbody, GymMaster) specifically in the Saudi market — all customer/revenue figures found are global, not KSA-specific."
+  ]
+}

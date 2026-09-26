@@ -33,7 +33,8 @@ def _links(urls) -> str:
 
 def render(orch, candidates, validations, verdicts, research, backlog, discarded, signals, synthesis, summary) -> None:
     run_id = orch.run_id
-    rows = orch.store.query("SELECT * FROM agent_runs WHERE run_id=? ORDER BY id", (run_id,))
+    marks = ",".join("?" for _ in orch.run_ids)
+    rows = orch.store.query(f"SELECT * FROM agent_runs WHERE run_id IN ({marks}) ORDER BY id", tuple(orch.run_ids))
     known_urls = set(URL_RE.findall(_j([signals, validations, verdicts, research, candidates])))
     cmap = {c["candidate_id"]: c for c in candidates}
     c = summary["counts"]
@@ -221,7 +222,10 @@ def render(orch, candidates, validations, verdicts, research, backlog, discarded
     # ---------------------------------------------------------------- execution proof
     w("## 10. سجل تنفيذ الوكلاء (Agent Execution Log — proof of real runs)\n")
     w("كل صف = مهمة Agent نُفّذت كعملية مستقلة `claude -p` (PID وsession مستقلان). السجل الكامل: "
-      f"`logs/{run_id}/run.log` · النصوص الكاملة: `results/{run_id}/transcripts/`\n")
+      f"`logs/{run_id}/run.log` · النصوص الكاملة: `results/{run_id}/transcripts/` (*.jsonl.gz)\n")
+    if orch.resume_from:
+        w(f"> هذا التشغيل استكمال (resume) للتشغيل `{orch.resume_from}`: الصفوف تشمل وكلاء التشغيلين. "
+          f"سجل التشغيل الأول: `logs/{orch.resume_from}/run.log`\n")
     w("| # | Agent | Task | Stage | Status | Attempts | PID | Session | Start | Dur (s) | Searches | Fetches | Cache hits | Cost $ |")
     w("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|")
     for i, r in enumerate(rows, 1):

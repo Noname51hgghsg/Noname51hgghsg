@@ -1,0 +1,379 @@
+{
+  "agent": "jobs_signal_hunter",
+  "signals": [
+    {
+      "opportunity_id": "JOB-01",
+      "problem": "HR/admin staff must manually repeat the same actions across multiple disconnected Saudi government portals (Qiwa, Mudad, GOSI, Muqeem) for every employee event: contract updates, iqama/visa renewals, GOSI registration, salary certification uploads, status changes. Each platform has its own login and workflow, so the same employee data is re-entered several times.",
+      "customer": "HR/Admin coordinators and outsourced HR-services firms at SMEs (10–300 employees) across all sectors that employ non-Saudi staff",
+      "segment": "B2B",
+      "sector": "Cross-sector (HR/Compliance)",
+      "market": "Saudi Arabia",
+      "source": "Job boards (Bayt, Glassdoor) + HR compliance guide (payrollmiddleeast.com)",
+      "evidence": [
+        {
+          "claim": "HR Coordinators in Saudi Arabia are explicitly hired to process actions across Qiwa, Muqeem, GOSI and Mudad — updating contracts, renewing employee info, issuing visas, handling status changes, and managing Iqama/work-permit renewals.",
+          "url": "https://payrollmiddleeast.com/qiwa-saudi-arabia/",
+          "source_title": "Qiwa Saudi Arabia: Employer Guide for Payroll, HR and Labour Compliance",
+          "summary": "Per search snippet: article describes HR coordinators executing repetitive company procedures on Qiwa/Mudad/GOSI/Muqeem including contract updates, visa issuance, residency and license renewals.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple active job postings for 'HR Officer – GOSI & HRDF' and 'HR Coordinator' roles exist in Saudi Arabia specifically naming these portals as core duties.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/hr-officer-%E2%80%93-gosi-&-hrdf-jobs/",
+          "source_title": "HR Officer – Gosi & Hrdf Jobs in Saudi Arabia (Jul 2026) - Bayt.com",
+          "summary": "Per search snippet: Bayt.com lists dedicated openings for GOSI/HRDF-focused HR officer roles, indicating recurring demand for this manual compliance work.",
+          "evidence_type": "WEAK",
+          "published": "2026-07"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Mudad",
+          "url": "https://mudad.com.sa",
+          "notes": "Official payroll/WPS platform, one of the several portals staff must juggle; does not unify Qiwa/GOSI/Muqeem workflows"
+        }
+      ],
+      "workaround": "Companies hire dedicated HR coordinators (or outsource to HR/PRO agencies) who log into each portal manually and re-key employee data",
+      "potential_solution": "A lightweight SaaS that centralizes employee record data and generates/tracks the required Qiwa/Mudad/GOSI/Muqeem actions with reminders and pre-filled forms (RPA-assisted where portals allow), reducing duplicate data entry",
+      "business_model": "B2B SaaS subscription per employee/month, sold to SMEs and HR outsourcing firms",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no public salary figure captured for this exact role in this session; job exists as a dedicated hire per Bayt listing)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether Qiwa/GOSI/Muqeem allow any automated/API access without violating ToS",
+        "Actual salary cost of HR coordinator role for this specific compliance task",
+        "Willingness of SMEs to pay for a third-party tool touching government logins"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-02",
+      "problem": "Companies hire dedicated 'Government Relations Coordinator/Officer' (معقب) roles whose core job is repetitively renewing visas, iqamas, commercial licenses and liaising with government entities — a manual, deadline-driven, error-prone process.",
+      "customer": "Mid-to-large private companies (noon, PROVEN, etc.) needing continuous government paperwork handling",
+      "segment": "B2B",
+      "sector": "Cross-sector (Government/Compliance)",
+      "market": "Saudi Arabia",
+      "source": "LinkedIn Jobs, Bayt.com, Glassdoor",
+      "evidence": [
+        {
+          "claim": "Multiple companies (noon, PROVEN) are actively hiring dedicated Government Relations Officer/Specialist roles in Riyadh in mid-2026, focused on visa issuance, compliance, and government liaison.",
+          "url": "https://www.linkedin.com/jobs/view/4451350020/",
+          "source_title": "noon hiring Government Relations Officer in Riyadh, Saudi Arabia",
+          "summary": "Per search snippet: noon posted a Government Relations Officer role in Riyadh (Aug 2026) responsible for governmental interactions and compliance monitoring.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-08"
+        },
+        {
+          "claim": "Bayt.com maintains an ongoing category of 'Gov Relations Coordinator' jobs in Saudi Arabia, indicating persistent multi-company demand for this role.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/gov-relations-coordinator-jobs/",
+          "source_title": "Gov Relations Coordinator Jobs in Saudi Arabia (Sep 2026) - Bayt.com",
+          "summary": "Per search snippet: active job category listing government relations coordinator vacancies as of Sep 2026.",
+          "evidence_type": "WEAK",
+          "published": "2026-09"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Full-time or part-time 'معقب' hired per company; some use external PRO/typing-center agencies for one-off renewals",
+      "potential_solution": "A tracking/reminder + document-prep tool for recurring government renewals (iqama, CR, municipal licenses) that auto-generates checklists and pre-fills forms, reducing time-per-renewal for the GR coordinator (not replacing the human, since portals require personal login)",
+      "business_model": "B2B SaaS subscription per company or per tracked license/employee",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (role clearly exists as a paid full-time hire per multiple job postings; no public salary captured this session)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Salary cost of this role",
+        "Whether target buyer is the GR coordinator's employer or the coordinator personally",
+        "Depth of government portal restrictions on automation"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-03",
+      "problem": "Companies (banks, telecom-adjacent, industrial cities authority, etc.) hire dedicated Collections Officers whose job is manually tracking overdue accounts, calling customers, and negotiating repayment — a repetitive follow-up task.",
+      "customer": "Finance/credit departments of companies with receivables (SME lenders, utilities, industrial-cities authorities, retail credit)",
+      "segment": "B2B",
+      "sector": "Finance/Credit Control",
+      "market": "Saudi Arabia",
+      "source": "LinkedIn Jobs, GulfTalent, Bayt.com",
+      "evidence": [
+        {
+          "claim": "Saudi Authority for Industrial Cities and Technology Zones, plus multiple other employers, posted active Collections Officer/Specialist vacancies in Riyadh/Dammam within days of each other.",
+          "url": "https://www.linkedin.com/jobs/view/4206999894",
+          "source_title": "Saudi Authority for Industrial Cities and Technology Zones hiring Collections Specialist",
+          "summary": "Per search snippet: government-linked authority actively hiring a dedicated Collections Specialist role for Dammam, Saudi-nationals only, indicating recurring need for manual receivables follow-up.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "GulfTalent lists 14 open 'Credit and Collection Officer' vacancies in Saudi Arabia as of Aug 2026, showing broad multi-employer demand for this manual follow-up role.",
+          "url": "https://www.gulftalent.com/saudi-arabia/jobs/title/credit-and-collection-officer",
+          "source_title": "Credit and Collection Officer Jobs in Saudi Arabia (Aug 2026) | GulfTalent",
+          "summary": "Per search snippet: 14 new vacancies listed, evidence of repeated hiring for this task across companies.",
+          "evidence_type": "WEAK",
+          "published": "2026-08"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Generic ERP/accounting AR modules (Odoo, SAP)",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/accountant-odoo-jobs-in-riyadh/",
+          "notes": "AR ledgers exist but do not automate outbound follow-up/negotiation workflow"
+        }
+      ],
+      "workaround": "Manual phone/WhatsApp follow-up by dedicated collections staff using spreadsheets or ERP AR reports",
+      "potential_solution": "A dunning/collections-workflow tool (WhatsApp Business API + Arabic templated reminders + aging-based prioritization) that reduces manual triage time for collections officers",
+      "business_model": "B2B SaaS subscription per seat or per invoice tracked",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (salary not captured this session; role cost = at least one FTE per posting)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Typical company size threshold that hires a dedicated collections officer",
+        "Existing use of ERP dunning modules vs manual work",
+        "Regulatory constraints on automated debt-collection communication in KSA"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-04",
+      "problem": "Accountants in Saudi SMEs handle recurring manual bank reconciliation, invoice review, and ZATCA e-invoicing/VAT compliance tasks as a core, repeated part of their job.",
+      "customer": "SME accountants / outsourced bookkeeping firms serving companies under ZATCA e-invoicing mandate",
+      "segment": "B2B",
+      "sector": "Finance/Accounting",
+      "market": "Saudi Arabia",
+      "source": "Bayt.com job listings, LinkedIn",
+      "evidence": [
+        {
+          "claim": "Accountant job postings in Saudi Arabia list daily transaction recording, bank reconciliation, invoice review, and ZATCA VAT compliance/tax declaration liaison as standard recurring duties, including for firms serving foreign companies.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/accounting-jobs/",
+          "source_title": "Accounting Jobs in Saudi Arabia (Jun 2026) - Bayt.com",
+          "summary": "Per search snippet: Bayt listings describe accountants doing bank reconciliation, invoice review and ZATCA-related tax compliance as routine recurring work.",
+          "evidence_type": "WEAK",
+          "published": "2026-06"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "ZATCA-certified e-invoicing solution providers",
+          "url": "https://www.linkedin.com/posts/dynamic-cloud_zatca-einvoicing-saudibusiness-activity-7445033285400961024-VnaP",
+          "notes": "Covers e-invoicing compliance itself, not the surrounding manual reconciliation workload"
+        }
+      ],
+      "workaround": "Manual Excel-based bank/ERP reconciliation performed by in-house or outsourced accountant",
+      "potential_solution": "AI-assisted reconciliation tool that auto-matches bank statements to ERP/ZATCA invoice records and flags exceptions for a solo accountant to review",
+      "business_model": "B2B SaaS subscription per company, tiered by invoice volume",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "How much reconciliation is already automated by existing ERP/e-invoicing vendors",
+        "Actual willingness to pay separate from existing accounting software subscription"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-05",
+      "problem": "A persistent, high volume of 'data entry' and specifically 'invoice data entry' jobs/gigs are posted in Saudi Arabia and on Arabic freelance platforms, showing companies still rely on manual re-keying of documents into databases/ERPs.",
+      "customer": "SMEs and freelancer-hiring businesses needing invoices/records digitized into systems",
+      "segment": "B2B",
+      "sector": "Cross-sector (Back-office/Admin)",
+      "market": "Saudi Arabia",
+      "source": "Bayt.com, Glassdoor, Mostaql (freelance marketplace)",
+      "evidence": [
+        {
+          "claim": "Glassdoor lists 76 open data entry jobs in Riyadh alone (Sep 2026), and Bayt lists a dedicated 'Data Entry Operator' category describing database input/verification/reporting as core duties.",
+          "url": "https://www.glassdoor.com/Job/riyadh-data-entry-jobs-SRCH_IL.0,6_IM1652_KO7,17.htm",
+          "source_title": "76 data entry Jobs in Riyadh, Saudi Arabia, September 2026 | Glassdoor",
+          "summary": "Per search snippet: 76 concurrent open data entry roles in Riyadh, evidence of sustained repetitive manual-entry demand.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-09"
+        },
+        {
+          "claim": "Mostaql (Arabic freelance marketplace) has recurring posted gigs specifically for 'invoice data entry' (مدخل بيانات فواتير) and ERP data entry, some for 3-month engagements.",
+          "url": "https://mostaql.com/project/551742-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%85%D9%88%D8%B8%D9%81%D9%80%D8%A9-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1",
+          "source_title": "مطلوب موظف/ـة مدخل بيانات فواتير | مستقل",
+          "summary": "Per search snippet: a posted freelance request specifically for invoice data-entry staff, demonstrating direct demand willing to pay freelancers for this repetitive task.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "OCR/IDP tools (generic, e.g. ABBYY, Google Document AI)",
+          "url": "https://mostaql.com/project/797013-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-erp",
+          "notes": "Generic OCR exists globally but Arabic-invoice-to-ERP niche tools for SMEs are not evidenced locally"
+        }
+      ],
+      "workaround": "Hiring freelancers/temp staff via Mostaql or full-time data-entry clerks to manually re-type invoices/documents into ERP",
+      "potential_solution": "An Arabic-aware OCR/AI document-to-ERP data entry tool targeted at SMEs (invoices, delivery notes) that reduces need for manual re-keying",
+      "business_model": "B2B SaaS, pay-per-document or monthly subscription",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "Freelancers are directly paid per Mostaql gig postings for invoice data entry (exact rate not visible in snippet)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Actual freelancer pay rates on these Mostaql gigs",
+        "Accuracy needs/Arabic OCR quality vs manual entry",
+        "Whether target buyers already use ERP built-in OCR (e.g. Odoo, Zoho)"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-06",
+      "problem": "Construction/engineering firms hire dedicated Document Controllers whose job is manually organizing, tracking, versioning and routing large volumes of project documents (drawings, submittals, RFIs) for compliance and traceability.",
+      "customer": "Construction & engineering contractors/consultants (e.g. WSP, Surbana Jurong) on infrastructure projects",
+      "segment": "B2B",
+      "sector": "Construction/Engineering",
+      "market": "Saudi Arabia",
+      "source": "Bayt.com, GulfTalent, Glassdoor, LinkedIn",
+      "evidence": [
+        {
+          "claim": "Glassdoor shows 75 open Document Controller jobs in Saudi Arabia (as of Dec 2025) and salary data showing typical monthly pay of SAR 4,208–9,075.",
+          "url": "https://www.bayt.com/en/saudi-arabia/salaries/jobtitle/document-controller/",
+          "source_title": "Document Controller Salaries in Saudi Arabia - Bayt.com",
+          "summary": "Per search snippet: salary range SAR 4,208 (25th pct) to SAR 9,075 (75th pct) monthly for Document Controller role, with 75 concurrent job openings reported on Glassdoor, confirming a sizeable, recurring, paid role.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025-12"
+        },
+        {
+          "claim": "Major engineering consultancy WSP is hiring an experienced Document Controller in Riyadh for roads/tunnels/bridges projects, requiring 5+ years managing project documentation.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/document-controller-jobs/",
+          "source_title": "Document Controller Jobs in Saudi Arabia (Jul 2026) - Bayt.com",
+          "summary": "Per search snippet: named large infrastructure consultancy actively recruiting for this manual document-tracking role in 2026.",
+          "evidence_type": "WEAK",
+          "published": "2026-07"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Aconex/Procore-style EDMS",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/document-controller-jobs/",
+          "notes": "Large enterprise EDMS tools exist but are expensive/heavy for smaller contractors; role still exists to operate them manually"
+        }
+      ],
+      "workaround": "Dedicated document controller manually logging, numbering and distributing documents, often across email/shared drives even where EDMS exists",
+      "potential_solution": "A lightweight AI-assisted document intake/classification/versioning tool for small-to-mid contractors that auto-tags and routes incoming drawings/submittals",
+      "business_model": "B2B SaaS subscription per project/per user",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "SAR 4,208–9,075/month salary per Document Controller hire (Bayt.com salary data)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether target contractors already pay for Aconex/Procore-class EDMS",
+        "Minimum contractor size that would adopt a lighter tool instead of a human"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-07",
+      "problem": "Procurement Coordinators are hired specifically to manually source quotations, negotiate with suppliers, confirm stock/lead-times with warehouse teams, and maintain supplier/procurement records — a repetitive coordination task across many open roles.",
+      "customer": "Mid-size companies with active purchasing departments (industrial, oil & gas services e.g. Hatch, supply chain firms)",
+      "segment": "B2B",
+      "sector": "Procurement/Supply Chain",
+      "market": "Saudi Arabia",
+      "source": "LinkedIn Jobs, GulfTalent, Glassdoor",
+      "evidence": [
+        {
+          "claim": "42 new Procurement Coordinator vacancies were listed across Riyadh, Dammam, Jeddah and Jubail as of the search date, with core duties of sourcing quotations and maintaining supplier records.",
+          "url": "https://www.gulftalent.com/saudi-arabia/jobs/title/procurement-coordinator",
+          "source_title": "Procurement Coordinator Jobs in Saudi Arabia (Aug 2026) | GulfTalent",
+          "summary": "Per search snippet: 42 concurrent vacancies for this coordination role, indicating broad, recurring multi-employer demand.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-08"
+        },
+        {
+          "claim": "Global engineering firm Hatch is hiring a Procurement Coordinator in Jubail, Saudi Arabia.",
+          "url": "https://www.linkedin.com/jobs/view/4440775423/",
+          "source_title": "Hatch hiring Procurement Coordinator in Jubail, Eastern, Saudi Arabia",
+          "summary": "Per search snippet: named large employer actively hiring for this manual sourcing/record-keeping role in 2026.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Manual RFQ emails/spreadsheets and ERP purchase-order modules operated by the coordinator",
+      "potential_solution": "A supplier-quote comparison and PO-tracking micro-tool that auto-collects RFQ responses and highlights best price/lead-time for the coordinator",
+      "business_model": "B2B SaaS subscription per company",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether target companies already use ERP procurement modules (SAP Ariba etc.) making a point tool redundant",
+        "Actual time spent per RFQ cycle"
+      ]
+    },
+    {
+      "opportunity_id": "JOB-08",
+      "problem": "Call centers/customer service teams field very high volumes of repetitive inbound inquiries (status checks, complaints, FAQs), evidenced by thousands of concurrent open roles including urgent bulk hiring (e.g. 30 openings for one project).",
+      "customer": "Consumer-facing companies (retail, telecom, banks, entertainment/theme parks) running in-house or outsourced call centers",
+      "segment": "B2B",
+      "sector": "Customer Service/BPO",
+      "market": "Saudi Arabia",
+      "source": "LinkedIn Jobs, Glassdoor, Naukrigulf",
+      "evidence": [
+        {
+          "claim": "LinkedIn lists over 2,000 customer-service jobs in Saudi Arabia with 134 new postings in a recent window; a specific urgent listing sought 30 Call Center agents for one project (Aqua Park Arabia - 6flags).",
+          "url": "https://www.linkedin.com/jobs/customer-service-jobs-saudi-arabia?trk=amworks_jserp_redirect",
+          "source_title": "2,000+ Customer Service jobs in Saudi Arabia (134 new)",
+          "summary": "Per search snippet: very large volume of concurrent customer-service hiring including a single bulk 30-agent call-center hire, showing high-frequency repetitive-inquiry workload.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Generic chatbot/CCaaS platforms (e.g. Zendesk, generic Arabic chatbots)",
+          "url": "https://www.linkedin.com/jobs/customer-service-jobs-saudi-arabia?trk=amworks_jserp_redirect",
+          "notes": "International tools exist; local Arabic-dialect-tuned deflection tools less evidenced"
+        }
+      ],
+      "workaround": "Hiring large numbers of human call-center agents, often through BPO/staffing agencies",
+      "potential_solution": "An Arabic (Gulf-dialect aware) FAQ/status-check deflection bot layer in front of the call center to cut repetitive-ticket volume before human escalation",
+      "business_model": "B2B SaaS, per-resolved-ticket or per-seat pricing sold to BPOs/companies",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (large hiring volume implies significant staffing cost, but no salary figure captured this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "What fraction of call volume is truly repetitive/deflectable vs needing human judgment",
+        "Whether target companies already run enterprise CCaaS with bots"
+      ]
+    }
+  ],
+  "queries_used": [
+    "\"government relations coordinator\" OR \"معقب\" jobs Saudi Arabia LinkedIn Qiwa GOSI",
+    "HR coordinator Qiwa Mudad GOSI Saudi Arabia job Bayt",
+    "\"collections officer\" OR \"تحصيل\" jobs Saudi Arabia Riyadh LinkedIn",
+    "\"quantity surveyor\" jobs Saudi Arabia construction Bayt salary",
+    "\"procurement coordinator\" Saudi Arabia job description LinkedIn",
+    "\"data entry\" jobs Saudi Arabia many openings Bayt Riyadh",
+    "\"leasing coordinator\" Saudi Arabia real estate job LinkedIn",
+    "\"accountant\" \"reconciliation\" invoicing Saudi Arabia job Bayt ZATCA",
+    "\"call center\" OR \"customer service representative\" Saudi Arabia jobs many openings LinkedIn",
+    "Mostaql مطلوب \"تسوية حسابات\" OR \"مدخل بيانات\" OR \"متابعة عملاء\"",
+    "\"dispatch coordinator\" OR \"scheduling coordinator\" Saudi Arabia jobs logistics",
+    "\"document controller\" Saudi Arabia construction jobs Bayt salary"
+  ],
+  "limitations": [
+    "All WebFetch attempts in this session failed with 'proxy refused the connection', so no job postings or salary pages could be directly fetched/confirmed beyond search-engine snippets — every claim below is 'per search snippet' evidence (STRONG_INDIRECT/WEAK), not DIRECT page verification.",
+    "No access to gated LinkedIn full job descriptions, Bayt full listings, or Jadarat government listings beyond snippet text.",
+    "Could not verify actual salary figures for most roles (HR coordinator, collections officer, government relations coordinator, procurement coordinator, call center agent) — only Document Controller and Quantity Surveyor had usable salary snippets.",
+    "Mostaql/Khamsat searches surfaced limited Saudi-specific (vs pan-Arab/Egypt) freelance demand; hard to isolate Saudi-only signal from broader Arabic freelance market.",
+    "Reached the 12-search budget before covering leasing-coordinator and quantity-surveyor pain points as deeply as HR/collections/document-controller; those two are underdeveloped and were dropped from final signals for lack of strong evidence.",
+    "No forum/Reddit-level complaint evidence gathered in this run; signals rely entirely on job-board listing volume and salary data as proxies for pain, per this agent's mandate."
+  ]
+}

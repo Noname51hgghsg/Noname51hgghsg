@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "candidate_id": "C16",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Saudi job seekers",
+          "pays_for": "CV writing/design service on Khamsat freelance marketplace",
+          "price": "5-50",
+          "currency": "USD",
+          "period": "one-time per CV",
+          "url": "https://khamsat.com/services/%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Saudi job seekers",
+          "pays_for": "Bilingual (AR/EN) professional CV writing service, 1-week delivery, Saudi market",
+          "price": "169",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://sa.labeb.com/article/professional-bilingual-cv-writing-service-arabic-and-english-1-week-sa-2026-10179",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Saudi job seeker (Mostaql buyer)",
+          "pays_for": "A CV tailored specifically for job applications in Saudi Arabia",
+          "price": "unknown (budget not visible)",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://mostaql.com/project/786867-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%B9%D9%84%D9%89-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+          "evidence_type": "DIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Freelance CV writer (Khamsat/Mostaql, Saudi/Arab market)",
+          "cost_or_salary": "$5-50 per CV, or ~169 SAR for bilingual Saudi-tailored CV",
+          "url": "https://khamsat.com/writing/resume-writing"
+        }
+      ],
+      "willingness_to_pay_assessment": "Confirmed: real, live buy-side demand exists (a specific Mostaql project requesting a Saudi-tailored CV - DIRECT) and a real, active freelance supply market on Khamsat priced $5-50 per CV (STRONG_INDIRECT, based on multiple real listing pages returned by search, not individually fetched due to proxy failures). A price-comparison article also cites a 169 SAR bilingual Saudi CV package (WEAK, single source, not independently fetched). This is a thin, commoditized, low-ticket market (freelancers already undercut to $5), so people DO pay today, but at very low price points that will pressure any AI product's pricing and margins.",
+      "summary": "Saudi job seekers already pay $5-169 for CV writing via freelancers (Khamsat/Mostaql) and dedicated agencies (CV-SA, CVKSA per original candidate evidence). Payment is proven but the going rate is very low, and free AI tools (ChatGPT, LambaCV) are a live substitute threat noted in the candidate's own open questions."
+    },
+    {
+      "candidate_id": "C17",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi consumers/tenants",
+          "pays_for": "General legal consultation (in-person, per hour) from a law firm, not specifically complaint-drafting",
+          "price": "500-1500",
+          "currency": "SAR",
+          "period": "per hour",
+          "url": "https://tashawr.com/blogs/%D9%83%D9%85-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%D8%9F-%D8%AF%D9%84%D9%8A%D9%84-%D9%88%D8%A7%D8%B6%D8%AD",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Saudi consumers",
+          "pays_for": "Digital/text legal consultation via specialist app (Tashawr), starting price",
+          "price": "100",
+          "currency": "SAR",
+          "period": "per consultation",
+          "url": "https://tashawr.com/",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Lawyers/legal professionals (adjacent B2B segment, not consumers)",
+          "pays_for": "AI legal-assistant credits (خبير platform) for Saudi-law-trained legal AI",
+          "price": "100 credits for trial (exact SAR price not confirmed)",
+          "currency": "SAR",
+          "period": "credit-based",
+          "url": "https://khaberai.com/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Consultation lawyer (general legal advice, Saudi Arabia)",
+          "cost_or_salary": "100 SAR (digital, short) up to 500-1500 SAR/hour (in-person)",
+          "url": "https://bynh.sa/%D9%83%D9%85-%D8%B3%D8%B9%D8%B1-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D8%9F/"
+        }
+      ],
+      "willingness_to_pay_assessment": "No direct evidence that consumers pay specifically for complaint-drafting/document-generation for landlord, gym, delivery or e-commerce disputes - the underlying government channels (Najiz, Ejar, CST, Balagh Tijari) are free, and the candidate's own evidence for law-firm 'complaint help' content is WEAK (marketing content, not verified pricing). What IS confirmed is that Saudis pay 100-1500 SAR for general legal consultations (adjacent service, WEAK/single-source pricing) and that several AI-legal-tech platforms already operate in Saudi Arabia targeting lawyers (عادل, وضاح, شورى AI, خبير), which is only PARTIAL/adjacent proof - it shows a paid AI+legal market exists in KSA, not that end consumers will pay for a self-serve complaint generator when free official channels exist.",
+      "summary": "Payment exists today only for adjacent services: general lawyer consultations (100-1500 SAR) and B2B AI-legal tools aimed at lawyers, not for the specific consumer complaint-drafting product proposed. Core government complaint channels are free, which is a real headwind for monetization."
+    },
+    {
+      "candidate_id": "C18",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi households",
+          "pays_for": "General legal consultation regarding recruitment-office disputes (not a dedicated product)",
+          "price": "100-1500",
+          "currency": "SAR",
+          "period": "per consultation/hour",
+          "url": "https://tashawr.com/blogs/%D9%83%D9%85-%D8%B3%D8%B9%D8%B1-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9%D8%9F-%D8%AF%D9%84%D9%8A%D9%84-%D9%88%D8%A7%D8%B6%D8%AD",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Saudi households (potential)",
+          "pays_for": "Law firm guidance on filing a Musaned recruitment-office complaint (content is marketing/lead-gen, not a priced product)",
+          "price": "NO RELIABLE EVIDENCE FOUND (fee not disclosed)",
+          "currency": "SAR",
+          "period": "unknown",
+          "url": "https://agl.sa/complaint-against-recruitment-office-ksa/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "General legal consultant (Saudi Arabia, not recruitment-dispute-specific)",
+          "cost_or_salary": "100-1500 SAR per consultation",
+          "url": "https://bynh.sa/%D9%83%D9%85-%D8%B3%D8%B9%D8%B1-%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9-%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D8%9F/"
+        }
+      ],
+      "willingness_to_pay_assessment": "No direct evidence anyone pays for a Musaned-specific dispute-help tool. The official Musaned/HRSD complaint channel is free (confirmed via candidate's own evidence: https://www.musaned.com.sa/ar/faqs/hiring-laborers). Multiple law firms publish free-to-read but monetized (lead-gen) content on this exact topic (agl.sa, law-zamzami.com), implying SOME households eventually pay for a lawyer consultation once the free process becomes confusing enough to escalate, but no price for that specific service was found - only general legal-consultation rates (100-1500 SAR) apply as a proxy.",
+      "summary": "Only adjacent/indirect payment evidence found: general legal consultation fees and law-firm lead-gen content on this topic. No direct pricing for a Musaned-dispute-specific product or service, and the core government channel is free."
+    },
+    {
+      "candidate_id": "C19",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Global enterprises (not Saudi SMEs)",
+          "pays_for": "Credo AI enterprise AI-governance/compliance platform subscription",
+          "price": "30,000-150,000+",
+          "currency": "USD",
+          "period": "per year",
+          "url": "https://co-aims.com/blog/credo-ai-review-2026-compliance-officers",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Saudi organizations (unspecified size)",
+          "pays_for": "SDAIA official data/AI consultations",
+          "price": "0 (free)",
+          "currency": "SAR",
+          "period": "per consultation",
+          "url": "https://sdaia.gov.sa/ar/Contact/Pages/Consultations.aspx",
+          "evidence_type": "DIRECT"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Willingness to pay for AI-governance/compliance tooling is proven in the GLOBAL enterprise market (Credo AI at $30K-150K+/yr, STRONG_INDIRECT), but that is a very different customer (large global enterprises, not small Saudi AI/SaaS vendors) and price point (way above what a small vendor would pay). There is NO evidence of an existing paid market for SDAIA-specific compliance tooling in Saudi Arabia - the Responsible AI Policy is still in public consultation (per candidate's own evidence, opened April 2026, not yet binding law) and SDAIA's own consultation service is free. This candidate is explicitly FUTURE_HYPOTHESIS; nobody can be paying for compliance with a policy that isn't finalized yet.",
+      "summary": "No direct or even adjacent-Saudi payment evidence. Global enterprise-tier tools (Credo AI, Holistic AI) prove the general AI-governance market can command high prices, but that says little about small Saudi vendors paying today, since the underlying Saudi regulation is still a draft under consultation."
+    },
+    {
+      "candidate_id": "C20",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "General contractors / large construction firms (not the target SME subcontractor segment)",
+          "pays_for": "Procore construction management SaaS (incl. tender management module)",
+          "price": "10,000+ (mid-market GCs: ~35,000-60,000)",
+          "currency": "USD",
+          "period": "per year",
+          "url": "https://checkthat.ai/brands/procore/pricing",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Developers/consultants/contractors across the Middle East incl. Saudi Arabia",
+          "pays_for": "ProTenders construction intelligence & eTendering platform",
+          "price": "NO RELIABLE EVIDENCE FOUND (pricing not published)",
+          "currency": "unknown",
+          "period": "unknown",
+          "url": "https://www.protenders.com/saudi-arabia-construction-projects",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Saudi construction/contracting companies",
+          "pays_for": "Labor supply/staffing services from agencies (Maharah, Terra, Fnoon) for construction workers",
+          "price": "NO RELIABLE EVIDENCE FOUND (fees not disclosed)",
+          "currency": "SAR",
+          "period": "unknown",
+          "url": "https://maharah.com/en/skilled-construction-laborers/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Construction Project Manager (Saudi Arabia)",
+          "cost_or_salary": "SAR 149,760-236,153/year average (entry ~165,382, senior ~295,032)",
+          "url": "https://www.payscale.com/research/SA/Job=Project_Manager%2C_Engineering/Salary"
+        }
+      ],
+      "willingness_to_pay_assessment": "One review explicitly notes 'Procore is great for general contractors ... but would not be worth the cost for subcontractors' (per search snippet from checkthat.ai), which directly undercuts the candidate's target segment (SME subcontractors/tradespeople). Existing regional players (Procore, ProTenders) serve large GCs/developers, not the SME layer this candidate targets, and no pricing for SME-facing tender-matching tools was found. Real construction labor-supply agencies (Maharah, Terra, Fnoon) do charge for staffing today, which is a real paid market, but it is a different business model (staffing agency) than the proposed matching/compliance SaaS. Overall this remains a FUTURE_HYPOTHESIS opportunity with no direct evidence the target SME segment pays for anything like this today.",
+      "summary": "Adjacent evidence only: large-GC-focused SaaS (Procore, $10K-60K+/yr) and Middle East tendering platforms (ProTenders) exist and are paid for by big players, but explicitly not economical for subcontractors per a review. Real Saudi labor-supply agencies charge for staffing (different model). No evidence found of SME subcontractors paying for tender-matching/compliance tools specifically."
+    }
+  ],
+  "queries_used": [
+    "cvdesignsell.com CV writing pricing packages (fetch attempt, failed)",
+    "خدمة كتابة سيرة ذاتية السعودية سعر خمسات",
+    "Credo AI Holistic AI pricing enterprise compliance",
+    "مكتب محاماة استشارة شكوى إيجار السعودية سعر الاستشارة",
+    "استشارة قانونية شكوى مكتب استقدام مساند رسوم",
+    "sa.labeb.com CV pricing article (fetch attempt, failed)",
+    "شركة توظيف عمالة مقاولين السعودية رسوم توريد عمالة إنشاءات",
+    "Procore construction tender management SaaS pricing subcontractor Saudi",
+    "مستشار امتثال الذكاء الاصطناعي السعودية PDPL سداية استشارات أسعار",
+    "project manager engineer salary Saudi Arabia construction giga-projects recruitment agency fee",
+    "ProTenders pricing subcontractor construction Saudi Arabia Middle East",
+    "\"عادل\" OR \"منصة عدالة\" الذكاء الاصطناعي القانوني السعودية أسعار اشتراك"
+  ],
+  "limitations": [
+    "WebFetch failed repeatedly with 'proxy refused the connection' for cvdesignsell.com and sa.labeb.com, so those pricing claims rest on search-tool snippets/synthesis rather than a page I personally read in full.",
+    "No exact, verified consultation fee was found for law firms specifically handling landlord/gym/delivery/e-commerce or recruitment-office complaints (C17, C18) - only general legal-consultation rate ranges (100-1500 SAR) were found, which are WEAK proxies, not direct pricing for the specific service.",
+    "No pricing was found for ProTenders (C20), which limits the strength of that comparable.",
+    "No data was found on actual complaint/dispute volumes (Musaned, Ejar, gym refunds) beyond aggregate/adjacent statistics, limiting ability to size the addressable market for C17/C18.",
+    "SDAIA Responsible AI Policy (C19) is confirmed still in public consultation (per candidate's own evidence, April 2026), so by definition no one can yet be paying for compliance with a not-yet-finalized regulation in Saudi Arabia specifically.",
+    "Search budget used: 12 of 14 searches; 2 of 8 fetches attempted (both failed due to proxy errors), so fetch budget was effectively unused for verification of pricing pages."
+  ]
+}

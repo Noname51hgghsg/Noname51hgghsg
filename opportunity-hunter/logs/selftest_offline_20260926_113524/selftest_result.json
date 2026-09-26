@@ -1,0 +1,17 @@
+{
+ "1_orchestrator_runs_end_to_end": true,
+ "2_agent_can_be_run": true,
+ "3_agent_returns_valid_json(schema-invalid output rejected then retried)": true,
+ "4_results_reach_orchestrator": true,
+ "5_parallel_execution": true,
+ "6_validators_receive_results": true,
+ "7a_killer_receives_validation": true,
+ "7b_killer_can_reject": true,
+ "7c_gap_research_loop(NEEDS_MORE_EVIDENCE→research→final killer)": true,
+ "8_synthesizer_builds_report": true,
+ "8b_url_integrity_check_flags_invented_urls": true,
+ "9_logs_work": true,
+ "10a_failure_isolated(gap_hunter crashed, run continued)": true,
+ "10b_transient_failure_retried(b2c_hunter)": true,
+ "10c_rejected_not_sent_to_synthesizer": true
+}

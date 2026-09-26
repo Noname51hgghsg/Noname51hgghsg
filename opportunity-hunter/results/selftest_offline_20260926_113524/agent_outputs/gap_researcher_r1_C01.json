@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "answers": [
+        {
+          "question": "Do clinics pay for reminder tools?",
+          "finding": "FOUND",
+          "answer": "mock",
+          "sources": [
+            {
+              "url": "https://example.org/p",
+              "title": "p"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

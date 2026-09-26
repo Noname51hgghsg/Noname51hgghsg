@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "candidate_id": "C04",
+      "answers": [
+        {
+          "question": "Actual SAR rates freelancers charge per Mostaql bookkeeping/invoice-entry gig (never disclosed in any listing found)",
+          "finding": "PARTIAL",
+          "answer": "Direct per-gig prices on individual Mostaql project pages could not be fetched in this session (WebFetch to mostaql.com was blocked by the proxy). However, adjacent market-rate evidence was found: (1) multiple real Mostaql project listings exist for invoice/data-entry and bookkeeping tasks (e.g. daily purchase-invoice entry into Excel, converting invoice images to structured Excel data, entries into 'Daftra'/'Qoyod' accounting software), confirming real demand but not showing bid amounts in the search snippets. (2) Broader Saudi remote/independent bookkeeping service pricing (non-Mostaql) ranges from roughly SAR 1,500–4,000/month for SME bookkeeping, and one Monshaat-linked 'Mazaya' bookkeeping service package is listed at SAR 3,000 (SAR 2,250 after discount). These are monthly retainer prices for full bookkeeping, not per-gig Mostaql task prices, so they only proxy the willingness-to-pay ceiling, not the actual freelancer piece-rate for invoice entry.",
+          "sources": [
+            {
+              "title": "إدخال بيانات فواتير ومبيعات باستخدام برنامج إكسل | مستقل",
+              "url": "https://mostaql.com/project/863416-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D9%88%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D9%83%D8%B3%D9%84"
+            },
+            {
+              "title": "إدخال بيانات فواتير المشتريات إلى Excel بدقة واحترافية | مستقل",
+              "url": "https://mostaql.com/project/1230795-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-excel-%D8%A8%D8%AF%D9%82%D8%A9-%D9%88%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9"
+            },
+            {
+              "title": "خدمات مسك الدفاتر المحاسبية - مزايا - منشآت",
+              "url": "https://mazaya.monshaat.gov.sa/mazaya/9003"
+            },
+            {
+              "title": "دليل أسعار برامج المحاسبة في السعودية بالتفصيل",
+              "url": "https://www.wafeq.com/en/business-hub/for-business/the-ultimate-guide-to-accounting-software-pricing-in-saudi-arabia"
+            }
+          ]
+        },
+        {
+          "question": "Real Arabic OCR accuracy achievable with LLM-vision APIs (Claude/GPT-4o) on messy/handwritten Saudi supplier invoices -- untested in this session",
+          "finding": "FOUND",
+          "answer": "No direct test on real Saudi supplier invoices was run, but published benchmarks give a strong proxy. A cross-lingual handwritten-OCR benchmark found GPT-4o achieved a mean Arabic accuracy of 0.959 (best-trial 0.978) and Claude Sonnet 4 achieved 0.921 mean (best-trial 0.979) — i.e. high but not perfect, and this is on a curated handwriting benchmark, not messy real-world Saudi invoices with stamps/stains/mixed fonts, which typically perform worse. Separately, a vendor benchmark specifically on (printed, business) invoice-field extraction found Gemini ~94%, GPT+external OCR ~91%, Claude+external OCR ~90% accuracy — these are for structured Latin/mixed invoices, not messy handwritten Arabic. Conclusion: LLM-vision Arabic OCR is in the ~90-96% range on clean/benchmark data, but real messy handwritten Saudi invoices (stamps, cursive Arabic, poor scans) will likely score meaningfully lower and require human QA/correction workflow — this residual error rate is a genuine product-design constraint, not a solved problem.",
+          "sources": [
+            {
+              "title": "LLM-Driven AutoML for Cross-Lingual Handwritten OCR: Closed-Loop Neural Architecture Search with GPT-5, GPT-4o, and Claude Sonnet 4",
+              "url": "https://arxiv.org/pdf/2607.15509"
+            },
+            {
+              "title": "Exploring OCR Capabilities of GPT-4V(ision): A Quantitative and In-depth Evaluation",
+              "url": "https://arxiv.org/pdf/2310.16809"
+            },
+            {
+              "title": "Claude vs GPT vs Gemini: Which AI Wins at Invoice Extraction?",
+              "url": "https://www.koncile.ai/en/ressources/claude-gpt-or-gemini-which-is-the-best-llm-for-invoice-extraction"
+            }
+          ]
+        },
+        {
+          "question": "Whether customers would trust an unsupervised AI tool for VAT-sensitive reconciliation without a human-in-the-loop, which would raise the founder's operating cost/complexity",
+          "finding": "FOUND",
+          "answer": "Evidence points to NO — the professional and vendor consensus is that AI should draft/pre-process while a qualified human reviews and finalizes VAT-relevant entries. Industry sources explicitly warn that fully automatic accounting without review risks misclassified transactions, missed tax/legal details, undetected biased outputs, and audit-trail/compliance gaps that create liability exposure; the recommended model is 'AI prepares, human reviews, accountant finalizes under professional supervision,' with VAT treatment and unusual transactions specifically flagged for accountant sign-off. In the Saudi/GCC market itself, existing ZATCA-compliance products lean toward giving accountants editable templates/dashboards (human-controlled) rather than fully autonomous reconciliation, and audit-prep guidance stresses that supporting invoices/ledgers must be manually verified to match records before ZATCA inspection. This implies a solo founder cannot sell a 'fully unsupervised' VAT reconciliation tool with confidence — the product will need a human-in-the-loop review/approval step (raising ops complexity: either the founder or the customer's accountant must review outputs), which should be priced/scoped into the MVP rather than promised away.",
+          "sources": [
+            {
+              "title": "AI in Accounting: Governance, Trust & Human Expertise",
+              "url": "https://www.caseware.com/resources/blog/ai-in-accounting-human-expertise-governance-trust"
+            },
+            {
+              "title": "AI Accounting and Automated Bookkeeping",
+              "url": "https://ample.ae/ai-accounting-and-automated-bookkeeping/"
+            },
+            {
+              "title": "How to prepare for ZATCA audits [Essential Records and Steps] | Wafeq",
+              "url": "https://www.wafeq.com/en-sa/tax-and-reporting/how-to-prepare-for-zatca-audits"
+            },
+            {
+              "title": "Zakat & VAT Compliance - Tools & Working Templates",
+              "url": "https://digitalsalla.com/en/product/vat-reconciliation-vat/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "Mostaql bookkeeping data entry invoice project SAR price مشروع مسك دفاتر إدخال فواتير مستقل",
+    "Claude GPT-4o vision Arabic OCR handwritten invoice accuracy benchmark (CACHE_HIT)",
+    "ZATCA VAT reconciliation AI automation human review requirement accountant trust",
+    "site:mostaql.com محاسبة إدخال بيانات فواتير مسك دفاتر",
+    "\"مستقل\" مسك دفاتر شهري ريال سعودي محاسب مستقل عن بعد سعر",
+    "accountant Saudi Arabia trust AI bookkeeping automation without human review error liability"
+  ],
+  "limitations": [
+    "WebFetch on two specific Mostaql project pages failed ('proxy refused the connection'), so exact per-gig bid amounts (SAR) could not be directly confirmed from listing pages; only search-snippet-level project descriptions were available, with monthly retainer bookkeeping prices used as an indirect proxy.",
+    "OCR accuracy answer relies on published third-party benchmarks (arXiv papers, a vendor blog) rather than an actual in-session test on real Saudi handwritten supplier invoices; real-world messy/stamped invoices were not tested and likely underperform clean benchmark data.",
+    "No Saudi-specific survey or direct quote from a Saudi accountant/SME about willingness to use unsupervised AI for VAT reconciliation was found; the trust/human-in-the-loop conclusion is inferred from general (mostly non-Saudi) accounting-AI governance sources plus Saudi ZATCA audit-prep guidance, not a KSA-specific survey."
+  ]
+}

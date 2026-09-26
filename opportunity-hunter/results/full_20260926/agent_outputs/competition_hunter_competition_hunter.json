@@ -1,0 +1,361 @@
+{
+  "agent": "competition_hunter",
+  "signals": [
+    {
+      "opportunity_id": "CG-01",
+      "problem": "Foodics dominates Saudi restaurant/cafe POS but small F&B operators (cafes, food trucks, kiosks) complain about subscription being overpriced relative to their transaction volume, plus customer service limitations and update bugs; hardware is sold separately (~3,500 SAR) adding to entry cost.",
+      "customer": "Small independent cafes, food trucks, kiosks and single-branch restaurants in KSA",
+      "segment": "B2B",
+      "sector": "Retail/Hospitality Tech (POS)",
+      "market": "Saudi Arabia",
+      "source": "Capterra/SoftwareAdvice aggregated reviews; competitor positioning blog (TapFood)",
+      "evidence": [
+        {
+          "claim": "Users want alternatives with reasonable pricing and complain about overpriced subscription and poor customer service",
+          "url": "https://www.capterra.com/p/157590/Foodics/",
+          "source_title": "Foodics Software Pricing, Alternatives & More 2026 | Capterra",
+          "summary": "Search snippet from Capterra listing/summary of Foodics reviews notes desire for cheaper alternatives (e.g., Square-like), and complaints about overpriced subscription and poor customer service (per search snippet; direct fetch of the page failed due to proxy error).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        },
+        {
+          "claim": "A dedicated competitor (TapFood) markets itself explicitly as a cheaper alternative to Foodics for Saudi restaurants",
+          "url": "https://tapfood.net/blog/tapfood-vs-foodics-alternative-saudi-arabia-2026",
+          "source_title": "TapFood vs Foodics: Best POS Alternative for Saudi Restaurants 2026",
+          "summary": "Existence of a comparison/positioning page targeting Foodics switchers is strong indirect evidence that pricing/value dissatisfaction with Foodics is real enough to build a competing offer around (per search snippet; fetch failed).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Foodics pricing starts at SAR 199-399/month plus separate hardware (~SAR 3,500) and per-transaction fees on Foodics Pay",
+          "url": "https://www.saasworthy.com/product/foodics/pricing",
+          "source_title": "Foodics Pricing: Cost and Pricing plans - POS Software",
+          "summary": "Pricing tiers and hardware/payment fee structure as aggregated by SaaSWorthy (per search snippet).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Foodics",
+          "url": "https://www.capterra.com/p/157590/Foodics/",
+          "notes": "Market leader for Saudi restaurant POS with ZATCA e-invoicing and Mada/STC Pay integration, but priced/positioned for mid-size+ restaurants; separate hardware cost and per-transaction fees."
+        },
+        {
+          "name": "TapFood",
+          "url": "https://tapfood.net/blog/tapfood-vs-foodics-alternative-saudi-arabia-2026",
+          "notes": "New entrant explicitly positioning as a cheaper Foodics alternative."
+        }
+      ],
+      "workaround": "Small operators either overpay for Foodics' full-restaurant feature set, use manual/paper systems, or switch to newer cheaper entrants like TapFood.",
+      "potential_solution": "A stripped-down, ZATCA-compliant POS+e-invoicing app (tablet/phone based, no proprietary hardware lock-in) priced per-transaction or flat low monthly fee, targeting single-till micro F&B businesses.",
+      "business_model": "Low monthly SaaS fee (e.g., 49-99 SAR/mo) or small per-transaction fee; no mandatory hardware purchase.",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "Foodics Starter plan ~SAR 199/mo, Professional ~SAR 399/mo, plus ~SAR 3,500 for Foodics One hardware (per SaaSWorthy/Capterra search snippets)",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Actual churn/complaint volume (page fetch blocked)",
+        "Whether ZATCA compliance can be met cheaply without Foodics-grade infrastructure",
+        "Real pricing sensitivity threshold for micro F&B owners"
+      ]
+    },
+    {
+      "opportunity_id": "CG-02",
+      "problem": "Between Saudi-native e-commerce platforms, Salla is cheap/free but has support response delays, while Zid has stronger analytics/inventory but costs SAR 349-799/month — merchants who need mid-tier analytics/inventory tools but can't justify Zid's premium tier, or who are stuck waiting on Salla support, are underserved.",
+      "customer": "Saudi SMB online store owners on Salla/Zid (especially those on Salla's cheaper tiers needing better analytics/inventory or faster support)",
+      "segment": "B2B",
+      "sector": "E-commerce tooling",
+      "market": "Saudi Arabia",
+      "source": "Comparison blogs (redrock.com.sa, h-haboubi.com) aggregating Salla vs Zid pricing and support notes",
+      "evidence": [
+        {
+          "claim": "Salla Growth plan SAR 149/mo, Professional SAR 399/mo, free tier available; Zid ranges SAR 349-799/mo with better inventory/analytics but 'commands premium pricing'",
+          "url": "https://h-haboubi.com/blog/others/best-ecommerce-platform-saudi-arabia/",
+          "source_title": "Best Ecommerce Platform Saudi Arabia 2026: Salla vs Zid vs Shopify vs WooCommerce",
+          "summary": "Pricing comparison showing the gap between Salla's affordable tiers and Zid's pricier tier that includes advanced analytics/inventory (per search snippet).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Salla support response times can be delayed compared to Zid's faster support",
+          "url": "https://www.redrock.com.sa/blog/salla-vs-zid-vs-shopify-saudi-arabia/",
+          "source_title": "Salla vs Zid vs Shopify: Best Platform in Saudi Arabia",
+          "summary": "Comparison blog notes Salla's support response delays as a known weakness relative to Zid (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Salla",
+          "url": "https://h-haboubi.com/blog/others/best-ecommerce-platform-saudi-arabia/",
+          "notes": "Cheap/free tier, large app marketplace, but slower support and lighter analytics on lower tiers."
+        },
+        {
+          "name": "Zid",
+          "url": "https://h-haboubi.com/blog/others/best-ecommerce-platform-saudi-arabia/",
+          "notes": "Better inventory/analytics but SAR 349-799/mo, priced out of reach for many micro-merchants."
+        }
+      ],
+      "workaround": "Merchants either overpay for Zid's tier just to get analytics/inventory features, or stay on Salla and rely on spreadsheets/third-party apps for inventory forecasting and reporting.",
+      "potential_solution": "A lightweight analytics/inventory-forecasting app built on Salla's/Zid's official app marketplace/API, sold as a cheap add-on (not a full competing platform) for merchants on lower-tier plans.",
+      "business_model": "Marketplace app subscription (e.g., 30-80 SAR/month) distributed through Salla App Store.",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "Salla SAR 149-399/mo; Zid SAR 349-799/mo (per h-haboubi.com search snippet)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Salla/Zid app marketplace API is open enough for a solo dev to build against",
+        "Actual demand size for a standalone analytics add-on vs merchants simply upgrading plans",
+        "Real severity of the support-delay complaint (single blog mention)"
+      ]
+    },
+    {
+      "opportunity_id": "CG-03",
+      "problem": "Leading Saudi HR/payroll platforms (Jisr, Bayzat, ZenHR, Hono) are built as full HCM suites (HR+Talent+Payroll+Compliance+Finance) aimed at mid/large companies; micro businesses (5-20 employees) that only need GOSI/Mudad/Qiwa/WPS compliance filing may be paying for or navigating features/complexity they don't need.",
+      "customer": "Saudi micro/small businesses (5-20 employees) needing only GOSI/Mudad/Qiwa/WPS compliance",
+      "segment": "B2B",
+      "sector": "HR/Payroll compliance software",
+      "market": "Saudi Arabia",
+      "source": "HR software buyer-guide blogs comparing GOSI/Mudad/Qiwa integration depth",
+      "evidence": [
+        {
+          "claim": "Jisr is positioned as a unified HR, Talent, Payroll, Compliance and Finance platform with native Mudad/GOSI/Qiwa/Muqeem coverage, aimed at 'modern KSA businesses' broadly including semi-government/larger orgs",
+          "url": "https://www.jisr.net/en",
+          "source_title": "Jisr - All-in-one HR, Talent & Spend for modern KSA businesses",
+          "summary": "Jisr markets itself as an all-in-one suite; full-suite positioning suggests feature depth/pricing aimed above micro-business needs (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        },
+        {
+          "claim": "Jisr and ZenHR are described as having the deepest native GOSI/Mudad/Muqeem integration 'for companies operating only inside the Kingdom'",
+          "url": "https://logiolegion.com/blogs/saudi-hr-software-mudad-gosi-qiwa-nitaqat-compliance-guide-2026",
+          "source_title": "Saudi HR Software That Handles Mudad, GOSI, Qiwa and Nitaqat — 2026 HRMS Guide",
+          "summary": "Comparison guide frames these tools around full-company compliance needs rather than a lightweight micro-business tier (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Jisr",
+          "url": "https://www.jisr.net/en",
+          "notes": "Full HCM suite; pricing not public (enterprise 'contact us' model typical of this segment)."
+        },
+        {
+          "name": "Bayzat / ZenHR / Hono",
+          "url": "https://www.hono.ai/blog/hr-payroll-software-saudi-arabia",
+          "notes": "Comparable full-suite competitors; no clear budget/micro-business tier surfaced in search."
+        }
+      ],
+      "workaround": "Micro businesses likely use accountants/agencies or manual GOSI/Mudad portals directly, or under-use expensive HCM suites for a handful of employees.",
+      "potential_solution": "A minimal-scope, low-cost web app that only automates GOSI/Mudad/Qiwa/WPS filing for businesses with <20 employees, skipping talent/finance modules entirely.",
+      "business_model": "Flat low monthly fee per company (not per-seat) e.g., 50-150 SAR/month.",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (Jisr/competitors do not publish pricing; enterprise 'contact sales' model observed in search results)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual Jisr/Bayzat pricing for very small companies (not disclosed publicly)",
+        "Whether micro businesses feel this as a real pain or simply outsource to accountants",
+        "Regulatory complexity of building compliant GOSI/Mudad integrations as a solo founder"
+      ]
+    },
+    {
+      "opportunity_id": "CG-04",
+      "problem": "Private schools must enter the same data (attendance, grades, enrollment, fees) both into their own school management system and separately into the government Noor/Madrasati portal, causing duplicated work, inconsistent records, and manual ZATCA invoicing for fees plus separate Iqama-renewal tracking for teachers.",
+      "customer": "Saudi private schools/administrators",
+      "segment": "B2B",
+      "sector": "Education / School management software",
+      "market": "Saudi Arabia",
+      "source": "Vendor blog describing private-school operational pain around Noor system",
+      "evidence": [
+        {
+          "claim": "A private school administrator in Riyadh enters attendance into their school management system in the morning, then re-enters the same data into Noor later, with the process repeated for grades, enrollment, academic reports and compliance submissions, resulting in duplicated work, manual ZATCA invoicing, separate Iqama tracking, and prayer-time-aware timetabling",
+          "url": "https://logiolegion.com/blogs/private-school-management-system-development-saudi-arabia",
+          "source_title": "Private School Management System Development in Saudi Arabia: NOOR Integration, Arabic ERP & MOE Compliance",
+          "summary": "Vendor blog (marketing content pitching custom dev services) describes a specific duplicated-data-entry workflow pain for private schools navigating Noor alongside internal SMS (per search snippet; direct fetch failed due to proxy error).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Generic/global school ERPs (OpenEduCat, Orison, Trasealla)",
+          "url": "https://openeducat.org/k12-school-management-software-in-saudi-arabia/",
+          "notes": "General K-12 software marketed in KSA but not confirmed to natively sync with Noor/Madrasati."
+        }
+      ],
+      "workaround": "Manual double data-entry by school admin staff into both internal SMS and the Noor government portal.",
+      "potential_solution": "A lightweight school-admin tool focused on Saudi specifics (Hijri/prayer-aware timetabling, ZATCA-compliant fee invoicing, Iqama renewal reminders) with semi-automated Noor data prep/export to cut duplicate entry, targeted at small-to-mid private schools that can't afford full enterprise ERP customization.",
+      "business_model": "Per-school annual or monthly SaaS licence.",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no software pricing surfaced; pain currently absorbed as unpaid admin staff time, per vendor blog claim)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Noor/Madrasati offers any official API/bulk-import that would make this pain solvable without government cooperation",
+        "True scale of the problem beyond one vendor's marketing anecdote",
+        "Whether private schools would pay for a point solution vs waiting for MOE improvements"
+      ]
+    },
+    {
+      "opportunity_id": "CG-05",
+      "problem": "Saudi-native accounting SaaS (e.g., Qoyod) bundles core bookkeeping affordably but charges extra per-user/per-module add-ons for POS (~SAR 600/user) and payroll (~SAR 120/year), which can add up for small multi-branch retailers or businesses needing several of these modules together, versus lower flat-fee competitors like Wafeq (from SAR 99/month).",
+      "customer": "Small Saudi retail/multi-branch businesses needing combined accounting+POS+payroll",
+      "segment": "B2B",
+      "sector": "Accounting / Business software",
+      "market": "Saudi Arabia",
+      "source": "Competitor pricing comparison blog (Wafeq's own business hub article comparing itself to Qoyod)",
+      "evidence": [
+        {
+          "claim": "Qoyod Basic plan is SAR 1,200/year for one user, Professional SAR 1,800/year for three users, with POS add-on at SAR 600/user and payroll add-on at SAR 120/year; Wafeq starts at SAR 99/month across a four-tier structure",
+          "url": "https://www.wafeq.com/en/business-hub/for-business/the-ultimate-guide-to-accounting-software-pricing-in-saudi-arabia",
+          "source_title": "The Ultimate Guide to Accounting Software Pricing in Saudi Arabia | Wafeq",
+          "summary": "Wafeq's own comparison blog lays out Qoyod's per-user/per-module add-on pricing structure alongside its own flat pricing (per search snippet; this is a competitor's own marketing/comparison content, so treat pricing figures as indicative not fully independently verified; direct fetch failed).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/",
+          "notes": "Saudi-first ZATCA accounting SaaS; core plan affordable but POS/payroll are separate paid add-ons."
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en/",
+          "notes": "Positions itself as cheaper/more flexible alternative starting at SAR 99/month."
+        }
+      ],
+      "workaround": "Small businesses either pay for multiple stacked add-ons on one platform, or juggle separate point tools (a free POS + separate accounting software) and reconcile manually.",
+      "potential_solution": "A single flat-fee bundle (bookkeeping+basic POS+basic payroll) for very small single/dual-branch retailers who don't want per-module upsells — positioned below Qoyod's combined add-on cost.",
+      "business_model": "Flat monthly SaaS fee bundling the 2-3 most common modules instead of per-module pricing.",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "LOW",
+      "existing_spend": "Qoyod ~SAR 1,200-1,800/yr base + SAR 600/user POS add-on + SAR 120/yr payroll add-on; Wafeq from SAR 99/month (per Wafeq's own comparison blog, search snippet)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether these pricing figures are current/accurate (sourced from a competitor's marketing comparison, not the primary vendor's own pricing page — fetch failed)",
+        "Real willingness of small retailers to switch accounting platforms for this saving",
+        "Size of the segment needing all three modules simultaneously"
+      ]
+    },
+    {
+      "opportunity_id": "CG-06",
+      "problem": "Saudi's Ejar rental platform requires contract registration/renewal; property management software integrating with the Ejar API is positioned as custom development work for agencies, and dedicated blog content exists on 'streamlining Ejar contract renewals through property management software' — suggesting small landlords/individual property owners with only a handful of units are left doing manual Ejar renewals without affordable dedicated tooling (enterprise PM software targets multi-unit agencies).",
+      "customer": "Small independent landlords / small property managers (2-20 units) in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "PropTech / Property management software",
+      "market": "Saudi Arabia",
+      "source": "Property-management vendor blogs discussing Ejar contract renewal workflows and Ejar API integration development",
+      "evidence": [
+        {
+          "claim": "A blog specifically frames 'streamlining Ejar contract renewals through property management software' as a guide for Saudi real estate agencies, implying manual renewal is a known pain point solved today mainly for agency-scale customers",
+          "url": "https://www.osool.estate/en/blog/streamlining-ejar-contract-renewals-through-property-management-software-a-guide-for-saudi-real-estate-agencies",
+          "source_title": "Streamlining Ejar Contract Renewals Through Property Management Software",
+          "summary": "Vendor (Osool) blog targets real estate agencies specifically for Ejar renewal automation, suggesting smaller independent landlords are not the target market of existing enterprise-oriented PM tools (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated market for 'Ejar API Integration Software Development' exists as a custom-dev service category",
+          "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+          "source_title": "Ejar API Integration Software Development in Saudi Arabia (2026 Guide)",
+          "summary": "A vendor markets custom Ejar API integration builds, indicating no simple off-the-shelf affordable option is assumed to exist for smaller players (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Osool",
+          "url": "https://www.osool.estate/en/blog/streamlining-ejar-contract-renewals-through-property-management-software-a-guide-for-saudi-real-estate-agencies",
+          "notes": "Enterprise-oriented property management platform targeting agencies, not small individual landlords."
+        }
+      ],
+      "workaround": "Small landlords likely manage Ejar contract renewals manually through the government portal without dedicated software, or hire a management agency.",
+      "potential_solution": "A very simple SaaS/mobile tool for small landlords (2-20 units) that tracks Ejar contract expiry dates, sends renewal/rent-due reminders, and helps prep the Ejar renewal paperwork — without full agency-grade PM features.",
+      "business_model": "Low flat monthly/annual fee per landlord account, or per-unit micro-fee.",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (no pricing found for small-landlord segment; existing enterprise PM tools' pricing not surfaced in search)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Ejar exposes a public API small developers can legally/technically access",
+        "Actual size of the small-landlord segment vs. agency-managed rentals in KSA",
+        "Whether REGA/Ejar itself already offers free reminder features that would make this redundant"
+      ]
+    },
+    {
+      "opportunity_id": "CG-07",
+      "problem": "A freelance project posting on Mostaql sought one custom build combining a clinic management system, a full website, an online store, and an online school in a single project — suggesting solo/small multi-service entrepreneurs can't find one affordable bundled SaaS covering their mixed needs and instead commission expensive one-off custom development.",
+      "customer": "Solo/small multi-service entrepreneurs in Saudi/MENA needing combined booking+store+content site",
+      "segment": "B2B",
+      "sector": "SMB software bundle (vertical-agnostic)",
+      "market": "Saudi Arabia (Mostaql is pan-Arab but heavily used by Saudi clients)",
+      "source": "Mostaql freelance project listing",
+      "evidence": [
+        {
+          "claim": "A real freelance project posting requests one integrated build: clinic management program + full website + e-commerce store + online school",
+          "url": "https://mostaql.com/project/8048-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%B9%D9%85%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%84%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9-%D8%B7%D8%A8%D9%8A%D8%A9-%D9%88%D9%85%D9%88%D9%82%D8%B9-%D9%85%D8%AA%D9%83%D8%A7%D9%85%D9%84-%D9%88%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%88%D9%85%D8%AF%D8%B1%D8%B3%D8%A9-%D8%A7%D9%88%D9%86-%D9%84%D8%A7%D9%8A%D9%86",
+          "source_title": "مشروع عمل برنامج لادارة عيادة طبية وموقع متكامل ومتجر الكتروني ومدرسة اون لاين | مستقل",
+          "summary": "Direct listing on the Mostaql freelance marketplace showing a real client request for a combined clinic+website+store+online-school build, which is demand evidence for a bundled solution rather than proof of willingness to pay a recurring SaaS fee (per search snippet).",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Commissioning one-off custom development via freelance platforms (Mostaql/Khamsat) instead of buying separate point SaaS tools (clinic software + Salla/Zid store + LMS).",
+      "potential_solution": "A no-code/low-code starter template bundling basic clinic/appointment booking + storefront + simple course/content hosting for solo multi-service operators, cheaper than custom dev.",
+      "business_model": "Low monthly SaaS fee undercutting typical custom-dev project cost.",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "LOW",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (project budget not visible in search snippet; full listing not fetched)",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether this is a one-off anecdote or a recurring pattern of requests",
+        "Actual budget the client was willing to pay",
+        "Whether combining these disparate verticals in one product is technically/commercially sound"
+      ]
+    }
+  ],
+  "queries_used": [
+    "Qoyod Wafeq accounting software Saudi SMB pricing complaints reviews",
+    "Foodics POS pricing complaints Saudi restaurant reviews",
+    "Jisr Mudad HR software Saudi Qiwa GOSI integration complaints reviews",
+    "Ejar property management software Saudi complaints landlord",
+    "برنامج محاسبة السعودية شكوى غالي دعم عربي",
+    "Salla Zid ecommerce platform Saudi complaints fees reviews",
+    "برنامج عيادات السعودية شكوى غالي مميزات مطلوبة clinic management software Saudi complaints",
+    "school management software Saudi Arabia private schools complaints Noor system",
+    "CRM software Saudi SMB Zoho Salesforce too expensive Arabic reviews",
+    "field service management software Saudi Arabia maintenance companies complaints",
+    "salon booking software Saudi Arabia reviews complaints مواعيد صالون",
+    "Mostaql Khamsat طلب برنامج مخصص نظام محاسبة عيادة مدرسة"
+  ],
+  "limitations": [
+    "All 6 WebFetch attempts failed with 'proxy refused the connection' errors, exhausting the fetch budget with zero successful fetches — every claim below relies on WebSearch result snippets/AI summaries rather than directly verified page content, which is lower-confidence than normal DIRECT evidence.",
+    "No access to G2/Capterra actual review text, app store review counts, or Reddit/X threads with direct user complaints — could not confirm complaint volume or recency for Foodics, Jisr, Qoyod, or Salla/Zid.",
+    "Could not verify current pricing pages directly (Qoyod, Wafeq, Foodics, Salla, Zid) since fetches failed; all pricing figures are as reported by third-party comparison blogs (some of which are competitors, i.e. potentially biased).",
+    "Several vendor 'pain point' descriptions (school Noor duplication, Ejar renewal pain) come from marketing blogs of companies selling the very solution to that pain, which is a conflict-of-interest source and only WEAK evidence.",
+    "No Arabic-language Reddit/forum complaint threads were surfaced in the searches actually run; Arabic queries returned mostly SEO/comparison content rather than user complaints.",
+    "12/12 search budget and 6/6 fetch budget fully used; could not cross-check or deepen any single finding further."
+  ]
+}

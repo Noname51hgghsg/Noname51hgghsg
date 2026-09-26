@@ -1,0 +1,250 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "verdict": "SURVIVED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The exact wedge a solo founder would target — a cheap, single-merchant ZATCA e-invoicing tool for micro-merchants — is already commoditized. Fatoora Cloud (SAR75/mo, 'zero setup'), FatooraPlus (from SAR99/mo), and Qoyod's lowest tier (SAR60-120/mo) already serve this niche today, and Zoho Invoice/Zoho Books is a well-known global brand offering a free invoicing tier with a ZATCA Phase-2 approved e-invoicing solution. A new solo entrant would have to undercut an already-thin SAR60-75/month floor.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.bytesraw.com/fatoora",
+              "summary": "Fatoora Cloud: ZATCA Phase-2 ready cloud invoicing for Saudi SMEs, 75 SAR/month, 2 users included, zero setup, 6-month minimum commitment."
+            },
+            {
+              "url": "https://www.zoho.com/sa/books/e-invoicing",
+              "summary": "Zoho Books is confirmed ZATCA Phase-2 approved e-invoicing compliant, and Zoho Invoice is marketed as free VAT e-invoicing software for small businesses in Saudi Arabia -- a globally-trusted free/cheap alternative."
+            },
+            {
+              "url": "https://fatooraplus.com/pricing/",
+              "summary": "FatooraPlus: dedicated ZATCA compliance plans starting from SAR99/month, another cheap dedicated competitor already live."
+            }
+          ]
+        },
+        {
+          "category": "FOUNDER_MISFIT",
+          "reason": "A bug in the XML/cryptographic-stamp generation directly exposes the customer to real government fines (SAR 5,000-50,000 per violation), which creates a support/liability burden well beyond a typical CRUD SaaS for a single, non-legally-trained founder with no support staff.",
+          "severity": "MINOR",
+          "evidence": []
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for a free/near-free ZATCA e-invoicing alternative that would remove the price wedge (found Zoho Invoice/Books)",
+        "Searched for the cheapest dedicated competitor pricing (Fatoora Cloud, FatooraPlus) to test if the 'below SAR75' wedge is still open",
+        "Assessed whether ZATCA requires a hard accreditation licence (already resolved as NO by validator; re-confirmed no contradicting evidence found)",
+        "Assessed liability/support burden as a founder-fit risk given real financial penalties tied to product errors"
+      ],
+      "remaining_uncertainties": [
+        "Whether a truly ultra-micro / WhatsApp-only tier priced below SAR60-75/month can achieve sustainable unit economics given payment processing + hosting + support costs",
+        "Whether Zoho's free tier actually includes ZATCA Phase-2 compliance or only the paid Books tiers do (search results were ambiguous: 'users must be subscribed to the appropriate Zoho Books plan')",
+        "Real churn/willingness of the smallest merchants to switch from a free/cheap incumbent to a new unbranded solo product",
+        "Whether ZATCA's evolving wave schedule will require constant compliance-logic maintenance that a solo founder can sustain long-term"
+      ],
+      "missing_info_requests": [
+        {
+          "question": "Does Zoho Invoice's free tier include ZATCA Phase-2 compliant XML/QR generation, or is that gated behind a paid Zoho Books plan?",
+          "route_to": "competition"
+        },
+        {
+          "question": "What real customer counts/reviews exist for Fatoora Cloud and FatooraPlus to gauge how saturated the ultra-cheap tier already is?",
+          "route_to": "competition"
+        }
+      ],
+      "survival_notes": "Survives because payment evidence is strong (multiple incumbents charging real recurring fees proves the category is monetizable) and the regulatory barrier feared in the dossier (accreditation) is confirmed NOT to exist. However, the specific wedge must be genuinely novel (e.g., true WhatsApp-only zero-dashboard product, or a segment even smaller than what Fatoora Cloud/FatooraPlus/Qoyod already serve) rather than 'a cheap ZATCA tool' in general, since that framing is now commoditized by at least 4 competitors including a free/cheap global brand (Zoho).",
+      "summary": "Regulatory and payment fundamentals are solid, but the specific micro-merchant price tier the founder would target is already served by Fatoora Cloud (SAR75/mo), FatooraPlus (SAR99/mo), Qoyod's cheapest tier, and Zoho's free/cheap ZATCA-compliant invoicing -- survives only with a sharper, narrower wedge than originally scoped."
+    },
+    {
+      "candidate_id": "C02",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "A direct, purpose-built competitor already exists and does exactly what this candidate proposes: SaudizationMeter offers Nitaqat band calculation, what-if hiring scenarios, custom alerts, an audit log, and multi-company support, with live tiered pricing ($30/mo Starter, $80/mo Pro, $400/mo Enterprise) and a free calculator as a lead magnet -- this is not a hypothetical incumbent, it is the exact product concept already shipped.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.saudizationmeter.com/pricing",
+              "summary": "Live SaudizationMeter pricing page: free calculator, Starter $30/mo, Pro $80/mo (custom alerts, audit log, unlimited scenarios), Enterprise from $400/mo -- essentially identical feature set to the candidate's proposed dashboard."
+            },
+            {
+              "url": "https://www.jisr.net/en/hr-tools/nitaqat-calculator",
+              "summary": "Jisr also offers a free Nitaqat calculator as a lead magnet, further eroding the price ceiling a standalone tool could charge."
+            }
+          ]
+        },
+        {
+          "category": "DATA_UNAVAILABLE",
+          "reason": "The core value proposition (auto-syncing Qiwa employee/profession data instead of manual re-entry) depends on API access that does not appear to exist for independent third-party developers. Research on Qiwa/government-platform integration confirms most Saudi government services 'do not allow for direct integration with external entities through APIs; instead, it allows for data import and export' -- meaning any new tool, like the existing SaudizationMeter, is reduced to a manual-entry calculator, not a true automation layer.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://origami.sa/en/blog/saudi-government-platform-integration-qiwa-gosi-mudad-zatca/",
+              "summary": "Integration guide states most Saudi government platforms (Qiwa, Mudad, GOSI) do not permit direct external API integration, only data import/export, undermining the 'no duplicate data entry' pitch."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched specifically for existing Nitaqat/Saudization calculator competitors and found SaudizationMeter, a live direct clone with tiered paid pricing",
+        "Searched for Qiwa third-party developer API access to test whether the automation/no-duplicate-entry value proposition is technically deliverable",
+        "Assessed whether SaudizationMeter or Jisr's free calculator already satisfies most of the target segment's need for free"
+      ],
+      "remaining_uncertainties": [
+        "Whether SaudizationMeter has any actual paying customers or is a low-traction/unproven product (no reviews or customer count found)",
+        "Whether an Arabic-first, SAR-priced, WhatsApp-alert-native version could still win share from SaudizationMeter's USD/English-oriented positioning"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A -- rejected",
+      "summary": "A near-identical direct competitor (SaudizationMeter) already exists with live paid tiers doing exactly what this candidate proposes, and the core differentiator (automated data sync vs. manual re-entry) is undermined because Saudi government platforms do not appear to expose third-party APIs, only import/export -- both a strong competitive and a technical/product-value blocker."
+    },
+    {
+      "candidate_id": "C03",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "DATA_UNAVAILABLE",
+          "reason": "The central pitch -- eliminating duplicate manual data entry across Qiwa/Mudad/GOSI/Muqeem -- requires API/automated access that does not exist for independent developers. Confirmed again in this session: Saudi government platforms mostly restrict third parties to data import/export, not live API integration, and the candidate's own feasibility_validator already concluded 'without government-portal API access, the tool cannot actually eliminate duplicate data entry (its core pitch).'",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://origami.sa/en/blog/saudi-government-platform-integration-qiwa-gosi-mudad-zatca/",
+              "summary": "States most Saudi government platforms do not allow direct external API integration, only data import/export -- confirms the dossier's own unresolved 'no confirmed public API' finding."
+            }
+          ]
+        },
+        {
+          "category": "WEAK_PAIN",
+          "reason": "Once stripped of automated sync, the product becomes a manual-entry reminder/checklist tool that must compete directly against free tools SMEs already use for this purpose (Google Calendar, Notion, Excel spreadsheets), and there is no evidence any SME has ever paid specifically for a standalone reminder-only product in this category -- only full, much pricier HCM suites (Jisr ~SAR16-17/employee/month) or human hires (Government Relations Coordinators) show real spend.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.jisr.net/plans",
+              "summary": "Jisr charges ~SAR16-17/employee/month for a FULL HCM suite that happens to include Mudad/GOSI/Qiwa/Muqeem coverage -- no standalone lightweight reminder product with disclosed paying customers was found anywhere."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for Qiwa/GOSI/Mudad third-party API access to test the core 'eliminate duplicate entry' claim",
+        "Checked whether any standalone reminder-only competitor (as opposed to full HCM suites) exists with disclosed customers -- none found",
+        "Assessed whether the reduced-scope product (manual entry + alerts) has independent value vs. free calendar/spreadsheet tools already used"
+      ],
+      "remaining_uncertainties": [
+        "Whether official Mudad reminders (10/15-day alerts, already built into the government platform per SPA/official source) already satisfy most of this need for free, further shrinking the addressable pain",
+        "Whether a narrow vertical version (e.g., iqama-only tracking for construction/labor-heavy SMEs) could still find a paying niche"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A -- rejected",
+      "summary": "The product's core value proposition depends on government-portal API access that does not appear to exist for third parties, reducing it to a manual-entry reminder tool that competes against free calendar/spreadsheet workarounds -- with no evidence anyone has ever paid specifically for that narrower, less valuable product."
+    },
+    {
+      "candidate_id": "C04",
+      "verdict": "SURVIVED",
+      "kill_reasons": [
+        {
+          "category": "WEAK_PAIN",
+          "reason": "Businesses currently solve this via very cheap Mostaql freelancers; if freelancer rates are low (unconfirmed but implied by the informal, low-stakes nature of the gigs), a SaaS priced to be attractive may struggle to beat 'just hire another freelancer for this batch' on pure price, especially for one-off/seasonal invoice backlogs rather than recurring monthly need.",
+          "severity": "MINOR",
+          "evidence": [
+            {
+              "url": "https://mostaql.com/projects/skill/financial-accounting",
+              "summary": "Numerous live, low-key freelance postings for monthly bookkeeping/invoice entry, suggesting an active cheap-labor alternative remains the default option businesses reach for."
+            }
+          ]
+        },
+        {
+          "category": "TECHNICAL",
+          "reason": "No Arabic-invoice-specific OCR accuracy benchmark was found; the closest comparable product (Sanad.ai) is positioned for enterprise RPA integration, not validated for a low-cost self-serve micro-SME product, and VAT-sensitive reconciliation errors could create trust/liability issues pushing toward a costlier hybrid AI+human-QA model.",
+          "severity": "MINOR",
+          "evidence": [
+            {
+              "url": "https://sanad.ai/",
+              "summary": "Sanad.ai (Arabic invoice/financial-document OCR) is distributed via UiPath Marketplace for enterprise RPA integration, not evidenced as a validated, accurate, self-serve micro-SME tool."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for existing Arabic-capable invoice OCR / accounting-automation competitors (found Sanad.ai -- enterprise-oriented, Klippa/Doxis -- generic global OCR vendor with Arabic script support but no Saudi-specific evidence)",
+        "Searched fresh Mostaql listings to test whether demand for manual bookkeeping/invoice entry is still active and recurring (confirmed: multiple new live postings found)",
+        "Assessed whether cheap human freelancers represent an unbeatable price floor for a solo-founder SaaS alternative"
+      ],
+      "remaining_uncertainties": [
+        "Actual SAR rates freelancers charge per Mostaql bookkeeping/invoice-entry gig (never disclosed in any listing found)",
+        "Real Arabic OCR accuracy achievable with LLM-vision APIs (Claude/GPT-4o) on messy/handwritten Saudi supplier invoices -- untested in this session",
+        "Whether customers would trust an unsupervised AI tool for VAT-sensitive reconciliation without a human-in-the-loop, which would raise the founder's operating cost/complexity"
+      ],
+      "missing_info_requests": [
+        {
+          "question": "What are typical SAR rates/budgets on live Mostaql bookkeeping and invoice-data-entry postings?",
+          "route_to": "payment"
+        },
+        {
+          "question": "What is the field-level accuracy of Claude/GPT-4o vision or Document AI on real Arabic-script Saudi invoices?",
+          "route_to": "technical"
+        }
+      ],
+      "survival_notes": "Survives: no direct self-serve competitor was found (Sanad.ai is enterprise/RPA-oriented, not a micro-SME self-serve product), and outsourced bookkeeping firms already charge SAR1,500-5,000+/month for human labor solving the same underlying problem, proving real budget exists in the category. Main open risks (freelancer price competition, unverified Arabic OCR accuracy, trust barrier for VAT-sensitive automation) are real but are normal validation risks, not proven fatal blockers.",
+      "summary": "Could not kill this one: demand is well-evidenced (fresh live Mostaql postings, real outsourced-bookkeeping spend of SAR1,500-5,000+/month), and no direct self-serve AI competitor exists yet in the Saudi micro-SME segment -- survives with technical (Arabic OCR accuracy) and trust-barrier risks flagged as open uncertainties."
+    },
+    {
+      "candidate_id": "C05",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The exact proposed product already exists, live, from a local vendor: Watily offers a WhatsApp-native, no-per-booking-commission, Arabic-first booking + automated reminder system explicitly for both salons AND clinics, priced from SAR49-149/month with no setup fee. This is not a distant analog -- it is essentially the candidate's proposed solution already shipped and commercialized. Beyond Watily, at least four more local/regional competitors serve the identical niche (OJlinker, Hajzak, Bookforme, Salonaty), plus free alternatives (Tawqiti's free booking page, Medicakare's free clinic-management tool) further compress any remaining price wedge, leaving no credible gap for a new solo entrant beyond 'be even cheaper than SAR49/month,' which is unsustainable given WhatsApp Cloud API/BSP messaging costs alone.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://watily.com/booking-system/ar/",
+              "summary": "Watily: Arabic-first WhatsApp booking + automatic reminder system (confirm/cancel/reschedule) for salons, clinics, dental clinics and fitness centers -- SAR49-149/month tiers, no per-booking commission, near-identical positioning to the candidate's proposed product."
+            },
+            {
+              "url": "https://ojlinker.com.sa/",
+              "summary": "OJlinker: WhatsApp-native booking automation for salons/barbershops, another live direct competitor."
+            },
+            {
+              "url": "https://tawqiti.com/industries/salons",
+              "summary": "Tawqiti offers a free online booking page for salons, eliminating phone/WhatsApp booking friction at zero cost -- a free alternative further eroding the price floor."
+            },
+            {
+              "url": "https://www.bookforme.com/ar/business-types/salon",
+              "summary": "Bookforme: another salon booking/management system with automated WhatsApp/SMS confirmations and reminders, 14-day free trial."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched in Arabic specifically for free/low-cost WhatsApp salon booking tools in Saudi Arabia to test for a wide-open gap -- found at least 4 additional local competitors (Watily, Bookforme, Salonaty, Tawqiti) beyond those already in the dossier",
+        "Compared Watily's actual feature set and pricing against the candidate's proposed solution -- found them to be functionally near-identical (WhatsApp-native, no-commission, Arabic-first, salon+clinic verticals)",
+        "Checked for free alternatives that would undercut any paid entrant's pricing floor -- found Tawqiti (free booking page) and Medicakare (free clinic management)"
+      ],
+      "remaining_uncertainties": [
+        "Actual customer counts/traction/reviews for Watily, OJlinker, Bookforme, Salonaty were not found -- it is possible this crowded-looking field has low real adoption, leaving room despite the apparent saturation",
+        "Whether a true single-practitioner/1-chair price point below SAR49/month could still find unserved demand"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A -- rejected",
+      "summary": "This is the most crowded candidate found: a local incumbent (Watily) already sells almost exactly the proposed product (Arabic-first, WhatsApp-native, no-commission booking+reminders for salons and clinics) at SAR49-149/month, alongside four more local/regional competitors and two free alternatives -- leaving no credible wedge for a new solo entrant with the same generic positioning."
+    }
+  ],
+  "queries_used": [
+    "ZATCA free e-invoicing solution small merchants simplified tax invoice",
+    "Fatoora Cloud SAR pricing ZATCA small business Saudi",
+    "Qiwa API developer access third party integration Saudi",
+    "SaudizationMeter reviews customers Nitaqat calculator",
+    "Mostaql محاسب شهري سعر مشروع بيانات فواتير",
+    "Klippa Arabic invoice OCR extraction accounting automation",
+    "Zoho Invoice free plan ZATCA compliant Saudi Arabia pricing",
+    "واتساب حجز مواعيد صالون مجاني السعودية بدون اشتراك"
+  ],
+  "limitations": [
+    "Did not fetch full pricing/ToS pages directly (relied on WebSearch snippets); Zoho's exact free-vs-paid ZATCA feature gating and SaudizationMeter/Watily customer traction were not independently verified via WebFetch due to budget prioritization across 5 candidates.",
+    "No direct evidence found (positive or negative) on actual customer counts for SaudizationMeter, Watily, OJlinker, Bookforme, or Salonaty -- competitive crowding is inferred from product existence/pricing pages, not confirmed market share or traction.",
+    "Government API access claims (Qiwa/GOSI/Mudad restricted to import/export) rely on a single third-party integrator's blog post (origami.sa), not an official MHRSD/GOSI developer-portal statement -- treated as STRONG_INDIRECT, not DIRECT.",
+    "Search budget (14 searches, 8 fetches) was allocated across all 5 candidates; deeper adversarial digging (e.g., actual freelancer rate discovery, Arabic OCR benchmark testing) was not exhaustively pursued for every candidate."
+  ]
+}

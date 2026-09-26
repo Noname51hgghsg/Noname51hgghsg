@@ -1,0 +1,279 @@
+{
+  "agent": "complaint_hunter",
+  "signals": [
+    {
+      "opportunity_id": "CMP-01",
+      "problem": "Very high volume of consumer complaints about online stores' exchange/return policy violations; MoC processed 137,000+ consumer reports in Q2 alone, with the largest share tied to online store returns/exchanges, and average resolution time of 36 hours suggests a formalized but heavy dispute pipeline that both shoppers and merchants struggle with.",
+      "customer": "Online shoppers filing complaints AND small Saudi e-commerce merchants (Salla/Zid-type stores) repeatedly flagged for return-policy violations",
+      "segment": "HYBRID",
+      "sector": "E-commerce / Consumer Protection",
+      "market": "Saudi Arabia",
+      "source": "Google search of Saudi Gazette coverage of Ministry of Commerce quarterly statistics",
+      "evidence": [
+        {
+          "claim": "Ministry of Commerce processed 137,000+ consumer complaints in Q2 2026, with the largest share related to online stores and violations of exchange/return policies; average complaint processing time 36 hours.",
+          "url": "https://saudigazette.com.sa/article/663032/saudi-arabia/saudi-commerce-ministry-conducts-151000-inspections-and-processes-137000-consumer-reports-in-q2",
+          "source_title": "Commerce Ministry conducts 151,000 inspections in Q2 - Saudi Gazette",
+          "summary": "Search-tool synthesis of the Saudi Gazette article states MoC handled 137,000 consumer reports in Q2 2026, largest category = online store exchange/return disputes. Direct WebFetch of the page failed (proxy error) so this rests on the search snippet/synthesis, not a page I personally read in full.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "بلاغ تجاري (Balagh Tijari) app / MoC portal",
+          "url": "https://play.google.com/store/apps/details?id=sa.gov.mc.balaghtejari",
+          "notes": "Official free government channel for filing commercial complaints; does not help merchants prevent disputes or help consumers assemble a strong case."
+        }
+      ],
+      "workaround": "Consumers file directly via Balagh Tijari / my.gov.sa; merchants absorb repeated MoC flags/inspections without a systematic compliance tool.",
+      "potential_solution": "Arabic compliance add-on for Salla/Zid merchants: auto-generates MoC-compliant return/exchange policy text, tracks the 36-hour response clock per complaint, and drafts response templates to reduce repeat violations; lightweight consumer-side wizard to assemble a complaint with the right evidence before submitting to Balagh Tijari.",
+      "business_model": "B2B SaaS subscription to merchants (compliance/policy tool) as primary revenue; free consumer tool as funnel",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for a specific compliance-tool spend; merchants already pay monthly platform fees to Salla/Zid (indirect willingness to pay for storefront SaaS), but no direct evidence they would pay extra for a returns-compliance add-on.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether Salla/Zid already offer adequate native return-policy tooling",
+        "Whether merchants would pay separately for this vs. treating it as a cost of doing business",
+        "Exact breakdown of the 137k complaints by sub-sector beyond 'online stores'"
+      ]
+    },
+    {
+      "opportunity_id": "CMP-02",
+      "problem": "Recurring, hard-to-notice charges on STC/Mobily bills from forgotten 'temporary offer' subscriptions (games/content/VAS) that auto-renew monthly; described as among the most common complaint types escalated to the telecom regulator (CST).",
+      "customer": "Individual STC/Mobily/Zain subscribers in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Telecom",
+      "market": "Saudi Arabia",
+      "source": "Google search of CST/telecom complaint-process pages",
+      "evidence": [
+        {
+          "claim": "Complaints about entertainment services and unwanted/forgotten subscription add-ons are among the most recurring complaint categories escalated to CST.",
+          "url": "https://www.cst.gov.sa/en/services/Telecom-Complaints-Escalation",
+          "source_title": "CST Telecom Complaints Escalation",
+          "summary": "Search-tool synthesis described this as a recurring complaint pattern; I could not independently fetch/verify the underlying CST statistics page (proxy fetch failures), so this is based on the search snippet only.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "STC/Mobily online bill-dispute forms",
+          "url": "https://www.stc.com.sa/content/stc/sa/ar/personal/support/complaints/customer-support1.html",
+          "notes": "Reactive complaint form after the fact; does not proactively flag hidden charges."
+        }
+      ],
+      "workaround": "Manually scan the bill line-by-line, or call customer service / escalate to CST after already being charged.",
+      "potential_solution": "A tool where a user forwards their e-bill/SMS text and an AI parser flags known VAS/subscription line items with one-click cancellation instructions per operator.",
+      "business_model": "B2C freemium; monetization is uncertain (thin margins, per-charge amounts are small)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual SAR amounts typically at stake",
+        "Whether STC/Mobily apps already surface these charges clearly in newer versions",
+        "Whether regulatory pressure from CST will make this pain shrink over time (reducing the opportunity window)"
+      ]
+    },
+    {
+      "opportunity_id": "CMP-03",
+      "problem": "Buyers on Saudi's leading used-car marketplace (Syarah.com) report a TrustScore of 2/5 on Trustpilot, citing delivery delays, refunds never processed after cancellations, undisclosed prior-ownership transfers discovered only after booking, and unresponsive support despite dozens of contact attempts.",
+      "customer": "Used-car buyers purchasing online in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Automotive / Online Marketplaces",
+      "market": "Saudi Arabia",
+      "source": "Google search of Trustpilot reviews for syarah.com",
+      "evidence": [
+        {
+          "claim": "Syarah.com holds a TrustScore of 2/5 on Trustpilot; reviews describe cars delivered weeks late, refunds not issued after cancellation for up to a month, and buyers discovering undisclosed vehicle ownership-transfer history after booking, with support described as ignoring complaints.",
+          "url": "https://www.trustpilot.com/review/syarah.com",
+          "source_title": "Syarah.com Trustpilot Reviews",
+          "summary": "Search-tool synthesis of live Trustpilot review content (dated examples referencing August/September 2026 transactions). Direct WebFetch to re-verify the page and count reviews failed (proxy error), so exact review counts are unconfirmed.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Syarah.com own inspection/guarantee process",
+          "url": "https://syarah.com/",
+          "notes": "Marketplace's own vetting appears insufficient per multiple reviewer complaints about hidden ownership history."
+        }
+      ],
+      "workaround": "Buyers rely on the marketplace's own (apparently weak) checks, or physically inspect/ask sellers directly; some file complaints with the real estate/consumer regulator equivalents after the fact.",
+      "potential_solution": "Independent pre-purchase vehicle verification report (Carfax-style): aggregates whatever legally accessible public/official records exist (traffic-violation history, plate/ownership lookups) plus optional independent physical inspection booking, sold as a one-time paid report — avoids holding customer money (no escrow/payments licence needed).",
+      "business_model": "B2C pay-per-report, or B2B2C licensing to dealers/marketplaces",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "HIGH",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND that buyers currently pay separately for independent verification — they currently trust (and are let down by) the marketplace's own process.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether a Carfax-like independent vehicle-history service already exists in Saudi (could not check — search budget exhausted before this query)",
+        "Legal accessibility of official vehicle ownership/accident records to a private, non-partnered company",
+        "Willingness to pay for a report vs. trusting marketplace guarantees"
+      ]
+    },
+    {
+      "opportunity_id": "CMP-04",
+      "problem": "Consumers facing delayed/lost shipments from delivery/shipping companies find the official complaint escalation path (contact company → wait 5 business days → escalate to CST with ticket number and documents) confusing enough that a whole cottage industry of law-firm SEO articles exists purely to explain 'how to file a complaint against a delivery company in Saudi Arabia.'",
+      "customer": "Online shoppers / general consumers with delayed or lost deliveries",
+      "segment": "B2C",
+      "sector": "Logistics / E-commerce",
+      "market": "Saudi Arabia",
+      "source": "Google search across multiple independent Saudi law-firm sites",
+      "evidence": [
+        {
+          "claim": "At least six independent law-firm/legal-content sites (agl.sa, arablaws.org, lawzeyad.sa, law-jeddah.com, thelawsa.com) publish detailed guides on escalating delivery-company complaints to CST, indicating persistent consumer demand for help navigating the process.",
+          "url": "https://agl.sa/how-to-file-complaint-delivery-company-ksa/",
+          "source_title": "كيف ارفع شكوى على شركة توصيل | الدليل القانوني الشامل - AGL",
+          "summary": "Multiple independent Arabic legal-content sites each publish near-identical step-by-step guides for escalating delivery complaints to CST (contact company first, 5-day wait, ticket number, escalate). The redundancy across independently-run sites is used here as a proxy signal for search demand, not direct proof of payment.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "CST portal / Balagh Tijari",
+          "url": "https://portalservices.cst.gov.sa/E-Services/Complaint/ComplaintFAQ.aspx",
+          "notes": "Free official channel but process/documentation requirements are non-obvious to average consumers."
+        }
+      ],
+      "workaround": "Reading law-firm blog guides, or (per some sites) paying for a legal consultation before filing.",
+      "potential_solution": "Guided AI web-tool: user enters shipment/tracking details + issue, tool auto-drafts the correct complaint (company vs CST vs Balagh Tijari), assembles the document checklist, and tracks the 5-day clock — a free/low-cost self-serve alternative to a paid legal consultation.",
+      "business_model": "Freemium B2C; monetization via a small one-time 'complaint pack' fee or referral to legal partners",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for exact consultation fees charged by these law firms, though several explicitly monetize this exact pain via paid legal consultations (implying willingness to pay exists at some price point).",
+      "confidence": "LOW",
+      "unknowns": [
+        "Actual price these law firms charge for a consultation",
+        "Whether a free self-serve tool would cannibalize enough demand to be worth building given thin monetization",
+        "True volume of affected consumers (only SEO-content proxy, no complaint-count statistic found)"
+      ]
+    },
+    {
+      "opportunity_id": "CMP-05",
+      "problem": "Small/independent real estate agencies report being locked into rigid annual listing contracts with dominant portal Bayut, billed regardless of market performance, with limited flexibility or support compared to what larger agencies get; a related note also flags workflow friction for brokerages needing to list across multiple platforms (Aqar/Bayut/Wasalt) manually.",
+      "customer": "Small/solo real estate brokers and agencies in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "PropTech / Real Estate",
+      "market": "Saudi Arabia",
+      "source": "Google search of Trustpilot reviews for bayut.com and related PropTech tooling pages",
+      "evidence": [
+        {
+          "claim": "Small real estate agencies describe 'aggressive billing through rigid yearly contracts and limited flexibility or support for smaller businesses, with pressure continuing through invoices regardless of market performance' on Bayut.",
+          "url": "https://www.trustpilot.com/review/bayut.com",
+          "source_title": "Bayut Reviews - Trustpilot",
+          "summary": "Search-tool synthesis of Trustpilot review content describing small-agency billing complaints; direct WebFetch to verify exact review text/dates failed (proxy error), so this rests on the search snippet only.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate CRM vendor page references 'practical workflow issues for brokerages using multiple platforms,' implying cross-posting to Aqar/Bayut/Wasalt is a known friction point.",
+          "url": "https://logiolegion.com/blogs/real-estate-crm-software-saudi-arabia-aqar-wafi",
+          "source_title": "Real Estate CRM Software Saudi Arabia | Aqar Sync & Wafi Tracking 2026",
+          "summary": "Vendor marketing page implying multi-platform listing management is a pain point for brokers; vendor marketing claim, not independently verified.",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Bayut.sa",
+          "url": "https://www.bayut.sa",
+          "notes": "Dominant portal; annual contract model criticized by small agencies per review snippet."
+        },
+        {
+          "name": "Aqar.fm",
+          "url": "https://sa.aqar.fm",
+          "notes": "Leading app with 12M+ downloads per its own marketing; also requires separate management."
+        }
+      ],
+      "workaround": "Small agencies pay the annual Bayut contract anyway, or manually re-post listings across multiple portals.",
+      "potential_solution": "Lightweight, pay-as-you-go listing-syndication dashboard for solo/small brokers to post once and push to Aqar/Bayut/Wasalt without long lock-in contracts.",
+      "business_model": "B2B SaaS, low monthly fee per agent/listing",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "Agencies already pay Bayut annual contract fees (amount not found in available sources) — NO RELIABLE EVIDENCE FOUND for exact price.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Exact contract price and number of small agencies affected",
+        "Whether existing CRM tools (e.g., the logiolegion product found) already solve this adequately",
+        "Whether Bayut/Aqar offer any short-term/flexible plans not surfaced in this search"
+      ]
+    },
+    {
+      "opportunity_id": "CMP-06",
+      "problem": "Employees' iqama (residency permit) renewals are frequently delayed or neglected by employers, leading to fines, legal risk, and labor disputes; the topic is covered independently by numerous Saudi law firms explaining employee rights and complaint routes to HRSD/labor office, suggesting the underlying employer-side negligence is common enough to sustain many competing SEO/legal-content sites.",
+      "customer": "Small/medium business owners and HR staff responsible for employee iqama renewals; secondarily affected employees",
+      "segment": "B2B",
+      "sector": "HR Compliance / GovTech-adjacent",
+      "market": "Saudi Arabia",
+      "source": "Google search across multiple independent Saudi law-firm sites",
+      "evidence": [
+        {
+          "claim": "Multiple independent law-firm sites (agl.sa, hd-law.com.sa, jeddah-lawyer.net, mohammedalotaibi.sa, ramilawyer.sa) each publish guides on what happens/what rights employees have when an employer fails to renew iqama on time, including fines and the employee's right to transfer employer without consent.",
+          "url": "https://agl.sa/complaint-against-sponsor-labor-office-saudi/",
+          "source_title": "كيف أشتكي كفيلي في مكتب العمل؟ - AGL",
+          "summary": "Redundant coverage of the same specific employer-negligence scenario across multiple independently-run legal content sites is used as a proxy for recurring real-world frequency; none of these directly quantify how many cases occur per year.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qiwa platform",
+          "url": "https://qiwa.sa",
+          "notes": "Official HR/labor platform; provides renewal processes but evidently doesn't fully prevent employer negligence per the recurring legal-advice content."
+        }
+      ],
+      "workaround": "Manual tracking via spreadsheets/reminders by HR staff, or employees escalating to HRSD/labor courts only after the iqama has already lapsed.",
+      "potential_solution": "Simple SaaS dashboard for small businesses: upload employee list + iqama/GOSI/license expiry dates, get automated WhatsApp/email alerts at 90/60/30/7 days before expiry plus a fine-risk calculator.",
+      "business_model": "B2B SaaS subscription, priced per employee/month",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "HIGH",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for tool spend; indirect evidence that businesses pay for legal consultations once disputes escalate (multiple law firms monetize this exact scenario), but no price data captured.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether Qiwa/GOSI already send adequate automated reminders to employers",
+        "Actual incidence rate of this specific negligence scenario",
+        "Price sensitivity of small businesses for an HR compliance add-on"
+      ]
+    }
+  ],
+  "queries_used": [
+    "\"تعبت من\" شركة توصيل السعودية شكوى تطبيق",
+    "Saudi Arabia consumer complaints Ministry of Commerce statistics 2025 2026",
+    "site:reddit.com/r/saudiarabia complaint app worst experience",
+    "توكلنا مشكلة تعطل شكوى مستمرة 2025",
+    "\"معقب\" السعودية خدمة تجديد رخصة مشكلة",
+    "Saudi real estate platform complaints Aqar Bayut review problems",
+    "مستقل خمسات \"أحتاج\" مطور موقع عقاري OR توصيل السعودية طلب مشروع",
+    "قوى تجديد اقامة تأخير مشكلة صاحب عمل شكوى منشأة",
+    "STC Mobily فاتورة زيادة شكوى خدمة عملاء متكرر",
+    "أبشر مخالفات مرورية استعلام مشكلة تراكم شكوى",
+    "صيانة عقار مستأجر شكوى المالك تأخير السعودية \"كل مرة\"",
+    "Trustpilot Syarah.com reviews complaints"
+  ],
+  "limitations": [
+    "All 6 WebFetch attempts in this session failed with 'proxy refused the connection', so every claim in this run is based on WebSearch tool result snippets/synthesis rather than a personally-verified full page fetch; where this matters, evidence_type has been downgraded (WEAK) and noted in the summary.",
+    "Search budget (12) was exhausted before I could run planned follow-up queries on: existing Saudi vehicle-history-report competitors (relevant to CMP-03), Jahez/HungerStation food-delivery complaint volume, and exact CST telecom-complaint statistics breakdown.",
+    "site:reddit.com/r/saudiarabia search returned no on-topic results — Reddit content on this specific topic was not indexed/surfaced for this query wording; did not get to retry with alternate phrasing.",
+    "X/TikTok/Instagram complaint threads are login-gated and were not accessible; only what surfaced in Google-style search snippets was used.",
+    "No Arabic-language pricing evidence was found for any of the law-firm 'file a complaint' consultation services referenced in CMP-04/CMP-06, so existing_spend for those signals remains unverified beyond the fact that paid legal services around these pains exist."
+  ]
+}

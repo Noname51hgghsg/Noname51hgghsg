@@ -33,7 +33,7 @@ class Orchestrator:
     def __init__(self, cfg: dict, *, run_id: str | None = None, mode: str = "full", backend=None,
                  discovery_agents: list[str] | None = None, inject_candidates: list[dict] | None = None,
                  extra_specs: dict[str, AgentSpec] | None = None, db_path: Path | None = None,
-                 report_path: Path | None = None, echo: bool = True):
+                 report_path: Path | None = None, echo: bool = True, resume_from: str | None = None):
         self.cfg = cfg
         self.mode = mode
         self.run_id = run_id or f"{mode}_{_dt.datetime.now():%Y%m%d_%H%M%S}"
@@ -50,6 +50,8 @@ class Orchestrator:
         self.inject_candidates = inject_candidates or []
         self.report_path = report_path or ROOT / "reports" / "final_report.md"
         self.max_parallel = int(cfg["run"]["max_parallel_agents"])
+        self.resume_from = resume_from
+        self.run_ids = [self.run_id] + ([resume_from] if resume_from else [])
         self.state: dict = {"stage_times": {}, "failures": [], "limitations": [], "retries": 0}
 
     # ------------------------------------------------------------------ utils
@@ -104,14 +106,17 @@ class Orchestrator:
                                      f"budget=${self.cfg['run']['max_total_budget_usd']})")
         status = "completed"
         try:
-            with self._stage("1_DISCOVERY"):
-                signals = self.discovery()
-            with self._stage("2_DEDUPLICATION"):
-                candidates, backlog, discarded = self.deduplicate(signals)
-            with self._stage("3_VALIDATION"):
-                validations = self.validate(candidates)
-            with self._stage("4_KILLER_ROUND_1"):
-                verdicts = self.kill(candidates, validations, research={}, round_no=1, final=False)
+            if self.resume_from:
+                signals, candidates, backlog, discarded, validations, verdicts = self.load_previous(self.resume_from)
+            else:
+                with self._stage("1_DISCOVERY"):
+                    signals = self.discovery()
+                with self._stage("2_DEDUPLICATION"):
+                    candidates, backlog, discarded = self.deduplicate(signals)
+                with self._stage("3_VALIDATION"):
+                    validations = self.validate(candidates)
+                with self._stage("4_KILLER_ROUND_1"):
+                    verdicts = self.kill(candidates, validations, research={}, round_no=1, final=False)
             research: dict = {}
             for rnd in range(1, int(self.cfg["run"].get("max_gap_research_rounds", 1)) + 1):
                 with self._stage(f"5_GAP_DETECTION_R{rnd}"):
@@ -144,6 +149,31 @@ class Orchestrator:
         self._save("run_summary", summary)
         self.log.log("ORCHESTRATOR", f"run finished: {json.dumps(summary['counts'], ensure_ascii=False)}")
         return summary
+
+    # -- resume
+    def load_previous(self, src: str):
+        """Continue from a finished run's saved stage outputs (discovery → killer round 1), so later stages can
+        be re-run without paying for earlier agents again. The source run's agent executions are included in
+        this run's statistics and execution log."""
+        d = ROOT / "results" / src
+        load = lambda n: json.loads((d / f"{n}.json").read_text(encoding="utf-8"))
+        signals = load("01_raw_signals")
+        cons = load("02_candidates")
+        validations = load("03_validations")
+        verdicts = load("04_verdicts_round1")
+        candidates = cons["candidates"]
+        for c in candidates:
+            self.store.put_json("candidates", {"run_id": self.run_id, "candidate_id": c["candidate_id"]}, c,
+                                {"title": c.get("title", ""), "status": verdicts.get(c["candidate_id"], {}).get("verdict", "CANDIDATE")})
+        prev = self.store.query("SELECT summary_json FROM runs WHERE run_id=?", (src,))
+        pc = json.loads(prev[0]["summary_json"])["counts"] if prev and prev[0]["summary_json"] else {}
+        self.state.update(raw_signals=len(signals), after_exact_dedup=pc.get("after_exact_dedup", len(signals)),
+                          candidates=len(candidates), backlog=len(cons.get("backlog", [])), discarded=len(cons.get("discarded", [])))
+        self.log.log("ORCHESTRATOR", f"resumed from {src}: {len(signals)} signals, {len(candidates)} candidates, "
+                                     f"{sum(1 for v in verdicts.values() if v.get('verdict') == 'SURVIVED')} survivors of Killer round 1")
+        for n in ("01_raw_signals", "02_candidates", "03_validations", "04_verdicts_round1"):
+            self._save(n, load(n))
+        return signals, candidates, cons.get("backlog", []), cons.get("discarded", []), validations, verdicts
 
     # -- stage 1
     def discovery(self) -> list[dict]:
@@ -217,9 +247,9 @@ class Orchestrator:
             c["evidence"] = ev[:14]
             c["existing_solutions"] = [x for m in members for x in m.get("existing_solution", [])][:10]
             c["foreign_models"] = [m["foreign_model"] for m in members if m.get("foreign_model", {}).get("name")]
-            c["workarounds"] = list({m.get("workaround", "") for m in members if m.get("workaround")})[:4]
-            c["existing_spend"] = list({m.get("existing_spend", "") for m in members if m.get("existing_spend")})[:4]
-            c["unknowns"] = list({u for m in members for u in m.get("unknowns", [])})[:8]
+            c["workarounds"] = list(dict.fromkeys(m.get("workaround", "") for m in members if m.get("workaround")))[:4]
+            c["existing_spend"] = list(dict.fromkeys(m.get("existing_spend", "") for m in members if m.get("existing_spend")))[:4]
+            c["unknowns"] = list(dict.fromkeys(u for m in members for u in m.get("unknowns", [])))[:8]
             candidates.append(c)
         for inj in self.inject_candidates:
             candidates.append(dict(inj))
@@ -335,13 +365,20 @@ class Orchestrator:
                 qs = v.get("missing_info_requests") or [{"question": "What evidence would decide this candidate?", "route_to": "evidence"}]
                 requests[cid] = list(qs)
             elif v.get("verdict") == "SURVIVED":
+                qs = []
                 pay = validations.get(cid, {}).get("payment_validator", {})
                 if pay.get("_missing") or pay.get("someone_pays_now") in ("UNCLEAR", "NO"):
-                    requests[cid] = [{"question": f"Is anyone in Saudi Arabia/GCC currently paying for a solution to: "
-                                                  f"{c.get('problem', '')[:200]}? Find prices, paid tools, service fees or salaries.",
-                                      "route_to": "payment"}]
+                    qs.append({"question": f"Is anyone in Saudi Arabia/GCC currently paying for a solution to: "
+                                           f"{c.get('problem', '')[:200]}? Find prices, paid tools, service fees or salaries.",
+                               "route_to": "payment"})
                     self.log.log("GAP_DETECTOR", f"{cid}: survived but payment evidence is "
                                                  f"{pay.get('someone_pays_now', 'missing')} → re-research", candidate=cid)
+                # Survivors go to synthesis only after the Killer's open uncertainties were researched.
+                qs += [{"question": u, "route_to": "market"} for u in v.get("remaining_uncertainties", [])[:3]]
+                if qs:
+                    requests[cid] = qs
+                    self.log.log("GAP_DETECTOR", f"{cid}: survived with {len(qs)} unresolved uncertainty(ies) "
+                                                 "→ additional research + final Killer round", candidate=cid)
             for vname, val in validations.get(cid, {}).items():
                 if val.get("_missing") and cid in requests:
                     requests[cid].append({"question": f"(validator {vname} failed) fill in the missing {vname.split('_')[0]} information",
@@ -356,7 +393,7 @@ class Orchestrator:
     def gap_research(self, requests: dict, rnd: int, research: dict) -> dict:
         items = [{"candidate_id": cid, "questions": qs} for cid, qs in requests.items()]
         jobs = [("gap_researcher", "Answer every open question for every candidate in INPUT_JSON.requests.",
-                 {"requests": b}, f"r{rnd}_batch{i}") for i, b in enumerate(self._batches(items, 4), 1)]
+                 {"requests": b}, f"r{rnd}_{b[0]['candidate_id']}") for i, b in enumerate(self._batches(items, 1), 1)]
         self.log.log("ORCHESTRATOR", f"re-dispatching research: {len(items)} candidates in {len(jobs)} GAP_RESEARCHER job(s)")
         self.state["retries"] += len(jobs)
         for r in self._parallel(jobs):
@@ -415,10 +452,11 @@ class Orchestrator:
 
     # ----------------------------------------------------------------- stats
     def summary(self, elapsed: float, status: str) -> dict:
-        rows = self.store.query("SELECT * FROM agent_runs WHERE run_id=?", (self.run_id,))
+        marks = ",".join("?" for _ in self.run_ids)
+        rows = self.store.query(f"SELECT * FROM agent_runs WHERE run_id IN ({marks})", tuple(self.run_ids))
         executed = [r for r in rows if not r["cache_hit"] and r["status"] != "skipped"]
         return {
-            "run_id": self.run_id, "mode": self.mode, "status": status, "elapsed_sec": round(elapsed, 1),
+            "run_id": self.run_id, "resumed_from": self.resume_from, "mode": self.mode, "status": status, "elapsed_sec": round(elapsed, 1),
             "counts": {
                 "agent_processes_launched": sum(r["attempts"] or 0 for r in executed),
                 "agent_tasks_executed": len(executed),

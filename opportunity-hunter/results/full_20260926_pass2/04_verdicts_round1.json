@@ -1,0 +1,962 @@
+{
+  "C01": {
+    "candidate_id": "C01",
+    "verdict": "SURVIVED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The exact wedge a solo founder would target — a cheap, single-merchant ZATCA e-invoicing tool for micro-merchants — is already commoditized. Fatoora Cloud (SAR75/mo, 'zero setup'), FatooraPlus (from SAR99/mo), and Qoyod's lowest tier (SAR60-120/mo) already serve this niche today, and Zoho Invoice/Zoho Books is a well-known global brand offering a free invoicing tier with a ZATCA Phase-2 approved e-invoicing solution. A new solo entrant would have to undercut an already-thin SAR60-75/month floor.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.bytesraw.com/fatoora",
+            "summary": "Fatoora Cloud: ZATCA Phase-2 ready cloud invoicing for Saudi SMEs, 75 SAR/month, 2 users included, zero setup, 6-month minimum commitment."
+          },
+          {
+            "url": "https://www.zoho.com/sa/books/e-invoicing",
+            "summary": "Zoho Books is confirmed ZATCA Phase-2 approved e-invoicing compliant, and Zoho Invoice is marketed as free VAT e-invoicing software for small businesses in Saudi Arabia -- a globally-trusted free/cheap alternative."
+          },
+          {
+            "url": "https://fatooraplus.com/pricing/",
+            "summary": "FatooraPlus: dedicated ZATCA compliance plans starting from SAR99/month, another cheap dedicated competitor already live."
+          }
+        ]
+      },
+      {
+        "category": "FOUNDER_MISFIT",
+        "reason": "A bug in the XML/cryptographic-stamp generation directly exposes the customer to real government fines (SAR 5,000-50,000 per violation), which creates a support/liability burden well beyond a typical CRUD SaaS for a single, non-legally-trained founder with no support staff.",
+        "severity": "MINOR",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for a free/near-free ZATCA e-invoicing alternative that would remove the price wedge (found Zoho Invoice/Books)",
+      "Searched for the cheapest dedicated competitor pricing (Fatoora Cloud, FatooraPlus) to test if the 'below SAR75' wedge is still open",
+      "Assessed whether ZATCA requires a hard accreditation licence (already resolved as NO by validator; re-confirmed no contradicting evidence found)",
+      "Assessed liability/support burden as a founder-fit risk given real financial penalties tied to product errors"
+    ],
+    "remaining_uncertainties": [
+      "Whether a truly ultra-micro / WhatsApp-only tier priced below SAR60-75/month can achieve sustainable unit economics given payment processing + hosting + support costs",
+      "Whether Zoho's free tier actually includes ZATCA Phase-2 compliance or only the paid Books tiers do (search results were ambiguous: 'users must be subscribed to the appropriate Zoho Books plan')",
+      "Real churn/willingness of the smallest merchants to switch from a free/cheap incumbent to a new unbranded solo product",
+      "Whether ZATCA's evolving wave schedule will require constant compliance-logic maintenance that a solo founder can sustain long-term"
+    ],
+    "missing_info_requests": [
+      {
+        "question": "Does Zoho Invoice's free tier include ZATCA Phase-2 compliant XML/QR generation, or is that gated behind a paid Zoho Books plan?",
+        "route_to": "competition"
+      },
+      {
+        "question": "What real customer counts/reviews exist for Fatoora Cloud and FatooraPlus to gauge how saturated the ultra-cheap tier already is?",
+        "route_to": "competition"
+      }
+    ],
+    "survival_notes": "Survives because payment evidence is strong (multiple incumbents charging real recurring fees proves the category is monetizable) and the regulatory barrier feared in the dossier (accreditation) is confirmed NOT to exist. However, the specific wedge must be genuinely novel (e.g., true WhatsApp-only zero-dashboard product, or a segment even smaller than what Fatoora Cloud/FatooraPlus/Qoyod already serve) rather than 'a cheap ZATCA tool' in general, since that framing is now commoditized by at least 4 competitors including a free/cheap global brand (Zoho).",
+    "summary": "Regulatory and payment fundamentals are solid, but the specific micro-merchant price tier the founder would target is already served by Fatoora Cloud (SAR75/mo), FatooraPlus (SAR99/mo), Qoyod's cheapest tier, and Zoho's free/cheap ZATCA-compliant invoicing -- survives only with a sharper, narrower wedge than originally scoped."
+  },
+  "C02": {
+    "candidate_id": "C02",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "A direct, purpose-built competitor already exists and does exactly what this candidate proposes: SaudizationMeter offers Nitaqat band calculation, what-if hiring scenarios, custom alerts, an audit log, and multi-company support, with live tiered pricing ($30/mo Starter, $80/mo Pro, $400/mo Enterprise) and a free calculator as a lead magnet -- this is not a hypothetical incumbent, it is the exact product concept already shipped.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.saudizationmeter.com/pricing",
+            "summary": "Live SaudizationMeter pricing page: free calculator, Starter $30/mo, Pro $80/mo (custom alerts, audit log, unlimited scenarios), Enterprise from $400/mo -- essentially identical feature set to the candidate's proposed dashboard."
+          },
+          {
+            "url": "https://www.jisr.net/en/hr-tools/nitaqat-calculator",
+            "summary": "Jisr also offers a free Nitaqat calculator as a lead magnet, further eroding the price ceiling a standalone tool could charge."
+          }
+        ]
+      },
+      {
+        "category": "DATA_UNAVAILABLE",
+        "reason": "The core value proposition (auto-syncing Qiwa employee/profession data instead of manual re-entry) depends on API access that does not appear to exist for independent third-party developers. Research on Qiwa/government-platform integration confirms most Saudi government services 'do not allow for direct integration with external entities through APIs; instead, it allows for data import and export' -- meaning any new tool, like the existing SaudizationMeter, is reduced to a manual-entry calculator, not a true automation layer.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://origami.sa/en/blog/saudi-government-platform-integration-qiwa-gosi-mudad-zatca/",
+            "summary": "Integration guide states most Saudi government platforms (Qiwa, Mudad, GOSI) do not permit direct external API integration, only data import/export, undermining the 'no duplicate data entry' pitch."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched specifically for existing Nitaqat/Saudization calculator competitors and found SaudizationMeter, a live direct clone with tiered paid pricing",
+      "Searched for Qiwa third-party developer API access to test whether the automation/no-duplicate-entry value proposition is technically deliverable",
+      "Assessed whether SaudizationMeter or Jisr's free calculator already satisfies most of the target segment's need for free"
+    ],
+    "remaining_uncertainties": [
+      "Whether SaudizationMeter has any actual paying customers or is a low-traction/unproven product (no reviews or customer count found)",
+      "Whether an Arabic-first, SAR-priced, WhatsApp-alert-native version could still win share from SaudizationMeter's USD/English-oriented positioning"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A -- rejected",
+    "summary": "A near-identical direct competitor (SaudizationMeter) already exists with live paid tiers doing exactly what this candidate proposes, and the core differentiator (automated data sync vs. manual re-entry) is undermined because Saudi government platforms do not appear to expose third-party APIs, only import/export -- both a strong competitive and a technical/product-value blocker."
+  },
+  "C03": {
+    "candidate_id": "C03",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "DATA_UNAVAILABLE",
+        "reason": "The central pitch -- eliminating duplicate manual data entry across Qiwa/Mudad/GOSI/Muqeem -- requires API/automated access that does not exist for independent developers. Confirmed again in this session: Saudi government platforms mostly restrict third parties to data import/export, not live API integration, and the candidate's own feasibility_validator already concluded 'without government-portal API access, the tool cannot actually eliminate duplicate data entry (its core pitch).'",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://origami.sa/en/blog/saudi-government-platform-integration-qiwa-gosi-mudad-zatca/",
+            "summary": "States most Saudi government platforms do not allow direct external API integration, only data import/export -- confirms the dossier's own unresolved 'no confirmed public API' finding."
+          }
+        ]
+      },
+      {
+        "category": "WEAK_PAIN",
+        "reason": "Once stripped of automated sync, the product becomes a manual-entry reminder/checklist tool that must compete directly against free tools SMEs already use for this purpose (Google Calendar, Notion, Excel spreadsheets), and there is no evidence any SME has ever paid specifically for a standalone reminder-only product in this category -- only full, much pricier HCM suites (Jisr ~SAR16-17/employee/month) or human hires (Government Relations Coordinators) show real spend.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.jisr.net/plans",
+            "summary": "Jisr charges ~SAR16-17/employee/month for a FULL HCM suite that happens to include Mudad/GOSI/Qiwa/Muqeem coverage -- no standalone lightweight reminder product with disclosed paying customers was found anywhere."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for Qiwa/GOSI/Mudad third-party API access to test the core 'eliminate duplicate entry' claim",
+      "Checked whether any standalone reminder-only competitor (as opposed to full HCM suites) exists with disclosed customers -- none found",
+      "Assessed whether the reduced-scope product (manual entry + alerts) has independent value vs. free calendar/spreadsheet tools already used"
+    ],
+    "remaining_uncertainties": [
+      "Whether official Mudad reminders (10/15-day alerts, already built into the government platform per SPA/official source) already satisfy most of this need for free, further shrinking the addressable pain",
+      "Whether a narrow vertical version (e.g., iqama-only tracking for construction/labor-heavy SMEs) could still find a paying niche"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A -- rejected",
+    "summary": "The product's core value proposition depends on government-portal API access that does not appear to exist for third parties, reducing it to a manual-entry reminder tool that competes against free calendar/spreadsheet workarounds -- with no evidence anyone has ever paid specifically for that narrower, less valuable product."
+  },
+  "C04": {
+    "candidate_id": "C04",
+    "verdict": "SURVIVED",
+    "kill_reasons": [
+      {
+        "category": "WEAK_PAIN",
+        "reason": "Businesses currently solve this via very cheap Mostaql freelancers; if freelancer rates are low (unconfirmed but implied by the informal, low-stakes nature of the gigs), a SaaS priced to be attractive may struggle to beat 'just hire another freelancer for this batch' on pure price, especially for one-off/seasonal invoice backlogs rather than recurring monthly need.",
+        "severity": "MINOR",
+        "evidence": [
+          {
+            "url": "https://mostaql.com/projects/skill/financial-accounting",
+            "summary": "Numerous live, low-key freelance postings for monthly bookkeeping/invoice entry, suggesting an active cheap-labor alternative remains the default option businesses reach for."
+          }
+        ]
+      },
+      {
+        "category": "TECHNICAL",
+        "reason": "No Arabic-invoice-specific OCR accuracy benchmark was found; the closest comparable product (Sanad.ai) is positioned for enterprise RPA integration, not validated for a low-cost self-serve micro-SME product, and VAT-sensitive reconciliation errors could create trust/liability issues pushing toward a costlier hybrid AI+human-QA model.",
+        "severity": "MINOR",
+        "evidence": [
+          {
+            "url": "https://sanad.ai/",
+            "summary": "Sanad.ai (Arabic invoice/financial-document OCR) is distributed via UiPath Marketplace for enterprise RPA integration, not evidenced as a validated, accurate, self-serve micro-SME tool."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for existing Arabic-capable invoice OCR / accounting-automation competitors (found Sanad.ai -- enterprise-oriented, Klippa/Doxis -- generic global OCR vendor with Arabic script support but no Saudi-specific evidence)",
+      "Searched fresh Mostaql listings to test whether demand for manual bookkeeping/invoice entry is still active and recurring (confirmed: multiple new live postings found)",
+      "Assessed whether cheap human freelancers represent an unbeatable price floor for a solo-founder SaaS alternative"
+    ],
+    "remaining_uncertainties": [
+      "Actual SAR rates freelancers charge per Mostaql bookkeeping/invoice-entry gig (never disclosed in any listing found)",
+      "Real Arabic OCR accuracy achievable with LLM-vision APIs (Claude/GPT-4o) on messy/handwritten Saudi supplier invoices -- untested in this session",
+      "Whether customers would trust an unsupervised AI tool for VAT-sensitive reconciliation without a human-in-the-loop, which would raise the founder's operating cost/complexity"
+    ],
+    "missing_info_requests": [
+      {
+        "question": "What are typical SAR rates/budgets on live Mostaql bookkeeping and invoice-data-entry postings?",
+        "route_to": "payment"
+      },
+      {
+        "question": "What is the field-level accuracy of Claude/GPT-4o vision or Document AI on real Arabic-script Saudi invoices?",
+        "route_to": "technical"
+      }
+    ],
+    "survival_notes": "Survives: no direct self-serve competitor was found (Sanad.ai is enterprise/RPA-oriented, not a micro-SME self-serve product), and outsourced bookkeeping firms already charge SAR1,500-5,000+/month for human labor solving the same underlying problem, proving real budget exists in the category. Main open risks (freelancer price competition, unverified Arabic OCR accuracy, trust barrier for VAT-sensitive automation) are real but are normal validation risks, not proven fatal blockers.",
+    "summary": "Could not kill this one: demand is well-evidenced (fresh live Mostaql postings, real outsourced-bookkeeping spend of SAR1,500-5,000+/month), and no direct self-serve AI competitor exists yet in the Saudi micro-SME segment -- survives with technical (Arabic OCR accuracy) and trust-barrier risks flagged as open uncertainties."
+  },
+  "C05": {
+    "candidate_id": "C05",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The exact proposed product already exists, live, from a local vendor: Watily offers a WhatsApp-native, no-per-booking-commission, Arabic-first booking + automated reminder system explicitly for both salons AND clinics, priced from SAR49-149/month with no setup fee. This is not a distant analog -- it is essentially the candidate's proposed solution already shipped and commercialized. Beyond Watily, at least four more local/regional competitors serve the identical niche (OJlinker, Hajzak, Bookforme, Salonaty), plus free alternatives (Tawqiti's free booking page, Medicakare's free clinic-management tool) further compress any remaining price wedge, leaving no credible gap for a new solo entrant beyond 'be even cheaper than SAR49/month,' which is unsustainable given WhatsApp Cloud API/BSP messaging costs alone.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://watily.com/booking-system/ar/",
+            "summary": "Watily: Arabic-first WhatsApp booking + automatic reminder system (confirm/cancel/reschedule) for salons, clinics, dental clinics and fitness centers -- SAR49-149/month tiers, no per-booking commission, near-identical positioning to the candidate's proposed product."
+          },
+          {
+            "url": "https://ojlinker.com.sa/",
+            "summary": "OJlinker: WhatsApp-native booking automation for salons/barbershops, another live direct competitor."
+          },
+          {
+            "url": "https://tawqiti.com/industries/salons",
+            "summary": "Tawqiti offers a free online booking page for salons, eliminating phone/WhatsApp booking friction at zero cost -- a free alternative further eroding the price floor."
+          },
+          {
+            "url": "https://www.bookforme.com/ar/business-types/salon",
+            "summary": "Bookforme: another salon booking/management system with automated WhatsApp/SMS confirmations and reminders, 14-day free trial."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched in Arabic specifically for free/low-cost WhatsApp salon booking tools in Saudi Arabia to test for a wide-open gap -- found at least 4 additional local competitors (Watily, Bookforme, Salonaty, Tawqiti) beyond those already in the dossier",
+      "Compared Watily's actual feature set and pricing against the candidate's proposed solution -- found them to be functionally near-identical (WhatsApp-native, no-commission, Arabic-first, salon+clinic verticals)",
+      "Checked for free alternatives that would undercut any paid entrant's pricing floor -- found Tawqiti (free booking page) and Medicakare (free clinic management)"
+    ],
+    "remaining_uncertainties": [
+      "Actual customer counts/traction/reviews for Watily, OJlinker, Bookforme, Salonaty were not found -- it is possible this crowded-looking field has low real adoption, leaving room despite the apparent saturation",
+      "Whether a true single-practitioner/1-chair price point below SAR49/month could still find unserved demand"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A -- rejected",
+    "summary": "This is the most crowded candidate found: a local incumbent (Watily) already sells almost exactly the proposed product (Arabic-first, WhatsApp-native, no-commission booking+reminders for salons and clinics) at SAR49-149/month, alongside four more local/regional competitors and two free alternatives -- leaving no credible wedge for a new solo entrant with the same generic positioning."
+  },
+  "C06": {
+    "candidate_id": "C06",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The two target distribution platforms (Salla and Zid) already natively require/validate the National Address short-code at checkout for free, built into the core product every merchant already uses. On top of that, at least two dedicated third-party address-validation plugins already exist and are live/installable: Saudi Address Pro (WordPress + Shopify App Store, works with Salla, explicitly 'TGA 2026 Ready', 60-day free trial with unlimited validations) and Quiqup KSA Address Validator (Shopify App Store). This satisfies the FATAL bar: cheap/free, well-localized (Arabic, Saudi-specific), well-distributed (built into the merchant's own platform or listed in the app stores merchants already browse), and serving the exact niche, leaving no credible wedge for the 'validate National Address at checkout' value proposition as described.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://salasa.co/blog/national-address-mandate-2026-a-full-faq-guide-for-merchants-consumers/",
+            "summary": "Confirms 'Salla supports the national address natively' at checkout."
+          },
+          {
+            "url": "https://saudiaddresspro.com/",
+            "summary": "Live, installable address-autocomplete widget for WooCommerce/Shopify/Salla, explicitly branded TGA 2026 Ready, with a 60-day free trial and unlimited validations."
+          },
+          {
+            "url": "https://wordpress.org/plugins/saudi-address-pro/",
+            "summary": "WordPress.org listing confirms the plugin is a real, shipping, publicly installable product."
+          },
+          {
+            "url": "https://apps.shopify.com/quiqup-ksa-address-validator",
+            "summary": "A second, independent competitor product ('Quiqup - KSA Address Validator') listed live on the Shopify App Store."
+          },
+          {
+            "url": "https://help.zid.sa/national-address/",
+            "summary": "Zid checkout blocks order completion without an abbreviated National Address, per Zid's own help center."
+          }
+        ]
+      },
+      {
+        "category": "WEAK_PAIN",
+        "reason": "The only clearly unaddressed remaining wedge identified by the dossier itself (a pre-dispatch WhatsApp COD-cancellation-risk confirmation flow) is a different, unvalidated product idea from the one actually proposed and scoped (an address-validation plugin) — no direct evidence was found that merchants would pay specifically for that narrower workflow.",
+        "severity": "MINOR",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Searched to reconfirm whether Salla/Zid natively support National Address at checkout (STRONG_COMPETITOR)",
+      "Searched for Saudi Address Pro traction/pricing/reviews to test how established the direct competitor is",
+      "Cross-checked for additional address-validation competitors in Salla/Shopify app stores (found a second one: Quiqup KSA Address Validator)"
+    ],
+    "remaining_uncertainties": [
+      "Whether the platforms' native validation is only format-checking (not true government-database lookup), potentially leaving room for a 'true validation' claim — but this was not confirmed and Saudi Address Pro already claims to validate against the official SPL database, pre-empting this angle too",
+      "Whether a narrower WhatsApp-native COD-cancellation-risk product (distinct from address validation) could still work — this would need to be evaluated as a separate, new candidate, not as C06"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "The specific product as scoped (National Address checkout validation plugin) does not survive: native platform support plus multiple live third-party competitors close the wedge. A materially different pivot (WhatsApp COD-risk confirmation) might be worth investigating separately but is not this candidate.",
+    "summary": "Killed on STRONG_COMPETITOR: Salla and Zid already natively enforce/validate National Address at checkout for free, and at least two dedicated third-party plugins (Saudi Address Pro, Quiqup KSA Address Validator) are already live in the app stores merchants use. No credible wedge remains for the address-validation value proposition as described."
+  },
+  "C07": {
+    "candidate_id": "C07",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "REGULATORY",
+        "reason": "Direct Ejar API access — the candidate's stated core differentiator ('layered on Ejar contract data') — is gated behind Saudi Commercial Registration, REGA developer-or-property-manager registration, PDPL compliance certification, and a technical security assessment. This is a multi-step accreditation process, not a self-serve API key, and was independently re-confirmed via a fresh search in this session. It directly contradicts the 'easy MVP' framing and forces the realistic MVP down to manual/CSV data entry — a much weaker, easily-copied product.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+            "summary": "States Ejar API access requires Saudi CR, REGA developer/property-manager registration, PDPL compliance certification, and a technical security assessment."
+          },
+          {
+            "url": "https://rega.gov.sa/en/rega-services/platforms/ejar/",
+            "summary": "Official REGA Ejar platform page, confirming REGA governs the Ejar platform and registration path (fresh search re-surfaced the same access-barrier finding)."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "The clearest direct demand evidence in the dossier (5+ independent Mostaql/Khamsat freelance requests) shows the exact target segment's revealed preference is to pay a one-off freelancer for an Excel/Access file rather than adopt recurring SaaS. Payment_validator confirmed only PARTIAL payment evidence, entirely from adjacent agency/portfolio-scale players (Osool, RConcept), with no confirmed instance of a 2-20 unit independent landlord paying for recurring software.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://mostaql.com/project/916062-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+            "summary": "Freelance request for a one-off Excel file to track rent collection — revealed preference for cheap one-time tools over subscription software."
+          },
+          {
+            "url": "https://www.osool.estate/en",
+            "summary": "Existing paid PM SaaS model is confirmed only for real estate agencies, not confirmed for individual 2-20 unit landlords."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched to re-verify Ejar API access requirements for a solo/independent developer",
+      "Weighed existing local competitors (Sanad, Simaat, Osool, JEWARA, Property Automate) against the specific micro-landlord niche",
+      "Checked whether target segment's revealed behavior (Mostaql/Khamsat Excel requests) indicates SaaS willingness-to-pay"
+    ],
+    "remaining_uncertainties": [
+      "Whether a manual-entry-only version (no live Ejar sync) could still find paying micro-landlords if priced very low, despite the segment's evident preference for one-off Excel builds",
+      "True size of the 2-20 unit independent landlord segment not already using a full-service PM company"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Two independent, evidence-backed MAJOR risks (regulatory access gate on the core differentiator, and weak/no proof the exact target segment will pay recurring fees rather than a one-off Excel file) meet the bar for rejection under the calibration rule.",
+    "summary": "Rejected on two MAJOR grounds: (1) the stated Ejar-integration differentiator is blocked behind a multi-step REGA/CR/PDPL accreditation gate, not a quick API signup, forcing a much weaker manual-entry MVP; and (2) the strongest direct demand evidence available (freelance Excel requests) shows the exact target segment prefers one-off cheap tools over recurring SaaS, with no confirmed micro-landlord-segment SaaS payment found."
+  },
+  "C08": {
+    "candidate_id": "C08",
+    "verdict": "SURVIVED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "Multiple Arabic-first, Saudi-targeted competitors already actively sell into this exact segment: Mutflex (explicit content marketing to small/mid AC and maintenance companies, unlimited-user plans, 2-month free trial) and SaudiSoftware.co. A fresh search also surfaced Daftra — a well-established, free-tier, ZATCA-integrated Arabic ERP used widely by Saudi/Gulf SMEs — which has a dedicated 'maintenance centers & technical support' management module covering the flow from customer complaint to final invoice. This raises real customer-acquisition risk against entrenched, cheap, localized incumbents.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://mutflex.com/pricing",
+            "summary": "Mutflex offers tiered plans with unlimited users and a free trial, targeted specifically at small/mid AC and maintenance companies."
+          },
+          {
+            "url": "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/",
+            "summary": "Daftra (a widely-used, free-tier, Arabic, ZATCA-integrated ERP) has a purpose-built maintenance-center/technical-support module handling complaint intake through invoicing."
+          }
+        ]
+      },
+      {
+        "category": "WEAK_PAIN",
+        "reason": "The headline market-sizing statistic ('~38% of HVAC contractors in UAE/Saudi use digital dispatch software') was found repeated verbatim across two unrelated vendor content-marketing sites with no cited primary source — a hallmark of a recycled/unverifiable SEO statistic, not real data. The core 'technicians restart diagnosis from scratch' pain claim is sourced only from a vendor's own self-serving blog with no independent complaint corroboration.",
+        "severity": "MINOR",
+        "evidence": [
+          {
+            "url": "https://multitech.sa/how-hvac-field-service-software-agreements-improve-efficiency-in-saudi-buildings/",
+            "summary": "Cites the ~38% digital-adoption figure with no source."
+          },
+          {
+            "url": "https://wafaiyah.com/hvac-agreements-and-field-service-software-for-saudi-homes-offices/",
+            "summary": "Repeats the identical ~38% figure verbatim, suggesting it is copy-pasted marketing content rather than verified data."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Attempted to verify the 38% digital-adoption statistic's provenance — found it recycled across two unrelated vendor sites, undermining its credibility",
+      "Searched for additional Arabic/Saudi competitors beyond those in the dossier — found Daftra's maintenance-center module",
+      "Assessed whether existing competitors (Mutflex, Daftra) leave a credible wedge for a WhatsApp-native, GPS-tracking, micro-operator-priced tool"
+    ],
+    "remaining_uncertainties": [
+      "Actual pricing of Mutflex/SaudiSoftware.co/Daftra's maintenance module — not confirmed, needed to know if a cheaper entrant is even possible",
+      "Whether Daftra's maintenance-center module is oriented toward walk-in repair shops (e.g., device repair) rather than field technicians visiting customer sites — this distinction could preserve or close the wedge",
+      "True price sensitivity and switching willingness of 1-10 technician operators",
+      "Whether any competitor already offers real-time GPS/status tracking + WhatsApp-native workflow specifically, which none of the found sources confirmed"
+    ],
+    "missing_info_requests": [
+      {
+        "question": "What does Mutflex, SaudiSoftware.co, and Daftra's maintenance module actually charge per month, and does any of them support live technician GPS/status tracking plus WhatsApp-native job updates?",
+        "route_to": "competition"
+      },
+      {
+        "question": "Is there any survey or forum evidence of Saudi micro maintenance operators expressing willingness to switch from WhatsApp/phone coordination to a paid tool?",
+        "route_to": "payment"
+      }
+    ],
+    "survival_notes": "The pain evidence is weak (one debunked statistic, otherwise vendor-only claims) and credible Arabic-first local competitors already exist (Mutflex, SaudiSoftware.co, and now Daftra's maintenance module), but none were confirmed to combine live GPS tracking + WhatsApp-native updates + micro-operator pricing, so a narrow wedge remains plausible. This falls short of the 2-MAJOR threshold for rejection once the debunked-statistic issue is weighed as MINOR (given that paying local competitors existing is itself indirect evidence the underlying pain is real enough to monetize).",
+    "summary": "Survived, but weakly: pain evidence is thin and partly built on an unverifiable recycled statistic, and several Arabic-first Saudi competitors (Mutflex, SaudiSoftware.co, Daftra) already operate in adjacent or overlapping niches. No competitor was confirmed to fully match the proposed WhatsApp-native + GPS-tracking + micro-price positioning, leaving a narrow, unproven wedge."
+  },
+  "C09": {
+    "candidate_id": "C09",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "REGULATORY",
+        "reason": "A SABER Shipment/Product Certificate of Conformity can legally only be issued by a SASO-accredited/notified Certification Body holding independent ISO/IEC 17065:2012 accreditation via the Saudi Accreditation Center (SAAC). All confirmed players in this space (TÜV SÜD, SGS, QIMA, Verger Group) are established international/regional certification firms, not solo operators. A solo founder cannot obtain this accreditation within a 500-1,000 SAR budget or a short timeframe; the only feasible role is a thin document-prep/referral front-end for an accredited partner, which is a fundamentally weaker business than the one proposed.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://www.sanyogconformity.com/saso-saber-certification/",
+            "summary": "Confirms certification bodies must hold independent ISO/IEC 17065:2012 accreditation via the Saudi Accreditation Center to be SASO-notified."
+          },
+          {
+            "url": "https://www.tuvsud.com/en-ae/services/product-certification/saso-saber-product-certification-in-saudi-arabia",
+            "summary": "TÜV SÜD is an accredited certification body approved by SASO — illustrating the scale/credibility bar for issuers."
+          },
+          {
+            "url": "https://www.qima.com/consumer-products/certifications/saso-conformity",
+            "summary": "QIMA is SAAC-accredited to ISO/IEC 17065 as a SASO-approved Conformity Assessment Body — another example of the accreditation bar."
+          }
+        ]
+      },
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "At least 8-10 established certification/consultancy agencies (Adnovs, Fahes, Tabseer, Verger Group, Instacertify, Export2Gulf, Atoney, XDS Solutions, Markek, plus international accredited bodies) already actively market and sell SABER filing/consultancy services with SEO-optimized content targeting exactly the queries a small importer would search, on top of an already-cheap, fixed government fee (~SAR 350-575), leaving very thin margin for a pure software/document-prep layer.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://verger-group.com/what-is-the-cost-of-a-saber-certificate-in-2025/",
+            "summary": "Published cost breakdown showing base government fees are already low (~SAR 350-575), constraining room for a middleman markup."
+          },
+          {
+            "url": "https://instacertify.com/saber",
+            "summary": "One of many actively-marketing SABER certification agencies already competing for this exact customer search intent."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched specifically for whether an individual/solo founder can become a SASO-accredited certification body",
+      "Cross-checked the density and establishment level of existing SABER certification competitors",
+      "Assessed margin available for a software-only layer given confirmed low government base fees"
+    ],
+    "remaining_uncertainties": [
+      "Whether a pure document-prep/referral wizard (not issuing certificates itself) could still find a viable, if thin, margin by partnering with an accredited body",
+      "Actual per-certificate markup charged by incumbent agencies beyond the base government fee"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A — rejected.",
+    "summary": "Rejected: certificate issuance is legally restricted to ISO/IEC 17065-accredited bodies (a multi-year, expensive accreditation a solo founder cannot obtain), and the achievable fallback (a document-prep/referral layer) would compete in an already-saturated field of 8-10+ established agencies over an already-cheap, fixed government fee — leaving no viable path to a defensible, solo-buildable business as described."
+  },
+  "C10": {
+    "candidate_id": "C10",
+    "verdict": "SURVIVED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "Several cheap/free, self-serve global SaaS tools already publish dedicated Saudi PDPL compliance pages with the same core feature set proposed (privacy-policy generation, consent banners, DSAR tooling): Enzuzo (from ~$7-9/month, free plan available), CookieHub, TermsFeed, and a fully free generic generator (privacypolicygenerator.info) that also claims PDPL coverage. This narrows the 'no self-serve option exists' framing in the original candidate significantly.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+            "summary": "Global SaaS with a dedicated Saudi PDPL page, consent banners, DSAR management, and policy generation, priced from ~$7-9/month with a free plan."
+          },
+          {
+            "url": "https://www.privacypolicygenerator.info/saudi-arabia-pdpl/",
+            "summary": "A free, no-registration privacy policy generator with a dedicated Saudi PDPL page."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for existing Arabic-first, cheap, self-serve PDPL compliance tools targeting Saudi SMEs specifically",
+      "Checked whether any found competitor combines Arabic-first UX with SDAIA-specific enforcement-pattern depth (data mapping tied to actual common violations, breach-notification workflow)",
+      "Weighed local consulting competitors (SecureLink, Ghaim, Hala Privacy) against the self-serve SaaS positioning"
+    ],
+    "remaining_uncertainties": [
+      "None of the found global competitors (Enzuzo, CookieHub, TermsFeed, privacypolicygenerator.info) were confirmed to have Arabic-language UI or Saudi-specific breach-notification/DPO-workflow depth tied to SDAIA's documented enforcement patterns — this remains the candidate's plausible wedge but is unproven",
+      "Whether current SDAIA enforcement (48 decisions/year) is concentrated on large/foreign firms vs. small local SMEs, which would affect real urgency/willingness-to-pay for this exact segment",
+      "No confirmed SAR pricing for any local competitor (Hala Privacy, SecureLink, Ghaim) or evidence of actual customer volume for any player in this space"
+    ],
+    "missing_info_requests": [
+      {
+        "question": "Do Enzuzo, CookieHub, or TermsFeed offer an Arabic-language interface for their Saudi PDPL pages, and do any local players (Hala Privacy, Ghaim, SecureLink) already offer a cheap self-serve (non-consulting) product?",
+        "route_to": "competition"
+      },
+      {
+        "question": "Is SDAIA's enforcement to date concentrated on large/foreign companies, or are small local SMEs actually being fined/investigated?",
+        "route_to": "regulatory"
+      }
+    ],
+    "survival_notes": "Global self-serve competitors already cover generic PDPL policy/consent needs cheaply, so the candidate must differentiate specifically on Arabic-first UX and SDAIA-enforcement-specific depth (mapped to the documented common violations: no legal basis, no marketing consent, missing safeguards) rather than positioning as a novel category. This is a real but survivable competitive risk, not a fatal one, since no confirmed competitor combines cheap self-serve + Arabic-first + SDAIA-specific workflow.",
+    "summary": "Survives: while global self-serve PDPL tools (Enzuzo, CookieHub, TermsFeed, free generators) already exist and narrow the originally-claimed gap, none were confirmed to be Arabic-first or SDAIA-enforcement-pattern-specific, leaving a plausible, if narrower, wedge. Regulatory driver (SDAIA active enforcement, fines up to SAR 5M) remains solidly evidenced."
+  },
+  "C11": {
+    "candidate_id": "C11",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "WEAK_PAIN",
+        "reason": "The mandatory core legal step this product wraps (Maroof registration) is confirmed by Maroof's own official account to be free and to take only seconds with a few steps — undercutting the premise that social-media sellers need a paid guided wizard to get through it. The heavier compliance items (CR, ZATCA Fatoorah, 7-day return disclosures) are real, but the flagship 'Maroof onboarding' hook of the product is demonstrably already trivial per the regulator itself.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://twitter.com/maroof_sa/status/814795734864248834?lang=ar",
+            "summary": "Official Maroof account: 'التسجيل في #معروف بدون أي رسوم وبسيط جداً، ما يتطلّب غير ثواني وخطوات معدودة' (Maroof registration is free and very simple, taking only seconds and a few steps)."
+          },
+          {
+            "url": "https://manayr.com/%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%88%D9%81/",
+            "summary": "Guide confirms registration flow is: log in via Nafath, pick activity type, enter store info, upload ID/CR — a short self-serve flow, not a complex multi-step process needing hand-holding."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "No demand evidence was found anywhere (freelance marketplaces, forums) for a paid all-in-one formalization wizard specifically. The only paid analogues found are cheap human facilitation agencies for the underlying free/near-free government paperwork (Maroof cert ~75 SAR via Lahint, CR issuance ~200 SAR via agencies) — evidence people pay humans for a small annoying task, not that they would buy a SaaS product for it. The dossier's own payment_validator independently reached the same PARTIAL/unproven conclusion.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://lahint.sa/ar/services/issuance-of-maarouf-certificate",
+            "summary": "Facilitation agency charges ~75 SAR to help obtain a Maroof certificate that is officially free and (per Maroof's own account) takes seconds to get directly."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "STRONG_COMPETITOR (Maroof itself)",
+      "NO_WILLINGNESS_TO_PAY",
+      "WEAK_PAIN",
+      "SMALL_MARKET (unregistered seller population size)"
+    ],
+    "remaining_uncertainties": [
+      "Actual size of the still-unregistered informal social-seller population is unknown — if very large and enforcement escalates, panic-driven demand for a compliance wrapper could still emerge",
+      "Whether bundling ZATCA Fatoorah setup guidance (a genuinely more complex step) rather than leading with Maroof could preserve a thinner but real value proposition"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Would need direct evidence (e.g., a Mostaql/Khamsat request, a forum thread, or a pilot) that sellers will pay specifically for guidance beyond what Maroof's own seconds-long free flow and existing cheap CR agencies already provide, ideally centered on the harder ZATCA/Fatoorah step rather than Maroof.",
+    "summary": "Killed on two MAJOR, evidence-backed grounds: the flagship mandatory step (Maroof) is officially free and near-instant per Maroof's own account, and no evidence of demand for a paid wizard product (vs. cheap human facilitation of adjacent paperwork) was found anywhere."
+  },
+  "C12": {
+    "candidate_id": "C12",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "A direct AI competitor (ListaPro.ai) already exists live, paid, and positively reviewed, distributed through both Salla's and Shopify's official app stores — the exact discovery channel this candidate would need. It performs near-identical AI product-listing creation (from barcodes/images) plus multi-channel/inventory sync, with flexible subscription pricing. Additionally, Salla's own first-party 'Store Tools – AI Describer' app is embedded directly in the merchant dashboard merchants already use, giving zero-friction, trusted incumbency on top of the third-party competitor. Two independent, already-distributed players covering the same job leaves no credible wedge for a solo founder entering head-on with the same 'AI generates Arabic listings' pitch.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://apps.salla.sa/en/app/1532783652",
+            "summary": "ListaPro listed as a live, installed app in Salla's official App Store."
+          },
+          {
+            "url": "https://listapro.ai/pricing/",
+            "summary": "ListaPro offers monthly subscription plans scaled to product/channel count, with a free trial — a real paid product, not just marketing content."
+          },
+          {
+            "url": "https://apps.shopify.com/lista-pro",
+            "summary": "Same ListaPro product also listed in Shopify's App Store, confirming it is a mature, multi-platform, actively distributed product with user reviews praising time savings."
+          },
+          {
+            "url": "https://apps.salla.sa/en/app/709062167",
+            "summary": "Salla's own first-party 'AI Describer' app embedded in the merchant dashboard, generating/saving AI product descriptions natively."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "STRONG_COMPETITOR (searched ListaPro pricing/reviews, Salla/Zid native AI tools)",
+      "NO_WILLINGNESS_TO_PAY",
+      "HIGH_CAC (app-store distribution advantage of incumbents)"
+    ],
+    "remaining_uncertainties": [
+      "Whether ListaPro/Salla's native tool can actually ingest a messy raw supplier spreadsheet with arbitrary columns (true bulk catalogue migration) as opposed to one-image/barcode-at-a-time creation — if not, a narrow 'spreadsheet-to-live-catalogue migration' wedge could theoretically still exist",
+      "ListaPro's exact price points and real customer count were not confirmable this session (fetch blocked), so the price-undercut wedge size is unverified"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Not recommended to pursue as framed. A narrower angle (pure bulk CSV/Excel-to-live-listing migration for suppliers with messy data, positioned as a complement to, not replacement for, ListaPro/Salla's native describer) might survive, but that is a materially different, narrower product than the one described.",
+    "summary": "FATAL STRONG_COMPETITOR: a live, paid, reviewed AI listing app (ListaPro) already occupies this exact niche in both Salla's and Shopify's official app stores, compounded by Salla's own native AI Describer tool — leaving no credible wedge for the product as currently scoped."
+  },
+  "C13": {
+    "candidate_id": "C13",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "At least six dedicated Saudi/Arabic contractor ERP or accounting products already explicitly market مستخلصات (progress-payment certificate) tracking features: Daftra, Bonyan ERP, Buildo, Orchida Soft, Sdeed, and BuildERP (muqawil-erp.com, which has a dedicated 'إدارة المستخلصات' product page). This is a considerably more crowded space than the candidate's original framing suggested.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://muqawil-erp.com/progress-claims/",
+            "summary": "BuildERP offers a dedicated progress-claims (مستخلصات) management module — another established competitor not in the original candidate dossier."
+          },
+          {
+            "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+            "summary": "Bonyan ERP content-markets directly against this exact pain point."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "Free مستخلص Excel templates are already abundant and actively distributed — including by an ERP vendor itself (Daftra) as a free lead-generation template, plus multiple standalone free-template sites — matching exactly the manual Excel workaround this candidate targets. Given the candidate's own open question ('would contractors pay for tracking vs. just wanting faster payment') and evidence that the real crisis driver is late owner/government payment orders (not a documentation gap — a named official body reported ~70% of certificates lacked a payment order), a lightweight paid tracker does not address the root cause and competes against free substitutes for the documentation side.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.daftra.com/templates/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5-%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA",
+            "summary": "Free downloadable مستخلص Excel template, offered by an ERP vendor itself, directly substituting for the proposed paid tool's core function."
+          },
+          {
+            "url": "https://www.droosmep.com/2024/10/contracting-invoice-excel-sheet-sample.html",
+            "summary": "Another free مستخلص Excel sheet template widely available for contractors/engineers."
+          },
+          {
+            "url": "https://www.argaam.com/ar/article/articledetail/id/502380",
+            "summary": "Official Contractors Authority statistic: ~70% of progress-payment certificates had no payment order issued — confirming the core pain is a payment/financing delay, not a documentation/tracking gap that software can fix."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "STRONG_COMPETITOR (searched for additional ERP/mustakhlas competitors)",
+      "NO_WILLINGNESS_TO_PAY (searched for free Excel template availability)",
+      "WEAK_PAIN (root cause is financing, not tracking)"
+    ],
+    "remaining_uncertainties": [
+      "None of the confirmed ERP competitors were verified to offer a mobile-first, photo-per-line-item, WhatsApp-shareable point solution specifically — a narrow wedge might exist if small subcontractors truly prefer simplicity over free Excel, but no evidence of that preference was found",
+      "Real-world pricing/adoption of the 6 named ERP competitors among truly small subcontractors (vs. mid/large contractors) is unconfirmed either way"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Would need direct evidence that small subcontractors, faced with free Excel templates and several existing ERPs, would actually pay for a narrower mobile tool — e.g. a Mostaql/Khamsat request for exactly this kind of lightweight app (not a one-off custom Excel build).",
+    "summary": "Killed on two MAJOR grounds: a more crowded competitive field of established مستخلصات-tracking ERPs than originally assessed, plus strong evidence that free Excel templates already satisfy the documentation workaround while the real driver of the pain (~70% of certificates lack a payment order, per an official body) is a payment/financing problem no tracking software fixes."
+  },
+  "C14": {
+    "candidate_id": "C14",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "Munsit is a live, dedicated Gulf/Saudi-dialect (explicitly Najdi and Hijazi) Arabic speech-to-text and meeting-notes product with published, self-serve, pay-as-you-go pricing starting at roughly $0.129 per audio hour (~$8/month for ~100 minutes) — dramatically cheaper than the ~$5/audio-hour freelancer rate this candidate is built to undercut. It ships mobile apps on Google Play and the App Store, claims #1 ranking on the HuggingFace open Arabic ASR leaderboard, and offers structured meeting notes (speakers, action items, Arabic summary) matching this candidate's exact proposed feature set. This leaves essentially no price, feature, or distribution wedge for a solo founder entering head-on.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://munsit.com/",
+            "summary": "Munsit markets itself as '#1 Arabic Speech Recognition Platform with 25+ dialects support', explicitly including Saudi Najdi and Hijazi dialects."
+          },
+          {
+            "url": "https://munsit.com/blog/introducing-munsit-the-first-arabic-speech-to-text-app-built-for-you",
+            "summary": "Product announcement confirming both real-time meeting transcription and file-based transcription with structured output."
+          },
+          {
+            "url": "https://play.google.com/store/apps/details?id=com.munsit.android",
+            "summary": "MunsitAI is a live, installed mobile app on Google Play, confirming real distribution, not just a landing page."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "STRONG_COMPETITOR (searched Munsit pricing/target customer)",
+      "TECHNICAL (Gulf-dialect ASR accuracy)",
+      "NO_WILLINGNESS_TO_PAY"
+    ],
+    "remaining_uncertainties": [
+      "Munsit's real-world accuracy on informal spoken Gulf dialect (vs. its own marketing claims) was not independently tested this session",
+      "Whether the demand skewed toward religious/lecture content on Khamsat/Mostaql would still prefer human transcription over any AI tool for trust/accuracy reasons, which could theoretically leave a thin niche — but this would apply equally against Munsit and against this candidate"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Not recommended as framed. Any surviving angle would need to be a narrow content-vertical (e.g., religious-lecture-specific formatting/tashkeel) explicitly differentiated from Munsit's general-purpose product, with hands-on accuracy testing first.",
+    "summary": "FATAL STRONG_COMPETITOR: Munsit already is the exact proposed product — a live, cheap, self-serve, Saudi/Gulf-dialect-tuned Arabic transcription and meeting-notes tool with mobile app distribution — undercutting the candidate's own price-vs-freelancer value proposition by roughly 40x."
+  },
+  "C15": {
+    "candidate_id": "C15",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The core invoice-generation feature this product is built around is already commoditized and free: multiple ZATCA/VAT-compliant invoice generators are available at no cost (arabtoolbox's own generator is explicitly advertised as free; ALZERP, Fatorli, Fatoora.app similarly free), and free وثيقة العمل الحر invoice templates are also readily available. The underlying وثيقة العمل الحر document itself is also confirmed free to obtain, with VAT only applying above 375,000 SAR/year (a threshold most freelancers likely never cross).",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://arabtoolbox.com/tools/vat-invoice-generator",
+            "summary": "A ZATCA/VAT invoice generator advertised and offered explicitly as free — a direct free substitute for the candidate's core invoicing feature."
+          },
+          {
+            "url": "https://fawater.net/templates/%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%B9%D9%85%D9%84-%D8%AD%D8%B1",
+            "summary": "Free invoice template specifically for وثيقة العمل الحر / freelance work document holders."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "The dossier's own payment_validator, after searching for payment evidence, explicitly concluded willingness-to-pay for this specific niche tool is 'PARTIAL at best, weighted toward NO,' and found no evidence at all that anyone pays for the payment-delay/reminder-tracking half of the proposed product — the one differentiator not already covered by free tools or the platform-native (free) Khamsat/Mostaql escrow mechanism.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://khamsat.com/community/general/387001-%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%AA%D8%A3%D8%AE%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%89-%D9%81%D9%89-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
+            "summary": "The only payment-delay evidence found concerns platform-native (free) escrow mitigation on Khamsat, not evidence of demand for a paid off-platform reminder tool."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "STRONG_COMPETITOR (free invoice generator availability)",
+      "NO_WILLINGNESS_TO_PAY",
+      "SMALL_MARKET (freelancers near VAT threshold)"
+    ],
+    "remaining_uncertainties": [
+      "Whether a narrow 'am I above the VAT threshold' guidance-only product (skipping invoicing entirely, which is free/commoditized) could find payers has not been tested — no demand signal was found either way",
+      "Population size of freelance-document holders actually near/above the 187,500-375,000 SAR VAT thresholds is unknown, which bounds the addressable market for even a narrow guidance product"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "The invoicing feature should be dropped entirely (it's free and commoditized); only a standalone VAT-threshold-guidance or payment-chasing product could theoretically survive, but no demand evidence exists for either in isolation.",
+    "summary": "Killed on two MAJOR grounds: the core invoicing feature is already free and commoditized across multiple tools, and the dossier's own payment validation concluded willingness-to-pay is weighted toward NO with zero evidence anyone pays for the proposed payment-reminder differentiator."
+  },
+  "C16": {
+    "candidate_id": "C16",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "NoorCV is a genuinely free (no premium tier, no hidden costs, no credit card ever) bilingual AR/EN AI resume builder explicitly built for Gulf professionals with Saudi-specific fields (visa status, nationality) and real user testimonials confirming actual usage/job outcomes. This is not a hypothetical competitor — it is free, well-localized, and serves the exact same customer (Saudi/Gulf job seeker wanting an AI-assisted bilingual CV) as the candidate. Combined with StylingCV, Hash Resume, Seera AI (all bilingual, Saudi-facing) and the fact that ChatGPT itself does this task for free, the core 'AI CV builder for Saudi market' concept has no scarcity value. The candidate's only proposed wedge (deep Saudi GOV-sector tailoring, WhatsApp delivery) is unverified and speculative, not evidenced.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://noorcv.com/",
+            "summary": "NoorCV: completely free AI resume builder for Gulf professionals incl. Saudi Arabia, bilingual AR/EN, Gulf-specific fields, real user testimonials ('This could easily be a paid product... amazing product'), no premium tier."
+          },
+          {
+            "url": "https://ai.stylingcv.com/saudi-arabia",
+            "summary": "Dedicated Saudi landing page competitor with free builder + premium features, per dossier."
+          },
+          {
+            "url": "https://lambacv.com/",
+            "summary": "Another free AI-powered ATS-compliant Arabic CV builder cited in dossier."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "The human-freelancer segment of this exact market is already commoditized down to $5/CV on Khamsat (confirmed live gig), and multiple fully free AI tools exist with real testimonials. The proposed 10-30 SAR one-time fee sits in a very thin margin band squeezed between free (NoorCV/ChatGPT) and $5 human freelancers, with no proof buyers will choose a paid AI tool over either free option.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://khamsat.com/writing/resume-writing/676212-%D8%B9%D9%85%D9%84-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D9%82%D8%A7%D8%A8%D9%84-5-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+            "summary": "Live $5 CV-writing gig confirming the commodity price floor for human alternative."
+          },
+          {
+            "url": "https://noorcv.com/",
+            "summary": "Fully free competitor removes the incentive to pay even a small one-time fee for most users."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for NoorCV traction/reviews to test STRONG_COMPETITOR — confirmed genuinely free with real testimonials",
+      "Checked whether free AI tools have commoditized the market (NO_WILLINGNESS_TO_PAY) — confirmed multiple free bilingual options exist alongside $5 freelancers",
+      "Considered SMALL_MARKET — rejected as attack vector since Saudi has a large, active job-seeker population and confirmed live demand (Mostaql/Khamsat)",
+      "Considered FOUNDER_MISFIT/TECHNICAL — rejected, MVP is EASY per feasibility validator, well within solo founder's ability"
+    ],
+    "remaining_uncertainties": [
+      "Whether a narrow GOV-sector-specific tailoring wedge could carve out a small paying niche despite free competitors",
+      "Actual conversion rate/paid-usage volume of NoorCV vs. paid alternatives (all traction claims are testimonial-based, not usage-metric-based)"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A - rejected",
+    "summary": "Killed primarily on STRONG_COMPETITOR: a fully free, well-localized, real-usage-confirmed Gulf/Saudi bilingual AI CV builder (NoorCV) already exists alongside several other free/cheap tools, squeezing out room for a paid entrant at the proposed 10-30 SAR price point, compounded by an already-commoditized $5 freelancer market (NO_WILLINGNESS_TO_PAY)."
+  },
+  "C17": {
+    "candidate_id": "C17",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "REGULATORY",
+        "reason": "The candidate's own feasibility validator flagged HIGH severity risk under Nizam al-Muhamah (Law Practice System): drafting formal complaint/legal text for consumers risks being characterized as unauthorized legal practice, which is restricted to licensed Bar-registered lawyers. Across FOUR different dispute domains (rental, gym, e-commerce, delivery) each with evolving rules, a solo non-lawyer founder faces real exposure and a nontrivial content-accuracy maintenance burden with no legal training.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://sba.gov.sa/wp-content/uploads/2022/05/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9-%D9%88%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%AA%D9%87-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf",
+            "summary": "Law Practice System restricting legal representation/pleading and formal legal consultation to licensed lawyers registered with the Saudi Bar Association."
+          }
+        ]
+      },
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "At least three funded, actively-distributed Arabic AI legal-assistant apps already operate in Saudi Arabia and substantially overlap this exact use-case. Adel alone has 500,000 downloads and a 4.6-star rating (663 ratings), searches 70,000+ Saudi legal documents, and drafts contracts/legal documents. Shwra and Waddah AI add further overlapping coverage (lawsuit drafting, AI-to-lawyer routing). None of these is a cheap/free give-away, but their scale of real usage means a solo founder entering the same 'AI helps you with a legal/complaint problem' space faces an uphill distribution battle against apps with a multi-year head start and six-figure download counts.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://apps.apple.com/sa/app/adel-your-legal-assistant/id6695754708",
+            "summary": "Adel — Your Legal Assistant: 500K downloads, 4.6-star rating (663 ratings), searches 70K+ Saudi legal documents, drafts legal documents in Arabic."
+          },
+          {
+            "url": "https://shwra.ai/en",
+            "summary": "Shwra: licensed AI-triage-to-lawyer platform with ~1,400 App Store ratings across iOS/Android/Huawei."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "The underlying government complaint channels this tool would sit on top of (Najiz, Ejar, CST, Balagh Tijari, CPA) are entirely free. The candidate's own payment_validator found NO direct evidence anyone pays specifically for complaint-drafting/document-generation — only adjacent, unrelated evidence (general lawyer consultations at 100-1500 SAR, B2B AI-legal tools sold to lawyers, not consumers).",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://portalservices.cst.gov.sa/E-Services/Complaint/ComplaintFAQ.aspx",
+            "summary": "Free official CST complaint channel."
+          },
+          {
+            "url": "https://www.ejar.sa/en/help",
+            "summary": "Free official Ejar support channel for rental disputes."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for the legal-practice-boundary risk (نظام المحاماة) to test whether a non-lawyer drafting complaints is legally exposed — confirmed restriction exists, though exact application to 'informational drafting' remains ambiguous",
+      "Reviewed dossier's competition_validator for existing Arabic legal-AI apps — found three with real scale (Adel, Shwra, Waddah)",
+      "Reviewed payment_validator conclusions on willingness to pay — confirmed no direct evidence, only adjacent/unrelated payment signals",
+      "Considered narrowing to a single dispute type as a mitigation — still doesn't resolve the free-channel-underneath problem"
+    ],
+    "remaining_uncertainties": [
+      "Whether a strict 'template assembly, not advice' framing would fully avoid unauthorized-practice classification (unresolved legal question, not something searchable to certainty)",
+      "Whether Adel/Shwra/Waddah already cover these specific narrow workflows well enough to fully preempt a niche entrant"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A - rejected",
+    "summary": "Three independent MAJOR risks stack up: real unauthorized-practice-of-law exposure across four evolving legal domains for a non-lawyer solo founder, direct overlap with three already-scaled Arabic legal-AI apps (Adel: 500K downloads), and no evidence of payment for complaint-drafting specifically when the underlying government channels are free."
+  },
+  "C18": {
+    "candidate_id": "C18",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "The candidate's own payment_validator explicitly concluded 'no direct evidence anyone pays for a Musaned-specific dispute-help tool.' The official Musaned/HRSD complaint channel is free, government-run, and was recently updated (2025) to shorten resolution times, further reducing the pain a paid tool would need to solve. Only adjacent evidence exists: general legal consultation fees unrelated to this specific workflow.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.musaned.com.sa/ar/faqs/hiring-laborers",
+            "summary": "Free official Musaned FAQ/process for recruitment-office disputes."
+          },
+          {
+            "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+            "summary": "Free official HRSD/Musaned electronic complaint-intake service."
+          }
+        ]
+      },
+      {
+        "category": "SMALL_MARKET",
+        "reason": "The candidate's own competition_validator explicitly rated this market_state as WEAK_MARKET, noting the niche 'sits between a recently-improved free government process and general-purpose Arabic legal-AI apps that likely already handle this informally,' and that Musaned's 2025 update reportedly reduced resolution time to 3-5 business days, which may have already resolved much of the underlying navigation difficulty this tool targets.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.arrajol.com/content/395665/",
+            "summary": "Confirms specific 15% penalty and 120-day refund trigger showing Musaned's own process is becoming more self-explanatory over time."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Reviewed payment_validator conclusions directly — no evidence of payment for this specific tool",
+      "Reviewed competition_validator's own WEAK_MARKET rating and reasoning",
+      "Considered whether the 90+30-day deadline-tracking feature alone could justify payment absent the drafting/legal-risk angle — found no evidence of demand for a standalone deadline tracker",
+      "Considered REGULATORY (same practicing-law ambiguity as C17) as an additional risk factor — narrower/administrative scope makes it less severe than C17 but still a live concern"
+    ],
+    "remaining_uncertainties": [
+      "Actual annual volume of Musaned complaints is unknown (no public statistic found), making true market size unverifiable either way",
+      "Whether a free/ad-supported or lead-gen-to-lawyer model (rather than a paid packet fee) could work better than the proposed per-use fee"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A - rejected",
+    "summary": "Two MAJOR, evidence-backed reasons from the dossier's own validators: no proof of willingness to pay against a free, recently-improved government channel, and the competition validator's own WEAK_MARKET assessment. The niche is real but too thin and too adjacent to an already-free, already-improving official process to sustain a paid solo product."
+  },
+  "C19": {
+    "candidate_id": "C19",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "REGULATORY",
+        "reason": "Fresh search confirms the SDAIA Responsible AI Policy consultation closed 3 May 2026 and, as of the most recent available information, 'has not yet been finalized' — nearly five months after consultation close and with today's date (26 Sept 2026) well past that, there is still no binding law, no confirmed enforcement scope, and no confirmed timeline. Building a compliance product against a policy that may still change materially (or never be finalized on a knowable schedule) is premature market timing, not a licence problem per se, but functionally blocks any real near-term customer urgency.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://digitalpolicyalert.org/event/39093-saudi-data-and-artificial-intelligence-authority-closes-consultation-on-draft-responsible-ai-policy-including-performance-monitoring-requirement",
+            "summary": "Confirms consultation closed 3 May 2026 on the draft policy including performance-monitoring requirement — still described as a draft, not finalized."
+          },
+          {
+            "url": "https://www.spa.gov.sa/en/N2551533",
+            "summary": "Official SPA announcement of the consultation invitation, confirming draft (non-binding) status at time of opening."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "No evidence of any Saudi small/mid AI or SaaS vendor paying for SDAIA-specific compliance tooling today. The only confirmed willingness-to-pay data point is global enterprise-tier AI-governance platforms (Credo AI, $30K-150K+/year) serving large multinationals like Mastercard and McKinsey — an entirely different customer segment and price point than 'small Saudi AI/SaaS vendors,' the candidate's stated target.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://co-aims.com/blog/credo-ai-review-2026-compliance-officers",
+            "summary": "Credo AI enterprise pricing $30,000-150,000+/year — wrong customer segment for a small Saudi vendor product."
+          }
+        ]
+      },
+      {
+        "category": "FOUNDER_MISFIT",
+        "reason": "The candidate's own feasibility validator explicitly flagged that 'B2B compliance tooling typically requires buyer trust/credibility that an unknown solo founder lacks, especially for government-adjacent risk products; enterprise sales cycles are long' — a direct admission that this business model does not fit a solo founder's realistic go-to-market capability, independent of the regulatory timing issue.",
+        "severity": "MAJOR",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for whether the SDAIA Responsible AI Policy has been finalized since the April/May 2026 consultation — confirmed still not finalized, undermining the regulatory trigger's near-term urgency",
+      "Checked for any existing paid Saudi-specific AI-governance compliance product with SME customers — none found",
+      "Reviewed feasibility validator's own founder-fit concerns about B2B compliance sales credibility"
+    ],
+    "remaining_uncertainties": [
+      "Whether/when the policy will ultimately be finalized and what its actual enforcement scope on small vendors will be",
+      "Whether a much cheaper, self-serve version (not requiring enterprise trust) could work once the policy is finalized"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A - rejected",
+    "summary": "This is explicitly a FUTURE_HYPOTHESIS resting on an unfinalized draft regulation (confirmed still not finalized via fresh search, ~5 months after consultation closed), with no current Saudi SME paying customer and a B2B trust/credibility mismatch for a solo unknown founder — multiple independent reasons to reject now, though it could be revisited once the policy is actually finalized and enforcement scope is known."
+  },
+  "C20": {
+    "candidate_id": "C20",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "REGULATORY",
+        "reason": "Fresh search confirms that providing recruitment/labor-matching services without an MHRSD license is a serious violation carrying fines of SR200,000 (1st offense), SR220,000 (2nd) and SR250,000 (3rd) in Saudi Arabia. A platform that matches individual skilled tradespeople/workers to paid work opportunities plausibly falls within this licensing regime, which is exactly the kind of 'hard licence' the founder constraints explicitly instruct to avoid.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://saudigazette.com.sa/article/664621/saudi-arabia/saudi-arabia-cracks-down-on-unlicensed-recruitment-services-with-fines-up-to-sr250000",
+            "summary": "Saudi Arabia cracks down on unlicensed recruitment services with fines up to SR250,000."
+          },
+          {
+            "url": "https://www.hrsd.gov.sa/en/%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81",
+            "summary": "MHRSD regulatory framework governing recruitment/employment-matching services, cited in dossier's own feasibility validator as HIGH severity blocker."
+          }
+        ]
+      },
+      {
+        "category": "FOUNDER_MISFIT",
+        "reason": "The candidate's own feasibility validator explicitly concluded solo_founder_feasible: false, rating complexity HARD due to a classic two-sided marketplace cold-start problem (needing both trusted certified-subcontractor supply and main-contractor demand simultaneously) in an industry that is relationship-driven and pre-qualification-based, not open-marketplace-based — an environment where an unknown solo founder has no credibility or existing relationships to break in.",
+        "severity": "FATAL",
+        "evidence": []
+      },
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "Saudi Arabia already has multiple dedicated, Arabic-native subcontractor/tender-matching platforms (Batengate, Muqawalatgate, Contractor.sa) plus an authority-backed incumbent (Scavo, backed by the Saudi Contractors Authority) and a regional procurement platform (ProTenders) already covering the tender-discovery/subcontractor-connection layer this candidate targets.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://scavo.sa/",
+            "summary": "Saudi Contractors Authority-backed real-time project/tender platform serving contractors, subcontractors, suppliers and consultants."
+          }
+        ]
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for MHRSD licensing requirements/penalties for online worker-matching platforms — confirmed severe fines (up to SR250,000) for unlicensed recruitment/labor-matching services",
+      "Reviewed dossier's own feasibility validator conclusion (solo_founder_feasible: false) and competition_validator's list of existing Arabic-native subcontractor platforms",
+      "Considered narrowing to a pure tender-discovery directory (no worker placement) to sidestep the MHRSD licensing risk — still leaves the two-sided cold-start and strong-competitor problems unresolved"
+    ],
+    "remaining_uncertainties": [
+      "Whether a narrower, non-placement 'compliance-document checklist only' tool (no worker matching/placement) could avoid the MHRSD licensing trigger entirely — unexplored mitigation",
+      "Actual pace of Expo 2030/World Cup 2034 construction ramp-up remains only partially confirmed"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "N/A - rejected",
+    "summary": "Two independent FATAL reasons: a plausible MHRSD recruitment/labor-matching licensing requirement carrying fines up to SR250,000 (exactly the 'hard licence' type founder constraints flag to avoid), and the dossier's own feasibility validator already concluding solo_founder_feasible: false due to an unwinnable two-sided marketplace cold-start problem in a relationship-driven, pre-qualification-based industry — compounded by several already-established Arabic-native competitor platforms."
+  }
+}

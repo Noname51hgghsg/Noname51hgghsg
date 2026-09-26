@@ -1,0 +1,512 @@
+{
+  "agent": "whatsapp_excel_hunter",
+  "signals": [
+    {
+      "opportunity_id": "WX-01",
+      "problem": "Small/mid contractors and subcontractors track periodic progress payments (مستخلصات) — % of work completed, amounts due, deductions — using Excel sheets updated manually, with WhatsApp used to send photos of completed work as proof for owners/consultants to approve payment.",
+      "customer": "Small construction/fit-out contractors and subcontractors (and the owners/consultants who approve their payments)",
+      "segment": "B2B",
+      "sector": "Construction / Contracting",
+      "market": "Saudi Arabia",
+      "source": "Mostaql freelance project listings; contractor ERP vendor blog explaining the process",
+      "evidence": [
+        {
+          "claim": "A freelancer built/sold a system explaining how periodic progress-payment certificates (مستخلصات) work for contractors — implying this is normally tracked manually.",
+          "url": "https://mostaql.com/portfolio/421912-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A9-%D9%88%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84%D9%87%D8%A7",
+          "source_title": "نظام المستخلصات الدورية وطريقة عملها | مستقل",
+          "summary": "Mostaql portfolio item describing a periodic progress-payment (مستخلص) system for contractors, per search snippet — a document recording work value completed to date so owner can release payment.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated contractor-ERP vendor publishes a full guide on 'how to calculate and track progress payment certificates without confusion', indicating this is a recognized pain point in the market.",
+          "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+          "source_title": "مستخلصات المقاولين: طريقة الحساب والمتابعة خطوة بخطوة — Bonyan ERP",
+          "summary": "Vendor blog post targeting contractors confused about calculating/tracking progress payments, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Buildo",
+          "url": "https://buildo.solutions/",
+          "notes": "Full contracting/project management ERP, likely priced for mid/large contractors."
+        },
+        {
+          "name": "Bonyan ERP",
+          "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+          "notes": "Contractor ERP vendor with blog content on this exact pain."
+        },
+        {
+          "name": "Orchida Soft (const13)",
+          "url": "https://orchida-soft.com/ar/const13-ocapv5/",
+          "notes": "Desktop contracting/mustakhlasat accounting software."
+        }
+      ],
+      "workaround": "Excel sheet per project + WhatsApp photos of completed work sent to owner/consultant for manual approval; some pay a freelancer once to build a custom Excel template.",
+      "potential_solution": "Lightweight mobile-first 'progress certificate' tool: subcontractor logs % complete + photo per line item, auto-generates a shareable PDF/WhatsApp-ready certificate with running totals and deductions — cheaper and simpler than a full contracting ERP.",
+      "business_model": "Monthly SaaS subscription per active project or per contractor seat (low price point to undercut full ERPs)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for exact SAR amounts; evidence only shows freelancers being commissioned to build custom Excel/mustakhlas systems and full ERPs (Buildo, Bonyan) existing for larger contractors.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Exact price contractors pay for custom Excel builds on Mostaql",
+        "Whether small contractors would switch from free Excel to a paid tool",
+        "Size of the small-contractor segment not served by existing ERPs"
+      ]
+    },
+    {
+      "opportunity_id": "WX-02",
+      "problem": "Businesses selling on installment (تقسيط) — retail/services — track which customers have paid installments, remaining balances and collection dates in color-coded Excel sheets (green = paid, red = overdue) updated by hand.",
+      "customer": "Small retailers and service businesses offering installment payment plans to customers",
+      "segment": "B2B",
+      "sector": "Retail / Consumer finance-adjacent",
+      "market": "Saudi Arabia",
+      "source": "Mostaql portfolio listing",
+      "evidence": [
+        {
+          "claim": "A freelancer built a 'smart Excel system for tracking customer installments and periodic collection', with color-coded status for installment plans.",
+          "url": "https://mostaql.com/portfolio/3273292-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D9%83%D8%B3%D9%8A%D9%84-%D8%B0%D9%83%D9%8A-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A3%D9%82%D8%B3%D8%A7%D8%B7-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A",
+          "source_title": "نظام إكسيل ذكي لمتابعة أقساط العملاء والتحصيل المالي الدوري | مستقل",
+          "summary": "Portfolio item per search snippet: a system built specifically for businesses using installment sales, auto-calculating remaining amounts and number of installments paid, with red/green alert colors for payment status.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Daftra Excel templates",
+          "url": "https://www.daftra.com/templates/%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D9%83%D8%B4%D9%81-%D8%AD%D8%B3%D8%A7%D8%A8-%D8%B9%D9%85%D9%8A%D9%84",
+          "notes": "Generic free customer statement Excel template, not installment-specific tracking with reminders."
+        }
+      ],
+      "workaround": "Manual color-coded Excel sheet; no automated overdue reminders (customer has to check the sheet themselves).",
+      "potential_solution": "Simple installment-tracking web app: add customer + plan, auto-calculate remaining balance/next due date, send automatic WhatsApp payment reminders on due dates.",
+      "business_model": "Small monthly SaaS fee per business (tiered by number of active customers)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for what this specific business paid the freelancer.",
+      "confidence": "LOW",
+      "unknowns": [
+        "How common installment-selling SMEs are outside of larger BNPL-integrated retailers",
+        "Whether these businesses would pay recurring SaaS vs. one-time Excel build",
+        "Overlap with regulated BNPL/finance rules that could apply if the tool touches actual payment collection"
+      ]
+    },
+    {
+      "opportunity_id": "WX-03",
+      "problem": "Small landlords / individual property owners (a handful of units, not big real-estate firms) track rent due dates, collections and tenant balances in Excel files, repeatedly commissioning freelancers to rebuild these sheets.",
+      "customer": "Small landlords and individual property owners with a small portfolio of rental units",
+      "segment": "B2C",
+      "sector": "Real Estate / Property Management",
+      "market": "Saudi Arabia",
+      "source": "Mostaql project listings",
+      "evidence": [
+        {
+          "claim": "Multiple separate Mostaql projects request Excel files to track rent collection and tenant accounts.",
+          "url": "https://mostaql.com/project/916062-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+          "source_title": "ملف اكسل لمتابعة تحصيل الايجارات | مستقل",
+          "summary": "Freelance request for an Excel file specifically to track rent collection, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate, distinct Mostaql request asks for an Excel model to track rent amounts (نموذج اكسل لمتابعة الإيجارات) — showing this is a recurring, not one-off, need.",
+          "url": "https://mostaql.com/project/503382-%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+          "source_title": "نموذج اكسل لمتابعة الإيجارات | مستقل",
+          "summary": "Second, independent Mostaql request for a rent-tracking Excel model, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Sanad",
+          "url": "https://sanadpm.com/",
+          "notes": "Full property management platform — likely priced/scaled for property management companies, not single landlords with 2-5 units."
+        },
+        {
+          "name": "Simaat",
+          "url": "https://simaat.app/",
+          "notes": "Property management app with maintenance features."
+        }
+      ],
+      "workaround": "Commission a freelancer for a one-off Excel file, or keep re-editing an old inherited spreadsheet.",
+      "potential_solution": "A very simple, cheap 'micro landlord' web app (not a full PM suite): tenant list, rent due dates, WhatsApp payment reminders, one-page ledger per unit — priced far below enterprise property management software.",
+      "business_model": "Low-cost monthly subscription per unit or flat fee for small portfolios (e.g., under 10 units)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for price paid on these specific freelance jobs.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Whether individual landlords would pay recurring SaaS vs. a one-time Excel file (their evident preference)",
+        "Size of the 'small landlord' segment vs. professional property managers already served by Sanad/Simaat",
+        "Regulatory ties to Ejar (the mandatory government rental contract platform) that any solution would need to coexist with"
+      ]
+    },
+    {
+      "opportunity_id": "WX-04",
+      "problem": "Small building owners / small maintenance contractors handle repair requests informally: tenant sends a WhatsApp message describing the issue (often with a photo), owner manually assigns a technician by phone, and there is no structured before/after record or ticket status.",
+      "customer": "Small building/property owners and small maintenance contractors without a dedicated management platform",
+      "segment": "B2B",
+      "sector": "Property Maintenance / Facilities",
+      "market": "Saudi Arabia",
+      "source": "Vendor marketing pages for enterprise maintenance platforms (implying the manual baseline they replace)",
+      "evidence": [
+        {
+          "claim": "A property maintenance platform advertises 'before/after photos' and a clear request-to-repair flow as a selling point, implying the default/prior state for many owners is unstructured (phone/WhatsApp-based) reporting.",
+          "url": "https://sanadpm.com/",
+          "source_title": "منصة سند لإدارة الأملاك العقارية",
+          "summary": "Per search snippet, Sanad markets a maintenance request flow with technicians and before/after photos and a payment voucher from report to repair — a structured alternative to the ad hoc WhatsApp/phone process.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Freelance market has requests for building a full home-maintenance/contracting services platform from scratch.",
+          "url": "https://mostaql.com/project/1272199-%D9%85%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%86%D8%B5%D8%A9-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9-%D9%88%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA",
+          "source_title": "متطلبات تطوير منصة خدمات منزلية ومقاولات | مستقل",
+          "summary": "Requirements request for a home-services/contracting platform, per search snippet — signals demand for structured request handling beyond WhatsApp/phone.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Asaas",
+          "url": "https://asaas.rent/%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9/",
+          "notes": "Maintenance request management as part of a fuller real-estate platform."
+        },
+        {
+          "name": "Sanad",
+          "url": "https://sanadpm.com/",
+          "notes": "Maintenance ticket + technician + photo flow."
+        }
+      ],
+      "workaround": "Tenant/owner communicate issue + photo via WhatsApp; owner calls a technician directly; no ticket history or SLA tracking.",
+      "potential_solution": "Very simple WhatsApp-first maintenance ticketing tool: tenant sends photo+description to a dedicated number, owner/technician gets a structured ticket with status (open/assigned/done) and before/after photo log — far lighter than a full PM suite.",
+      "business_model": "Small flat monthly fee per building/portfolio, or per-ticket usage fee",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether small owners perceive this as painful enough to pay for vs. just calling a technician",
+        "True size of segment not already covered by Asaas/Sanad/Simaat",
+        "Actual current cost in wasted time/miscommunication — not directly measured"
+      ]
+    },
+    {
+      "opportunity_id": "WX-05",
+      "problem": "Small wholesale/distribution businesses managing field sales reps (مندوبين) track visit routes, orders taken and cash collected per rep manually (phone calls/WhatsApp check-ins), before or instead of adopting a dedicated rep-tracking app.",
+      "customer": "Small wholesale distributors and FMCG resellers with a field sales team",
+      "segment": "B2B",
+      "sector": "Wholesale / Distribution",
+      "market": "Saudi Arabia",
+      "source": "Mostaql project listing + competing SaaS marketing pages (proving demand + existing paid alternative)",
+      "evidence": [
+        {
+          "claim": "A Mostaql project requests a 'website to manage sales representatives'.",
+          "url": "https://mostaql.com/project/216022-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+          "source_title": "موقع إدارة مندوبين المبيعات | مستقل",
+          "summary": "Freelance request for a sales-rep management site, per search snippet — indicates the requester currently lacks such a system.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "An existing Saudi-focused app markets itself around tracking rep visits, order values, collections and target-achievement percentage — implying this was previously done manually.",
+          "url": "https://kashierapp.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%8A%D9%86",
+          "source_title": "برنامج إدارة مندوبين المبيعات | كاشيرك",
+          "summary": "Vendor page describing tracking of rep visit counts, order values, and collections per rep, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "MEST SE",
+          "url": "https://ksa.mestsoft.com/se.html",
+          "notes": "Sales-rep mobile app for Saudi market, established competitor."
+        },
+        {
+          "name": "Kashier rep management",
+          "url": "https://kashierapp.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%8A%D9%86",
+          "notes": "Rep visit/collection tracking feature, competing directly."
+        }
+      ],
+      "workaround": "Phone/WhatsApp check-ins from reps, manual reconciliation of orders/cash at day's end in Excel.",
+      "potential_solution": "Very low-cost, minimal MVP rep-tracking app aimed at micro-distributors too small for MEST/Kashier's pricing/onboarding.",
+      "business_model": "Per-rep monthly SaaS fee, undercutting incumbents",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for specific pricing of MEST/Kashier plans in this session.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether the underserved micro-distributor segment (below MEST/Kashier's target) is large enough",
+        "Actual pricing of incumbent apps to know what 'undercutting' means",
+        "Whether this is differentiated enough from established competitors to be worth building"
+      ]
+    },
+    {
+      "opportunity_id": "WX-06",
+      "problem": "Small wholesale/retail businesses track supplier deliveries (توريدات) and resulting customer account balances in a manual Excel sheet, commissioning freelancers to build/maintain it.",
+      "customer": "Small wholesale/retail businesses managing supplier and customer ledgers",
+      "segment": "B2B",
+      "sector": "Wholesale / Retail",
+      "market": "Saudi Arabia",
+      "source": "Mostaql portfolio listing",
+      "evidence": [
+        {
+          "claim": "A freelancer's portfolio shows an 'Excel sheet to track supplier deliveries and customer accounts' built for a client.",
+          "url": "https://mostaql.com/portfolio/1864563-%D8%B4%D9%8A%D8%AA-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%D8%A7%D8%AA-%D9%88%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1",
+          "source_title": "شيت اكسل لمتابعة التوريدات وحسابات العملاء | مستقل",
+          "summary": "Portfolio item per search snippet showing a custom Excel sheet tracking deliveries/supplies and resulting customer account balances.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate Mostaql request asks for an Excel sheet listing each supplier with items supplied by them.",
+          "url": "https://mostaql.com/project/594218-%D8%A7%D9%83%D8%B3%D9%84-%D8%B4%D9%8A%D8%AA-%D8%A5%D8%B6%D8%A7%D9%81%D8%A9-%D9%85%D9%88%D8%B1%D8%AF%D9%8A%D9%86-%D9%85%D8%B9-%D9%83%D9%84-%D9%85%D9%88%D8%B1%D8%AF-%D8%A7%D9%84%D8%A3%D8%B5%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AA%D9%8A-%D9%8A%D8%AA%D9%85-%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%D9%87%D8%A7-%D9%85%D9%86%D9%87",
+          "source_title": "اكسل شيت إضافة موردين مع كل مورد الأصناف التي يتم توريدها منه | مستقل",
+          "summary": "Independent request confirming this is a recurring manual-tracking need, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qoyod / Daftra / generic accounting SaaS",
+          "url": "https://www.qoyod.com/fields/accounting-software-for-electronics-stores/",
+          "notes": "Full accounting suites exist but are heavier than what these micro-requests seem to want (a simple ledger sheet)."
+        }
+      ],
+      "workaround": "Custom one-off Excel file from a freelancer, manually updated per delivery/order.",
+      "potential_solution": "A minimal supplier+customer ledger web app (not full accounting) with a spreadsheet-like UI but automatic balance calculation and WhatsApp-shareable statements.",
+      "business_model": "Low monthly fee per business, freemium single-user tier",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for freelance job price.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether this segment would move from a paid-once Excel file to a recurring subscription",
+        "How this differs meaningfully from existing lightweight accounting tools already on the market"
+      ]
+    },
+    {
+      "opportunity_id": "WX-07",
+      "problem": "Home-based/small custom-order businesses (tailoring/abaya, custom goods) track customer orders, pickup and delivery dates in Excel, built by a freelancer, coordinating actual order status with customers over WhatsApp.",
+      "customer": "Home-based tailoring/custom-goods micro-businesses",
+      "segment": "B2C",
+      "sector": "Retail / Custom Goods & Tailoring",
+      "market": "Saudi Arabia",
+      "source": "Mostaql portfolio listing",
+      "evidence": [
+        {
+          "claim": "A freelancer's portfolio item is 'designing an Excel sheet to track customers and pickup/delivery appointments' for what the surrounding listings suggest is a custom-order type business.",
+          "url": "https://mostaql.com/portfolio/1357455-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%B4%D9%8A%D8%AA-%D8%A7%D9%83%D8%B3%D9%8A%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D9%87-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88-%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%84%D8%A7%D9%85-%D9%88-%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85",
+          "source_title": "تصميم شيت اكسيل لمتابعه العملاء و مواعيد الاستلام و التسليم | مستقل",
+          "summary": "Per search snippet, a custom Excel tracker for customers plus pickup/delivery dates — typical of made-to-order retail (tailoring, custom products).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate Khamsat community request asks for 'a simple sales/orders system on Excel or Google Sheet' including cost/expense calculation.",
+          "url": "https://khamsat.com/community/requests/590571-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%86%D8%B8%D8%A7%D9%85-%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D9%88%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%A8%D8%B3%D9%8A%D8%B7-%D8%B9%D9%84%D9%89-%D8%A7%D9%83%D8%B3%D9%84-%D8%A7%D9%88-%D8%AC%D9%88%D8%AC%D9%84-%D8%B4%D9%8A%D8%AA",
+          "source_title": "مطلوب نظام مبيعات وطلبات بسيط على اكسل او جوجل شيت | خمسات",
+          "summary": "Direct community request for a simple orders/sales system in Excel/Google Sheets, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Custom Excel/Google Sheet built once by a freelancer; order status coordinated ad hoc over WhatsApp.",
+      "potential_solution": "Simple order-tracking mini-app/bot for micro custom-goods sellers: log order + due date, auto WhatsApp status updates to customer ('your order is ready for pickup'), no accounting complexity.",
+      "business_model": "Very low flat monthly fee or one-time small license fee (matches this segment's apparent preference for one-off payments)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for exact freelance price paid.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Willingness to pay recurring subscription vs. their evident preference for a one-time freelance build",
+        "True market size of home-based custom-order micro-businesses"
+      ]
+    },
+    {
+      "opportunity_id": "WX-08",
+      "problem": "Small independent clinics manage appointment scheduling and patient data entry manually — a community request explicitly asks for 'designing an appointment schedule for clinics, and data entry'.",
+      "customer": "Small independent clinics without a practice-management system",
+      "segment": "B2B",
+      "sector": "Healthcare / Clinics",
+      "market": "Saudi Arabia",
+      "source": "Khamsat community request",
+      "evidence": [
+        {
+          "claim": "A community request on Khamsat asks for design of an appointment schedule for clinics plus data entry work.",
+          "url": "https://khamsat.com/community/requests/619259-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%AC%D8%AF%D9%88%D9%84-%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%A7%D8%AF%D8%AE%D8%A7%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA",
+          "source_title": "تصميم جدول مواعيد لعيادات ، وادخال بيانات | خمسات",
+          "summary": "Direct request per search snippet for an appointment schedule design plus data entry for a clinic — indicating manual scheduling with no existing system.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Medicakare",
+          "url": "https://www.medicakare.com/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9",
+          "notes": "A free clinic-management program exists per search snippet — reduces the case for a paid new entrant unless differentiated."
+        },
+        {
+          "name": "موعدك (Mawidk)",
+          "url": "https://www.mawidk.net/",
+          "notes": "Patient-facing appointment booking app."
+        }
+      ],
+      "workaround": "Paper/Excel appointment book, manual patient data entry, hiring a freelancer for one-off schedule design.",
+      "potential_solution": "Simple WhatsApp-based booking + reminder layer for small clinics that don't want a full EMR — differentiate from free/heavy competitors via simplicity and WhatsApp-nativeness.",
+      "business_model": "Small monthly SaaS fee per clinic",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Why a free competitor (Medicakare) hasn't already solved this for the requester",
+        "Whether SFDA/health-sector rules apply to any tool touching patient data — needs care to stay outside regulated medical-record territory"
+      ]
+    },
+    {
+      "opportunity_id": "WX-09",
+      "problem": "Salons/barbershops receive booking requests via WhatsApp manually (customer messages, staff checks availability by memory/paper, replies to confirm) — this is validated as a real pain because multiple competing vendors already sell WhatsApp-based booking automation for this exact segment.",
+      "customer": "Salons and barbershops in Saudi Arabia/Gulf",
+      "segment": "B2B",
+      "sector": "Personal Care / Salons",
+      "market": "Saudi Arabia",
+      "source": "Vendor marketing pages (competitive landscape evidence)",
+      "evidence": [
+        {
+          "claim": "A vendor markets a WhatsApp-based booking system specifically for barbershops in Saudi Arabia/Gulf, converting the salon's WhatsApp number into an automated 24/7 booking system.",
+          "url": "https://ojlinker.com.sa/barbershop",
+          "source_title": "نظام حجز صالون حلاقة عبر واتساب | OJlinker السعودية",
+          "summary": "Per search snippet, product turns a barbershop's WhatsApp number into an automated booking system that receives bookings, confirms and reduces no-shows.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A second, independent vendor (Hajzak) markets an AI-based appointment booking system specifically for beauty salons.",
+          "url": "https://hajzak.ai/beauty-salons/",
+          "source_title": "نظام حجز مواعيد صالون تجميل بالذكاء الاصطناعي | حجزك",
+          "summary": "Per search snippet, a competing AI booking product targeting beauty salons — multiple vendors targeting the same pain is evidence the underlying manual-booking problem is real and monetizable.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "OJlinker",
+          "url": "https://ojlinker.com.sa/salon-bookings",
+          "notes": "Existing paid WhatsApp booking product for salons in the region."
+        },
+        {
+          "name": "Hajzak",
+          "url": "https://hajzak.ai/beauty-salons/",
+          "notes": "Competing AI-based booking product for beauty salons."
+        }
+      ],
+      "workaround": "Manual WhatsApp message exchange to book/confirm appointments; no-show risk from lack of confirmation/reminder automation.",
+      "potential_solution": "N/A — market already has multiple funded/active competitors; a new solo entrant would need a clear differentiation (e.g., cheaper, Arabic-first, specific vertical niche) to compete.",
+      "business_model": "Monthly SaaS subscription per salon (per existing competitors' apparent model)",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND for specific OJlinker/Hajzak pricing in this session — competitors' pricing pages were not fetched.",
+      "confidence": "HIGH",
+      "unknowns": [
+        "Actual pricing/traction of OJlinker and Hajzak",
+        "Whether there is room for a third, differentiated entrant given a solo founder's limited resources vs. established competitors"
+      ]
+    },
+    {
+      "opportunity_id": "WX-10",
+      "problem": "Small independent event organizers (not big event-management firms) manage guest lists, RSVP confirmations and invitations manually across WhatsApp and Excel, without a dedicated guest-management tool.",
+      "customer": "Independent/freelance event organizers and individuals planning weddings/private events",
+      "segment": "B2C",
+      "sector": "Events",
+      "market": "Saudi Arabia",
+      "source": "Vendor marketing pages (implying the manual baseline) — search snippet only",
+      "evidence": [
+        {
+          "claim": "A guest-management platform's marketing describes managing/updating booking data 'through the system and Excel files' as part of its differentiation, implying Excel is the incumbent tool it replaces.",
+          "url": "https://myeventsa.com/ar/",
+          "source_title": "مناسبتي — منصة الدعوات الإلكترونية الذكية",
+          "summary": "Per search snippet, marketing content contrasts its system against updating booking data via Excel files — indicating Excel is a common baseline for event organizers.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "ضيفان (Dhaifan)",
+          "url": "https://dhaifan.com/",
+          "notes": "Guest/attendance management platform with WhatsApp invitations + QR codes."
+        },
+        {
+          "name": "مناسبتي",
+          "url": "https://myeventsa.com/ar/",
+          "notes": "Electronic invitation platform with WhatsApp sending and RSVP tracking."
+        }
+      ],
+      "workaround": "Excel guest list + manual WhatsApp broadcast of invitations, manually tallying RSVPs.",
+      "potential_solution": "N/A — existing players (Dhaifan, Mounasabati) already directly address this; low differentiation opportunity for a new solo entrant.",
+      "business_model": "Per-event fee or subscription (per existing competitors)",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "LOW",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "Pricing/traction of Dhaifan and Mounasabati",
+        "Whether any underserved sub-niche remains (e.g., very small/budget events) not covered by these platforms"
+      ]
+    }
+  ],
+  "queries_used": [
+    "مستقل نظام إكسل لمتابعة العملاء السعودية",
+    "خمسات مطلوب بوت واتساب حجوزات السعودية",
+    "site:mostaql.com نظام متابعة مقاولين دفعات",
+    "\"نستقبل الطلبات\" واتساب صالون السعودية",
+    "مستقل مطلوب نظام إدارة صيانة عقارات طلبات",
+    "مستقل نظام متابعة توزيع مندوبين مبيعات السعودية",
+    "\"تعبت من\" اكسل متابعة عيادة مواعيد السعودية",
+    "jobs Saudi Arabia \"Excel\" \"follow-up\" operations coordinator LinkedIn",
+    "خمسات مطلوب برنامج مخزون توزيع مبيعات محل السعودية",
+    "\"مطلوب\" اكسل او شيت لمتابعة طلبات مشروع تفصيل عبايات او بيت خاص واتساب",
+    "مقاول متابعة دفعات مستخلصات واتساب صور تقدم العمل السعودية",
+    "منظم مناسبات حجوزات ضيوف اكسل واتساب السعودية مطلوب"
+  ],
+  "limitations": [
+    "Search budget (12) was fully exhausted; a 13th planned query on delivery/driver tracking for small logistics businesses could not be run.",
+    "Both attempted WebFetch calls (to mostaql.com and khamsat.com pages) failed with 'proxy refused the connection' — could not verify exact page content, dates, or freelance job prices beyond search-result snippets.",
+    "No exact prices/dates could be confirmed for any Mostaql/Khamsat listing cited (all marked 'unknown' date and NO RELIABLE EVIDENCE FOUND for cost) — evidence is snippet-level (STRONG_INDIRECT/DIRECT per the snippet itself, but unverified at source).",
+    "Could not check Reddit (r/saudiarabia, r/riyadh) or Twitter/X complaints directly within budget — coverage relied on Mostaql/Khamsat freelance requests and vendor marketing pages.",
+    "Sectors not explored due to budget limits: car rental, home bakeries/food businesses, small logistics/last-mile delivery, gyms/tutoring — plausible WX signals may exist there but were not verified.",
+    "Could not confirm whether cited Mostaql/Khamsat listings are recent (2024-2026) or older, since fetch to view posting dates failed."
+  ]
+}

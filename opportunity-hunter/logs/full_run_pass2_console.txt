@@ -1,0 +1,48 @@
+[11:35:40] ORCHESTRATOR run full_20260926_pass2 started (mode=full, max_parallel=6, budget=$60.0)
+[11:35:40] ORCHESTRATOR resumed from full_20260926: 101 signals, 20 candidates, 4 survivors of Killer round 1
+[11:35:40] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 started ===
+[11:35:40] GAP_DETECTOR C01: survived with 3 unresolved uncertainty(ies) → additional research + final Killer round
+[11:35:40] GAP_DETECTOR C04: survived with 3 unresolved uncertainty(ies) → additional research + final Killer round
+[11:35:40] GAP_DETECTOR C08: survived with 3 unresolved uncertainty(ies) → additional research + final Killer round
+[11:35:40] GAP_DETECTOR C10: survived with 3 unresolved uncertainty(ies) → additional research + final Killer round
+[11:35:40] GAP_DETECTOR C01: 3 open question(s) → GAP_RESEARCHER
+[11:35:40] GAP_DETECTOR C04: 3 open question(s) → GAP_RESEARCHER
+[11:35:40] GAP_DETECTOR C08: 3 open question(s) → GAP_RESEARCHER
+[11:35:40] GAP_DETECTOR C10: 3 open question(s) → GAP_RESEARCHER
+[11:35:40] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 finished in 0.0s ===
+[11:35:40] ORCHESTRATOR === STAGE 6_ADDITIONAL_RESEARCH_R1 started ===
+[11:35:40] ORCHESTRATOR re-dispatching research: 4 candidates in 4 GAP_RESEARCHER job(s)
+[11:35:40] GAP_RESEARCHER[r1_C01] started
+[11:35:40] GAP_RESEARCHER[r1_C04] started
+[11:35:40] GAP_RESEARCHER[r1_C10] started
+[11:35:40] GAP_RESEARCHER[r1_C08] started
+[11:36:42] GAP_RESEARCHER[r1_C10] completed in 61.7s — searches=7 fetches=2 cache_hits=0 blocked=0 turns=11 cost=$0.246 pid=8544
+[11:36:58] GAP_RESEARCHER[r1_C04] completed in 78.0s — searches=5 fetches=2 cache_hits=1 blocked=0 turns=10 cost=$0.229 pid=8543
+[11:37:48] GAP_RESEARCHER[r1_C08] completed in 127.7s — searches=8 fetches=6 cache_hits=1 blocked=1 turns=18 cost=$0.368 pid=8545
+[11:38:30] GAP_RESEARCHER[r1_C01] completed in 170.2s — searches=12 fetches=6 cache_hits=0 blocked=1 turns=21 cost=$0.621 pid=8542
+[11:38:30] GAP_RESEARCHER C01: 0/3 questions answered with evidence
+[11:38:30] GAP_RESEARCHER C04: 2/3 questions answered with evidence
+[11:38:30] GAP_RESEARCHER C08: 1/3 questions answered with evidence
+[11:38:30] GAP_RESEARCHER C10: 1/3 questions answered with evidence
+[11:38:30] ORCHESTRATOR === STAGE 6_ADDITIONAL_RESEARCH_R1 finished in 170.3s ===
+[11:38:30] ORCHESTRATOR === STAGE 7_KILLER_FINAL_R1 started ===
+[11:38:30] KILLER_AGENT[r2_batch1] started
+[11:42:14] KILLER_AGENT[r2_batch1] completed in 223.7s — searches=7 fetches=0 cache_hits=1 blocked=0 turns=10 cost=$0.675 pid=8878
+[11:42:14] KILLER_AGENT C01 → REJECTED (The exact niche this candidate targets — a radically cheap, simplified ZATCA Phase-2 e-inv)
+[11:42:14] KILLER_AGENT C04 → SURVIVED
+[11:42:14] KILLER_AGENT C08 → SURVIVED
+[11:42:14] KILLER_AGENT C10 → SURVIVED
+[11:42:14] ORCHESTRATOR === STAGE 7_KILLER_FINAL_R1 finished in 223.7s ===
+[11:42:14] ORCHESTRATOR === STAGE 8_SYNTHESIS started ===
+[11:42:14] OPPORTUNITY_SYNTHESIZER[synthesizer] started
+[11:47:31] OPPORTUNITY_SYNTHESIZER completed in 316.6s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=2 cost=$0.679 pid=8998
+[11:47:31] OPPORTUNITY_SYNTHESIZER 3 golden, 14 hidden gems, 4 foreign models
+[11:47:31] ORCHESTRATOR === STAGE 8_SYNTHESIS finished in 316.6s ===
+[11:47:31] ORCHESTRATOR === STAGE 9_REPORT started ===
+[11:47:31] REPORT written to /home/user/Noname51hgghsg/opportunity-hunter/reports/final_report.md
+[11:47:31] ORCHESTRATOR === STAGE 9_REPORT finished in 0.0s ===
+[11:47:31] ORCHESTRATOR run finished: {"agent_processes_launched": 41, "agent_tasks_executed": 41, "distinct_agent_types_run": 21, "agent_tasks_succeeded": 41, "agent_tasks_failed": 0, "agent_tasks_skipped": 0, "agent_cache_hits": 0, "web_searches": 401, "web_fetches": 113, "search_cache_hits": 4, "budget_blocked_tool_calls": 16, "raw_signals": 101, "after_exact_dedup": 101, "candidates_validated": 20, "backlog": 37, "gap_research_requests": 4, "survived_killer": 3, "rejected_by_killer": 17, "undecided": 0, "total_cost_usd": 25.83}
+
+Final report: /home/user/Noname51hgghsg/opportunity-hunter/reports/final_report.md
+{'agent_processes_launched': 41, 'agent_tasks_executed': 41, 'distinct_agent_types_run': 21, 'agent_tasks_succeeded': 41, 'agent_tasks_failed': 0, 'agent_tasks_skipped': 0, 'agent_cache_hits': 0, 'web_searches': 401, 'web_fetches': 113, 'search_cache_hits': 4, 'budget_blocked_tool_calls': 16, 'raw_signals': 101, 'after_exact_dedup': 101, 'candidates_validated': 20, 'backlog': 37, 'gap_research_requests': 4, 'survived_killer': 3, 'rejected_by_killer': 17, 'undecided': 0, 'total_cost_usd': 25.83}
+EXIT=0

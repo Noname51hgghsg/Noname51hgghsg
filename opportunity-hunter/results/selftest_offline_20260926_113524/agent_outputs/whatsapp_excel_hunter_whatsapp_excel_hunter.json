@@ -1,0 +1,39 @@
+{
+  "agent": "whatsapp_excel_hunter",
+  "signals": [
+    {
+      "opportunity_id": "WHA-01",
+      "problem": "whatsapp_excel_hunter pain about manual reporting",
+      "customer": "Saudi SMB owners",
+      "segment": "B2B",
+      "sector": "services",
+      "market": "Saudi Arabia",
+      "source": "mock",
+      "evidence": [
+        {
+          "claim": "whatsapp_excel_hunter pain about manual reporting",
+          "url": "https://example.org/whatsapp_excel_hunter/1",
+          "source_title": "mock source",
+          "summary": "mock",
+          "evidence_type": "DIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Excel",
+      "potential_solution": "SaaS",
+      "business_model": "subscription",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "MEDIUM",
+      "unknowns": []
+    }
+  ],
+  "queries_used": [
+    "mock query"
+  ],
+  "limitations": []
+}

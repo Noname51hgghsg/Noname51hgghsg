@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "candidate_id": "C04",
+      "verdict": "SURVIVED",
+      "kill_reasons": [],
+      "attacks_attempted": [
+        "competition"
+      ],
+      "remaining_uncertainties": [],
+      "missing_info_requests": [],
+      "survival_notes": "",
+      "summary": "mock"
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

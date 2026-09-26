@@ -1,0 +1,14 @@
+{
+  "results": [
+    {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

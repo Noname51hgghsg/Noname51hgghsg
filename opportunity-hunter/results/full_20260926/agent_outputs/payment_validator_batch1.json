@@ -1,0 +1,174 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Small/micro merchants (Qoyod customers)",
+          "pays_for": "Cloud accounting + ZATCA Phase-2 e-invoicing compliance (integrated, no extra fee on Pro plan and above)",
+          "price": "Lite SAR 60/mo, Plus SAR 120/mo, Premium SAR 240/mo, Advance SAR 600/mo (+VAT); add-ons: payroll SAR 10/employee/mo, POS SAR 50/user/mo",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Small businesses (Wafeq customers)",
+          "pays_for": "ZATCA-compliant invoicing, tax returns, expense tracking",
+          "price": "Starter SAR 119/mo, Plus SAR 149/mo, Premium SAR 249/mo",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://help.wafeq.com/hc/en-sa/articles/22187364508700-What-are-your-pricing-plans-and-available-packages",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Business hiring on Mostaql",
+          "pays_for": "Ad-hoc ZATCA integration via PHP developer",
+          "price": "Not disclosed in listing",
+          "currency": "SAR",
+          "period": "one-off project",
+          "url": "https://mostaql.com/project/1038687-%D8%A7%D9%84%D8%B1%D8%A8%D8%B7-%D9%85%D8%B9-zatca-%D9%85%D9%86-%D8%AE%D9%84%D8%A7%D9%84-php",
+          "evidence_type": "DIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Freelance developer hired ad hoc for ZATCA/PHP integration",
+          "cost_or_salary": "NO RELIABLE EVIDENCE FOUND (rate not disclosed in listing)",
+          "url": "https://mostaql.com/project/1038687-%D8%A7%D9%84%D8%B1%D8%A8%D8%B7-%D9%85%D8%B9-zatca-%D9%85%D9%86-%D8%AE%D9%84%D8%A7%D9%84-php"
+        }
+      ],
+      "willingness_to_pay_assessment": "Multiple established SaaS vendors (Qoyod, Wafeq) already charge micro/small Saudi merchants recurring monthly fees (from SAR 60/mo at the lowest Qoyod tier up to SAR 600/mo) that bundle ZATCA Phase-2 e-invoicing compliance at no extra cost — direct proof the target segment already pays for this exact compliance function today. This is also the main risk: the very cheapest tier a solo founder would target (SAR 60-120/mo) is already served by an incumbent with brand trust and (implied) ZATCA-approved status. A separate Mostaql posting shows some businesses instead pay developers ad hoc for custom integration rather than buying a packaged SaaS, but the rate was not disclosed. Verdict: YES, someone pays now — but mostly to incumbents already covering the low end.",
+      "summary": "Qoyod (from SAR 60/mo) and Wafeq (from SAR 119/mo) already sell ZATCA-compliant invoicing subscriptions to the same micro/small-merchant segment, confirming active willingness to pay for this exact problem, while also showing the cheap end of the market is not empty."
+    },
+    {
+      "candidate_id": "C02",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi companies (Jisr customers)",
+          "pays_for": "HR/Payroll/Talent SaaS bundling Qiwa/GOSI/Mudad integration and Saudization-band tracking as part of a broader suite",
+          "price": "~SAR 16-17 per employee per month (standard plan); custom quote above 300 employees",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://www.jisr.net/plans",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "HR/immigration consultancy Saudization management retainer (e.g. Mercans-type EOR/HR consultancy)",
+          "cost_or_salary": "NO RELIABLE EVIDENCE FOUND (service exists and is marketed per search results, exact SAR fee not disclosed)",
+          "url": "https://mercans.com/glossary/saudization-nitaqat/"
+        }
+      ],
+      "willingness_to_pay_assessment": "No direct pricing was found for a standalone Nitaqat/Saudization monitoring product. The closest evidence is that Saudi companies already pay ~SAR 16-17/employee/month for full HR/payroll suites like Jisr that bundle Qiwa/GOSI/Mudad integration and Saudization tracking as one feature among many, and that HR/EOR consultancies (Mercans and similar) market dedicated Saudization-band management services without disclosed fees. This shows employers pay for adjacent/bundled compliance software and consulting, but there is no evidence anyone pays specifically for a narrow, standalone Nitaqat compliance dashboard as proposed. Verdict: PARTIAL.",
+      "summary": "Payment exists for broader HR suites (Jisr ~SAR16-17/employee/month) and for HR/EOR consultancy retainers that include Saudization management, but no direct evidence was found of payment for a standalone Nitaqat-only monitoring tool; consulting fees remain undisclosed."
+    },
+    {
+      "candidate_id": "C03",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi companies (Jisr customers)",
+          "pays_for": "Unified HR/Talent/Payroll/Compliance platform with native Mudad/GOSI/Qiwa/Muqeem coverage",
+          "price": "~SAR 16-17 per employee per month",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://www.jisr.net/plans",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Government Relations Officer / HR Officer - GOSI & HRDF / Gov Relations Coordinator (dedicated hires managing Qiwa/Mudad/GOSI/Muqeem manually)",
+          "cost_or_salary": "NO RELIABLE EVIDENCE FOUND (roles confirmed via active job postings; no salary figure captured in this session)",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/gov-relations-coordinator-jobs/"
+        }
+      ],
+      "willingness_to_pay_assessment": "Direct pricing for a standalone Qiwa/Mudad/GOSI/Muqeem reminder tool was not found. The closest paid comparable is Jisr, a full HCM suite priced at roughly SAR 16-17/employee/month that already covers native integration with all four portals — evidence that companies pay for a solution to this exact multi-portal problem, but only as one module inside a much larger, full-featured (and likely costlier for SMEs) suite, not as a lightweight standalone tool. Separately, companies keep hiring dedicated Government Relations/HR-GOSI staff (labor cost signal, salary undisclosed) instead of buying software, which is ambiguous evidence — it could mean software isn't trusted/adequate, or that headcount is the default solution. Verdict: PARTIAL.",
+      "summary": "Jisr's ~SAR16-17/employee/month suite proves companies pay for multi-portal (Qiwa/Mudad/GOSI/Muqeem) compliance software bundled into a full HCM product; no direct evidence yet that SMEs would separately pay for a narrow, lightweight reminder-only tool versus continuing to hire staff or buy the full suite."
+    },
+    {
+      "candidate_id": "C04",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Small/growing Saudi SMEs",
+          "pays_for": "Outsourced monthly bookkeeping/accounting (transaction recording, reconciliation, VAT filing, financial statements)",
+          "price": "Startups: SAR 1,500-3,000/month; growing SMEs: SAR 3,500-5,000+/month",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://www.sovereigngroup.com/saudi-arabia/accounting-and-bookkeeping/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Small e-commerce store / company owner (Mostaql client)",
+          "pays_for": "Freelance monthly bookkeeping/account management",
+          "price": "NO RELIABLE EVIDENCE FOUND (budget not disclosed in listing)",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "evidence_type": "DIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Freelance/part-time accountant and invoice data-entry clerk hired repeatedly via Mostaql",
+          "cost_or_salary": "NO RELIABLE EVIDENCE FOUND (project budgets not visible in search results/snippets)",
+          "url": "https://mostaql.com/project/551742-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%85%D9%88%D8%B8%D9%81%D9%80%D8%A9-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1"
+        }
+      ],
+      "willingness_to_pay_assessment": "Multiple independent Saudi accounting/outsourcing providers (Sovereign Group and comparable firms per search results) publish monthly bookkeeping packages priced SAR 1,500-3,000 for startups and SAR 3,500-5,000+ for growing SMEs — direct proof that businesses already pay real, recurring money to solve exactly this reconciliation/bookkeeping/invoice-processing problem via human labor. Repeated Mostaql freelance postings for the same tasks (monthly bookkeeping, invoice data entry) corroborate ongoing demand, though exact freelancer rates were not visible in search snippets. An AI tool priced well below SAR 1,500/month would be undercutting a real, evidenced spend category. Verdict: YES.",
+      "summary": "Saudi outsourced-accounting firms charge SMEs SAR 1,500-5,000+/month for the exact bookkeeping/reconciliation/invoice-processing work this candidate targets, and recurring Mostaql freelance postings for the same tasks corroborate sustained demand — strong evidence of existing willingness to pay, even though exact freelancer gig rates weren't captured."
+    },
+    {
+      "candidate_id": "C05",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Salon/spa/clinic owners (Fresha customers, global incl. claimed Saudi presence)",
+          "pays_for": "Booking/scheduling software with reminders, plus marketplace client acquisition",
+          "price": "Individual plan $19.95/month or Team plan $14.95/bookable team member/month, plus 20% one-time commission (min $6) on marketplace-acquired clients, plus card processing 1.29-2.19%",
+          "currency": "USD",
+          "period": "month",
+          "url": "https://pabau.com/blog/fresha-pricing/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Saudi salon owners (per secondary blog claim)",
+          "pays_for": "Fresha booking subscription + marketplace commission specifically referenced for KSA context",
+          "price": "From SAR 52/month + 20% commission",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://blyssbook.com/blog/best-salon-software-saudi-arabia-2026",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Fresha, which markets to and operates in Saudi Arabia (per original candidate evidence), charges a real recurring subscription ($14.95-19.95/month per team member globally, or SAR ~52/month per a secondary KSA-focused blog) plus a 20% commission on marketplace-sourced bookings — direct proof that salon/clinic owners already pay both a subscription AND a per-booking cut for booking + reminder functionality. This validates that the underlying booking/no-show problem is monetized today, though the SAR-specific figure rests on a secondary blog rather than Fresha's own pricing page (which could not be fetched in this session), and no independent pricing was confirmed for the more directly comparable local WhatsApp-only competitors (OJlinker, Hajzak). Verdict: YES.",
+      "summary": "Fresha's global pricing (from $14.95/month per team member) plus its 20% marketplace commission, combined with a secondary blog citing an SAR ~52/month KSA price point, show salon/clinic owners already pay for booking+reminder software; local WhatsApp-specific competitor pricing (OJlinker, Hajzak) could not be confirmed in this session."
+    }
+  ],
+  "queries_used": [
+    "Qoyod pricing plans SAR per month",
+    "Wafeq pricing SAR subscription",
+    "Fresha pricing Saudi Arabia commission subscription",
+    "Nitaqat Saudization consulting service fees Saudi Arabia SAR",
+    "Jisr HR software pricing SAR per employee",
+    "Mercans OR \"HR consultancy\" Saudization Nitaqat management service price SAR per month",
+    "مستقل محاسب شهري ميزانية المشروع ريال",
+    "Qoyod e-invoicing pricing SAR ZATCA phase 2 package",
+    "outsourced bookkeeping accounting services Saudi Arabia monthly fee SAR small business",
+    "Hajzak pricing SAR OR OJlinker pricing SAR booking salon",
+    "Mostaql \"محاسب\" \"الميزانية\" ريال شهري متجر إلكتروني السعودية"
+  ],
+  "limitations": [
+    "Direct WebFetch attempts to Qoyod's pricing/knowledge-base page and Jisr's pricing page both failed ('proxy refused the connection'); pricing figures for these two vendors rely on WebSearch's synthesis of search snippets from their own official pages plus third-party review sites (treasurymetric, selecthub, capterra), not independently fetched/verified primary-source pages in this session.",
+    "Fresha's own pricing page (fresha.com/pricing) was not independently fetched; USD figures come from third-party pricing-comparison blogs (Pabau, etc.) referencing it, and the Saudi-specific SAR 52/month figure comes from a single secondary blog (Blyssbook), not Fresha's own site.",
+    "No SAR pricing could be found in this session for Mercans/EOR Nitaqat-specific consulting retainers, for HR/Government Relations Coordinator salaries, for exact Mostaql freelancer gig rates (bookkeeping/invoice data entry), or for OJlinker/Hajzak's own product pricing — all recorded as NO RELIABLE EVIDENCE FOUND rather than guessed.",
+    "Search budget (14 searches) was used across all 5 candidates; deeper price verification (e.g., calling/contacting vendors, or fetching login-gated pricing calculators) was out of scope per research ethics rules.",
+    "Arabic-language search for exact SAR figures on live Mostaql accounting/data-entry project budgets did not surface disclosed budget amounts in snippets (Mostaql often hides exact bids/budgets behind login)."
+  ]
+}

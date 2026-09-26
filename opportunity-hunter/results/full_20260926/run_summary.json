@@ -1,0 +1,38 @@
+{
+  "run_id": "full_20260926",
+  "mode": "full",
+  "status": "completed",
+  "elapsed_sec": 3031.6,
+  "counts": {
+    "agent_processes_launched": 35,
+    "agent_tasks_executed": 35,
+    "distinct_agent_types_run": 20,
+    "agent_tasks_succeeded": 35,
+    "agent_tasks_failed": 0,
+    "agent_tasks_skipped": 0,
+    "agent_cache_hits": 0,
+    "web_searches": 362,
+    "web_fetches": 97,
+    "search_cache_hits": 1,
+    "budget_blocked_tool_calls": 14,
+    "raw_signals": 101,
+    "after_exact_dedup": 101,
+    "candidates_validated": 20,
+    "backlog": 37,
+    "gap_research_requests": 0,
+    "survived_killer": 4,
+    "rejected_by_killer": 16,
+    "undecided": 0,
+    "total_cost_usd": 23.012
+  },
+  "stage_times_sec": {
+    "1_DISCOVERY": 615.7,
+    "2_DEDUPLICATION": 396.1,
+    "3_VALIDATION": 731.9,
+    "4_KILLER_ROUND_1": 236.3,
+    "5_GAP_DETECTION_R1": 0.0,
+    "8_SYNTHESIS": 1051.6,
+    "9_REPORT": 0.0
+  },
+  "failures": []
+}

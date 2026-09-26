@@ -1,0 +1,2499 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "C01",
+      "title": "ZATCA e-invoicing (Fatoora) compliance micro-tool for micro/small merchants",
+      "problem": "Micro and small VAT-registered merchants (retail shops, trading firms, solo freelancers) struggle to comply with ZATCA's mandatory Phase-2 e-invoicing integration: choosing among competing systems, weak vendor support, connectivity issues, and real fine exposure (SAR 5,000-50,000 per violation, up to SAR 10,000 per invoice for a missing QR). The 2026 'Wave 24' drags in businesses down to SAR 375,000 annual turnover (deadline 30 June 2026), many of whom still run spreadsheets/basic POS with no IT staff.",
+      "customer": "Owners of micro/small retail shops, trading firms and solo shop owners newly in scope for ZATCA Phase-2 e-invoicing",
+      "segment": "B2B",
+      "sector": "Compliance / Tax SaaS",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S001",
+        "S007",
+        "S069",
+        "S075",
+        "S096"
+      ],
+      "potential_solution": "A radically simplified, low-cost single-merchant e-invoice generator (WhatsApp/web based) that auto-generates ZATCA-compliant XML/QR codes and submits to Fatoora, positioned far below full ERP suites (Qoyod/Rewaa/Daftra) that are overkill for the smallest merchants.",
+      "business_model": "Low monthly SaaS subscription, tiered for micro-merchants, or per-invoice pricing",
+      "priority": 9,
+      "priority_rationale": "Five independent agents converged on the same pain across current evidence; hard regulatory deadline (30 June 2026) creates forced, time-bound demand; existing paid vendors (Qoyod, Daftra, Rewaa, Wafeq, Fatora.io, METCH) prove a real paying market; high severity (documented fine amounts) and high frequency. Capped below 10 because the ZATCA accredited-provider requirement may be a hard barrier for a solo founder and the segment already has several funded competitors.",
+      "open_questions": [
+        "Does ZATCA require accredited/certified providers only, which could block a solo-built tool?",
+        "What exact price do micro-merchants currently pay for e-invoicing compliance?",
+        "Can a solo founder get Fatoora sandbox/API access without a local commercial partner?",
+        "Is the very-smallest-merchant segment underserved by big ERPs large enough to target profitably?"
+      ],
+      "source_agents": [
+        "ai_opportunity_hunter",
+        "b2b_hunter",
+        "individual_problem_hunter",
+        "market_change_hunter",
+        "problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Small businesses report technical integration problems, difficulty choosing the right e-invoicing system among many options, and insufficient technical support from providers when implementing ZATCA e-invoicing.",
+          "url": "https://www.qoyod.com/blog/e-invoicing/%D8%B4%D9%83%D8%A7%D9%88%D9%89-%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/",
+          "source_title": "شكاوى الفاتورة الإلكترونية وتجربة السعوديين - قيود",
+          "summary": "Per search snippet: article lists common complaints — integration difficulty with existing accounting systems, connectivity problems in remote/small towns, fear of cybersecurity exposure, too many competing systems making selection hard, and lack of adequate vendor support.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "All VAT-registered businesses, regardless of size, are legally required to implement e-invoicing, creating compliance pressure on very small merchants.",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx",
+          "source_title": "ZATCA E-Invoicing overview",
+          "summary": "Official ZATCA page confirms mandatory e-invoicing applies to all VAT-registered establishments, small or large.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Wave 24 (deadline 30 June 2026) lowers the Phase 2 integration threshold to SAR 375,000 annual VATable revenue, bringing thousands of smaller businesses into scope, with penalties SAR 5,000–50,000 per violation.",
+          "url": "https://qeemahcloud.com/en/blog/complete-zatca-phase-2-einvoicing-requirements-guide/",
+          "source_title": "ZATCA Phase 2 E-Invoicing Requirements: Complete 2026 Guide for Saudi SMEs | Qeemah",
+          "summary": "Per search snippet: SME-focused compliance guide states the new lower revenue threshold, wave deadline, and penalty range for non-compliance.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (unknown exact date)"
+        },
+        {
+          "claim": "SMEs lack dedicated IT staff, so data integration and API troubleshooting for Phase 2 falls on the CFO/office manager, and implementation costs (software, API dev, training) are hard to justify.",
+          "url": "https://constantlabs.ai/insights/zatca-e-invoicing-phase-2-guide/",
+          "source_title": "ZATCA E-Invoicing Phase 2: An Integration Guide for Saudi Businesses in 2026 | Constant Labs",
+          "summary": "Per search snippet: integration guide lists concrete SME pain points (dirty spreadsheet data, no IT staff, cost of change).",
+          "evidence_type": "WEAK",
+          "published": "2026 (unknown exact date)"
+        },
+        {
+          "claim": "ZATCA Phase 2 threshold dropped to SAR 375,000 annual revenue, bringing thousands of additional SMEs into mandatory scope",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/zatca-e-invoicing-phase-2",
+          "source_title": "Phase 2 Expansion: More Saudi Businesses Required to Implement E-Invoicing in 2025 | Wafeq",
+          "summary": "Per search snippet: lowering the revenue threshold pulls many more small businesses into compliance scope, most of whom previously had no integration.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Non-compliance with real-time invoice reporting can trigger fines from SAR 5,000 to SAR 50,000 per violation",
+          "url": "https://tallysolutions.com/mena/saudi-vat/how-to-prepare-for-zatca-e-invoice-integration-sme-checklist/",
+          "source_title": "How to Prepare for ZATCA E-Invoice Integration: SME Checklist",
+          "summary": "Per search snippet, quantifies the financial downside of non-compliance for SMEs, motivating urgency to fix invoicing processes.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Wave 24 covers businesses with taxable turnover >SAR 375,000 in 2022/2023/2024, must comply 1 Apr–30 Jun 2026; penalties SAR 5,000–50,000 per violation",
+          "url": "https://xrero.com/blog/xrero-business-blog-1/zatca-phase-2-wave-24-is-your-saudi-business-in-scope-by-30-june-2026-124",
+          "source_title": "ZATCA Phase 2 Wave 24 — In Scope by 30 June 2026?",
+          "summary": "Vendor compliance guide describing Wave 24 turnover threshold, deadline and penalty range; seen via search snippet, not independently fetched.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Small businesses are actively hiring freelancers on Mostaql to build/connect ZATCA-compliant invoicing",
+          "url": "https://mostaql.com/project/1038687-%D8%A7%D9%84%D8%B1%D8%A8%D8%B7-%D9%85%D8%B9-zatca-%D9%85%D9%86-%D8%AE%D9%84%D8%A7%D9%84-php",
+          "source_title": "الربط مع ZATCA من خلال PHP | مستقل",
+          "summary": "Live freelance job listing requesting ZATCA integration work via PHP, indicating businesses paying developers ad-hoc for compliance rather than using a packaged product; seen via search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Many small businesses lack a specialized accountant and find accounting software complex; late invoice recording and tax errors complicate data preparation.",
+          "url": "https://www.qoyod.com/fields/accounting-software-for-small-business/",
+          "source_title": "برنامج محاسبة للشركات الصغيرة: الدليل الشامل - قيود",
+          "summary": "Per search summary of vendor page: explicitly states small businesses commonly lack accountants and struggle with complex software, framed as the reason to buy Qoyod — this is vendor marketing (WEAK) but consistent across multiple vendor pages.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Businesses risk fines if not properly integrated with ZATCA e-invoicing Phase 2 requirements.",
+          "url": "https://www.accarab.com/2026/09/E-Invoicing-in-Saudi-Arabia.html",
+          "source_title": "الفاتورة الإلكترونية بالسعودية وكيفية الربط لتفادي الغرامة",
+          "summary": "Article specifically framed around avoiding ZATCA fines through proper e-invoicing integration, indicating compliance risk is a live concern for businesses in 2026.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per URL path)"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com",
+          "notes": "Saudi accounting/e-invoicing SaaS, publishes content on e-invoicing pain points — implies paying customer base"
+        },
+        {
+          "name": "Daftra",
+          "url": "https://www.daftra.com",
+          "notes": "Offers e-invoicing features for small businesses per search snippet"
+        },
+        {
+          "name": "Rewaa",
+          "url": "https://rewaa.com",
+          "notes": "POS/retail management with e-invoicing compliance content"
+        },
+        {
+          "name": "Wazen",
+          "url": "https://wazen.sa",
+          "notes": "E-commerce to e-invoicing integration guide vendor"
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/zatca-e-invoicing-phase-2",
+          "notes": "Saudi accounting SaaS marketing ZATCA e-invoicing compliance to SMEs"
+        },
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/blog/e-invoicing/phase-two-e-invoicing/",
+          "notes": "Saudi accounting SaaS with Phase 2 guidance/integration"
+        },
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/blog/e-invoicing/phase-two-e-invoicing/",
+          "notes": "Established Saudi accounting SaaS already selling ZATCA Phase 2 compliance — direct competitor with existing customer base."
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/",
+          "notes": "Another established compliance vendor targeting the same SME segment."
+        },
+        {
+          "name": "Fatora.io",
+          "url": "https://fatora.io/en/zatca-2/",
+          "notes": "Existing ZATCA-approved e-invoicing platform/guide, per search snippet"
+        },
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/blog/e-invoicing/",
+          "notes": "Local accounting SaaS marketed as ZATCA-compliant e-invoicing solution"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Many micro-businesses delay integration, risk fines, or hire an accountant/agency ad hoc to bolt on compliance close to their wave deadline.",
+        "Owners use spreadsheets, hire part-time bookkeepers, or adopt full accounting suites that may be overkill/costly for a tiny shop",
+        "Many small merchants hire outsourced accountants or manually re-key invoices into a compliant tool; some delay integration until forced by their bank/ZATCA notice.",
+        "Many small businesses currently hire freelance developers ad hoc (Mostaql) to bolt on ZATCA connectivity, or delay integration until near the deadline, risking penalties"
+      ],
+      "existing_spend": [
+        "SAR 5,000–50,000 potential fine exposure per violation (per search snippet); existing vendors already charge SaaS subscriptions for compliance (exact price not confirmed in this session).",
+        "NO RELIABLE EVIDENCE FOUND on exact SAR amounts merchants pay Qoyod/Daftra/Rewaa — but the existence of multiple paid SaaS vendors serving this compliance need is itself indirect evidence of willingness to pay.",
+        "NO RELIABLE EVIDENCE FOUND on exact Qoyod/aamalsoft pricing seen in this session, but their existence as commercial products is proof SMEs already pay for this category",
+        "SMEs already pay for ERP/accounting software (Wafeq, Qoyod, ERPNext integrations) or outsourced bookkeepers to handle this; exact price points not verified in this session."
+      ],
+      "unknowns": [
+        "Real willingness-to-pay of micro-merchants below SAR 375,000 threshold once they hit it",
+        "Whether ZATCA integration requires certifications a solo founder can obtain cheaply",
+        "Pricing of incumbents' cheapest tiers",
+        "Whether ZATCA's approved-provider list creates a hard barrier to a new solo-built entrant",
+        "Exact wave/threshold schedule affecting the smallest businesses",
+        "Actual willingness to pay vs. established players like Qoyod/Fatora which already have brand trust and government approval lists",
+        "Whether ZATCA requires accredited/certified providers only, which could be a hard licensing barrier for a solo-built tool",
+        "Whether a solo founder can realistically compete on price/features against funded incumbents"
+      ]
+    },
+    {
+      "candidate_id": "C02",
+      "title": "Nitaqat/Saudization profession-level compliance dashboard",
+      "problem": "The April 2026 Nitaqat overhaul made compliance materially harder for SMEs: mandatory Qiwa authentication, abolished Yellow tier, profession-specific quotas across 269 roles, and rising minimum-wage thresholds to count toward quota — a company can look compliant overall yet violate at department level, risking Red-tier status that blocks work-permit issuance, visas and government contracts. A parallel Qiwa employment-contract documentation mandate (85% by Apr 2026, 90% by Jun 2026) ties directly into Nitaqat credit.",
+      "customer": "Small and mid-size Saudi employers managing mixed Saudi/expat workforces across profession-specific quotas",
+      "segment": "B2B",
+      "sector": "HR Compliance / RegTech",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S011",
+        "S077",
+        "S079"
+      ],
+      "potential_solution": "A monitoring dashboard where an SME inputs its Qiwa employee roster to calculate current Nitaqat band per profession, flag approaching thresholds/documentation gaps, and alert ahead of renewal/visa deadlines — priced far below a full HR consultancy retainer.",
+      "business_model": "SaaS subscription per company, tiered by headcount",
+      "priority": 8,
+      "priority_rationale": "Two independent agents (b2b_hunter, market_change_hunter) confirmed via three signals; very high severity (Red-tier blocks visas/contracts) and a hard, dated regulatory trigger; existing paid HR/immigration consultancies (Mercans, Watily, RFS) prove willingness to pay. Held below top score because whether Qiwa exposes any usable data export (vs. manual re-entry) is unverified and could make the MVP much harder than expected.",
+      "open_questions": [
+        "Does Qiwa expose any API/data export a third-party tool could use, or does this require manual re-entry?",
+        "What do HR consultancies typically charge for Nitaqat compliance management?",
+        "How many SMEs are actually in or near Red tier post-overhaul (no count found)?",
+        "Will small employers (5-20 staff) pay for a dashboard vs. relying on their accountant?"
+      ],
+      "source_agents": [
+        "b2b_hunter",
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "On 16 April 2026, MHRSD launched its most sweeping Nitaqat overhaul since 2021 (new 3-year cycle through 2028): Qiwa authentication mandatory, Yellow tier abolished, Red-tier penalties block visas and government contracts.",
+          "url": "https://mercans.com/glossary/saudization-nitaqat/",
+          "source_title": "Saudization (Nitaqat): 2026 Quotas, Bands, Compliance Rules & Penalties | Mercans",
+          "summary": "Per search snippet: HR/immigration consultancy summarizing the 2026 regulatory overhaul and its operational consequences for employers.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Profession-specific quotas now apply across 269 roles, meaning a company can be headline-compliant while violating Nitaqat within a single department; misalignment between Qiwa contracts and actual employee data is a routine struggle.",
+          "url": "https://watily.com/blog/en/saudi-nitaqat-2026-qiwa-compliance-guide-sme/",
+          "source_title": "Saudi Nitaqat 2026: Qiwa Compliance Guide for SMEs | Watily",
+          "summary": "Per search snippet: SME-focused compliance guide describing the granular, role-level complexity introduced in 2026.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "MHRSD raised sector quotas, eliminated the Yellow tier, expanded to 269 profession-level quotas, and raised minimum qualifying wage from SAR 3,000 to SAR 4,000 (higher for specific professions)",
+          "url": "https://ahysp.com/new-phase-of-the-nitaqat-saudization-program-2026-2028-what-businesses-in-saudi-arabia-need-to-know/",
+          "source_title": "New Phase of the Nitaqat Saudization Program (2026–2028)",
+          "summary": "Legal advisory detailing the new Nitaqat cycle's profession-by-profession quotas and wage thresholds; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025/2026"
+        },
+        {
+          "claim": "An 85% Qiwa contract documentation rate is required by 30 April 2026, rising to 90% by 30 June 2026; non-compliance can restrict access to labour services",
+          "url": "https://arnifi.com/blog/saudi-arabia-rises-qiwa-contract-rule/",
+          "source_title": "Saudi Arabia Raises Qiwa Contract Documentation Requirement to a Minimum of 85%",
+          "summary": "EOR provider blog detailing the new documentation thresholds and consequences; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "From 15 April 2026 only Saudi employees with Qiwa-documented contracts count toward Saudization calculations",
+          "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-116.html",
+          "source_title": "Saudi Arabia – Government Increased Qiwa Employment Contract Compliance Requirements",
+          "summary": "KPMG flash alert on the link between Qiwa documentation and Nitaqat credit; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Watily Qiwa Compliance Guide",
+          "url": "https://watily.com/blog/en/saudi-nitaqat-2026-qiwa-compliance-guide-sme/",
+          "notes": "Content/guide, not a tracking tool"
+        },
+        {
+          "name": "Mercans / EOR providers",
+          "url": "https://mercans.com/glossary/saudization-nitaqat/",
+          "notes": "Full-service EOR/PEO firms handle this for clients at enterprise pricing, not a self-serve SME tool"
+        },
+        {
+          "name": "Safwahr Qiwa Platform Guide",
+          "url": "https://safwahr.com/qiwa-platform-complete-employer-guide-saudi-arabia-2026/",
+          "notes": "HR consultancy content/guide, not a tracking SaaS"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "SMEs rely on HR consultants or EOR providers, or manually track quotas per profession in spreadsheets, risking Ministry inspections and Nitaqat band downgrade (loss of visa/work-permit services)",
+        "HR staff manually check documentation rate inside Qiwa's own dashboard and chase employees/managers individually; small businesses without dedicated HR often miss the deadline",
+        "SMEs hire HR/immigration consultancies (e.g., Mercans, Watily, RFS HR) to monitor and manage Nitaqat status, or assign an internal HR person to manually watch Qiwa dashboards."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for direct spend; risk is loss of Nitaqat credit and labour-service restrictions (per search snippet)",
+        "NO RELIABLE EVIDENCE FOUND for exact SME spend on Nitaqat consulting; EOR/PEO providers (e.g., Mercans) charge for managed Saudization compliance as part of broader payroll services (per search snippet)",
+        "SMEs already pay HR/immigration consultancies (Mercans, Watily, RFS HR Consultancy, etc.) for Saudization compliance management — per search snippets these firms explicitly market SME Nitaqat services, though exact fees were not confirmed in this session."
+      ],
+      "unknowns": [
+        "Whether Qiwa itself will eventually expose an API making this trivial for MHRSD to solve for free",
+        "Whether Qiwa exposes any data export/API a third-party tool could use without manual re-entry",
+        "Real appetite of small employers (5-20 staff) to pay for a dashboard vs. asking their accountant",
+        "Whether Qiwa exposes any API/data export a third-party tool could use, or whether this requires manual re-entry",
+        "How many SMEs are actually in/near Red tier post-overhaul (only qualitative claims found, no count)",
+        "Whether MHRSD will simply show this % directly and clearly enough on Qiwa's own portal, removing the need for a third-party layer",
+        "Typical retainer fee charged by HR consultancies for this service (not found)",
+        "Data-access complexity — can a third-party tool actually pull live Qiwa data, or does it require manual entry only"
+      ]
+    },
+    {
+      "candidate_id": "C03",
+      "title": "Multi-portal HR/government compliance reminder tool (Qiwa/Mudad/GOSI/Muqeem/iqama)",
+      "problem": "HR/admin staff at SMEs repeat the same actions across disconnected government portals (Qiwa, Mudad, GOSI, Muqeem) for every employee event — contract updates, iqama/visa renewals, GOSI registration, wage-file uploads — re-entering the same data multiple times. Iqama renewals are frequently delayed/neglected by employers (fines, labor disputes); Mudad now covers all private employers with 10/15-day delay alerts and a 20-day inspection trigger; dedicated 'Government Relations Coordinator' roles exist specifically to manage this manually.",
+      "customer": "HR/admin coordinators and outsourced HR-services firms at SMEs (5-300 employees) employing non-Saudi staff",
+      "segment": "B2B",
+      "sector": "HR / GovTech Compliance (cross-sector)",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S029",
+        "S040",
+        "S041",
+        "S056",
+        "S064",
+        "S084"
+      ],
+      "potential_solution": "A lightweight SaaS that centralizes employee record data (iqama, GOSI, license, contract expiry dates), generates checklists/pre-filled forms for the required portal actions, and sends automated WhatsApp/email alerts at key deadlines — reducing duplicate data entry without needing a full HCM suite.",
+      "business_model": "B2B SaaS subscription per employee/month, sold to SMEs and HR outsourcing firms",
+      "priority": 8,
+      "priority_rationale": "Six signals from five independent agents (complaint_hunter, jobs_signal_hunter x3, gap_hunter, market_change_hunter) all point to the same underlying pain; dedicated full-time roles and HR consultancies prove real budget exists; multiple hard regulatory deadlines create urgency. Capped below the top tier because the biggest unknown — whether these government portals can be accessed programmatically at all vs. requiring manual entry — directly determines whether this is an EASY or a much harder MVP.",
+      "open_questions": [
+        "Do Qiwa/GOSI/Mudad/Muqeem allow any automated or API access without violating ToS?",
+        "What do companies currently pay government-relations coordinators or HR consultancies for this exact work?",
+        "Would SMEs trust a third-party tool that needs their government-portal credentials?",
+        "Is a manual-data-entry-only tool (no API) still valuable/paid-worthy?"
+      ],
+      "source_agents": [
+        "competition_hunter",
+        "complaint_hunter",
+        "gap_hunter",
+        "jobs_signal_hunter",
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Multiple independent law-firm sites (agl.sa, hd-law.com.sa, jeddah-lawyer.net, mohammedalotaibi.sa, ramilawyer.sa) each publish guides on what happens/what rights employees have when an employer fails to renew iqama on time, including fines and the employee's right to transfer employer without consent.",
+          "url": "https://agl.sa/complaint-against-sponsor-labor-office-saudi/",
+          "source_title": "كيف أشتكي كفيلي في مكتب العمل؟ - AGL",
+          "summary": "Redundant coverage of the same specific employer-negligence scenario across multiple independently-run legal content sites is used as a proxy for recurring real-world frequency; none of these directly quantify how many cases occur per year.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "HR Coordinators in Saudi Arabia are explicitly hired to process actions across Qiwa, Muqeem, GOSI and Mudad — updating contracts, renewing employee info, issuing visas, handling status changes, and managing Iqama/work-permit renewals.",
+          "url": "https://payrollmiddleeast.com/qiwa-saudi-arabia/",
+          "source_title": "Qiwa Saudi Arabia: Employer Guide for Payroll, HR and Labour Compliance",
+          "summary": "Per search snippet: article describes HR coordinators executing repetitive company procedures on Qiwa/Mudad/GOSI/Muqeem including contract updates, visa issuance, residency and license renewals.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple active job postings for 'HR Officer – GOSI & HRDF' and 'HR Coordinator' roles exist in Saudi Arabia specifically naming these portals as core duties.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/hr-officer-%E2%80%93-gosi-&-hrdf-jobs/",
+          "source_title": "HR Officer – Gosi & Hrdf Jobs in Saudi Arabia (Jul 2026) - Bayt.com",
+          "summary": "Per search snippet: Bayt.com lists dedicated openings for GOSI/HRDF-focused HR officer roles, indicating recurring demand for this manual compliance work.",
+          "evidence_type": "WEAK",
+          "published": "2026-07"
+        },
+        {
+          "claim": "Multiple companies (noon, PROVEN) are actively hiring dedicated Government Relations Officer/Specialist roles in Riyadh in mid-2026, focused on visa issuance, compliance, and government liaison.",
+          "url": "https://www.linkedin.com/jobs/view/4451350020/",
+          "source_title": "noon hiring Government Relations Officer in Riyadh, Saudi Arabia",
+          "summary": "Per search snippet: noon posted a Government Relations Officer role in Riyadh (Aug 2026) responsible for governmental interactions and compliance monitoring.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-08"
+        },
+        {
+          "claim": "Bayt.com maintains an ongoing category of 'Gov Relations Coordinator' jobs in Saudi Arabia, indicating persistent multi-company demand for this role.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/gov-relations-coordinator-jobs/",
+          "source_title": "Gov Relations Coordinator Jobs in Saudi Arabia (Sep 2026) - Bayt.com",
+          "summary": "Per search snippet: active job category listing government relations coordinator vacancies as of Sep 2026.",
+          "evidence_type": "WEAK",
+          "published": "2026-09"
+        },
+        {
+          "claim": "Jisr is positioned as a unified HR, Talent, Payroll, Compliance and Finance platform with native Mudad/GOSI/Qiwa/Muqeem coverage, aimed at 'modern KSA businesses' broadly including semi-government/larger orgs",
+          "url": "https://www.jisr.net/en",
+          "source_title": "Jisr - All-in-one HR, Talent & Spend for modern KSA businesses",
+          "summary": "Jisr markets itself as an all-in-one suite; full-suite positioning suggests feature depth/pricing aimed above micro-business needs (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        },
+        {
+          "claim": "Jisr and ZenHR are described as having the deepest native GOSI/Mudad/Muqeem integration 'for companies operating only inside the Kingdom'",
+          "url": "https://logiolegion.com/blogs/saudi-hr-software-mudad-gosi-qiwa-nitaqat-compliance-guide-2026",
+          "source_title": "Saudi HR Software That Handles Mudad, GOSI, Qiwa and Nitaqat — 2026 HRMS Guide",
+          "summary": "Comparison guide frames these tools around full-company compliance needs rather than a lightweight micro-business tier (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        },
+        {
+          "claim": "Any modification made in Qiwa must be mirrored in Mudad and GOSI the same day; delaying synchronization by even a few days can trigger regulatory violations with financial and administrative costs.",
+          "url": "https://noqta.tn/ar/blog/qiwa-integration-hr-systems-saudi-nitaqat-2026",
+          "source_title": "دليل تكامل منصة قوى مع أنظمة الموارد البشرية 2026",
+          "summary": "Vendor blog stating the same-day cross-sync requirement between Qiwa/Mudad/GOSI and the penalty risk of delay (per search snippet, not independently fetched).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A payroll run on Mudad cannot be filed unless the employee is already registered in GOSI, and a Qiwa work-permit renewal cannot proceed unless GOSI monthly contributions are paid up to date — i.e. the three systems are interdependent but not natively linked for the employer.",
+          "url": "https://arbahbank.com/is-qiwa-platform-linked-to-social-insurance-gosi/",
+          "source_title": "هل منصة قوي مرتبطة بالتامينات؟",
+          "summary": "Article describing the interdependency between Qiwa, Mudad and GOSI compliance steps (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "From 1 March 2025, establishments must upload WPS files within a 30-day period (down from 60 days); alerts at 10/15 days delay, inspections triggered at 20 days",
+          "url": "https://www.saudigazette.com.sa/article/654131",
+          "source_title": "Unreasonable wages, salary delays to trigger violations under Mudad system | Saudi Gazette",
+          "summary": "News report detailing the new Mudad alert/inspection timeline and 'unreasonable wage' flagging logic; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        },
+        {
+          "claim": "The Wage Protection Program via Mudad now covers all private-sector establishments regardless of size, with no exemptions",
+          "url": "https://www.ditrc.com/what-is-wage-protection-system-wps-in-saudi-arabia/",
+          "source_title": "Wage Protection System (WPS) in Saudi Arabia Explained",
+          "summary": "Explainer confirming universal size coverage of WPS/Mudad; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Qiwa platform",
+          "url": "https://qiwa.sa",
+          "notes": "Official HR/labor platform; provides renewal processes but evidently doesn't fully prevent employer negligence per the recurring legal-advice content."
+        },
+        {
+          "name": "Mudad",
+          "url": "https://mudad.com.sa",
+          "notes": "Official payroll/WPS platform, one of the several portals staff must juggle; does not unify Qiwa/GOSI/Muqeem workflows"
+        },
+        {
+          "name": "Jisr",
+          "url": "https://www.jisr.net/en",
+          "notes": "Full HCM suite; pricing not public (enterprise 'contact us' model typical of this segment)."
+        },
+        {
+          "name": "Bayzat / ZenHR / Hono",
+          "url": "https://www.hono.ai/blog/hr-payroll-software-saudi-arabia",
+          "notes": "Comparable full-suite competitors; no clear budget/micro-business tier surfaced in search."
+        },
+        {
+          "name": "Bayzat",
+          "url": "https://www.bayzat.com/ar/ksa/blog/%D9%85%D8%A7-%D9%87%D9%8A-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D9%8F%D8%AF%D8%AF-%D9%88%D9%85%D8%A7-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%82%D8%AF%D9%85%D9%87%D8%A7/",
+          "notes": "Full HR/payroll platform automating Qiwa/Mudad/GOSI compliance; enterprise-oriented pricing likely out of reach for micro-businesses."
+        },
+        {
+          "name": "ZenHR",
+          "url": "https://www.zenhr.com/ar/home",
+          "notes": "Regional HR suite covering GOSI/WPS compliance."
+        },
+        {
+          "name": "Safwahr Mudad Compliance Guide",
+          "url": "https://safwahr.com/mudad-wps-compliance-2026-employer-guide/",
+          "notes": "HR consultancy guide content, not a self-serve micro-employer tool"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Manual tracking via spreadsheets/reminders by HR staff, or employees escalating to HRSD/labor courts only after the iqama has already lapsed.",
+        "Micro-business owners/HR admins track changes manually across three separate government portals, often in spreadsheets, relying on memory/calendars to stay same-day compliant.",
+        "Micro businesses likely use accountants/agencies or manual GOSI/Mudad portals directly, or under-use expensive HCM suites for a handful of employees.",
+        "Micro-employers track payroll manually or via generic spreadsheets and risk missing the 30-day upload window or triggering 'unreasonable wage' flags without realizing it"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for exact amounts micro-employers currently spend on payroll/HR software for this",
+        "NO RELIABLE EVIDENCE FOUND for tool spend; indirect evidence that businesses pay for legal consultations once disputes escalate (multiple law firms monetize this exact scenario), but no price data captured.",
+        "NO RELIABLE EVIDENCE FOUND (no public salary figure captured for this exact role in this session; job exists as a dedicated hire per Bayt listing)",
+        "NO RELIABLE EVIDENCE FOUND (Jisr/competitors do not publish pricing; enterprise 'contact sales' model observed in search results)"
+      ],
+      "unknowns": [
+        "Real frequency of violations among very small employers vs. larger firms with existing payroll systems",
+        "Actual Jisr/Bayzat pricing for very small companies (not disclosed publicly)",
+        "Whether Qiwa/GOSI/Muqeem allow any automated/API access without violating ToS",
+        "Whether any direct complaints/freelance requests exist for this specific pain (not confirmed — evidence here is vendor-content only)",
+        "Depth of government portal restrictions on automation",
+        "Whether Qiwa/GOSI already send adequate automated reminders to employers",
+        "Whether micro businesses feel this as a real pain or simply outsource to accountants",
+        "Actual incidence rate of this specific negligence scenario"
+      ]
+    },
+    {
+      "candidate_id": "C04",
+      "title": "AI-assisted bookkeeping, reconciliation & invoice-data-entry automation for micro-SMEs",
+      "problem": "Small e-commerce stores and small companies repeatedly post freelance requests for recurring monthly bookkeeping, VAT-related account review and invoice data entry rather than hiring a full-time accountant; SME accountants spend recurring manual effort on bank reconciliation and matching invoices to ZATCA e-invoicing records; a persistent high volume of 'invoice data entry' gigs shows companies still manually re-key paper/PDF invoices into spreadsheets/ERPs.",
+      "customer": "Owners of small e-commerce stores/companies needing recurring bookkeeping, and SME accountants/bookkeeping firms",
+      "segment": "B2B",
+      "sector": "Accounting / Back-office automation",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S004",
+        "S014",
+        "S043",
+        "S044",
+        "S068"
+      ],
+      "potential_solution": "An AI tool that ingests bank statements, PDF/photo invoices and ZATCA e-invoicing data, auto-matches and reconciles them, flags exceptions, and generates monthly financial statements/VAT-ready summaries — reducing reliance on repeatedly re-hired freelancers.",
+      "business_model": "Monthly SaaS subscription undercutting the cost of a recurring freelancer engagement, or pay-per-document/batch",
+      "priority": 7,
+      "priority_rationale": "Four signals from three independent agents (problem_hunter, b2b_hunter, jobs_signal_hunter, ai_opportunity_hunter) show recurring, direct freelance-marketplace spend on this exact task, which is DIRECT evidence of ongoing willingness to pay. Held to mid-high priority because of strong competition from established Saudi accounting SaaS (Qoyod/Daftra/Wafeq) and unresolved trust concerns for AI handling VAT-sensitive work.",
+      "open_questions": [
+        "What are the actual SAR rates freelancers charge per Mostaql bookkeeping/data-entry project?",
+        "Would businesses trust an AI tool over a human accountant for VAT-sensitive reconciliation?",
+        "What accuracy is achievable with Arabic invoice OCR vs. manual entry?",
+        "How much of this is already automated by existing ERP/e-invoicing vendors?"
+      ],
+      "source_agents": [
+        "ai_opportunity_hunter",
+        "b2b_hunter",
+        "jobs_signal_hunter",
+        "problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Multiple distinct, recent freelance project postings on Mostaql ask specifically for remote/part-time accountants for small Saudi businesses to handle account setup, monthly bookkeeping, and financial statement preparation.",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "source_title": "المشاريع المفتوحة - محاسبة | مستقل",
+          "summary": "Per search snippet: listing page shows several open Mostaql projects such as 'مطلوب محاسب مالي مستقل لتأسيس وإدارة حسابات متجر إلكتروني سعودي', 'محاسب للعمل عن بعد مع مؤسسة صغيرة في السعودية', 'محاسب لإدارة الحسابات الشهرية لشركة تسويق رقمي' — recurring demand for outsourced part-time bookkeeping.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Many Saudi businesses rely on spreadsheets rather than integrated systems; VAT filings must be reconciled monthly with supporting invoices retained for at least 6 years, and physical copies must be available for inspection.",
+          "url": "https://tascoutsourcing.sa/en/insights/bookkeeping-in-saudi-arabia-top-5-challenges-businesses-face-and-how-to-overcome-them",
+          "source_title": "Bookkeeping in Saudi Arabia: ZATCA Compliance & Key Challenges",
+          "summary": "Per search snippet: outsourced-accounting provider lists top bookkeeping challenges for Saudi businesses including spreadsheet reliance and VAT reconciliation burden.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Accountant job postings in Saudi Arabia list daily transaction recording, bank reconciliation, invoice review, and ZATCA VAT compliance/tax declaration liaison as standard recurring duties, including for firms serving foreign companies.",
+          "url": "https://www.bayt.com/en/saudi-arabia/jobs/accounting-jobs/",
+          "source_title": "Accounting Jobs in Saudi Arabia (Jun 2026) - Bayt.com",
+          "summary": "Per search snippet: Bayt listings describe accountants doing bank reconciliation, invoice review and ZATCA-related tax compliance as routine recurring work.",
+          "evidence_type": "WEAK",
+          "published": "2026-06"
+        },
+        {
+          "claim": "Glassdoor lists 76 open data entry jobs in Riyadh alone (Sep 2026), and Bayt lists a dedicated 'Data Entry Operator' category describing database input/verification/reporting as core duties.",
+          "url": "https://www.glassdoor.com/Job/riyadh-data-entry-jobs-SRCH_IL.0,6_IM1652_KO7,17.htm",
+          "source_title": "76 data entry Jobs in Riyadh, Saudi Arabia, September 2026 | Glassdoor",
+          "summary": "Per search snippet: 76 concurrent open data entry roles in Riyadh, evidence of sustained repetitive manual-entry demand.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-09"
+        },
+        {
+          "claim": "Mostaql (Arabic freelance marketplace) has recurring posted gigs specifically for 'invoice data entry' (مدخل بيانات فواتير) and ERP data entry, some for 3-month engagements.",
+          "url": "https://mostaql.com/project/551742-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%85%D9%88%D8%B8%D9%81%D9%80%D8%A9-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1",
+          "source_title": "مطلوب موظف/ـة مدخل بيانات فواتير | مستقل",
+          "summary": "Per search snippet: a posted freelance request specifically for invoice data-entry staff, demonstrating direct demand willing to pay freelancers for this repetitive task.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Recurring paid freelance requests exist specifically for entering purchase invoices (supplier, date, invoice number, products) into Excel",
+          "url": "https://mostaql.com/project/448250-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%84%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D9%81%D9%8A-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%8A%D9%84",
+          "source_title": "مدخل بيانات لإدخال فواتير في ملف اكسيل | مستقل",
+          "summary": "Per search snippet: client requests manual invoice-to-Excel entry with fields like supplier name, invoice number, product lines.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate, more recent project asks for invoice data entry for a specific multi-month period (Jan–Mar 2026)",
+          "url": "https://mostaql.com/project/1237011-%D9%85%D8%AF%D8%AE%D9%84%D9%8A%D9%86-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%84%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A9-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1",
+          "source_title": "مدخلين بيانات لإدخال البيانات – معالجة الفواتير | مستقل",
+          "summary": "Per search snippet dated 2026 activity — recurring/ongoing need, not a one-off historical artefact.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per snippet, unconfirmed)"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Freelance accountants via Mostaql",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "notes": "Ad-hoc, inconsistent freelancer hiring per project"
+        },
+        {
+          "name": "Qoyod / Daftra / Wafeq (accounting SaaS)",
+          "url": "https://www.qoyod.com",
+          "notes": "Self-serve accounting software alternative, but requires the owner or a bookkeeper to operate it"
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/best-accounting-software-in-saudi-arabia",
+          "notes": "Saudi accounting SaaS with free trial, direct competitor in this space"
+        },
+        {
+          "name": "ZATCA-certified e-invoicing solution providers",
+          "url": "https://www.linkedin.com/posts/dynamic-cloud_zatca-einvoicing-saudibusiness-activity-7445033285400961024-VnaP",
+          "notes": "Covers e-invoicing compliance itself, not the surrounding manual reconciliation workload"
+        },
+        {
+          "name": "OCR/IDP tools (generic, e.g. ABBYY, Google Document AI)",
+          "url": "https://mostaql.com/project/797013-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D9%85%D8%AF%D8%AE%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-erp",
+          "notes": "Generic OCR exists globally but Arabic-invoice-to-ERP niche tools for SMEs are not evidenced locally"
+        },
+        {
+          "name": "ZATCA-oriented e-invoicing platforms (Qoyod, Wafeq, ClearTax SA)",
+          "url": "https://www.qoyod.com/en/blog/e-invoicing/phase-two-e-invoicing/",
+          "notes": "These handle compliant e-invoice ISSUANCE, not OCR/extraction of incoming paper/PDF invoices from suppliers who are not yet compliant — a gap for legacy/paper invoice backlogs."
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Hiring freelancers/temp staff via Mostaql or full-time data-entry clerks to manually re-type invoices/documents into ERP",
+        "Hire a freelancer per batch of invoices, or have in-house staff manually retype into Excel/ERP.",
+        "Manual Excel-based bank/ERP reconciliation performed by in-house or outsourced accountant",
+        "SMEs outsource bookkeeping to accounting firms (an existing paid service category) or keep doing it themselves in Excel."
+      ],
+      "existing_spend": [
+        "NO RELIABLE PRICE EVIDENCE FOUND for exact freelancer rates on these specific projects, but repeated postings confirm ongoing willingness to pay for the task.",
+        "Freelancers are directly paid per Mostaql gig postings for invoice data entry (exact rate not visible in snippet)",
+        "NO RELIABLE EVIDENCE FOUND",
+        "NO RELIABLE EVIDENCE FOUND on exact freelancer rates paid per Mostaql project (budgets not visible in search snippet), but repeated project postings for the same recurring need is direct evidence of ongoing spend on freelance accountants."
+      ],
+      "unknowns": [
+        "Whether ZATCA Phase 2 mandate will eventually eliminate this pain by forcing all invoices to be digital-native",
+        "Accuracy needs/Arabic OCR quality vs manual entry",
+        "Whether target buyers already use ERP built-in OCR (e.g. Odoo, Zoho)",
+        "Accuracy needed for Arabic handwritten vs. printed invoices",
+        "Whether a narrow reconciliation-only tool has enough standalone value vs. full accounting suites",
+        "Actual SAR budgets businesses pay per Mostaql accounting project",
+        "Freelancer price per invoice/batch",
+        "Actual freelancer pay rates on these Mostaql gigs"
+      ]
+    },
+    {
+      "candidate_id": "C05",
+      "title": "WhatsApp/AI booking & no-show reduction for small clinics and salons",
+      "problem": "Small clinics, salons and single-practitioner service businesses lose revenue to appointment no-shows and mismanaged WhatsApp/notebook bookings; documented no-show rates in Saudi outpatient departments range 11-73% depending on department; missed inbound calls cause lost bookings; salon/spa owners on marketplace platforms like Fresha pay a 20% commission on top of a subscription fee, cutting into thin margins.",
+      "customer": "Owners of small clinics, salons, barbershops and appointment-based service businesses",
+      "segment": "B2B",
+      "sector": "Vertical SaaS / Booking automation",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S003",
+        "S010",
+        "S037",
+        "S038",
+        "S049",
+        "S070"
+      ],
+      "potential_solution": "A very low-cost, self-serve WhatsApp booking + reminder bot (or flat-fee, no-commission alternative to Fresha-style platforms) pre-built for single-practitioner clinics/salons/barbershops that can't afford custom agency builds or marketplace commissions.",
+      "business_model": "Low monthly SaaS fee per business (flat fee, no per-booking commission)",
+      "priority": 7,
+      "priority_rationale": "Extremely strong multi-agent confirmation (6 signals across problem_hunter, b2b_hunter, whatsapp_excel_hunter x2, ai_opportunity_hunter, foreign_model_hunter) plus quantified no-show statistics and at least 8 named existing competitors (Tkana, Watily, Snad, OJlinker, Hajzak, Medicakare, Mawidk, Fresha) proving a real paid market exists. Priority capped at 7 (not higher) because the market is already crowded with funded players, so a new solo entrant needs a clear price/simplicity wedge.",
+      "open_questions": [
+        "What do existing vendors (Tkana/Watily/Snad/OJlinker/Hajzak) actually charge?",
+        "Is the very smallest segment (1 chair/1 doctor) underserved/price-sensitive enough to switch from existing tools?",
+        "Would a WhatsApp-only bot suffice, or do buyers expect a fuller booking/POS suite?",
+        "Does Fresha's 20% commission apply to all bookings or only marketplace-discovered ones?"
+      ],
+      "source_agents": [
+        "ai_opportunity_hunter",
+        "b2b_hunter",
+        "foreign_model_hunter",
+        "problem_hunter",
+        "whatsapp_excel_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Clinic/salon owners in Saudi Arabia commonly lose bookings because appointments taken by phone or WhatsApp aren't logged into the real schedule, staff miss rescheduling calls (customer goes to a competitor), and no-shows are described as a major 'hidden loss' for small clinics.",
+          "url": "https://www.tkana.sa/articles/booking-management",
+          "source_title": "إدارة الحجوزات: النظام الذي يبدأ من المحادثة - تِكانة",
+          "summary": "Per search snippet: article explicitly describes the appointment-forgotten-in-a-notebook problem, missed rescheduling calls, and no-show as a hidden revenue loss for small clinics.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple independent local vendors (automation agencies) have built and are actively marketing WhatsApp-based AI booking/reminder agents specifically for Saudi clinics and salons.",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "source_title": "أتمتة العيادات الطبية في السعودية",
+          "summary": "Per search snippet: vendor offers clinic appointment automation (booking, reminders, patient service) as a paid service, implying local clinics already pay for this.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Studies in Saudi Arabia reported no-show prevalence between 11% and 30% depending on location/service; MRI no-show/reschedule rate was 34.8%.",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5133747/",
+          "source_title": "Factors associated with No-Shows and rescheduling MRI appointments",
+          "summary": "Per search snippet: peer-reviewed study on a Saudi radiology department quantifying no-show/reschedule rate.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown (older NCBI/PMC study)"
+        },
+        {
+          "claim": "In an outpatient adult rehabilitation department at King Abdulaziz Medical City, Riyadh, 21% of total appointments resulted in no-shows, with lack of reminders/communication breakdowns cited as significant barriers.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12041131/",
+          "source_title": "Examining the Reasons for Patient No-Show in an Outpatient Adult Rehabilitation Department in King Abdulaziz Medical City, Riyadh",
+          "summary": "Per search snippet: 2025 cross-sectional study at a major Riyadh hospital quantifying no-show rate and root causes.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        },
+        {
+          "claim": "A community request on Khamsat asks for design of an appointment schedule for clinics plus data entry work.",
+          "url": "https://khamsat.com/community/requests/619259-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%AC%D8%AF%D9%88%D9%84-%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D9%84%D8%B9%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D9%88%D8%A7%D8%AF%D8%AE%D8%A7%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA",
+          "source_title": "تصميم جدول مواعيد لعيادات ، وادخال بيانات | خمسات",
+          "summary": "Direct request per search snippet for an appointment schedule design plus data entry for a clinic — indicating manual scheduling with no existing system.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A vendor markets a WhatsApp-based booking system specifically for barbershops in Saudi Arabia/Gulf, converting the salon's WhatsApp number into an automated 24/7 booking system.",
+          "url": "https://ojlinker.com.sa/barbershop",
+          "source_title": "نظام حجز صالون حلاقة عبر واتساب | OJlinker السعودية",
+          "summary": "Per search snippet, product turns a barbershop's WhatsApp number into an automated booking system that receives bookings, confirms and reduces no-shows.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A second, independent vendor (Hajzak) markets an AI-based appointment booking system specifically for beauty salons.",
+          "url": "https://hajzak.ai/beauty-salons/",
+          "source_title": "نظام حجز مواعيد صالون تجميل بالذكاء الاصطناعي | حجزك",
+          "summary": "Per search snippet, a competing AI booking product targeting beauty salons — multiple vendors targeting the same pain is evidence the underlying manual-booking problem is real and monetizable.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Fresha has SAR pricing starting from SAR 52/month but charges 20% commission on every booking made through their marketplace",
+          "url": "https://blyssbook.com/blog/best-salon-software-saudi-arabia-2026",
+          "source_title": "Best Salon Software in Saudi Arabia 2026 | Blyssbook Blog",
+          "summary": "Per search snippet (Fresha pricing page fetch failed due to proxy error): comparison blog explicitly states Fresha's KSA pricing model combines a low base subscription with a 20% marketplace commission, flagged as 'a significant consideration for salon owners in the Kingdom.'",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Fresha operates in Saudi Arabia and is positioned as the world's largest beauty/wellness booking platform",
+          "url": "https://www.fresha.com/for-business/salon",
+          "source_title": "Best Hair & Beauty Salon Booking Software - Fresha",
+          "summary": "Per search snippet: Fresha markets itself for salons/spas globally including presence relevant to Saudi Arabia.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Vendor marketing explicitly frames the pain: 'a missed call at a clinic is not just a lost booking, it can mean a patient delays care or switches to a competing provider'",
+          "url": "https://blog.ehlan.ai/playbooks/industries-that-benefit-most-from-arabic-ai-voice-agents/",
+          "source_title": "Industries That Benefit Most From Arabic AI Voice Agents",
+          "summary": "Per search snippet, a vendor states the core pain point they are selling against for GCC clinics.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A competing vendor claims WhatsApp chatbots reduced no-show rates from 35% to 12% for Saudi clinics",
+          "url": "https://buraq.ai/en/industries/clinics",
+          "source_title": "WhatsApp Chatbot for Clinics in Saudi Arabia - Buraq AI",
+          "summary": "Per search snippet — vendor-reported case-study number (self-reported, unverified, marketing claim).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Tkana",
+          "url": "https://www.tkana.sa/articles/booking-management",
+          "notes": "Local booking-management content/product"
+        },
+        {
+          "name": "Watily",
+          "url": "https://watily.com/booking-system/ar/",
+          "notes": "Booking system for salons/clinics in Saudi Arabia"
+        },
+        {
+          "name": "Snad",
+          "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+          "notes": "Clinic appointment system, reception-to-invoice"
+        },
+        {
+          "name": "Automation-KSA",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "notes": "WhatsApp AI booking automation agency"
+        },
+        {
+          "name": "GrowthHive",
+          "url": "https://growthhive.team/clinic-automation-saudi-arabia/",
+          "notes": "Digital marketing agency offering clinic automation"
+        },
+        {
+          "name": "Medicakare",
+          "url": "https://www.medicakare.com/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9",
+          "notes": "A free clinic-management program exists per search snippet — reduces the case for a paid new entrant unless differentiated."
+        },
+        {
+          "name": "موعدك (Mawidk)",
+          "url": "https://www.mawidk.net/",
+          "notes": "Patient-facing appointment booking app."
+        },
+        {
+          "name": "OJlinker",
+          "url": "https://ojlinker.com.sa/salon-bookings",
+          "notes": "Existing paid WhatsApp booking product for salons in the region."
+        },
+        {
+          "name": "Hajzak",
+          "url": "https://hajzak.ai/beauty-salons/",
+          "notes": "Competing AI-based booking product for beauty salons."
+        },
+        {
+          "name": "Fresha",
+          "url": "https://www.fresha.com/pricing",
+          "notes": "Low subscription + 20% marketplace commission model, per search snippet"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Clinics call/SMS patients manually to remind them, or simply absorb the lost slot/revenue; some larger hospitals run internal QI projects to reduce no-shows.",
+        "Paper/Excel appointment book, manual patient data entry, hiring a freelancer for one-off schedule design.",
+        "Manual WhatsApp message exchange to book/confirm appointments; no-show risk from lack of confirmation/reminder automation.",
+        "Clinics rely on human receptionists (limited hours) or simply lose calls that go unanswered; some use basic WhatsApp Business auto-replies."
+      ],
+      "existing_spend": [
+        "Fresha: ~SAR 52/month subscription + 20% commission on marketplace-sourced bookings (per Blyssbook blog, search snippet only, not independently verified on Fresha's own pricing page due to fetch failure)",
+        "NO RELIABLE EVIDENCE FOUND for specific OJlinker/Hajzak pricing in this session — competitors' pricing pages were not fetched.",
+        "NO RELIABLE EVIDENCE FOUND on what private clinics currently pay for reminder tools specifically; large hospitals run internal quality-improvement projects (staff time) per PMC sources, but SME-clinic software spend is unverified.",
+        "NO RELIABLE EVIDENCE FOUND"
+      ],
+      "unknowns": [
+        "Incumbent pricing tiers",
+        "Revenue impact per missed appointment in SAR terms — not found in this session",
+        "Whether small single-location clinics can afford any of the existing offerings or are currently unserved",
+        "Whether small private clinics (vs. big government hospitals studied) have the same no-show rate and would pay for a reminder tool",
+        "PDPL implications of recording/storing patient call data",
+        "Whether SFDA/health-sector rules apply to any tool touching patient data — needs care to stay outside regulated medical-record territory",
+        "Pricing of existing vendors (Tkana, Watily, Snad) — not found",
+        "Actual pricing/traction of OJlinker and Hajzak"
+      ]
+    },
+    {
+      "candidate_id": "C06",
+      "title": "Delivery address validation & COD-failure reduction for e-commerce merchants",
+      "problem": "Saudi last-mile delivery for SME e-commerce suffers failure rates reported up to 40% (vs ~15% in UAE), driven by inability to locate addresses and cash-on-delivery cancellations; from 1 Jan 2026 all parcel shipments must carry a validated National Address/short code, with SAR 5,000 fines for non-compliant postal providers and rejection risk for shipments without it. Many merchants and customers don't have accurate, validated National Address data on file.",
+      "customer": "Small/mid Saudi e-commerce sellers (Salla/Zid/Instagram stores) and the couriers/3PLs serving them",
+      "segment": "B2B",
+      "sector": "Logistics / E-commerce tooling",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S013",
+        "S081"
+      ],
+      "potential_solution": "A lightweight Salla/Zid app-marketplace plugin that validates/auto-formats customer addresses into the National Address/short-code format at checkout and sends a pre-dispatch WhatsApp confirmation, flagging incomplete addresses before handoff to the courier.",
+      "business_model": "Per-shipment or monthly SaaS fee distributed via the Salla/Zid app marketplace",
+      "priority": 7,
+      "priority_rationale": "Two independent agents (b2b_hunter, market_change_hunter) confirm this, and the pain now has a hard regulatory tailwind (mandatory National Address from Jan 2026) layered on top of a pre-existing, well-documented delivery-failure problem. A ready-made distribution channel (Salla/Zid app marketplace) makes this a realistic MODERATE MVP for a solo founder. Not higher because it's unclear whether Salla/Zid already build this natively, and the fine applies to postal providers, not merchants directly, which may dilute merchant urgency.",
+      "open_questions": [
+        "Do Salla/Zid already validate/format National Address natively at checkout?",
+        "What do small sellers/couriers currently pay (if anything) to reduce failed COD deliveries?",
+        "Does the fine apply to merchants directly or only to postal/delivery providers?",
+        "How straightforward is it for a solo founder to get listed in the Salla/Zid app marketplace?"
+      ],
+      "source_agents": [
+        "b2b_hunter",
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Last-mile delivery failure rates run as high as 40% in Saudi Arabia versus 15% in the UAE, driven largely by address-identification issues from the absence of postal/pin codes.",
+          "url": "https://traxgroup.com/last-mile-delivery-issues-saudi/",
+          "source_title": "Last Mile Delivery Issues Saudi: Challenges, Costs, and Solutions for Modern Logistics | Trax Group",
+          "summary": "Per search snippet: logistics-tech industry blog citing the comparative Saudi vs UAE failure-rate figure and root cause.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Cash-on-delivery dependency drives failed deliveries, higher return rates, and working-capital pressure for Saudi e-commerce sellers, partly due to 'buyer's regret' after order placement.",
+          "url": "https://www.grantthornton.sa/en/insights/articles-and-publications/transforming_last_mile_delivery_in_saudi_arabia/",
+          "source_title": "Transforming last-mile delivery in Saudi Arabia: From cost burden to competitive advantage | Grant Thornton",
+          "summary": "Per search snippet: professional-services firm analysis linking COD dependency to delivery cost/working-capital issues for Saudi businesses.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "TGA enforcement of mandatory National Address for parcels came into force 1 Jan 2026; postal service failure to use it is a violation carrying a SAR 5,000 fine",
+          "url": "https://saudigazette.com.sa/article/632436",
+          "source_title": "SR5000 fine if postal service fails to comply with users' short national address",
+          "summary": "News report on the fine structure for non-compliant postal/delivery handling of National Address; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "All shipments to, from, or within Saudi Arabia must include a Saudi National Address or Short Address Code + postal code from 1 Jan 2026",
+          "url": "https://salasa.co/blog/national-address-mandate-2026-a-full-faq-guide-for-merchants-consumers/",
+          "source_title": "National Address Mandate 2026: A Full FAQ Guide for Merchants",
+          "summary": "Logistics/merchant-tools provider explaining the mandate's scope and what merchants must change; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Shipsy",
+          "url": "https://shipsy.io/blogs/last-mile-delivery-solution-in-saudi-arabia/",
+          "notes": "Enterprise last-mile logistics-tech platform serving Saudi market (likely priced for larger shippers)"
+        },
+        {
+          "name": "Salasa",
+          "url": "https://salasa.co/blog/national-address-mandate-2026-a-full-faq-guide-for-merchants-consumers/",
+          "notes": "Merchant-facing logistics/shipping tool already publishing FAQ guidance; may already offer address-validation features"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Merchants currently manually chase customers for correct addresses or risk shipment rejection/delay after 1 Jan 2026",
+        "Small sellers absorb failed-delivery costs, call customers manually to confirm address/COD orders before dispatch, or pay 3PLs a flat fee regardless of failure rate."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for what merchants currently pay for address-validation tooling",
+        "NO RELIABLE EVIDENCE FOUND on specific SAR figures small sellers/couriers pay to mitigate this; enterprise players (Shipsy, Trax, DHL) sell solutions aimed at larger shippers per search snippets."
+      ],
+      "unknowns": [
+        "Whether Saudi Post/national address system changes are reducing this problem over time",
+        "Whether Salla/Zid already build this validation natively into checkout, removing the need for a third-party plugin",
+        "Whether small sellers/couriers would pay for a standalone confirmation tool vs. relying on their 3PL/marketplace's built-in tools",
+        "Actual SAR cost-per-failed-delivery for a small seller (not found)",
+        "Actual enforcement rigor in practice (fine applies to postal providers, not directly to merchants, per evidence found)"
+      ]
+    },
+    {
+      "candidate_id": "C07",
+      "title": "Micro-landlord / small property management tool (rent, Ejar, maintenance)",
+      "problem": "Small independent landlords and boutique property managers (2-20 units) rely on paper records, Excel sheets and ad-hoc phone/WhatsApp reminders to track rental contracts, chase late rent and manage maintenance requests, with no unified system linking Ejar contracts, collections and maintenance; Western PM platforms (Buildium, AppFolio) lack EJAR/ZATCA integration and Arabic UI, forcing manual workarounds.",
+      "customer": "Small independent landlords and boutique property-management companies (roughly 2-20 units) in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "PropTech / Real Estate",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S009",
+        "S032",
+        "S048",
+        "S059",
+        "S063"
+      ],
+      "potential_solution": "Arabic-first, lightweight SaaS layered on Ejar contract data: automated rent-due reminders, late-payment tracking, a simple maintenance-request log and ZATCA-compliant fee invoicing — priced far below hiring a full-service property-management company.",
+      "business_model": "Monthly subscription per unit or per landlord account",
+      "priority": 6,
+      "priority_rationale": "Five signals across four independent agents converge on the same underserved segment; DIRECT evidence exists of freelancers being paid to build these Excel trackers (S032), the strongest evidence class in this cluster. Priority held at 6 because the biggest open question — whether Ejar exposes any usable API for a solo founder, versus requiring manual entry or licensed-aggregator status — is unresolved and could make this a much harder build than it looks.",
+      "open_questions": [
+        "Does Ejar expose a public/developer API, or does REGA gate access to licensed aggregators only?",
+        "Would small landlords pay recurring SaaS vs. their evident preference for a one-time Excel build?",
+        "What is the addressable size of small independent landlords vs. those already using full-service PM firms?",
+        "What do landlords currently pay full-service property managers, for pricing anchoring?"
+      ],
+      "source_agents": [
+        "b2b_hunter",
+        "competition_hunter",
+        "foreign_model_hunter",
+        "gap_hunter",
+        "whatsapp_excel_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Key challenges in rental property management include reliance on paper records, difficulty tracking lease contracts, delayed rent collection, and no unified system for maintenance/tenant complaints.",
+          "url": "https://khelj.com/blogs/209",
+          "source_title": "تطبيق إدارة العقارات في السعودية 2026 – نظام ذكي لإدارة الإيجارات والمستأجرين | خليج للبرمجيات",
+          "summary": "Per search snippet: Saudi proptech vendor blog lists these as the top pain points landlords/managers face.",
+          "evidence_type": "WEAK",
+          "published": "2026 (unknown exact date)"
+        },
+        {
+          "claim": "Landlords whose tenants delay or stop rent payments face an added administrative/legal burden; non-payment for 3 consecutive months is legal grounds for eviction under the Ejar system.",
+          "url": "https://www.aldalilalnatiq.com/en/blog/1/rent-collection-saudi-arabia-2026-guide-11",
+          "source_title": "تحصيل الإيجارات المتأخرة في السعودية 2026: خطوات عملية عبر إيجار وناجز",
+          "summary": "Per search snippet: guide describes the legal/practical steps landlords take when rent collection fails, implying this is a recurring manual process.",
+          "evidence_type": "WEAK",
+          "published": "2026 (unknown exact date)"
+        },
+        {
+          "claim": "Multiple separate Mostaql projects request Excel files to track rent collection and tenant accounts.",
+          "url": "https://mostaql.com/project/916062-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+          "source_title": "ملف اكسل لمتابعة تحصيل الايجارات | مستقل",
+          "summary": "Freelance request for an Excel file specifically to track rent collection, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A separate, distinct Mostaql request asks for an Excel model to track rent amounts (نموذج اكسل لمتابعة الإيجارات) — showing this is a recurring, not one-off, need.",
+          "url": "https://mostaql.com/project/503382-%D9%86%D9%85%D9%88%D8%B0%D8%AC-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%A5%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+          "source_title": "نموذج اكسل لمتابعة الإيجارات | مستقل",
+          "summary": "Second, independent Mostaql request for a rent-tracking Excel model, per search snippet.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Buildium has no meaningful presence in Saudi Arabia, lacks EJAR compliance, ZATCA integration, and Arabic language support",
+          "url": "https://yarn.com.sa/resources/pms-comparison/",
+          "source_title": "Property Management Software Comparison for Saudi Arabia - Yarn Cloud Technologies",
+          "summary": "Per search snippet (page could not be fetched directly - proxy error): Saudi-focused vendor page states foreign PMS tools like Buildium/AppFolio lack local regulatory integrations (EJAR, ZATCA) and Arabic support, recommending Saudi operators skip them.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Buildium and AppFolio are named as key global players referenced in UAE/Saudi property management software market reports, confirming foreign tools are used/considered in the region without confirmed localization",
+          "url": "https://www.prnewswire.co.uk/news-releases/property-management-software-market-outlook-in-u-a-e-and-saudi-arabia-exclusive-report-by-p-amp-s-intelligence-809041562.html",
+          "source_title": "Property Management Software Market Outlook in U.A.E. and Saudi Arabia - PRNewswire",
+          "summary": "Per search snippet: market report lists Buildium, AppFolio, Rent Manager etc. as key vendors referenced for the KSA/UAE PMS market.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A blog specifically frames 'streamlining Ejar contract renewals through property management software' as a guide for Saudi real estate agencies, implying manual renewal is a known pain point solved today mainly for agency-scale customers",
+          "url": "https://www.osool.estate/en/blog/streamlining-ejar-contract-renewals-through-property-management-software-a-guide-for-saudi-real-estate-agencies",
+          "source_title": "Streamlining Ejar Contract Renewals Through Property Management Software",
+          "summary": "Vendor (Osool) blog targets real estate agencies specifically for Ejar renewal automation, suggesting smaller independent landlords are not the target market of existing enterprise-oriented PM tools (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated market for 'Ejar API Integration Software Development' exists as a custom-dev service category",
+          "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+          "source_title": "Ejar API Integration Software Development in Saudi Arabia (2026 Guide)",
+          "summary": "A vendor markets custom Ejar API integration builds, indicating no simple off-the-shelf affordable option is assumed to exist for smaller players (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        },
+        {
+          "claim": "Ejar registration is described as 'the #1 operational bottleneck for Saudi property managers,' with guides covering the full API flow from auth to bulk registration and rejection-code handling.",
+          "url": "https://yarn.com.sa/resources/ejar-api-integration-developer-guide/",
+          "source_title": "EJAR API Integration: Developer Guide - Yarn Cloud Technologies",
+          "summary": "Vendor developer-guide content describing Ejar registration as the top operational bottleneck for property managers (per search snippet; full page could not be fetched due to a proxy error in this session).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Established platforms (JEWARA, Property Automate) already have direct/approved API integration with Ejar for contract drafting and registration.",
+          "url": "https://propertyautomate.com/news/propgoto-ejar-integration-saudi-arabia",
+          "source_title": "Property Automate receives approval to integrate EJAR",
+          "summary": "Confirms incumbents already hold approved Ejar integrations, targeting larger property managers.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Ejar",
+          "url": "https://www.ejar.sa/ar/faqregulation",
+          "notes": "Mandatory government platform for registering rental contracts — regulatory, not a collections/maintenance tool"
+        },
+        {
+          "name": "RConcept rent management service",
+          "url": "https://rconceptsa.com/rent-management-and-collection-service/",
+          "notes": "Outsourced rent collection/management service for landlords"
+        },
+        {
+          "name": "Sanad",
+          "url": "https://sanadpm.com/",
+          "notes": "Full property management platform — likely priced/scaled for property management companies, not single landlords with 2-5 units."
+        },
+        {
+          "name": "Simaat",
+          "url": "https://simaat.app/",
+          "notes": "Property management app with maintenance features."
+        },
+        {
+          "name": "Buildium",
+          "url": "https://www.buildium.com/",
+          "notes": "US-focused property management SaaS; per Yarn Cloud Technologies snippet, not localized for EJAR/ZATCA/Arabic"
+        },
+        {
+          "name": "AppFolio",
+          "url": "https://capterra.com/compare/47428-92228/Buildium-Property-Management-Software-vs-AppFolio-Property-Manager",
+          "notes": "US property management SaaS; limited KSA-specific tailoring per search snippet"
+        },
+        {
+          "name": "Osool",
+          "url": "https://www.osool.estate/en/blog/streamlining-ejar-contract-renewals-through-property-management-software-a-guide-for-saudi-real-estate-agencies",
+          "notes": "Enterprise-oriented property management platform targeting agencies, not small individual landlords."
+        },
+        {
+          "name": "JEWARA",
+          "url": "https://jewara.com/en/",
+          "notes": "Real-estate OS with direct Ejar API integration, appears enterprise-focused."
+        },
+        {
+          "name": "Property Automate",
+          "url": "https://propertyautomate.com/news/propgoto-ejar-integration-saudi-arabia",
+          "notes": "Received approval for Ejar integration; targets larger portfolios."
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Commission a freelancer for a one-off Excel file, or keep re-editing an old inherited spreadsheet.",
+        "Small landlords likely manage Ejar contract renewals manually through the government portal without dedicated software, or hire a management agency.",
+        "Landlords hire full-service property-management companies (outsourcing the whole problem) or manually track via spreadsheets/WhatsApp reminders.",
+        "Property managers likely use spreadsheets, WhatsApp, and/or separate enterprise ERP modules to bridge EJAR registration and ZATCA e-invoicing gaps left by foreign PMS tools (not directly confirmed by a complaint source, but the localization gap itself is directly stated by a Saudi vendor page)."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND (no confirmed pricing/spend figures for Saudi property managers on PMS tools)",
+        "NO RELIABLE EVIDENCE FOUND for price paid on these specific freelance jobs.",
+        "NO RELIABLE EVIDENCE FOUND for actual amounts spent; only vendor claims of time saved were found.",
+        "NO RELIABLE EVIDENCE FOUND on specific fees; search snippets indicate landlords pay property-management companies for full-service handling but no price was directly confirmed in this session."
+      ],
+      "unknowns": [
+        "Real registration/approval timeline and cost for REGA developer status",
+        "Size of the addressable segment of small independent landlords vs. those who already use full-service firms",
+        "Size of the 'small landlord' segment vs. professional property managers already served by Sanad/Simaat",
+        "Actual price landlords pay full-service property managers vs. what they'd pay for a DIY tool",
+        "Whether existing local competitors (not named in results) already fully solve EJAR/ZATCA integration",
+        "Whether Ejar exposes an API a solo founder could build against, or if this requires manual data entry",
+        "Whether individual landlords would pay recurring SaaS vs. a one-time Excel file (their evident preference)",
+        "Whether Ejar exposes a public API small developers can legally/technically access"
+      ]
+    },
+    {
+      "candidate_id": "C08",
+      "title": "Lightweight field-service management for micro maintenance/facilities companies",
+      "problem": "Small/mid maintenance and facilities companies (AC, MEP, general technical services) struggle to track technician location/status in real time, keep unified per-site maintenance records (technicians restart diagnosis from scratch each visit), measure performance, and issue timely invoices; the only options surfaced are enterprise-grade ERP (Focus Softnet) or unlocalized Western tools (Jobber, Housecall Pro), leaving 1-10 technician businesses underserved.",
+      "customer": "Small/mid maintenance & facilities-management companies (1-15 technicians) in Saudi Arabia",
+      "segment": "B2B",
+      "sector": "Maintenance / Facilities Management SaaS",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S012",
+        "S033",
+        "S051"
+      ],
+      "potential_solution": "A lean, mobile-first, WhatsApp-native field-service tool (job assignment, status updates, per-site history log, auto-generated invoice) targeted at micro operators, priced below both local vendors and enterprise ERP.",
+      "business_model": "Per-technician monthly SaaS fee, undercutting incumbents",
+      "priority": 6,
+      "priority_rationale": "Three independent agents (b2b_hunter, whatsapp_excel_hunter, foreign_model_hunter) converge on the same segment and the same localization/price gap between enterprise ERP and unlocalized Western tools. Held at 6 because evidence is mostly WEAK on actual local incumbent pricing (Mutflex, SaudiSoftware.co) and US pricing benchmarks likely don't reflect KSA willingness to pay.",
+      "open_questions": [
+        "What do Mutflex/SaudiSoftware.co actually charge, and is there room to undercut them?",
+        "Is the 1-5 technician segment large enough and price-sensitive enough to switch tools?",
+        "What real price would KSA micro-operators pay, given US benchmarks (Jobber/Housecall Pro) may not translate?",
+        "What specific WhatsApp-native workflow would beat simply calling the customer directly?"
+      ],
+      "source_agents": [
+        "b2b_hunter",
+        "foreign_model_hunter",
+        "whatsapp_excel_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Maintenance companies face difficulty tracking technician location/status in real time, poor communication between technicians/customers/HQ, and inaccurate performance measurement plus late/incorrect invoicing.",
+          "url": "https://www.rs4it.sa/%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9/",
+          "source_title": "حلول عملية لضمان نجاح متابعة اعمال الصيانة وتحقيق أقصى قيمة",
+          "summary": "Per search snippet: Saudi IT-solutions vendor blog lists these operational gaps for maintenance/operations companies.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Loss of unified maintenance records means technicians may have to start diagnosis from zero on each visit, delaying work and increasing cost.",
+          "url": "https://mutflex.com/blog/article-1783461410831-mrb6vjtb",
+          "source_title": "برنامج متابعة فنيي الصيانة: دليلك مع نظام موتفلكس | موتفلكس",
+          "summary": "Per search snippet: local maintenance-software vendor blog describing the record-fragmentation pain point it sells against.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A property maintenance platform advertises 'before/after photos' and a clear request-to-repair flow as a selling point, implying the default/prior state for many owners is unstructured (phone/WhatsApp-based) reporting.",
+          "url": "https://sanadpm.com/",
+          "source_title": "منصة سند لإدارة الأملاك العقارية",
+          "summary": "Per search snippet, Sanad markets a maintenance request flow with technicians and before/after photos and a payment voucher from report to repair — a structured alternative to the ad hoc WhatsApp/phone process.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Freelance market has requests for building a full home-maintenance/contracting services platform from scratch.",
+          "url": "https://mostaql.com/project/1272199-%D9%85%D8%AA%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D9%85%D9%86%D8%B5%D8%A9-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9-%D9%88%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA",
+          "source_title": "متطلبات تطوير منصة خدمات منزلية ومقاولات | مستقل",
+          "summary": "Requirements request for a home-services/contracting platform, per search snippet — signals demand for structured request handling beyond WhatsApp/phone.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Approximately 38% of HVAC contractors in the UAE and Saudi Arabia use digital dispatch and scheduling software",
+          "url": "https://multitech.sa/how-hvac-field-service-software-agreements-improve-efficiency-in-saudi-buildings/",
+          "source_title": "How HVAC Field Service Software & Agreements Improve Efficiency in Saudi Buildings? - Multitech",
+          "summary": "Per search snippet: a Saudi-based vendor blog cites a ~38% digital-adoption figure for HVAC contractors in UAE+Saudi combined, implying a majority still rely on manual/paper-based scheduling. Methodology of the stat is not verifiable from the snippet alone.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Focus Softnet provides Field Service Management ERP software across major Saudi cities (Riyadh, Jeddah, Dammam, Al-Khobar), and Jobber/Housecall Pro are positioned as Western SMB tools ($19-$79/user/month) without confirmed Saudi localization",
+          "url": "https://www.focussoftnet.com/sa/field-service-management-erp-software",
+          "source_title": "Best Field Service Management System in Saudi Arabia - Focus Softnet",
+          "summary": "Per search snippet: only enterprise ERP vendor found serving Saudi field-service market directly; no lightweight, localized, solo-friendly competitor surfaced.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Mutflex",
+          "url": "https://mutflex.com/blog/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81-%D8%A7%D9%84%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+          "notes": "Saudi vendor selling software specifically for small/mid AC and maintenance companies"
+        },
+        {
+          "name": "SaudiSoftware.co maintenance/operations system",
+          "url": "https://saudisoftware.co/system-for-maintenance-and-operations-companies/",
+          "notes": "Task/technician tracking system for maintenance & operations companies"
+        },
+        {
+          "name": "Asaas",
+          "url": "https://asaas.rent/%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B7%D9%84%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9/",
+          "notes": "Maintenance request management as part of a fuller real-estate platform."
+        },
+        {
+          "name": "Sanad",
+          "url": "https://sanadpm.com/",
+          "notes": "Maintenance ticket + technician + photo flow."
+        },
+        {
+          "name": "Focus Softnet FSM ERP",
+          "url": "https://www.focussoftnet.com/sa/field-service-management-erp-software",
+          "notes": "Enterprise ERP, likely priced/scoped for larger companies, not solo contractors"
+        },
+        {
+          "name": "Jobber",
+          "url": "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/",
+          "notes": "Starts at $19/user/month in the US; no confirmed KSA localization (Arabic, ZATCA, local payments)"
+        },
+        {
+          "name": "Housecall Pro",
+          "url": "https://www.housecallpro.com/",
+          "notes": "Over 200,000 field service professionals globally per its own marketing; starts ~$59/user/month; no confirmed KSA presence"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Tenant/owner communicate issue + photo via WhatsApp; owner calls a technician directly; no ticket history or SLA tracking.",
+        "Many small maintenance operators still coordinate technicians via phone calls/WhatsApp groups and paper job sheets.",
+        "Micro contractors likely coordinate jobs via phone calls and WhatsApp and issue paper/manual invoices (inferred from the digital-adoption gap statistic, not from a direct first-hand complaint)."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND",
+        "NO RELIABLE EVIDENCE FOUND on specific SAR pricing paid by maintenance companies for these tools in this session; multiple local vendors (Mutflex, SaudiSoftware.co) actively sell into this segment, implying a paying market exists.",
+        "NO RELIABLE EVIDENCE FOUND for Saudi-specific spend; US pricing benchmarks only (Jobber $19/user/mo, Housecall Pro ~$59/user/mo) which may not reflect KSA willingness to pay"
+      ],
+      "unknowns": [
+        "Actual differentiation needed to win against established local players",
+        "True size of segment not already covered by Asaas/Sanad/Simaat",
+        "Actual current cost in wasted time/miscommunication — not directly measured",
+        "Whether an existing lightweight local competitor was simply not surfaced by search",
+        "Actual price sensitivity of 1-10 person contractor businesses",
+        "Pricing of existing local competitors (Mutflex, SaudiSoftware.co) — not found",
+        "Whether small owners perceive this as painful enough to pay for vs. just calling a technician",
+        "Whether the smallest operators (1–5 technicians) are underserved/price-sensitive enough for a stripped-down entrant"
+      ]
+    },
+    {
+      "candidate_id": "C09",
+      "title": "SABER import-certificate assistant for small importers/dropshippers",
+      "problem": "Since 1 October 2025, a SABER shipment certificate is mandatory for ALL imports into Saudi Arabia — including previously-exempt 'unregulated' products — with no clearance possible without it, causing delays and storage fees. Small/solo importers and e-commerce dropshippers who previously imported low-risk goods without any certificate are newly and abruptly affected.",
+      "customer": "Small/solo importers, e-commerce dropshippers, and freight forwarders handling smaller shipments",
+      "segment": "B2B",
+      "sector": "Trade Compliance / Customs RegTech",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S080"
+      ],
+      "potential_solution": "A simplified, cheaper self-service web flow for small/solo importers (guided document checklist + application drafting for SASO's SABER platform) undercutting traditional certification-agency fees for low-complexity shipments.",
+      "business_model": "Per-certificate flat fee, or subscription for frequent small importers",
+      "priority": 6,
+      "priority_rationale": "A single signal, but with a hard, dated regulatory trigger (1 Oct 2025 mandate expansion) and STRONG_INDIRECT evidence that established certification agencies (Adnovs, Watheeq, PCAS, Darchang Global) already monetize this exact need — proving the model works. Held at 6 pending independent confirmation and clarity on whether a solo founder can legally offer filing-assistance services without accreditation.",
+      "open_questions": [
+        "Can a solo founder legally offer SABER application assistance without being an accredited body?",
+        "What do incumbent agencies (Adnovs, Watheeq, PCAS) actually charge per certificate?",
+        "Is SASO's own SABER portal already simple enough that small importers skip intermediaries?",
+        "What volume of small/solo importers are newly affected by the Oct 2025 rule change?"
+      ],
+      "source_agents": [
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "From 1 October 2025, no shipment can be imported into Saudi Arabia without a SABER shipment certificate, regardless of whether goods are regulated or unregulated",
+          "url": "https://trans.info/en/saudi-arabia-427865",
+          "source_title": "Saudi Arabia enforces SABER import rule | trans.info",
+          "summary": "Logistics news outlet reporting the blanket SABER certificate mandate for all imports; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        },
+        {
+          "claim": "Without a valid SABER certificate, customs clearance is impossible, causing delays and additional storage costs",
+          "url": "https://adnovs.com/blogs/shipment-certificate-compulsory/",
+          "source_title": "Shipment Certificate is now Compulsory for All Imports",
+          "summary": "Certification agency describing the operational consequences of missing certificates; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Adnovs / Watheeq / PCAS / Darchang Global (certification agencies)",
+          "url": "https://adnovs.com/blogs/saber-mandatory-for-imports-to-saudi-arabia/",
+          "notes": "Multiple established certification/customs agencies already sell SABER filing services — market is already fairly crowded"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Small importers currently pay traditional certification agencies per-shipment fees or risk shipment rejection/delay if unaware of the new blanket rule"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for exact agency fees charged per SABER certificate in this session"
+      ],
+      "unknowns": [
+        "Regulatory question of whether a solo founder can legally offer certificate-filing assistance without being an accredited body",
+        "Whether SASO's own SABER portal is simple enough that small importers don't need an intermediary at all",
+        "Actual per-certificate pricing charged by incumbent agencies"
+      ]
+    },
+    {
+      "candidate_id": "C10",
+      "title": "PDPL compliance self-serve SaaS for SMEs",
+      "problem": "SDAIA has moved into active PDPL enforcement (48 committee decisions in roughly the past year, fines up to SAR 5 million per violation, criminal liability for intentional misuse), with common violations being lack of legal basis for processing, no marketing consent, and missing technical/organizational safeguards — exactly the gaps typical SMEs and startups have, and most have no dedicated legal/compliance function.",
+      "customer": "Saudi SMEs, e-commerce stores and startups handling customer personal data with no dedicated legal function",
+      "segment": "B2B",
+      "sector": "Compliance / Data Privacy RegTech",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S076"
+      ],
+      "potential_solution": "A self-serve PDPL compliance SaaS: privacy-policy generator tailored to Saudi PDPL, consent-banner widget, data-mapping questionnaire, and breach-notification template pack — positioned far below law-firm consulting fees.",
+      "business_model": "Low monthly SaaS fee per business, tiered by data volume/employee count",
+      "priority": 6,
+      "priority_rationale": "Single signal but STRONG_INDIRECT evidence twice over (documented enforcement volume and fine ceiling); real financial risk (up to SAR 5M) is a strong forcing function; a document/widget generator is a MODERATE, buildable MVP. Held at 6 due to lack of independent confirmation and legal-liability risk of a non-lawyer-run 'compliance' product.",
+      "open_questions": [
+        "Is enforcement currently concentrated on large/foreign firms, leaving little urgency for small local SMEs?",
+        "What do SMEs currently pay law firms for PDPL compliance work, if anything?",
+        "What legal liability does a non-lawyer-run compliance tool carry?",
+        "What specific documentation artifacts does SDAIA actually require for an SME-sized business?"
+      ],
+      "source_agents": [
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "SDAIA committees issued 48 enforcement decisions in the past year; fines up to SAR 5 million per violation, doubling for repeat offenses; criminal penalties up to 2 years and SAR 3 million for intentional misuse",
+          "url": "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/",
+          "source_title": "Active Enforcement of Saudi Arabia Privacy Regime: Implications for Businesses",
+          "summary": "Law firm blog summarizing SDAIA's enforcement statistics and the most common compliance failures (no legal basis, no consent for marketing, missing safeguards); seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-05"
+        },
+        {
+          "claim": "Saudi's data protection authority has stepped up enforcement activity",
+          "url": "https://iapp.org/news/a/saudi-arabia-s-data-protection-authority-steps-up-enforcement",
+          "source_title": "Saudi Arabia's data protection authority steps up enforcement | IAPP",
+          "summary": "International Association of Privacy Professionals reporting increased SDAIA enforcement; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "AHYSP / SGC Consulting (law/consulting firms)",
+          "url": "https://ahysp.com/penalties-and-violations-under-saudi-arabias-data-protection-law-what-businesses-must-know/",
+          "notes": "Legal consulting firms selling PDPL compliance advisory, not self-serve SaaS — gap for a cheaper software-first option"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "SMEs either ignore PDPL until fined, or hire expensive law firms for one-off compliance reviews rather than an ongoing affordable tool"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for what SMEs currently pay law firms for PDPL compliance; fine exposure (up to SAR 5M) documented as the driver (per search snippet)"
+      ],
+      "unknowns": [
+        "Actual demand density among Saudi SMEs vs. awareness gap",
+        "Whether SDAIA enforcement so far is concentrated on large firms/foreign companies rather than small local SMEs",
+        "Legal risk of a solo founder selling 'compliance' tooling without being a licensed advisor"
+      ]
+    },
+    {
+      "candidate_id": "C11",
+      "title": "Social-seller formalization onboarding wizard (Maroof/CR)",
+      "problem": "The Saudi E-Commerce Law requires anyone selling online — including via a plain website, app, or social-media account — to register a commercial registration and obtain Maroof certification, disclose full pre-purchase information, honor a 7-day return right, localize data storage, and integrate ZATCA e-invoicing once above the VAT threshold — formalizing a large previously-informal population of Instagram/Snapchat/WhatsApp sellers, with penalties up to SAR 1 million.",
+      "customer": "Informal social-media sellers (Instagram, Snapchat, WhatsApp stores) not yet registered/certified",
+      "segment": "B2C",
+      "sector": "E-commerce / Compliance",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S083"
+      ],
+      "potential_solution": "A guided onboarding wizard/checklist SaaS walking a social-media seller step-by-step through commercial registration, Maroof certification, store setup, and basic Fatoorah invoicing in one sitting.",
+      "business_model": "One-time setup fee or small monthly SaaS fee bundling ongoing compliance reminders",
+      "priority": 6,
+      "priority_rationale": "Single signal but a large addressable population (informal social-media sellers) facing a hard regulatory forcing function and significant penalty exposure; an onboarding wizard is an EASY-MODERATE MVP well within solo-founder reach. Held at 6 pending independent confirmation and uncertainty over whether Maroof's own flow is already simple enough.",
+      "open_questions": [
+        "How large is the population of still-unregistered social-media sellers?",
+        "Is Maroof's own onboarding flow already simple enough to make a paid wizard unnecessary?",
+        "What is actual enforcement intensity against small/individual sellers vs. larger stores?",
+        "Would sellers pay a one-time fee for this, or expect free guidance from Maroof itself?"
+      ],
+      "source_agents": [
+        "market_change_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Whether selling through a website, app, or social-media account, a seller is a service provider subject to the E-Commerce Law and obligated to register on Maroof and disclose required information",
+          "url": "https://origami.sa/en/blog/saudi-ecommerce-law-2026-maroof-compliance/",
+          "source_title": "Saudi E-commerce Law 2026 and Maroof: What Your Store Must Comply With",
+          "summary": "Compliance-guide article explicitly stating social-media sellers fall under the law and must register on Maroof; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Penalties for violating the E-Commerce Law reach SAR 1 million, with possible suspension of the e-commerce activity",
+          "url": "https://saudipedia.com/en/e-commerce-law-in-saudi-arabia",
+          "source_title": "E-commerce Law in Saudi Arabia - Saudipedia",
+          "summary": "Reference encyclopedia entry summarizing penalty scale under the law; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Maroof (official Ministry of Commerce platform)",
+          "url": "https://cloudx.sa/en/blog/requirements-for-online-store-saudi/",
+          "notes": "The mandatory government certification platform itself; third-party guides exist but no all-in-one onboarding wizard found"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Informal sellers either remain unregistered (risking fines/suspension) or piece together commercial registration + Maroof + Salla/Zid setup + Fatoorah invoicing manually via scattered guides"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for what informal sellers currently pay to formalize; SAR 1 million penalty ceiling documents the downside risk (per search snippet)"
+      ],
+      "unknowns": [
+        "Enforcement intensity against small/individual sellers vs. larger stores",
+        "Actual size of the informal social-media seller population still unregistered",
+        "Whether Maroof's own onboarding flow is already simple enough to make a third-party wizard unnecessary"
+      ]
+    },
+    {
+      "candidate_id": "C12",
+      "title": "AI product-listing generator for Salla/Zid merchants",
+      "problem": "Salla/Zid e-commerce merchants repeatedly hire freelancers to manually upload products and write product descriptions to their online stores — a recurring, bulk data-entry task with documented existing spend (~200 per batch, currency unconfirmed).",
+      "customer": "Saudi Salla/Zid store owners (small e-commerce merchants)",
+      "segment": "B2B",
+      "sector": "E-commerce / Catalogue automation",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S073"
+      ],
+      "potential_solution": "An AI tool that takes a supplier spreadsheet/photos and auto-generates SEO-optimized Arabic product titles/descriptions, then bulk-uploads via Salla/Zid's public APIs, replacing the manual step merchants currently outsource.",
+      "business_model": "Per-product or monthly subscription tied to catalogue size",
+      "priority": 6,
+      "priority_rationale": "Single signal but STRONG_INDIRECT + WEAK evidence of existing recurring freelance spend for this exact task; content generation + bulk API upload is an EASY MVP well-suited to a solo founder using existing LLM APIs. Held at 6 due to lack of independent confirmation and risk that Salla/Zid ship this natively.",
+      "open_questions": [
+        "Do Salla/Zid already offer built-in AI description generators that would compete directly?",
+        "What is the typical batch size/frequency of these listing jobs?",
+        "Is the ~200 figure per batch or per product, and in what currency?",
+        "Would merchants trust AI-generated Arabic copy without manual editing?"
+      ],
+      "source_agents": [
+        "ai_opportunity_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Multiple separate paid Mostaql projects request bulk product uploads to Salla stores",
+          "url": "https://mostaql.com/project/1164526-%D8%B1%D9%81%D8%B9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D9%85%D8%AA%D8%AC%D8%B1-%D8%B3%D9%84%D8%A9",
+          "source_title": "رفع منتجات على متجر سلة | مستقل",
+          "summary": "Per search snippet — recurring category of paid work confirming manual catalogue upload is outsourced.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A paid service exists advertising 'add products to Salla/Zid professionally' at a fixed price of 200 (currency unconfirmed)",
+          "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally",
+          "source_title": "إضافة المنتجات لمتاجر سلة و زد - بأفضل سعر 200",
+          "summary": "Per search snippet, a vendor sells this as a packaged service at a stated price point, evidencing existing spend.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Freelance/agency listing services (host-r.sa and similar)",
+          "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally",
+          "notes": "Manual service providers already charge for this — no AI-specific competitor found in this search."
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Merchants pay freelancers/agencies per batch of products, or do it themselves manually one by one in the Salla/Zid dashboard."
+      ],
+      "existing_spend": [
+        "Approx. 200 (currency unconfirmed, likely SAR) per batch per one vendor's listing (per search snippet, WEAK evidence)."
+      ],
+      "unknowns": [
+        "Exact currency/price confirmation",
+        "Whether Salla/Zid already offer built-in AI description generators that would compete directly",
+        "Volume of products per typical request"
+      ]
+    },
+    {
+      "candidate_id": "C13",
+      "title": "Progress-payment (mustakhlas) tracking tool for contractors/subcontractors",
+      "problem": "Contractors and subcontractors face chronic delays receiving payment against progress certificates (مستخلصات), creating cash-flow squeezes; they currently track % completion, amounts due and deductions in manual Excel sheets, using WhatsApp to send photos of completed work as proof for owner/consultant approval, sometimes commissioning freelancers to build custom mustakhlas trackers.",
+      "customer": "Small construction/fit-out contractors and subcontractors, and the owners/consultants who approve their payments",
+      "segment": "B2B",
+      "sector": "Construction / Contracting",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S008",
+        "S030"
+      ],
+      "potential_solution": "A lightweight mobile-first progress-certificate tool: subcontractor logs % complete + photo per line item, auto-generates a shareable PDF/WhatsApp-ready certificate with running totals and deductions, plus an aging/reminder trail for follow-up — cheaper and simpler than a full contracting ERP.",
+      "business_model": "Monthly SaaS subscription per active project or per contractor seat",
+      "priority": 5,
+      "priority_rationale": "Two independent agents (b2b_hunter, whatsapp_excel_hunter) confirm the same pain, with some STRONG_INDIRECT evidence of freelancers being commissioned to build custom trackers. Held at 5 because it's unclear whether subcontractors would pay for a tracking/documentation tool versus simply wanting the money faster (a financing problem, not a software one).",
+      "open_questions": [
+        "Would subcontractors pay for a tracking tool, or do they primarily want faster payment (a financing gap, not a software gap)?",
+        "What SAR amounts and delay lengths are typically involved?",
+        "What are exact freelance-project budgets for custom Excel/mustakhlas builds?",
+        "Would invoice-financing fintech be a better (but harder, higher-barrier) fit than a tracking SaaS?"
+      ],
+      "source_agents": [
+        "b2b_hunter",
+        "whatsapp_excel_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Delayed disbursement of subcontractors' progress payments on government projects leads to accumulated debts with suppliers and workers and liquidity shortages.",
+          "url": "https://www.alriyadh.com/1554507",
+          "source_title": "جريدة الرياض | أزمـة مستخلصات المقاولين.. الحلقة مفقودة بين «مالك المشروع والمموّل والمنفّذ»!",
+          "summary": "Per search snippet: news analysis describes payment-certificate crisis between project owner, financier and contractor causing subcontractor cash-flow breakdown.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Contractors repeatedly complain that late client payments (not lack of planning) are the main cause of project delays, since they cannot buy materials or pay worker wages without cash flow.",
+          "url": "https://mentorksa.com/%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+          "source_title": "أهم مشاكل المقاولات في السعودية وكيفية التعامل معها - Mentor KSA",
+          "summary": "Per search snippet: contractor-focused blog lists delayed payments as a top recurring complaint.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "A freelancer built/sold a system explaining how periodic progress-payment certificates (مستخلصات) work for contractors — implying this is normally tracked manually.",
+          "url": "https://mostaql.com/portfolio/421912-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A9-%D9%88%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84%D9%87%D8%A7",
+          "source_title": "نظام المستخلصات الدورية وطريقة عملها | مستقل",
+          "summary": "Mostaql portfolio item describing a periodic progress-payment (مستخلص) system for contractors, per search snippet — a document recording work value completed to date so owner can release payment.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated contractor-ERP vendor publishes a full guide on 'how to calculate and track progress payment certificates without confusion', indicating this is a recognized pain point in the market.",
+          "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+          "source_title": "مستخلصات المقاولين: طريقة الحساب والمتابعة خطوة بخطوة — Bonyan ERP",
+          "summary": "Vendor blog post targeting contractors confused about calculating/tracking progress payments, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Buildo",
+          "url": "https://buildo.solutions/",
+          "notes": "Full contracting/project management ERP, likely priced for mid/large contractors."
+        },
+        {
+          "name": "Bonyan ERP",
+          "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+          "notes": "Contractor ERP vendor with blog content on this exact pain."
+        },
+        {
+          "name": "Orchida Soft (const13)",
+          "url": "https://orchida-soft.com/ar/const13-ocapv5/",
+          "notes": "Desktop contracting/mustakhlasat accounting software."
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Contractors chase payments manually via phone/email, keep informal spreadsheets of outstanding certificates, or resort to legal claims after non-payment (per Justice-LawHome legal-service page found in search).",
+        "Excel sheet per project + WhatsApp photos of completed work sent to owner/consultant for manual approval; some pay a freelancer once to build a custom Excel template."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND on specific software/staff spend; anecdotal evidence only shows the operational pain, not current tooling spend.",
+        "NO RELIABLE EVIDENCE FOUND for exact SAR amounts; evidence only shows freelancers being commissioned to build custom Excel/mustakhlas systems and full ERPs (Buildo, Bonyan) existing for larger contractors."
+      ],
+      "unknowns": [
+        "No dated/quantified statistic on average delay length or SAR amounts involved",
+        "Whether this is better solved by invoice-financing fintech (higher barrier) than a tracking SaaS",
+        "Size of the small-contractor segment not served by existing ERPs",
+        "Whether subcontractors would pay for a tracking tool vs. simply wanting the money faster",
+        "Exact price contractors pay for custom Excel builds on Mostaql",
+        "Whether small contractors would switch from free Excel to a paid tool"
+      ]
+    },
+    {
+      "candidate_id": "C14",
+      "title": "Arabic/Gulf-dialect transcription & meeting-minutes tool",
+      "problem": "Saudi/Gulf clients pay per-hour for manual Arabic audio transcription (meetings, interviews, lectures) via freelance marketplaces, despite modern ASR tools existing — implying a quality gap or unawareness of AI alternatives for Gulf-dialect audio.",
+      "customer": "Individuals, students, researchers and small companies needing Arabic meeting/lecture transcripts",
+      "segment": "HYBRID",
+      "sector": "Document/audio processing",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S072"
+      ],
+      "potential_solution": "A Gulf-dialect-tuned transcription + structured meeting-minutes generator (speaker labels, action items, Arabic summary) sold as a cheap self-serve tool, undercutting the ~$5/hour freelancer rate while being faster.",
+      "business_model": "Pay-per-audio-minute or monthly subscription",
+      "priority": 5,
+      "priority_rationale": "Single signal with STRONG_INDIRECT/WEAK, undated pricing evidence, but a concrete existing-spend data point (~$5/hour to freelancers) despite mature ASR APIs already existing, suggesting an easy-to-build wedge (wrap existing ASR + dialect tuning). Held at 5 pending independent confirmation and clarity on how much a dialect-tuned tool truly outperforms generic ASR already available to buyers.",
+      "open_questions": [
+        "Is demand dominated by religious/lecture content vs. business meetings (affects positioning)?",
+        "How much better is a dialect-tuned tool than generic Whisper/ASR already accessible to buyers?",
+        "Have buyers already tried and rejected AI transcription tools, and why?",
+        "What volume/frequency of transcription jobs exists in this market?"
+      ],
+      "source_agents": [
+        "ai_opportunity_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Recurring paid requests for Arabic audio transcription (لغة عربية) posted on Mostaql",
+          "url": "https://mostaql.com/project/869037-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9",
+          "source_title": "مطلوب تفريغ صوتي باللغة العربية | مستقل",
+          "summary": "Per search snippet — confirms ongoing demand for human Arabic transcription work.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Freelancers quote roughly $5 per audio hour for Arabic transcription with punctuation/tashkeel formatting",
+          "url": "https://khamsat.com/community/requests/584173-%D8%B7%D9%84%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D9%85%D8%B9-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D9%85-%D9%88%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A8%D8%B9%D8%B6-%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA",
+          "source_title": "طلب تفريغ صوتي (مع الترقيم وتشكيل بعض الكلمات) - خمسات",
+          "summary": "Per search snippet, gives an approximate market rate (~$5/audio hour) for manual Arabic transcription, i.e. existing spend.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [],
+      "foreign_models": [],
+      "workarounds": [
+        "Buyers hire human transcribers on Khamsat/Mostaql at ~$5/audio hour rather than using generic ASR tools, likely because generic Whisper/Google STT handle Gulf dialect and specialized terms poorly."
+      ],
+      "existing_spend": [
+        "~$5 per audio hour paid to freelancers (per Khamsat search snippet, WEAK evidence, undated)."
+      ],
+      "unknowns": [
+        "Whether the demand is dominated by religious/lecture content (per one snippet) vs. business meetings",
+        "Whether buyers already tried and rejected AI transcription tools",
+        "Actual accuracy of modern Arabic ASR on Gulf dialect vs. freelancer output"
+      ]
+    },
+    {
+      "candidate_id": "C15",
+      "title": "Freelancer invoicing + VAT/ZATCA compliance tool for وثيقة العمل الحر holders",
+      "problem": "Freelance-document holders are confused about VAT/ZATCA obligations (when to register, how to issue compliant e-invoices as income grows), and also experience buyers delaying payment after delivery of work with no easy way to enforce/track it.",
+      "customer": "Freelance-document holders (مستقلين بوثيقة العمل الحر) with growing income, working with direct (off-platform) clients",
+      "segment": "HYBRID",
+      "sector": "Freelance tools / Tax compliance",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S094",
+        "S095"
+      ],
+      "potential_solution": "A super-simple guided web app: freelancer enters income, tool tells them if/when they must register for VAT, auto-generates ZATCA-compliant invoices with payment-reminder tracking — positioned specifically for solo freelance-document holders rather than full accounting suites.",
+      "business_model": "Low monthly subscription or pay-per-invoice, cheaper than full accounting software",
+      "priority": 5,
+      "priority_rationale": "Two individual_problem_hunter signals show a distinct customer segment (solo freelance-document holders, not registered shops) from the merchant-focused ZATCA candidate (C01); existing niche tools (fawtar.app, arabtoolbox) hint at a paid market. Held at 5 pending independent confirmation from a second agent and clarity on population size near VAT thresholds.",
+      "open_questions": [
+        "How many freelance-document holders are near/above VAT registration thresholds?",
+        "What do fawtar.app/arabtoolbox actually charge, and are they already adequate?",
+        "How many freelancers work with direct (off-platform) clients vs. exclusively via Mostaql/Khamsat escrow?",
+        "Would freelancers pay recurring SaaS vs. a one-time invoice-generator tool?"
+      ],
+      "source_agents": [
+        "individual_problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "A freelancer posted a community question about buyers delaying payment after service completion; platform explains funds auto-release after 72h if buyer doesn't respond.",
+          "url": "https://khamsat.com/community/general/387001-%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%AA%D8%A3%D8%AE%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%89-%D9%81%D9%89-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
+          "source_title": "مشاكل تأخر المشتري في الدفع بعد انتهاء الخدمة - مجتمع خمسات",
+          "summary": "Per search snippet (WebFetch of the page failed due to proxy error), the thread title and summary indicate a freelancer complaint about buyer payment delay after service delivery; Khamsat's own escrow mechanism auto-releases funds after 72h without buyer action, implying this is a recognized recurring friction point on the platform.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "VAT registration is mandatory above 375,000 SAR/year revenue and optional between 187,500–375,000 SAR; a freelance document does not itself satisfy tax-invoice requirements — separate VAT registration and ZATCA e-invoicing integration are needed.",
+          "url": "https://e-invoice.io/en/%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AF%D9%84%D9%8A%D9%84-%D8%B4%D8%A7%D9%85%D9%84-2/",
+          "source_title": "وثيقة العمل الحر في السعودية: دليل شامل - برنامج الفاتورة الإلكترونية",
+          "summary": "Per search snippet: explains the gap between having a freelance document and being VAT/e-invoicing compliant, implying freelancers need external guidance/tools to become compliant as income rises.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "ZATCA provides official e-invoicing guidance pages, and multiple third-party 'ZATCA invoice generator' tools exist commercially.",
+          "url": "https://arabtoolbox.com/tools/zatca-invoice",
+          "source_title": "فاتورة زاتكا — ZATCA Phase-2 Invoice Generator | arabtoolbox",
+          "summary": "Existence of a dedicated commercial ZATCA-compliant invoice generator tool is indirect evidence that individuals/small freelancers need help producing compliant invoices without full accounting software.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Khamsat/Mostaql escrow system",
+          "url": "https://khamsat.com/",
+          "notes": "Platform-native escrow with 72h auto-release mitigates but doesn't eliminate the pain for off-platform or direct-client work"
+        },
+        {
+          "name": "fawtar.app",
+          "url": "https://fawtar.app/blog/%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1",
+          "notes": "Blog + implied product targeting freelance-document holders needing compliant invoices"
+        },
+        {
+          "name": "arabtoolbox ZATCA invoice generator",
+          "url": "https://arabtoolbox.com/tools/zatca-invoice",
+          "notes": "Simple generator tool, suggests low-cost tooling already being built for this niche"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Freelancers read blog guides, use free/generic invoice templates, or under-report to avoid VAT registration complexity",
+        "Freelancers rely on platform's built-in escrow/auto-release rules; for off-platform direct clients they have no equivalent protection and must chase payment manually"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for direct-client freelancers; on-platform freelancers pay Khamsat/Mostaql commission (not a cash-out fee for this specific pain)",
+        "NO RELIABLE EVIDENCE FOUND on specific pricing individuals pay, but existence of dedicated tools (fawtar.app, arabtoolbox) is indirect evidence of a paid niche"
+      ],
+      "unknowns": [
+        "How many freelancers work with direct (off-platform) Saudi clients vs exclusively via marketplaces",
+        "Size of the freelance-document holder population near/above VAT thresholds",
+        "Whether freelancers would pay for a standalone invoicing/reminder tool vs using free templates",
+        "Whether ZATCA has simplified this for micro-freelancers, reducing the pain",
+        "Actual frequency/severity of non-payment for direct-client freelance work in KSA specifically",
+        "Real pricing of fawtar.app / competitor tools and whether target segment already finds them adequate"
+      ]
+    },
+    {
+      "candidate_id": "C16",
+      "title": "AI-assisted Saudi-market CV/cover-letter generator",
+      "problem": "Job seekers in the Saudi market actively pay freelancers/services (from ~$5 up to full packages) to write professional CVs tailored to Saudi job applications, rather than write their own.",
+      "customer": "Job-seeking individuals (new graduates and career changers) in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "Career services",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S099"
+      ],
+      "potential_solution": "An AI-assisted, Saudi-market-tuned CV/cover-letter generator (ATS-aware, bilingual AR/EN, tailored to GOV/private-sector norms) undercutting $5 freelancers on speed while beating free generic AI tools on localization.",
+      "business_model": "One-time fee per CV (10-30 SAR) or small subscription for multiple tailored versions",
+      "priority": 5,
+      "priority_rationale": "Single signal, but with DIRECT evidence of individuals paying freelancers for this exact task, plus dedicated paid agencies (CV-SA, CVKSA) confirming a real market; EASY MVP using existing LLM APIs. Held at 5 mainly because free generic AI tools (ChatGPT, LambaCV) may have already commoditized this to near-zero willingness to pay.",
+      "open_questions": [
+        "Have free AI tools already commoditized this to near-zero willingness to pay?",
+        "What do CV-SA/CVKSA actually charge, and how do they differentiate?",
+        "Is there a meaningfully different need for GOV vs. private-sector CV formatting in Saudi Arabia?",
+        "What volume of Saudi-specific (vs. generic global) CV demand exists?"
+      ],
+      "source_agents": [
+        "individual_problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "A buyer posted a Mostaql project specifically requesting a CV for job applications in Saudi Arabia.",
+          "url": "https://mostaql.com/project/786867-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D9%84%D9%84%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%B9%D9%84%D9%89-%D9%88%D8%B8%D8%A7%D8%A6%D9%81-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9",
+          "source_title": "سيرة ذاتية للتقديم على وظائف في المملكة العربية السعودية | مستقل",
+          "summary": "Real, live demand-side posting on Mostaql (Saudi/Arab freelance marketplace) for a Saudi-market-specific CV, confirming individuals actively pay for this (fetch to see exact budget failed due to proxy error).",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple dedicated commercial CV-writing services exist specifically for the Saudi market (CV-SA, CVKSA, CV DesignSell) with paid packages.",
+          "url": "https://cv-sa.com/%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9/page-1113353615",
+          "source_title": "سيرة ذاتية احترافية كتابة وتصميم CV للسعودية من CVSA",
+          "summary": "Existence of several dedicated commercial services targeting the Saudi CV market is strong indirect evidence of a paying customer base, though pricing wasn't independently verified this session.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "CV-SA / CVKSA / CV DesignSell / LambaCV",
+          "url": "https://cvdesignsell.com/cv-writing-pricing-packages/",
+          "notes": "Several competing paid CV-writing services already exist for Saudi market, plus free AI CV builders (LambaCV) — market has both paid and free options"
+        },
+        {
+          "name": "Freelancers on Khamsat/Mostaql",
+          "url": "https://khamsat.com/community/requests/785608-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%AE%D8%A8%D9%8A%D8%B1-%D9%83%D8%AA%D8%A7%D8%A8%D8%A9-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D9%88-cv",
+          "notes": "Individual freelancers already fulfilling CV requests at low prices (~$5 per search summary)"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Buyers hire individual freelancers cheaply (~$5) on Khamsat or use free AI tools (LambaCV) instead of paid agencies"
+      ],
+      "existing_spend": [
+        "Individual freelancers reportedly charge as low as $5 per CV per Khamsat search summary; dedicated paid CV agencies also operate (CV-SA, CVKSA) — exact pricing not independently verified this session"
+      ],
+      "unknowns": [
+        "True volume of Saudi-specific CV requests vs generic global demand",
+        "Exact price points of CV-SA/CVKSA and how they compare to freelancer/AI alternatives",
+        "Whether free AI tools (LambaCV, ChatGPT) have already commoditized this to near-zero willingness to pay"
+      ]
+    },
+    {
+      "candidate_id": "C17",
+      "title": "Multi-domain AI consumer/tenant complaint-drafting assistant",
+      "problem": "Consumers and tenants repeatedly have real grievances — gym membership refund refusals, landlord non-registration/rent-freeze disputes on Ejar, MoC-flagged online-store return/exchange violations, delayed/lost shipments — but find official complaint channels (CST, REGA/Najiz, Balagh Tijari, Consumer Protection Association) confusing enough to sustain a whole cottage industry of paid law-firm content explaining how to file each type of complaint.",
+      "customer": "Saudi consumers and tenants with subscription, rental, e-commerce return, or delivery disputes; secondarily small e-commerce merchants flagged for return-policy violations",
+      "segment": "HYBRID",
+      "sector": "Legal-tech / Consumer rights",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S005",
+        "S019",
+        "S021",
+        "S024",
+        "S027",
+        "S078"
+      ],
+      "potential_solution": "An Arabic AI tool where a user describes their dispute type (rental/Ejar, gym/subscription, delivery, e-commerce return) and the tool classifies it, tells them who's responsible under the relevant rules, assembles the right document checklist, and drafts the formal complaint text for the correct channel (Najiz/Ejar/CST/Balagh Tijari/CPA).",
+      "business_model": "Freemium B2C; one-time small fee per generated complaint packet, or lead-gen referral to legal partners",
+      "priority": 4,
+      "priority_rationale": "Six signals across four independent agents (problem_hunter, b2c_hunter x2, complaint_hunter, market_change_hunter) show a consistent pattern, which is a genuine strength; but every merged signal shares the same fundamental weakness: NO payment evidence, since the underlying government channels are free, and there is a real legal/liability boundary risk (unauthorized practice of law) across all of them. Priority reflects strong pattern recognition but weak monetization signal.",
+      "open_questions": [
+        "Would consumers pay for a document-generation tool when the underlying government complaint channel is free?",
+        "What exact fees do law firms charge for these consultations, to anchor pricing?",
+        "Where is the legal/regulatory line between an informational tool and unauthorized practice of law in Saudi Arabia?",
+        "What is the true annual volume of each dispute type (no aggregate statistics found for any merged signal)?"
+      ],
+      "source_agents": [
+        "b2c_hunter",
+        "complaint_hunter",
+        "market_change_hunter",
+        "problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "The Ejar rental platform had to officially clarify which maintenance costs are NOT the tenant's responsibility and that the landlord is legally obligated to fix them — implying widespread confusion/disputes on this point.",
+          "url": "https://dalielsaudi.com/news444576.html",
+          "source_title": "منصة إيجار توضح رسمياً: هذه الصيانات لا يتحملها المستأجر",
+          "summary": "Per search snippet: news piece reporting an official Ejar clarification on tenant vs landlord maintenance responsibility, implying this was a recurring point of dispute.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple separate law firms publish dedicated, monetized guides on 'how to file a complaint against your landlord' and 'how to file a complaint against a real estate company', indicating recurring demand for this specific help.",
+          "url": "https://agl.sa/%D8%B1%D9%81%D8%B9-%D8%B4%D9%83%D9%88%D9%89-%D8%B9%D9%84%D9%89-%D9%85%D8%A7%D9%84%D9%83-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+          "source_title": "كيفية رفع شكوى على مالك العقار في السعودية",
+          "summary": "Per search snippet: law firm article outlining legal process (via Najiz platform) to sue/complain about a landlord, including a 60-day filing window after a dispute arises.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per page title)"
+        },
+        {
+          "claim": "A legal-advice article specifically addresses the scenario of a gym closing a branch and members being refused a refund for the remaining membership value.",
+          "url": "https://justice-lawhome.com/gym-branch-closed-membership-refund-saudi/",
+          "source_title": "استرداد اشتراك النادي الرياضي بعد إغلاق الفرع",
+          "summary": "Legal guidance page dedicated to gym-branch-closure refund disputes, implying this is a recurring real dispute type in Saudi Arabia (per search snippet, not fetched due to budget).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Fitness Time's own terms show freeze fees (e.g. an administrative fee per month of freeze) and non-refundable membership fees after 2 days, illustrating consumer-unfavourable contract terms across the industry.",
+          "url": "https://www.fitnesstime.com.sa/ar-sa/subscription-contract-terms-and-conditions",
+          "source_title": "Subscription Contract Terms & Conditions - Fitness Time",
+          "summary": "Official contract terms page showing freeze fees and non-refundable membership clauses (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "If a landlord refuses to register the tenancy contract on Ejar, the law gives the tenant the right to request registration themselves, and tenants can file a complaint with the Real Estate General Authority (REGA).",
+          "url": "https://www.trowers.com/insights/2025/august/saudi-arabia---landlord-and-tenant",
+          "source_title": "Saudi Arabia - Landlord and Tenant | Trowers & Hamlins law firm",
+          "summary": "Law-firm insight article describing the Ejar registration obligation and the tenant's right to file a complaint if the landlord doesn't comply (per search snippet).",
+          "evidence_type": "WEAK",
+          "published": "2025-08 (per article title)"
+        },
+        {
+          "claim": "Saudi authorities have seized/flagged tens of thousands of unregistered paper lease contracts, showing non-compliance with Ejar registration is widespread.",
+          "url": "https://gulfnews.com/world/gulf/saudi/saudi-authorities-crack-down-on-30000-rental-contract-violations-1.74346662",
+          "source_title": "Saudi authorities crack down on 30,000 rental contract violations",
+          "summary": "News report on a large enforcement action against unregistered rental contracts, implying the underlying tenant-side problem is common (per search snippet).",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Ministry of Commerce processed 137,000+ consumer complaints in Q2 2026, with the largest share related to online stores and violations of exchange/return policies; average complaint processing time 36 hours.",
+          "url": "https://saudigazette.com.sa/article/663032/saudi-arabia/saudi-commerce-ministry-conducts-151000-inspections-and-processes-137000-consumer-reports-in-q2",
+          "source_title": "Commerce Ministry conducts 151,000 inspections in Q2 - Saudi Gazette",
+          "summary": "Search-tool synthesis of the Saudi Gazette article states MoC handled 137,000 consumer reports in Q2 2026, largest category = online store exchange/return disputes. Direct WebFetch of the page failed (proxy error) so this rests on the search snippet/synthesis, not a page I personally read in full.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "At least six independent law-firm/legal-content sites (agl.sa, arablaws.org, lawzeyad.sa, law-jeddah.com, thelawsa.com) publish detailed guides on escalating delivery-company complaints to CST, indicating persistent consumer demand for help navigating the process.",
+          "url": "https://agl.sa/how-to-file-complaint-delivery-company-ksa/",
+          "source_title": "كيف ارفع شكوى على شركة توصيل | الدليل القانوني الشامل - AGL",
+          "summary": "Multiple independent Arabic legal-content sites each publish near-identical step-by-step guides for escalating delivery complaints to CST (contact company first, 5-day wait, ticket number, escalate). The redundancy across independently-run sites is used here as a proxy signal for search demand, not direct proof of payment.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Rents for residential and commercial properties within Riyadh's urban boundaries will not be subject to any increase for 5 years, effective 25 Sept 2025; either party can unilaterally register a contract on Ejar, triggering a 60-day objection window",
+          "url": "https://raghdan.sa/en/news/ejar-tenant-rights-saudi-arabia-2025/",
+          "source_title": "New Ejar System 2025: Your Tenant Rights and Riyadh Rent Freeze Decision",
+          "summary": "Real-estate brokerage explainer describing the rent freeze and new unilateral-registration/objection mechanics; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        },
+        {
+          "claim": "A registered Ejar contract is now treated as an executive bond enforceable directly through the Execution Court without a lawsuit",
+          "url": "https://raghdan.sa/en/news/ejar-platform-contracts-rights-guide-2025/",
+          "source_title": "Complete Guide to Ejar Platform Contract Documentation 2025",
+          "summary": "Explains new enforcement mechanics and dispute-resolution flow integrated into Ejar; seen via search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Ejar (إيجار)",
+          "url": "https://dalielsaudi.com/news444576.html",
+          "notes": "Government rental contract platform; publishes rules but does not resolve individual disputes"
+        },
+        {
+          "name": "Najiz + law firms (AGL, BMS)",
+          "url": "https://bms.sa/%D8%B4%D9%83%D9%88%D9%89-%D8%B6%D8%AF-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/",
+          "notes": "Paid legal consultation to file real-estate complaints"
+        },
+        {
+          "name": "Ejar official help",
+          "url": "https://www.ejar.sa/en/help",
+          "notes": "Official support channel, not a self-serve tenant-advocacy tool"
+        },
+        {
+          "name": "بلاغ تجاري (Balagh Tijari) app / MoC portal",
+          "url": "https://play.google.com/store/apps/details?id=sa.gov.mc.balaghtejari",
+          "notes": "Official free government channel for filing commercial complaints; does not help merchants prevent disputes or help consumers assemble a strong case."
+        },
+        {
+          "name": "CST portal / Balagh Tijari",
+          "url": "https://portalservices.cst.gov.sa/E-Services/Complaint/ComplaintFAQ.aspx",
+          "notes": "Free official channel but process/documentation requirements are non-obvious to average consumers."
+        },
+        {
+          "name": "Ejar (REGA official platform)",
+          "url": "https://rega.gov.sa/en/rega-services/platforms/ejar/",
+          "notes": "The mandatory government platform itself — any tool must work alongside it, not replace it"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Consumers file directly via Balagh Tijari / my.gov.sa; merchants absorb repeated MoC flags/inspections without a systematic compliance tool.",
+        "Consumers who feel wronged must individually research consumer-protection law or hire a lawyer; no self-serve tool exists to generate a formal complaint/demand letter.",
+        "Tenants/landlords either self-research scattered legal-blog content or pay a law firm for a consultation before filing via Najiz.",
+        "Tenants/landlords currently rely on real-estate brokerage blog explainers (Raghdan etc.) or contact REGA directly to understand rights; no visible self-serve tool to check if a rent increase breaches the freeze or to auto-draft an Ejar objection"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for exact consultation fees charged by these law firms, though several explicitly monetize this exact pain via paid legal consultations (implying willingness to pay exists at some price point).",
+        "NO RELIABLE EVIDENCE FOUND for a specific compliance-tool spend; merchants already pay monthly platform fees to Salla/Zid (indirect willingness to pay for storefront SaaS), but no direct evidence they would pay extra for a returns-compliance add-on.",
+        "NO RELIABLE EVIDENCE FOUND for money currently spent by tenants on this specific problem",
+        "NO RELIABLE EVIDENCE FOUND on specific consultation fees; evidence is limited to the existence of paid law-firm content marketing on this exact topic."
+      ],
+      "unknowns": [
+        "Actual volume of tenants affected (only aggregate enforcement numbers found, not tenant-complaint volume)",
+        "Whether REGA's own process is already simple enough to not need a helper tool",
+        "Whether merchants would pay separately for this vs. treating it as a cost of doing business",
+        "Whether a free self-serve tool would cannibalize enough demand to be worth building given thin monetization",
+        "Legal accuracy requirements — risk of this bordering on unauthorised legal advice",
+        "Whether Salla/Zid already offer adequate native return-policy tooling",
+        "Regulatory boundary between informational tool and practicing law",
+        "Actual volume of rent-freeze violation disputes"
+      ]
+    },
+    {
+      "candidate_id": "C18",
+      "title": "Musaned domestic-worker recruitment dispute assistant",
+      "problem": "Households recruiting domestic workers through recruitment offices repeatedly face disputes: offices exceeding the agreed timeframe (often 90+30 days), delivering non-matching workers, refusing deposit refunds, demanding informal fees, or refusing replacement after a worker runs away, forcing families to file formal Musaned complaints.",
+      "customer": "Saudi households hiring domestic/household workers via licensed recruitment offices",
+      "segment": "B2C",
+      "sector": "Household services / Legal-tech",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S002",
+        "S100"
+      ],
+      "potential_solution": "An Arabic AI-assisted guide/chat tool that helps a household correctly classify their recruitment-office grievance, assembles the right documents, tracks the 90+30 day clock, and drafts the Musaned complaint text within the required timeframe.",
+      "business_model": "Per-use fee (B2C) or small flat fee per complaint packet generated",
+      "priority": 4,
+      "priority_rationale": "Two independent agents (problem_hunter, individual_problem_hunter) confirm the same recurring dispute pattern, and paid law-firm content on this exact process implies some willingness to pay for guidance. Held at 4 because the official Musaned/HRSD process is free and government-run, which is a strong monetization headwind, and there is a legal/liability boundary risk similar to C17.",
+      "open_questions": [
+        "Would families pay for a helper tool when the official Musaned process is free?",
+        "What is the actual annual volume of Musaned complaints (no public statistic found)?",
+        "Where is the legal/liability boundary between informational help and regulated legal advice here?",
+        "Has the 2025 Musaned platform update already resolved much of this navigation difficulty?"
+      ],
+      "source_agents": [
+        "individual_problem_hunter",
+        "problem_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "HRSD/Musaned enabled an electronic complaints-intake service specifically for the domestic labor sector, implying complaint volume was significant enough to need a dedicated e-service.",
+          "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+          "source_title": "مساند يُتيح خدمة استقبال الشكاوى في قطاع العمالة المنزلية إلكترونيا",
+          "summary": "Per search snippet: Ministry of HR & Social Development news that Musaned platform launched an electronic complaint-receiving service for the domestic labor sector.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Common grounds for complaints against recruitment offices include exceeding the recruitment period (commonly 90 days), non-matching worker specifications, refusal to refund deposits on legal cancellation, and demanding extra 'express' fees.",
+          "url": "https://agl.sa/complaint-against-recruitment-office-ksa/",
+          "source_title": "كيف ارفع شكوى على مكتب استقدام؟ - الغانم الدولية للمحاماة",
+          "summary": "Per search snippet: law firm article lists recurring recruitment-office grievances and the Musaned complaint procedure (decision within 10 working days).",
+          "evidence_type": "WEAK",
+          "published": "2026 (per page title)"
+        },
+        {
+          "claim": "A separate blog specifically catalogs 'the most prominent problems of recruitment offices and how to overcome them', implying it is a recurring theme people search for.",
+          "url": "https://isteqdamejaz.com/blog/abrz-mshakl-mkatb-alastkdam-okyfy-altghlb-aalyha",
+          "source_title": "أبرز مشاكل مكاتب الاستقدام وكيفية التغلب عليها",
+          "summary": "Per search snippet: vendor blog enumerating recruitment office problems families commonly encounter.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "If a recruitment office delays hiring beyond 90 days, the contract auto-extends 30 days; if the worker still hasn't arrived, the client can choose among specific options (refund/replacement).",
+          "url": "https://www.musaned.com.sa/ar/faqs/hiring-laborers",
+          "source_title": "استقدام عمالة منزلية - Musaned FAQ",
+          "summary": "Official FAQ (per search snippet) confirms a defined but multi-step delay/remedy process, implying friction that families need help understanding.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "A dedicated legal-guide article walks families through 'what to do when the recruitment office delays the worker's arrival' and their rights.",
+          "url": "https://justice-lawhome.com/recruitment-office-delay-refund-musaned-saudi/",
+          "source_title": "تأخر مكتب الاستقدام عن وصول العاملة: ما حقك؟",
+          "summary": "Existence of a dedicated third-party guide explaining rights around Musaned delays is indirect evidence that families find the official process confusing enough to seek outside explanation (article content not independently fetched due to proxy error).",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Musaned (مساند)",
+          "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+          "notes": "Free government platform for filing complaints against recruitment offices/workers"
+        },
+        {
+          "name": "AGL law firm / law-zamzami.com",
+          "url": "https://agl.sa/complaint-against-recruitment-office-ksa/",
+          "notes": "Paid legal consultation services guiding people through the Musaned complaint process"
+        },
+        {
+          "name": "Musaned official portal + 19911 hotline",
+          "url": "https://www.musaned.com.sa/ar/contact-us",
+          "notes": "Official but bureaucratic channel; response times reportedly improved to 5 working days for simple cases in 2025"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Families call the 19911 hotline, read third-party legal guides, or wait out the auto-extension periods",
+        "Households either navigate Musaned's complaint form themselves (often unfamiliar with required evidence/deadlines) or pay a law firm for guidance."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND on specific lawyer consultation fees, but multiple law firms (AGL, law-zamzami.com) publish dedicated paid-service content on this exact process, implying a paid-advice market exists.",
+        "NO RELIABLE EVIDENCE FOUND on willingness to pay; official process is free via HRSD/Musaned"
+      ],
+      "unknowns": [
+        "Legal risk of offering advice adjacent to recruitment/labor regulation without a licence",
+        "Actual volume of Musaned complaints per year (no public statistic found)",
+        "Whether families would pay for a helper tool when the official Musaned process is free and government-run",
+        "Whether households would pay a standalone tool instead of using free Musaned self-service",
+        "Actual current complaint resolution satisfaction after 2025 platform updates",
+        "Legal/liability boundary between 'informational help' and regulated legal advice"
+      ]
+    },
+    {
+      "candidate_id": "C19",
+      "title": "SDAIA Responsible AI compliance assistant for AI/SaaS vendors",
+      "problem": "SDAIA's Responsible AI Policy (public consultation opened April 2026) would, if finalized, require AI vendors selling to government/regulated sectors to classify their systems into risk tiers (critical/high/limited/low) with documentation, testing and monitoring obligations — a compliance burden small Saudi AI/SaaS vendors cannot fill with in-house legal teams.",
+      "customer": "Small/mid Saudi AI and SaaS vendors selling to government entities or regulated sectors (finance, health)",
+      "segment": "B2B",
+      "sector": "AI / GovTech compliance",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "member_signal_ids": [
+        "S087"
+      ],
+      "potential_solution": "A Claude/GPT-powered compliance assistant that ingests a company's AI product description, auto-classifies it against SDAIA's risk tiers, and generates required documentation templates (data governance record, risk assessment, monitoring log) mapped to PDPL/NCA overlaps.",
+      "business_model": "B2B SaaS subscription or per-assessment fee",
+      "priority": 4,
+      "priority_rationale": "Fits the founder's own technical domain and follows a clear regulatory trigger, but this is explicitly FUTURE_HYPOTHESIS — the policy is not yet finalized or enforced, and the near-term addressable market (small AI vendors selling to government) may be too small for a solo founder today. Included as one of the required future-opportunity slots.",
+      "open_questions": [
+        "Will the Responsible AI Policy be finalized into binding law, and on what timeline?",
+        "Will initial enforcement target only large/government-facing vendors, leaving no near-term demand from small startups?",
+        "Are global GRC-for-AI tools (Credo AI, Holistic AI) likely to localize into Saudi first?",
+        "How many small Saudi AI/SaaS vendors currently sell to government/regulated sectors?"
+      ],
+      "source_agents": [
+        "future_opportunity_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "In November 2025 SDAIA released a mandatory AI Adoption Framework for public-sector entities covering data governance, model accountability, transparency, human oversight and risk management.",
+          "url": "https://www.6clicks.com/resources/blog/saudi-arabia-year-of-ai-sdaia-ai-adoption-framework-governance",
+          "source_title": "Saudi Arabia's AI governance: SDAIA framework for 2026",
+          "summary": "Describes mandatory framework and 2026 'Year of AI' designation, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2025-11 (per snippet)"
+        },
+        {
+          "claim": "In April 2026 SDAIA opened public consultation on a draft Responsible AI Policy with a four-tier risk classification (critical/high/limited/low), each carrying documentation, testing and monitoring obligations.",
+          "url": "https://accesspartnership.com/opinion/saudi-arabia-moves-to-operationalise-responsible-ai-governance/",
+          "source_title": "Saudi Arabia moves to operationalise responsible AI governance",
+          "summary": "Describes draft policy risk tiers and consultation timing, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026-04 (per snippet)"
+        },
+        {
+          "claim": "A single AI product may simultaneously fall under SDAIA's Responsible AI Policy, PDPL, SAMA/SFDA rules and NCA cybersecurity controls, making AI governance a procurement requirement rather than optional.",
+          "url": "https://waqi.ai/blog/what-is-sdaia-saudi-arabia-data-ai-authority-explained-business-2026",
+          "source_title": "What Is SDAIA? Saudi Arabia's Data and AI Authority Explained for Business Owners",
+          "summary": "Vendor explainer on multi-regulator overlap, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per snippet)"
+        }
+      ],
+      "existing_solutions": [],
+      "foreign_models": [],
+      "workarounds": [
+        "Larger companies hire compliance consultants/lawyers; small vendors likely currently ignore or manually attempt PDPL/SDAIA paperwork with no dedicated tool (no evidence found of current spend)."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND"
+      ],
+      "unknowns": [
+        "Whether enforcement will initially target only large/government-facing vendors, leaving little demand from small startups",
+        "Global GRC-for-AI tools (Credo AI, Holistic AI etc.) may localize into Saudi first — competitive risk not verified",
+        "Whether the Responsible AI Policy consultation (April 2026) will be finalized into binding law and on what timeline"
+      ]
+    },
+    {
+      "candidate_id": "C20",
+      "title": "Subcontractor/skilled-labour matching for Expo 2030 / World Cup 2034 construction",
+      "problem": "If Expo 2030 (excavation/main works from Q3 2026) and World Cup 2034 construction ramp up as scheduled, small/mid subcontractors and skilled tradespeople will likely face a fragmented, opaque tender/subcontracting market and acute shortages of certified project managers, engineers and skilled labour (Dubai Expo 2020 peaked at 30,000+ onsite contractors), creating demand for tools to match verified subcontractors/workers to giga-project tenders and track compliance documentation.",
+      "customer": "Small/mid subcontractors, independent skilled tradespeople and site labour agencies bidding into Expo 2030/World Cup 2034 supply chains",
+      "segment": "B2B",
+      "sector": "Construction / Events infrastructure",
+      "opportunity_type": "FUTURE_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "member_signal_ids": [
+        "S085"
+      ],
+      "potential_solution": "A lightweight SaaS/marketplace where certified subcontractors and tradespeople list credentials, safety certs and availability, get matched/alerted to tender packages published by main contractors, with automated compliance-document checklist generation.",
+      "business_model": "B2B SaaS subscription for contractors, plus optional lead-fee for matched tender opportunities",
+      "priority": 3,
+      "priority_rationale": "A plausible, large-scale future demand driver (giga-project construction ramp-up) but purely FUTURE_HYPOTHESIS with no current complaint evidence; getting a third-party tool adopted into main-contractor procurement workflows is a significant go-to-market challenge for a solo founder. Included as the second required future-opportunity slot, ranked lowest given the weakest current evidentiary base of the selected 20.",
+      "open_questions": [
+        "Would main contractors allow/require a third-party tool in their procurement/tendering flow?",
+        "Is the announced Q3 2026 construction start actually on track?",
+        "Does an existing intelligence platform (expo2030.co) already serve this SME segment?",
+        "What is the realistic path for a solo founder to gain initial traction/credibility in a giga-project supply chain?"
+      ],
+      "source_agents": [
+        "future_opportunity_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "Expo 2030 Riyadh Company plans to begin construction on key buildings in Q3 2026; pavilion works begin mid-2026; 8M m3 of excavation done and 2km of a planned 7.5km service corridor complete as of mid-2026.",
+          "url": "https://expo2030.co/briefings/expo-2030-pavilion-timeline/",
+          "source_title": "Pavilion Construction Timeline — Expo 2030 Riyadh",
+          "summary": "Construction timeline and progress data per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026 (per snippet)"
+        },
+        {
+          "claim": "Rapid Expo-driven construction requires large numbers of engineers, project managers and skilled workers; comparable Dubai 2020 Expo saw 30,000+ onsite contractors at peak.",
+          "url": "https://tascoutsourcing.sa/en/insights/7-changes-in-the-saudi-construction-sector-driven-by-riyadh-expo-2030",
+          "source_title": "7 Changes in the Saudi Construction Sector Driven by Riyadh Expo 2030",
+          "summary": "HR/workforce outsourcing firm analysis of Expo-driven labour demand, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Demand for 555,000 new residential units by 2030 and 275,000+ new hotel rooms tied to Expo/World Cup pipeline.",
+          "url": "https://www.venturesonsite.com/riyadh-expo-2030-and-fifa-world-cup-2034",
+          "source_title": "Riyadh expo 2030 and fifa world cup 2034 - venturesonsite",
+          "summary": "Construction demand figures for combined Expo/World Cup pipeline, per search snippet.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Expo 2030 — Construction & Project Intelligence Platform (expo2030.co)",
+          "url": "https://expo2030.co/",
+          "notes": "Already tracks Expo construction/tender progress at a macro level; unclear if it does subcontractor-to-tender matching or worker credential verification for SMEs."
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Subcontractors currently rely on personal networks, general contractor pre-qualification lists and manual paperwork to find and win work packages; no evidence yet of a dedicated SME-facing matching tool."
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND (no verified figures on what subcontractors currently spend on tender-sourcing or workforce staffing agencies)"
+      ],
+      "unknowns": [
+        "Whether main contractors would allow/require a third-party tool in their procurement flow",
+        "Actual pace of construction start vs. announced Q3 2026 timeline",
+        "Whether existing expo2030.co or similar intelligence platforms already serve this SME segment"
+      ]
+    }
+  ],
+  "backlog": [
+    {
+      "title": "Vetted tutor marketplace with transparent pricing",
+      "member_signal_ids": [
+        "S017",
+        "S097"
+      ],
+      "reason_not_prioritized": "Crowded space (My Teacher, معلم السعودية, 3oloomonline, mo3alemon, hamadacademy already operating); weak evidence on actual willingness to pay a platform fee on top of tutor rate."
+    },
+    {
+      "title": "Home maintenance (AC/plumbing/electrical) booking marketplace",
+      "member_signal_ids": [
+        "S016"
+      ],
+      "reason_not_prioritized": "Fragmented but already has funded competitors (Serve, GARO); weak evidence and unclear differentiation path for a solo founder."
+    },
+    {
+      "title": "Madrasati parent companion/notification app",
+      "member_signal_ids": [
+        "S018"
+      ],
+      "reason_not_prioritized": "Madrasati is login-gated (technically risky/hard to build against); weak evidence parents would pay for a convenience layer on a free mandatory government platform."
+    },
+    {
+      "title": "Vehicle document/fine reminder app (Istimara, insurance)",
+      "member_signal_ids": [
+        "S020"
+      ],
+      "reason_not_prioritized": "Absher already shows this information for free if users check; weak monetization evidence and no API confirmed for pulling personal data."
+    },
+    {
+      "title": "Pet services aggregator/marketplace",
+      "member_signal_ids": [
+        "S022"
+      ],
+      "reason_not_prioritized": "Weak evidence throughout, unverified market size (pet ownership rate not confirmed), low severity."
+    },
+    {
+      "title": "Wedding/event vendor comparison platform",
+      "member_signal_ids": [
+        "S023"
+      ],
+      "reason_not_prioritized": "Low frequency (one-off purchase per family), weak evidence, existing directory (zafaf.net) may already capture demand."
+    },
+    {
+      "title": "Hidden telecom VAS subscription-charge detector",
+      "member_signal_ids": [
+        "S025"
+      ],
+      "reason_not_prioritized": "Thin monetization potential (small per-charge amounts), and CST regulatory pressure may shrink this pain over time."
+    },
+    {
+      "title": "Multi-platform real-estate listing syndication for small brokers",
+      "member_signal_ids": [
+        "S028"
+      ],
+      "reason_not_prioritized": "Weak evidence on contract terms/pricing and existing agency size affected; unclear differentiation vs existing CRM tools."
+    },
+    {
+      "title": "Installment-plan tracker for retail/service businesses",
+      "member_signal_ids": [
+        "S031"
+      ],
+      "reason_not_prioritized": "Single-agent evidence only (whatsapp_excel_hunter), weak on willingness to pay recurring SaaS vs one-time Excel; possible overlap with regulated BNPL rules if touching payment collection."
+    },
+    {
+      "title": "Supplier/customer ledger tracker for wholesale/retail",
+      "member_signal_ids": [
+        "S035"
+      ],
+      "reason_not_prioritized": "Single-agent evidence, weak differentiation from existing lightweight accounting tools already on the market."
+    },
+    {
+      "title": "Wholesale field sales rep (مندوبين) tracking app",
+      "member_signal_ids": [
+        "S034"
+      ],
+      "reason_not_prioritized": "Weak evidence on incumbent (MEST/Kashier) pricing and unclear size of underserved micro-distributor segment."
+    },
+    {
+      "title": "Home-based tailoring/custom-order tracking mini-app",
+      "member_signal_ids": [
+        "S036"
+      ],
+      "reason_not_prioritized": "Small niche market, weak evidence, customers show a preference for one-off freelance builds over recurring subscriptions."
+    },
+    {
+      "title": "WhatsApp-native collections/dunning workflow tool",
+      "member_signal_ids": [
+        "S042"
+      ],
+      "reason_not_prioritized": "Weak evidence on company-size threshold that would adopt vs. existing ERP AR modules; regulatory constraints on automated debt-collection messaging unresearched."
+    },
+    {
+      "title": "AI document intake/classification tool for construction document controllers",
+      "member_signal_ids": [
+        "S045"
+      ],
+      "reason_not_prioritized": "Weak evidence on whether target contractors already pay for Aconex/Procore-class EDMS; unclear minimum contractor size for adoption."
+    },
+    {
+      "title": "Supplier RFQ/quote-comparison tool for procurement coordinators",
+      "member_signal_ids": [
+        "S046"
+      ],
+      "reason_not_prioritized": "Weak evidence; risk that target companies already use ERP procurement modules (SAP Ariba) making a point tool redundant."
+    },
+    {
+      "title": "Arabic FAQ/status-check deflection bot for call centers",
+      "member_signal_ids": [
+        "S047"
+      ],
+      "reason_not_prioritized": "Weak evidence on what fraction of call volume is truly deflectable; likely competes with enterprise CCaaS platforms already in use."
+    },
+    {
+      "title": "Bilingual proposal+contract+ZATCA-invoice tool for freelancers/consultants",
+      "member_signal_ids": [
+        "S050"
+      ],
+      "reason_not_prioritized": "No direct complaint evidence, purely inferred from a feature gap versus Bonsai/HoneyBook; overlaps partially with C15 freelancer tool."
+    },
+    {
+      "title": "Legal practice management SaaS for solo Saudi lawyers",
+      "member_signal_ids": [
+        "S053"
+      ],
+      "reason_not_prioritized": "Unknown market size and unverified whether solo lawyers even use software vs. manual/paper processes; no evidence of demand."
+    },
+    {
+      "title": "Low-cost ZATCA-compliant POS alternative to Foodics",
+      "member_signal_ids": [
+        "S054"
+      ],
+      "reason_not_prioritized": "Foodics is a dominant, well-resourced incumbent; requires POS hardware/infrastructure which raises MVP difficulty above the founder's preferred EASY/MODERATE tier."
+    },
+    {
+      "title": "Analytics/inventory add-on for Salla/Zid lower-tier merchants",
+      "member_signal_ids": [
+        "S055"
+      ],
+      "reason_not_prioritized": "Weak evidence; likely that merchants simply upgrade Salla/Zid plans rather than buy a separate add-on."
+    },
+    {
+      "title": "School admin tool bridging duplicate Noor/Madrasati data entry",
+      "member_signal_ids": [
+        "S057"
+      ],
+      "reason_not_prioritized": "Weak evidence (single vendor blog anecdote), true scale of the problem beyond marketing claims not established."
+    },
+    {
+      "title": "Flat-fee bundled accounting+POS+payroll for small retailers (Qoyod alternative)",
+      "member_signal_ids": [
+        "S058"
+      ],
+      "reason_not_prioritized": "Pricing evidence sourced from a competitor's marketing comparison, not verified; low confidence in real switching willingness."
+    },
+    {
+      "title": "No-code starter bundle (booking+store+content) for multi-service entrepreneurs",
+      "member_signal_ids": [
+        "S060"
+      ],
+      "reason_not_prioritized": "Based on a single anecdotal freelance project posting; unclear if this is a recurring pattern."
+    },
+    {
+      "title": "E-commerce accounting/marketplace integration middleware (Odoo/Noon/Amazon connectors)",
+      "member_signal_ids": [
+        "S061",
+        "S062",
+        "S066"
+      ],
+      "reason_not_prioritized": "Evidence sourced primarily from a single agent (gap_hunter); biggest unknown is whether Noon/Amazon.sa even expose usable seller-side APIs, which is unverified and could make this unbuildable."
+    },
+    {
+      "title": "WhatsApp-to-any-POS/booking middleware for small service businesses",
+      "member_signal_ids": [
+        "S065"
+      ],
+      "reason_not_prioritized": "Overlaps with C05 booking-tool cluster; unclear whether businesses want an unbundled WhatsApp-only layer vs. a full suite."
+    },
+    {
+      "title": "NPHIES ICD-10-AM/ACHI coding-assist AI for hospital claims",
+      "member_signal_ids": [
+        "S071"
+      ],
+      "reason_not_prioritized": "Requires deep healthcare-data handling (PDPL, hospital EMR/HIS integration), which is a HARD MVP well beyond solo-founder/500-1000 SAR budget constraints per the agent's own note."
+    },
+    {
+      "title": "AI contract-review tool for commercial/employment contracts",
+      "member_signal_ids": [
+        "S074"
+      ],
+      "reason_not_prioritized": "Significant unauthorized-practice-of-law risk in Saudi Arabia; no direct first-hand complaint evidence, only inferred from a feature gap."
+    },
+    {
+      "title": "White Land and Vacant Property Tax calculator",
+      "member_signal_ids": [
+        "S082"
+      ],
+      "reason_not_prioritized": "Very niche customer base (owners of ≥5,000 m² parcels), low frequency (annual, one-time check), unclear if a structured zone-rate dataset is publicly buildable from."
+    },
+    {
+      "title": "Affordable hotel-ops/revenue-management SaaS for independent hotels (World Cup 2034)",
+      "member_signal_ids": [
+        "S086"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; global hotel-ops SaaS market (Cloudbeds, Mews) is crowded, unclear localization gap size, and delivery pace vs. 2034 deadline uncertain."
+    },
+    {
+      "title": "Open-banking-powered SME cash-flow/personal finance app",
+      "member_signal_ids": [
+        "S088"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; unclear whether building any app touching financial account data triggers its own licensing requirement even without holding a SAMA licence directly."
+    },
+    {
+      "title": "CHI health-insurance tier comparison/compliance tool for SME HR",
+      "member_signal_ids": [
+        "S089"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; insurance brokers may already offer this comparison for free, reducing willingness to pay."
+    },
+    {
+      "title": "Employer-childcare nursery matching + Qurrah subsidy tool",
+      "member_signal_ids": [
+        "S090"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; exact employer-size threshold/enforcement mechanism for the childcare mandate is unclear, and Qurrah may already include a matching tool."
+    },
+    {
+      "title": "Booking/itinerary tool for independent tour guides ahead of tourism growth",
+      "member_signal_ids": [
+        "S091"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; unclear whether independent guides can legally operate without a licensed DMC, and international OTAs may already fill this niche."
+    },
+    {
+      "title": "Crowdsourced EV charger-status app + EV-service marketplace",
+      "member_signal_ids": [
+        "S092"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; global apps like PlugShare may already have adequate Saudi coverage, and EV adoption pace is uncertain."
+    },
+    {
+      "title": "Lightweight family-business succession/governance SaaS",
+      "member_signal_ids": [
+        "S093"
+      ],
+      "reason_not_prioritized": "FUTURE_HYPOTHESIS; unclear whether small family-business owners would trust software vs. wanting a human advisor for sensitive ownership matters."
+    },
+    {
+      "title": "End-of-service benefit (مكافأة نهاية الخدمة) dispute checker",
+      "member_signal_ids": [
+        "S098"
+      ],
+      "reason_not_prioritized": "Low frequency (one-time event per employee), existing free calculators (Jisr/ZenHR/Bayzat, GOSI FAQ) already partly serve this need."
+    },
+    {
+      "title": "School bus real-time tracking for smaller private schools",
+      "member_signal_ids": [
+        "S101"
+      ],
+      "reason_not_prioritized": "Established incumbent (Busway) already serves this; B2B2C sales cycle (selling to schools) is a harder go-to-market for a solo founder than direct-to-consumer or self-serve B2B."
+    }
+  ],
+  "discarded": [
+    {
+      "signal_ids": [
+        "S006"
+      ],
+      "reason": "This is a structural labor-market/sponsorship-regulation constraint (نقل كفالة), not a software-solvable gap; the originating agent itself flagged it as 'closer to a structural labor-market constraint' with no direct driver complaint evidence found."
+    },
+    {
+      "signal_ids": [
+        "S039"
+      ],
+      "reason": "Independent event guest-list/RSVP management is already well served by named dedicated competitors (ضيفان/Dhaifan, مناسبتي) with low frequency and low severity; no clear differentiation opportunity for a solo entrant per the originating agent's own assessment."
+    }
+  ],
+  "merge_notes": "Consolidated 101 raw signals into 20 ranked candidates plus a 36-item backlog and 2 discards. Major merges: (1) ZATCA e-invoicing for micro-merchants combined 5 signals from 5 different agents (S001,S007,S069,S075,S096) - the single strongest cross-agent confirmation in the dataset. (2) HR/government-portal compliance fatigue (Qiwa/Mudad/GOSI/Muqeem/iqama) combined 6 signals from 5 agents (S029,S040,S041,S056,S064,S084) into one candidate since they all describe the same underlying multi-portal data-re-entry pain, just observed from different angles (job postings, complaints, regulatory-change analysis). (3) WhatsApp/AI clinic & salon booking combined 6 signals (S003,S010,S037,S038,S049,S070) spanning WhatsApp-bot, voice-AI and commission-based (Fresha) framings of the same no-show/booking-automation pain. (4) Small-landlord/property-management pain combined 5 signals (S009,S032,S048,S059,S063) around Ejar/rent/maintenance tracking. (5) Six weaker single-domain 'AI complaint drafting' signals (S005,S019,S021,S024,S027,S078 for consumer/tenant disputes, kept separate from S002/S100 Musaned given its distinct regulatory framework and higher stakes) were merged into two candidates because they share an identical evidence pattern (WEAK complaint evidence, no payment evidence, free official channel, unauthorized-practice-of-law risk) despite differing customer sub-segments - flagged explicitly in priority_rationale as a pattern-strength/monetization-weakness tradeoff. Kept genuinely distinct segments separate even when superficially similar: e.g., ZATCA-for-shops (C01) vs. ZATCA-for-freelance-document-holders (C15) vs. general SME bookkeeping/reconciliation (C04) were NOT merged because customer identity and buying context differ materially. Selected exactly 2 FUTURE_OPPORTUNITY candidates (C19 SDAIA Responsible AI compliance, C20 Expo2030/World Cup subcontractor matching) from the 9 future-hypothesis signals found, prioritizing the one best matching founder's own technical domain; the other 7 future signals went to backlog since they lack a solo-founder-friendly wedge or have crowded global competitors. Discarded only 2 signals outright: S006 (pure labor-regulation/sponsorship issue, not software-solvable) and S039 (well-served niche with no differentiation path). Maintained segment diversity across the 20 candidates: 15 B2B, 3 B2C, 2 HYBRID; and evidence-strength diversity from EXISTING_MARKET (well-validated, competitive) through to FUTURE_HYPOTHESIS."
+}

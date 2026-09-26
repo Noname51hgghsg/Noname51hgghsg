@@ -1,0 +1,37 @@
+{
+  "run_id": "full_20260926_pass2",
+  "resumed_from": "full_20260926",
+  "mode": "full",
+  "status": "completed",
+  "elapsed_sec": 710.6,
+  "counts": {
+    "agent_processes_launched": 41,
+    "agent_tasks_executed": 41,
+    "distinct_agent_types_run": 21,
+    "agent_tasks_succeeded": 41,
+    "agent_tasks_failed": 0,
+    "agent_tasks_skipped": 0,
+    "agent_cache_hits": 0,
+    "web_searches": 401,
+    "web_fetches": 113,
+    "search_cache_hits": 4,
+    "budget_blocked_tool_calls": 16,
+    "raw_signals": 101,
+    "after_exact_dedup": 101,
+    "candidates_validated": 20,
+    "backlog": 37,
+    "gap_research_requests": 4,
+    "survived_killer": 3,
+    "rejected_by_killer": 17,
+    "undecided": 0,
+    "total_cost_usd": 25.83
+  },
+  "stage_times_sec": {
+    "5_GAP_DETECTION_R1": 0.0,
+    "6_ADDITIONAL_RESEARCH_R1": 170.3,
+    "7_KILLER_FINAL_R1": 223.7,
+    "8_SYNTHESIS": 316.6,
+    "9_REPORT": 0.0
+  },
+  "failures": []
+}

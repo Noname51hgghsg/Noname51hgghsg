@@ -1,0 +1,415 @@
+{
+  "results": [
+    {
+      "candidate_id": "C06",
+      "competitors": [
+        {
+          "name": "Salla (native national-address support)",
+          "url": "https://help.salla.sa/en/article/salla-app-store/d6pgbstt7iyequj9z8tcqx25",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Built into core Salla platform; a dedicated 'short national address' app is listed in Salla's App Store (free/bundled per search snippet, exact price not confirmed)",
+          "arabic_support": "YES",
+          "saudi_integrations": "National Address short-code natively required at checkout per search snippet ('Salla supports the national address natively')",
+          "strengths": "Already the merchant's e-commerce platform, zero extra integration friction, large existing merchant base",
+          "weaknesses": "Native feature may only validate format, not proactively chase customers via WhatsApp or flag COD risk pre-dispatch — not confirmed either way"
+        },
+        {
+          "name": "Zid (national address requirement at checkout)",
+          "url": "https://help.zid.sa/national-address/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Built into core Zid platform (no separate fee identified)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Checkout blocks order completion without abbreviated National Address per Zid help-center snippet",
+          "strengths": "Native enforcement already prevents incomplete addresses from reaching couriers",
+          "weaknesses": "Unclear if it helps with COD-cancellation reduction or pre-dispatch WhatsApp confirmation specifically"
+        },
+        {
+          "name": "Saudi Address Pro",
+          "url": "https://saudiaddresspro.com/",
+          "hq_country": "Unknown (site could not be fetched — proxy error)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN — page could not be fetched in this session",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Self-described 'Address Autocomplete Widget for E-commerce | TGA 2026 Ready' per search-result title, implying direct National Address (TGA/short-code) compliance targeting",
+          "strengths": "Purpose-built, branded specifically around the 2026 TGA mandate — a direct, dedicated competitor to the proposed plugin",
+          "weaknesses": "Unknown pricing/traction; could not confirm marketplace listing or review count"
+        },
+        {
+          "name": "Salasa",
+          "url": "https://salasa.co/blog/national-address-mandate-2026-a-full-faq-guide-for-merchants-consumers/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Publishes detailed National Address mandate guidance; likely offers merchant shipping/address tooling",
+          "strengths": "Already positioned as a trusted explainer/authority on the mandate for merchants",
+          "weaknesses": "Not confirmed to offer a checkout-embedded validation plugin vs. just content/guidance"
+        },
+        {
+          "name": "Shipsy",
+          "url": "https://shipsy.io/blogs/last-mile-delivery-solution-in-saudi-arabia/",
+          "hq_country": "India/UAE (regional last-mile tech)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN — enterprise-tier, likely priced for large shippers",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Last-mile delivery/logistics platform serving Saudi enterprise shippers",
+          "strengths": "Full logistics-tech suite for large 3PLs/enterprises",
+          "weaknesses": "Not aimed at small Salla/Zid sellers; enterprise pricing/onboarding"
+        }
+      ],
+      "market_state": "COMPETITIVE",
+      "gap_description": "Both Salla and Zid already natively require/validate the National Address short-code at checkout (per their own help docs), and at least one dedicated third-party widget (Saudi Address Pro) already markets itself as 'TGA 2026 Ready'. So the core address-validation piece looks largely covered at the platform level. The remaining, less-covered gap is the COD-specific workflow: a pre-dispatch WhatsApp confirmation step that flags COD orders with weak/incomplete address data or high-cancellation-risk customers before handoff to the courier — none of the found competitors confirm doing this specifically.",
+      "differentiation_angle": "Do not compete on address-field validation (Salla/Zid/Saudi Address Pro likely already own this). Instead build a thin WhatsApp-native pre-dispatch confirmation + COD-risk-flagging layer that plugs into Salla/Zid via their app marketplace/webhooks, positioned purely around reducing failed-delivery/COD-cancellation cost rather than the (likely already-solved) compliance checkbox.",
+      "summary": "Search evidence shows Salla and Zid already natively enforce the National Address short-code at checkout, and a dedicated competitor (Saudi Address Pro) already brands itself around the exact 2026 TGA mandate. This means the literal 'address validation plugin' idea is COMPETITIVE-to-crowded at the platform level. A narrower WhatsApp COD-confirmation/risk-flagging angle was not found to be directly served by any competitor and remains a plausible differentiation, but this narrower claim has weaker direct evidence."
+    },
+    {
+      "candidate_id": "C07",
+      "competitors": [
+        {
+          "name": "Sanad (sanadpm.com)",
+          "url": "https://sanadpm.com/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Monthly/yearly subscription packages, VAT-inclusive, but exact SAR figures are 'announced within the platform' — not published openly per search snippet",
+          "arabic_support": "YES",
+          "saudi_integrations": "Maintenance ticket flow with technician assignment and before/after photos; Ejar/ZATCA integration not confirmed",
+          "strengths": "Full property-management feature set (maintenance, likely rent tracking) already live in Saudi market",
+          "weaknesses": "Opaque public pricing suggests a sales-led, possibly agency/portfolio-oriented product rather than instant self-serve for a 2-5 unit landlord"
+        },
+        {
+          "name": "Simaat",
+          "url": "https://beta.simaat.sa/?lang=en",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN — not found in search results",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Tenant/lease tracking, maintenance requests, rent collection, financial ops per Crunchbase/CBInsights company description",
+          "strengths": "Venture-tracked (Crunchbase/CBInsights listed) property platform with financial-ops features",
+          "weaknesses": "No public pricing found; unclear targeting of micro-landlords vs. management companies"
+        },
+        {
+          "name": "Osool",
+          "url": "https://www.osool.estate/en/blog/streamlining-ejar-contract-renewals-through-property-management-software-a-guide-for-saudi-real-estate-agencies",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Ejar contract renewal automation",
+          "strengths": "Explicit Ejar-renewal automation feature",
+          "weaknesses": "Content explicitly targets 'real estate agencies,' signalling enterprise/agency focus, not solo landlords"
+        },
+        {
+          "name": "JEWARA",
+          "url": "https://jewara.com/en/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Approved direct Ejar API integration for contract drafting/registration",
+          "strengths": "Confirmed official Ejar API approval — a real regulatory/technical moat",
+          "weaknesses": "Positioned as a full real-estate OS, likely enterprise-priced/scoped beyond a 2-20 unit landlord's needs"
+        },
+        {
+          "name": "Property Automate",
+          "url": "https://propertyautomate.com/news/propgoto-ejar-integration-saudi-arabia",
+          "hq_country": "Regional/global PropTech vendor",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Approved Ejar integration",
+          "strengths": "Ejar approval, larger platform credibility",
+          "weaknesses": "Targets larger portfolios per candidate's own evidence"
+        },
+        {
+          "name": "Nazeel",
+          "url": "https://nazeel.net/en/",
+          "hq_country": "Saudi Arabia (per search listing)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN — not verified this session",
+          "arabic_support": "YES",
+          "saudi_integrations": "UNKNOWN — appears oriented toward short-term-rental/hospitality property management ('first property management software') rather than long-term Ejar leases; not confirmed",
+          "strengths": "Established brand appearing in property-management-software search results",
+          "weaknesses": "Focus/segment not confirmed to overlap with long-term micro-landlord Ejar use case"
+        },
+        {
+          "name": "Buildium",
+          "url": "https://www.buildium.com/",
+          "hq_country": "USA",
+          "serves_saudi": "NO",
+          "pricing": "US-market SaaS pricing (not localized for KSA per prior evidence)",
+          "arabic_support": "NO",
+          "saudi_integrations": "None confirmed — explicitly lacks Ejar/ZATCA per Yarn Cloud snippet",
+          "strengths": "Mature, feature-rich global PMS",
+          "weaknesses": "No Arabic, no Ejar/ZATCA — unusable for KSA compliance needs"
+        },
+        {
+          "name": "AppFolio",
+          "url": "https://www.appfolio.com/pricing",
+          "hq_country": "USA",
+          "serves_saudi": "NO",
+          "pricing": "US pricing tiers (own pricing page exists but KSA relevance not confirmed)",
+          "arabic_support": "NO",
+          "saudi_integrations": "None confirmed",
+          "strengths": "Established US PMS with public pricing page",
+          "weaknesses": "Not localized for Saudi regulatory requirements"
+        }
+      ],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "Multiple Saudi-built property-management platforms exist (Sanad, Simaat, Osool, JEWARA, Property Automate) with maintenance/Ejar/rent-tracking features, but none publish transparent self-serve pricing, and the ones with explicit positioning (Osool, JEWARA, Property Automate) target real-estate agencies or larger portfolios rather than an individual landlord with 2-20 units. Meanwhile freelance-market evidence (two separate Mostaql requests for basic Excel rent trackers) shows real unmet demand for something simpler than these platforms.",
+      "differentiation_angle": "Position explicitly as the cheapest, simplest, no-sales-call, self-serve option for the sub-20-unit landlord segment that incumbents' agency-first pricing/sales motion (opaque pricing, likely requiring a demo call) does not serve — instant sign-up, transparent low monthly price, WhatsApp reminders instead of a full ERP-style dashboard.",
+      "summary": "Several credible Saudi-built PM platforms already cover Ejar/maintenance/rent-tracking, but their pricing is not public and their marketing language (agencies, portfolios) suggests they are not optimized or priced for a 2-20 unit independent landlord. This is a WEAK_MARKET — real competitors exist but a clear underserved, price-sensitive micro-landlord niche is plausible, evidenced independently by Mostaql freelance requests for basic Excel rent-tracking tools."
+    },
+    {
+      "candidate_id": "C08",
+      "competitors": [
+        {
+          "name": "Mutflex",
+          "url": "https://mutflex.com/pricing",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Offers 'Mutflex Pro' and 'Mutflex Catalog' packages with a 2-month free trial and unlimited users per plan; exact SAR price not retrievable (pricing page could not be fetched — proxy error)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Targets AC/manufacturing/installation/contracting sectors specifically per its own blog content; maintenance contract renewal, visit scheduling, invoicing",
+          "strengths": "Explicitly targets small/mid AC and maintenance companies in Saudi with sector-specific content marketing",
+          "weaknesses": "Unclear if it offers real-time technician GPS/status tracking specifically, vs. contract/invoice-centric features; pricing not transparent from search"
+        },
+        {
+          "name": "SaudiSoftware.co maintenance system",
+          "url": "https://saudisoftware.co/system-for-maintenance-and-operations-companies/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Task/technician tracking system",
+          "strengths": "Direct competitor for technician/task tracking",
+          "weaknesses": "Pricing and technician-count fit for micro (1-10) operators unconfirmed"
+        },
+        {
+          "name": "Serve.sa (سيرف)",
+          "url": "https://serve.sa/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Home maintenance marketplace connecting customers to certified technicians",
+          "strengths": "Established consumer-facing maintenance marketplace",
+          "weaknesses": "This is a demand-side marketplace (customer-to-technician), not a back-office tool for a maintenance company to manage its own technicians — different product category from the candidate's B2B proposal"
+        },
+        {
+          "name": "Maaloom (معلوم)",
+          "url": "https://maalloom.com/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Real-time order tracking, repair warranty, certified technicians",
+          "strengths": "Live order tracking feature already exists in a consumer-facing app",
+          "weaknesses": "Consumer marketplace model, not a B2B SaaS for maintenance-company owners to run their own crews"
+        },
+        {
+          "name": "Sianaplus (صيانة بلس)",
+          "url": "https://sianaplus.com/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "WhatsApp-based fault reporting for cost estimates",
+          "strengths": "Already WhatsApp-native for the customer-facing intake step",
+          "weaknesses": "Consumer marketplace, not an internal ops/dispatch tool for a maintenance company"
+        },
+        {
+          "name": "Focus Softnet FSM ERP",
+          "url": "https://www.focussoftnet.com/sa/field-service-management-erp-software",
+          "hq_country": "UAE/regional ERP vendor",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN — enterprise ERP, likely priced beyond solo/micro operators",
+          "arabic_support": "YES",
+          "saudi_integrations": "Field service ERP module",
+          "strengths": "Full enterprise feature set across major Saudi cities",
+          "weaknesses": "Enterprise ERP pricing/complexity unsuitable for 1-15 technician businesses"
+        },
+        {
+          "name": "Jobber",
+          "url": "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/",
+          "hq_country": "Canada",
+          "serves_saudi": "UNKNOWN",
+          "pricing": "US/global pricing (~$19+/user/month per prior evidence); no confirmed KSA/Arabic version found this session",
+          "arabic_support": "NO",
+          "saudi_integrations": "None confirmed",
+          "strengths": "Purpose-built for sole proprietors/small teams up to ~30 people, closest functional match globally",
+          "weaknesses": "No confirmed Saudi presence, Arabic UI, or local payment/ZATCA support"
+        },
+        {
+          "name": "Housecall Pro",
+          "url": "https://www.housecallpro.com/",
+          "hq_country": "USA",
+          "serves_saudi": "UNKNOWN",
+          "pricing": "US pricing (~$59+/month per prior evidence)",
+          "arabic_support": "NO",
+          "saudi_integrations": "None confirmed",
+          "strengths": "200,000+ global users, mature product",
+          "weaknesses": "No confirmed KSA localization"
+        }
+      ],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "The Saudi maintenance-app landscape found is split into two groups: (1) consumer-facing marketplaces (Serve, Maaloom, Sianaplus) that connect end-customers to technicians, and (2) a couple of B2B vendors (Mutflex, SaudiSoftware.co) with technician/contract-tracking features but opaque pricing and unconfirmed real-time GPS/status-tracking depth. Neither confirmed local vendor was shown to specifically combine live technician location/status + unified per-site history + WhatsApp-native workflow + auto-invoicing at a micro-operator price point; Western tools (Jobber/Housecall Pro) are not confirmed to be localized for KSA at all.",
+      "differentiation_angle": "Target the specific 1-10 technician operator explicitly excluded by both the consumer marketplaces (which serve end customers, not operators) and Mutflex/Focus Softnet (contract/ERP-oriented or enterprise-priced) — a bare-bones WhatsApp-native job-status + one-tap invoice tool priced per-technician well below enterprise ERP.",
+      "summary": "No confirmed local competitor precisely matches the candidate's proposed lightweight, technician-tracking, WhatsApp-native tool for micro (1-15 tech) maintenance operators; existing local players either serve consumers (marketplaces) or larger/contract-focused operations (Mutflex, Focus Softnet) with pricing not publicly confirmed. This looks like a WEAK_MARKET with real but imperfectly-matched incumbents, not NO_SOLUTION, since adjacent B2B tools (Mutflex, SaudiSoftware.co) do exist and could expand into this exact niche."
+    },
+    {
+      "candidate_id": "C09",
+      "competitors": [
+        {
+          "name": "Adnovs Global",
+          "url": "https://adnovs.com/saber-services/",
+          "hq_country": "Unknown (certification agency)",
+          "serves_saudi": "YES",
+          "pricing": "Not directly confirmed; base government fees are ~SAR 350-402.5 (shipment cert) / ~SAR 500-575 (product cert) excl. VAT, plus conformity-assessment fees of SAR 1,500-3,000 per product from SASO-approved bodies, per search snippets",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "SABER/SASO platform filing",
+          "strengths": "Established SABER-specific service provider with dedicated services page",
+          "weaknesses": "Pricing not transparently published; likely still requires manual back-and-forth"
+        },
+        {
+          "name": "Fahes (فاحص)",
+          "url": "https://fahes.com.sa/en/saber-certificate/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN exact figures; page dedicated to 'cost, validity & how to get it'",
+          "arabic_support": "YES",
+          "saudi_integrations": "SABER filing",
+          "strengths": "Saudi-based, dedicated SABER content/service page",
+          "weaknesses": "Pricing not confirmed from snippet"
+        },
+        {
+          "name": "Tabseer",
+          "url": "https://tabseer.co/en/what-is-a-saber-certificate/",
+          "hq_country": "Unknown",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "SABER guidance/filing",
+          "strengths": "2026-dated guide content, appears actively maintained",
+          "weaknesses": "Pricing/service depth unconfirmed"
+        },
+        {
+          "name": "Verger Group",
+          "url": "https://verger-group.com/what-is-the-cost-of-a-saber-certificate-in-2025/",
+          "hq_country": "Unknown",
+          "serves_saudi": "YES",
+          "pricing": "Publishes a detailed cost breakdown article (2025/2026)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "SABER certification services",
+          "strengths": "Transparent published cost-guide content, likely used for SEO lead-gen",
+          "weaknesses": "N/A"
+        },
+        {
+          "name": "Instacertify, Export2Gulf, Atoney, XDS Solutions, Markek Certifications, JJR (China)",
+          "url": "https://instacertify.com/saber",
+          "hq_country": "Multiple (regional/international certification agencies)",
+          "serves_saudi": "YES",
+          "pricing": "Total certification typically cited as $3,000-$10,000 depending on product complexity (includes testing/consultancy beyond base government fees), per search snippet aggregation",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "SABER/SASO filing services",
+          "strengths": "Large number of established, actively-marketing agencies already compete for this exact service",
+          "weaknesses": "N/A — this breadth itself is the competitive risk"
+        }
+      ],
+      "market_state": "SATURATED",
+      "gap_description": "At least 8-10 distinct certification agencies (Adnovs, Fahes, Tabseer, Verger Group, Instacertify, Export2Gulf, Atoney, XDS Solutions, Markek, plus China-based JJR) were found actively marketing SABER certificate services in Saudi Arabia, many with dedicated, SEO-optimized cost-guide content already targeting the exact 'how much does SABER cost' query a small importer would search. Base government fees are already cheap (SAR ~350-575); the real cost driver is third-party conformity testing (SAR 1,500-3,000+ per product), which is a regulated/testing-lab function a solo founder cannot easily undercut or disintermediate.",
+      "differentiation_angle": "A pure self-service 'guided checklist + application drafting' layer could theoretically undercut agencies on the paperwork/coordination fee (not the mandatory testing fee), but given the sheer number of already-established, SEO-savvy competitors covering this exact query space, a solo founder would face steep customer-acquisition costs; differentiation would need to be radically cheaper/faster UX plus arabic-first WhatsApp support, not a new feature.",
+      "summary": "This market is SATURATED: many established certification agencies already compete on price/content for SABER services, and much of the cost is an unavoidable regulated testing fee rather than paperwork friction a software tool could remove. Regulatory-accreditation status for filing is also an open, unresolved legal question for a solo founder per the candidate's own open_questions."
+    },
+    {
+      "candidate_id": "C10",
+      "competitors": [
+        {
+          "name": "Enzuzo",
+          "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+          "hq_country": "Canada",
+          "serves_saudi": "YES",
+          "pricing": "Starter ~$7-9/month, Growth ~$22/month, Agency/Enterprise from ~$59-79/month (billed yearly, per search snippet); free plan available",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Has a dedicated Saudi Arabia PDPL page with cookie-consent banners, DSAR management, website scanning, and privacy-policy generation branded specifically for PDPL",
+          "strengths": "Already a live, cheap, self-serve global SaaS with a PDPL-specific landing page — very close match to the candidate's proposed product",
+          "weaknesses": "Global generic tool; Arabic-first UX, SDAIA-specific breach-notification templates, and local payment/support not confirmed"
+        },
+        {
+          "name": "CookieHub",
+          "url": "https://www.cookiehub.com/pdpl",
+          "hq_country": "Sweden/EU (per typical CMP vendor origin, not directly confirmed)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN exact tiers for this session",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Dedicated PDPL consent-management page (cookie consent, DSAR, compliance checking, policy generation)",
+          "strengths": "Purpose-built consent management platform with an explicit PDPL page",
+          "weaknesses": "Generic global tool, not Saudi-specific localization confirmed"
+        },
+        {
+          "name": "TermsFeed",
+          "url": "https://www.termsfeed.com/blog/saudi-arabia-personal-data-protection-law-pdpl/",
+          "hq_country": "USA",
+          "serves_saudi": "YES",
+          "pricing": "Self-serve privacy-policy generator, low-cost per prior industry knowledge (not fetched this session)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "PDPL-specific policy generator page",
+          "strengths": "Well-known, cheap self-serve policy generator already covering PDPL",
+          "weaknesses": "Generic template tool, not KSA-enforcement-process-specific (e.g., SDAIA registration/breach workflow)"
+        },
+        {
+          "name": "SecureLink",
+          "url": "https://www.securelink.sa/pdpl-compliance-saudi-arabia/",
+          "hq_country": "Saudi Arabia (per .sa domain)",
+          "serves_saudi": "YES",
+          "pricing": "Consulting/service-based, not self-serve SaaS",
+          "arabic_support": "YES",
+          "saudi_integrations": "PDPL assessment, documentation, policy development, technical controls consulting",
+          "strengths": "Local, Saudi-based, presumably understands SDAIA specifics",
+          "weaknesses": "Consulting-led (expensive, human-hours based), not an affordable self-serve product — this is the gap the candidate targets"
+        },
+        {
+          "name": "VeraSafe",
+          "url": "https://verasafe.com/advisory-and-audit/saudi-arabia-pdpl-compliance/",
+          "hq_country": "USA/Ireland (global privacy advisory)",
+          "serves_saudi": "YES",
+          "pricing": "Advisory/audit services (not self-serve)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "PDPL advisory and audit",
+          "strengths": "Established global privacy-advisory brand",
+          "weaknesses": "Consulting model, not a low-cost SaaS"
+        }
+      ],
+      "market_state": "COMPETITIVE",
+      "gap_description": "Contrary to the candidate's framing that only expensive law firms/consultants exist, several cheap, self-serve global SaaS tools (Enzuzo, CookieHub, TermsFeed) already publish PDPL-specific landing pages offering exactly the proposed feature set (privacy-policy generator, consent banners, DSAR tooling) at $7-79/month. The remaining gap is Arabic-first UX and Saudi-specific process depth (SDAIA registration steps, breach-notification workflow matching actual enforcement patterns, data-mapping questionnaires tuned to PDPL's specific legal-basis/marketing-consent failure modes) — none of the found tools were confirmed to have Arabic support or SDAIA-specific workflow depth.",
+      "differentiation_angle": "Do not compete as a generic 'privacy policy generator' (Enzuzo/CookieHub/TermsFeed already do this cheaply and globally). Differentiate narrowly on Arabic-first UX, PDPL/SDAIA-specific document templates (not generic GDPR-style ones relabeled), and guidance mapped directly to SDAIA's documented common violations (no legal basis, no marketing consent, missing safeguards) — a local, cheaper, more specific alternative to both global generic tools and expensive local consultants.",
+      "summary": "This candidate's premise (only expensive consultants exist) is only partly supported — global cheap self-serve compliance SaaS already has dedicated PDPL pages, making this COMPETITIVE rather than a clean gap. A defensible niche may remain in Arabic-first, SDAIA-specific depth, but this is a narrower and less proven angle than originally framed."
+    }
+  ],
+  "queries_used": [
+    "Salla app marketplace address validation national address app",
+    "Zid تطبيق التحقق العنوان الوطني السعودي",
+    "Sanad property management pricing السعر منصة سند",
+    "Simaat property management app pricing Saudi",
+    "Mutflex برنامج الصيانة السعر اشتراك",
+    "SABER certificate agency fee price Saudi shipment certificate cost",
+    "(failed fetch) https://saudiaddresspro.com/",
+    "(failed fetch) https://mutflex.com/pricing",
+    "PDPL compliance software SaaS Saudi Arabia privacy policy generator self-serve",
+    "\"سند\" OR \"Sanad\" property management أسعار الباقات إدارة أملاك صغيرة",
+    "Jobber Housecall Pro Saudi Arabia field service app Arabic small business",
+    "(retry, failed) https://saudiaddresspro.com/",
+    "Enzuzo pricing PDPL Saudi Arabia plan cost per month",
+    "Adnovs OR Watheeq SABER certificate service fee price SAR",
+    "شركة صيانة تطبيق واتساب تتبع الفنيين السعودية صغيرة"
+  ],
+  "limitations": [
+    "WebFetch tool failed with 'proxy refused the connection' on all 3 attempts (saudiaddresspro.com x2, mutflex.com/pricing x1) — all competitor pricing/feature data for those two sites is limited to search-result snippets only, not verified page content.",
+    "Could not confirm exact SAR pricing for Sanad, Simaat, Osool, JEWARA, Property Automate, Mutflex, SaudiSoftware.co, or most SABER agencies — many Saudi B2B vendors do not publish pricing publicly and require a sales contact/demo.",
+    "Arabic-language support could not be confirmed for several global tools (Enzuzo, CookieHub, TermsFeed) since no page fetch was possible within the remaining budget.",
+    "Search budget (14 searches) was allocated roughly 2-3 per candidate; deeper competitor discovery (e.g., checking Salla/Zid App Store listing pages directly, or additional SABER/PDPL local vendors) was not exhaustive.",
+    "Could not verify whether Salla's native national-address app and Saudi Address Pro are the same feature/overlap, or independent competing solutions, since neither could be fetched directly.",
+    "No access to gated platforms (LinkedIn, X/Twitter, Instagram) that might reveal additional competitor marketing or customer complaints for any candidate."
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "results": [
+    {
+      "candidate_id": "C08",
+      "answers": [
+        {
+          "question": "Actual pricing of Mutflex/SaudiSoftware.co/Daftra's maintenance module — not confirmed, needed to know if a cheaper entrant is even possible",
+          "finding": "PARTIAL",
+          "answer": "Could not get a maintenance-module-specific price for any of the three. What was found: (1) Daftra's general ERP plans (which include the maintenance/support-center module as one of many verticals, not a separate SKU) were reported in aggregator search snippets as Advanced Plan ≈270 SAR/month and Unlimited Plan ≈350 SAR/month, with a top 'Business' tier requiring a sales quote — this came from a search-engine summary of 3rd-party listings (TrustRadius/Zoftware/Capterra), not a direct fetch of daftra.com/plans (the live page could not be fetched — proxy blocked it), so treat as WEAK/unconfirmed. (2) Mutflex has a public pricing page (mutflex.com/pricing) and offers a free 2-month trial and claims 'no hidden fees,' but no exact SAR figures appeared in any search snippet or could be fetched (page blocked). (3) SaudiSoftware.co does not publish maintenance-module pricing at all — it is a custom-development shop that quotes per-project after a contact form (one search snippet even cited a generic app-dev quote of ~15,000 SAR for a basic maintenance app with client+technician app+admin panel, which is a one-time custom-build cost, not a SaaS price). Net: there is no confirmed cheap public SaaS price point to undercut with certainty; Daftra's ~270-350 SAR/month (if accurate) sets a plausible ceiling that a lean solo-founder tool (aiming e.g. <100 SAR/month) could undercut, but this specific number is unverified from a primary source.",
+          "sources": [
+            {
+              "title": "Daftra Pricing Plans and Subscription Options | Zoftware",
+              "url": "https://zoftwarehub.com/products/daftra/pricing"
+            },
+            {
+              "title": "Daftra Pricing 2025: Is Daftra Worth It? | TrustRadius",
+              "url": "https://www.trustradius.com/products/daftra/pricing"
+            },
+            {
+              "title": "Daftra Software Pricing, Alternatives & More 2026 | Capterra",
+              "url": "https://www.capterra.com/p/244865/Daftra/"
+            },
+            {
+              "title": "الأسعار والباقات | موتفلكس - Mutflex",
+              "url": "https://mutflex.com/pricing"
+            },
+            {
+              "title": "تطبيقات خدمات الصيانة | فنون المسلم",
+              "url": "https://mobi.art4muslim.com/services/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%D8%A7%D8%AA-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%81%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B3%D9%84%D9%85-%D8%AA/"
+            },
+            {
+              "title": "خدمة تطوير أنظمة برمجية مخصصة للشركات في السعودية | SaudiSoftware",
+              "url": "https://saudisoftware.co/developing-customized-systems/"
+            }
+          ]
+        },
+        {
+          "question": "Whether Daftra's maintenance-center module is oriented toward walk-in repair shops (e.g., device repair) rather than field technicians visiting customer sites — this distinction could preserve or close the wedge",
+          "finding": "FOUND",
+          "answer": "Daftra's maintenance offering is explicitly built around a physical 'center' (مركز الصيانة / 'maintenance and support centers') and around auto-repair workshops — i.e., a walk-in model, not a mobile field-service model. Its own feature copy talks about: maintaining a list of vehicle/device owners and their history, setting maintenance appointments 'by date and time' at the shop, managing an on-site spare-parts/inventory, assigning staff/technicians within the center with role-based permissions, invoicing at the center, and notifying customers of repair status — all framed around a customer bringing the item to a location, not around a technician traveling to the customer's site with GPS tracking or live 'en route / arrived / job started' status. By contrast, a genuinely field-service-oriented Saudi app found in search (Maaloom) explicitly advertises real-time technician location states ('في الطريق، يبدأ العمل، أنهى المهمة بنجاح') and digital signed visit reports — features absent from Daftra's maintenance/auto-maintenance product pages. This supports that Daftra's module targets walk-in repair centers (auto workshops, device/support centers) rather than dispatch-and-route field technician operations, which keeps the field-technician-scheduling/dispatch wedge more open than if Daftra already covered it.",
+          "sources": [
+            {
+              "title": "Auto Maintenance & Repair Management Software - Daftra",
+              "url": "https://www.daftra.com/en/auto-maintenance/"
+            },
+            {
+              "title": "برنامج إدارة مراكز الصيانة و الدعم الفنى | دفترة",
+              "url": "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/"
+            },
+            {
+              "title": "Maintenance Management Software - Daftra",
+              "url": "https://www.daftra.com/en/maintenance/"
+            },
+            {
+              "title": "مَعلوم Maaloom | تطبيق صيانة وتركيب الأجهزة المنزلية في السعودية",
+              "url": "https://maalloom.com/"
+            }
+          ]
+        },
+        {
+          "question": "True price sensitivity and switching willingness of 1-10 technician operators",
+          "finding": "PARTIAL",
+          "answer": "No direct pricing/willingness-to-pay figures were found for micro maintenance operators (1-10 technicians) in Saudi Arabia. Indirect signal from Mostaql (freelance marketplace) project listings: small maintenance/operations companies post one-off requests for very basic tools — e.g. a company wanting to replace paper-based technician follow-up with a simple electronic system ('برنامج لمتابعة الصيانة الشهرية' for a lift/elevator maintenance business) and another explicitly asking for an Excel-sheet-based tracker ('برنامج أو شيت إكسيل لمتابعة الصيانة الشهرية') rather than a subscription SaaS product. This suggests at least some small operators prefer a low one-time freelance/Excel cost over a recurring SaaS fee, i.e., meaningful price sensitivity and reluctance to commit to monthly subscriptions — but the actual project budgets on these Mostaql listings could not be retrieved (fetch budget exhausted), so the magnitude of sensitivity and actual switching willingness from tools like Daftra/Mutflex is not confirmed. This is WEAK/indirect evidence of a problem (price-sensitive segment exists) but does NOT prove anyone will pay a recurring fee for a new tool.",
+          "sources": [
+            {
+              "title": "برنامج لمتابعة الصيانة الشهرية | مستقل",
+              "url": "https://mostaql.com/project/903416-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9"
+            },
+            {
+              "title": "برنامج أو شيت إكسيل لمتابعة الصيانة الشهرية | مستقل",
+              "url": "https://mostaql.com/project/968508-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A3%D9%88-%D8%B4%D9%8A%D8%AA-%D8%A5%D9%83%D8%B3%D9%8A%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9"
+            },
+            {
+              "title": "برنامج متابعة أعمال الصيانة الدورية الوقائية و الاصلاحية | مستقل",
+              "url": "https://mostaql.com/project/150542-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%88%D9%82%D8%A7%D8%A6%D9%8A%D8%A9-%D9%88-%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D8%A7%D8%AD%D9%8A%D8%A9"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "Daftra maintenance module pricing نظام صيانة دفترة",
+    "Mutflex نظام صيانة السعودية السعر (CACHE_HIT)",
+    "SaudiSoftware.co maintenance module pricing برنامج صيانة",
+    "Daftra مركز الصيانة workshop repair shop features",
+    "مصلح صيانة تكييف فني \"برنامج\" تكلفة اشتراك شهري صغير",
+    "Daftra pricing plans SAR per month \"ريال\"",
+    "\"داخل الموقع\" OR \"زيارة العميل\" فني صيانة تطبيق جدولة زيارات السعودية",
+    "mostaql برنامج لادارة فنيين الصيانة زيارات ميدانية",
+    "خمسات برنامج ادارة ورشة مركز صيانة السيارات سعر"
+  ],
+  "limitations": [
+    "WebFetch tool repeatedly failed with 'proxy refused the connection' for daftra.com and mutflex.com domains, preventing direct confirmation of live pricing pages (www.daftra.com/en/plans, mutflex.com/pricing) and the Daftra maintenance-center Arabic page — relied on search-engine snippets/aggregators instead, which is weaker evidence.",
+    "Fetch budget (6/6) was exhausted before Mostaql project pages could be opened to confirm actual client-stated budgets for maintenance-tracking freelance requests, so price-sensitivity evidence remains indirect/unconfirmed.",
+    "No SAR pricing at all was found for Mutflex's maintenance/technician-tracking tiers or for SaudiSoftware.co's maintenance module (custom-quote only, no public price list).",
+    "No direct survey, review, or forum post from an actual 1-10-technician Saudi operator discussing willingness to pay for or switch away from a maintenance SaaS tool was found."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "results": [
+    {
+      "candidate_id": "C06",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi Salla/Zid e-commerce merchants",
+          "pays_for": "Address autocomplete/validation widget for checkout (TGA/National Address 2026 compliance)",
+          "price": "999",
+          "currency": "SAR",
+          "period": "yearly",
+          "url": "https://saudiaddresspro.com/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Businesses using Saudi Post commercial address-validation API tiers",
+          "pays_for": "National Address API bulk validation/geocoding (business/unlimited plan, exact price not disclosed)",
+          "price": "undisclosed (free basic tier; paid business/unlimited tiers exist)",
+          "currency": "SAR",
+          "period": "unclear",
+          "url": "https://splonline.com.sa/en/national-address-api/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "There is a live, dedicated paid product (Saudi Address Pro) explicitly targeting this exact pain (checkout address validation + TGA 2026 readiness) at 999 SAR/year, which is evidence a monetizable offering already exists in-market — but I found no reviews, customer logos, or usage numbers confirming actual paying customers, only the vendor's own pricing page (per search snippet, not independently fetched). Countervailing signal: Salla itself already ships a native 'National Address' checkout field for merchants for free (help.salla.sa), which could reduce willingness to pay for a third-party layer unless it adds real validation (not just capture) or WhatsApp confirmation. Verdict: PARTIAL — a paid market offering exists for the exact segment, but confirmed customer payment is not established.",
+      "summary": "A niche competitor (Saudi Address Pro) already sells address-validation/autocomplete for Saudi e-commerce checkout at 999 SAR/year, proving the offering is monetizable in principle, but Salla's free native National Address field is a substitute that could blunt willingness to pay for basic capture; no confirmed customer volume for the paid competitor was found."
+    },
+    {
+      "candidate_id": "C07",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi real estate brokers/agencies (up to ~1,000 active leases per tier)",
+          "pays_for": "Property management SaaS (leasing, collections, owners, finance)",
+          "price": "undisclosed (tiered, VAT-inclusive, no % commission on rent)",
+          "currency": "SAR",
+          "period": "unclear (subscription, likely monthly/annual)",
+          "url": "https://www.osool.estate/en",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Property owners/tenants (implied)",
+          "pays_for": "Rent collection and management outsourcing service",
+          "price": "undisclosed",
+          "currency": "SAR",
+          "period": "unclear",
+          "url": "https://rconceptsa.com/rent-management-and-collection-service/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Osool.estate confirms a tiered, VAT-inclusive subscription model is sold in-market for property management SaaS, and RConcept confirms an outsourced rent-collection service is sold — both are DIRECT evidence a payment model exists for property management functions. However, both target real estate agencies / a fuller-service outsourcing model, not the specific 2–20 unit independent micro-landlord segment C07 targets, and neither disclosed a numeric price in the sources I could access. Mostaql freelance requests for rent-tracking Excel files show unmet DIY demand but are evidence of a problem, not of anyone paying for a recurring SaaS. Verdict: PARTIAL — payment exists for adjacent (agency-scale) segments; no direct evidence the micro-landlord segment itself pays for software today.",
+      "summary": "Paid property-management products/services (Osool, RConcept) exist in Saudi Arabia, but they target agencies or full-service outsourcing rather than the 2–20 unit independent landlord segment; no confirmed price point or micro-landlord-segment payment evidence was found."
+    },
+    {
+      "candidate_id": "C08",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Small/mid Saudi AC/maintenance companies",
+          "pays_for": "Field-service/maintenance tracking SaaS (Mutflex Pro/Catalog plans)",
+          "price": "undisclosed (pricing page exists; unlimited users per plan claimed)",
+          "currency": "SAR",
+          "period": "unclear (subscription)",
+          "url": "https://mutflex.com/pricing",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Field-service SMBs (US market, not confirmed KSA)",
+          "pays_for": "Field service management software (job scheduling, invoicing)",
+          "price": "19",
+          "currency": "USD",
+          "period": "per user per month",
+          "url": "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Field-service SMBs (US market, not confirmed KSA)",
+          "pays_for": "Field service management software",
+          "price": "59",
+          "currency": "USD",
+          "period": "per user per month",
+          "url": "https://www.housecallpro.com/",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Local Saudi vendors (Mutflex, and per the candidate's own evidence, SaudiSoftware.co) actively sell field-service/maintenance-tracking software into exactly this segment and maintain live pricing pages, which is evidence a paid market exists — but I could not retrieve the actual SAR figures (fetch blocked by proxy in this session), so the specific price point remains unconfirmed. Jobber and Housecall Pro confirm the underlying business model (per-technician monthly SaaS fee) is a proven paid model globally ($19-$59/user/month), but that is an adjacent market (US), not direct KSA evidence. Verdict: PARTIAL.",
+      "summary": "At least one Saudi-market vendor (Mutflex) maintains a live pricing page for this exact product category, and the per-technician SaaS model is proven to generate revenue in the US (Jobber, Housecall Pro), but I could not confirm actual SAR prices or customer counts for the Saudi vendors in this session."
+    },
+    {
+      "candidate_id": "C09",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "All importers/shippers into Saudi Arabia (mandatory since 1 Oct 2025)",
+          "pays_for": "SABER Shipment Certificate of Conformity (SCoC) — official SASO platform fee",
+          "price": "402.5 (some sources cite ~350 SAR + VAT)",
+          "currency": "SAR",
+          "period": "per shipment",
+          "url": "https://fahes.com.sa/en/saber-certificate/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Importers registering products",
+          "pays_for": "SABER Product Certificate of Conformity (PCoC) — official SASO platform fee",
+          "price": "575 (some sources cite ~500 SAR)",
+          "currency": "SAR",
+          "period": "per product / annual renewal",
+          "url": "https://verger-group.com/what-is-the-cost-of-a-saber-certificate-in-2025/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Importers needing conformity assessment",
+          "pays_for": "Lab testing and inspection required for SABER certification",
+          "price": "1,000-10,000 (testing); 2,000-7,000 (inspection)",
+          "currency": "SAR",
+          "period": "per certification",
+          "url": "https://tabseer.co/%D8%AA%D9%83%D9%84%D9%81%D8%A9-%D8%B4%D9%87%D8%A7%D8%AF%D8%A9-%D8%B3%D8%A7%D8%A8%D8%B1/",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "SABER certification/customs consultancy agent",
+          "cost_or_salary": "Multiple competing agencies (Adnovs, Watheeq, PCAS, Fahes, Instacertify, Markek, Verger Group, export2gulf) sell SABER filing/consultancy services as an ongoing business line",
+          "url": "https://fahes.com.sa/en/saber-certificate/"
+        }
+      ],
+      "willingness_to_pay_assessment": "This is the strongest payment evidence of the five candidates: SABER certificate fees (350-575 SAR per certificate, plus 1,000-10,000 SAR testing/inspection) are official, mandatory SASO platform charges that every importer — including the small/solo importers and dropshippers this candidate targets — must already pay to clear customs, with no way to opt out since 1 Oct 2025. In addition, a crowded field of certification agencies (Adnovs, Watheeq, PCAS, Fahes, Instacertify, Markek, Verger Group, export2gulf, JJR) are actively selling paid filing-assistance/consultancy services on top of the mandatory fee, confirming a functioning paid market for intermediary help. Verdict: YES.",
+      "summary": "SABER certification is a mandatory, government-priced fee (350-575 SAR/certificate plus testing/inspection costs) that all importers already pay today, and a crowded market of paid certification agencies already serves this exact need — strong direct evidence of both the underlying spend and a competitive paid-services market, though this also signals high competition for a new entrant."
+    },
+    {
+      "candidate_id": "C10",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi SMEs/SMBs",
+          "pays_for": "Fixed-price 4-week PDPL compliance program (DPO assignment, RoPA, privacy notice, DPIA, etc.)",
+          "price": "undisclosed (marketed as 'affordable' and 'fixed-price', no number found)",
+          "currency": "SAR",
+          "period": "one-time (4-week sprint)",
+          "url": "https://halaprivacy.com/",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Businesses processing Saudi resident data (global SaaS, not KSA-confirmed pricing)",
+          "pays_for": "PDPL/global privacy compliance SaaS (consent banners, DSAR tooling)",
+          "price": "undisclosed (quote-based)",
+          "currency": "USD",
+          "period": "unclear",
+          "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Multiple firms (Hala Privacy, VeraSafe, SecureLink, OneTrust, Enzuzo, Kiteworks, SGC, MAST, Cyborgenic) explicitly market PDPL compliance services/software to the Saudi market, and Hala Privacy specifically frames its offering as a 'fixed-price', 'affordable... for SMBs' package — directly targeting the SME segment this candidate addresses, which is a meaningful signal of an existing paid market. However, no source in this session disclosed an actual SAR price, and all vendor pages state pricing is quote-based/contact-for-price, so I cannot confirm what SMEs actually pay today, only that vendors are actively selling into this exact segment. Verdict: PARTIAL — a paid market credibly exists for this exact customer segment, but the price point is unconfirmed and enforcement-driven urgency for small (vs. large/foreign) firms is unproven.",
+      "summary": "Several consulting/software vendors sell PDPL compliance specifically to Saudi SMEs (Hala Privacy explicitly targets SMBs with a fixed-price sprint), which is credible indirect evidence of an existing paid market, but no confirmed SAR pricing was found and it's unclear whether current enforcement/spend is concentrated on larger or foreign firms rather than small local SMEs."
+    }
+  ],
+  "queries_used": [
+    "Salla app store address validation pricing SAR",
+    "Saudi National Address API verification pricing per lookup",
+    "Sanad property management pricing SAR per unit",
+    "Simaat property management app pricing subscription",
+    "RConcept rent collection service fee percentage Saudi",
+    "Mutflex برنامج صيانة السعر الاشتراك",
+    "Adnovs SABER certificate price fee SAR",
+    "شهادة سابر تكلفة السعر استيراد",
+    "PDPL compliance software Saudi Arabia SaaS pricing privacy policy generator",
+    "law firm PDPL compliance consulting fee Saudi Arabia SAR",
+    "\"Saudi Address Pro\" pricing plan SAR",
+    "Hala Privacy PDPL pricing plan SME",
+    "Salla app store \"address\" OR \"شحن\" OR \"التحقق من العنوان\" تطبيق",
+    "Osool.estate pricing plan SAR property management"
+  ],
+  "limitations": [
+    "All 4 WebFetch attempts in this session failed with 'proxy refused the connection' (saudiaddresspro.com, mutflex.com/pricing, osool.estate/en, halaprivacy.com) — could not independently verify exact pricing figures beyond what WebSearch's own summarization surfaced; those figures should be treated as search-snippet-derived, not directly confirmed on-page.",
+    "Search budget (14/14) was fully exhausted before any labor-cost/salary-specific queries (e.g., job boards for 'delivery operations coordinator', 'property manager', 'maintenance dispatcher', 'compliance officer' salaries) could be run, so labor_cost_signals are largely empty for all candidates.",
+    "No numeric SAR prices could be confirmed for Sanad, Simaat, RConcept, Osool, Mutflex, or any PDPL compliance vendor (Hala Privacy, VeraSafe, SecureLink, etc.) — all either quote-based or blocked from direct verification.",
+    "For C09 (SABER), the specific fee figures (350-575 SAR range) come from multiple SEO/agency blog sources aggregated by search, not the official SASO/SABER portal itself, which was not fetched.",
+    "Could not check app-store reviews or actual customer counts for Saudi Address Pro or any local competitor, so existence of a price does not confirm actual paying customer volume."
+  ]
+}

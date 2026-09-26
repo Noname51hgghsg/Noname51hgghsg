@@ -1,0 +1,384 @@
+{
+  "results": [
+    {
+      "candidate_id": "C11",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "claims": [
+        {
+          "claim": "Social-media sellers (Instagram/Snapchat/TikTok) are legally required to register on Maroof and obtain CR under the E-Commerce Law, with no minimum sales threshold.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://origami.sa/en/blog/saudi-ecommerce-law-2026-maroof-compliance/",
+              "title": "Saudi E-commerce Law 2026 and Maroof"
+            },
+            {
+              "url": "https://xo.sa/en/blog/maroof-and-cr-for-online-stores/",
+              "title": "Maroof and commercial registration for online stores · XO"
+            },
+            {
+              "url": "https://incorpmena.com/saudi-maroof",
+              "title": "Maroof Business Verification Saudi Arabia 2026 Guide"
+            }
+          ],
+          "note": "Confirmed by multiple independent compliance-guide/law-firm sources with consistent wording that any social-media commercial account is covered, no threshold. Still all secondary interpretive sources (not the primary law text itself), so kept STRONG_INDIRECT, not DIRECT."
+        },
+        {
+          "claim": "Penalties for E-Commerce Law violations reach SAR 1 million, with suspension/blocking possible.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://saudipedia.com/en/e-commerce-law-in-saudi-arabia",
+              "title": "E-commerce Law in Saudi Arabia - Saudipedia"
+            },
+            {
+              "url": "https://gulfnews.com/world/gulf/saudi/saudi-arabia-44-stores-fined-for-breaking-e-commerce-laws-five-shut-down-1.73317899",
+              "title": "Saudi Arabia: 44 stores fined for breaking e-commerce laws, five shut down"
+            }
+          ],
+          "note": "Upgraded from candidate's original single WEAK-ish source: found a concrete real-world enforcement example (44 stores fined, 5 shut down) corroborating the penalty is actually applied, not just theoretical."
+        },
+        {
+          "claim": "An all-in-one onboarding wizard for social sellers does not yet exist; only scattered guides/agencies help with pieces of the process.",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "url": "https://xo.sa/en/blog/maroof-and-cr-for-online-stores/",
+              "title": "Maroof and commercial registration for online stores · XO"
+            },
+            {
+              "url": "https://servisoffice.com/product/%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1-%D8%B3%D8%AC%D9%84-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A/",
+              "title": "اصدار سجل تجاري | مكتب خدمات"
+            }
+          ],
+          "note": "Found several agencies (servisoffice.com, mohtaway.com) already selling standalone CR-issuance services (~200-300 SAR per search snippet) and at least one company (xo.sa) blogging specifically about Maroof+CR for online stores, suggesting the piece-by-piece market is already being served by low-cost agencies. Could not fetch xo.sa (proxy blocked) to confirm if they sell an actual done-for-you wizard/product vs. just content marketing, so this remains WEAK/unresolved rather than a confirmed direct competitor."
+        }
+      ],
+      "demand_signals": [
+        "No freelance-marketplace requests found specifically for 'help me register on Maroof' — demand signal for this exact candidate is inferred from the regulation itself, not from visible buyer requests."
+      ],
+      "new_sources": [
+        {
+          "url": "https://gulfnews.com/world/gulf/saudi/saudi-arabia-44-stores-fined-for-breaking-e-commerce-laws-five-shut-down-1.73317899",
+          "title": "Saudi Arabia: 44 stores fined for breaking e-commerce laws, five shut down",
+          "summary": "Real enforcement example confirming penalties under the E-Commerce Law are actively applied, not just on paper."
+        },
+        {
+          "url": "https://xo.sa/en/blog/maroof-and-cr-for-online-stores/",
+          "title": "Maroof and commercial registration for online stores · XO",
+          "summary": "A company blog post specifically targeting the exact pain point (Maroof+CR for online stores) — possible adjacent competitor/content-marketing signal; could not verify if it sells a full done-for-you product (fetch blocked)."
+        },
+        {
+          "url": "https://servisoffice.com/product/%D8%A7%D8%B5%D8%AF%D8%A7%D8%B1-%D8%B3%D8%AC%D9%84-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A/",
+          "title": "اصدار سجل تجاري | مكتب خدمات",
+          "summary": "Agency selling standalone CR-issuance service, ~200 SAR main registry / 100 SAR sub-registry per search snippet, showing the piece-wise formalization market already has paid low-cost intermediaries."
+        }
+      ],
+      "summary": "The regulatory problem itself (mandatory Maroof/CR for social sellers, SAR 1M penalty ceiling, real enforcement cases) is well corroborated by multiple independent sources — stronger than the original citations suggested. However, no evidence was found of unregistered sellers actively demanding a paid all-in-one wizard; the closest market-model evidence is cheap (~200-300 SAR) generic CR-issuance agencies and one company blogging about the exact topic, neither of which confirms a scalable SaaS wizard business has been validated with paying customers. Payment willingness for a dedicated formalization SaaS remains unproven."
+    },
+    {
+      "candidate_id": "C12",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "claims": [
+        {
+          "claim": "Salla/Zid merchants repeatedly hire freelancers on Mostaql for bulk product uploads.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://mostaql.com/project/1164526-%D8%B1%D9%81%D8%B9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D9%85%D8%AA%D8%AC%D8%B1-%D8%B3%D9%84%D8%A9",
+              "title": "رفع منتجات على متجر سلة | مستقل"
+            },
+            {
+              "url": "https://mostaql.com/project/827299-%D8%B1%D9%81%D8%B9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B5%D8%A9-%D8%B2%D8%AF",
+              "title": "رفع منتجات على منصة زد | مستقل"
+            },
+            {
+              "url": "https://mostaql.com/project/338611-%D8%A5%D8%B6%D8%A7%D9%81%D8%A9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D9%84%D9%85%D8%AA%D8%AC%D8%B1-%D8%B3%D9%84%D8%A9",
+              "title": "إضافة منتجات لمتجر سلة | مستقل"
+            }
+          ],
+          "note": "Re-search confirmed at least 8-9 separate recurring Mostaql listings for this exact task across Salla and Zid, strengthening the original single-citation claim to a clear recurring pattern."
+        },
+        {
+          "claim": "A vendor sells a packaged listing service at 200 (currency likely SAR) via host-r.sa.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally",
+              "title": "إضافة المنتجات لمتاجر سلة و زد - بأفضل سعر 200"
+            }
+          ],
+          "note": "Search snippet clarified the pricing detail beyond the original candidate's claim: 200 SAR covers only 10 products (repeatable for ~100 items), i.e. price is per-batch-of-10, not a flat one-time fee. Direct WebFetch of the page failed (proxy blocked), so this is based on a detailed search-engine summary of the live page, not a self-verified fetch — kept at STRONG_INDIRECT rather than DIRECT."
+        },
+        {
+          "claim": "AI-based competitors already exist for AI-generated Salla/Zid product listings.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://listapro.ai/salla/",
+              "title": "Salla AI Listing Creation | Multi-Channel Product Creation & Inventory Sync"
+            },
+            {
+              "url": "https://apps.salla.sa/en/app/1532783652",
+              "title": "Listapro - Salla App Store"
+            },
+            {
+              "url": "https://listapro.ai/zid/",
+              "title": "AI Zid Listing Tool"
+            }
+          ],
+          "note": "Important finding not in the original candidate: ListaPro.ai is a live, installed app in Salla's own App Store offering AI-generated titles/descriptions with Arabic/RTL support for Salla and Zid, with a monthly subscription pricing model. This is DIRECT-ish evidence the market model (AI listing tool, paid subscription) already works for this exact platform, but it also means the candidate is not a novel niche — a real competitor already occupies it. Classified STRONG_INDIRECT because pricing tiers/customer counts were not independently confirmed (pricing page fetch failed)."
+        },
+        {
+          "claim": "Salla/Zid do not yet offer a native built-in AI description generator.",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "Search did not surface confirmation either way of a native platform feature; only third-party apps (ListaPro) were found. Left as open/unresolved rather than asserting either way."
+        }
+      ],
+      "demand_signals": [
+        "Multiple recurring, independently-posted Mostaql requests for 'رفع منتجات' / 'إضافة منتجات' to Salla/Zid stores — concrete, dated freelance-demand evidence.",
+        "Existence of a packaged paid service (host-r.sa) at a fixed price point is a demand signal beyond one-off freelance jobs."
+      ],
+      "new_sources": [
+        {
+          "url": "https://listapro.ai/salla/",
+          "title": "Salla AI Listing Creation | Multi-Channel Product Creation & Inventory Sync",
+          "summary": "Direct AI competitor already live in Salla's App Store — validates the AI-listing market model but is a real competitive threat to this exact candidate."
+        },
+        {
+          "url": "https://apps.salla.sa/en/app/1532783652",
+          "title": "Listapro - Salla App Store",
+          "summary": "Confirms ListaPro is an actual installed app in Salla's official app marketplace, not just marketing content."
+        }
+      ],
+      "summary": "Problem evidence is now stronger than originally cited — a clear recurring pattern of paid freelance listing-upload requests exists across Salla and Zid. However, validation surfaced a significant direct AI-powered competitor (ListaPro.ai) already live in Salla's own App Store offering exactly the proposed AI listing-generation capability with Arabic/RTL support and multi-channel sync. This confirms the market model works but substantially undercuts the 'new opportunity' framing — a solo founder would be entering a market with an established incumbent already distributed through Salla's official channel."
+    },
+    {
+      "candidate_id": "C13",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "claims": [
+        {
+          "claim": "Delayed disbursement of contractor progress payments (mustakhlasat) causes cash-flow crises for contractors/subcontractors.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://www.argaam.com/ar/article/articledetail/id/502380",
+              "title": "هيئة المقاولين: 70 % من مستخلصات المقاولين لم يصدر عنها أمر دفع من بعض الجهات الحكومية"
+            },
+            {
+              "url": "https://www.alarabiya.net/aswaq/realestate/2017/08/27/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A3%D9%85%D8%B1-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D9%8A%D8%A4%D8%AE%D8%B1-70-%D9%85%D9%86-%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D9%8A%D9%86",
+              "title": "السعودية.. \"أمر الدفع\" يؤخر 70% من مستخلصات المقاولين"
+            }
+          ],
+          "note": "This is a materially stronger finding than the original candidate's WEAK-rated citations: news reporting attributes to هيئة المقاولين (the Contractors Authority, a named official body) that ~70% of contractor progress-payment certificates had no payment order issued by some government entities, causing 'تراكم الالتزامات المالية مع الموردين والعمالة' (accumulated debt to suppliers/workers) — directly matching the candidate's cash-flow-squeeze claim. Upgraded from WEAK to STRONG_INDIRECT (named official-body statistic reported by multiple outlets, though undated in the snippets seen and referencing government-project payment orders specifically, not necessarily private-sector mustakhlasat)."
+        },
+        {
+          "claim": "Existing solutions (Buildo, Bonyan ERP, Orchida const13) target this problem with contractor-focused ERP/accounting software.",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+              "title": "مستخلصات المقاولين: طريقة الحساب والمتابعة خطوة بخطوة — Bonyan ERP"
+            },
+            {
+              "url": "https://bonyan.sa/pricing/",
+              "title": "Pricing – Bonyan"
+            }
+          ],
+          "note": "Confirmed bonyan-erp.com blog content exists targeting this pain. Found a separate bonyan.sa pricing page mentioning a 'Silver pack' at $100/month, but could not confirm via fetch (blocked) whether bonyan.sa is the same entity as bonyan-erp.com or a different company — treat as unconfirmed/ambiguous, kept WEAK."
+        },
+        {
+          "claim": "A freelancer-built custom mustakhlas tracking system exists on Mostaql, implying manual/ad-hoc tooling is normal.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://mostaql.com/portfolio/421912-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A%D8%A9-%D9%88%D8%B7%D8%B1%D9%8A%D9%82%D8%A9-%D8%B9%D9%85%D9%84%D9%87%D8%A7",
+              "title": "نظام المستخلصات الدورية وطريقة عملها | مستقل"
+            }
+          ],
+          "note": "Not independently re-verified in this session beyond the original citation; kept at the same STRONG_INDIRECT level as originally assessed since it's a portfolio piece showing a real commissioned deliverable."
+        }
+      ],
+      "demand_signals": [
+        "NO RELIABLE EVIDENCE FOUND of freelancers/buyers explicitly requesting a 'mustakhlas tracking app/SaaS' (as opposed to a one-off custom Excel/system build) — demand signal is for bespoke builds, not confirmed recurring SaaS willingness."
+      ],
+      "new_sources": [
+        {
+          "url": "https://www.argaam.com/ar/article/articledetail/id/502380",
+          "title": "هيئة المقاولين: 70 % من مستخلصات المقاولين لم يصدر عنها أمر دفع من بعض الجهات الحكومية",
+          "summary": "Named official body (Contractors Authority) statistic: 70% of contractor progress-payment certificates had no payment order issued by some government entities — the strongest single piece of evidence found for this candidate's core problem."
+        },
+        {
+          "url": "https://www.alarabiya.net/aswaq/realestate/2017/08/27/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A3%D9%85%D8%B1-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D9%8A%D8%A4%D8%AE%D8%B1-70-%D9%85%D9%86-%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D9%8A%D9%86",
+          "summary": "Corroborates the same 70% payment-order-delay statistic from a second outlet (2017, so the figure is dated/old — note this reduces recency confidence).",
+          "title": "السعودية.. \"أمر الدفع\" يؤخر 70% من مستخلصات المقاولين"
+        }
+      ],
+      "summary": "Problem evidence is stronger than the discovery agents' original WEAK citations suggest — a specific, officially-attributed statistic (70% of progress-payment certificates lacking a payment order) corroborates the cash-flow-squeeze claim, though the underlying figure appears to trace back to a 2017 report re-surfaced in later coverage, so recency is uncertain and it specifically concerns government-project payment orders, not necessarily all private mustakhlasat. Market-model evidence remains weak: existing ERP vendors (Bonyan, Buildo, Orchida) confirm the pain is recognized, but no evidence was found that small contractors pay for a lightweight tracking tool specifically (as opposed to full ERPs or free Excel), and no freelance requests for a mustakhlas SaaS/app were found — only for one-off custom builds."
+    },
+    {
+      "candidate_id": "C14",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "claims": [
+        {
+          "claim": "Recurring paid requests for Arabic audio transcription are posted on Mostaql/Khamsat.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://mostaql.com/project/869037-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D8%A8%D8%A7%D9%84%D9%84%D8%BA%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9",
+              "title": "مطلوب تفريغ صوتي باللغة العربية | مستقل"
+            },
+            {
+              "url": "https://khamsat.com/community/requests/625718-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D8%A3%D8%B1%D8%A8%D8%B9-%D8%B3%D8%A7%D8%B9%D8%A7%D8%AA-%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9",
+              "title": "مطلوب تفريغ صوتي أربع ساعات لدورة تدريبية"
+            },
+            {
+              "url": "https://khamsat.com/community/requests/475377-%D9%85%D8%B7%D9%84%D9%88%D8%A8-%D8%A7%D9%84%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%A7%D9%84%D8%B5%D9%88%D8%AA%D9%8A-%D9%84%D9%85%D9%82%D8%A7%D8%B7%D8%B9-%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9",
+              "title": "مطلوب التفريغ الصوتي لمقاطع اسلامية"
+            }
+          ],
+          "note": "Confirmed multiple independent, recurring requests. Notably, the re-search surfaced that a meaningful share of requests skew toward religious/lecture content (Islamic audio, training courses) rather than business meetings — supporting one of the candidate's own open questions about content-type mix."
+        },
+        {
+          "claim": "Freelancers charge ~$5 per audio hour for Arabic transcription.",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "url": "https://khamsat.com/community/requests/584173-%D8%B7%D9%84%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D9%85%D8%B9-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D9%85-%D9%88%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A8%D8%B9%D8%B6-%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA",
+              "title": "طلب تفريغ صوتي (مع الترقيم وتشكيل) - خمسات"
+            }
+          ],
+          "note": "Not independently re-verified beyond original snippet-level citation; kept WEAK. General search also surfaced a $5/60min claim on a different Khamsat/Fiverr-style listing, consistent order of magnitude but not the same page."
+        },
+        {
+          "claim": "Direct AI competitors already exist for Gulf-dialect-tuned Arabic transcription/meeting notes.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://munsit.com/blog/introducing-munsit-the-first-arabic-speech-to-text-app-built-for-you",
+              "title": "Introducing Munsit: The First Arabic Speech-to-Text App Built for You"
+            },
+            {
+              "url": "https://munsit.com/blog/ai-meeting-notes-arabic",
+              "title": "Arabic AI Meeting Notes & Transcription: 8 Tools for GCC Teams in 2026"
+            }
+          ],
+          "note": "Important finding not in the original candidate: Munsit is a real Gulf-built Arabic Voice AI product explicitly claiming #1 ranking on the HuggingFace open universal Arabic ASR leaderboard, with named support for Saudi Najdi/Hijazi dialects and both real-time meeting transcription and file-based transcription. This directly validates the market model (a dialect-tuned Arabic ASR product can be built and marketed) but is a significant, already-funded-looking competitive threat to this exact niche."
+        }
+      ],
+      "demand_signals": [
+        "Multiple, recurring, independently-dated freelance requests for Arabic transcription across two separate marketplaces (Mostaql, Khamsat) — genuine active demand for the underlying task, though currently satisfied by human freelancers, not proof buyers would switch to/pay for a self-serve AI tool."
+      ],
+      "new_sources": [
+        {
+          "url": "https://munsit.com/blog/introducing-munsit-the-first-arabic-speech-to-text-app-built-for-you",
+          "title": "Introducing Munsit: The First Arabic Speech-to-Text App Built for You",
+          "summary": "Direct competitor already built specifically for Gulf/Saudi dialects (Najdi, Hijazi), claiming top ASR leaderboard ranking — a serious existing player in exactly this niche."
+        },
+        {
+          "url": "https://deepva.ai/lisan-deepva-arabic-speech-to-text-32-dialects/",
+          "title": "Arabic Speech-to-Text by Lisan & DeepVA: 32 Dialects",
+          "summary": "A second dialect-focused Arabic ASR vendor covering Gulf variants including Saudi, further evidencing this space already has multiple technical entrants."
+        }
+      ],
+      "summary": "Demand for human Arabic transcription is well-confirmed and recurring across two independent freelance marketplaces, with a notable skew toward religious/educational content rather than business meetings. However, validation surfaced that the specific 'AI gap' this candidate is built on (generic ASR handles Gulf dialect poorly) is already being actively closed by at least one well-marketed competitor (Munsit) built specifically for Saudi/Gulf dialects, plus other multi-dialect vendors (Lisan/DeepVA). This confirms the market model works but substantially raises the bar for a solo founder to differentiate — the 'unaddressed dialect gap' framing looks less defensible than the original candidate implied."
+    },
+    {
+      "candidate_id": "C15",
+      "problem_evidence_level": "WEAK",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "claims": [
+        {
+          "claim": "VAT registration is mandatory above 375,000 SAR/year revenue and optional between 187,500-375,000 SAR for freelance-document holders.",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "url": "https://ajel.sa/thehour/j8majz855l",
+              "title": "هل يوجد ضريبة على وثيقة العمل الحر في حال تجاوز المبيعات السنوية 375 ألفًا؟.. الزكاة والجمارك توضح"
+            },
+            {
+              "url": "https://ajel.sa/thehour/244si2wlxc",
+              "title": "هل تفرض ضريبة للقيمة المضافة على وثيقة العمل الحر؟.. هيئة الزكاة توضح"
+            }
+          ],
+          "note": "Upgraded from the original WEAK citation to DIRECT: these news items explicitly attribute the clarification to الزكاة والجمارك (ZATCA, the official tax authority) itself confirming the exact 375,000/187,500 SAR thresholds — this is the regulator's own position being reported, not a third-party guess."
+        },
+        {
+          "claim": "Freelancers experience buyers delaying payment after service delivery; Khamsat mitigates via 72h auto-release escrow.",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://khamsat.com/community/general/387001-%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%AA%D8%A3%D8%AE%D8%B1-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%89-%D9%81%D9%89-%D8%A7%D9%84%D8%AF%D9%81%D8%B9-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9",
+              "title": "مشاكل تأخر المشتري في الدفع بعد انتهاء الخدمة - مجتمع خمسات"
+            }
+          ],
+          "note": "Not independently re-fetched in this session (thread page not re-verified, fetch attempts to other Khamsat/related pages were proxy-blocked); kept at the same level as originally assessed. This evidence is specific to on-platform Khamsat friction (which the platform already partially solves via escrow) and does NOT directly establish the candidate's target segment — off-platform direct-client freelancers — has the same problem at the same severity."
+        },
+        {
+          "claim": "Dedicated tools already exist to help freelance-document holders produce ZATCA-compliant invoices (fawtar.app, arabtoolbox).",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "url": "https://fawtar.app/blog/%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D9%88%D8%AB%D9%8A%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1",
+              "title": "فاتورة وثيقة العمل الحر: دليل المستقلين لإصدار فاتورة نظامية - فوتّر"
+            },
+            {
+              "url": "https://arabtoolbox.com/tools/zatca-invoice",
+              "title": "فاتورة زاتكا — ZATCA Phase-2 Invoice Generator | arabtoolbox"
+            }
+          ],
+          "note": "Confirms these products/content exist and target exactly this niche, validating that the market model (a tool to help freelance-document holders with ZATCA compliance) is being pursued by others. Could not obtain fawtar.app's actual pricing — search for it returned unrelated invoicing platforms (Fatora/Fawter), and WebFetch to fawtar.app failed (proxy blocked) — so pricing/adequacy remains NO RELIABLE EVIDENCE FOUND, an open question in the original candidate that stays open."
+        },
+        {
+          "claim": "fawtar.app / arabtoolbox pricing and how many customers they have.",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "Search specifically for fawtar.app pricing surfaced unrelated products (Fawter/Fatora, different platforms with similar names) rather than fawtar.app itself; direct fetch of fawtar.app was blocked by the proxy. This open question from the original candidate remains unresolved."
+        }
+      ],
+      "demand_signals": [
+        "NO RELIABLE EVIDENCE FOUND of freelancers specifically requesting a 'VAT/invoicing tool' on Mostaql/Khamsat in this session's searches — demand signal is inferred from the existence of competitor tools (fawtar.app, arabtoolbox), not from visible buyer requests."
+      ],
+      "new_sources": [
+        {
+          "url": "https://ajel.sa/thehour/j8majz855l",
+          "title": "هل يوجد ضريبة على وثيقة العمل الحر في حال تجاوز المبيعات السنوية 375 ألفًا؟.. الزكاة والجمارك توضح",
+          "summary": "ZATCA itself (via news outlet) confirms the exact VAT thresholds for freelance-document holders — strengthens this specific factual claim to DIRECT."
+        },
+        {
+          "url": "https://www.faltara.com/ar/blogs/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D8%A7%D9%84%D8%AD%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-2026",
+          "summary": "A 2026-dated comprehensive guide to Saudi freelance-economy platforms, insurance and taxes — potentially useful for further sizing the freelance-document holder population (not yet mined for that data in this session).",
+          "title": "اقتصاد العمل الحر في السعودية 2026: دليلك الشامل"
+        }
+      ],
+      "summary": "The VAT-threshold factual claim underlying this candidate is now DIRECT (ZATCA's own clarification, confirmed via multiple news reports). However, the core 'payment-delay pain for off-platform direct-client freelancers' claim remains only STRONG_INDIRECT and specifically evidenced on-platform (Khamsat, where escrow already mitigates it) rather than for the stated target segment of off-platform direct clients — this gap was not closed in this validation pass. Market-model evidence is decent (fawtar.app, arabtoolbox already exist for this exact niche) but their pricing/traction could not be confirmed (proxy-blocked fetches), leaving 'would freelancers pay for this vs. use existing free/cheap tools' as the single biggest unresolved risk."
+    }
+  ],
+  "queries_used": [
+    "Saudi E-Commerce Law social media sellers Maroof registration requirement 2026",
+    "Saudi e-commerce law penalty SAR 1 million violation",
+    "مستقل رفع منتجات متجر سلة زد",
+    "Salla Zid AI product description generator built-in feature",
+    "مستخلصات المقاولين تأخر السداد السعودية مشكلة",
+    "مستقل تفريغ صوتي عربي خمسات طلب",
+    "وثيقة العمل الحر السعودية ضريبة القيمة المضافة فاتورة إلزامي",
+    "fawtar.app pricing تسعير فاتورة",
+    "Maroof onboarding service agency helps register commercial registration social media sellers Saudi",
+    "host-r.sa إضافة منتجات سلة زد 200",
+    "listapro.ai Salla pricing AI product listing",
+    "Arabic Gulf dialect speech-to-text AI startup Saudi transcription tool",
+    "Bonyan ERP pricing تسعير مقاولين",
+    "خدمة تسجيل ماروف سجل تجاري للمتاجر السوشيال ميديا سعر"
+  ],
+  "limitations": [
+    "All WebFetch attempts in this session (5 total: argaam.com, host-r.sa, xo.sa, listapro.ai/pricing) failed with 'proxy refused the connection' — every claim in this validation is therefore based on WebSearch snippets/summaries only, not on independently fetched/confirmed page content. This is a lower bar than DIRECT verification and is reflected in the classifications (kept at STRONG_INDIRECT rather than DIRECT in several cases where a successful fetch might have justified DIRECT).",
+    "Search budget (14 queries) was split roughly evenly (2-4 queries per candidate) across 5 candidates, so depth per candidate is limited; some sub-claims (e.g., exact fawtar.app pricing, Bonyan.sa vs bonyan-erp.com identity, exact enforcement rate against small/individual social sellers) remain unresolved.",
+    "X/TikTok/Instagram/LinkedIn content was not accessible (login-gated) and was not searched separately for any candidate given budget constraints.",
+    "The 70% mustakhlas payment-delay statistic (C13) traces to reporting that appears to originate around 2017 and is re-surfaced in later articles; could not confirm a more recent (2024-2026) equivalent statistic within budget."
+  ]
+}

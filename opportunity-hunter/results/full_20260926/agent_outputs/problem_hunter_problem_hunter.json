@@ -1,0 +1,358 @@
+{
+  "agent": "problem_hunter",
+  "signals": [
+    {
+      "opportunity_id": "PH-01",
+      "problem": "Micro and small merchants in Saudi Arabia struggle to comply with ZATCA's mandatory e-invoicing (Fatoora) rules: integrating existing point-of-sale/accounting workflows, choosing among many competing e-invoicing systems, weak technical support from vendors, and connectivity issues in smaller towns — with real risk of fines for non-compliance.",
+      "customer": "Owners of micro/small retail shops and small trading establishments registered for VAT",
+      "segment": "B2B",
+      "sector": "Compliance / SaaS / Fintech-adjacent",
+      "market": "Saudi Arabia",
+      "source": "Web search (Google) — vendor and compliance-explainer blogs",
+      "evidence": [
+        {
+          "claim": "Small businesses report technical integration problems, difficulty choosing the right e-invoicing system among many options, and insufficient technical support from providers when implementing ZATCA e-invoicing.",
+          "url": "https://www.qoyod.com/blog/e-invoicing/%D8%B4%D9%83%D8%A7%D9%88%D9%89-%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/",
+          "source_title": "شكاوى الفاتورة الإلكترونية وتجربة السعوديين - قيود",
+          "summary": "Per search snippet: article lists common complaints — integration difficulty with existing accounting systems, connectivity problems in remote/small towns, fear of cybersecurity exposure, too many competing systems making selection hard, and lack of adequate vendor support.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "All VAT-registered businesses, regardless of size, are legally required to implement e-invoicing, creating compliance pressure on very small merchants.",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx",
+          "source_title": "ZATCA E-Invoicing overview",
+          "summary": "Official ZATCA page confirms mandatory e-invoicing applies to all VAT-registered establishments, small or large.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com",
+          "notes": "Saudi accounting/e-invoicing SaaS, publishes content on e-invoicing pain points — implies paying customer base"
+        },
+        {
+          "name": "Daftra",
+          "url": "https://www.daftra.com",
+          "notes": "Offers e-invoicing features for small businesses per search snippet"
+        },
+        {
+          "name": "Rewaa",
+          "url": "https://rewaa.com",
+          "notes": "POS/retail management with e-invoicing compliance content"
+        },
+        {
+          "name": "Wazen",
+          "url": "https://wazen.sa",
+          "notes": "E-commerce to e-invoicing integration guide vendor"
+        }
+      ],
+      "workaround": "Small merchants pick one of several competing local SaaS tools somewhat blindly, or rely on their existing accountant/freelancer to bolt on compliance; some risk non-compliance due to confusion.",
+      "potential_solution": "A radically simplified, very low-cost (single-merchant, WhatsApp/Telegram-bot based) e-invoice generator + ZATCA submission helper targeted at ultra-small merchants and solo freelancers who find full ERP suites (Qoyod/Rewaa/Daftra) overkill or too expensive.",
+      "business_model": "Low monthly SaaS subscription (B2B), tiered for micro-merchants",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "HIGH",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on exact SAR amounts merchants pay Qoyod/Daftra/Rewaa — but the existence of multiple paid SaaS vendors serving this compliance need is itself indirect evidence of willingness to pay.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Actual price points micro-merchants currently pay for e-invoicing compliance",
+        "Whether the segment underserved by big ERPs (very smallest merchants) is large enough to be worth targeting",
+        "Whether ZATCA itself will simplify compliance for micro-merchants, reducing the pain"
+      ]
+    },
+    {
+      "opportunity_id": "PH-02",
+      "problem": "Households recruiting domestic workers through recruitment offices repeatedly face disputes: offices exceeding the agreed recruitment timeframe (often 90 days), delivering workers who don't match contract specs, refusing to refund deposits after legal cancellation, demanding informal 'express fees', or refusing to replace a worker after she runs away — forcing families to file formal complaints.",
+      "customer": "Saudi households hiring domestic/household workers via licensed recruitment offices",
+      "segment": "B2C",
+      "sector": "Household services / Legal-tech",
+      "market": "Saudi Arabia",
+      "source": "Web search (Google) — government portal + legal-services blogs",
+      "evidence": [
+        {
+          "claim": "HRSD/Musaned enabled an electronic complaints-intake service specifically for the domestic labor sector, implying complaint volume was significant enough to need a dedicated e-service.",
+          "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+          "source_title": "مساند يُتيح خدمة استقبال الشكاوى في قطاع العمالة المنزلية إلكترونيا",
+          "summary": "Per search snippet: Ministry of HR & Social Development news that Musaned platform launched an electronic complaint-receiving service for the domestic labor sector.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Common grounds for complaints against recruitment offices include exceeding the recruitment period (commonly 90 days), non-matching worker specifications, refusal to refund deposits on legal cancellation, and demanding extra 'express' fees.",
+          "url": "https://agl.sa/complaint-against-recruitment-office-ksa/",
+          "source_title": "كيف ارفع شكوى على مكتب استقدام؟ - الغانم الدولية للمحاماة",
+          "summary": "Per search snippet: law firm article lists recurring recruitment-office grievances and the Musaned complaint procedure (decision within 10 working days).",
+          "evidence_type": "WEAK",
+          "published": "2026 (per page title)"
+        },
+        {
+          "claim": "A separate blog specifically catalogs 'the most prominent problems of recruitment offices and how to overcome them', implying it is a recurring theme people search for.",
+          "url": "https://isteqdamejaz.com/blog/abrz-mshakl-mkatb-alastkdam-okyfy-altghlb-aalyha",
+          "source_title": "أبرز مشاكل مكاتب الاستقدام وكيفية التغلب عليها",
+          "summary": "Per search snippet: vendor blog enumerating recruitment office problems families commonly encounter.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Musaned (مساند)",
+          "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+          "notes": "Free government platform for filing complaints against recruitment offices/workers"
+        },
+        {
+          "name": "AGL law firm / law-zamzami.com",
+          "url": "https://agl.sa/complaint-against-recruitment-office-ksa/",
+          "notes": "Paid legal consultation services guiding people through the Musaned complaint process"
+        }
+      ],
+      "workaround": "Households either navigate Musaned's complaint form themselves (often unfamiliar with required evidence/deadlines) or pay a law firm for guidance.",
+      "potential_solution": "An Arabic AI-assisted guide/chat tool that helps a household correctly classify their recruitment-office grievance, assembles the right documents, and drafts the Musaned complaint text within the required timeframe — positioned as a cheaper, faster alternative to a lawyer consultation.",
+      "business_model": "Per-use fee (B2C) or small flat fee per complaint packet generated",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on specific lawyer consultation fees, but multiple law firms (AGL, law-zamzami.com) publish dedicated paid-service content on this exact process, implying a paid-advice market exists.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Actual volume of Musaned complaints per year (no public statistic found)",
+        "Whether households would pay a standalone tool instead of using free Musaned self-service",
+        "Legal/liability boundary between 'informational help' and regulated legal advice"
+      ]
+    },
+    {
+      "opportunity_id": "PH-03",
+      "problem": "Small clinics, salons and single-practitioner service businesses lose revenue to appointment no-shows and mismanaged bookings taken via WhatsApp/notebooks: appointments get forgotten, staff miss calls to reschedule (so the customer defects to a competitor), and WhatsApp-booked appointments are never entered into the real schedule.",
+      "customer": "Owners of small clinics, salons, and appointment-based service businesses",
+      "segment": "B2B",
+      "sector": "Vertical SaaS / Booking automation",
+      "market": "Saudi Arabia",
+      "source": "Web search (Google) — vendor product/marketing pages describing the problem",
+      "evidence": [
+        {
+          "claim": "Clinic/salon owners in Saudi Arabia commonly lose bookings because appointments taken by phone or WhatsApp aren't logged into the real schedule, staff miss rescheduling calls (customer goes to a competitor), and no-shows are described as a major 'hidden loss' for small clinics.",
+          "url": "https://www.tkana.sa/articles/booking-management",
+          "source_title": "إدارة الحجوزات: النظام الذي يبدأ من المحادثة - تِكانة",
+          "summary": "Per search snippet: article explicitly describes the appointment-forgotten-in-a-notebook problem, missed rescheduling calls, and no-show as a hidden revenue loss for small clinics.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple independent local vendors (automation agencies) have built and are actively marketing WhatsApp-based AI booking/reminder agents specifically for Saudi clinics and salons.",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "source_title": "أتمتة العيادات الطبية في السعودية",
+          "summary": "Per search snippet: vendor offers clinic appointment automation (booking, reminders, patient service) as a paid service, implying local clinics already pay for this.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Tkana",
+          "url": "https://www.tkana.sa/articles/booking-management",
+          "notes": "Local booking-management content/product"
+        },
+        {
+          "name": "Watily",
+          "url": "https://watily.com/booking-system/ar/",
+          "notes": "Booking system for salons/clinics in Saudi Arabia"
+        },
+        {
+          "name": "Snad",
+          "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+          "notes": "Clinic appointment system, reception-to-invoice"
+        },
+        {
+          "name": "Automation-KSA",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "notes": "WhatsApp AI booking automation agency"
+        },
+        {
+          "name": "GrowthHive",
+          "url": "https://growthhive.team/clinic-automation-saudi-arabia/",
+          "notes": "Digital marketing agency offering clinic automation"
+        }
+      ],
+      "workaround": "Manual notebooks, unmanaged WhatsApp threads, or ad-hoc phone call rescheduling; some clinics already pay agencies for custom automation.",
+      "potential_solution": "A very low-cost, self-serve WhatsApp booking + reminder bot pre-built for single-practitioner clinics/salons/barbershops that can't afford custom agency builds (positioned below Tkana/Watily/Snad's likely price point).",
+      "business_model": "Low monthly SaaS fee per business (B2B)",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on exact SAR prices paid to Tkana/Watily/Snad/Automation-KSA, but the existence of at least five distinct local vendors selling this exact automation is strong indirect evidence of a paid market.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Pricing of existing vendors (Tkana, Watily, Snad) — not found",
+        "Whether the very smallest single-chair businesses are priced out of existing solutions or already well served",
+        "Market is already crowded — differentiation/price point needs validation"
+      ]
+    },
+    {
+      "opportunity_id": "PH-04",
+      "problem": "Small businesses in Saudi Arabia (e-commerce stores, small trading/marketing firms) repeatedly post one-off freelance requests for a remote/part-time accountant to handle monthly bookkeeping, VAT-related account review, and financial statement prep — rather than hiring a full-time accountant or using self-serve software consistently.",
+      "customer": "Owners of small e-commerce stores and small companies (marketing, trading, import) needing recurring monthly bookkeeping",
+      "segment": "B2B",
+      "sector": "Accounting / Freelance services",
+      "market": "Saudi Arabia",
+      "source": "Mostaql (freelance marketplace) project listings",
+      "evidence": [
+        {
+          "claim": "Multiple distinct, recent freelance project postings on Mostaql ask specifically for remote/part-time accountants for small Saudi businesses to handle account setup, monthly bookkeeping, and financial statement preparation.",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "source_title": "المشاريع المفتوحة - محاسبة | مستقل",
+          "summary": "Per search snippet: listing page shows several open Mostaql projects such as 'مطلوب محاسب مالي مستقل لتأسيس وإدارة حسابات متجر إلكتروني سعودي', 'محاسب للعمل عن بعد مع مؤسسة صغيرة في السعودية', 'محاسب لإدارة الحسابات الشهرية لشركة تسويق رقمي' — recurring demand for outsourced part-time bookkeeping.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Freelance accountants via Mostaql",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "notes": "Ad-hoc, inconsistent freelancer hiring per project"
+        },
+        {
+          "name": "Qoyod / Daftra / Wafeq (accounting SaaS)",
+          "url": "https://www.qoyod.com",
+          "notes": "Self-serve accounting software alternative, but requires the owner or a bookkeeper to operate it"
+        }
+      ],
+      "workaround": "Businesses re-post freelance requests each time they need bookkeeping done, leading to inconsistent record-keeping and repeated onboarding cost of a new freelancer.",
+      "potential_solution": "An AI-assisted bookkeeping service/tool for micro businesses that ingests bank statements and ZATCA e-invoicing data to auto-generate monthly financial statements and VAT-ready summaries, reducing reliance on repeatedly re-hired freelancers.",
+      "business_model": "Monthly subscription (B2B) undercutting the cost of a recurring freelancer engagement",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "HIGH",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on exact freelancer rates paid per Mostaql project (budgets not visible in search snippet), but repeated project postings for the same recurring need is direct evidence of ongoing spend on freelance accountants.",
+      "confidence": "MEDIUM",
+      "unknowns": [
+        "Actual SAR budgets businesses pay per Mostaql accounting project",
+        "Whether businesses would trust an AI tool over a human accountant for VAT-sensitive work",
+        "Overlap/competition with established Saudi accounting SaaS (Qoyod, Daftra, Wafeq)"
+      ]
+    },
+    {
+      "opportunity_id": "PH-05",
+      "problem": "Tenants and landlords in Saudi Arabia frequently dispute who is responsible for maintenance costs and how to formally complain about a landlord or real-estate company, despite the Ejar platform and real-estate authority publishing rules — people repeatedly search for and pay for step-by-step legal guidance.",
+      "customer": "Residential tenants and landlords in rental disputes",
+      "segment": "B2C",
+      "sector": "PropTech / Legal-tech",
+      "market": "Saudi Arabia",
+      "source": "Web search (Google) — government platform notice + multiple law-firm explainer articles",
+      "evidence": [
+        {
+          "claim": "The Ejar rental platform had to officially clarify which maintenance costs are NOT the tenant's responsibility and that the landlord is legally obligated to fix them — implying widespread confusion/disputes on this point.",
+          "url": "https://dalielsaudi.com/news444576.html",
+          "source_title": "منصة إيجار توضح رسمياً: هذه الصيانات لا يتحملها المستأجر",
+          "summary": "Per search snippet: news piece reporting an official Ejar clarification on tenant vs landlord maintenance responsibility, implying this was a recurring point of dispute.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Multiple separate law firms publish dedicated, monetized guides on 'how to file a complaint against your landlord' and 'how to file a complaint against a real estate company', indicating recurring demand for this specific help.",
+          "url": "https://agl.sa/%D8%B1%D9%81%D8%B9-%D8%B4%D9%83%D9%88%D9%89-%D8%B9%D9%84%D9%89-%D9%85%D8%A7%D9%84%D9%83-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+          "source_title": "كيفية رفع شكوى على مالك العقار في السعودية",
+          "summary": "Per search snippet: law firm article outlining legal process (via Najiz platform) to sue/complain about a landlord, including a 60-day filing window after a dispute arises.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per page title)"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Ejar (إيجار)",
+          "url": "https://dalielsaudi.com/news444576.html",
+          "notes": "Government rental contract platform; publishes rules but does not resolve individual disputes"
+        },
+        {
+          "name": "Najiz + law firms (AGL, BMS)",
+          "url": "https://bms.sa/%D8%B4%D9%83%D9%88%D9%89-%D8%B6%D8%AF-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9/",
+          "notes": "Paid legal consultation to file real-estate complaints"
+        }
+      ],
+      "workaround": "Tenants/landlords either self-research scattered legal-blog content or pay a law firm for a consultation before filing via Najiz.",
+      "potential_solution": "An Arabic AI tool that lets a tenant/landlord describe their maintenance/deposit dispute, tells them (based on Ejar/real-estate regulations) who is responsible, and generates the formal complaint text for Najiz/Ejar — positioned as free-to-low-cost self-service before resorting to a lawyer.",
+      "business_model": "Freemium B2C, paid add-on for document generation",
+      "opportunity_type": "LOCAL_ADAPTATION",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "MEDIUM",
+      "severity": "LOW",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND on specific consultation fees; evidence is limited to the existence of paid law-firm content marketing on this exact topic.",
+      "confidence": "LOW",
+      "unknowns": [
+        "Whether people would use a free/cheap AI tool instead of consulting a lawyer for a real dispute",
+        "Actual dispute volume (no statistics found)",
+        "Regulatory boundary between informational tool and practicing law"
+      ]
+    },
+    {
+      "opportunity_id": "PH-06",
+      "problem": "Delivery/gig drivers in Saudi Arabia depend on being sponsored ('نقل كفالة') by a specific delivery company to work legally, and job ads show fixed low monthly pay (~3,000 SAR) rather than flexible gig income, constraining drivers' ability to work across multiple delivery apps simultaneously.",
+      "customer": "Delivery/gig drivers working for platforms like Hunger Station, Mrsool, Jahez",
+      "segment": "B2C",
+      "sector": "Gig economy / Labor",
+      "market": "Saudi Arabia",
+      "source": "Web search (Google) — job-ad aggregator and regulator page",
+      "evidence": [
+        {
+          "claim": "Job listings for delivery drivers require sponsorship transfer ('نقل كفالة') to the hiring company and advertise a fixed monthly salary (~3,000 SAR), rather than open multi-app gig flexibility.",
+          "url": "https://www.mourjan.com/sa/delivery/vacancies/",
+          "source_title": "فرص عمل مطلوب عمال دليفري في السعودية",
+          "summary": "Per search snippet: job ad aggregator shows delivery driver vacancies requiring sponsorship transfer with monthly salary around 3,000 SAR.",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "The General Authority for Transport (TGA) has a specific executive regulation governing the delivery/dispatch activity, indicating a formally regulated sector drivers must operate within.",
+          "url": "http://www.tga.gov.sa/ar/regulations/regulation/4803",
+          "source_title": "اللائحة التنفيذية لنشاط توصيل الطلبات",
+          "summary": "Official TGA regulation page for the delivery-dispatch sector, confirming a formal licensing/sponsorship framework drivers must navigate.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solution": [],
+      "workaround": "Drivers stay tied to a single sponsoring delivery company or work informally without sponsorship transfer.",
+      "potential_solution": "Unclear/not validated — this signal is closer to a structural labor-market constraint than a software-solvable pain; flagged for awareness only.",
+      "business_model": "Unclear",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "FUTURE_HYPOTHESIS",
+      "frequency": "UNKNOWN",
+      "severity": "UNKNOWN",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND",
+      "confidence": "LOW",
+      "unknowns": [
+        "No direct driver complaint evidence found, only a job ad and a regulation page",
+        "Whether this is solvable by a solo technical founder (likely blocked by labor/sponsorship regulation, not a software gap)",
+        "Actual driver sentiment/complaints (not found within budget)"
+      ]
+    }
+  ],
+  "queries_used": [
+    "\"تعبت من\" صيانة العقار السعودية شكوى",
+    "site:reddit.com saudiarabia frustrating no app Saudi",
+    "مشكلة العمالة المنزلية التأخير السعودية شكوى مكتب استقدام",
+    "\"كيف أسوي\" موعد أبشر تعديل بيانات مشكلة",
+    "site:reddit.com/r/saudiarabia rent landlord problem",
+    "\"ليش ما فيه\" تطبيق السعودية",
+    "\"نظام نور\" مشكلة تسجيل مدارس شكوى ولي أمر 2026",
+    "أصحاب المحلات الصغيرة السعودية فاتورة إلكترونية زاتكا صعوبة تطبيق",
+    "سائقين توصيل طلبات السعودية شكوى أجرة قليلة تطبيق",
+    "mostaql.com محاسبة شركات صغيرة طلب مشروع السعودية",
+    "site:reddit.com/r/saudiarabia traffic violation absher complaint",
+    "أصحاب العيادات الصغيرة السعودية مواعيد حجز مشكلة واتساب"
+  ],
+  "limitations": [
+    "WebFetch tool failed for all attempted URLs in this session ('proxy refused the connection') — all evidence below is based on WebSearch result snippets only, not on directly fetched/verified page content; claims are labeled 'per search snippet' accordingly.",
+    "Reddit content (r/saudiarabia, r/riyadh) did not surface in Google-indexed search results for any of the site:reddit.com queries tried — likely limited indexing; could not directly observe Reddit complaint threads.",
+    "Search budget (12/12) was exhausted before domains like school registration (Noor), traffic-fine disputes, and neighbor/noise complaints could be explored in depth — these were touched but evidence was too thin (official pages only, no complaint threads) to include as standalone signals.",
+    "No pricing pages were fetched, so existing_spend amounts are mostly 'NO RELIABLE EVIDENCE FOUND' even where paid vendors clearly exist.",
+    "X/TikTok/Instagram/LinkedIn content was not directly accessible; only what appeared in Google search snippets was used (e.g., one TikTok/X result for Absher FAQs, not used as evidence)."
+  ]
+}

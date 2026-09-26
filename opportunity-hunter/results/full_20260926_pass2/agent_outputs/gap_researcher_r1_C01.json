@@ -1,0 +1,107 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "answers": [
+        {
+          "question": "Whether a truly ultra-micro / WhatsApp-only tier priced below SAR60-75/month can achieve sustainable unit economics given payment processing + hosting + support costs",
+          "finding": "PARTIAL",
+          "answer": "Direct evidence shows a sub-60 SAR/month price point already exists in the Saudi ZATCA-invoicing market: BizzSols prices a ZATCA Phase-2 compliant invoicing+inventory+accounting product at 49 SAR/month, and Bridge Bills at 52 SAR/month (promo), i.e. below the 60-75 SAR threshold — proving vendors are willing to sell at that price, though their internal profitability/unit economics are not disclosed (no margin data found). On the cost side: WhatsApp Business API costs are very low at micro scale — Meta gives the first 1,000 service conversations/month free, and utility/template messages cost only ~0.04 SAR each (per whautomate.com), so a WhatsApp-only support/notification channel is cheap for a handful of customers. Payment-processing costs for collecting the subscription fee itself would be non-trivial relative to a tiny subscription: Moyasar charges ~1.95-2.4% + 1 SAR per card transaction and Tap ~2.5-2.85% + 1 SAR — on a 60 SAR/month charge that is roughly 2.4-4.4 SAR (4-7% of revenue) per billing cycle, which is a real but not fatal drag if support/hosting stay near-zero (e.g. a lightweight cloud stack for very few users). No source directly discusses hosting or support cost breakdown for a solo-run product at this exact price tier, so the full unit-economics picture (after payment fees, hosting, and founder time) remains a reasoned estimate rather than a documented fact.",
+          "sources": [
+            {
+              "title": "cheapest ZATCA compliant invoicing app Saudi Arabia (BizzSols 49 SAR/mo, Bridge Bills 52 SAR/mo) - search summary",
+              "url": "https://www.bizzsols.com/"
+            },
+            {
+              "title": "Best Billing Software in Saudi Arabia | Top 10 for 2026 (Bridge Bills pricing)",
+              "url": "https://bridgesuite.app/blog/bridge-bills/best-billing-software-in-saudi-arabia-2026/"
+            },
+            {
+              "title": "WhatsApp API Pricing Saudi Arabia 2026 (SAR)",
+              "url": "https://whautomate.com/whatsapp-business-api-pricing-saudi-arabia"
+            },
+            {
+              "title": "Payment Gateway Fees in Saudi Arabia (2026): Full Fee Comparison",
+              "url": "https://gulfsaasreview.com/article/payment-gateway-fees-saudi-arabia-2026"
+            },
+            {
+              "title": "HyperPay vs Moyasar vs Tap: Lebanese KSA Brands 2026",
+              "url": "https://voxire.com/blog/hyperpay-vs-moyasar-vs-tap-lebanese-brands-2026/"
+            }
+          ]
+        },
+        {
+          "question": "Whether Zoho's free tier actually includes ZATCA Phase-2 compliance or only the paid Books tiers do",
+          "finding": "PARTIAL",
+          "answer": "Zoho runs two relevant products: (1) Zoho Invoice — a separate, permanently free product whose own Saudi marketing page explicitly states it is 'Free VAT e-invoicing software for small businesses' and that ZATCA-required elements (QR codes, e-signatures, XML) 'can be generated right in Zoho Invoice' for free — i.e. this free product does claim ZATCA e-invoicing is included at no cost. (2) Zoho Books — the fuller accounting suite has a separate forever-free plan limited to businesses with annual revenue under SAR 200,000 and up to 1,000 invoices/year; Zoho's own help/community text repeatedly states 'ensure you are subscribed to the appropriate Zoho Books plan that supports this feature' for Phase-2 e-invoicing, which implies some Phase-2 integration capabilities may be gated to specific (possibly paid) plans, but no page found explicitly confirms or denies free-plan inclusion, and attempts to fetch Zoho's own pricing/help pages directly failed (proxy connection errors) after fetch budget was exhausted, so this could not be fully resolved. Net: Zoho Invoice (free, standalone) = ZATCA e-invoicing included per its own marketing; Zoho Books (free tier, revenue-capped) = ambiguous/unconfirmed whether Phase-2 integration is fully included or requires upgrade.",
+          "sources": [
+            {
+              "title": "Free VAT e-invoicing software for small businesses | Zoho Invoice",
+              "url": "https://www.zoho.com/sa/invoice/"
+            },
+            {
+              "title": "Free e-invoicing solution for small businesses in Saudi Arabia | Zoho Invoice",
+              "url": "https://www.zoho.com/sa/invoice/e-invoicing-solution/"
+            },
+            {
+              "title": "Integration of Phase 2 -e-invoicing- KSA (Zoho community)",
+              "url": "https://help.zoho.com/portal/en/community/topic/integration-of-phase-2-e-invoicing-ksa"
+            },
+            {
+              "title": "Is Zoho Books Free? Free Plan Limits & Upgrade Triggers (2026)",
+              "url": "https://costbench.com/software/accounting/zoho-books/free-plan/"
+            },
+            {
+              "title": "Pricing | Zoho Books",
+              "url": "https://www.zoho.com/sa/books/pricing/"
+            }
+          ]
+        },
+        {
+          "question": "Real churn/willingness of the smallest merchants to switch from a free/cheap incumbent to a new unbranded solo product",
+          "finding": "PARTIAL",
+          "answer": "No direct study, survey, or review data was found measuring actual switching rates of Saudi micro-merchants between invoicing/accounting tools, and no evidence was found of merchants switching specifically toward an unbranded new solo product (a genuine gap — NO_RELIABLE_EVIDENCE_FOUND on that narrow point). However, indirect evidence points to concrete triggers that push small merchants to reconsider their tool: (a) Zoho Books' own free plan has a hard cap (revenue <SAR 200,000/year and ≤1,000 invoices/year) — once a growing micro-merchant crosses this, they must either upgrade or switch elsewhere, a natural churn/switch trigger; (b) Daftra's Basic plan caps at ~100 invoices and 100 clients/month, creating a similar forced decision point; (c) a search snippet reports a Wafeq complaint that the vendor removed bank-integration features from its cheaper starter plan and moved them to a plan '5x the price' without notice — the kind of incumbent bait-and-switch that classically opens the door to competitors (single-source, WEAK evidence, could not verify by direct fetch); (d) a broader Arabic article on why digital payment/tool adoption stalls among small Saudi merchants cites low transaction value, thin margins, and accumulated registration/device/service fees as reasons merchants resist paying for tools at all — suggesting the smallest merchants are highly price-sensitive and slow to adopt (or switch) unless the offer is free or near-free, and loyalty is driven more by cost/inertia than brand. Overall: real switching happens around concrete triggers (hitting a free-plan cap, a price hike, a feature removal) rather than spontaneous brand preference, but no hard number on churn rate or switch propensity exists in public sources.",
+          "sources": [
+            {
+              "title": "Is Zoho Books Free? Free Plan Limits & Upgrade Triggers (2026)",
+              "url": "https://costbench.com/software/accounting/zoho-books/free-plan/"
+            },
+            {
+              "title": "E-Invoice Pricing in Saudi Arabia 2026 | Qoyod (Daftra plan caps mentioned)",
+              "url": "https://www.qoyod.com/en/blog/business-knowledge/e-invoice-pricing-saudi-arabia/"
+            },
+            {
+              "title": "Odoo vs Qoyod, Wafeq, Daftra & Zoho — ERP vs Accounting Apps in Saudi Arabia",
+              "url": "https://sadeem.cloud/odoo-vs-accounting-software"
+            },
+            {
+              "title": "هاشتاق عربي - لماذا تتوقف المدفوعات الرقمية عند أعتاب المتاجر الصغيرة؟",
+              "url": "https://www.hashtagarabi.com/284485/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%AA%D9%88%D9%82%D9%81-%D8%A7%D9%84%D9%85%D8%AF%D9%81%D9%88%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%82%D9%85%D9%8A%D8%A9-%D8%B9%D9%86%D8%AF-%D8%A3%D8%B9%D8%AA/"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "Zoho Books ZATCA Phase 2 free plan compliance Saudi Arabia",
+    "Zoho Invoice free ZATCA e-invoicing Saudi Arabia pricing plan",
+    "\"ZATCA\" WhatsApp invoicing app Saudi Arabia small merchant pricing SAR month",
+    "cheapest ZATCA compliant invoicing app Saudi Arabia price per month micro business",
+    "WhatsApp Business API cost Saudi Arabia per conversation SAR small business",
+    "مستقل خمسات تطوير برنامج فواتير زاتكا واتساب سعر",
+    "تجربتي تحويل من زوهو بوكس مجاني برنامج فواتير آخر السعودية",
+    "\"Zoho Books\" free plan \"e-invoicing\" \"not available\" OR \"only available\" plan Saudi",
+    "Moyasar Tap Payments transaction fees Saudi Arabia percentage SAR",
+    "صغار التجار لا يستخدمون برنامج فواتير يفضلون واتساب اكسل السعودية",
+    "Zoho Books free plan revenue cap SAR 200,000 upgrade required Saudi",
+    "\"Daftra\" OR \"Qoyod\" OR \"Wafeq\" reviews complaint expensive small merchant switch cheaper alternative"
+  ],
+  "limitations": [
+    "WebFetch tool failed for every attempted URL in this session ('proxy refused the connection'), including zoho.com pricing/help pages, the zatcahub.com review, help.zoho.com community thread, and costbench.com — all evidence had to be drawn from WebSearch snippets only, which could not be independently verified against full page content.",
+    "Fetch budget was exhausted (6/6, all failed) before the Zoho free-plan vs paid-plan e-invoicing question could be definitively resolved from Zoho's own primary pages.",
+    "No Saudi-specific survey, case study, or churn-rate data on micro-merchant switching behavior between invoicing tools was found in public sources; conclusions on switching are inferred from free-plan caps and isolated complaint snippets rather than direct measurement.",
+    "The Wafeq bait-and-switch complaint and some pricing figures come from AI-generated search-result summaries citing pages that could not be fetched/verified directly in this session; treat as WEAK evidence pending independent confirmation.",
+    "Unit-economics calculations for the ultra-micro WhatsApp-only tier (payment fee %, hosting, support cost) are the researcher's own arithmetic combining several DIRECT data points (competitor prices, gateway fees, WhatsApp API fees) rather than a single sourced study of any specific vendor's margins."
+  ]
+}

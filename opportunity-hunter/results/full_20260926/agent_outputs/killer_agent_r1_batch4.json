@@ -1,0 +1,274 @@
+{
+  "results": [
+    {
+      "candidate_id": "C16",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "NoorCV is a genuinely free (no premium tier, no hidden costs, no credit card ever) bilingual AR/EN AI resume builder explicitly built for Gulf professionals with Saudi-specific fields (visa status, nationality) and real user testimonials confirming actual usage/job outcomes. This is not a hypothetical competitor — it is free, well-localized, and serves the exact same customer (Saudi/Gulf job seeker wanting an AI-assisted bilingual CV) as the candidate. Combined with StylingCV, Hash Resume, Seera AI (all bilingual, Saudi-facing) and the fact that ChatGPT itself does this task for free, the core 'AI CV builder for Saudi market' concept has no scarcity value. The candidate's only proposed wedge (deep Saudi GOV-sector tailoring, WhatsApp delivery) is unverified and speculative, not evidenced.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://noorcv.com/",
+              "summary": "NoorCV: completely free AI resume builder for Gulf professionals incl. Saudi Arabia, bilingual AR/EN, Gulf-specific fields, real user testimonials ('This could easily be a paid product... amazing product'), no premium tier."
+            },
+            {
+              "url": "https://ai.stylingcv.com/saudi-arabia",
+              "summary": "Dedicated Saudi landing page competitor with free builder + premium features, per dossier."
+            },
+            {
+              "url": "https://lambacv.com/",
+              "summary": "Another free AI-powered ATS-compliant Arabic CV builder cited in dossier."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "The human-freelancer segment of this exact market is already commoditized down to $5/CV on Khamsat (confirmed live gig), and multiple fully free AI tools exist with real testimonials. The proposed 10-30 SAR one-time fee sits in a very thin margin band squeezed between free (NoorCV/ChatGPT) and $5 human freelancers, with no proof buyers will choose a paid AI tool over either free option.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://khamsat.com/writing/resume-writing/676212-%D8%B9%D9%85%D9%84-%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B0%D8%A7%D8%AA%D9%8A%D8%A9-%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9-%D9%85%D9%82%D8%A7%D8%A8%D9%84-5-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+              "summary": "Live $5 CV-writing gig confirming the commodity price floor for human alternative."
+            },
+            {
+              "url": "https://noorcv.com/",
+              "summary": "Fully free competitor removes the incentive to pay even a small one-time fee for most users."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for NoorCV traction/reviews to test STRONG_COMPETITOR — confirmed genuinely free with real testimonials",
+        "Checked whether free AI tools have commoditized the market (NO_WILLINGNESS_TO_PAY) — confirmed multiple free bilingual options exist alongside $5 freelancers",
+        "Considered SMALL_MARKET — rejected as attack vector since Saudi has a large, active job-seeker population and confirmed live demand (Mostaql/Khamsat)",
+        "Considered FOUNDER_MISFIT/TECHNICAL — rejected, MVP is EASY per feasibility validator, well within solo founder's ability"
+      ],
+      "remaining_uncertainties": [
+        "Whether a narrow GOV-sector-specific tailoring wedge could carve out a small paying niche despite free competitors",
+        "Actual conversion rate/paid-usage volume of NoorCV vs. paid alternatives (all traction claims are testimonial-based, not usage-metric-based)"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A - rejected",
+      "summary": "Killed primarily on STRONG_COMPETITOR: a fully free, well-localized, real-usage-confirmed Gulf/Saudi bilingual AI CV builder (NoorCV) already exists alongside several other free/cheap tools, squeezing out room for a paid entrant at the proposed 10-30 SAR price point, compounded by an already-commoditized $5 freelancer market (NO_WILLINGNESS_TO_PAY)."
+    },
+    {
+      "candidate_id": "C17",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "REGULATORY",
+          "reason": "The candidate's own feasibility validator flagged HIGH severity risk under Nizam al-Muhamah (Law Practice System): drafting formal complaint/legal text for consumers risks being characterized as unauthorized legal practice, which is restricted to licensed Bar-registered lawyers. Across FOUR different dispute domains (rental, gym, e-commerce, delivery) each with evolving rules, a solo non-lawyer founder faces real exposure and a nontrivial content-accuracy maintenance burden with no legal training.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://sba.gov.sa/wp-content/uploads/2022/05/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9-%D9%88%D9%84%D8%A7%D9%8A%D9%94%D8%AD%D8%AA%D9%87-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9.pdf",
+              "summary": "Law Practice System restricting legal representation/pleading and formal legal consultation to licensed lawyers registered with the Saudi Bar Association."
+            }
+          ]
+        },
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "At least three funded, actively-distributed Arabic AI legal-assistant apps already operate in Saudi Arabia and substantially overlap this exact use-case. Adel alone has 500,000 downloads and a 4.6-star rating (663 ratings), searches 70,000+ Saudi legal documents, and drafts contracts/legal documents. Shwra and Waddah AI add further overlapping coverage (lawsuit drafting, AI-to-lawyer routing). None of these is a cheap/free give-away, but their scale of real usage means a solo founder entering the same 'AI helps you with a legal/complaint problem' space faces an uphill distribution battle against apps with a multi-year head start and six-figure download counts.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://apps.apple.com/sa/app/adel-your-legal-assistant/id6695754708",
+              "summary": "Adel — Your Legal Assistant: 500K downloads, 4.6-star rating (663 ratings), searches 70K+ Saudi legal documents, drafts legal documents in Arabic."
+            },
+            {
+              "url": "https://shwra.ai/en",
+              "summary": "Shwra: licensed AI-triage-to-lawyer platform with ~1,400 App Store ratings across iOS/Android/Huawei."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "The underlying government complaint channels this tool would sit on top of (Najiz, Ejar, CST, Balagh Tijari, CPA) are entirely free. The candidate's own payment_validator found NO direct evidence anyone pays specifically for complaint-drafting/document-generation — only adjacent, unrelated evidence (general lawyer consultations at 100-1500 SAR, B2B AI-legal tools sold to lawyers, not consumers).",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://portalservices.cst.gov.sa/E-Services/Complaint/ComplaintFAQ.aspx",
+              "summary": "Free official CST complaint channel."
+            },
+            {
+              "url": "https://www.ejar.sa/en/help",
+              "summary": "Free official Ejar support channel for rental disputes."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for the legal-practice-boundary risk (نظام المحاماة) to test whether a non-lawyer drafting complaints is legally exposed — confirmed restriction exists, though exact application to 'informational drafting' remains ambiguous",
+        "Reviewed dossier's competition_validator for existing Arabic legal-AI apps — found three with real scale (Adel, Shwra, Waddah)",
+        "Reviewed payment_validator conclusions on willingness to pay — confirmed no direct evidence, only adjacent/unrelated payment signals",
+        "Considered narrowing to a single dispute type as a mitigation — still doesn't resolve the free-channel-underneath problem"
+      ],
+      "remaining_uncertainties": [
+        "Whether a strict 'template assembly, not advice' framing would fully avoid unauthorized-practice classification (unresolved legal question, not something searchable to certainty)",
+        "Whether Adel/Shwra/Waddah already cover these specific narrow workflows well enough to fully preempt a niche entrant"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A - rejected",
+      "summary": "Three independent MAJOR risks stack up: real unauthorized-practice-of-law exposure across four evolving legal domains for a non-lawyer solo founder, direct overlap with three already-scaled Arabic legal-AI apps (Adel: 500K downloads), and no evidence of payment for complaint-drafting specifically when the underlying government channels are free."
+    },
+    {
+      "candidate_id": "C18",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "The candidate's own payment_validator explicitly concluded 'no direct evidence anyone pays for a Musaned-specific dispute-help tool.' The official Musaned/HRSD complaint channel is free, government-run, and was recently updated (2025) to shorten resolution times, further reducing the pain a paid tool would need to solve. Only adjacent evidence exists: general legal consultation fees unrelated to this specific workflow.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.musaned.com.sa/ar/faqs/hiring-laborers",
+              "summary": "Free official Musaned FAQ/process for recruitment-office disputes."
+            },
+            {
+              "url": "https://www.hrsd.gov.sa/media-center/news/793639",
+              "summary": "Free official HRSD/Musaned electronic complaint-intake service."
+            }
+          ]
+        },
+        {
+          "category": "SMALL_MARKET",
+          "reason": "The candidate's own competition_validator explicitly rated this market_state as WEAK_MARKET, noting the niche 'sits between a recently-improved free government process and general-purpose Arabic legal-AI apps that likely already handle this informally,' and that Musaned's 2025 update reportedly reduced resolution time to 3-5 business days, which may have already resolved much of the underlying navigation difficulty this tool targets.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.arrajol.com/content/395665/",
+              "summary": "Confirms specific 15% penalty and 120-day refund trigger showing Musaned's own process is becoming more self-explanatory over time."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Reviewed payment_validator conclusions directly — no evidence of payment for this specific tool",
+        "Reviewed competition_validator's own WEAK_MARKET rating and reasoning",
+        "Considered whether the 90+30-day deadline-tracking feature alone could justify payment absent the drafting/legal-risk angle — found no evidence of demand for a standalone deadline tracker",
+        "Considered REGULATORY (same practicing-law ambiguity as C17) as an additional risk factor — narrower/administrative scope makes it less severe than C17 but still a live concern"
+      ],
+      "remaining_uncertainties": [
+        "Actual annual volume of Musaned complaints is unknown (no public statistic found), making true market size unverifiable either way",
+        "Whether a free/ad-supported or lead-gen-to-lawyer model (rather than a paid packet fee) could work better than the proposed per-use fee"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A - rejected",
+      "summary": "Two MAJOR, evidence-backed reasons from the dossier's own validators: no proof of willingness to pay against a free, recently-improved government channel, and the competition validator's own WEAK_MARKET assessment. The niche is real but too thin and too adjacent to an already-free, already-improving official process to sustain a paid solo product."
+    },
+    {
+      "candidate_id": "C19",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "REGULATORY",
+          "reason": "Fresh search confirms the SDAIA Responsible AI Policy consultation closed 3 May 2026 and, as of the most recent available information, 'has not yet been finalized' — nearly five months after consultation close and with today's date (26 Sept 2026) well past that, there is still no binding law, no confirmed enforcement scope, and no confirmed timeline. Building a compliance product against a policy that may still change materially (or never be finalized on a knowable schedule) is premature market timing, not a licence problem per se, but functionally blocks any real near-term customer urgency.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://digitalpolicyalert.org/event/39093-saudi-data-and-artificial-intelligence-authority-closes-consultation-on-draft-responsible-ai-policy-including-performance-monitoring-requirement",
+              "summary": "Confirms consultation closed 3 May 2026 on the draft policy including performance-monitoring requirement — still described as a draft, not finalized."
+            },
+            {
+              "url": "https://www.spa.gov.sa/en/N2551533",
+              "summary": "Official SPA announcement of the consultation invitation, confirming draft (non-binding) status at time of opening."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "No evidence of any Saudi small/mid AI or SaaS vendor paying for SDAIA-specific compliance tooling today. The only confirmed willingness-to-pay data point is global enterprise-tier AI-governance platforms (Credo AI, $30K-150K+/year) serving large multinationals like Mastercard and McKinsey — an entirely different customer segment and price point than 'small Saudi AI/SaaS vendors,' the candidate's stated target.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://co-aims.com/blog/credo-ai-review-2026-compliance-officers",
+              "summary": "Credo AI enterprise pricing $30,000-150,000+/year — wrong customer segment for a small Saudi vendor product."
+            }
+          ]
+        },
+        {
+          "category": "FOUNDER_MISFIT",
+          "reason": "The candidate's own feasibility validator explicitly flagged that 'B2B compliance tooling typically requires buyer trust/credibility that an unknown solo founder lacks, especially for government-adjacent risk products; enterprise sales cycles are long' — a direct admission that this business model does not fit a solo founder's realistic go-to-market capability, independent of the regulatory timing issue.",
+          "severity": "MAJOR",
+          "evidence": []
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for whether the SDAIA Responsible AI Policy has been finalized since the April/May 2026 consultation — confirmed still not finalized, undermining the regulatory trigger's near-term urgency",
+        "Checked for any existing paid Saudi-specific AI-governance compliance product with SME customers — none found",
+        "Reviewed feasibility validator's own founder-fit concerns about B2B compliance sales credibility"
+      ],
+      "remaining_uncertainties": [
+        "Whether/when the policy will ultimately be finalized and what its actual enforcement scope on small vendors will be",
+        "Whether a much cheaper, self-serve version (not requiring enterprise trust) could work once the policy is finalized"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A - rejected",
+      "summary": "This is explicitly a FUTURE_HYPOTHESIS resting on an unfinalized draft regulation (confirmed still not finalized via fresh search, ~5 months after consultation closed), with no current Saudi SME paying customer and a B2B trust/credibility mismatch for a solo unknown founder — multiple independent reasons to reject now, though it could be revisited once the policy is actually finalized and enforcement scope is known."
+    },
+    {
+      "candidate_id": "C20",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "REGULATORY",
+          "reason": "Fresh search confirms that providing recruitment/labor-matching services without an MHRSD license is a serious violation carrying fines of SR200,000 (1st offense), SR220,000 (2nd) and SR250,000 (3rd) in Saudi Arabia. A platform that matches individual skilled tradespeople/workers to paid work opportunities plausibly falls within this licensing regime, which is exactly the kind of 'hard licence' the founder constraints explicitly instruct to avoid.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://saudigazette.com.sa/article/664621/saudi-arabia/saudi-arabia-cracks-down-on-unlicensed-recruitment-services-with-fines-up-to-sr250000",
+              "summary": "Saudi Arabia cracks down on unlicensed recruitment services with fines up to SR250,000."
+            },
+            {
+              "url": "https://www.hrsd.gov.sa/en/%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%88%D8%B8%D9%8A%D9%81",
+              "summary": "MHRSD regulatory framework governing recruitment/employment-matching services, cited in dossier's own feasibility validator as HIGH severity blocker."
+            }
+          ]
+        },
+        {
+          "category": "FOUNDER_MISFIT",
+          "reason": "The candidate's own feasibility validator explicitly concluded solo_founder_feasible: false, rating complexity HARD due to a classic two-sided marketplace cold-start problem (needing both trusted certified-subcontractor supply and main-contractor demand simultaneously) in an industry that is relationship-driven and pre-qualification-based, not open-marketplace-based — an environment where an unknown solo founder has no credibility or existing relationships to break in.",
+          "severity": "FATAL",
+          "evidence": []
+        },
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "Saudi Arabia already has multiple dedicated, Arabic-native subcontractor/tender-matching platforms (Batengate, Muqawalatgate, Contractor.sa) plus an authority-backed incumbent (Scavo, backed by the Saudi Contractors Authority) and a regional procurement platform (ProTenders) already covering the tender-discovery/subcontractor-connection layer this candidate targets.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://scavo.sa/",
+              "summary": "Saudi Contractors Authority-backed real-time project/tender platform serving contractors, subcontractors, suppliers and consultants."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for MHRSD licensing requirements/penalties for online worker-matching platforms — confirmed severe fines (up to SR250,000) for unlicensed recruitment/labor-matching services",
+        "Reviewed dossier's own feasibility validator conclusion (solo_founder_feasible: false) and competition_validator's list of existing Arabic-native subcontractor platforms",
+        "Considered narrowing to a pure tender-discovery directory (no worker placement) to sidestep the MHRSD licensing risk — still leaves the two-sided cold-start and strong-competitor problems unresolved"
+      ],
+      "remaining_uncertainties": [
+        "Whether a narrower, non-placement 'compliance-document checklist only' tool (no worker matching/placement) could avoid the MHRSD licensing trigger entirely — unexplored mitigation",
+        "Actual pace of Expo 2030/World Cup 2034 construction ramp-up remains only partially confirmed"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A - rejected",
+      "summary": "Two independent FATAL reasons: a plausible MHRSD recruitment/labor-matching licensing requirement carrying fines up to SR250,000 (exactly the 'hard licence' type founder constraints flag to avoid), and the dossier's own feasibility validator already concluding solo_founder_feasible: false due to an unwinnable two-sided marketplace cold-start problem in a relationship-driven, pre-qualification-based industry — compounded by several already-established Arabic-native competitor platforms."
+    }
+  ],
+  "queries_used": [
+    "NoorCV free Saudi resume builder reviews users",
+    "SDAIA Responsible AI Policy finalized 2026 status",
+    "نظام المحاماة صياغة الشكاوى بدون ترخيص محامي",
+    "MHRSD license recruitment agency online platform matching workers penalty"
+  ],
+  "limitations": [
+    "Did not independently re-fetch pricing pages for Adel/Shwra/Waddah or NoorCV's terms page; relied on WebSearch synthesis snippets for competitor confirmation, consistent with the original dossiers' own noted proxy/fetch failures.",
+    "Did not verify whether the MHRSD recruitment-licensing regime applies specifically to construction-tradesperson matching (vs. domestic-worker recruitment, which is the clearer case in the cited sources) — treated as a strong analogous risk rather than a 100%-certain direct match.",
+    "Budget used conservatively (4 of 14 searches, 0 of 8 fetches) since the pre-existing validation dossiers already contained extensive, well-sourced evidence sufficient to reach confident verdicts on all five candidates without needing exhaustive fresh re-verification.",
+    "Did not search for a possible narrower/mitigated version of C20 (compliance-checklist-only, no worker placement) that might avoid the MHRSD licensing trigger — flagged as an open mitigation path rather than fully explored."
+  ]
+}

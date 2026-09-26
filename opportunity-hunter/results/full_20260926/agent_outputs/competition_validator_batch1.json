@@ -1,0 +1,281 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "competitors": [
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "SAR 120–330/month tiered (Pro plan SAR 207/month or SAR 2,070/year incl. tax, 3 users/3 locations); ZATCA e-invoicing integration included with no extra fee; add-ons e.g. Payroll SAR10/employee/mo, POS SAR50/user/mo (per Qoyod Help Center / blog, seen via search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA Phase-2 e-invoicing (QR+XML) built-in per vendor page",
+          "strengths": "Established local brand, full accounting+ZATCA suite, no extra fee for e-invoicing, tiered pricing incl. a starter tier",
+          "weaknesses": "Full accounting suite may be overkill for a solo shop owner who only needs invoice issuance; starter tier still ~SAR120+/month, higher than dedicated micro tools"
+        },
+        {
+          "name": "Fatoora Cloud (BytesRaw)",
+          "url": "https://www.fatoora.cloud/",
+          "hq_country": "Saudi Arabia (per .cloud SA-focused branding)",
+          "serves_saudi": "YES",
+          "pricing": "From SAR 75/month, 2 users included, 'zero setup' (per search snippet)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "ZATCA Phase 2 ready cloud invoicing",
+          "strengths": "Explicitly positioned as a lightweight, low-cost ZATCA tool for Saudi SMEs, undercutting full ERPs",
+          "weaknesses": "Pricing/feature depth not independently verified beyond snippet; brand awareness likely low vs Qoyod"
+        },
+        {
+          "name": "FatooraPlus",
+          "url": "https://fatooraplus.com/pricing/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Plans starting from SAR 99/month (per search snippet)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "ZATCA e-invoicing plans",
+          "strengths": "Another cheap dedicated ZATCA compliance product already on the market",
+          "weaknesses": "Pricing tier detail and reviews not verified in this session"
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/zatca-e-invoicing-phase-2",
+          "hq_country": "UNKNOWN (regional SaaS)",
+          "serves_saudi": "YES",
+          "pricing": "Free trial offered; paid tiers not confirmed in this session",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA Phase 2 compliance, VAT return generation",
+          "strengths": "Dual-language accounting + compliance automation, actively marketed to Saudi SMEs",
+          "weaknesses": "Positioned as full accounting software, not a single-merchant micro tool"
+        },
+        {
+          "name": "Daftra",
+          "url": "https://www.daftra.com",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (not fetched this session)",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA e-invoicing features per search snippet",
+          "strengths": "Established regional SME software brand",
+          "weaknesses": "Pricing not confirmed; general SME suite, not a micro-merchant-only product"
+        }
+      ],
+      "market_state": "COMPETITIVE",
+      "gap_description": "Multiple localized, ZATCA-compliant products already exist at low monthly prices (Fatoora Cloud from SAR75/mo, FatooraPlus from SAR99/mo, Qoyod from ~SAR120/mo) specifically targeting small merchants, so 'a cheap ZATCA tool' alone is not a gap — this space is more crowded than the candidate's evidence assumed. The narrower gap is the very smallest tier: sole proprietors/micro-shops issuing only a handful of invoices/month who find even a SAR75-120/month subscription or any dashboard-based UX unnecessary, plus non-Arabic-first or non-WhatsApp-native UX in most incumbents.",
+      "differentiation_angle": "A radically minimal, WhatsApp-only (no dashboard/app) pay-per-invoice or near-free tier for the absolute smallest merchants (below the incumbents' typical target), or bundling ZATCA-compliant invoice generation with automatic Arabic OCR of paper receipts for micro-shops who don't do POS at all — positioned strictly below Fatoora Cloud's SAR75 floor.",
+      "summary": "The ZATCA micro-merchant compliance space already has several dedicated, cheap, Saudi-facing products (Fatoora Cloud, FatooraPlus) plus full accounting suites (Qoyod, Wafeq, Daftra) that already bundle ZATCA compliance at low monthly prices. This is COMPETITIVE, not underserved — a solo founder would need a materially different angle (ultra-micro/WhatsApp-only/free-tier) to compete, and must also verify whether ZATCA requires accredited-provider status (open question, not resolved this session)."
+    },
+    {
+      "candidate_id": "C02",
+      "competitors": [
+        {
+          "name": "SaudizationMeter",
+          "url": "https://www.saudizationmeter.com/pricing",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Free calculator (no account); paid tiers: Starter $30/month (1 company, ≤50 employees, 10 scenarios, 6-month history), Pro $80/month (3 companies, ≤250 employees, unlimited scenarios, custom alerts/audit log), Enterprise from $400/month; 7-day free trial (per saudizationmeter.com/pricing, search snippet)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Nitaqat/Qiwa calculation logic refreshed against official MHRSD thresholds 'every half month'; no confirmed live Qiwa API sync — appears to require manual roster input for automatic tracking/what-if scenarios and band-drop alerts",
+          "strengths": "Already a live, purpose-built SaaS doing exactly this: Nitaqat band calculation, what-if hiring scenarios, custom alerts, audit log, multi-company support",
+          "weaknesses": "Priced in USD not SAR (unusual for a Saudi-SME-only product, may signal it's not deeply localized); no evidence of native Qiwa API integration (still manual data entry); no reviews/traction evidence found"
+        },
+        {
+          "name": "Jisr Nitaqat Calculator",
+          "url": "https://www.jisr.net/en/hr-tools/nitaqat-calculator",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Free calculator tool; full Jisr HCM platform pricing is custom-quoted (no published figure), targets 6-250 employees",
+          "arabic_support": "YES",
+          "saudi_integrations": "Nitaqat/GOSI/WPS compliance features within broader HCM suite",
+          "strengths": "Bundled with a full, established Saudi HCM suite; free calculator as lead magnet",
+          "weaknesses": "Full platform is enterprise-priced/quote-only, not a lightweight standalone dashboard for a 5-20 person SME"
+        },
+        {
+          "name": "NeuralHR.AI / PalmHR / iCeipts",
+          "url": "https://neuralhr.ai/en/best-hr-software-saudi-arabia",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Live Nitaqat dashboards reportedly exposed within these HR suites (per search snippet)",
+          "strengths": "Multiple full-suite HR vendors already expose Nitaqat band tracking as a feature",
+          "weaknesses": "Bundled inside broader (likely pricier) HCM platforms, not sold standalone"
+        }
+      ],
+      "market_state": "COMPETITIVE",
+      "gap_description": "Contrary to the candidate's framing (which found no dedicated tool), a standalone Nitaqat compliance SaaS (SaudizationMeter) already exists with tiered pricing and scenario/alert features, and several Saudi HCM suites (Jisr, NeuralHR, PalmHR, iCeipts) bundle Nitaqat dashboards. The gap is localization: SaudizationMeter's USD pricing and unclear Arabic support suggest it may not be well-adapted to Arabic-first Saudi micro-employers, and none of the found tools clearly offer live Qiwa data sync (all appear to rely on manual roster entry).",
+      "differentiation_angle": "An Arabic-first, SAR-priced, WhatsApp-alert-native Nitaqat tracker specifically for micro/small employers (5-30 staff) who find SaudizationMeter's USD/English enterprise-scenario framing intimidating or irrelevant — cheaper single-company tier with simple red/yellow/green status and deadline nudges rather than 'scenario planning' features aimed at larger HR teams.",
+      "summary": "This market already has a real direct competitor (SaudizationMeter) plus Nitaqat features bundled into major Saudi HCM suites (Jisr, NeuralHR, PalmHR, iCeipts) — market_state should be read as COMPETITIVE, which materially changes the candidate's original NO_SOLUTION assumption. A solo founder could still differentiate via Arabic-first UX, SAR pricing and WhatsApp alerts for the very smallest employers, but must validate willingness to pay against a free existing calculator (Jisr's) and a cheap existing paid tool (SaudizationMeter Starter $30/mo)."
+    },
+    {
+      "candidate_id": "C03",
+      "competitors": [
+        {
+          "name": "Jisr",
+          "url": "https://www.jisr.net/en/solutions/smbs",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Custom quote based on headcount/modules, no published figure (per Capterra/Software Finder snippets, Aug 2026); targets 6-250 employees",
+          "arabic_support": "YES",
+          "saudi_integrations": "Automates WPS/Mudad compliance, GOSI, Qiwa, ERP integrations per vendor page",
+          "strengths": "Full HCM suite covering payroll, attendance, compliance in one platform; 'start small and add more' positioning for SMBs",
+          "weaknesses": "No published pricing (classic enterprise sales-quote friction for a very small business just wanting reminders); likely overkill/costly for a 5-20 person employer only wanting deadline alerts"
+        },
+        {
+          "name": "Bayzat",
+          "url": "https://www.bayzat.com/ar/ksa/blog/%D9%85%D8%A7-%D9%87%D9%8A-%D9%85%D9%86%D8%B5%D8%A9-%D9%85%D9%8F%D8%AF%D8%AF-%D9%88%D9%85%D8%A7-%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%8A-%D8%AA%D9%82%D8%AF%D9%85%D9%87%D8%A7/",
+          "hq_country": "UAE",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (not disclosed publicly)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Automates Qiwa/Mudad/GOSI compliance per vendor blog",
+          "strengths": "Regional full HR/payroll platform with compliance automation",
+          "weaknesses": "Enterprise-style 'contact us' pricing, likely priced above micro-employer budget"
+        },
+        {
+          "name": "ZenHR",
+          "url": "https://www.zenhr.com/ar/home",
+          "hq_country": "Jordan/regional",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "GOSI/WPS compliance",
+          "strengths": "Established regional HR suite",
+          "weaknesses": "Full-suite positioning, not a lightweight reminder-only tool"
+        }
+      ],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "No dedicated, lightweight, reminder-only tool (as opposed to a full HCM/payroll suite) was found that simply centralizes Qiwa/Mudad/GOSI/Muqeem deadline tracking for very small employers. The existing options (Jisr, Bayzat, ZenHR) are full-featured HCM platforms with opaque, likely enterprise-oriented ('contact sales') pricing, poor fit for a 5-20 person business that just wants alerts, not payroll/attendance/recruiting modules.",
+      "differentiation_angle": "A narrow, cheap, alerts-and-checklist-only SaaS (no payroll/attendance features) for micro-employers who don't want or can't afford a full HCM suite — priced and scoped well below Jisr/Bayzat/ZenHR, explicitly targeting the 5-20 employee segment ignored by enterprise HCM sales-quote models.",
+      "summary": "Full HCM suites (Jisr, Bayzat, ZenHR) already automate Qiwa/Mudad/GOSI compliance but are priced/scoped for growing businesses (6-250+ employees) with opaque enterprise pricing; no evidence of a narrow, self-serve, reminder-only competitor for the smallest employers. This is a genuine gap for a stripped-down tool, but the core open question — whether Qiwa/GOSI/Mudad expose any API/export a third party could use without manual re-entry — remains unresolved and is a real technical risk (a manual-entry-only tool has weaker differentiation)."
+    },
+    {
+      "candidate_id": "C04",
+      "competitors": [
+        {
+          "name": "Sanad.ai",
+          "url": "https://sanad.ai/",
+          "hq_country": "UNKNOWN (Arabic-first OCR vendor)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (no public pricing found; distributed via UiPath Marketplace with cloud and on-premise options, implying enterprise/RPA sales motion)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Extracts invoices/financial reports/tables in Arabic and English; integrates into RPA workflows (UiPath)",
+          "strengths": "Purpose-built Arabic invoice/document OCR with strong accuracy claims; established enough to be listed on UiPath Marketplace",
+          "weaknesses": "Positioned for enterprise/RPA integration, not a self-serve SME product with transparent SAR pricing — no evidence of a micro-business-friendly tier"
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/best-accounting-software-in-saudi-arabia",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Free trial; paid tiers not confirmed",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA-format VAT return automation, dual-language financial statements",
+          "strengths": "Automates outgoing invoice compliance and VAT return prep",
+          "weaknesses": "Focused on issuing/managing a business's own compliant invoices, not OCR-ingesting incoming paper/PDF supplier invoices or bank reconciliation matching — the specific pain in this candidate"
+        },
+        {
+          "name": "Freelance accountants/data-entry clerks (Mostaql)",
+          "url": "https://mostaql.com/projects/skill/accounting",
+          "hq_country": "Saudi Arabia (freelance marketplace)",
+          "serves_saudi": "YES",
+          "pricing": "Per-project/ad hoc, exact rates not visible in search snippets",
+          "arabic_support": "YES",
+          "saudi_integrations": "N/A (manual human work)",
+          "strengths": "Flexible, no software lock-in, handles messy/handwritten invoices a machine might struggle with",
+          "weaknesses": "Slow, inconsistent quality, needs re-hiring every cycle, no audit trail/automation"
+        }
+      ],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "Arabic invoice OCR technology exists (Sanad.ai) but is positioned/distributed as an enterprise RPA component, not an accessible, transparently-priced, self-serve tool for micro-SMEs. Existing accounting SaaS (Wafeq, Qoyod, Daftra) automate outgoing ZATCA-compliant invoice issuance but do not clearly solve incoming supplier-invoice OCR ingestion or bank-statement reconciliation matching — the default fallback remains hiring freelancers on Mostaql for manual re-keying, which is inefficient but currently the norm.",
+      "differentiation_angle": "A self-serve, transparently SAR-priced (per-document or low monthly fee) tool that ingests photographed/PDF supplier invoices and bank statements, using Arabic OCR (build or license) to auto-reconcile and flag exceptions — targeting the exact micro-SME segment that currently re-posts the same 'invoice data entry' freelance gigs on Mostaql repeatedly, undercutting both freelancer costs and enterprise RPA pricing.",
+      "summary": "No direct, accessible micro-SME competitor was found doing self-serve AI bookkeeping/reconciliation; the closest technology (Sanad.ai) is enterprise/RPA-oriented rather than a simple self-serve SaaS, and mainstream accounting SaaS (Wafeq/Qoyod) solve invoice issuance, not incoming-invoice OCR or reconciliation. This leaves a real gap, but technical risk (Arabic OCR accuracy on messy/handwritten invoices) and unverified willingness-to-pay vs. cheap freelancers remain open questions."
+    },
+    {
+      "candidate_id": "C05",
+      "competitors": [
+        {
+          "name": "Fresha",
+          "url": "https://www.fresha.com/pricing",
+          "hq_country": "UK/global",
+          "serves_saudi": "YES",
+          "pricing": "Subscription reported ~$19.95/month solo or $14.95/bookable team member/month, PLUS 20% commission on every marketplace-sourced booking (per SchedulingKit/Blyssbook snippets); consumer service prices in Saudi noted from SAR40 for a haircut",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "UNKNOWN (no confirmed mada/ZATCA/WhatsApp-native integration found)",
+          "strengths": "World's largest booking marketplace brand, drives new-client discovery via marketplace, established in KSA",
+          "weaknesses": "20% commission on marketplace bookings erodes thin salon margins; not WhatsApp-native; no confirmed Arabic-first UX"
+        },
+        {
+          "name": "Watily (salon/clinic booking)",
+          "url": "https://watily.com/lp/booking-system-salons/en/",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "Salon Basic plan SAR149/month (up to 10 staff, single location); WhatsApp Business plans from SAR49/month; system plans (store/ZATCA/bookings/loyalty) from SAR149/month; no setup fee, no per-booking commission (per watily.com, search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "WhatsApp booking + reminders, ZATCA invoicing, loyalty — clinic and salon-specific landing pages",
+          "strengths": "Local, Arabic-first, WhatsApp-native, no commission, bundles ZATCA invoicing too — directly matches the candidate's proposed solution shape",
+          "weaknesses": "SAR149/month may still be too high for the very smallest single-practitioner shop the candidate targets; feature depth/reviews not independently verified"
+        },
+        {
+          "name": "OJlinker",
+          "url": "https://ojlinker.com.sa/",
+          "hq_country": "Saudi Arabia (per .com.sa)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (pricing page not found/fetched in this session)",
+          "arabic_support": "YES",
+          "saudi_integrations": "WhatsApp-based AI automated booking for barbershops/salons",
+          "strengths": "Purpose-built AI WhatsApp booking automation, local brand",
+          "weaknesses": "Pricing opacity; no reviews found"
+        },
+        {
+          "name": "Hajzak",
+          "url": "https://hajzak.ai/beauty-salons/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "AI-based appointment booking for beauty salons",
+          "strengths": "Another AI-native competitor validating market demand",
+          "weaknesses": "Pricing/traction unverified"
+        },
+        {
+          "name": "Medicakare",
+          "url": "https://www.medicakare.com/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Reported as a free clinic-management program (per search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Clinic management/appointments",
+          "strengths": "Free option lowers the ceiling on what small clinics will pay for basic scheduling",
+          "weaknesses": "Free tools are typically feature-limited/ad-supported; sustainability unclear"
+        }
+      ],
+      "market_state": "COMPETITIVE",
+      "gap_description": "This space already has multiple localized, WhatsApp-native, no-commission competitors (Watily at SAR149/month, OJlinker, Hajzak) plus a global marketplace incumbent (Fresha) and even a free clinic-management tool (Medicakare) — considerably more crowded than the candidate's evidence implied. The remaining gap is the very bottom of the market: single-practitioner/1-chair operators who find even SAR149/month too high, or medical clinics (vs. salons/barbershops) specifically, where most found competitors (Watily excepted) skew toward salons.",
+      "differentiation_angle": "Undercut Watily's SAR149/month floor with a stripped-down, WhatsApp-only bot (no dashboard, no ZATCA/loyalty bundle) priced for true micro/solo operators, or specialize deeply in medical-clinic no-show reduction (leveraging the documented 11-73% no-show rates) rather than the more crowded salon/barbershop niche — while being careful to stay outside SFDA/PDPL-regulated patient-record territory.",
+      "summary": "Contrary to a 'no solution' read, this is a COMPETITIVE market: Watily already offers almost exactly the candidate's proposed product (WhatsApp-native, no-commission, SAR149/month, Arabic-first, clinic+salon versions) alongside Fresha, OJlinker, Hajzak and a free option (Medicakare). A solo founder would need to compete on price (below SAR149/month) or a specific underserved niche (single-practitioner shops, or medical clinics specifically) rather than a generic WhatsApp booking bot."
+    }
+  ],
+  "queries_used": [
+    "Qoyod pricing plans SAR ZATCA e-invoicing",
+    "Fatora.io ZATCA e-invoicing pricing small business",
+    "Nitaqat Saudization tracking software dashboard SME third-party",
+    "Jisr HR software pricing Saudi SME plans",
+    "Fresha pricing Saudi Arabia commission salon",
+    "saudizationmeter.com calculator (fetch attempt, failed - proxy refused)",
+    "\"Qiwa\" \"Mudad\" \"GOSI\" reminder app deadline alerts small business Saudi",
+    "Arabic invoice OCR data extraction SaaS accounting automation Saudi Arabia",
+    "Watily booking system pricing Saudi clinic salon",
+    "OJlinker WhatsApp booking pricing Saudi",
+    "saudizationmeter.com pricing plan Nitaqat calculator subscribe",
+    "Sanad.ai pricing Arabic OCR invoice extraction"
+  ],
+  "limitations": [
+    "WebFetch to saudizationmeter.com/en/calculator failed ('proxy refused the connection'); pricing/feature detail for SaudizationMeter relies on a WebSearch AI summary of search snippets from saudizationmeter.com/pricing, not a direct page fetch — flagged as such in competitor notes.",
+    "OJlinker and Hajzak pricing pages were not found/fetched; their pricing is recorded as UNKNOWN rather than invented.",
+    "Arabic-language UI support for Fresha, Fatoora Cloud, FatooraPlus, SaudizationMeter, and NeuralHR/PalmHR/iCeipts could not be confirmed in this session (marked UNKNOWN).",
+    "No independent review-site (G2/Capterra/Trustpilot) data was pulled for any competitor due to budget constraints; 'weaknesses' are inferred from pricing structure and positioning rather than user reviews.",
+    "Did not verify whether ZATCA requires accredited/certified e-invoicing providers only (relevant hard-barrier question for C01) — remains an open question, not resolved by this validator.",
+    "Did not verify whether Qiwa/GOSI/Mudad expose any public API for third-party tools (relevant to C02 and C03) — remains unresolved.",
+    "Search budget (14 searches) and fetch budget (8 fetches, 1 attempted/failed) were allocated across 5 candidates; deeper due diligence (e.g., fetching every competitor's live pricing page) was not possible within budget."
+  ]
+}

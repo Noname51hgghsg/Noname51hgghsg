@@ -1,0 +1,270 @@
+{
+  "results": [
+    {
+      "candidate_id": "C06",
+      "stack": {
+        "frontend": "Salla Partner app UI (Twilight SDK) and/or Zid Partner app UI + lightweight Next.js merchant dashboard",
+        "backend": "Node.js/Python serverless functions handling OAuth install + order webhooks from Salla/Zid",
+        "database": "Postgres (Supabase) storing order/address/validation status",
+        "authentication": "OAuth2 via Salla Partners API and/or Zid Partner API (per-store install)",
+        "ai": "Optional LLM (Claude) to fuzzy-parse free-text Arabic addresses into structured National Address fields",
+        "apis": "Salla Partners/Apps API, Zid Seller API; no confirmed public API found for authoritative National Address look-up/validation",
+        "hosting": "Vercel/Render + Supabase",
+        "payments": "Moyasar/Tap for merchant subscription billing (or Salla/Zid marketplace's own billing, fee structure unconfirmed)",
+        "integrations": "WhatsApp Business API via a BSP (360dialog/Twilio/Wati) for pre-dispatch confirmation messages"
+      },
+      "mvp_scope": [
+        "OAuth install flow for one platform first (Salla or Zid)",
+        "Webhook listener on new order to pull shipping address",
+        "Completeness/format check of address fields (short-code pattern, required fields) - flags incomplete/likely-invalid addresses",
+        "WhatsApp message to customer via BSP asking to confirm/complete address before dispatch",
+        "Merchant dashboard listing flagged/at-risk orders"
+      ],
+      "mvp_cost_sar_low": 550,
+      "mvp_cost_sar_high": 1400,
+      "monthly_run_cost_sar": "~250-500 SAR (WhatsApp BSP subscription ~€49/mo ≈200 SAR + per-message fees + hosting ~50-100 SAR)",
+      "build_time_weeks": "6-8",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Handling customer personal data (addresses, phone numbers) triggers Saudi PDPL obligations (lawful basis, safeguards)",
+          "url": "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "Must be accepted as a Salla/Zid Partner and pass app-store review before distribution",
+          "url": "https://docs.salla.dev/",
+          "severity": "LOW"
+        },
+        {
+          "requirement": "National Address mandate for parcels (SAR 5,000 fine, effective 1 Jan 2026) applies directly to postal/delivery providers, not to this plugin, but sets the compliance deadline driving merchant demand",
+          "url": "https://saudigazette.com.sa/article/632436",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "No confirmed public API to validate/look up official Saudi National Address records against the authoritative government database (Saudi Post/SPL) - not found in this session",
+        "Whether Salla/Zid already validate National Address natively at checkout (would remove the need for this app)",
+        "Approval into Salla Partners Portal and/or Zid Partner Dashboard"
+      ],
+      "blockers": [
+        "If Salla/Zid ship native National Address validation, the plugin's core value disappears",
+        "Without a confirmed look-up API, the MVP can likely only do format/completeness checks, not true address verification - a materially weaker product than 'validates addresses'",
+        "Marketplace app review/approval timeline is outside the founder's control"
+      ],
+      "summary": "Technically an EASY-to-MODERATE Salla/Zid partner app (OAuth + order webhook + WhatsApp confirmation) buildable solo within a stretched budget, using free-tier hosting/Supabase plus a ~200 SAR/month WhatsApp BSP plan. The main feasibility risk is not build complexity but data access: no confirmed public API was found to validate addresses against the authoritative Saudi National Address database, so the achievable MVP likely does completeness/format checks rather than true look-up validation - weaker differentiation, and easily replicated by Salla/Zid themselves."
+    },
+    {
+      "candidate_id": "C07",
+      "stack": {
+        "frontend": "Arabic-first Next.js web app",
+        "backend": "Node.js/Python (FastAPI)",
+        "database": "Postgres (Supabase)",
+        "authentication": "Phone-OTP or email/password (Supabase Auth)",
+        "ai": "Claude API to draft rent-reminder text and to OCR/parse uploaded Ejar contract PDFs into structured fields",
+        "apis": "No live Ejar API in the MVP (see blockers) - manual/CSV/PDF-upload data entry instead",
+        "hosting": "Vercel/Render + Supabase",
+        "payments": "Moyasar for landlord subscription billing",
+        "integrations": "WhatsApp Business API (BSP) for rent-due/late reminders; manual import of Ejar contract data rather than live sync"
+      },
+      "mvp_scope": [
+        "Manual/CSV/PDF-upload entry of contract data (unit, tenant, rent amount, due date) - no live Ejar API",
+        "Automated WhatsApp rent-due and late-payment reminders",
+        "Simple maintenance-ticket log with photo upload",
+        "Basic (non-ZATCA) invoice/receipt generation - residential rent is VAT-exempt in KSA so Fatoora integration is likely unnecessary for this segment"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 1000,
+      "monthly_run_cost_sar": "~250-350 SAR (hosting ~80-120 SAR + WhatsApp BSP ~200 SAR)",
+      "build_time_weeks": "5-7",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Live Ejar API access reportedly requires Saudi Commercial Registration, REGA developer or property-manager registration, PDPL compliance certification, and a technical security assessment - not a quick self-serve signup",
+          "url": "https://rega.gov.sa/en/electronic-services/ejar/",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "Storing tenant personal/financial data triggers PDPL obligations",
+          "url": "https://iapp.org/news/a/saudi-arabia-s-data-protection-authority-steps-up-enforcement",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "If a landlord/property manager is VAT-registered, invoices may need to comply with ZATCA e-invoicing Phase 2 (Fatoora integration)",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/PreparingYourBusiness/Phase2/Pages/How-to-prepare.aspx",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "No confirmed self-serve public Ejar API - direct integration appears gated behind REGA registration/security assessment (per search snippet, not independently verified in full)",
+        "Real Ejar contract data must be entered manually/uploaded rather than pulled live for the MVP"
+      ],
+      "blockers": [
+        "The candidate's core differentiator - being 'layered on Ejar contract data' via API - is likely HARD, not solo-feasible at launch: REGA appears to gate direct API access behind Commercial Registration plus developer/property-manager registration and a security assessment, a multi-month accreditation process rather than a self-serve API key",
+        "The realistically buildable MVP (manual-entry rent/maintenance tracker) is a materially weaker product than the 'Ejar-integrated' vision described"
+      ],
+      "summary": "A manual-entry rent-reminder plus maintenance-log tool (no live Ejar API) is an EASY-to-MODERATE, solo-buildable MVP within a stretched budget. However, the stated differentiator of syncing directly with Ejar contract data is not solo-feasible at launch per search evidence: direct API access appears to require Commercial Registration and REGA developer/property-manager registration plus a security assessment - a multi-month accreditation path, not a quick integration. ZATCA e-invoicing is likely avoidable for residential rent (VAT-exempt), which reduces one complexity source."
+    },
+    {
+      "candidate_id": "C08",
+      "stack": {
+        "frontend": "Mobile-friendly PWA (Next.js) for the office dashboard; WhatsApp for technician-facing updates (no native app needed for MVP)",
+        "backend": "Node.js/Python",
+        "database": "Postgres (Supabase)",
+        "authentication": "Phone-OTP (Supabase Auth/Firebase)",
+        "ai": "Optional: Claude to auto-summarize job notes/photos into a per-site history entry",
+        "apis": "Google Maps API (optional, technician location); WhatsApp Business API",
+        "hosting": "Vercel/Render + Supabase",
+        "payments": "Moyasar for per-technician monthly subscription billing",
+        "integrations": "WhatsApp Business API (BSP) for job assignment/status updates; optional third-party ZATCA e-invoicing middleware for VAT-registered clients"
+      },
+      "mvp_scope": [
+        "Job creation & technician assignment",
+        "WhatsApp-based job status updates (started/completed) from technician",
+        "Per-site maintenance history log with photos",
+        "Simple invoice/receipt generation per completed job"
+      ],
+      "mvp_cost_sar_low": 600,
+      "mvp_cost_sar_high": 1300,
+      "monthly_run_cost_sar": "~300-450 SAR (hosting ~100 SAR + WhatsApp BSP ~200 SAR + optional Maps API usage)",
+      "build_time_weeks": "5-7",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "If the maintenance company is VAT-registered, B2B invoices issued through the tool may need ZATCA e-invoicing Phase 2 (Fatoora) integration",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/PreparingYourBusiness/Phase2/Pages/How-to-prepare.aspx",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "Storing customer/technician personal data (location, contact) triggers PDPL obligations",
+          "url": "https://iapp.org/news/a/saudi-arabia-s-data-protection-authority-steps-up-enforcement",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "No special regulated-data dependency beyond standard Maps/WhatsApp APIs - lower risk than C06/C07",
+        "Real pricing of local incumbents (Mutflex, SaudiSoftware.co) not found in this session - needed to set a competitive price point"
+      ],
+      "blockers": [
+        "No structural technical blockers found; the main risk is commercial (out-competing entrenched local vendors and free WhatsApp-group/phone-call workarounds), not build feasibility"
+      ],
+      "summary": "A straightforward CRUD-plus-WhatsApp-notification field-service tool with no regulated external data source dependency, making it the most cleanly solo-buildable of the maintenance-adjacent candidates. If invoices target VAT-registered B2B clients, ZATCA Phase 2 integration adds moderate but manageable complexity (achievable via third-party e-invoicing middleware rather than building a Fatoora integration from scratch)."
+    },
+    {
+      "candidate_id": "C09",
+      "stack": {
+        "frontend": "Guided web wizard (Next.js) walking importers through required SABER documents",
+        "backend": "Node.js/Python for document-checklist logic and shipment/status tracking",
+        "database": "Postgres",
+        "authentication": "Email/password or phone-OTP",
+        "ai": "Claude to auto-generate/check document completeness against published SASO/SABER requirements",
+        "apis": "No confirmed public SASO/SABER API for programmatic submission found in this session - workflow likely requires manual portal entry or a partnership with an accredited Certification Body",
+        "hosting": "Vercel/Render",
+        "payments": "Moyasar for a flat per-certificate fee or subscription",
+        "integrations": "Referral/hand-off integration with a SASO-accredited Certification Body (CB), which alone can legally issue the Certificate of Conformity"
+      },
+      "mvp_scope": [
+        "Guided document/checklist wizard for the Shipment Certificate of Conformity (SCoC)",
+        "Auto-drafted SABER application data from importer inputs",
+        "Shipment/status tracking dashboard",
+        "Hand-off/referral to a partnered accredited CB for actual certificate issuance"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 1200,
+      "monthly_run_cost_sar": "~150-250 SAR (hosting/tooling only - no WhatsApp/BSP required)",
+      "build_time_weeks": "5-8 (coding); real launch also depends on securing a CB partnership, a business task outside pure development",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Only a SASO-approved, ISO/IEC 17065-accredited Certification Body may legally issue a SABER Certificate of Conformity; a solo founder cannot self-certify shipments",
+          "url": "https://verger-group.com/what-is-saber-certificate-how-to-get-it-in-saudi-arabia/",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "Official SASO fees are fixed (Shipment CoC ≈ SAR 350, Product CoC ≈ SAR 500), separate from accredited-CB professional fees (roughly USD 150-2,500 depending on product complexity)",
+          "url": "https://bis-certifications.com/saso-saber-certification",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "No confirmed public SASO/SABER API for automated submission - a workflow may require manual portal data entry (fragile, possible ToS risk if scraped)",
+        "Requires a signed partnership/referral agreement with an accredited CB to actually fulfil the certificate, which the founder alone cannot control"
+      ],
+      "blockers": [
+        "The founder cannot become the certifying body itself (ISO/IEC 17065 accreditation is a lab-grade, multi-year process) - the real product is a thin 'document wizard + referral' layer",
+        "Competes against incumbent agencies (Adnovs, Watheeq, PCAS) that already offer the same referral service on top of an already-cheap fixed SAR 350 government fee, leaving thin margin for a pure software layer",
+        "No confirmed API means automation value beyond simply filling the SASO portal directly may be shallow"
+      ],
+      "summary": "Feasible only as a document-preparation/referral wizard sitting in front of an existing accredited Certification Body - a solo founder cannot legally issue SABER certificates, since only ISO/IEC-17065-accredited bodies can do so. The wizard itself is an EASY/MODERATE build, but the business depends on securing a CB partnership and out-competing established agencies on an already-cheap, government-fixed SAR 350 fee, leaving little room for software-layer margin."
+    },
+    {
+      "candidate_id": "C10",
+      "stack": {
+        "frontend": "Next.js web app",
+        "backend": "Node.js/Python",
+        "database": "Postgres (Supabase)",
+        "authentication": "Email/password (Supabase Auth)",
+        "ai": "Claude API is the core engine - generates tailored privacy policies, data-mapping questionnaire logic, and breach-notification templates from PDPL text",
+        "apis": "None external required beyond the Claude API",
+        "hosting": "Vercel + Supabase",
+        "payments": "Moyasar for monthly SaaS subscription",
+        "integrations": "Embeddable consent-banner JS widget for customer websites"
+      },
+      "mvp_scope": [
+        "PDPL-tailored data-mapping questionnaire",
+        "Auto-generated Arabic/English privacy policy from questionnaire answers",
+        "Embeddable consent-banner widget",
+        "Downloadable breach-notification and data-subject-request template pack"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "~150-250 SAR (hosting + Claude API usage)",
+      "build_time_weeks": "3-5",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "SDAIA actively enforces PDPL (fines up to SAR 5M, criminal liability for intentional misuse) - the founder's own product must also handle customer data compliantly",
+          "url": "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "Positioning the product as compliance software/templates rather than legal advice reduces unauthorized-practice-of-law risk; no evidence found that a licence is required to sell such templates/SaaS tooling in Saudi Arabia",
+          "url": "https://ahysp.com/penalties-and-violations-under-saudi-arabias-data-protection-law-what-businesses-must-know/",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "None beyond publicly available PDPL regulation text and SDAIA guidance - lowest data-dependency risk of the five candidates reviewed"
+      ],
+      "blockers": [
+        "No structural technical blockers found; residual risk is a legal-liability/disclaimer issue (must be clearly framed as self-serve tooling, not legal advice) and go-to-market/awareness risk, not build feasibility"
+      ],
+      "summary": "The cleanest solo-buildable candidate of the batch: an EASY, Claude-API-driven document/questionnaire generator with no external regulated-data dependency and no confirmed licensing barrier to selling the software itself. The main non-technical risk (outside this validator's remit) is clearly disclaiming the product as tooling rather than legal advice."
+    }
+  ],
+  "queries_used": [
+    "Salla app marketplace developer API documentation partner app fees",
+    "Zid API developer partner app store Saudi",
+    "Ejar API access developers REGA integration",
+    "WhatsApp Business API pricing Saudi Arabia provider 360dialog Twilio conversation cost",
+    "Moyasar Tap payment gateway pricing fees Saudi Arabia transaction",
+    "SABER certificate cost SASO agency fee per shipment",
+    "SABER certificate who can apply accredited certification body requirement importer",
+    "Saudi Arabia freelance license Maroof commercial registration cost solo founder SaaS",
+    "ZATCA e-invoicing Phase 2 requirement VAT registered business official"
+  ],
+  "limitations": [
+    "All findings in this session came from web search snippets, not fetched/verified full pages (0 of 6 available WebFetch calls used) - exact fee schedules, current dates, and page content could not be independently confirmed beyond what search snippets showed.",
+    "No confirmed public API was found (or ruled out) for Saudi National Address look-up/validation (relevant to C06) - could not determine if such an API exists at all for third-party developers.",
+    "Ejar/REGA API access requirements (commercial registration + developer/PM registration + security assessment) come from a single aggregated search-result summary, not a fetched official REGA page - exact process, cost, and timeline could not be verified.",
+    "Salla and Zid app-marketplace fee/revenue-share structures were not found in search results; would need direct developer-portal signup to confirm.",
+    "Real-world pricing of local incumbents (Mutflex, SaudiSoftware.co for C08; Adnovs/Watheeq/PCAS for C09) was not found - needed for competitive pricing but out of scope for feasibility-only review.",
+    "WhatsApp Business API pricing results were global/generic (360dialog, Twilio); no Saudi Arabia-specific per-message rate table was found in search snippets.",
+    "Did not verify whether a solo founder acting as a SABER document-preparation intermediary (without being an accredited CB) has any additional licensing requirement beyond what existing agencies (Adnovs etc.) already operate under - inferred feasible by precedent, not directly confirmed via regulation text."
+  ]
+}

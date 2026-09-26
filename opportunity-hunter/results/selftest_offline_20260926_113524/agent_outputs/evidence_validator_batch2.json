@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "claims": [],
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "demand_signals": [],
+      "new_sources": []
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

@@ -1,0 +1,115 @@
+[11:35:24] ORCHESTRATOR run selftest_offline_20260926_113524 started (mode=selftest_offline, max_parallel=6, budget=$60.0)
+[11:35:24] ORCHESTRATOR === STAGE 1_DISCOVERY started ===
+[11:35:24] PROBLEM_HUNTER[problem_hunter] started
+[11:35:24] B2B_PAIN_HUNTER[b2b_hunter] started
+[11:35:24] COMPLAINT_HUNTER[complaint_hunter] started
+[11:35:24] WHATSAPP_EXCEL_HUNTER[whatsapp_excel_hunter] started
+[11:35:24] JOB_SIGNAL_AGENT[jobs_signal_hunter] started
+[11:35:24] B2C_HUNTER[b2c_hunter] started
+[11:35:25] WARN B2C_HUNTER[b2c_hunter] attempt 1 failed (timeout) — retrying: simulated transient timeout
+[11:35:25] WHATSAPP_EXCEL_HUNTER completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:25] WARN COMPLAINT_HUNTER[complaint_hunter] attempt 1 failed (invalid_output) — retrying: schema validation failed: 'queries_used' is a required property
+[11:35:25] PROBLEM_HUNTER completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:25] JOB_SIGNAL_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:25] B2B_PAIN_HUNTER completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:25] FOREIGN_MODEL_AGENT[foreign_model_hunter] started
+[11:35:25] COMPETITION_GAP_AGENT[competition_hunter] started
+[11:35:25] GAP_AGENT[gap_hunter] started
+[11:35:25] AI_OPPORTUNITY_AGENT[ai_opportunity_hunter] started
+[11:35:26] COMPETITION_GAP_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:26] WARN GAP_AGENT[gap_hunter] attempt 1 failed (crash) — retrying: mock failure: simulated permanent crash
+[11:35:26] FOREIGN_MODEL_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:26] AI_OPPORTUNITY_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:26] MARKET_CHANGE_AGENT[market_change_hunter] started
+[11:35:26] FUTURE_AGENT[future_opportunity_hunter] started
+[11:35:26] INDIVIDUAL_AGENT[individual_problem_hunter] started
+[11:35:26] B2C_HUNTER completed in 2.2s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:26] COMPLAINT_HUNTER completed in 2.2s — searches=2 fetches=0 cache_hits=0 blocked=0 turns=2 cost=$0.000 pid=8500
+[11:35:27] MARKET_CHANGE_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:27] INDIVIDUAL_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:27] FUTURE_AGENT completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:27] WARN GAP_AGENT[gap_hunter] attempt 2 failed (crash) — retrying: mock failure: simulated permanent crash
+[11:35:28] ERROR GAP_AGENT[gap_hunter] failed (crash) — not retrying: mock failure: simulated permanent crash
+[11:35:28] PROBLEM_HUNTER returned 2 signals (1 queries reported)
+[11:35:28] B2B_PAIN_HUNTER returned 2 signals (1 queries reported)
+[11:35:28] B2C_HUNTER returned 1 signals (1 queries reported)
+[11:35:28] COMPLAINT_HUNTER returned 1 signals (1 queries reported)
+[11:35:28] WHATSAPP_EXCEL_HUNTER returned 1 signals (1 queries reported)
+[11:35:28] JOB_SIGNAL_AGENT returned 1 signals (1 queries reported)
+[11:35:28] FOREIGN_MODEL_AGENT returned 1 signals (1 queries reported)
+[11:35:28] COMPETITION_GAP_AGENT returned 1 signals (1 queries reported)
+[11:35:28] AI_OPPORTUNITY_AGENT returned 1 signals (1 queries reported)
+[11:35:28] MARKET_CHANGE_AGENT returned 1 signals (1 queries reported)
+[11:35:28] FUTURE_AGENT returned 1 signals (1 queries reported)
+[11:35:28] INDIVIDUAL_AGENT returned 1 signals (1 queries reported)
+[11:35:28] ORCHESTRATOR discovery complete: 12/13 agents succeeded, 14 raw signals
+[11:35:28] ORCHESTRATOR === STAGE 1_DISCOVERY finished in 4.7s ===
+[11:35:28] ORCHESTRATOR === STAGE 2_DEDUPLICATION started ===
+[11:35:28] DEDUP deterministic pass: 14 → 4 signals (10 near-duplicates merged)
+[11:35:28] CONSOLIDATOR[consolidator] started
+[11:35:29] CONSOLIDATOR completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:29] ORCHESTRATOR deduplication complete: 4 candidates, 0 backlog, 0 discarded groups
+[11:35:29] ORCHESTRATOR === STAGE 2_DEDUPLICATION finished in 1.0s ===
+[11:35:29] ORCHESTRATOR === STAGE 3_VALIDATION started ===
+[11:35:29] ORCHESTRATOR dispatching 8 validator jobs (4 validators × 2 batches)
+[11:35:29] EVIDENCE_VALIDATOR[batch2] started
+[11:35:29] EVIDENCE_VALIDATOR[batch1] started
+[11:35:29] COMPETITION_VALIDATOR[batch1] started
+[11:35:29] PAYMENT_VALIDATOR[batch2] started
+[11:35:29] PAYMENT_VALIDATOR[batch1] started
+[11:35:29] COMPETITION_VALIDATOR[batch2] started
+[11:35:30] EVIDENCE_VALIDATOR[batch2] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] COMPETITION_VALIDATOR[batch2] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] PAYMENT_VALIDATOR[batch2] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] COMPETITION_VALIDATOR[batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] EVIDENCE_VALIDATOR[batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] PAYMENT_VALIDATOR[batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:30] FEASIBILITY_VALIDATOR[batch1] started
+[11:35:30] FEASIBILITY_VALIDATOR[batch2] started
+[11:35:31] FEASIBILITY_VALIDATOR[batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:31] FEASIBILITY_VALIDATOR[batch2] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:31] VALIDATION C01: problem_evidence=DIRECT pays_now=YES market=WEAK_MARKET complexity=EASY
+[11:35:31] VALIDATION C02: problem_evidence=DIRECT pays_now=YES market=WEAK_MARKET complexity=EASY
+[11:35:31] VALIDATION C03: problem_evidence=DIRECT pays_now=UNCLEAR market=WEAK_MARKET complexity=EASY
+[11:35:31] VALIDATION C04: problem_evidence=DIRECT pays_now=YES market=WEAK_MARKET complexity=EASY
+[11:35:31] ORCHESTRATOR === STAGE 3_VALIDATION finished in 2.0s ===
+[11:35:31] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 started ===
+[11:35:31] KILLER_AGENT[r1_batch2] started
+[11:35:31] KILLER_AGENT[r1_batch1] started
+[11:35:32] KILLER_AGENT[r1_batch2] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:32] KILLER_AGENT[r1_batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:32] KILLER_AGENT C01 → NEEDS_MORE_EVIDENCE
+[11:35:32] KILLER_AGENT C02 → REJECTED (free incumbents dominate)
+[11:35:32] KILLER_AGENT C03 → SURVIVED
+[11:35:32] KILLER_AGENT C04 → SURVIVED
+[11:35:32] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 finished in 1.0s ===
+[11:35:32] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 started ===
+[11:35:32] GAP_DETECTOR C03: survived but payment evidence is UNCLEAR → re-research
+[11:35:32] GAP_DETECTOR C03: survived with 1 unresolved uncertainty(ies) → additional research + final Killer round
+[11:35:32] GAP_DETECTOR C01: 1 open question(s) → GAP_RESEARCHER
+[11:35:32] GAP_DETECTOR C03: 1 open question(s) → GAP_RESEARCHER
+[11:35:32] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 finished in 0.0s ===
+[11:35:32] ORCHESTRATOR === STAGE 6_ADDITIONAL_RESEARCH_R1 started ===
+[11:35:32] ORCHESTRATOR re-dispatching research: 2 candidates in 2 GAP_RESEARCHER job(s)
+[11:35:32] GAP_RESEARCHER[r1_C03] started
+[11:35:32] GAP_RESEARCHER[r1_C01] started
+[11:35:33] GAP_RESEARCHER[r1_C01] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:33] GAP_RESEARCHER[r1_C03] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:33] GAP_RESEARCHER C01: 1/1 questions answered with evidence
+[11:35:33] GAP_RESEARCHER C03: 1/1 questions answered with evidence
+[11:35:33] ORCHESTRATOR === STAGE 6_ADDITIONAL_RESEARCH_R1 finished in 1.0s ===
+[11:35:33] ORCHESTRATOR === STAGE 7_KILLER_FINAL_R1 started ===
+[11:35:33] KILLER_AGENT[r2_batch1] started
+[11:35:34] KILLER_AGENT[r2_batch1] completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:34] KILLER_AGENT C01 → SURVIVED
+[11:35:34] KILLER_AGENT C03 → SURVIVED
+[11:35:34] ORCHESTRATOR === STAGE 7_KILLER_FINAL_R1 finished in 1.0s ===
+[11:35:34] ORCHESTRATOR === STAGE 8_SYNTHESIS started ===
+[11:35:34] OPPORTUNITY_SYNTHESIZER[synthesizer] started
+[11:35:35] OPPORTUNITY_SYNTHESIZER completed in 1.0s — searches=1 fetches=0 cache_hits=0 blocked=0 turns=1 cost=$0.000 pid=8500
+[11:35:36] OPPORTUNITY_SYNTHESIZER 3 golden, 0 hidden gems, 0 foreign models
+[11:35:36] ORCHESTRATOR === STAGE 8_SYNTHESIS finished in 1.0s ===
+[11:35:36] ORCHESTRATOR === STAGE 9_REPORT started ===
+[11:35:36] REPORT written to /home/user/Noname51hgghsg/opportunity-hunter/reports/selftest_offline_report.md
+[11:35:36] ORCHESTRATOR === STAGE 9_REPORT finished in 0.0s ===
+[11:35:36] ORCHESTRATOR run finished: {"agent_processes_launched": 32, "agent_tasks_executed": 28, "distinct_agent_types_run": 21, "agent_tasks_succeeded": 27, "agent_tasks_failed": 1, "agent_tasks_skipped": 0, "agent_cache_hits": 0, "web_searches": 28, "web_fetches": 0, "search_cache_hits": 0, "budget_blocked_tool_calls": 0, "raw_signals": 14, "after_exact_dedup": 4, "candidates_validated": 4, "backlog": 0, "gap_research_requests": 2, "survived_killer": 3, "rejected_by_killer": 1, "undecided": 0, "total_cost_usd": 0}

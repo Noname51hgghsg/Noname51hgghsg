@@ -24,6 +24,7 @@ def main() -> int:
     rn.add_argument("--agents", help="comma-separated discovery agents (default: all)")
     rn.add_argument("--candidates", type=int, help="candidate limit for validation funnel")
     rn.add_argument("--run-id")
+    rn.add_argument("--resume-from", help="continue a finished run from gap detection onwards (reuses its discovery/validation/killer outputs)")
     args = ap.parse_args()
 
     if shutil.which("claude") is None and (args.cmd == "run" or getattr(args, "live", False)):
@@ -44,7 +45,7 @@ def main() -> int:
     cfg = load_config(overrides=overrides)
     from .orchestrator import Orchestrator
     orch = Orchestrator(cfg, run_id=args.run_id, mode="full",
-                        discovery_agents=args.agents.split(",") if args.agents else None)
+                        discovery_agents=args.agents.split(",") if args.agents else None, resume_from=args.resume_from)
     summary = orch.run()
     print(f"\nFinal report: {orch.report_path}")
     print(summary["counts"])

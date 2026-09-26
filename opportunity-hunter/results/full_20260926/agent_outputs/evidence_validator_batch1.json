@@ -1,0 +1,363 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "DIRECT",
+      "summary": "Core regulatory facts are confirmed by ZATCA's own site: Wave 24 (SAR 375,000 threshold, deadline 30 June 2026) is officially announced, and ZATCA explicitly does NOT require an accredited/certified provider — any compliant solution qualifies, which removes a key feared barrier for a solo-built tool. Market model is DIRECT: Qoyod's own pricing page confirms real paying customers at SAR 207-379.5/month for a full accounting+e-invoicing suite, proving SMEs already pay for this category; a stripped-down cheaper single-merchant tool has room to undercut. Fine amounts (5,000-50,000 SAR) remain STRONG_INDIRECT only (multiple consistent vendor sources, not an official ZATCA penalty schedule seen directly). Problem-side pain (integration difficulty, no IT staff) is still mostly WEAK vendor-blog evidence, not independently corroborated by user complaints in this session.",
+      "demand_signals": [
+        "Live freelance requests for ZATCA PHP integration on Mostaql (per original discovery, not refetched this session)",
+        "Multiple commercial vendors (Qoyod, Wafeq, Daftra, Fatora.io) actively selling paid ZATCA compliance products to SMEs"
+      ],
+      "claims": [
+        {
+          "claim": "Wave 24 lowers the Phase 2 threshold to SAR 375,000 taxable revenue (2022/23/24) with a 30 June 2026 deadline",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "title": "ZATCA Determines the Criteria for Selecting the Targeted Taxpayers in Wave 24",
+              "url": "https://zatca.gov.sa/en/Pages/news_1426.aspx"
+            }
+          ],
+          "note": "Confirmed directly on ZATCA's official news page — matches candidate's claim exactly."
+        },
+        {
+          "claim": "A solo-built e-invoicing tool faces a hard accreditation/certification barrier from ZATCA",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [
+            {
+              "title": "Solution Providers Directory",
+              "url": "https://zatca.gov.sa/en/E-Invoicing/SolutionProviders/Pages/SolutionProvidersDirectory.aspx"
+            }
+          ],
+          "note": "ZATCA's own directory page states the list is indicative/non-binding and taxpayers may use ANY solution that technically complies — no mandatory accreditation exists. This downgrades a listed 'unknown/hard barrier' risk to unfounded; it is not a licensing barrier like SAMA/SFDA."
+        },
+        {
+          "claim": "Non-compliance fines range SAR 5,000-50,000 per violation",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "ZATCA Phase 2 Wave 24 guide (xrero)",
+              "url": "https://xrero.com/blog/xrero-business-blog-1/zatca-phase-2-wave-24-is-your-saudi-business-in-scope-by-30-june-2026-124"
+            }
+          ],
+          "note": "Repeated consistently across several vendor compliance guides, but I did not find this exact figure on an official ZATCA penalty page in this session."
+        },
+        {
+          "claim": "SMEs already pay for e-invoicing/accounting SaaS (market model works)",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "title": "Qoyod Plans and Pricing | Qoyod Help Center",
+              "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/"
+            }
+          ],
+          "note": "Qoyod's own pricing page confirms live paid tiers (Pro 207 SAR/mo, Advanced 379.5 SAR/mo), proving a market of paying SME customers exists for this compliance category — a cheaper single-merchant tool would compete below this price point."
+        },
+        {
+          "claim": "Micro-merchants struggle with integration/vendor support/connectivity for e-invoicing",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "شكاوى الفاتورة الإلكترونية - قيود",
+              "url": "https://www.qoyod.com/blog/e-invoicing/%D8%B4%D9%83%D8%A7%D9%88%D9%89-%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9/"
+            }
+          ],
+          "note": "Only vendor-marketing-blog listicles found; no independent user complaint threads (Reddit/Twitter/forum) were located confirming this pain in the merchant's own words."
+        }
+      ],
+      "new_sources": [
+        {
+          "title": "ZATCA Determines the Criteria for Selecting the Targeted Taxpayers in Wave 24",
+          "url": "https://zatca.gov.sa/en/Pages/news_1426.aspx",
+          "summary": "Official ZATCA announcement confirming the SAR 375,000 threshold and 30 June 2026 deadline for Wave 24."
+        },
+        {
+          "title": "Solution Providers Directory",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/SolutionProviders/Pages/SolutionProvidersDirectory.aspx",
+          "summary": "ZATCA states its solution-provider list is non-binding and any technically compliant solution is acceptable — no accreditation required."
+        },
+        {
+          "title": "Qoyod Plans and Pricing | Qoyod Help Center",
+          "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+          "summary": "Confirms live Qoyod pricing (207-379.5 SAR/month), direct evidence of a paying SME customer base for this compliance category."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C02",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "summary": "The regulatory overhaul itself is well corroborated by multiple independent professional/advisory sources (middleeastbriefing, masdareor, KPMG flash alert) converging on the same facts: Yellow tier abolished, 269 profession-level quotas, Qiwa documentation now gating Nitaqat credit from 15 April 2026, wage threshold raised SAR 3,000->4,000. No single official MHRSD primary-source page was fetched in this session, so this stays STRONG_INDIRECT rather than DIRECT. Market-model evidence is weak: only full enterprise HCM suites (Jisr, ZenHR, Bayzat) and EOR/PEO consultancies were found serving this need — no lightweight self-serve SME dashboard product was found, meaning the specific proposed product's market-fit is unproven (a real gap, but also unproven demand at the price point envisioned). Found evidence that GOSI does expose some APIs (contribution/wage data), reducing — but not eliminating — the 'no API access' unknown for a future dashboard.",
+      "demand_signals": [
+        "Multiple HR/immigration consultancies (Mercans, Watily, RFS) actively marketing Nitaqat/Saudization compliance services to SMEs, implying live paid demand for compliance help (but at consultancy price points, not confirmed SaaS price points)"
+      ],
+      "claims": [
+        {
+          "claim": "April 2026 Nitaqat overhaul: Yellow tier abolished, 269 profession-level quotas, Qiwa authentication mandatory from 15 April 2026",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Saudization (Nitaqat) 2026 Update",
+              "url": "https://www.middleeastbriefing.com/news/saudi-arabias-nitaqat-2026-update-latest-quotas-by-sector-and-what-foreign-employers-need-to-comply-now/"
+            },
+            {
+              "title": "Saudi Arabia – Government Increased Qiwa Employment Contract Compliance Requirements",
+              "url": "https://kpmg.com/xx/en/our-insights/gms-flash-alert/2026/flash-alert-2026-116.html"
+            }
+          ],
+          "note": "Confirmed consistently across an independent regional briefing site and a KPMG Big-4 flash alert; no MHRSD primary source fetched, so kept at STRONG_INDIRECT not DIRECT."
+        },
+        {
+          "claim": "Qiwa contract documentation required at 85% by 30 April 2026, rising to 90% by 30 June 2026, and only documented contracts count toward Nitaqat",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Saudi Arabia Saudization Updates: Qiwa Contract Documentation Impacts Nitaqat Calculations",
+              "url": "https://eiglaw.com/saudi-arabia-saudization-updates-qiwa-contract-documentation-impacts-nitaqat-calculations/"
+            }
+          ],
+          "note": "Corroborated by KPMG, eiglaw and asanify independently — consistent numbers across three unrelated professional-services sources."
+        },
+        {
+          "claim": "GOSI/Qiwa data is fully inaccessible to any third-party tool (a hard technical blocker for the dashboard)",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [
+            {
+              "title": "API Inventory | Digital Government Authority",
+              "url": "https://dga.gov.sa/en/listing-services/API-Inventory"
+            }
+          ],
+          "note": "Found evidence that GOSI exposes some official APIs (e.g., contribution/deduction retrieval, wage verification) via the Digital Government Authority inventory and documented SAP integration flows — so the 'no API access' unknown is not fully true, though scope/access process for a solo indie developer (vs. an enterprise HRMS vendor) remains unverified."
+        },
+        {
+          "claim": "A dedicated self-serve SaaS dashboard product exists and has paying SME customers for Nitaqat monitoring specifically",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "Only full enterprise HCM suites and EOR/consultancy services were found; no lightweight competitor or customer-testimonial evidence surfaced, so the specific product concept's market-model remains unproven (opportunity gap, not validated demand)."
+        }
+      ],
+      "new_sources": [
+        {
+          "title": "Saudization (Nitaqat) 2026 Update",
+          "url": "https://www.middleeastbriefing.com/news/saudi-arabias-nitaqat-2026-update-latest-quotas-by-sector-and-what-foreign-employers-need-to-comply-now/",
+          "summary": "Independent confirmation of the 2026 Nitaqat overhaul details (Yellow tier abolition, 269 professions, wage thresholds)."
+        },
+        {
+          "title": "API Inventory | Digital Government Authority",
+          "url": "https://dga.gov.sa/en/listing-services/API-Inventory",
+          "summary": "Shows Saudi government publishes an API inventory including GOSI services, suggesting some technical integration path exists for third parties."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C03",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "WEAK",
+      "summary": "The Mudad/WPS mechanics cited by the candidate are confirmed at DIRECT level via an official Saudi Press Agency (government wire) release: 30-day upload window (down from 60, effective 1 March 2025), reminder cadence, and 20-day inspection trigger all match. This is stronger than the candidate's original 'search snippet' sourcing. The broader claim that HR staff repeat manual work across Qiwa/Mudad/GOSI/Muqeem is only STRONG_INDIRECT (job-ad and vendor-content based; no direct user complaint thread found). Market-model evidence remains weak: existing players (Jisr, ZenHR, Bayzat) are full enterprise HCM suites with no visible micro-business tier or public pricing, so there's no proof a lightweight standalone reminder tool has ever been sold successfully at SME price points. Some official GOSI APIs exist (per DGA inventory), which somewhat de-risks the 'no automation possible' unknown, but ToS/access-process for a solo indie developer is still unverified.",
+      "demand_signals": [
+        "Recurring, ongoing job postings for 'HR Officer – GOSI & HRDF' and 'Government Relations Coordinator' roles (per original discovery, not independently refetched this session)"
+      ],
+      "claims": [
+        {
+          "claim": "Mudad wage-file upload window reduced to 30 days (from 60) effective 1 March 2025, with 10/15-day reminders and a 20-day inspection trigger",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "title": "Human Resources Ministry: Wage Protection File Upload Period on Mudad Platform Reduced to 30 Days",
+              "url": "https://www.spa.gov.sa/en/N2254770"
+            }
+          ],
+          "note": "Confirmed via the Saudi Press Agency (official government news wire) — upgrades this claim from the candidate's original 'per search snippet, unfetched' status to DIRECT primary-source confirmation. Also found: 91% of establishments already upload within 30 days per the same official release, suggesting most target employers already comply without extra tooling, which could shrink the addressable pain."
+        },
+        {
+          "claim": "HR/admin staff repeat identical data entry across Qiwa, Mudad, GOSI and Muqeem for routine employee events",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Qiwa Saudi Arabia: Employer Guide for Payroll, HR and Labour Compliance",
+              "url": "https://payrollmiddleeast.com/qiwa-saudi-arabia/"
+            }
+          ],
+          "note": "Consistent with job-ad descriptions of HR Coordinator/Government Relations roles, but no first-person complaint (forum/Reddit) was found describing this specific duplication pain in this session."
+        },
+        {
+          "claim": "A lightweight, centralizing SaaS product for this specific pain has proven paying customers",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "Only full HCM suites (Jisr, ZenHR, Bayzat) with enterprise 'contact us' pricing were found; no evidence of a micro-SME-priced competitor with disclosed customers, so market-model for this specific narrow product remains unvalidated."
+        },
+        {
+          "claim": "Qiwa/GOSI/Mudad/Muqeem block all third-party automated access",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [
+            {
+              "title": "API Inventory | Digital Government Authority",
+              "url": "https://dga.gov.sa/en/listing-services/API-Inventory"
+            }
+          ],
+          "note": "Official APIs for at least GOSI (contribution/wage data) exist in the government's own API inventory, so a blanket 'no automation possible' assumption is not supported; developer-level access terms for a solo founder remain unverified."
+        }
+      ],
+      "new_sources": [
+        {
+          "title": "Human Resources Ministry: Wage Protection File Upload Period on Mudad Platform Reduced to 30 Days",
+          "url": "https://www.spa.gov.sa/en/N2254770",
+          "summary": "Official government confirmation of Mudad's 30-day rule, reminder cadence, 20-day inspection trigger, and that 91% of establishments already comply within 30 days."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C04",
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "summary": "Independently re-searching Mostaql in this session turned up multiple additional, distinct, currently-listed project postings for remote accountants and invoice/data-entry work (e.g. 'محاسب عن بعد', 'محاسب مالي لمطعم', 'إدخال بيانات محاسبية', 'ادخال بيانات تدقيق حسابات محل', 'إدخال فواتير بشكل يومي', 'إدخال بيانات الفواتير') beyond the two the candidate already cited — this strengthens the DIRECT classification for recurring outsourced bookkeeping/invoice-entry demand. However, this proves people pay freelancers for manual work, not that they would pay for an AI/SaaS alternative — no AI-based reconciliation/OCR competitor specifically targeting Saudi SMEs was found, so market-model evidence for the proposed AI product itself stays WEAK/HYPOTHESIS. Freelancer pay rates remain unconfirmed (budgets not visible in listings).",
+      "demand_signals": [
+        "At least 7 distinct live/recent Mostaql project postings found in this session for accounting and invoice-data-entry work, confirming ongoing (not one-off) demand"
+      ],
+      "claims": [
+        {
+          "claim": "Recurring freelance demand exists on Mostaql for bookkeeping and invoice data entry",
+          "classification": "DIRECT",
+          "sources": [
+            {
+              "title": "محاسب عن بعد | مستقل",
+              "url": "https://mostaql.com/project/1193081-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D8%B9%D9%86-%D8%A8%D8%B9%D8%AF"
+            },
+            {
+              "title": "محاسب مالي لمطعم | مستقل",
+              "url": "https://mostaql.com/project/1071089-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D9%85%D8%A7%D9%84%D9%8A-%D9%84%D9%85%D8%B7%D8%B9%D9%85"
+            },
+            {
+              "title": "إدخال فواتير بشكل يومي | مستقل",
+              "url": "https://mostaql.com/project/971180-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D9%81%D9%88%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A8%D8%B4%D9%83%D9%84-%D9%8A%D9%88%D9%85%D9%8A"
+            }
+          ],
+          "note": "Independently reconfirmed in this session with new listings beyond the candidate's original two — strong, repeated, current demand signal."
+        },
+        {
+          "claim": "An AI-based bookkeeping/reconciliation tool would have a proven market model in Saudi Arabia",
+          "classification": "HYPOTHESIS",
+          "sources": [],
+          "note": "No AI OCR/reconciliation competitor targeting Saudi SMEs specifically was found in this session; existing solutions are either manual freelancers or full e-invoicing SaaS (Qoyod/Wafeq) that issue rather than ingest/reconcile invoices. The problem is real; the proposed solution's fit is unvalidated."
+        },
+        {
+          "claim": "Freelancer/business willingness to pay for this task is proven by repeated postings",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "المشاريع المفتوحة - محاسبة | مستقل",
+              "url": "https://mostaql.com/projects/skill/accounting"
+            }
+          ],
+          "note": "Postings confirm someone is willing to pay a freelancer for the task, but exact rates/budgets are not visible in listing snippets, so magnitude of willingness-to-pay is unconfirmed."
+        }
+      ],
+      "new_sources": [
+        {
+          "title": "محاسب عن بعد | مستقل",
+          "url": "https://mostaql.com/project/1193081-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D8%B9%D9%86-%D8%A8%D8%B9%D8%AF",
+          "summary": "Live remote-accountant project posting, additional evidence of recurring demand."
+        },
+        {
+          "title": "إدخال بيانات محاسبية | مستقل",
+          "url": "https://mostaql.com/project/304951-%D8%A5%D8%AF%D8%AE%D8%A7%D9%84-%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%8A%D8%A9",
+          "summary": "Additional accounting data-entry project posting found in this session."
+        }
+      ]
+    },
+    {
+      "candidate_id": "C05",
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "summary": "No-show rate figures are confirmed via peer-reviewed sources (PMC/Wiley cross-sectional study at King Abdulaziz Medical City, 21% no-show; MRI department 34.8%), matching the candidate's cited range — but these studies are from large public/military hospitals, not the small private clinics/salons the candidate targets, so the read-across to the target segment is STRONG_INDIRECT at best, not DIRECT. The Fresha commission claim needs correction: Fresha's actual global pricing (Independent ~£14.95/mo single seat; Team ~£9.95/member/mo unlimited seats) shows the 20% commission applies ONLY to new-client bookings sourced via Fresha's own marketplace, not to all bookings or direct-link bookings — the candidate's framing ('20% commission on top of a subscription fee, cutting into thin margins') overstates the universality of the fee, and no Saudi-specific price point was found. Market model is still STRONG_INDIRECT: multiple independent local vendors (OJlinker, Hajzak, Tkana, Watily, Snad) target this exact niche, implying a real and monetizable local market, though none of their pricing/traction was independently verified in this session.",
+      "demand_signals": [
+        "Multiple independent local vendors (OJlinker, Hajzak) explicitly marketing WhatsApp/AI booking products to Saudi salons/clinics — competitive crowding is itself a demand signal",
+        "A Khamsat request for manual clinic appointment scheduling + data entry (per original discovery, not refetched this session)"
+      ],
+      "claims": [
+        {
+          "claim": "Saudi outpatient no-show rates range roughly 11-73% depending on department",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Examining the Reasons for Patient No-Show in an Outpatient Adult Rehabilitation Department, Riyadh",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12041131/"
+            },
+            {
+              "title": "Examining the Reasons for Patient No‐Show..., Wiley",
+              "url": "https://onlinelibrary.wiley.com/doi/10.1002/hsr2.70783"
+            }
+          ],
+          "note": "Peer-reviewed and consistent with candidate's cited figures, but studies are from large public/military hospital departments, not small private single-practitioner clinics/salons — segment mismatch means this over-states expected no-show rates for the actual target customer."
+        },
+        {
+          "claim": "Salon/spa owners on Fresha pay a 20% commission on top of a subscription fee, cutting into thin margins",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "Fresha Pricing (2026): Plans, Costs & Fees | SchedulingKit",
+              "url": "https://schedulingkit.com/pricing-guides/fresha-pricing"
+            }
+          ],
+          "note": "Correction: the 20% commission applies only to new clients booked via Fresha's own marketplace listing, not to all bookings (direct-link/repeat-client bookings are commission-free). No Saudi-specific pricing was found — figures are global (GBP/USD). Candidate's framing overstates the fee's universality."
+        },
+        {
+          "claim": "Multiple vendors already sell WhatsApp/AI booking automation to Saudi clinics/salons (market model works)",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "نظام حجز صالون حلاقة عبر واتساب | OJlinker",
+              "url": "https://ojlinker.com.sa/barbershop"
+            }
+          ],
+          "note": "Not refetched/re-verified in this session (relying on candidate's original discovery), but multiple independently-branded vendors targeting the identical niche is a credible market-model signal; none of their customer counts or pricing were confirmed in this session."
+        },
+        {
+          "claim": "A vendor's WhatsApp chatbot reduced no-show rates from 35% to 12% for Saudi clinics",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "WhatsApp Chatbot for Clinics in Saudi Arabia - Buraq AI",
+              "url": "https://buraq.ai/en/industries/clinics"
+            }
+          ],
+          "note": "Unverified, self-reported vendor marketing case-study figure; not independently confirmed."
+        }
+      ],
+      "new_sources": [
+        {
+          "title": "Fresha Pricing (2026): Plans, Costs & Fees | SchedulingKit",
+          "url": "https://schedulingkit.com/pricing-guides/fresha-pricing",
+          "summary": "Clarifies Fresha's actual global pricing/commission structure, showing the 20% fee applies only to new marketplace-sourced bookings, not all bookings."
+        },
+        {
+          "title": "Examining the Reasons for Patient No‐Show..., Wiley",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/hsr2.70783",
+          "summary": "Peer-reviewed journal version of the King Abdulaziz Medical City no-show study, corroborating the 21% figure."
+        }
+      ]
+    }
+  ],
+  "queries_used": [
+    "ZATCA Wave 24 e-invoicing 375,000 SAR threshold June 2026",
+    "ZATCA e-invoicing accredited provider list solution providers required",
+    "Nitaqat 2026 overhaul Qiwa Yellow tier abolished 269 professions",
+    "Qiwa contract documentation 85% 90% April June 2026 Nitaqat",
+    "Mudad wage protection 30 day upload 2025 alert violation Saudi Gazette",
+    "mostaql.com محاسب مستقل السعودية شهري إدخال بيانات فواتير",
+    "Saudi Arabia clinic no-show rate percentage outpatient study",
+    "Fresha pricing Saudi Arabia commission percentage subscription",
+    "Qoyod pricing plans SAR monthly subscription",
+    "GOSI API integration third party access Saudi Arabia developers",
+    "\"Fresha\" السعودية عمولة صالونات اشتراك"
+  ],
+  "limitations": [
+    "Budget used: 11 of 14 allotted web searches; 0 of 8 web fetches used (relied on search snippets, including official-source snippets from zatca.gov.sa and spa.gov.sa, which were treated as DIRECT since the snippet itself showed the official text).",
+    "Could not independently re-verify several originally-cited URLs per candidate (e.g. specific Mostaql ZATCA-integration job, Bayt/Glassdoor job counts, OJlinker/Hajzak/Tkana pricing, Jisr/ZenHR pricing) due to budget allocation across 5 candidates — these remain at their original discovery-agent evidence level unless explicitly noted otherwise.",
+    "No Saudi-specific (SAR) pricing page for Fresha was found; all Fresha pricing figures obtained are global (GBP/USD) and may not reflect actual KSA list prices.",
+    "X/Twitter, TikTok, and most forum/Reddit threads are login-gated or were not surfaced in search results, so first-person complaint evidence for C01/C02/C03 problem pain remains thinner than vendor-blog evidence.",
+    "No official MHRSD primary-source page (e.g., hrsd.gov.sa) was directly fetched for the Nitaqat 2026 overhaul specifics in C02; conclusions rely on convergence of independent professional/advisory sources (including one KPMG flash alert) rather than a single ministry announcement.",
+    "Did not verify whether a solo founder can practically obtain ZATCA Fatoora sandbox/API access or GOSI/Qiwa API credentials as an individual (vs. a registered company) — this remains an open question for C01/C02/C03."
+  ]
+}

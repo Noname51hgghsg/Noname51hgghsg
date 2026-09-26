@@ -1,6 +1,6 @@
 # تقرير صائد الفرص — Opportunity Hunter Final Report
 
-- **Run ID:** `selftest_offline_20260926_103108` — **Mode:** `selftest_offline` — **Generated:** 2026-09-26 10:31
+- **Run ID:** `selftest_offline_20260926_113524` — **Mode:** `selftest_offline` — **Generated:** 2026-09-26 11:35
 - **Market:** Saudi Arabia (global research used to find adaptable models)
 - **Status:** completed — **Elapsed:** 11.8s — **Total agent cost:** $0
 
@@ -8,11 +8,11 @@
 
 | المؤشر | القيمة |
 |---|---|
-| عمليات Agents التي أُطلقت فعليًا (processes incl. retries) | 31 |
-| مهام Agents المنفّذة | 27 |
+| عمليات Agents التي أُطلقت فعليًا (processes incl. retries) | 32 |
+| مهام Agents المنفّذة | 28 |
 | أنواع Agents المختلفة التي عملت | 21 |
-| مهام ناجحة / فاشلة / متخطاة | 26 / 1 / 0 |
-| عمليات البحث (WebSearch) | 27 |
+| مهام ناجحة / فاشلة / متخطاة | 27 / 1 / 0 |
+| عمليات البحث (WebSearch) | 28 |
 | جلب صفحات (WebFetch) | 0 |
 | إصابات Cache للبحث | 0 |
 | استدعاءات منعها حد الميزانية | 0 |
@@ -166,43 +166,44 @@ NO RELIABLE EVIDENCE FOUND / لا توجد عناصر.
 
 ## 10. سجل تنفيذ الوكلاء (Agent Execution Log — proof of real runs)
 
-كل صف = مهمة Agent نُفّذت كعملية مستقلة `claude -p` (PID وsession مستقلان). السجل الكامل: `logs/selftest_offline_20260926_103108/run.log` · النصوص الكاملة: `results/selftest_offline_20260926_103108/transcripts/`
+كل صف = مهمة Agent نُفّذت كعملية مستقلة `claude -p` (PID وsession مستقلان). السجل الكامل: `logs/selftest_offline_20260926_113524/run.log` · النصوص الكاملة: `results/selftest_offline_20260926_113524/transcripts/`
 
 | # | Agent | Task | Stage | Status | Attempts | PID | Session | Start | Dur (s) | Searches | Fetches | Cache hits | Cost $ |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | problem_hunter | problem_hunter | discovery | ok | 1 | 1039 | mock-pro | 10:31:08 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 2 | b2b_hunter | b2b_hunter | discovery | ok | 1 | 1039 | mock-b2b | 10:31:08 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 3 | whatsapp_excel_hunter | whatsapp_excel_hunter | discovery | ok | 1 | 1039 | mock-wha | 10:31:08 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 4 | jobs_signal_hunter | jobs_signal_hunter | discovery | ok | 1 | 1039 | mock-job | 10:31:08 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 5 | foreign_model_hunter | foreign_model_hunter | discovery | ok | 1 | 1039 | mock-for | 10:31:09 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 6 | ai_opportunity_hunter | ai_opportunity_hunter | discovery | ok | 1 | 1039 | mock-ai_ | 10:31:09 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 7 | competition_hunter | competition_hunter | discovery | ok | 1 | 1039 | mock-com | 10:31:09 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 8 | b2c_hunter | b2c_hunter | discovery | ok | 2 | 1039 | mock-b2c | 10:31:08 | 2.2 | 1 | 0 | 0 | 0.000 |
-| 9 | complaint_hunter | complaint_hunter | discovery | ok | 2 | 1039 | mock-com | 10:31:08 | 2.2 | 2 | 0 | 0 | 0.000 |
-| 10 | market_change_hunter | market_change_hunter | discovery | ok | 1 | 1039 | mock-mar | 10:31:10 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 11 | individual_problem_hunter | individual_problem_hunter | discovery | ok | 1 | 1039 | mock-ind | 10:31:10 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 12 | future_opportunity_hunter | future_opportunity_hunter | discovery | ok | 1 | 1039 | mock-fut | 10:31:10 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 13 | gap_hunter | gap_hunter | discovery | failed | 3 |  |  | 10:31:09 | 3.6 | 0 | 0 | 0 | 0.000 |
-| 14 | consolidator | consolidator | dedup | ok | 1 | 1039 | mock-con | 10:31:12 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 15 | evidence_validator | batch1 | validation | ok | 1 | 1039 | mock-evi | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 16 | competition_validator | batch1 | validation | ok | 1 | 1039 | mock-com | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 17 | payment_validator | batch2 | validation | ok | 1 | 1039 | mock-pay | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 18 | evidence_validator | batch2 | validation | ok | 1 | 1039 | mock-evi | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 19 | payment_validator | batch1 | validation | ok | 1 | 1039 | mock-pay | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 20 | competition_validator | batch2 | validation | ok | 1 | 1039 | mock-com | 10:31:13 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 21 | feasibility_validator | batch2 | validation | ok | 1 | 1039 | mock-fea | 10:31:14 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 22 | feasibility_validator | batch1 | validation | ok | 1 | 1039 | mock-fea | 10:31:14 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 23 | killer_agent | r1_batch2 | killer | ok | 1 | 1039 | mock-kil | 10:31:15 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 24 | killer_agent | r1_batch1 | killer | ok | 1 | 1039 | mock-kil | 10:31:15 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 25 | gap_researcher | r1_batch1 | gap_research | ok | 1 | 1039 | mock-gap | 10:31:16 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 26 | killer_agent | r2_batch1 | killer | ok | 1 | 1039 | mock-kil | 10:31:17 | 1.0 | 1 | 0 | 0 | 0.000 |
-| 27 | synthesizer | synthesizer | synthesis | ok | 1 | 1039 | mock-syn | 10:31:18 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 1 | whatsapp_excel_hunter | whatsapp_excel_hunter | discovery | ok | 1 | 8500 | mock-wha | 11:35:24 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 2 | problem_hunter | problem_hunter | discovery | ok | 1 | 8500 | mock-pro | 11:35:24 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 3 | jobs_signal_hunter | jobs_signal_hunter | discovery | ok | 1 | 8500 | mock-job | 11:35:24 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 4 | b2b_hunter | b2b_hunter | discovery | ok | 1 | 8500 | mock-b2b | 11:35:24 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 5 | competition_hunter | competition_hunter | discovery | ok | 1 | 8500 | mock-com | 11:35:25 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 6 | foreign_model_hunter | foreign_model_hunter | discovery | ok | 1 | 8500 | mock-for | 11:35:25 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 7 | ai_opportunity_hunter | ai_opportunity_hunter | discovery | ok | 1 | 8500 | mock-ai_ | 11:35:25 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 8 | b2c_hunter | b2c_hunter | discovery | ok | 2 | 8500 | mock-b2c | 11:35:24 | 2.2 | 1 | 0 | 0 | 0.000 |
+| 9 | complaint_hunter | complaint_hunter | discovery | ok | 2 | 8500 | mock-com | 11:35:24 | 2.2 | 2 | 0 | 0 | 0.000 |
+| 10 | market_change_hunter | market_change_hunter | discovery | ok | 1 | 8500 | mock-mar | 11:35:26 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 11 | individual_problem_hunter | individual_problem_hunter | discovery | ok | 1 | 8500 | mock-ind | 11:35:26 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 12 | future_opportunity_hunter | future_opportunity_hunter | discovery | ok | 1 | 8500 | mock-fut | 11:35:26 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 13 | gap_hunter | gap_hunter | discovery | failed | 3 |  |  | 11:35:25 | 3.6 | 0 | 0 | 0 | 0.000 |
+| 14 | consolidator | consolidator | dedup | ok | 1 | 8500 | mock-con | 11:35:28 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 15 | evidence_validator | batch2 | validation | ok | 1 | 8500 | mock-evi | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 16 | competition_validator | batch2 | validation | ok | 1 | 8500 | mock-com | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 17 | payment_validator | batch2 | validation | ok | 1 | 8500 | mock-pay | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 18 | competition_validator | batch1 | validation | ok | 1 | 8500 | mock-com | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 19 | evidence_validator | batch1 | validation | ok | 1 | 8500 | mock-evi | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 20 | payment_validator | batch1 | validation | ok | 1 | 8500 | mock-pay | 11:35:29 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 21 | feasibility_validator | batch1 | validation | ok | 1 | 8500 | mock-fea | 11:35:30 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 22 | feasibility_validator | batch2 | validation | ok | 1 | 8500 | mock-fea | 11:35:30 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 23 | killer_agent | r1_batch2 | killer | ok | 1 | 8500 | mock-kil | 11:35:31 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 24 | killer_agent | r1_batch1 | killer | ok | 1 | 8500 | mock-kil | 11:35:31 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 25 | gap_researcher | r1_C01 | gap_research | ok | 1 | 8500 | mock-gap | 11:35:32 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 26 | gap_researcher | r1_C03 | gap_research | ok | 1 | 8500 | mock-gap | 11:35:32 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 27 | killer_agent | r2_batch1 | killer | ok | 1 | 8500 | mock-kil | 11:35:33 | 1.0 | 1 | 0 | 0 | 0.000 |
+| 28 | synthesizer | synthesizer | synthesis | ok | 1 | 8500 | mock-syn | 11:35:34 | 1.0 | 1 | 0 | 0 | 0.000 |
 
 ### أزمنة المراحل
 
 - 1_DISCOVERY: 4.7s
 - 2_DEDUPLICATION: 1.0s
-- 3_VALIDATION: 2.1s
+- 3_VALIDATION: 2.0s
 - 4_KILLER_ROUND_1: 1.0s
 - 5_GAP_DETECTION_R1: 0.0s
 - 6_ADDITIONAL_RESEARCH_R1: 1.0s

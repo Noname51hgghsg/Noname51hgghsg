@@ -1,0 +1,273 @@
+{
+  "results": [
+    {
+      "candidate_id": "C06",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The two target distribution platforms (Salla and Zid) already natively require/validate the National Address short-code at checkout for free, built into the core product every merchant already uses. On top of that, at least two dedicated third-party address-validation plugins already exist and are live/installable: Saudi Address Pro (WordPress + Shopify App Store, works with Salla, explicitly 'TGA 2026 Ready', 60-day free trial with unlimited validations) and Quiqup KSA Address Validator (Shopify App Store). This satisfies the FATAL bar: cheap/free, well-localized (Arabic, Saudi-specific), well-distributed (built into the merchant's own platform or listed in the app stores merchants already browse), and serving the exact niche, leaving no credible wedge for the 'validate National Address at checkout' value proposition as described.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://salasa.co/blog/national-address-mandate-2026-a-full-faq-guide-for-merchants-consumers/",
+              "summary": "Confirms 'Salla supports the national address natively' at checkout."
+            },
+            {
+              "url": "https://saudiaddresspro.com/",
+              "summary": "Live, installable address-autocomplete widget for WooCommerce/Shopify/Salla, explicitly branded TGA 2026 Ready, with a 60-day free trial and unlimited validations."
+            },
+            {
+              "url": "https://wordpress.org/plugins/saudi-address-pro/",
+              "summary": "WordPress.org listing confirms the plugin is a real, shipping, publicly installable product."
+            },
+            {
+              "url": "https://apps.shopify.com/quiqup-ksa-address-validator",
+              "summary": "A second, independent competitor product ('Quiqup - KSA Address Validator') listed live on the Shopify App Store."
+            },
+            {
+              "url": "https://help.zid.sa/national-address/",
+              "summary": "Zid checkout blocks order completion without an abbreviated National Address, per Zid's own help center."
+            }
+          ]
+        },
+        {
+          "category": "WEAK_PAIN",
+          "reason": "The only clearly unaddressed remaining wedge identified by the dossier itself (a pre-dispatch WhatsApp COD-cancellation-risk confirmation flow) is a different, unvalidated product idea from the one actually proposed and scoped (an address-validation plugin) — no direct evidence was found that merchants would pay specifically for that narrower workflow.",
+          "severity": "MINOR",
+          "evidence": []
+        }
+      ],
+      "attacks_attempted": [
+        "Searched to reconfirm whether Salla/Zid natively support National Address at checkout (STRONG_COMPETITOR)",
+        "Searched for Saudi Address Pro traction/pricing/reviews to test how established the direct competitor is",
+        "Cross-checked for additional address-validation competitors in Salla/Shopify app stores (found a second one: Quiqup KSA Address Validator)"
+      ],
+      "remaining_uncertainties": [
+        "Whether the platforms' native validation is only format-checking (not true government-database lookup), potentially leaving room for a 'true validation' claim — but this was not confirmed and Saudi Address Pro already claims to validate against the official SPL database, pre-empting this angle too",
+        "Whether a narrower WhatsApp-native COD-cancellation-risk product (distinct from address validation) could still work — this would need to be evaluated as a separate, new candidate, not as C06"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "The specific product as scoped (National Address checkout validation plugin) does not survive: native platform support plus multiple live third-party competitors close the wedge. A materially different pivot (WhatsApp COD-risk confirmation) might be worth investigating separately but is not this candidate.",
+      "summary": "Killed on STRONG_COMPETITOR: Salla and Zid already natively enforce/validate National Address at checkout for free, and at least two dedicated third-party plugins (Saudi Address Pro, Quiqup KSA Address Validator) are already live in the app stores merchants use. No credible wedge remains for the address-validation value proposition as described."
+    },
+    {
+      "candidate_id": "C07",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "REGULATORY",
+          "reason": "Direct Ejar API access — the candidate's stated core differentiator ('layered on Ejar contract data') — is gated behind Saudi Commercial Registration, REGA developer-or-property-manager registration, PDPL compliance certification, and a technical security assessment. This is a multi-step accreditation process, not a self-serve API key, and was independently re-confirmed via a fresh search in this session. It directly contradicts the 'easy MVP' framing and forces the realistic MVP down to manual/CSV data entry — a much weaker, easily-copied product.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://logiolegion.com/blogs/ejar-api-integration-software-development-saudi-arabia",
+              "summary": "States Ejar API access requires Saudi CR, REGA developer/property-manager registration, PDPL compliance certification, and a technical security assessment."
+            },
+            {
+              "url": "https://rega.gov.sa/en/rega-services/platforms/ejar/",
+              "summary": "Official REGA Ejar platform page, confirming REGA governs the Ejar platform and registration path (fresh search re-surfaced the same access-barrier finding)."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "The clearest direct demand evidence in the dossier (5+ independent Mostaql/Khamsat freelance requests) shows the exact target segment's revealed preference is to pay a one-off freelancer for an Excel/Access file rather than adopt recurring SaaS. Payment_validator confirmed only PARTIAL payment evidence, entirely from adjacent agency/portfolio-scale players (Osool, RConcept), with no confirmed instance of a 2-20 unit independent landlord paying for recurring software.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://mostaql.com/project/916062-%D9%85%D9%84%D9%81-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D9%8A%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA",
+              "summary": "Freelance request for a one-off Excel file to track rent collection — revealed preference for cheap one-time tools over subscription software."
+            },
+            {
+              "url": "https://www.osool.estate/en",
+              "summary": "Existing paid PM SaaS model is confirmed only for real estate agencies, not confirmed for individual 2-20 unit landlords."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched to re-verify Ejar API access requirements for a solo/independent developer",
+        "Weighed existing local competitors (Sanad, Simaat, Osool, JEWARA, Property Automate) against the specific micro-landlord niche",
+        "Checked whether target segment's revealed behavior (Mostaql/Khamsat Excel requests) indicates SaaS willingness-to-pay"
+      ],
+      "remaining_uncertainties": [
+        "Whether a manual-entry-only version (no live Ejar sync) could still find paying micro-landlords if priced very low, despite the segment's evident preference for one-off Excel builds",
+        "True size of the 2-20 unit independent landlord segment not already using a full-service PM company"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "Two independent, evidence-backed MAJOR risks (regulatory access gate on the core differentiator, and weak/no proof the exact target segment will pay recurring fees rather than a one-off Excel file) meet the bar for rejection under the calibration rule.",
+      "summary": "Rejected on two MAJOR grounds: (1) the stated Ejar-integration differentiator is blocked behind a multi-step REGA/CR/PDPL accreditation gate, not a quick API signup, forcing a much weaker manual-entry MVP; and (2) the strongest direct demand evidence available (freelance Excel requests) shows the exact target segment prefers one-off cheap tools over recurring SaaS, with no confirmed micro-landlord-segment SaaS payment found."
+    },
+    {
+      "candidate_id": "C08",
+      "verdict": "SURVIVED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "Multiple Arabic-first, Saudi-targeted competitors already actively sell into this exact segment: Mutflex (explicit content marketing to small/mid AC and maintenance companies, unlimited-user plans, 2-month free trial) and SaudiSoftware.co. A fresh search also surfaced Daftra — a well-established, free-tier, ZATCA-integrated Arabic ERP used widely by Saudi/Gulf SMEs — which has a dedicated 'maintenance centers & technical support' management module covering the flow from customer complaint to final invoice. This raises real customer-acquisition risk against entrenched, cheap, localized incumbents.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://mutflex.com/pricing",
+              "summary": "Mutflex offers tiered plans with unlimited users and a free trial, targeted specifically at small/mid AC and maintenance companies."
+            },
+            {
+              "url": "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/",
+              "summary": "Daftra (a widely-used, free-tier, Arabic, ZATCA-integrated ERP) has a purpose-built maintenance-center/technical-support module handling complaint intake through invoicing."
+            }
+          ]
+        },
+        {
+          "category": "WEAK_PAIN",
+          "reason": "The headline market-sizing statistic ('~38% of HVAC contractors in UAE/Saudi use digital dispatch software') was found repeated verbatim across two unrelated vendor content-marketing sites with no cited primary source — a hallmark of a recycled/unverifiable SEO statistic, not real data. The core 'technicians restart diagnosis from scratch' pain claim is sourced only from a vendor's own self-serving blog with no independent complaint corroboration.",
+          "severity": "MINOR",
+          "evidence": [
+            {
+              "url": "https://multitech.sa/how-hvac-field-service-software-agreements-improve-efficiency-in-saudi-buildings/",
+              "summary": "Cites the ~38% digital-adoption figure with no source."
+            },
+            {
+              "url": "https://wafaiyah.com/hvac-agreements-and-field-service-software-for-saudi-homes-offices/",
+              "summary": "Repeats the identical ~38% figure verbatim, suggesting it is copy-pasted marketing content rather than verified data."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Attempted to verify the 38% digital-adoption statistic's provenance — found it recycled across two unrelated vendor sites, undermining its credibility",
+        "Searched for additional Arabic/Saudi competitors beyond those in the dossier — found Daftra's maintenance-center module",
+        "Assessed whether existing competitors (Mutflex, Daftra) leave a credible wedge for a WhatsApp-native, GPS-tracking, micro-operator-priced tool"
+      ],
+      "remaining_uncertainties": [
+        "Actual pricing of Mutflex/SaudiSoftware.co/Daftra's maintenance module — not confirmed, needed to know if a cheaper entrant is even possible",
+        "Whether Daftra's maintenance-center module is oriented toward walk-in repair shops (e.g., device repair) rather than field technicians visiting customer sites — this distinction could preserve or close the wedge",
+        "True price sensitivity and switching willingness of 1-10 technician operators",
+        "Whether any competitor already offers real-time GPS/status tracking + WhatsApp-native workflow specifically, which none of the found sources confirmed"
+      ],
+      "missing_info_requests": [
+        {
+          "question": "What does Mutflex, SaudiSoftware.co, and Daftra's maintenance module actually charge per month, and does any of them support live technician GPS/status tracking plus WhatsApp-native job updates?",
+          "route_to": "competition"
+        },
+        {
+          "question": "Is there any survey or forum evidence of Saudi micro maintenance operators expressing willingness to switch from WhatsApp/phone coordination to a paid tool?",
+          "route_to": "payment"
+        }
+      ],
+      "survival_notes": "The pain evidence is weak (one debunked statistic, otherwise vendor-only claims) and credible Arabic-first local competitors already exist (Mutflex, SaudiSoftware.co, and now Daftra's maintenance module), but none were confirmed to combine live GPS tracking + WhatsApp-native updates + micro-operator pricing, so a narrow wedge remains plausible. This falls short of the 2-MAJOR threshold for rejection once the debunked-statistic issue is weighed as MINOR (given that paying local competitors existing is itself indirect evidence the underlying pain is real enough to monetize).",
+      "summary": "Survived, but weakly: pain evidence is thin and partly built on an unverifiable recycled statistic, and several Arabic-first Saudi competitors (Mutflex, SaudiSoftware.co, Daftra) already operate in adjacent or overlapping niches. No competitor was confirmed to fully match the proposed WhatsApp-native + GPS-tracking + micro-price positioning, leaving a narrow, unproven wedge."
+    },
+    {
+      "candidate_id": "C09",
+      "verdict": "REJECTED",
+      "kill_reasons": [
+        {
+          "category": "REGULATORY",
+          "reason": "A SABER Shipment/Product Certificate of Conformity can legally only be issued by a SASO-accredited/notified Certification Body holding independent ISO/IEC 17065:2012 accreditation via the Saudi Accreditation Center (SAAC). All confirmed players in this space (TÜV SÜD, SGS, QIMA, Verger Group) are established international/regional certification firms, not solo operators. A solo founder cannot obtain this accreditation within a 500-1,000 SAR budget or a short timeframe; the only feasible role is a thin document-prep/referral front-end for an accredited partner, which is a fundamentally weaker business than the one proposed.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://www.sanyogconformity.com/saso-saber-certification/",
+              "summary": "Confirms certification bodies must hold independent ISO/IEC 17065:2012 accreditation via the Saudi Accreditation Center to be SASO-notified."
+            },
+            {
+              "url": "https://www.tuvsud.com/en-ae/services/product-certification/saso-saber-product-certification-in-saudi-arabia",
+              "summary": "TÜV SÜD is an accredited certification body approved by SASO — illustrating the scale/credibility bar for issuers."
+            },
+            {
+              "url": "https://www.qima.com/consumer-products/certifications/saso-conformity",
+              "summary": "QIMA is SAAC-accredited to ISO/IEC 17065 as a SASO-approved Conformity Assessment Body — another example of the accreditation bar."
+            }
+          ]
+        },
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "At least 8-10 established certification/consultancy agencies (Adnovs, Fahes, Tabseer, Verger Group, Instacertify, Export2Gulf, Atoney, XDS Solutions, Markek, plus international accredited bodies) already actively market and sell SABER filing/consultancy services with SEO-optimized content targeting exactly the queries a small importer would search, on top of an already-cheap, fixed government fee (~SAR 350-575), leaving very thin margin for a pure software/document-prep layer.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://verger-group.com/what-is-the-cost-of-a-saber-certificate-in-2025/",
+              "summary": "Published cost breakdown showing base government fees are already low (~SAR 350-575), constraining room for a middleman markup."
+            },
+            {
+              "url": "https://instacertify.com/saber",
+              "summary": "One of many actively-marketing SABER certification agencies already competing for this exact customer search intent."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched specifically for whether an individual/solo founder can become a SASO-accredited certification body",
+        "Cross-checked the density and establishment level of existing SABER certification competitors",
+        "Assessed margin available for a software-only layer given confirmed low government base fees"
+      ],
+      "remaining_uncertainties": [
+        "Whether a pure document-prep/referral wizard (not issuing certificates itself) could still find a viable, if thin, margin by partnering with an accredited body",
+        "Actual per-certificate markup charged by incumbent agencies beyond the base government fee"
+      ],
+      "missing_info_requests": [],
+      "survival_notes": "N/A — rejected.",
+      "summary": "Rejected: certificate issuance is legally restricted to ISO/IEC 17065-accredited bodies (a multi-year, expensive accreditation a solo founder cannot obtain), and the achievable fallback (a document-prep/referral layer) would compete in an already-saturated field of 8-10+ established agencies over an already-cheap, fixed government fee — leaving no viable path to a defensible, solo-buildable business as described."
+    },
+    {
+      "candidate_id": "C10",
+      "verdict": "SURVIVED",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "Several cheap/free, self-serve global SaaS tools already publish dedicated Saudi PDPL compliance pages with the same core feature set proposed (privacy-policy generation, consent banners, DSAR tooling): Enzuzo (from ~$7-9/month, free plan available), CookieHub, TermsFeed, and a fully free generic generator (privacypolicygenerator.info) that also claims PDPL coverage. This narrows the 'no self-serve option exists' framing in the original candidate significantly.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+              "summary": "Global SaaS with a dedicated Saudi PDPL page, consent banners, DSAR management, and policy generation, priced from ~$7-9/month with a free plan."
+            },
+            {
+              "url": "https://www.privacypolicygenerator.info/saudi-arabia-pdpl/",
+              "summary": "A free, no-registration privacy policy generator with a dedicated Saudi PDPL page."
+            }
+          ]
+        }
+      ],
+      "attacks_attempted": [
+        "Searched for existing Arabic-first, cheap, self-serve PDPL compliance tools targeting Saudi SMEs specifically",
+        "Checked whether any found competitor combines Arabic-first UX with SDAIA-specific enforcement-pattern depth (data mapping tied to actual common violations, breach-notification workflow)",
+        "Weighed local consulting competitors (SecureLink, Ghaim, Hala Privacy) against the self-serve SaaS positioning"
+      ],
+      "remaining_uncertainties": [
+        "None of the found global competitors (Enzuzo, CookieHub, TermsFeed, privacypolicygenerator.info) were confirmed to have Arabic-language UI or Saudi-specific breach-notification/DPO-workflow depth tied to SDAIA's documented enforcement patterns — this remains the candidate's plausible wedge but is unproven",
+        "Whether current SDAIA enforcement (48 decisions/year) is concentrated on large/foreign firms vs. small local SMEs, which would affect real urgency/willingness-to-pay for this exact segment",
+        "No confirmed SAR pricing for any local competitor (Hala Privacy, SecureLink, Ghaim) or evidence of actual customer volume for any player in this space"
+      ],
+      "missing_info_requests": [
+        {
+          "question": "Do Enzuzo, CookieHub, or TermsFeed offer an Arabic-language interface for their Saudi PDPL pages, and do any local players (Hala Privacy, Ghaim, SecureLink) already offer a cheap self-serve (non-consulting) product?",
+          "route_to": "competition"
+        },
+        {
+          "question": "Is SDAIA's enforcement to date concentrated on large/foreign companies, or are small local SMEs actually being fined/investigated?",
+          "route_to": "regulatory"
+        }
+      ],
+      "survival_notes": "Global self-serve competitors already cover generic PDPL policy/consent needs cheaply, so the candidate must differentiate specifically on Arabic-first UX and SDAIA-enforcement-specific depth (mapped to the documented common violations: no legal basis, no marketing consent, missing safeguards) rather than positioning as a novel category. This is a real but survivable competitive risk, not a fatal one, since no confirmed competitor combines cheap self-serve + Arabic-first + SDAIA-specific workflow.",
+      "summary": "Survives: while global self-serve PDPL tools (Enzuzo, CookieHub, TermsFeed, free generators) already exist and narrow the originally-claimed gap, none were confirmed to be Arabic-first or SDAIA-enforcement-pattern-specific, leaving a plausible, if narrower, wedge. Regulatory driver (SDAIA active enforcement, fines up to SAR 5M) remains solidly evidenced."
+    }
+  ],
+  "queries_used": [
+    "Salla national address checkout native support merchants 2026",
+    "\"Saudi Address Pro\" pricing reviews installs",
+    "Ejar API access REGA developer registration requirements property manager",
+    "SASO SABER certification body accreditation individual solo founder Saudi Arabia",
+    "مؤسسة سعودية برنامج ادارة الصيانة تسعير موتفلكس",
+    "PDPL Saudi Arabic self-serve privacy policy generator SME cheap tool",
+    "Daftra مراكز الصيانة تسعير الاشتراك السعودية"
+  ],
+  "limitations": [
+    "Could not fetch several vendor pricing pages directly (e.g., Mutflex, Saudi Address Pro, Daftra) due to prior proxy/fetch errors noted in the dossier and time budget constraints — relied on search-result snippets, which are noted as such.",
+    "No independent primary-source (e.g., official REGA legal text) was fetched to confirm the exact Ejar API accreditation steps beyond vendor blog content repeated across searches — treated as MAJOR rather than FATAL given sourcing quality.",
+    "Did not verify whether Daftra's maintenance-center module targets walk-in repair shops vs. field/mobile technicians, which affects how directly it competes with C08's proposed field-service tool.",
+    "Arabic-language UI presence for global PDPL competitors (Enzuzo, CookieHub, TermsFeed) was not directly confirmed via page fetch.",
+    "Search budget (7 of 14 queries used) and fetch budget (0 of 8 used) were not fully exhausted; remaining budget was not needed once clear FATAL/MAJOR evidence was found for the higher-priority candidates."
+  ]
+}

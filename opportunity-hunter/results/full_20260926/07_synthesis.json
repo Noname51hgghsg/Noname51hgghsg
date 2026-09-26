@@ -1,0 +1,579 @@
+{
+  "executive_summary": "من 20 فكرة تم فحصها، نجت 4 فقط أمام القاتل، وجميعها في قطاع الامتثال التنظيمي والأتمتة الخلفية للمنشآت الصغيرة: فوترة ZATCA المصغرة (C01، أقوى دليل دفع لكن سوق مزدحم)، أتمتة المحاسبة بالذكاء الاصطناعي (C04، أفضل دليل ألم وأضعف منافسة مباشرة)، امتثال حماية البيانات PDPL (C10، أسهل بناءً EASY)، وتشغيل الصيانة الميدانية عبر واتساب (C08، أضعف دليل بين الأربعة). رُفضت 16 فكرة أخرى لوجود منافسين مباشرين رخيصين أو مجانيين (Nitaqat، الحجوزات، السير الذاتية، الفوترة للعمل الحر)، أو حواجز تنظيمية صلبة (SABER، ترخيص التوظيف، واجهات Ejar/Qiwa)، أو غياب دليل دفع. تم رصد 12 جوهرة مخفية من قائمة الانتظار تستحق بحثاً إضافياً، و9 فرص مستقبلية مرتبطة بتحولات تنظيمية قادمة لم يحن وقتها بعد.",
+  "golden_opportunities": [
+    {
+      "candidate_id": "C01",
+      "name": "أداة فوترة إلكترونية مصغرة عبر واتساب لأصغر التجار في نطاق ZATCA",
+      "category": "EXISTING_MARKET",
+      "problem": "التجار الصغار جداً ملزمون بمرحلة 2 من الفوترة الإلكترونية؛ الموجة 24 (30 يونيو 2026) خفضت العتبة إلى 375,000 ريال، مع غرامات 5,000-50,000 ريال لكل مخالفة على منشآت بلا موظفي تقنية معلومات.",
+      "customer": "أصحاب المتاجر الصغيرة والمؤسسات الفردية في نطاق مرحلة 2 من فاتورة",
+      "evidence": [
+        {
+          "claim": "ZATCA حددت الموجة 24 بعتبة 375,000 ريال ومهلة 30 يونيو 2026",
+          "url": "https://zatca.gov.sa/en/Pages/news_1426.aspx",
+          "evidence_type": "DIRECT"
+        },
+        {
+          "claim": "لا يوجد اعتماد إلزامي لمزودي الحلول، أي حل متوافق تقنياً مقبول",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/SolutionProviders/Pages/SolutionProvidersDirectory.aspx",
+          "evidence_type": "DIRECT"
+        },
+        {
+          "claim": "أسعار Qoyod الفعلية 60-600 ريال شهرياً تشمل الفوترة الإلكترونية",
+          "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "claim": "Fatoora Cloud يقدم فوترة من 75 ريال شهرياً بدون إعداد",
+          "url": "https://www.bytesraw.com/fatoora",
+          "evidence_type": "DIRECT"
+        }
+      ],
+      "why_it_exists": "تنظيم حكومي إلزامي يتوسع تدريجياً ليشمل منشآت أصغر لا تحتمل تعقيد أنظمة ERP كاملة.",
+      "existing_alternatives": "Qoyod وWafeq وDaftra أنظمة كاملة؛ Fatoora Cloud وFatooraPlus أدوات مخصصة أرخص؛ Zoho مستوى مجاني.",
+      "competitors": [
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+          "note": "من 60 ريال شهرياً، فوترة مشمولة"
+        },
+        {
+          "name": "Fatoora Cloud",
+          "url": "https://www.bytesraw.com/fatoora",
+          "note": "75 ريال شهرياً، بدون إعداد"
+        },
+        {
+          "name": "FatooraPlus",
+          "url": "https://fatooraplus.com/pricing/",
+          "note": "من 99 ريال شهرياً"
+        },
+        {
+          "name": "Zoho Invoice/Books",
+          "url": "https://www.zoho.com/sa/books/e-invoicing",
+          "note": "مستوى مجاني متوافق"
+        }
+      ],
+      "saudi_opportunity": "شريحة أصغر من عتبة المنافسين الحاليين (تاجر واحد بفواتير قليلة) قد تجد حتى 75-120 ريال شهرياً مرتفعاً أو معقداً.",
+      "solution": "أداة أحادية التاجر عبر واتساب فقط أو تسعير لكل فاتورة، تولّد XML/QR وترسله عبر CSID ذاتي بدون اعتماد رسمي.",
+      "mvp": "تسجيل عبر sandbox ثم production، محادثة واتساب لإنشاء فاتورة، توليد وإرسال XML+QR، تخزين الأرشيف، تصدير PDF.",
+      "technology": "Next.js + Node/FastAPI + Postgres (Supabase) + ZATCA Fatoora API + Moyasar + واتساب BSP اختياري.",
+      "estimated_cost": "500-1,000 ريال بناء؛ تشغيل شهري 150-400 ريال.",
+      "complexity": "MODERATE",
+      "revenue_model": "اشتراك أقل من 60 ريال شهرياً أو تسعير لكل فاتورة.",
+      "first_customer_strategy": "مجموعات واتساب التجارية ومنشورات مستقل، تجربة مجانية محدودة لأول 10 تجار.",
+      "expansion": "إضافة مطابقة مصروفات وتقارير ضريبية، ثم شرائح أكبر قليلاً.",
+      "risks": [
+        "منافسة شديدة من Fatoora Cloud وFatooraPlus وZoho تجعل السعر الرخيص وحده غير كافٍ.",
+        "أي خطأ في التوقيع الرقمي يعرّض العميل لغرامة حقيقية، عبء مسؤولية كبير على مؤسس منفرد.",
+        "عدم تأكد استعداد أصغر التجار للدفع الشهري."
+      ],
+      "unknowns": [
+        "حجم الشريحة الأصغر من المنافسين الحاليين.",
+        "تكلفة دعم واتساب BSP عند الحجم.",
+        "استعداد الدفع تحت 60-75 ريال شهرياً."
+      ],
+      "evidence_quality": "HIGH",
+      "sources": [
+        "https://zatca.gov.sa/en/Pages/news_1426.aspx",
+        "https://zatca.gov.sa/en/E-Invoicing/SolutionProviders/Pages/SolutionProvidersDirectory.aspx",
+        "https://www.qoyod.com/en/knowledge-base/qoyod-plans-and-pricing-subscription-tiers-features-add-ons/",
+        "https://www.bytesraw.com/fatoora",
+        "https://fatooraplus.com/pricing/",
+        "https://www.zoho.com/sa/books/e-invoicing"
+      ]
+    },
+    {
+      "candidate_id": "C04",
+      "name": "أداة ذكاء اصطناعي لأتمتة إدخال الفواتير والتسوية المحاسبية",
+      "category": "IMPROVED_MARKET",
+      "problem": "متاجر وشركات صغيرة تنشر باستمرار طلبات مستقل لإدخال فواتير وتسوية بنكية بدلاً من أتمتة العملية.",
+      "customer": "أصحاب متاجر إلكترونية وشركات صغيرة، ومكاتب محاسبة صغيرة",
+      "evidence": [
+        {
+          "claim": "أكثر من 7 مشاريع مستقلة حية على مستقل لمحاسبة وإدخال فواتير",
+          "url": "https://mostaql.com/project/1193081-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D8%B9%D9%86-%D8%A8%D8%B9%D8%AF",
+          "evidence_type": "DIRECT"
+        },
+        {
+          "claim": "مكاتب محاسبة تفرض 1,500-5,000+ ريال شهرياً لنفس المهام",
+          "url": "https://www.sovereigngroup.com/saudi-arabia/accounting-and-bookkeeping/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "claim": "Sanad.ai أداة OCR عربية موجودة لكنها للمؤسسات الكبرى عبر RPA فقط",
+          "url": "https://sanad.ai/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "why_it_exists": "غياب أداة ذاتية الخدمة بالعربية للمنشآت الصغرى؛ الحل التقني الأقرب موجه للمؤسسات الكبيرة فقط.",
+      "existing_alternatives": "توظيف متكرر لمستقلين، أو مكاتب محاسبة بسعر 1,500-5,000+ ريال شهرياً، أو أنظمة كاملة لا تستوعب OCR للفواتير الواردة.",
+      "competitors": [
+        {
+          "name": "Sanad.ai",
+          "url": "https://sanad.ai/",
+          "note": "OCR عربي موجه للمؤسسات الكبرى عبر RPA"
+        },
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/best-accounting-software-in-saudi-arabia",
+          "note": "يُصدر فواتير لكن لا يستوعب فواتير واردة تلقائياً"
+        }
+      ],
+      "saudi_opportunity": "طلب حي متكرر بلا منافس ذاتي الخدمة يستهدف الشريحة الصغرى بالعربية.",
+      "solution": "استقبال صور/PDF للفواتير وكشوف الحساب، استخراج بذكاء اصطناعي بصري، مطابقة تلقائية، ملخص تسوية شهري.",
+      "mvp": "رفع مستندات، استخراج LLM vision، مطابقة بقواعد بسيطة، تصدير Excel.",
+      "technology": "Next.js + FastAPI + Postgres + Claude/GPT-4o vision + Moyasar.",
+      "estimated_cost": "500-1,000 ريال بناء؛ تشغيل شهري 150-350 ريال.",
+      "complexity": "MODERATE",
+      "revenue_model": "اشتراك أرخص من تكلفة مكتب محاسبة خارجي.",
+      "first_customer_strategy": "التواصل مع أصحاب طلبات إدخال فواتير على مستقل وخمسات مباشرة.",
+      "expansion": "استهداف مكاتب محاسبة كعميل B2B2B، ثم تصدير مباشر لأنظمة قيود/Wafeq.",
+      "risks": [
+        "منافسة سعرية من مستقلين رخيصين جداً بأجور غير معروفة.",
+        "لا يوجد تحقق من دقة OCR على فواتير عربية فوضوية.",
+        "حاجز الثقة قد يتطلب مراجعة بشرية ترفع التكلفة."
+      ],
+      "unknowns": [
+        "الأسعار الفعلية للمستقلين على هذه المهام.",
+        "دقة نماذج الرؤية اللغوية على فواتير عربية حقيقية.",
+        "أثر مرحلة 2 من فاتورة على هذا الألم مستقبلاً."
+      ],
+      "evidence_quality": "MEDIUM",
+      "sources": [
+        "https://mostaql.com/project/1193081-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D8%B9%D9%86-%D8%A8%D8%B9%D8%AF",
+        "https://www.sovereigngroup.com/saudi-arabia/accounting-and-bookkeeping/",
+        "https://sanad.ai/"
+      ]
+    },
+    {
+      "candidate_id": "C10",
+      "name": "أداة SaaS ذاتية الخدمة للامتثال لنظام حماية البيانات الشخصية PDPL",
+      "category": "LOCAL_ADAPTATION",
+      "problem": "SDAIA تنفذ PDPL فعلياً (48 قرار إنفاذ خلال عام، غرامات حتى 5 ملايين ريال)؛ أغلب مخالفات المنشآت الصغيرة غياب أساس قانوني وموافقة تسويقية وضمانات تقنية.",
+      "customer": "منشآت صغيرة وشركات ناشئة سعودية بلا وظيفة قانونية داخلية",
+      "evidence": [
+        {
+          "claim": "SDAIA أصدرت 48 قرار إنفاذ، غرامات حتى 5 ملايين ريال",
+          "url": "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "claim": "Enzuzo تقدم صفحة PDPL سعودية من 7-9 دولار شهرياً",
+          "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "why_it_exists": "أدوات عالمية رخيصة موجودة لكن دعم العربية وتخصيصها لأنماط SDAIA غير مؤكد؛ البدائل المحلية استشارية مكلفة.",
+      "existing_alternatives": "Enzuzo وCookieHub وTermsFeed عالمية رخيصة؛ SecureLink وGhaim وHala Privacy محلية استشارية.",
+      "competitors": [
+        {
+          "name": "Enzuzo",
+          "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+          "note": "صفحة PDPL سعودية، تعريب غير مؤكد"
+        },
+        {
+          "name": "SecureLink",
+          "url": "https://www.securelink.sa/pdpl-compliance-saudi-arabia/",
+          "note": "استشاري محلي مكلف"
+        }
+      ],
+      "saudi_opportunity": "لا يوجد منافس مؤكد يجمع بين عربي أولاً ورخيص ومخصص لأنماط مخالفات SDAIA الفعلية.",
+      "solution": "مولّد سياسة خصوصية بالعربية، إشعار موافقة قابل للتضمين، استبيان رسم خرائط بيانات، قوالب إشعار اختراق.",
+      "mvp": "استبيان PDPL، توليد سياسة خصوصية تلقائي، أداة موافقة، قوالب تنزيل.",
+      "technology": "Next.js + Node/Python + Postgres + Claude API + Moyasar.",
+      "estimated_cost": "500-900 ريال بناء؛ تشغيل شهري 150-250 ريال.",
+      "complexity": "EASY",
+      "revenue_model": "اشتراك شهري منخفض حسب حجم البيانات.",
+      "first_customer_strategy": "أصحاب متاجر سلة/زد ومجتمعات الشركات الناشئة، تجربة مجانية لأول سياسة خصوصية.",
+      "expansion": "تغطية قطاعات أكثر تنظيماً، شراكات مع محاسبين ومستشارين صغار.",
+      "risks": [
+        "أدوات عالمية رخيصة تغطي جزءاً من الوظيفة بالفعل.",
+        "غير مؤكد استهداف الإنفاذ للمنشآت الصغيرة المحلية بدلاً من الكبيرة.",
+        "مخاطر تأطير قانوني: يجب توضيح أنها أداة وليست استشارة قانونية."
+      ],
+      "unknowns": [
+        "دعم العربية الفعلي في Enzuzo/CookieHub/TermsFeed.",
+        "أسعار المنافسين المحليين الفعلية.",
+        "حجم الطلب الفعلي مقابل فجوة الوعي."
+      ],
+      "evidence_quality": "MEDIUM",
+      "sources": [
+        "https://www.globalprivacyblog.com/2026/05/active-enforcement-of-saudi-arabia-privacy-regime-implications-for-businesses/",
+        "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+        "https://www.securelink.sa/pdpl-compliance-saudi-arabia/"
+      ]
+    },
+    {
+      "candidate_id": "C08",
+      "name": "أداة تشغيل ميداني خفيفة عبر واتساب لشركات الصيانة الصغيرة",
+      "category": "LOCAL_ADAPTATION",
+      "problem": "شركات صيانة صغيرة (1-15 فني) تفتقر لتتبع لحظي للفنيين وسجل صيانة موحد وفوترة سريعة، وتعتمد على الهاتف وواتساب غير المنظم.",
+      "customer": "شركات صيانة ومرافق صغيرة (1-15 فني)",
+      "evidence": [
+        {
+          "claim": "Mutflex منافس سعودي بباقات مستخدمين غير محدودين وتجربة مجانية شهرين",
+          "url": "https://mutflex.com/pricing",
+          "evidence_type": "WEAK"
+        },
+        {
+          "claim": "Daftra تملك وحدة إدارة مراكز صيانة من الشكوى حتى الفاتورة",
+          "url": "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "claim": "إحصائية 38% انتشار رقمي وُجدت منسوخة بين موقعين تسويقيين دون مصدر أساسي",
+          "url": "https://multitech.sa/how-hvac-field-service-software-agreements-improve-efficiency-in-saudi-buildings/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "why_it_exists": "خيارات إما ERP مؤسسي مبالغ فيه، أو منافسون محليون لم يُؤكد جمعهم بين GPS لحظي وواتساب أصلي.",
+      "existing_alternatives": "Mutflex وSaudiSoftware.co وDaftra محلياً؛ Jobber وHousecall Pro عالمياً دون تعريب.",
+      "competitors": [
+        {
+          "name": "Mutflex",
+          "url": "https://mutflex.com/pricing",
+          "note": "منافس سعودي مباشر لشركات التكييف الصغيرة"
+        },
+        {
+          "name": "Daftra",
+          "url": "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/",
+          "note": "نظام محاسبة مجاني الفئة الأولى مع وحدة صيانة"
+        }
+      ],
+      "saudi_opportunity": "لا يوجد منافس مؤكد يجمع بين GPS لحظي وواتساب أصلي وتسعير موجه لصغار المشغلين.",
+      "solution": "PWA خفيف لتعيين مهام ومتابعتها عبر واتساب، سجل صيانة موحد بالصور، فاتورة تلقائية عند الإتمام.",
+      "mvp": "إنشاء مهمة وتعيين فني، تحديث حالة عبر واتساب، سجل صيانة بالصور، فاتورة بسيطة.",
+      "technology": "Next.js PWA + Node/Python + Postgres + WhatsApp Business API + Moyasar.",
+      "estimated_cost": "600-1,300 ريال بناء؛ تشغيل شهري 300-450 ريال.",
+      "complexity": "MODERATE",
+      "revenue_model": "اشتراك شهري لكل فني، أقل من الأنظمة المؤسسية.",
+      "first_customer_strategy": "مجموعات واتساب لشركات التكييف والكهرباء الصغيرة، تجربة مجانية لأول 5-10 فنيين.",
+      "expansion": "قطاعات ميدانية مشابهة (توصيل، تنظيف) بنفس البنية بعد إثبات الجدوى.",
+      "risks": [
+        "منافسون محليون موجودون (Mutflex، Daftra) وإن لم يُؤكد جمعهم بين GPS وواتساب.",
+        "إحصائية السوق الرئيسية غير موثوقة (منسوخة بين موقعين).",
+        "دليل الألم الأساسي من مدونة بائع واحد فقط دون تأكيد مستقل."
+      ],
+      "unknowns": [
+        "أسعار المنافسين المحليين الفعلية.",
+        "هل تقدم Daftra GPS لحظي فعلاً؟",
+        "استعداد صغار المشغلين للتحول من المجاني إلى المدفوع."
+      ],
+      "evidence_quality": "LOW",
+      "sources": [
+        "https://mutflex.com/pricing",
+        "https://www.daftra.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%B1%D8%A7%D9%83%D8%B2-%D8%A7%D9%84%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%81%D9%86%D9%89/",
+        "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/"
+      ]
+    }
+  ],
+  "hidden_gems": [
+    {
+      "candidate_id": "HG01",
+      "name": "أداة تتبع أقساط العملاء (تقسيط)",
+      "one_liner": "بديل لإكسل الملون يدوياً لتتبع الأقساط وتواريخ التحصيل",
+      "why_interesting": "دليل حي من مستقل على منتج مماثل مبني لعميل حقيقي، ألم متكرر غير مخدوم بأداة SaaS مخصصة.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "EASY",
+      "sources": [
+        "https://mostaql.com/portfolio/3273292-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D9%83%D8%B3%D9%8A%D9%84-%D8%B0%D9%83%D9%8A-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A3%D9%82%D8%B3%D8%A7%D8%B7-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%AA%D8%AD%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A"
+      ]
+    },
+    {
+      "candidate_id": "HG02",
+      "name": "دفتر أستاذ موردين وعملاء رقمي للجملة",
+      "one_liner": "تتبع التوريدات وحسابات العملاء بدلاً من شيتات إكسل مخصصة",
+      "why_interesting": "طلب مستقل جديد وبورتفوليو منجز فعلياً، دون أداة SaaS رخيصة مخصصة.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "EASY",
+      "sources": [
+        "https://mostaql.com/portfolio/1864563-%D8%B4%D9%8A%D8%AA-%D8%A7%D9%83%D8%B3%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D8%B1%D9%8A%D8%AF%D8%A7%D8%AA-%D9%88%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1"
+      ]
+    },
+    {
+      "candidate_id": "HG03",
+      "name": "تطبيق متابعة مندوبي المبيعات الميدانيين",
+      "one_liner": "تتبع زيارات المندوبين والطلبات والتحصيل بدلاً من مكالمات هاتفية",
+      "why_interesting": "منتج منافس (Kashierapp) يثبت النموذج، لكن استهداف صغار الموزعين تحديداً غير مؤكد.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://mostaql.com/project/216022-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA",
+        "https://kashierapp.com/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A7%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D9%88%D8%A8%D9%8A%D9%86"
+      ]
+    },
+    {
+      "candidate_id": "HG04",
+      "name": "أداة متابعة طلبات مخصصة للأعمال المنزلية",
+      "one_liner": "تتبع طلبات العملاء ومواعيد الاستلام والتسليم بدلاً من إكسل يدوي",
+      "why_interesting": "طلب مجتمعي على خمسات وبورتفوليو منجز، شريحة مهملة من أدوات SaaS.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "EASY",
+      "sources": [
+        "https://mostaql.com/portfolio/1357455-%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%B4%D9%8A%D8%AA-%D8%A7%D9%83%D8%B3%D9%8A%D9%84-%D9%84%D9%85%D8%AA%D8%A7%D8%A8%D8%B9%D9%87-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-%D9%88-%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%84%D8%A7%D9%85-%D9%88-%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85"
+      ]
+    },
+    {
+      "candidate_id": "HG05",
+      "name": "أداة تحصيل الديون عبر واتساب",
+      "one_liner": "أتمتة رسائل متابعة المستحقات المتأخرة بدلاً من موظف تحصيل يدوي",
+      "why_interesting": "وظائف تحصيل مفتوحة ومتكررة لدى جهات متعددة تثبت أن الشركات تدفع رواتب فعلية لهذه المهمة.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://www.linkedin.com/jobs/view/4206999894",
+        "https://www.gulftalent.com/saudi-arabia/jobs/title/credit-and-collection-officer"
+      ]
+    },
+    {
+      "candidate_id": "HG06",
+      "name": "أداة تصنيف مستندات لمراقبي مستندات المقاولات",
+      "one_liner": "أتمتة تنظيم وتوجيه مستندات المشاريع بدلاً من موظف مراقبة مستندات",
+      "why_interesting": "دليل رواتب فعلي (4,208-9,075 ريال) و75 وظيفة مفتوحة، لكن تعقيد تكامل EDMS أعلى.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://www.bayt.com/en/saudi-arabia/salaries/jobtitle/document-controller/"
+      ]
+    },
+    {
+      "candidate_id": "HG07",
+      "name": "أداة مقارنة عروض أسعار الموردين",
+      "one_liner": "أتمتة جمع ومقارنة عروض الموردين بدلاً من منسق مشتريات يدوي",
+      "why_interesting": "42 وظيفة مفتوحة متزامنة تثبت طلباً واسعاً، لكن خطر استخدام أنظمة ERP كبيرة أصلاً.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://www.gulftalent.com/saudi-arabia/jobs/title/procurement-coordinator"
+      ]
+    },
+    {
+      "candidate_id": "HG08",
+      "name": "روبوت رد آلي بالعربية لمراكز الاتصال",
+      "one_liner": "تحويل جزء من حجم مكالمات الاستفسارات المتكررة لروبوت ذكاء اصطناعي",
+      "why_interesting": "أكثر من 2,000 وظيفة خدمة عملاء مفتوحة تثبت حجم الطلب، نسبة الأتمتة الممكنة غير معروفة.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://www.linkedin.com/jobs/customer-service-jobs-saudi-arabia?trk=amworks_jserp_redirect"
+      ]
+    },
+    {
+      "candidate_id": "HG09",
+      "name": "وسيط مزامنة حسابات ومخزون بين سلة/زد ونون/أمازون/Odoo",
+      "one_liner": "ربط برمجي مخصص لا يغطيه التطبيق الرسمي في متجر التطبيقات",
+      "why_interesting": "طلب مقترح رسمي على منصة سلة نفسها، وعدة طلبات مستقل منفصلة رغم وجود تطبيقات رسمية.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://features.salla.sa/ideas/SUG-I-9363"
+      ]
+    },
+    {
+      "candidate_id": "HG10",
+      "name": "حاسبة ضريبة الأراضي البيضاء",
+      "one_liner": "أداة بسيطة تحسب ضريبة الأرض البيضاء الجديدة لملاك الأراضي الكبيرة",
+      "why_interesting": "أكثر من 60,000 مالك أرض تلقوا فواتير فعلية، قاعدة عملاء محددة كأداة تسويقية تقود لاستشارات مدفوعة.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "EASY",
+      "sources": [
+        "https://www.agbi.com/real-estate/2026/01/saudi-arabia-bills-60000-landowners-under-new-tax-rule/"
+      ]
+    },
+    {
+      "candidate_id": "HG11",
+      "name": "نظام كاشير منخفض التكلفة بديل لـFoodics",
+      "one_liner": "بديل أرخص للمقاهي والمطاعم الصغيرة الناقمة على تكلفة Foodics",
+      "why_interesting": "منافس (TapFood) يسوّق نفسه صراحة كبديل أرخص، لكن الحاجة لأجهزة كاشير ترفع صعوبة الـMVP.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "HARD",
+      "sources": [
+        "https://tapfood.net/blog/tapfood-vs-foodics-alternative-saudi-arabia-2026"
+      ]
+    },
+    {
+      "candidate_id": "HG12",
+      "name": "أداة عرض سعر وعقد وفاتورة ZATCA للمستقلين",
+      "one_liner": "نسخة سعودية متوافقة مع فاتورة من أدوات مثل Bonsai/HoneyBook",
+      "why_interesting": "فجوة ميزات واضحة نظرياً، لكن لا دليل مباشر على طلب فعلي من مستقلين سعوديين.",
+      "validation_status": "UNVALIDATED_LEAD",
+      "complexity": "MODERATE",
+      "sources": [
+        "https://agiled.app/compare/bonsai-vs-honeybook"
+      ]
+    }
+  ],
+  "foreign_models": [
+    {
+      "model_name": "Jobber",
+      "url": "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/",
+      "country": "كندا",
+      "what_it_does": "جدولة الفنيين وإدارة العمل الميداني والفوترة لشركات الخدمات الصغيرة",
+      "revenue_model": "اشتراك شهري لكل مستخدم من 19 دولار",
+      "saudi_equivalent_status": "لا تعريب مؤكد؛ منافسون محليون جزئيون (Mutflex، Daftra)",
+      "adaptation_notes": "يحتاج تعريب، واتساب أصلي، وتكامل ZATCA، انظر C08",
+      "sources": [
+        "https://www.getjobber.com/comparison/jobber-vs-housecall-pro/"
+      ]
+    },
+    {
+      "model_name": "Enzuzo",
+      "url": "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software",
+      "country": "كندا",
+      "what_it_does": "إدارة موافقة وسياسات خصوصية ذاتية الخدمة، صفحة PDPL سعودية",
+      "revenue_model": "اشتراك 7-79 دولار مع خطة مجانية",
+      "saudi_equivalent_status": "يخدم السوق تقنياً، دعم العربية غير مؤكد",
+      "adaptation_notes": "الفرصة المحلية C10 تحتاج تعريب كامل وتخصيص لأنماط SDAIA",
+      "sources": [
+        "https://www.enzuzo.com/saudi-arabia-pdpl-compliance-software"
+      ]
+    },
+    {
+      "model_name": "Zoho Invoice/Books",
+      "url": "https://www.zoho.com/sa/books/e-invoicing",
+      "country": "الهند",
+      "what_it_does": "فوترة مجانية/رخيصة متوافقة مع مرحلة 2 من ZATCA",
+      "revenue_model": "مستوى مجاني، اشتراكات مدفوعة للمتقدم",
+      "saudi_equivalent_status": "موجود ويخدم السوق مباشرة كمنافس",
+      "adaptation_notes": "منافس مباشر بالفعل، حاجز سعر أساسي لأي بديل، انظر مخاطر C01",
+      "sources": [
+        "https://www.zoho.com/sa/books/e-invoicing"
+      ]
+    },
+    {
+      "model_name": "Bonsai/HoneyBook",
+      "url": "https://agiled.app/compare/bonsai-vs-honeybook",
+      "country": "الولايات المتحدة",
+      "what_it_does": "تجميع عرض السعر والعقد والفوترة للمستقلين",
+      "revenue_model": "اشتراك شهري",
+      "saudi_equivalent_status": "لا تكامل ZATCA مؤكد، فجوة نظرية غير مُختبرة",
+      "adaptation_notes": "يحتاج فاتورة متوافقة وتعريب كامل، انظر HG12",
+      "sources": [
+        "https://agiled.app/compare/bonsai-vs-honeybook"
+      ]
+    },
+    {
+      "model_name": "Clio",
+      "url": "https://www.clio.com/manage/",
+      "country": "كندا",
+      "what_it_does": "إدارة ممارسة قانونية شاملة تخدم 400,000+ قانوني عالمياً",
+      "revenue_model": "اشتراك شهري لكل مستخدم",
+      "saudi_equivalent_status": "لا تواجد أو دعم عربي مؤكد في السعودية",
+      "adaptation_notes": "فرصة نظرية فقط، تفتقر لدليل طلب فعلي من محامين سعوديين",
+      "sources": [
+        "https://www.clio.com/manage/"
+      ]
+    }
+  ],
+  "boring_businesses": [
+    {
+      "name": "أتمتة تحصيل المستحقات المتأخرة عبر واتساب",
+      "problem": "شركات توظف موظفي تحصيل بشكل متكرر لمتابعة الحسابات المتأخرة يدوياً هاتفياً.",
+      "who_pays": "أقسام مالية لدى شركات لديها ذمم مدينة (إقراض، مرافق، هيئات مدن صناعية)",
+      "evidence": "وظائف تحصيل مفتوحة متكررة لدى جهات متعددة، 14 وظيفة في أغسطس 2026",
+      "sources": [
+        "https://www.gulftalent.com/saudi-arabia/jobs/title/credit-and-collection-officer"
+      ]
+    },
+    {
+      "name": "تنظيم وتوجيه مستندات مشاريع المقاولات",
+      "problem": "شركات مقاولات توظف مراقبي مستندات بدوام كامل لتنظيم وتتبع مستندات المشروع يدوياً.",
+      "who_pays": "مقاولون واستشاريو بنية تحتية، راتب 4,208-9,075 ريال شهرياً",
+      "evidence": "75 وظيفة مراقب مستندات مفتوحة في ديسمبر 2025",
+      "sources": [
+        "https://www.bayt.com/en/saudi-arabia/salaries/jobtitle/document-controller/"
+      ]
+    },
+    {
+      "name": "امتثال الفوترة الإلكترونية الإلزامية ZATCA",
+      "problem": "منشآت صغيرة تدخل حديثاً نطاق الالتزام الحكومي بغرامات حقيقية عند عدم الامتثال.",
+      "who_pays": "أصحاب متاجر صغيرة، بدليل اشتراكات فعلية 60-249 ريال شهرياً لدى Qoyod وWafeq",
+      "evidence": "غرامات موثقة 5,000-50,000 ريال، عتبة الموجة 24 منخفضة من يونيو 2026",
+      "sources": [
+        "https://zatca.gov.sa/en/Pages/news_1426.aspx"
+      ]
+    },
+    {
+      "name": "إدخال بيانات الفواتير والمحاسبة اليدوية",
+      "problem": "منشآت صغيرة تعيد توظيف مستقلين بشكل متكرر لإدخال فواتير يدوياً.",
+      "who_pays": "أصحاب متاجر صغيرة عبر مستقل، ومكاتب محاسبة بسعر 1,500-5,000+ ريال شهرياً",
+      "evidence": "أكثر من 7 طلبات مستقل حية لإدخال فواتير ومحاسبة عن بعد",
+      "sources": [
+        "https://mostaql.com/project/1193081-%D9%85%D8%AD%D8%A7%D8%B3%D8%A8-%D8%B9%D9%86-%D8%A8%D8%B9%D8%AF"
+      ]
+    }
+  ],
+  "future_opportunities": [
+    {
+      "name": "أدوات مالية شخصية عبر البنوك المفتوحة",
+      "hypothesis": "إذا نضج ترخيص البنوك المفتوحة خلال 1-3 سنوات، فسترغب المنشآت الصغيرة في تطبيقات تدفق نقدي مبنية فوق واجهات مرخصة.",
+      "current_evidence": "ساما بدأت ترخيص البنوك المفتوحة في 26 مارس 2026؛ Lean Technologies أول مرخص",
+      "trigger": "نضج السوق بمزودين مرخصين بشروط وصول معقولة لمؤسس منفرد",
+      "horizon": "1-3 سنوات",
+      "sources": [
+        "https://spa.gov.sa/en/N2546753"
+      ]
+    },
+    {
+      "name": "أدوات امتثال لحوكمة الذكاء الاصطناعي SDAIA",
+      "hypothesis": "إذا اكتملت وأُنفذت سياسة الذكاء الاصطناعي المسؤول كشرط شراء، فسيحتاج بائعو الذكاء الاصطناعي الصغار أدوات تصنيف مخاطر وتوثيق.",
+      "current_evidence": "الاستشارة العامة أُغلقت مايو 2026 ولم تُعتمد بعد كنظام ملزم حتى اليوم",
+      "trigger": "اعتماد السياسة رسمياً مع نطاق إنفاذ يشمل الشركات الصغيرة",
+      "horizon": "1-2 سنة",
+      "sources": [
+        "https://digitalpolicyalert.org/event/39093-saudi-data-and-artificial-intelligence-authority-closes-consultation-on-draft-responsible-ai-policy-including-performance-monitoring-requirement"
+      ]
+    },
+    {
+      "name": "أدوات تشغيل فندقي للمشغلين المستقلين قبل كأس العالم 2034",
+      "hypothesis": "إذا استمرت خطط بناء 180,000+ غرفة فندقية، فسيحتاج مشغلون مستقلون أدوات تشغيل وإيرادات ميسورة.",
+      "current_evidence": "السعودية تملك حالياً نحو 500,000 غرفة فقط مقابل خطة إضافة 180,000-230,000 غرفة بحلول 2034",
+      "trigger": "افتتاح أعداد كبيرة من الفنادق المستقلة فعلياً في المدن الثانوية",
+      "horizon": "3-8 سنوات",
+      "sources": [
+        "https://alphaconsultancy.sa/en/resources/fifa-world-cup-2034-saudi-arabia-business"
+      ]
+    },
+    {
+      "name": "مطابقة مقاولي الباطن لمشاريع إكسبو 2030 وكأس العالم 2034",
+      "hypothesis": "إذا تسارعت أعمال البناء الفعلية، فسيواجه مقاولو الباطن الصغار سوق مناقصات مجزأ ونقص عمالة ماهرة.",
+      "current_evidence": "إكسبو 2030 الرياض تخطط لبدء إنشاء المباني الرئيسية الربع الثالث 2026",
+      "trigger": "بدء البناء الفعلي على النطاق المعلن مع ظهور حاجة موثقة لتنسيق مقاولي الباطن",
+      "horizon": "1-3 سنوات",
+      "sources": [
+        "https://expo2030.co/briefings/expo-2030-pavilion-timeline/"
+      ]
+    },
+    {
+      "name": "أداة اختيار فئات التأمين الصحي الإلزامي لأصحاب العمل الصغار",
+      "hypothesis": "إذا استمر توسع فئات التأمين الصحي، فسيحتاج أصحاب العمل الصغار أداة لاختيار وميزنة الفئة المناسبة.",
+      "current_evidence": "فئات CHI 2026 موثقة (600-12,000 ريال سنوياً حسب الفئة)",
+      "trigger": "مزيد من توسع متطلبات مجلس الضمان الصحي",
+      "horizon": "1-2 سنة",
+      "sources": [
+        "https://truescho.com/en/blog/health-insurance-expats-saudi-arabia-2026"
+      ]
+    },
+    {
+      "name": "تطبيق حالة شحن للسيارات الكهربائية",
+      "hypothesis": "إذا تسارع تبني السيارات الكهربائية من أقل من 1% حالياً، فسيحتاج ملاك جدد تطبيقاً لحالة الشواحن في المدن الثانوية.",
+      "current_evidence": "نحو 1,200 شاحن عام مركّز في الرياض وجدة ونيوم؛ إطلاق Ceer مخطط الربع الرابع 2026",
+      "trigger": "نمو ملموس في مبيعات السيارات الكهربائية يتجاوز تغطية الشواحن الحالية",
+      "horizon": "2-4 سنوات",
+      "sources": [
+        "https://saudimarketresearchconsulting.com/insights/articles/closing-the-charging-gap-saudi-arabia-ev-charging-infrastructure-gap-and-the-2026-operator-opportunity"
+      ]
+    },
+    {
+      "name": "أدوات حوكمة خفيفة للشركات العائلية الصغيرة",
+      "hypothesis": "إذا استمرت موجة كبار السن من المؤسسين دون خطط تعاقب رسمية، فسيحتاج الشركات العائلية الصغيرة أدوات حوكمة ميسورة.",
+      "current_evidence": "59% من الشركات العائلية السعودية بلا خطة تعاقب واضحة، 23% من المؤسسين فوق 55",
+      "trigger": "ظهور طلب فعلي موثق على أدوات رقمية بدلاً من مستشارين بشريين فقط",
+      "horizon": "2-5 سنوات",
+      "sources": [
+        "https://knowledge.insead.edu/family-business/saudi-arabia-tackles-succession-decades"
+      ]
+    }
+  ],
+  "no_opportunity_statement": ""
+}

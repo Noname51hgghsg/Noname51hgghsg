@@ -1,0 +1,293 @@
+{
+  "results": [
+    {
+      "candidate_id": "C11",
+      "market_state": "WEAK_MARKET",
+      "competitors": [
+        {
+          "name": "Maroof (official Ministry of Commerce platform)",
+          "url": "https://my.gov.sa/wps/portal/snp/aboutksa/nationalDevelopmentPlans/download/Maroof",
+          "hq_country": "Saudi Arabia (government)",
+          "serves_saudi": "YES",
+          "pricing": "Free (per search snippet: 'Maroof registration itself is a free service under the Ministry of Commerce')",
+          "arabic_support": "YES",
+          "saudi_integrations": "Is the CR/Maroof system itself; requires linkage to a business.sa bank account for verification",
+          "strengths": "Official, mandatory, free, trusted by consumers and required by Salla/Zid for full payment features",
+          "weaknesses": "Pure self-serve government portal — no guided step-by-step wizard, no bundling of CR + Maroof + store setup + ZATCA/Fatoorah invoicing in one flow, no ongoing compliance reminders"
+        },
+        {
+          "name": "Business-setup / CR registration agencies and law firms (e.g. incorp-ksa.com, expandway.sa, arnifi.com, hr360s.com)",
+          "url": "https://incorp-ksa.com/blog/how-much-does-company-registration-in-saudi-arabia-cost/",
+          "hq_country": "UNKNOWN (regional consultancies)",
+          "serves_saudi": "YES",
+          "pricing": "Government CR fees ~SAR 1,200–2,100 plus agency service fees; total first-year cost for a foreign-owned business cited at SAR 45,000–150,000 (per search snippet) — clearly priced for companies/foreign investors, not micro individual sellers",
+          "arabic_support": "PARTIAL",
+          "saudi_integrations": "CR/Maroof filing assistance as part of full company-formation service",
+          "strengths": "Full-service, handles all paperwork end-to-end for serious business formations",
+          "weaknesses": "Priced far above what an individual Instagram/Snapchat seller would pay; not scoped for social-media sellers; no Salla/Zid/Fatoorah bundling or ongoing reminders"
+        }
+      ],
+      "gap_description": "Individual informal social-media sellers currently choose between a free-but-DIY government portal (Maroof/business.sa, no guidance beyond official instructions) and expensive business-setup agencies/law firms priced for companies and foreign investors. No evidence was found of an affordable, guided, all-in-one wizard specifically bundling CR + Maroof + Salla/Zid store setup + ZATCA Fatoorah invoicing for this exact micro-seller segment.",
+      "differentiation_angle": "A cheap (tens, not thousands of SAR), Arabic-first, mobile/WhatsApp-native guided checklist wizard priced far below agency fees, positioned specifically at individual informal sellers rather than at company formations, with ongoing compliance-reminder nudges.",
+      "summary": "No dedicated wizard competitor found; existing options are the free official Maroof/business.sa portal (self-serve, no hand-holding) or business-formation agencies priced for companies/foreigners (SAR tens of thousands). This looks like a real, if narrow, gap for a cheap guided micro-SaaS — but the biggest open risk (per the candidate's own open questions) is whether unregistered social sellers will pay anything at all rather than ignore the law until enforced against them."
+    },
+    {
+      "candidate_id": "C12",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "Salla \"Store Tools – AI Describer\"",
+          "url": "https://apps.salla.sa/en/app/709062167",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (app-store listing found via search; pricing page not fetched this session — proxy blocked)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Native, first-party Salla integration; generates/saves AI product descriptions and SEO one-at-a-time or in bulk directly inside the merchant's Salla dashboard",
+          "strengths": "Zero extra integration needed, embedded in the tool merchants already use, first-party trust",
+          "weaknesses": "Appears limited to describing/rewriting existing product entries, not confirmed to ingest a raw supplier spreadsheet/photos and perform full bulk catalogue upload"
+        },
+        {
+          "name": "Zid \"Store Tools\" (أدوات المتجر) AI description assistant + \"Kashaf\" AI search",
+          "url": "https://apps.zid.sa/ar-sa/apps/3288",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Native, first-party Zid app-market integration",
+          "strengths": "Embedded directly in Zid merchant admin, first-party trust",
+          "weaknesses": "Same limitation as Salla's tool — description/search focused, not confirmed to cover full spreadsheet-to-bulk-listing pipeline"
+        },
+        {
+          "name": "Generic global AI description generators (Copy.ai, Zoho Commerce, Grammarly, Ahrefs, Writingmate, Selzee)",
+          "url": "https://www.copy.ai/tools/product-description-generator",
+          "hq_country": "United States (mostly)",
+          "serves_saudi": "UNKNOWN",
+          "pricing": "Mostly free tiers with paid plans (typical $10-30/mo range for similar SaaS, not confirmed KSA-specific)",
+          "arabic_support": "PARTIAL",
+          "saudi_integrations": "NO",
+          "strengths": "Mature products, free tiers, no Salla/Zid dependency",
+          "weaknesses": "No direct Salla/Zid bulk-upload integration, not Gulf-Arabic-SEO tuned"
+        },
+        {
+          "name": "Manual freelance/agency listing services (host-r.sa, Mostaql gigs)",
+          "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally",
+          "hq_country": "Saudi Arabia / Arab region",
+          "serves_saudi": "YES",
+          "pricing": "~200 (currency unconfirmed, likely SAR) per batch (per search snippet, WEAK evidence)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Manual — human directly uses Salla/Zid dashboard",
+          "strengths": "Human quality control, already trusted informal channel for merchants",
+          "weaknesses": "Slow, manual, doesn't scale, no AI efficiency gain"
+        }
+      ],
+      "gap_description": "Both Salla and Zid already ship native AI product-description apps in their own marketplaces, directly overlapping the core idea. However, the paid Mostaql/host-r gigs this candidate's evidence is built on are for bulk catalogue migration (supplier spreadsheet/photos → live listings), a broader job than the native 'rewrite one description' tools appear to cover.",
+      "differentiation_angle": "Position as a full spreadsheet+photos-to-live-bulk-listing pipeline (catalogue onboarding automation) rather than a single-description AI writer, undercutting the ~200 SAR/batch freelancer price and complementing (not replacing) Salla/Zid's own AI Describer apps.",
+      "summary": "Direct native competitors already exist inside both Salla's and Zid's own app stores for AI-generated product descriptions, making this a competitive rather than open space. A solo founder would need to differentiate on the bulk-ingestion/migration use case rather than compete head-on on 'AI writes descriptions.'"
+    },
+    {
+      "candidate_id": "C13",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "Daftra (دفترة)",
+          "url": "https://www.daftra.com/plans",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Has a public pricing/plans page; exact tiers not confirmed this session (fetch blocked by proxy)",
+          "arabic_support": "YES",
+          "saudi_integrations": "UNKNOWN (not confirmed this session whether ZATCA e-invoicing is integrated)",
+          "strengths": "Full accounting+CRM+HR+inventory suite with dedicated contractor mustakhlas features (batch issuance, retention/guarantee deduction handling per search snippet)",
+          "weaknesses": "Full ERP scope likely heavier/pricier than a lightweight field tool; not confirmed to be mobile-first, photo-based, or WhatsApp-shareable"
+        },
+        {
+          "name": "Rawasem (رواسم)",
+          "url": "https://www.rwasem.com/",
+          "hq_country": "UNKNOWN (Saudi-oriented content)",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (fetch blocked by proxy)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Computes 15% VAT on completed work after technical deductions — direct Saudi VAT-aware calculation",
+          "strengths": "Cloud storage/tracking purpose-built for mustakhlasat and invoices with Saudi VAT logic",
+          "weaknesses": "Pricing, UX, and mobile/WhatsApp workflow unconfirmed"
+        },
+        {
+          "name": "Bonyan ERP",
+          "url": "https://bonyan-erp.com/ar/blog/contractor-payment-certificates-how-to-calculate-and-track-them-without-confusion",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "UNKNOWN",
+          "strengths": "Contractor-specific ERP vendor actively publishing content targeting this exact pain point, indicating recognized demand",
+          "weaknesses": "Likely enterprise/full-ERP priced and scoped, heavier than a solo subcontractor needs"
+        },
+        {
+          "name": "Buildo",
+          "url": "https://buildo.solutions/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "UNKNOWN",
+          "strengths": "Full contracting/project-management ERP",
+          "weaknesses": "Likely priced/scoped for mid-to-large contractors, not small subcontractors (per candidate's own note)"
+        },
+        {
+          "name": "Orchida Soft (const13 / OCAP)",
+          "url": "https://orchida-soft.com/ar/const13-ocapv5/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "UNKNOWN",
+          "strengths": "Long-established desktop mustakhlasat accounting software category",
+          "weaknesses": "Desktop-based, not mobile-first/photo-based/WhatsApp-native"
+        },
+        {
+          "name": "Sdeed Digital (منصة سديد الرقمية)",
+          "url": "https://www.sdeed1.com/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Contractor invoicing/quotes/project-management bundle",
+          "strengths": "Contractor-specific invoicing+quote+PM platform",
+          "weaknesses": "Depth of mustakhlas-specific features and mobile/WhatsApp workflow unconfirmed"
+        }
+      ],
+      "gap_description": "Multiple Arabic, Saudi-oriented contractor ERP/accounting vendors (Daftra, Rawasem, Bonyan ERP, Orchida, Sdeed, plus Plugin-soft/Saliserp/Gastech seen in search) already explicitly market mustakhlas/progress-certificate features. None were confirmed (fetches blocked by proxy this session) to offer a lightweight, mobile-first, photo-per-line-item, WhatsApp-shareable certificate tool — most appear to be desktop or full-ERP products bundling accounting/inventory/HR a solo subcontractor doesn't need.",
+      "differentiation_angle": "A narrow, mobile-only, near-free companion app that does one thing — log % complete + photo per BOQ line item and auto-generate a WhatsApp-shareable PDF certificate with running totals/deductions/aging — positioned as a lightweight complement to (not replacement for) existing Excel/ERP workflows, priced well below full ERP subscriptions.",
+      "summary": "This is a more crowded space than the candidate evidence initially suggested: several established Saudi/Arabic contractor ERP and mustakhlas-specific vendors already exist. However, all confirmed players lean toward full-ERP or desktop tooling, leaving room for a much simpler, cheaper, mobile/WhatsApp-first point solution — if small subcontractors are willing to pay for software at all rather than just wanting faster payment (an open question the candidate itself flags)."
+    },
+    {
+      "candidate_id": "C14",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "Notah.ai",
+          "url": "https://www.notah.ai/blog/ai-meeting-notes-saudi-arabia-2025",
+          "hq_country": "UNKNOWN (MENA-focused)",
+          "serves_saudi": "YES",
+          "pricing": "~$10/month Pro plan (per comparison-article search snippet); free tier with unlimited meetings vs. Otter.ai's 300 min/month cap",
+          "arabic_support": "YES",
+          "saudi_integrations": "Claims MENA data residency for PDPL compliance",
+          "strengths": "Claims 92% accuracy on Najdi and Hijazi dialects plus Gulf/Levantine/Egyptian/MSA and Arabic-English code-switching; directly targets Saudi/Gulf dialects with disclosed pricing and a free tier; explicit PDPL data-residency positioning",
+          "weaknesses": "Accuracy/pricing claims are vendor marketing (not independently verified this session); real user reviews not found"
+        },
+        {
+          "name": "Munsit.com",
+          "url": "https://munsit.com/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (not disclosed in search snippets)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Claims PDPL/NCA/GCC data-residency-aligned deployments",
+          "strengths": "Markets '25+ dialects support' with structured notes (speakers/decisions/action items) matching the candidate's exact proposed feature set; purpose-built Arabic STT + meeting-notes platform with heavy content marketing (SEO blog comparing 8+ competitor tools), suggesting active/funded development",
+          "weaknesses": "Pricing opacity; real-world accuracy/adoption unverified this session"
+        },
+        {
+          "name": "\"MoM\" (referenced via codedev.sa comparison)",
+          "url": "https://codedev.sa/en/compare/mom-vs-otter-ai-arabic",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "UNKNOWN",
+          "strengths": "Explicit Saudi-dialect positioning per search snippet ('designed specifically for Saudi dialect')",
+          "weaknesses": "Could not verify product details; page fetch blocked by proxy this session, so it is unclear if this is a live product or a content-marketing placeholder"
+        },
+        {
+          "name": "Generic global ASR APIs with Gulf-dialect claims (Speechmatics, Speak AI, Voiser, Deepgram, Soniox, Sonix, ElevenLabs)",
+          "url": "https://www.speechmatics.com/speech-to-text/arabic",
+          "hq_country": "International (mostly US/UK)",
+          "serves_saudi": "YES",
+          "pricing": "Typically per-minute/API pricing, not KSA-specific, not fetched this session",
+          "arabic_support": "PARTIAL",
+          "saudi_integrations": "NO",
+          "strengths": "Mature ASR technology; Speechmatics claims 90% accuracy on Gulf dialect, Speak AI/Voiser also claim Gulf/Saudi dialect coverage. Note: Otter.ai by contrast explicitly has NO Arabic support at all",
+          "weaknesses": "Developer/API-first, not a polished end-user meeting-minutes product; no local packaging or compliance positioning"
+        }
+      ],
+      "gap_description": "Despite multiple vendors (Notah, Munsit, MoM) claiming to solve Gulf-dialect meeting transcription, the candidate's own demand evidence (freelancers still paid ~$5/audio-hour on Khamsat/Mostaql for manual transcription) suggests real-world accuracy may still disappoint buyers enough to keep hiring humans — an unresolved product-quality gap, not a pure white-space market gap.",
+      "differentiation_angle": "Given Notah/Munsit/MoM already claim to address general Gulf meeting transcription, a solo founder would need a narrower wedge — e.g. religious-lecture/tashkeel-focused transcription (a content type showing explicit paid demand on Khamsat) or aggressive undercutting of the ~$10/mo incumbent price — rather than competing head-on on general accuracy claims.",
+      "summary": "This niche is more contested than it first appears: at least two dedicated MENA/Gulf-dialect meeting-transcription products (Notah.ai, Munsit.com) and a third Saudi-specific tool ('MoM') already market close to the exact proposed feature set, alongside several generic ASR APIs claiming Gulf-dialect support. A solo founder entering head-on faces real competitive risk; a narrower vertical or price wedge would be needed."
+    },
+    {
+      "candidate_id": "C15",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "fawtar.app",
+          "url": "https://fawtar.app/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN (site fetch blocked by proxy this session; not disclosed in search snippets)",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA e-invoicing, VAT, receivables, ledger, payroll (per search snippet)",
+          "strengths": "Already bundles VAT/receivables/ledger/payroll — broader feature set than a simple invoice generator, direct competitor to the full proposed feature set",
+          "weaknesses": "Pricing, UX, and whether it targets solo freelancers vs. SMEs generally not confirmed this session"
+        },
+        {
+          "name": "FatooraZ",
+          "url": "https://apps.apple.com/us/app/fatooraz-zatca-invoice-ksa/id6758611426",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "1,200 SAR/year (~100 SAR/month) — full mobile app access, unlimited invoices, 24/7 WhatsApp support (per search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA Phase-2 e-invoicing; WhatsApp support channel",
+          "strengths": "Concrete disclosed price point, mobile-first, WhatsApp support, unlimited invoices",
+          "weaknesses": "~100 SAR/month may be pricey for a starting freelancer; no confirmed VAT-registration-threshold guidance or payment-chasing/reminder feature"
+        },
+        {
+          "name": "Free ZATCA invoice generators (ALZERP, Fatorli, Fatoora.app, Refrens, SmoothLedger)",
+          "url": "https://fatorli.com/en",
+          "hq_country": "UNKNOWN/International",
+          "serves_saudi": "YES",
+          "pricing": "Free (core generator); SmoothLedger offers a paid Pro tier",
+          "arabic_support": "YES",
+          "saudi_integrations": "Direct ZATCA QR-code compliance",
+          "strengths": "Zero cost, no signup, instant compliant PDF generation — very low switching cost",
+          "weaknesses": "One-shot invoice generators only — no VAT-registration-threshold guidance, no payment-reminder/chase tracking, no ongoing subscription relationship"
+        },
+        {
+          "name": "Salla \"ZATCA Fatoora\" app",
+          "url": "https://apps.salla.sa/en/app/747360824",
+          "hq_country": "Saudi Arabia",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN",
+          "arabic_support": "YES",
+          "saudi_integrations": "Native Salla ZATCA integration",
+          "strengths": "Embedded directly in Salla merchant workflow",
+          "weaknesses": "Only relevant to Salla store merchants, not general direct-client freelancers (different target segment)"
+        }
+      ],
+      "gap_description": "The core 'generate a ZATCA-compliant invoice' job is already commoditized by several free tools plus a disclosed-price paid app (FatooraZ) and a fuller platform (fawtar.app). None of the found competitors were confirmed to offer the specific 'tells you if/when you must register for VAT based on your income' guidance layer, nor a payment-reminder/chase-tracking feature for freelancers dealing with slow-paying off-platform direct clients.",
+      "differentiation_angle": "Skip the commoditized invoice-generation feature (free tools already win there) and focus narrowly on the VAT-threshold decision assistant plus payment-reminder/chase tracking for off-platform freelance work — positioned as a companion to, not a replacement for, free generators or FatooraZ.",
+      "summary": "Pure invoice generation is a saturated, largely free commodity in this space (ALZERP, Fatorli, Fatoora.app, Refrens) alongside a paid app with disclosed pricing (FatooraZ, ~100 SAR/month) and a fuller platform (fawtar.app). The candidate's two distinguishing ideas — VAT-threshold guidance and payment-chasing for direct clients — were not found addressed by any competitor, but it remains unproven (per the candidate's own open questions) whether freelancers would pay recurring SaaS fees for that narrower layer."
+    }
+  ],
+  "queries_used": [
+    "Maroof certification service Saudi Arabia sellers registration help",
+    "Salla Zid AI product description generator tool",
+    "مستخلصات مقاولين برنامج تتبع السعودية تطبيق",
+    "Arabic Gulf dialect speech to text transcription service Saudi company",
+    "fawtar.app pricing ZATCA invoice freelancer",
+    "Salla app store AI منتجات وصف تلقائي تطبيق",
+    "\"تأسيس شركة\" \"ماروف\" خدمة تسجيل السعودية سعر",
+    "Otter.ai Arabic support Saudi transcription app review",
+    "Notah.ai pricing Arabic meeting minutes Saudi",
+    "دفترة برنامج مستخلصات مقاولات السعر الاشتراك",
+    "\"business setup\" Saudi CR registration social media seller service agency price SAR",
+    "munsit Arabic AI meeting notes GCC pricing",
+    "Zid app store AI product listing تطبيقات ذكاء اصطناعي",
+    "arabtoolbox ZATCA invoice generator free price freelancer"
+  ],
+  "limitations": [
+    "All 4 WebFetch attempts this session (rwasem.com, fawtar.app, codedev.sa, apps.salla.sa) failed with 'proxy refused the connection' — pricing and feature details for Rawasem, fawtar.app, the 'MoM' Saudi-dialect transcription tool, and Salla's AI Describer app could not be independently confirmed and rely on search-engine snippets/AI summaries only.",
+    "Exact pricing for Daftra, Zid's Store Tools/Kashaf, Bonyan ERP, Buildo, Orchida Soft, Sdeed, Munsit.com, and Notah.ai's paid tiers was not confirmed via direct source fetch; figures quoted are from search-result summaries and should be treated as WEAK/STRONG_INDIRECT evidence, not verified DIRECT pricing-page data.",
+    "HQ country could not be confirmed for most competitors (marked UNKNOWN) since company/about pages were not fetched.",
+    "Search budget (14 queries) was fully used across 5 candidates (~3 queries each); deeper competitor review-mining (e.g. G2/Capterra reviews, app-store star ratings) was not possible within budget.",
+    "No login-gated sources (LinkedIn, X/Twitter, Instagram, TikTok) were checked for any candidate, per tool constraints — some competitor marketing/reviews may live there and were missed.",
+    "For C13, could not verify whether any existing mustakhlas software is mobile-first/photo-based/WhatsApp-integrated (the key differentiator claimed) since none of the vendor sites were successfully fetched."
+  ]
+}

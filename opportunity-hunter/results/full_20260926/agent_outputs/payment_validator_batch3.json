@@ -1,0 +1,218 @@
+{
+  "results": [
+    {
+      "candidate_id": "C11",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Individual seeking Maroof certificate",
+          "pays_for": "Maroof certificate issuance facilitation (vs free direct government process)",
+          "price": "75",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://lahint.sa/ar/services/issuance-of-maarouf-certificate",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Business owner",
+          "pays_for": "Commercial registration (main CR) government fee",
+          "price": "200",
+          "currency": "SAR",
+          "period": "annual",
+          "url": "https://www.wafeq.com/ar-sa/%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/%D9%84%D8%A3%D8%B5%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D8%B9%D9%85%D8%A7%D9%84/%D8%B4%D8%B1%D9%88%D8%B7-%D9%81%D8%AA%D8%AD-%D8%B3%D8%AC%D9%84-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AA%D9%83%D8%A7%D9%84%D9%8A%D9%81-%D9%88%D8%A7%D9%84%D8%B4%D8%B1%D9%88%D8%B7-%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Freelance-document / e-store applicant",
+          "pays_for": "Third-party facilitated commercial registration issuance (ebc.sa, servisoffice.com)",
+          "price": "unconfirmed (paid service exists, price not disclosed in snippet)",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://ebc.sa/service/%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%B3%D8%AC%D9%84-%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "There is DIRECT/STRONG_INDIRECT evidence that people already pay small facilitation fees (e.g., 75 SAR via Lahint for Maroof, plus government CR fees ~200 SAR/yr) to get through this exact paperwork, and multiple third-party agencies (ebc.sa, servisoffice.com, mohtaway.com) sell CR/Maroof issuance help as a paid service — confirming a market for paid facilitation of formalization steps. However, this is evidence people pay humans/agencies for the underlying government paperwork, not evidence they would pay a self-serve SaaS wizard specifically. The government fees themselves are trivial (75-200 SAR), which caps how much a bundled wizard could plausibly charge on top. No evidence found of demand for an all-in-one digital wizard product itself.",
+      "summary": "Someone pays today for CR/Maroof facilitation via human agencies/services (75-200+ SAR range, several vendors found), but this is adjacent (facilitation-service) evidence, not proof that a SaaS onboarding wizard specifically would be paid for. PARTIAL evidence."
+    },
+    {
+      "candidate_id": "C12",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Salla/Zid merchant",
+          "pays_for": "Manual product upload/listing service to Salla store",
+          "price": "200 (currency unconfirmed, likely SAR)",
+          "currency": "SAR",
+          "period": "per batch",
+          "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Salla/Zid merchant",
+          "pays_for": "Product listing/upload freelance projects (recurring category)",
+          "price": "not disclosed in listing",
+          "currency": "SAR",
+          "period": "per project",
+          "url": "https://mostaql.com/project/1164526-%D8%B1%D9%81%D8%B9-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%B9%D9%84%D9%89-%D9%85%D8%AA%D8%AC%D8%B1-%D8%B3%D9%84%D8%A9",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Salla store owner",
+          "pays_for": "Store-build packages including product upload",
+          "price": "starting 1500",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://mostaql.com/project/1142879-%D9%86%D9%82%D9%84-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D9%85%D9%86-%D9%85%D9%86%D8%B5%D8%A9-%D8%B2%D8%AF-%D8%B9%D9%84%D9%89-%D8%B3%D9%84%D8%A9",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Salla merchant",
+          "pays_for": "AI product description generator app (existing app-store listing)",
+          "price": "unconfirmed (app exists in Salla App Store, pricing not retrievable this session)",
+          "currency": "SAR",
+          "period": "unknown",
+          "url": "https://apps.salla.sa/en/app/709062167",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Freelance product-lister for Salla/Zid stores",
+          "cost_or_salary": "~200 (currency unconfirmed) per batch; store-build packages from 1500 SAR including listing",
+          "url": "https://host-r.sa/product/add-products-to-shopping-cart-and-add-professionally"
+        }
+      ],
+      "willingness_to_pay_assessment": "Multiple independent Mostaql project postings (recurring, not a one-off) plus at least one fixed-price vendor service (host-r.sa, ~200) show merchants currently pay humans to do exactly this manual listing task — this is real existing spend on the labor being replaced. An AI-specific competing app already exists in the Salla App Store, which is itself evidence Salla merchants are a monetizable channel for this feature, though its exact price could not be confirmed this session.",
+      "summary": "Recurring paid freelance demand (multiple Mostaql postings) plus a vendor fixed-price listing service (~200/batch) confirm merchants pay today for manual catalogue upload; an AI competitor app already exists in Salla's App Store. Evidence supports YES, though exact competitor AI pricing is unconfirmed."
+    },
+    {
+      "candidate_id": "C13",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Contracting company",
+          "pays_for": "Bonyan cloud ERP (contracting/progress-payment management) subscription",
+          "price": "~100 (Silver pack, per search snippet)",
+          "currency": "USD",
+          "period": "monthly",
+          "url": "https://bonyan.sa/pricing/",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Contracting company",
+          "pays_for": "Buildo contracting/project management ERP subscription",
+          "price": "unconfirmed (monthly/annual subscription model exists, amount not disclosed)",
+          "currency": "SAR",
+          "period": "monthly/annual",
+          "url": "https://buildo.solutions/pricing/",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Contracting company",
+          "pays_for": "Custom Excel/Power BI mustakhlas tracking system built by freelancer",
+          "price": "not disclosed",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://mostaql.com/project/436570-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%85%D8%B3%D8%AA%D8%AE%D9%84%D8%B5%D8%A7%D8%AA-%D9%84%D8%B4%D8%B1%D9%83%D8%A9-%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-excel-%D9%88power-bi",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Existing contracting ERPs (Bonyan, Buildo, Orchida) that include mustakhlas/progress-payment modules run as paid subscriptions, and Bonyan's pricing page shows a Silver tier around $100/month per a search snippet — this is PARTIAL evidence because it's for full ERPs likely aimed at mid/larger contractors, not confirmed spend by small subcontractors on a lightweight standalone tracker. Freelancers are also commissioned to build one-off custom Excel/Power BI mustakhlas systems (real paid demand for the underlying task), but exact price was not disclosed and it's a one-time build, not recurring SaaS. No evidence small subcontractors currently pay for a dedicated lightweight tracking tool specifically.",
+      "summary": "Adjacent full ERPs (Bonyan ~$100/mo per snippet, Buildo, Orchida) already monetize progress-payment tracking for larger contractors, and freelancers get paid to build custom Excel mustakhlas systems — but no direct evidence the small-subcontractor target segment pays for a standalone lightweight tool. PARTIAL."
+    },
+    {
+      "candidate_id": "C14",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Individuals/researchers/students needing Arabic transcripts",
+          "pays_for": "Manual Arabic audio transcription",
+          "price": "5-20",
+          "currency": "USD",
+          "period": "per audio hour",
+          "url": "https://khamsat.com/writing/audio-video-transcription",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Buyer on Khamsat",
+          "pays_for": "Arabic transcription with punctuation/tashkeel",
+          "price": "~5",
+          "currency": "USD",
+          "period": "per audio hour",
+          "url": "https://khamsat.com/community/requests/584173-%D8%B7%D9%84%D8%A8-%D8%AA%D9%81%D8%B1%D9%8A%D8%BA-%D8%B5%D9%88%D8%AA%D9%8A-%D9%85%D8%B9-%D8%A7%D9%84%D8%AA%D8%B1%D9%82%D9%8A%D9%85-%D9%88%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A8%D8%B9%D8%B6-%D8%A7%D9%84%D9%83%D9%84%D9%85%D8%A7%D8%AA",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [
+        {
+          "role": "Freelance Arabic audio transcriber",
+          "cost_or_salary": "$5-20 per audio hour depending on quality/speed",
+          "url": "https://khamsat.com/writing/audio-video-transcription"
+        }
+      ],
+      "willingness_to_pay_assessment": "Khamsat's own live marketplace category page for audio/video transcription is DIRECT evidence of an active, currently-paid market for this task ($5-20/audio hour), and multiple individual request threads confirm real recurring buyers. This proves people pay for the JOB (transcription) to be done today via human freelancers — it does NOT prove they would pay a self-serve AI tool instead, especially since cheaper/free generic ASR (Whisper) already exists and buyers still choose paid humans, suggesting a quality/trust gap for Gulf dialect that an AI tool would need to close. No pricing found for any existing competing Gulf-dialect-tuned AI transcription product.",
+      "summary": "Marketplace-level DIRECT evidence people pay $5-20/audio hour for human Arabic transcription today (Khamsat category page + multiple request threads). This validates the underlying job has cash value, but is PARTIAL for the specific AI-tool business model since no AI competitor pricing/adoption evidence was found."
+    },
+    {
+      "candidate_id": "C15",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Small business/freelancer",
+          "pays_for": "Cloud e-invoicing subscription (general, not freelance-specific)",
+          "price": "59",
+          "currency": "SAR",
+          "period": "monthly",
+          "url": "https://fatora.cloud/prices-plan/",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Freelance-document applicant",
+          "pays_for": "Freelance work document (وثيقة العمل الحر) issuance",
+          "price": "0 (official process is free; paid facilitation service fee not disclosed)",
+          "currency": "SAR",
+          "period": "one-time",
+          "url": "https://mohtaway.com/freelance-work-certificate/p78944135",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Small merchant",
+          "pays_for": "ZATCA/VAT invoice generator tool",
+          "price": "0 (advertised as free)",
+          "currency": "SAR",
+          "period": "n/a",
+          "url": "https://arabtoolbox.com/tools/vat-invoice-generator",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Adjacent general e-invoicing SaaS (fatora.cloud, 59 SAR/month) shows small businesses do pay for compliant invoicing tools, which is PARTIAL support. However, the specific tools found targeting this niche (arabtoolbox ZATCA/VAT invoice generators) are explicitly advertised as free, which undercuts the case that freelance-document holders specifically would pay for a standalone invoicing tool — free substitutes are already visible in search results. No evidence at all was found of anyone paying for the payment-delay/reminder-tracking half of the proposed product; Khamsat's own escrow protection is a free platform feature, not a paid product.",
+      "summary": "General invoicing SaaS shows a paid market exists (fatora.cloud 59 SAR/mo), but the closest niche-specific tools (ZATCA/VAT generators for freelancers) found in search are free, and the payment-delay-tracking half of the idea has no payment evidence at all. PARTIAL at best, weighted toward NO for the specific niche tool."
+    }
+  ],
+  "queries_used": [
+    "خدمة تسجيل سجل تجاري وتوثيق معروف السعودية سعر",
+    "Salla Zid app AI product description generator pricing",
+    "Bonyan ERP pricing مستخلصات مقاولين اشتراك",
+    "Buildo مقاولات نظام سعر اشتراك",
+    "fawtar.app pricing سعر اشتراك فاتورة",
+    "Arabic transcription tool AI السعودية تفريغ صوتي بالذكاء الاصطناعي سعر اشتراك",
+    "خمسات مستقل تفريغ نصوص عربي سعر الساعة 2026",
+    "arabtoolbox.com ZATCA invoice generator price سعر",
+    "\"وثيقة العمل الحر\" فاتورة إلكترونية اشتراك تطبيق سعر شهري",
+    "مكتب خدمات معروف سجل تجاري متجر إلكتروني باقة سعر",
+    "mohtaway.com إصدار وثيقة العمل الحر سعر ريال",
+    "مستقل رفع منتجات سلة زد سعر ريال مشروع",
+    "مستقل تصميم نظام مستخلصات اكسل مقاولين سعر المشروع"
+  ],
+  "limitations": [
+    "All WebFetch calls in this session failed with 'proxy refused the connection', so pricing pages (lahint.sa, Salla App Store listing, bonyan.sa/pricing, buildo.solutions/pricing, khamsat.com transcription category) could only be assessed via search-engine snippets, not direct page verification.",
+    "Exact currency for host-r.sa's '200' listing price (C12) remains unconfirmed (likely SAR but not verified on-page).",
+    "No pricing could be confirmed for the specific Salla 'AI Describer' app (C12), Buildo ERP (C13), or fawtar.app (C15) despite their existence being confirmed via search.",
+    "Could not verify current adoption/customer counts for any of the named competitor tools (Bonyan, Buildo, arabtoolbox, fatora.cloud) — only that pricing/product pages exist.",
+    "Search results are AI-summarized snippets of pages, not independently verified full-page content, for every source cited here."
+  ]
+}

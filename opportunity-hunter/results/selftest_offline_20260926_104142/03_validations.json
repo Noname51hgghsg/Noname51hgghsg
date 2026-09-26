@@ -1,0 +1,218 @@
+{
+  "C01": {
+    "evidence_validator": {
+      "candidate_id": "C01",
+      "summary": "mock",
+      "claims": [],
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "demand_signals": [],
+      "new_sources": []
+    },
+    "payment_validator": {
+      "candidate_id": "C01",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    "competition_validator": {
+      "candidate_id": "C01",
+      "summary": "mock",
+      "competitors": [],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "mock",
+      "differentiation_angle": "mock"
+    },
+    "feasibility_validator": {
+      "candidate_id": "C01",
+      "summary": "mock",
+      "stack": {
+        "frontend": "x",
+        "backend": "x",
+        "database": "x",
+        "authentication": "x",
+        "ai": "x",
+        "apis": "x",
+        "hosting": "x",
+        "payments": "x",
+        "integrations": "x"
+      },
+      "mvp_scope": [
+        "x"
+      ],
+      "mvp_cost_sar_low": 300,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "100",
+      "build_time_weeks": "3",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [],
+      "blockers": []
+    }
+  },
+  "C02": {
+    "evidence_validator": {
+      "candidate_id": "C02",
+      "summary": "mock",
+      "claims": [],
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "demand_signals": [],
+      "new_sources": []
+    },
+    "payment_validator": {
+      "candidate_id": "C02",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    "competition_validator": {
+      "candidate_id": "C02",
+      "summary": "mock",
+      "competitors": [],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "mock",
+      "differentiation_angle": "mock"
+    },
+    "feasibility_validator": {
+      "candidate_id": "C02",
+      "summary": "mock",
+      "stack": {
+        "frontend": "x",
+        "backend": "x",
+        "database": "x",
+        "authentication": "x",
+        "ai": "x",
+        "apis": "x",
+        "hosting": "x",
+        "payments": "x",
+        "integrations": "x"
+      },
+      "mvp_scope": [
+        "x"
+      ],
+      "mvp_cost_sar_low": 300,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "100",
+      "build_time_weeks": "3",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [],
+      "blockers": []
+    }
+  },
+  "C03": {
+    "evidence_validator": {
+      "candidate_id": "C03",
+      "summary": "mock",
+      "claims": [],
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "demand_signals": [],
+      "new_sources": []
+    },
+    "payment_validator": {
+      "candidate_id": "C03",
+      "summary": "mock",
+      "someone_pays_now": "UNCLEAR",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    "competition_validator": {
+      "candidate_id": "C03",
+      "summary": "mock",
+      "competitors": [],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "mock",
+      "differentiation_angle": "mock"
+    },
+    "feasibility_validator": {
+      "candidate_id": "C03",
+      "summary": "mock",
+      "stack": {
+        "frontend": "x",
+        "backend": "x",
+        "database": "x",
+        "authentication": "x",
+        "ai": "x",
+        "apis": "x",
+        "hosting": "x",
+        "payments": "x",
+        "integrations": "x"
+      },
+      "mvp_scope": [
+        "x"
+      ],
+      "mvp_cost_sar_low": 300,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "100",
+      "build_time_weeks": "3",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [],
+      "blockers": []
+    }
+  },
+  "C04": {
+    "evidence_validator": {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "claims": [],
+      "problem_evidence_level": "DIRECT",
+      "market_model_evidence_level": "WEAK",
+      "demand_signals": [],
+      "new_sources": []
+    },
+    "payment_validator": {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    "competition_validator": {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "competitors": [],
+      "market_state": "WEAK_MARKET",
+      "gap_description": "mock",
+      "differentiation_angle": "mock"
+    },
+    "feasibility_validator": {
+      "candidate_id": "C04",
+      "summary": "mock",
+      "stack": {
+        "frontend": "x",
+        "backend": "x",
+        "database": "x",
+        "authentication": "x",
+        "ai": "x",
+        "apis": "x",
+        "hosting": "x",
+        "payments": "x",
+        "integrations": "x"
+      },
+      "mvp_scope": [
+        "x"
+      ],
+      "mvp_cost_sar_low": 300,
+      "mvp_cost_sar_high": 900,
+      "monthly_run_cost_sar": "100",
+      "build_time_weeks": "3",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [],
+      "blockers": []
+    }
+  }
+}
