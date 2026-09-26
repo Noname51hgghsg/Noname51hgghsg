@@ -1,0 +1,227 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "claims": [
+        {
+          "claim": "ZATCA Phase 2 Wave 24 lowers the mandatory e-invoicing integration threshold to SAR 375,000 in annual VAT-subject revenue (2022/2023/2024), with taxpayers to be notified and integrated by 30 June 2026",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Wave 24 Deadline 30 June 2026 (SAR 375,000 Threshold) – VATupdate",
+              "url": "https://www.vatupdate.com/2026/06/16/wave-24-deadline-30-june-2026-sar-375000-threshold/"
+            },
+            {
+              "title": "Saudi Arabia: Wave 24 E-Invoicing Criteria Announced for Taxpayers - Fiscal Solutions",
+              "url": "https://www.fiscal-requirements.com/news/5639-saudi-arabia-wave-24-einvoicing-criteria-announced-for-taxpayers"
+            },
+            {
+              "title": "ZATCA Determines the Criteria for Selecting the Targeted Taxpayers in Wave 24",
+              "url": "https://zatca.gov.sa/en/Pages/news_1426.aspx"
+            }
+          ],
+          "note": "Re-confirmed via a fresh search that returned multiple independent sources (VATupdate, Fiscal Solutions) plus the official ZATCA announcement URL, all agreeing on the SAR 375,000 threshold and 30 June 2026 deadline. WebFetch on the official ZATCA page failed (proxy refused connection), so content was only seen via search snippets/titles, not directly fetched — hence STRONG_INDIRECT rather than DIRECT. This upgrades the discovery agent's original single-blog-source citation, which is now corroborated by independent outlets."
+        },
+        {
+          "claim": "Non-compliance penalties range SAR 5,000–50,000 per violation, with per-invoice QR fines up to SAR 10,000 and risk of VAT registration suspension for repeat offenders",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "ZATCA Phase 2 Penalties: What Saudi Small Business Must Know",
+              "url": "https://tallysolutions.com/mena/saudi-vat/zatca-phase-2-penalties-what-saudi-small-business-must-know/"
+            }
+          ],
+          "note": "Not independently re-verified this session (budget spent on the higher-priority threshold and market-model checks). Original source is a single vendor (Tally) marketing article; no second source found to corroborate exact penalty figures. Classification unchanged from discovery agent's own WEAK-leaning single-source claim; treat these specific numbers with caution."
+        },
+        {
+          "claim": "Most small businesses lack in-house IT capability for the required API integration, XML schema and certificate management",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "ZATCA E-Invoicing Phase 2: An Integration Guide for Saudi Businesses in 2026",
+              "url": "https://constantlabs.ai/insights/zatca-e-invoicing-phase-2-guide/"
+            }
+          ],
+          "note": "Generic vendor-marketing assertion, no independent data (e.g. survey of SME IT staffing) found. Plausible given SME size but unverified; not re-checked this session beyond the original citation."
+        },
+        {
+          "claim": "Market model works — multiple vendors (Wafeq, Qeemah, InvoiceQ, Tally) already sell ZATCA Phase 2 compliance/integration products",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "E-Invoicing Phase Two: The Wave 24 Guide (Origami)",
+              "url": "https://origami.sa/en/blog/zatca-phase-2-wave-24-integration-guide/"
+            },
+            {
+              "title": "ZATCA Wave 24 Phase 2 E-Invoicing: Compliance Guide (Flick)",
+              "url": "https://www.flick.network/en-sa/zatca-wave-24-phase-2-einvoicing-2026-guide"
+            }
+          ],
+          "note": "Fresh search for Wave 24 surfaced a wide ecosystem of named compliance vendors/consultancies (Origami, Flick, Xrero, Bridgebills, Sharayeh) beyond the ones originally cited, confirming an active competitive vendor market exists for ZATCA compliance generally. However, none of these sources were fetched to confirm pricing specifically aimed at micro-merchants (<SAR 1M revenue) or actual customer counts — so this is evidence the model works at some price tier, not proof of an underserved low-price segment."
+        }
+      ],
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "demand_signals": [
+        "Regulatory mandate itself (Wave 24, deadline 30 June 2026) creates forced, time-boxed demand for compliance tooling among newly in-scope SMEs — this is a strong structural demand signal, distinct from voluntary market pull",
+        "Existence of a large number of competing compliance vendors/consultancies (Wafeq, Qeemah, InvoiceQ, Origami, Flick, Xrero, Bridgebills) actively publishing Wave 24 guides in 2026 suggests real, current commercial activity around this deadline"
+      ],
+      "new_sources": [
+        {
+          "title": "Wave 24 Deadline 30 June 2026 (SAR 375,000 Threshold) – VATupdate",
+          "url": "https://www.vatupdate.com/2026/06/16/wave-24-deadline-30-june-2026-sar-375000-threshold/",
+          "summary": "Independent tax-news outlet confirming SAR 375,000 threshold and 30 June 2026 deadline for Wave 24, corroborating the discovery agent's core regulatory claim."
+        },
+        {
+          "title": "Saudi Arabia: Wave 24 E-Invoicing Criteria Announced for Taxpayers - Fiscal Solutions",
+          "url": "https://www.fiscal-requirements.com/news/5639-saudi-arabia-wave-24-einvoicing-criteria-announced-for-taxpayers",
+          "summary": "Second independent source confirming the same Wave 24 criteria, referencing ZATCA's own announcement."
+        },
+        {
+          "title": "ZATCA Determines the Criteria for Selecting the Targeted Taxpayers in Wave 24",
+          "url": "https://zatca.gov.sa/en/Pages/news_1426.aspx",
+          "summary": "Official ZATCA news page title/URL surfaced in search (content not fetchable this session — proxy refused connection)."
+        }
+      ],
+      "summary": "Core regulatory driver (Wave 24, SAR 375,000 threshold, 30 June 2026 deadline) is now corroborated by multiple independent sources including a reference to ZATCA's own announcement, upgrading confidence versus the original single-blog citation. The forced compliance deadline is a strong, real demand signal distinct from ordinary market pull. A crowded field of existing compliance vendors proves the market model works in principle, but none of the fetched/seen sources confirm pricing or traction specifically in the sub-SAR-1M micro-merchant segment the candidate targets — that remains the key open risk. Penalty figures and 'SMEs lack IT capacity' claims remain single-source/WEAK and were not re-verified this session due to budget constraints."
+    },
+    {
+      "candidate_id": "C02",
+      "claims": [
+        {
+          "claim": "A Saudi RCT found no-show rate 39.8% without SMS reminders vs 26.3% with SMS reminders",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "Use of short message service reminders to improve attendance at an internal medicine outpatient clinic in Saudi Arabia: a randomized controlled trial",
+              "url": "https://www.emro.who.int/emhj-vol-20-2014/volume-20-5/use-of-short-message-service-reminders-to-improve-attendance-at-an-internal-medicine-outpatient-clinic-in-saudi-arabia-a-randomized-controlled-trial.html"
+            }
+          ],
+          "note": "The underlying study is a legitimate peer-reviewed RCT (DIRECT as a fact of what the study found), but per evidence-discipline rules, data >3 years old is capped at WEAK for current relevance — this study is from 2014, over a decade old. No 2024-2026 Saudi no-show statistic was found in this session to replace it."
+        },
+        {
+          "claim": "A freelance client posted a Mostaql request for a custom clinic management program, indicating demand for cheaper bespoke alternatives",
+          "classification": "WEAK",
+          "sources": [
+            {
+              "title": "برنامج إدارة عيادة | مستقل",
+              "url": "https://mostaql.com/project/829228-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9"
+            }
+          ],
+          "note": "Not re-checked this session (budget prioritized other candidates); original discovery agent also could not fetch the page (proxy refused). Single listing title only — no confirmed brief, budget, or evidence the requester was choosing this over paid SaaS specifically for price reasons."
+        },
+        {
+          "claim": "Local vendors (Snad, Yolo.clinic, automation-ksa.com) actively market appointment booking/reminder systems specifically for Saudi clinics, positioning no-show reduction as a selling point",
+          "classification": "STRONG_INDIRECT",
+          "sources": [
+            {
+              "title": "Appointment Booking System for Saudi Businesses: 2026 Guide | Snad",
+              "url": "https://www.snad.io/en/blog/dalil-nizam-hajz-mawaeed-monshaat-saudia"
+            },
+            {
+              "title": "Best Appointment Scheduling Software for Clinics | Yolo system",
+              "url": "https://aesthetic.yolo.clinic/appointment-scheduling-software-for-clinics/"
+            },
+            {
+              "title": "Best Clinic Management Software Saudi Arabia 2025/2026: Complete Guide | ClinicGateway",
+              "url": "https://clinicgetway.com/blog/article/best-clinic-management-software-saudi-arabia-2025"
+            }
+          ],
+          "note": "Fresh search confirms this is an active, populated competitive space in 2025-2026 (Snad has a 2026-dated Saudi-specific guide; Yolo explicitly markets 'automatic reminders, minimizing no-shows'; a third-party guide (ClinicGateway) independently ranks/compares multiple clinic software options for the Saudi market). This is solid evidence the underlying problem (no-shows) and a market for reminder software both exist and are being actively served — but also signals more competition than the original candidate write-up implied."
+        },
+        {
+          "claim": "Existing vendors' subscription pricing (to assess room for a materially cheaper alternative)",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "Fresh search for Snad/Yolo.clinic pricing returned no public pricing pages or figures; both appear to require direct sales contact. This confirms the discovery agent's own 'unknowns' item — pricing remains unverified and is the single biggest open risk for this candidate's differentiation claim ('priced below existing local vendors')."
+        }
+      ],
+      "problem_evidence_level": "STRONG_INDIRECT",
+      "market_model_evidence_level": "STRONG_INDIRECT",
+      "demand_signals": [
+        "Multiple Saudi-specific vendors (Snad, Yolo.clinic) publishing 2026-dated local guides and marketing no-show reduction as a core value proposition — implies active, current commercial demand in this niche",
+        "Third-party 'best clinic software Saudi Arabia 2025/2026' comparison content (ClinicGateway) exists, suggesting real buyer search/comparison activity",
+        "Single Mostaql freelance listing for custom clinic software (weak, unconfirmed)"
+      ],
+      "new_sources": [
+        {
+          "title": "Appointment Booking System for Saudi Businesses: 2026 Guide | Snad",
+          "url": "https://www.snad.io/en/blog/dalil-nizam-hajz-mawaeed-monshaat-saudia",
+          "summary": "2026-dated Snad guide targeting Saudi businesses/clinics for appointment booking, confirming an active current vendor in this space."
+        },
+        {
+          "title": "Best Clinic Management Software Saudi Arabia 2025/2026: Complete Guide | ClinicGateway",
+          "url": "https://clinicgetway.com/blog/article/best-clinic-management-software-saudi-arabia-2025",
+          "summary": "Independent comparison guide covering multiple clinic management/reminder vendors serving the Saudi market, indicating a moderately populated competitive landscape."
+        },
+        {
+          "title": "Best Appointment Scheduling Software for Clinics | Yolo system",
+          "url": "https://aesthetic.yolo.clinic/appointment-scheduling-software-for-clinics/",
+          "summary": "Yolo.clinic marketing page explicitly citing no-show minimization as a core feature, but no pricing disclosed."
+        }
+      ],
+      "summary": "The underlying no-show problem is real but the only quantified figure (39.8%) is a 2014 study, so treat as WEAK/dated for present-day sizing. Market-model evidence strengthened this session: a fresh search confirms an active, Saudi-specific competitive field (Snad, Yolo.clinic, plus an independent comparison guide) with 2026-dated content, proving demand exists and is being served commercially. However, pricing for all existing competitors remains unconfirmed despite a targeted search — the core differentiation claim ('cheaper than existing vendors') is unverified and is the main risk. The candidate's own 'unknowns' about competitor pricing and market saturation are confirmed as still-open rather than resolved."
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "claims": [
+        {
+          "claim": "People in Saudi Arabia need to know prayer times (stated as the 'problem')",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [],
+          "note": "No evidence of a recurring, costly, or unmet PAIN was provided by the discovery agent or found this session — this is a generic universal need, not a business pain (no complaints, no cost, no failed workaround cited). Fails the 'golden rule' bar for a pain-based opportunity."
+        },
+        {
+          "claim": "Implicit market-model claim: users would pay 20 SAR/month for a prayer-times app",
+          "classification": "NO_RELIABLE_EVIDENCE_FOUND",
+          "sources": [
+            {
+              "title": "Muslim Pro: Quran & Athan - App Store",
+              "url": "https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451"
+            },
+            {
+              "title": "Athan+ Prayer Times App — Free Athan & Iqamah Times | Masjidal",
+              "url": "https://mymasjidal.com/pages/athanplus"
+            },
+            {
+              "title": "Accurate Islamic Prayer Times & Athan - Athan Pro",
+              "url": "https://athanpro.com/"
+            },
+            {
+              "title": "The Best Athan App for Muslims Prayer times - IslamicFinder",
+              "url": "https://www.islamicfinder.org/athan/"
+            }
+          ],
+          "note": "Fresh search found multiple well-established, widely-used FREE prayer time apps covering Saudi Arabia specifically, including one (Athan+) explicitly marketed as 'no ads, no subscription, no tracking.' This is direct contradicting evidence against a 20 SAR/month paid subscription model for basic prayer times — the core free alternative is abundant and mainstream, so no reliable evidence supports willingness to pay for this exact offering. This candidate should be treated as disproven/low-value, consistent with it being a deliberate low-quality test injection."
+        }
+      ],
+      "problem_evidence_level": "NO_RELIABLE_EVIDENCE_FOUND",
+      "market_model_evidence_level": "NO_RELIABLE_EVIDENCE_FOUND",
+      "demand_signals": [],
+      "new_sources": [
+        {
+          "title": "Athan+ Prayer Times App — Free Athan & Iqamah Times | Masjidal",
+          "url": "https://mymasjidal.com/pages/athanplus",
+          "summary": "Explicitly free prayer-times app with no ads, no subscription, no tracking — direct contradicting evidence against a paid prayer-times subscription model."
+        },
+        {
+          "title": "Muslim Pro: Quran & Athan - App Store",
+          "url": "https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451",
+          "summary": "Major, widely-used app whose core prayer-time features are free, covering Saudi Arabia locations."
+        }
+      ],
+      "summary": "This candidate fails both problem and market-model evidence checks. No pain is documented (only a generic universal need), and a fresh search directly surfaces multiple mainstream, well-established FREE prayer-time apps serving Saudi Arabia (including one explicitly marketed as having no subscription at all), which is direct contradicting evidence against the proposed 20 SAR/month paid model. Recommend rejecting this candidate — consistent with it appearing to be a deliberately weak/injected test case."
+    }
+  ],
+  "queries_used": [
+    "ZATCA e-invoicing Wave 24 threshold SAR 375,000 2026",
+    "Saudi clinic appointment reminder software pricing Snad Yolo.clinic",
+    "free prayer times app Saudi Arabia Athan Muslim Pro"
+  ],
+  "limitations": [
+    "WebFetch on the official ZATCA announcement page (zatca.gov.sa/en/Pages/news_1426.aspx) failed with 'proxy refused the connection' — could not directly verify page content, relied on search snippets/titles and independent secondary sources (VATupdate, Fiscal Solutions) instead.",
+    "Search budget (3 searches, 1 fetch) was shared across 3 candidates per instructions, so depth per candidate is shallow — only one targeted query each; could not re-verify penalty figures, Mostaql listing details, or exact competitor pricing for C01/C02.",
+    "No pricing pages were found for Snad or Yolo.clinic despite a targeted search; both apparently require direct sales contact, so competitor pricing for C02 remains unconfirmed.",
+    "Did not attempt Arabic-language queries this round due to budget constraints; Arabic search terms (e.g. 'برنامج تذكير مواعيد عيادات السعودية') might surface additional demand/pricing signals for C02 and additional freelance requests for C01/C02 on Mostaql/Khamsat."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+ "1_orchestrator_runs_end_to_end": true,
+ "2_real_agent_processes_ran(distinct PIDs)": true,
+ "3_agents_return_schema_valid_json": true,
+ "4_results_reach_orchestrator": true,
+ "5_parallel_execution(overlapping discovery agents)": true,
+ "5b_real_web_searches_performed": true,
+ "6_validators_ran": true,
+ "7_killer_rejects_bad_opportunity(TEST_BAD)": true,
+ "8_synthesizer_report_built": true,
+ "9_logs_work": true,
+ "10_broken_agent_failed_without_stopping_system": true
+}

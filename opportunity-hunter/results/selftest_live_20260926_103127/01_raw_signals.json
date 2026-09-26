@@ -1,0 +1,262 @@
+[
+  {
+    "opportunity_id": "PH-01",
+    "problem": "Tenants and property buyers in Saudi Arabia struggle to resolve disputes with landlords/real-estate developers over delayed property delivery, unreturned deposits, unfinished maintenance, and contract-spec violations. The process (which authority to file with, what evidence to attach, Najiz judicial complaint form, REGA complaint platform) is confusing enough that multiple law firms have published dedicated step-by-step guides, and the government runs at least three separate official complaint channels for this exact issue.",
+    "customer": "Renters and off-plan property buyers dealing with landlords or real-estate developers",
+    "segment": "B2C",
+    "sector": "Real Estate / Legal Services",
+    "market": "Saudi Arabia",
+    "source": "Google search results (law firm content sites, official government service pages)",
+    "evidence": [
+      {
+        "claim": "Saudi government provides a dedicated national complaint service specifically for real-estate disputes",
+        "url": "https://my.gov.sa/ar/services/1684249",
+        "source_title": "شكوى بشأن الخلافات في أمور العقار - my.gov.sa",
+        "summary": "Official Saudi government service page titled 'complaint regarding disputes in real estate matters,' confirming this is common enough to need a standing government channel.",
+        "evidence_type": "DIRECT",
+        "published": "unknown"
+      },
+      {
+        "claim": "The General Real Estate Authority (REGA) runs its own feedback/complaints platform for real estate disputes, separate from the general government one",
+        "url": "https://eparticipation.my.gov.sa/e-feedback/e-complains/platforms/real-estate-general-authority/",
+        "source_title": "الهيئة العامة للعقار - منصة تفاعل",
+        "summary": "National e-participation portal lists a specific complaints channel dedicated to the real estate regulator, per search snippet.",
+        "evidence_type": "STRONG_INDIRECT",
+        "published": "unknown"
+      },
+      {
+        "claim": "Law firms publish detailed 2026 guides on how tenants/buyers should file complaints against property developers/landlords, including which evidence to gather and which lawsuit type to select in Najiz",
+        "url": "https://lawriyadh.com/%D8%B4%D9%83%D9%88%D9%89-%D8%A7%D9%84%D9%85%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/",
+        "source_title": "شكوى المطور العقاري في هيئة العقار - lawriyadh.com (2026)",
+        "summary": "A Riyadh law firm's 2026-dated article walks readers through filing a complaint against a real estate developer via REGA/Najiz, covering contract review, evidence collection, and choosing between delivery, termination, refund or compensation outcomes — per search snippet, page itself not fetched (fetch budget exhausted).",
+        "evidence_type": "WEAK",
+        "published": "2026 (per page title)"
+      },
+      {
+        "claim": "Multiple independent law firms (at least 3 distinct domains) have published near-identical 'how to complain about your landlord/developer' guides, indicating recurring search demand",
+        "url": "https://agl.sa/%D8%B1%D9%81%D8%B9-%D8%B4%D9%83%D9%88%D9%89-%D8%B9%D9%84%D9%89-%D9%85%D8%A7%D9%84%D9%83-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+        "source_title": "كيفية رفع شكوى على مالك العقار في السعودية - agl.sa",
+        "summary": "Second, unrelated law firm publishing the same type of complaint-filing guide, per search snippet — suggests this is a common, repeated pain point people search for online rather than a one-off.",
+        "evidence_type": "WEAK",
+        "published": "2026 (per title)"
+      }
+    ],
+    "existing_solution": [
+      {
+        "name": "Najiz (Saudi Ministry of Justice platform)",
+        "url": "https://my.gov.sa/ar/services/1684249",
+        "notes": "General judicial complaint intake; not specialized for real estate, requires legal knowledge to select correct case type per law firm guides."
+      },
+      {
+        "name": "REGA e-Participation complaints channel",
+        "url": "https://eparticipation.my.gov.sa/e-feedback/e-complains/platforms/real-estate-general-authority/",
+        "notes": "Regulator-level feedback/complaint intake; unclear from search snippet how fast disputes are actually resolved."
+      }
+    ],
+    "workaround": "Renters/buyers hire a lawyer or law firm to walk them through which government channel and case type to use (evidenced by multiple firms monetizing explainer content), or self-navigate Najiz/REGA portals using published guides.",
+    "potential_solution": "A guided Arabic-language web tool (AI-assisted) that interviews the tenant/buyer about their dispute, tells them which authority/case type applies, auto-generates the Najiz complaint text and a checklist of evidence to attach — positioned as a cheaper self-serve alternative to a lawyer consultation.",
+    "business_model": "B2C pay-per-complaint fee or small subscription; possible referral fee to lawyers for complex cases",
+    "opportunity_type": "IMPROVED_MARKET",
+    "time_horizon": "CURRENT_EVIDENCE",
+    "frequency": "UNKNOWN",
+    "severity": "MEDIUM",
+    "existing_spend": "NO RELIABLE EVIDENCE FOUND (law firms clearly monetize consultations on this topic, but no specific price was seen/fetched in this session)",
+    "confidence": "LOW",
+    "unknowns": [
+      "How many real-estate complaints are actually filed per year in Saudi Arabia (no GASTAT/REGA statistic found)",
+      "Whether Najiz/REGA complaint resolution times are actually a pain point or just a one-time filing friction",
+      "What law firms charge for this specific consultation (not verified — page fetch failed)",
+      "Whether affected renters/buyers would pay for a self-serve tool vs. simply using free government portals or asking a lawyer once"
+    ],
+    "signal_id": "S001",
+    "agent": "problem_hunter"
+  },
+  {
+    "opportunity_id": "B2B-01",
+    "problem": "Saudi SMEs (retail, restaurants, professional services, contractors) are being pulled into mandatory ZATCA e-invoicing Phase 2 (real-time XML invoicing, cryptographic stamp, QR code, ERP integration with the Fatoora platform). Wave 24 lowered the mandatory threshold to SAR 375,000 annual revenue, sweeping in large numbers of small businesses that have no in-house IT capability to handle API integration, XML schema compliance or certificate management.",
+    "customer": "Small and medium Saudi businesses newly in ZATCA Phase 2 scope (annual revenue as low as SAR 375,000) that currently invoice manually or with basic accounting software",
+    "segment": "B2B",
+    "sector": "SMB services / retail / professional services / cross-sector compliance",
+    "market": "Saudi Arabia",
+    "source": "Vendor blogs and compliance guides found via web search",
+    "evidence": [
+      {
+        "claim": "ZATCA Phase 2 Wave 24 lowers mandatory e-invoicing integration threshold to SAR 375,000 revenue with a 30 June 2026 deadline, pulling many SMEs into scope for the first time",
+        "url": "https://out2sol.global/blog/zatca-e-invoicing-phase-2-integration-explained/",
+        "source_title": "ZATCA E-Invoicing Phase 2 (2026): Wave 24 Guidelines & Integration",
+        "summary": "Blog describing Wave 24 threshold reduction and integration deadline for Saudi SMEs, per search snippet/page summary",
+        "evidence_type": "STRONG_INDIRECT",
+        "published": "2026"
+      },
+      {
+        "claim": "Non-compliance penalties range from SAR 5,000 to 50,000 per violation; missing QR code can trigger fines up to SAR 10,000 per invoice; repeat offenders risk temporary VAT registration suspension",
+        "url": "https://tallysolutions.com/mena/saudi-vat/zatca-phase-2-penalties-what-saudi-small-business-must-know/",
+        "source_title": "ZATCA Phase 2 Penalties: What Saudi Small Business Must Know",
+        "summary": "Vendor article detailing concrete penalty amounts for non-compliant SMEs, per search snippet",
+        "evidence_type": "STRONG_INDIRECT",
+        "published": "unknown"
+      },
+      {
+        "claim": "Most small businesses lack a dedicated IT team capable of handling the required API integration, XML schema compliance and cryptographic certificate management for Phase 2",
+        "url": "https://constantlabs.ai/insights/zatca-e-invoicing-phase-2-guide/",
+        "source_title": "ZATCA E-Invoicing Phase 2: An Integration Guide for Saudi Businesses in 2026",
+        "summary": "Integration guide stating SMEs lack technical capacity for compliant integration, per search snippet",
+        "evidence_type": "WEAK",
+        "published": "2026"
+      }
+    ],
+    "existing_solution": [
+      {
+        "name": "Wafeq",
+        "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/zatca-e-invoicing-phase-2",
+        "notes": "Accounting/e-invoicing SaaS with ZATCA Phase 2 guidance and integration"
+      },
+      {
+        "name": "Qeemah Cloud",
+        "url": "https://qeemahcloud.com/en/blog/complete-zatca-phase-2-einvoicing-requirements-guide/",
+        "notes": "ZATCA compliance guide/vendor"
+      },
+      {
+        "name": "InvoiceQ",
+        "url": "https://invoiceq.com/en/e-invoicing-articles/zatca-non-compliance-penalty/",
+        "notes": "E-invoicing compliance vendor"
+      }
+    ],
+    "workaround": "Many SMEs delay compliance, rely on generic accounting software not fully integrated with Fatoora, or hire local IT consultancies/vendors ad hoc; some risk penalties by not integrating on time",
+    "potential_solution": "Lightweight, very-low-cost ZATCA Phase 2 integration middleware/plugin targeted at micro and small merchants (under SAR 1M revenue) who are priced out of enterprise ERP vendors — simple onboarding, WhatsApp/Arabic support, flat low monthly fee",
+    "business_model": "SaaS subscription (flat low monthly fee) or one-time setup + small monthly compliance fee",
+    "opportunity_type": "EXISTING_MARKET",
+    "time_horizon": "CURRENT_EVIDENCE",
+    "frequency": "HIGH",
+    "severity": "HIGH",
+    "existing_spend": "Vendors sell dedicated ZATCA compliance/integration services and multiple established players (Wafeq, Qeemah, InvoiceQ, Tally) already monetize this; exact SME spend figures not found in this session — NO RELIABLE EVIDENCE FOUND for specific price points paid by SMEs",
+    "confidence": "MEDIUM",
+    "unknowns": [
+      "Actual price points micro-SMEs are willing/able to pay for compliance software",
+      "How saturated the market already is among micro-merchants specifically (vs mid-size firms already served)",
+      "Whether ZATCA itself offers a free basic integration path that undercuts paid solutions"
+    ],
+    "signal_id": "S002",
+    "agent": "b2b_hunter"
+  },
+  {
+    "opportunity_id": "B2B-02",
+    "problem": "Subcontractors and small contracting firms in Saudi construction routinely face delayed progress payments (مستخلصات) from main contractors/project owners, causing cash-flow crises that prevent them from paying suppliers, workers and their own sub-subcontractors, sometimes halting project execution.",
+    "customer": "Small/medium construction contractors and subcontractors (مقاولون من الباطن) working on private and government projects in Saudi Arabia",
+    "segment": "B2B",
+    "sector": "Contractors/construction",
+    "market": "Saudi Arabia",
+    "source": "Saudi news (Al Riyadh newspaper) and legal advisory articles found via Arabic web search",
+    "evidence": [
+      {
+        "claim": "Delays in disbursing contractors' progress payments (مستخلصات) on government/large projects lead to accumulated financial obligations toward suppliers, labor and subcontractors, and liquidity shortages",
+        "url": "https://www.alriyadh.com/1554507",
+        "source_title": "أزمـة مستخلصات المقاولين.. الحلقة مفقودة بين «مالك المشروع والمموّل والمنفّذ»!",
+        "summary": "Al Riyadh newspaper article on the 'crisis of contractor progress payments' describing cash-flow breakdowns between project owner, financier and contractor",
+        "evidence_type": "STRONG_INDIRECT",
+        "published": "unknown"
+      },
+      {
+        "claim": "When a main contractor faces payment delays from the project owner, this cascades to delayed payments to subcontractors, who then struggle to pay their own workers and suppliers",
+        "url": "https://mentorksa.com/%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+        "source_title": "أهم مشاكل المقاولات في السعودية وكيفية التعامل معها",
+        "summary": "Advisory article listing cash-flow/payment delay cascade as a top contracting problem in Saudi Arabia, per search snippet",
+        "evidence_type": "WEAK",
+        "published": "unknown"
+      },
+      {
+        "claim": "Subcontracting disputes over unpaid dues are common enough that specialized legal articles exist advising subcontractors on protecting their payment rights in Saudi Arabia",
+        "url": "https://lawabdulmohsen.com/subcontracting-contract-disputes-saudi/",
+        "source_title": "عقد المقاولة من الباطن في السعودية | حماية الحقوق 2026",
+        "summary": "Law firm content on subcontracting payment dispute protection, indicating recurring legal need around unpaid subcontractor dues",
+        "evidence_type": "WEAK",
+        "published": "2026"
+      }
+    ],
+    "existing_solution": [],
+    "workaround": "Contractors track payment milestones manually (spreadsheets/paper), escalate to legal counsel when payments are severely delayed, or absorb the cash-flow gap by delaying their own supplier/worker payments",
+    "potential_solution": "A simple SaaS tool for subcontractors to log contract milestones, submit/track مستخلصات (progress claims), get automated payment-due reminders and generate documentation trails useful for dispute escalation — no direct software competitor found in this search",
+    "business_model": "Monthly SaaS subscription per contracting company, tiered by number of active projects",
+    "opportunity_type": "NEW_OPPORTUNITY",
+    "time_horizon": "CURRENT_EVIDENCE",
+    "frequency": "MEDIUM",
+    "severity": "HIGH",
+    "existing_spend": "NO RELIABLE EVIDENCE FOUND for direct software spend; indirect cost evidence is legal-advisory content addressing payment disputes, implying contractors incur legal/opportunity costs from delayed payments",
+    "confidence": "LOW",
+    "unknowns": [
+      "Whether subcontractors would pay for a tracking tool vs. treating this as a relationship/legal issue only",
+      "Whether existing ERP/construction management tools (e.g., Procore-like) already serve this niche in KSA",
+      "Actual scale (number of affected subcontractor firms) — no statistics found in this session"
+    ],
+    "signal_id": "S003",
+    "agent": "b2b_hunter"
+  },
+  {
+    "opportunity_id": "B2B-03",
+    "problem": "Small private clinics and dental practices in Saudi Arabia experience high patient no-show rates and spend receptionist time manually calling/reminding patients, with published Saudi clinical research showing no-show rates of up to 39.8% without reminder systems.",
+    "customer": "Small private clinics and dental practices in Saudi Arabia without enterprise-grade clinic management software",
+    "segment": "B2B",
+    "sector": "Clinics/healthcare SMB",
+    "market": "Saudi Arabia",
+    "source": "Academic study (WHO EMHJ), Mostaql/Khamsat freelance project requests, vendor sites found via web search",
+    "evidence": [
+      {
+        "claim": "A randomized controlled trial in a Saudi outpatient clinic found the no-show rate was 39.8% without SMS reminders versus 26.3% with SMS reminders",
+        "url": "https://www.emro.who.int/emhj-vol-20-2014/volume-20-5/use-of-short-message-service-reminders-to-improve-attendance-at-an-internal-medicine-outpatient-clinic-in-saudi-arabia-a-randomized-controlled-trial.html",
+        "source_title": "Use of short message service reminders to improve attendance at an internal medicine outpatient clinic in Saudi Arabia: a randomized controlled trial",
+        "summary": "Published RCT quantifying no-show reduction from SMS reminders in a Saudi clinic setting",
+        "evidence_type": "DIRECT",
+        "published": "2014 (WHO EMHJ, >3 years old — dated evidence)"
+      },
+      {
+        "claim": "A Saudi client posted a freelance project on Mostaql requesting a custom clinic management program (برنامج إدارة عيادة), indicating clinics seek bespoke/cheaper alternatives to off-the-shelf SaaS",
+        "url": "https://mostaql.com/project/829228-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9",
+        "source_title": "برنامج إدارة عيادة | مستقل",
+        "summary": "Freelance project listing title found via search snippet requesting a clinic management program; page fetch failed (proxy connection refused) so full brief/budget could not be confirmed",
+        "evidence_type": "WEAK",
+        "published": "unknown"
+      },
+      {
+        "claim": "Local vendors (Snad, Yolo.clinic, automation-ksa.com) market clinic automation/booking-with-reminder products specifically for the Saudi market, positioning no-show reduction as a key selling point",
+        "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+        "source_title": "نظام حجز مواعيد العيادات في السعودية — من الاستقبال إلى الفاتورة",
+        "summary": "Saudi vendor blog on clinic appointment booking systems, indicating an active local vendor market",
+        "evidence_type": "STRONG_INDIRECT",
+        "published": "unknown"
+      }
+    ],
+    "existing_solution": [
+      {
+        "name": "Snad",
+        "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+        "notes": "Saudi clinic booking/reminder system vendor"
+      },
+      {
+        "name": "Yolo.clinic",
+        "url": "https://yolo.clinic/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9/",
+        "notes": "Clinic appointment/reminder software offering a free version, per search snippet"
+      },
+      {
+        "name": "automation-ksa.com clinic automation",
+        "url": "https://automation-ksa.com/services/clinic-automation",
+        "notes": "Saudi clinic automation service including booking and reminders"
+      }
+    ],
+    "workaround": "Small clinics without budget for these vendors hire freelancers on Mostaql/Khamsat to build custom booking apps, or continue manual phone-based reminders by receptionists",
+    "potential_solution": "Very low-cost WhatsApp-based appointment reminder + booking micro-SaaS targeted at single-doctor/small clinics priced below existing local vendors, simple to self-serve setup",
+    "business_model": "Low monthly SaaS subscription per clinic, possibly usage-based on WhatsApp messages sent",
+    "opportunity_type": "EXISTING_MARKET",
+    "time_horizon": "CURRENT_EVIDENCE",
+    "frequency": "HIGH",
+    "severity": "MEDIUM",
+    "existing_spend": "NO RELIABLE EVIDENCE FOUND for specific subscription prices paid; existence of multiple competing local vendors (Snad, Yolo.clinic, automation-ksa.com) is indirect evidence that clinics do pay for such tools",
+    "confidence": "LOW",
+    "unknowns": [
+      "Pricing of existing local competitors (Snad, Yolo.clinic) — not confirmed in this session",
+      "Whether the market for very small (1-2 doctor) clinics is already saturated by free/cheap tools",
+      "Current (2025-2026) no-show statistics — the only quantified figure found is from a 2014 study"
+    ],
+    "signal_id": "S004",
+    "agent": "b2b_hunter"
+  }
+]

@@ -1,0 +1,152 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "stack": {
+        "frontend": "Simple web dashboard (React/Next.js) for merchant onboarding, invoice entry/import, status view",
+        "backend": "Node.js or Python (FastAPI) service handling UBL 2.1 XML generation, cryptographic stamping/signing and calls to ZATCA Fatoora API",
+        "database": "PostgreSQL (e.g. via Supabase) for merchants, invoices, CSID credentials, audit logs",
+        "authentication": "Simple email/password or Supabase Auth for clinic/merchant staff logins; per-merchant ZATCA CSID/PCSID credentials stored securely",
+        "ai": "Optional: Claude/GPT API for Arabic support chatbot or OCR-based invoice data extraction from photos/paper invoices (not required for core compliance MVP)",
+        "apis": "ZATCA Fatoora Compliance CSID/OTP API and Invoice Reporting/Clearance API (UBL 2.1 XML, XAdES signing, QR code, cryptographic stamp) — public docs at zatca.gov.sa",
+        "hosting": "AWS/DigitalOcean (region near KSA, e.g. Bahrain, as no confirmed KSA-only hosting requirement found this session)",
+        "payments": "Moyasar or Tap for merchant subscription billing (KSA-native gateways)",
+        "integrations": "Optional WhatsApp Business/Cloud API (via BSP e.g. 360dialog/Twilio) for Arabic-language notifications and support"
+      },
+      "mvp_scope": [
+        "Merchant onboarding wizard: collect VAT/CR details, run ZATCA OTP + Compliance CSID setup",
+        "Manual invoice entry or CSV import UI, auto-generate UBL 2.1 XML + cryptographic stamp + QR code",
+        "Real-time submission to ZATCA clearance (B2B) / reporting (B2C) endpoints with success/error feedback",
+        "Basic Arabic dashboard + invoice history/status log",
+        "Flat monthly subscription billing via Moyasar/Tap"
+      ],
+      "mvp_cost_sar_low": 900,
+      "mvp_cost_sar_high": 3000,
+      "monthly_run_cost_sar": "~150-400 SAR (hosting + optional WhatsApp BSP fee + payment gateway base fee)",
+      "build_time_weeks": "6-10",
+      "complexity": "HARD",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "ZATCA Phase 2 e-invoicing technical compliance: UBL 2.1 XML, cryptographic stamp, QR code, real-time clearance/reporting via Fatoora API; solution must pass Compliance CSID technical checks (six mandated technical capabilities per aggregator summaries)",
+          "url": "https://zatca.gov.sa/en/E-Invoicing/Pages/default.aspx",
+          "severity": "HIGH"
+        },
+        {
+          "requirement": "Saudi PDPL: merchant/customer invoice data is personal data requiring lawful basis and technical/organizational safeguards; administrative penalties up to SAR 5 million for violations",
+          "url": "https://www.clydeco.com/en/insights/2023/09/saudi-arabia-issues-implementing-regulations",
+          "severity": "MEDIUM"
+        }
+      ],
+      "data_dependencies": [
+        "ZATCA Fatoora sandbox/production API access and per-merchant OTP/CSID onboarding",
+        "Ongoing tracking of ZATCA wave/schema changes (spec evolves — 'build once' is not sufficient; requires continuous compliance engineering)",
+        "Merchant's own transactional/invoice data, provided directly by the merchant (not publicly available)"
+      ],
+      "blockers": [
+        "High liability exposure: a bug in XML generation, stamping, or submission timing could cause the CUSTOMER to be fined (SAR 5,000-50,000 per violation per candidate's own evidence) or face VAT suspension — solo founder has no legal/E&O insurance budget to absorb this risk",
+        "Crowded, better-resourced competitive field already serving SMEs (Wafeq, Qoyod, Daftra, Sowaan, InvoiceQ, Zatify) — several are established companies with existing ZATCA integration track records, raising customer-acquisition difficulty for a new solo entrant",
+        "Requires continuous maintenance as ZATCA updates schemas/waves — not a 'ship once' MVP, ongoing compliance-engineering burden for one person",
+        "Standard commercial registration is very likely needed to sell compliance SaaS to Saudi VAT-registered businesses and to be a reachable/accountable party — no specific URL verified this session for this requirement, but it is a near-certain prerequisite"
+      ],
+      "summary": "Technically the core build (XML generation, cryptographic stamping, ZATCA API calls, simple onboarding UI) is achievable by a solo founder using AI coding tools in 6-10 weeks and does not require any paid ZATCA certification fee — ZATCA's own guidance indicates compliance is judged per taxpayer via Compliance CSID rather than requiring the software vendor itself to be pre-approved (per aggregator summaries of zatca.gov.sa). However this sits in a HARD-complexity, regulated-data category because (a) errors directly cause customer financial/legal harm (documented penalty ranges in the candidate's own evidence), (b) ZATCA specs change over waves requiring ongoing upkeep, and (c) the market already has multiple funded/established competitors. Feasible to build, but the liability and competitive-moat questions (not the coding) are the real risk for a single founder."
+    },
+    {
+      "candidate_id": "C02",
+      "stack": {
+        "frontend": "Simple web dashboard (React/Next.js) for clinic staff to manage appointments; no native app needed for MVP",
+        "backend": "Node.js or Python service handling scheduling logic and WhatsApp webhook send/receive",
+        "database": "PostgreSQL (e.g. Supabase) for clinics, patients (phone/appointment only), appointment slots",
+        "authentication": "Simple clinic-staff login (email/password or Supabase Auth), no patient account needed (patients interact only via WhatsApp)",
+        "ai": "Optional: Claude/GPT for Arabic conversational confirm/reschedule replies (not required for MVP; simple button/keyword replies suffice)",
+        "apis": "WhatsApp Cloud API (Meta) directly, or via a BSP (e.g. 360dialog, Twilio, Wati) for easier onboarding/template management",
+        "hosting": "DigitalOcean/AWS (Bahrain region) or Vercel/Supabase managed hosting",
+        "payments": "Moyasar or Tap for clinic monthly subscription billing",
+        "integrations": "WhatsApp Business/Cloud API for reminders and confirm/cancel replies; optional Google Calendar sync"
+      },
+      "mvp_scope": [
+        "Clinic staff dashboard to add/edit appointment slots and patient phone numbers",
+        "Automated WhatsApp reminder templates sent 24h and 2h before appointment",
+        "Patient reply-based confirm/cancel via WhatsApp webhook, updating the dashboard",
+        "Arabic-language templates and UI",
+        "Simple monthly per-clinic subscription billing"
+      ],
+      "mvp_cost_sar_low": 500,
+      "mvp_cost_sar_high": 1500,
+      "monthly_run_cost_sar": "~100-350 SAR (hosting + WhatsApp per-message fees at small volume [~SAR 0.04/utility msg] + optional BSP platform fee + payment gateway base)",
+      "build_time_weeks": "4-6",
+      "complexity": "MODERATE",
+      "solo_founder_feasible": true,
+      "regulatory": [
+        {
+          "requirement": "Saudi PDPL: patient contact/appointment data linked to a clinic context is treated as sensitive personal data, requiring explicit informed consent and enhanced security/accountability measures",
+          "url": "https://www.twobirds.com/en/insights/2025/saudi-arabia-health-data-under-the-personal-data-protection-law",
+          "severity": "MEDIUM"
+        },
+        {
+          "requirement": "WhatsApp Business Platform requires Meta business verification and pre-approved message templates before sending reminder ('utility'/'marketing' category) messages",
+          "url": "https://blueticks.co/blog/whatsapp-business-api-pricing-2026",
+          "severity": "LOW"
+        }
+      ],
+      "data_dependencies": [
+        "WhatsApp Business/Cloud API access — requires Meta business verification, which can add days-to-weeks of onboarding friction",
+        "Clinic-provided patient appointment/contact data (not public; must be supplied by each clinic customer)",
+        "Actual pricing of local competitors Snad/Yolo.clinic — not confirmed with a verified price page in this session"
+      ],
+      "blockers": [
+        "Meta's WhatsApp Business verification and template-approval process is outside founder's control and can delay launch/onboarding of each new clinic by days to weeks",
+        "At least one local competitor (Yolo.clinic, per search snippet) reportedly offers a free tier, which could undercut a paid micro-SaaS on price for the smallest clinics",
+        "Per-message WhatsApp costs plus BSP markup mean unit economics must be modeled carefully at scale, though at small clinic volumes this is inexpensive"
+      ],
+      "summary": "This is a straightforward CRUD + WhatsApp-notification integration solvable by a solo founder in 4-6 weeks using Claude Code and either Meta's direct Cloud API (cheaper) or a BSP (easier onboarding, added monthly fee). Costs are modest and within/near the stated 500-1000 SAR MVP budget. The main friction points are not code complexity but (a) Meta's business-verification/template-approval process, which is outside the founder's control, and (b) Saudi PDPL's stricter rules for health-adjacent personal data, requiring an explicit-consent flow and reasonable security practices — manageable for a solo founder but adds a non-trivial compliance checklist item beyond pure feature-building."
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "stack": {
+        "frontend": "Simple mobile app (Flutter/React Native) or PWA showing prayer times by location",
+        "backend": "Minimal/none — can rely on a public prayer-time calculation API",
+        "database": "Minimal (user location/settings only), e.g. local device storage or lightweight Supabase table",
+        "authentication": "Simple or none (anonymous device-based) plus subscription entitlement check",
+        "ai": "Not needed for core functionality",
+        "apis": "Public prayer-time calculation API (e.g. Aladhan-style APIs based on Umm al-Qura) — not verified with a URL in this session",
+        "hosting": "Firebase/Vercel free tier or similar",
+        "payments": "Apple In-App Purchase / Google Play Billing, or Moyasar for a web-based subscription",
+        "integrations": "None required"
+      },
+      "mvp_scope": [
+        "Location-based prayer time display",
+        "Push notifications before each prayer",
+        "Paywall/subscription gate (20 SAR/month) via app-store billing"
+      ],
+      "mvp_cost_sar_low": 200,
+      "mvp_cost_sar_high": 650,
+      "monthly_run_cost_sar": "~0-50 SAR (mostly free-tier hosting; app store fees are annual, not monthly)",
+      "build_time_weeks": "1-2",
+      "complexity": "EASY",
+      "solo_founder_feasible": true,
+      "regulatory": [],
+      "data_dependencies": [
+        "A reliable public prayer-time calculation API/data source — none independently verified with a URL in this session"
+      ],
+      "blockers": [
+        "No evidence anywhere in the candidate's own input of willingness to pay — the candidate itself lists 'Would anyone pay when free apps exist?' as an open, unresolved question, which is the central viability risk, not a build-feasibility one",
+        "This is a feature ('show prayer times'), not a documented recurring PAIN with a cost in money/time/lost revenue, so it does not meet the project's own golden-rule bar for a validated opportunity",
+        "General knowledge (not verified via search in this session) is that free, high-quality prayer-time apps are widely available in Saudi Arabia/the Gulf, which — if true — would make a 20 SAR/month paywall on a commodity feature very hard to sell; this specific claim is NOT verified with a session URL and is flagged as HYPOTHESIS, not fact"
+      ],
+      "summary": "From a pure build-feasibility standpoint this is trivially EASY: a solo founder could ship a location-based prayer-time app with push notifications and app-store billing in 1-2 weeks for a few hundred SAR (mainly Apple/Google developer account fees). However, feasibility of BUILDING is not the problem here — the candidate provides zero pain evidence, zero payment evidence, and explicitly flags its own core weakness ('would anyone pay when free apps exist'). This candidate should not be treated as a validated opportunity; it fails the evidence-discipline and golden-rule bars this system is built on, independent of how easy the MVP would be to build. NO RELIABLE EVIDENCE FOUND for willingness to pay."
+    }
+  ],
+  "queries_used": [
+    "ZATCA approved e-invoicing solution provider certification requirements third party integration",
+    "WhatsApp Business API pricing Saudi Arabia BSP cost per conversation 2026",
+    "Saudi PDPL personal data protection law health data patient information requirements 2026"
+  ],
+  "limitations": [
+    "search_budget was very tight (3 searches, 1 fetch) — the single WebFetch attempt on zatca.gov.sa failed ('proxy refused the connection'), so all ZATCA regulatory detail relies on secondary/aggregator summaries of the official page rather than a directly fetched primary-source page in this session.",
+    "Could not independently verify pricing of local competitors (Snad, Yolo.clinic, Wafeq, Qoyod) in this session — cost comparisons for C01/C02 are based on carried-over evidence from the candidate input, not fresh verification.",
+    "Did not search for prayer-time app market saturation/free competitors for TEST_BAD in this session (out of scope for feasibility validation and budget-constrained); any claim about existing free apps is explicitly flagged as unverified HYPOTHESIS.",
+    "mvp_cost figures are estimates based on typical KSA hosting/API/payment-gateway/app-store pricing patterns found in aggregator search snippets this session; no single authoritative price sheet was fetched and confirmed line-by-line.",
+    "Did not verify whether ZATCA maintains an official 'approved solution provider' list that a third-party middleware vendor would need to join for commercial credibility (search snippets suggest it's optional/indicative, not mandatory, but this was not confirmed via a direct ZATCA page fetch)."
+  ]
+}

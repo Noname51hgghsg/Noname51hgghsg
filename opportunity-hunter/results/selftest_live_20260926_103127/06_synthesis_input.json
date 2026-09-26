@@ -1,0 +1,208 @@
+{
+  "survivors": [],
+  "rejected": [
+    {
+      "candidate_id": "C01",
+      "title": "Low-cost ZATCA Phase 2 e-invoicing compliance middleware for micro/small Saudi merchants",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The exact target segment (micro/small merchants needing cheap ZATCA Phase 2 compliance) is already served by multiple established, trusted vendors at low or zero price points: Wafeq (SAR 99-149/mo, confirmed via dossier payment_validator), Qoyod (~SAR 100/mo with free trial), and Zoho Invoice which is explicitly marketed as a free ZATCA-compliant e-invoicing solution for small businesses in Saudi Arabia (per fresh search synthesis of zoho.com/sa/invoice/e-invoicing-solution). A solo founder's 'low-cost alternative' pitch is undercut by a globally recognized free option already reachable by the same customers.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/sa/invoice/e-invoicing-solution",
+              "summary": "Search-result synthesis states Zoho offers a free e-invoicing solution covering ZATCA compliance for small businesses in Saudi Arabia (STRONG_INDIRECT - seen only as search snippet/summary, not independently fetched)."
+            },
+            {
+              "url": "https://www.qoyod.com/en/blog/e-invoicing/zatca-e-invoicing/",
+              "summary": "Qoyod offers a free account / 14-day free trial with no card required, per search snippet, further eroding a paid low-cost positioning."
+            },
+            {
+              "url": "https://help.wafeq.com/hc/en-sa/articles/22187364508700-What-are-your-pricing-plans-and-available-packages",
+              "summary": "Dossier payment_validator confirms Wafeq Plus tier (ZATCA Phase 2 features) at SAR 119-149/month, an established competitor already serving this exact price band."
+            }
+          ]
+        },
+        {
+          "category": "FOUNDER_MISFIT",
+          "reason": "The dossier's own feasibility_validator flags that a solo founder faces (a) high liability exposure because a bug in XML generation/stamping/timing could cause the CUSTOMER to be fined SAR 5,000-50,000 or face VAT suspension, with no budget for legal/E&O insurance, and (b) an ongoing compliance-engineering burden since ZATCA specs evolve across waves (not a 'ship once' MVP). Combined with a crowded competitive field of better-resourced incumbents, this is a business a solo founder is structurally poorly positioned to run long-term, regardless of build feasibility.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://tallysolutions.com/mena/saudi-vat/zatca-phase-2-penalties-what-saudi-small-business-must-know/",
+              "summary": "Source (WEAK, single-vendor) cited in dossier for penalty ranges (SAR 5,000-50,000) that would fall on the customer -- and by extension create liability pressure -- if the compliance tool has a defect."
+            }
+          ]
+        },
+        {
+          "category": "HARD_CUSTOMER_ACCESS",
+          "reason": "Compliance software is a trust-sensitive purchase for owners fearing real financial penalties; small business owners are more likely to default to a recognized brand (Zoho, Wafeq, Qoyod, Tally) than an unknown solo-built tool, especially given the deadline pressure means they want proven reliability, not the cheapest untested option. This is logical inference, not independently sourced, so rated MINOR on its own but compounds the other two MAJOR reasons.",
+          "severity": "MINOR",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "C02",
+      "title": "WhatsApp-based appointment reminder & booking micro-SaaS for small clinics",
+      "kill_reasons": [
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "The Saudi clinic booking/reminder space is populated by multiple established vendors, several operating beyond a single-country scope: Yolo.clinic (also serves UAE, multi-market clinic management system with automated WhatsApp/SMS reminders bundled in, reportedly offered free via a sales-assisted funnel per earlier evidence), Snad (bundles reminders into all paid plans with a free trial), plus a wider field surfaced this session (Medinous, Clinit, and multiple vendors ranked in 'best clinic software Saudi Arabia 2026' comparison guides). A standalone WhatsApp-reminder micro-SaaS would be competing against comprehensive, already-marketed suites, not a gap.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://yolo.clinic/",
+              "summary": "Yolo Clinic Management System confirmed as a real, multi-market (also UAE) established product with automated appointment booking and smart reminders, per fresh search."
+            },
+            {
+              "url": "https://clinit.app/blog/best-clinic-management-software-saudi-arabia-2026",
+              "summary": "Independent 2026 comparison guide of multiple clinic management vendors serving Saudi Arabia, confirming a populated competitive field."
+            },
+            {
+              "url": "https://medinous.com/clinic-software-in-saudi-arabia/",
+              "summary": "Another established clinic software vendor targeting the Saudi market, surfaced in fresh search, adding to the competitive density."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "Despite a targeted fresh search specifically for Yolo.clinic's pricing, no public price was found -- pricing for Yolo and Snad is sales-gated (contact/quote-based), not self-serve/published, which is a signal of relationship-based enterprise-style sales rather than a simple self-serve SaaS a solo founder can replicate cheaply. Combined with the dossier's own payment_validator verdict of 'PARTIAL' (not YES) for someone_pays_now, and a competitor (Yolo) reportedly offering the exact WhatsApp-reminder feature for free, there is no confirmed evidence that the target micro-clinic segment will pay a new entrant a recurring fee.",
+          "severity": "MAJOR",
+          "evidence": [
+            {
+              "url": "https://yolo.clinic/",
+              "summary": "Fresh search for Yolo.clinic pricing returned no published price -- confirms pricing is not self-serve/transparent, consistent with a sales-assisted (not simple SaaS) go-to-market that a solo founder cannot easily undercut or replicate."
+            }
+          ]
+        },
+        {
+          "category": "HARD_CUSTOMER_ACCESS",
+          "reason": "The prevailing sales motion for clinic software in Saudi Arabia appears to be direct/WhatsApp-contact sales (per Yolo's model and lack of published pricing across vendors) rather than self-serve online signup. Reaching small clinics likely requires outbound relationship-building/field sales, which is expensive and time-consuming for a solo founder without a sales team.",
+          "severity": "MINOR",
+          "evidence": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "title": "Paid subscription app showing prayer times in Saudi Arabia (20 SAR/month)",
+      "kill_reasons": [
+        {
+          "category": "WEAK_PAIN",
+          "reason": "The stated 'problem' ('people need to know prayer times') is a generic universal need with no documented recurring cost, complaint, or failed workaround -- it does not meet the golden-rule bar of a PAIN. The dossier's own evidence_validator and feasibility_validator both independently concluded this fails the pain bar.",
+          "severity": "FATAL",
+          "evidence": []
+        },
+        {
+          "category": "STRONG_COMPETITOR",
+          "reason": "Multiple well-established, widely-used FREE prayer-time apps already dominate this exact use case in Saudi Arabia, including one explicitly marketed as having no ads, no subscription, and no tracking at all.",
+          "severity": "FATAL",
+          "evidence": [
+            {
+              "url": "https://mymasjidal.com/pages/athanplus",
+              "summary": "Athan+ is explicitly marketed as free with no ads, no subscription, no tracking -- a direct free incumbent for the exact feature the candidate proposes to charge 20 SAR/month for."
+            },
+            {
+              "url": "https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451",
+              "summary": "Muslim Pro is a major, widely-used app with free core prayer-time features covering Saudi Arabia."
+            },
+            {
+              "url": "https://athanpro.com/",
+              "summary": "Athan Pro offers accurate geo-located prayer times, positioned as a free/accurate solution."
+            }
+          ]
+        },
+        {
+          "category": "NO_WILLINGNESS_TO_PAY",
+          "reason": "No evidence of anyone paying for standalone prayer-time display was found by either the discovery agent or the dossier's payment_validator; the candidate itself flags 'would anyone pay when free apps exist' as an unresolved core weakness.",
+          "severity": "FATAL",
+          "evidence": []
+        }
+      ]
+    }
+  ],
+  "backlog_leads": [
+    {
+      "title": "Tenant/landlord & off-plan buyer dispute resolution assistant (Najiz/REGA guided filing tool)",
+      "member_signal_ids": [
+        "S001"
+      ],
+      "reason_not_prioritized": "Evidence on filing frequency and severity is weak/unverified (no GASTAT/REGA statistics found), monetization is unclear, and the tool would compete directly with free official government channels (Najiz, REGA e-Participation) that the customer could use directly. Also carries legal-advice adjacency risk that needs clarification before building.",
+      "signals": [
+        {
+          "problem": "Tenants and property buyers in Saudi Arabia struggle to resolve disputes with landlords/real-estate developers over delayed property delivery, unreturned deposits, unfinished maintenance, and contract-spec violations. The process (which authority to file with, what evidence to attach, Najiz judicial complaint form, REGA complaint platform) is confusing enough that multiple law firms have published dedicated step-by-step guides, and the government runs at least three separate official complaint channels for this exact issue.",
+          "customer": "Renters and off-plan property buyers dealing with landlords or real-estate developers",
+          "evidence": [
+            {
+              "claim": "Saudi government provides a dedicated national complaint service specifically for real-estate disputes",
+              "url": "https://my.gov.sa/ar/services/1684249",
+              "source_title": "شكوى بشأن الخلافات في أمور العقار - my.gov.sa",
+              "summary": "Official Saudi government service page titled 'complaint regarding disputes in real estate matters,' confirming this is common enough to need a standing government channel.",
+              "evidence_type": "DIRECT",
+              "published": "unknown"
+            },
+            {
+              "claim": "The General Real Estate Authority (REGA) runs its own feedback/complaints platform for real estate disputes, separate from the general government one",
+              "url": "https://eparticipation.my.gov.sa/e-feedback/e-complains/platforms/real-estate-general-authority/",
+              "source_title": "الهيئة العامة للعقار - منصة تفاعل",
+              "summary": "National e-participation portal lists a specific complaints channel dedicated to the real estate regulator, per search snippet.",
+              "evidence_type": "STRONG_INDIRECT",
+              "published": "unknown"
+            },
+            {
+              "claim": "Law firms publish detailed 2026 guides on how tenants/buyers should file complaints against property developers/landlords, including which evidence to gather and which lawsuit type to select in Najiz",
+              "url": "https://lawriyadh.com/%D8%B4%D9%83%D9%88%D9%89-%D8%A7%D9%84%D9%85%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/",
+              "source_title": "شكوى المطور العقاري في هيئة العقار - lawriyadh.com (2026)",
+              "summary": "A Riyadh law firm's 2026-dated article walks readers through filing a complaint against a real estate developer via REGA/Najiz, covering contract review, evidence collection, and choosing between delivery, termination, refund or compensation outcomes — per search snippet, page itself not fetched (fetch budget exhausted).",
+              "evidence_type": "WEAK",
+              "published": "2026 (per page title)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Subcontractor progress-payment (مستخلصات) tracking SaaS for Saudi construction firms",
+      "member_signal_ids": [
+        "S003"
+      ],
+      "reason_not_prioritized": "No existing competing solutions were found at all, which is a warning sign of untested demand rather than a clean blue ocean; confidence is LOW and evidence mostly WEAK; unclear whether subcontractors would pay for a tracking tool or continue to treat delayed payments as a purely legal/relationship issue; no data found on the actual scale of affected firms.",
+      "signals": [
+        {
+          "problem": "Subcontractors and small contracting firms in Saudi construction routinely face delayed progress payments (مستخلصات) from main contractors/project owners, causing cash-flow crises that prevent them from paying suppliers, workers and their own sub-subcontractors, sometimes halting project execution.",
+          "customer": "Small/medium construction contractors and subcontractors (مقاولون من الباطن) working on private and government projects in Saudi Arabia",
+          "evidence": [
+            {
+              "claim": "Delays in disbursing contractors' progress payments (مستخلصات) on government/large projects lead to accumulated financial obligations toward suppliers, labor and subcontractors, and liquidity shortages",
+              "url": "https://www.alriyadh.com/1554507",
+              "source_title": "أزمـة مستخلصات المقاولين.. الحلقة مفقودة بين «مالك المشروع والمموّل والمنفّذ»!",
+              "summary": "Al Riyadh newspaper article on the 'crisis of contractor progress payments' describing cash-flow breakdowns between project owner, financier and contractor",
+              "evidence_type": "STRONG_INDIRECT",
+              "published": "unknown"
+            },
+            {
+              "claim": "When a main contractor faces payment delays from the project owner, this cascades to delayed payments to subcontractors, who then struggle to pay their own workers and suppliers",
+              "url": "https://mentorksa.com/%D9%85%D8%B4%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+              "source_title": "أهم مشاكل المقاولات في السعودية وكيفية التعامل معها",
+              "summary": "Advisory article listing cash-flow/payment delay cascade as a top contracting problem in Saudi Arabia, per search snippet",
+              "evidence_type": "WEAK",
+              "published": "unknown"
+            },
+            {
+              "claim": "Subcontracting disputes over unpaid dues are common enough that specialized legal articles exist advising subcontractors on protecting their payment rights in Saudi Arabia",
+              "url": "https://lawabdulmohsen.com/subcontracting-contract-disputes-saudi/",
+              "source_title": "عقد المقاولة من الباطن في السعودية | حماية الحقوق 2026",
+              "summary": "Law firm content on subcontracting payment dispute protection, indicating recurring legal need around unpaid subcontractor dues",
+              "evidence_type": "WEAK",
+              "published": "2026"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "foreign_model_signals": [],
+  "future_signals": []
+}

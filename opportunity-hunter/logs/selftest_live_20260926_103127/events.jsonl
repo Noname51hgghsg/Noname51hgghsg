@@ -1,0 +1,53 @@
+{"ts": "2026-09-26T10:31:27", "level": "INFO", "actor": "ORCHESTRATOR", "message": "run selftest_live_20260926_103127 started (mode=selftest_live, max_parallel=4, budget=$8.0)"}
+{"ts": "2026-09-26T10:31:27", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 1_DISCOVERY started ===", "stage": "1_DISCOVERY"}
+{"ts": "2026-09-26T10:31:27", "level": "INFO", "actor": "PROBLEM_HUNTER[problem_hunter]", "message": "started", "agent": "problem_hunter", "stage": "discovery"}
+{"ts": "2026-09-26T10:31:27", "level": "INFO", "actor": "B2B_PAIN_HUNTER[b2b_hunter]", "message": "started", "agent": "b2b_hunter", "stage": "discovery"}
+{"ts": "2026-09-26T10:31:27", "level": "INFO", "actor": "BROKEN_TEST_AGENT[broken_test_agent]", "message": "started", "agent": "broken_test_agent", "stage": "discovery"}
+{"ts": "2026-09-26T10:31:30", "level": "WARN", "actor": "BROKEN_TEST_AGENT[broken_test_agent]", "message": "attempt 1 failed (invalid_output) — retrying: invalid_output: There's an issue with the selected model (nonexistent-model-xyz). It may not exist or you may not have access to it.", "agent": "broken_test_agent", "retry": true}
+{"ts": "2026-09-26T10:31:37", "level": "ERROR", "actor": "BROKEN_TEST_AGENT[broken_test_agent]", "message": "failed (invalid_output) — not retrying: invalid_output: There's an issue with the selected model (nonexistent-model-xyz). It may not exist or you may not have access to it.", "agent": "broken_test_agent"}
+{"ts": "2026-09-26T10:32:59", "level": "INFO", "actor": "PROBLEM_HUNTER", "message": "completed in 91.7s — searches=3 fetches=1 cache_hits=0 blocked=1 turns=7 cost=$0.193 pid=1088", "agent": "problem_hunter", "searches": 3, "cost": 0.19341460000000002}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "B2B_PAIN_HUNTER", "message": "completed in 104.3s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.218 pid=1089", "agent": "b2b_hunter", "searches": 3, "cost": 0.2176358}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "PROBLEM_HUNTER", "message": "returned 1 signals (3 queries reported)", "agent": "problem_hunter", "signals": 1}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "B2B_PAIN_HUNTER", "message": "returned 3 signals (3 queries reported)", "agent": "b2b_hunter", "signals": 3}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "ORCHESTRATOR", "message": "discovery complete: 2/3 agents succeeded, 4 raw signals"}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 1_DISCOVERY finished in 104.3s ===", "stage": "1_DISCOVERY"}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 2_DEDUPLICATION started ===", "stage": "2_DEDUPLICATION"}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "DEDUP", "message": "deterministic pass: 4 → 4 signals (0 near-duplicates merged)"}
+{"ts": "2026-09-26T10:33:12", "level": "INFO", "actor": "CONSOLIDATOR[consolidator]", "message": "started", "agent": "consolidator", "stage": "dedup"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "CONSOLIDATOR", "message": "completed in 59.0s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=2 cost=$0.092 pid=1296", "agent": "consolidator", "searches": 0, "cost": 0.09170400000000001}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "ORCHESTRATOR", "message": "injected test candidate TEST_BAD: Paid subscription app showing prayer times in Saudi Arabia (20 SAR/month)"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "ORCHESTRATOR", "message": "deduplication complete: 3 candidates, 2 backlog, 0 discarded groups"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 2_DEDUPLICATION finished in 59.0s ===", "stage": "2_DEDUPLICATION"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 3_VALIDATION started ===", "stage": "3_VALIDATION"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "ORCHESTRATOR", "message": "dispatching 4 validator jobs (4 validators × 1 batches)"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "PAYMENT_VALIDATOR[batch1]", "message": "started", "agent": "payment_validator", "stage": "validation"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "COMPETITION_VALIDATOR[batch1]", "message": "started", "agent": "competition_validator", "stage": "validation"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "EVIDENCE_VALIDATOR[batch1]", "message": "started", "agent": "evidence_validator", "stage": "validation"}
+{"ts": "2026-09-26T10:34:11", "level": "INFO", "actor": "FEASIBILITY_VALIDATOR[batch1]", "message": "started", "agent": "feasibility_validator", "stage": "validation"}
+{"ts": "2026-09-26T10:35:45", "level": "INFO", "actor": "PAYMENT_VALIDATOR[batch1]", "message": "completed in 94.0s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.202 pid=1455", "agent": "payment_validator", "searches": 3, "cost": 0.2017816}
+{"ts": "2026-09-26T10:36:12", "level": "INFO", "actor": "EVIDENCE_VALIDATOR[batch1]", "message": "completed in 121.7s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.246 pid=1457", "agent": "evidence_validator", "searches": 3, "cost": 0.24623420000000004}
+{"ts": "2026-09-26T10:36:41", "level": "INFO", "actor": "COMPETITION_VALIDATOR[batch1]", "message": "completed in 150.1s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.275 pid=1456", "agent": "competition_validator", "searches": 3, "cost": 0.2751776}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "FEASIBILITY_VALIDATOR[batch1]", "message": "completed in 170.5s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.281 pid=1458", "agent": "feasibility_validator", "searches": 3, "cost": 0.28122579999999997}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "VALIDATION", "message": "C01: problem_evidence=STRONG_INDIRECT pays_now=YES market=COMPETITIVE complexity=HARD", "candidate": "C01"}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "VALIDATION", "message": "C02: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE", "candidate": "C02"}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "VALIDATION", "message": "TEST_BAD: problem_evidence=NO_RELIABLE_EVIDENCE_FOUND pays_now=NO market=SATURATED complexity=EASY", "candidate": "TEST_BAD"}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 3_VALIDATION finished in 170.5s ===", "stage": "3_VALIDATION"}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 4_KILLER_ROUND_1 started ===", "stage": "4_KILLER_ROUND_1"}
+{"ts": "2026-09-26T10:37:01", "level": "INFO", "actor": "KILLER_AGENT[r1_batch1]", "message": "started", "agent": "killer_agent", "stage": "killer"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "KILLER_AGENT[r1_batch1]", "message": "completed in 150.6s — searches=3 fetches=0 cache_hits=0 blocked=0 turns=5 cost=$0.345 pid=1825", "agent": "killer_agent", "searches": 3, "cost": 0.3447112}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "KILLER_AGENT", "message": "C01 → REJECTED", "candidate": "C01", "verdict": "REJECTED", "round": 1}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "KILLER_AGENT", "message": "C02 → REJECTED", "candidate": "C02", "verdict": "REJECTED", "round": 1}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "KILLER_AGENT", "message": "TEST_BAD → REJECTED (The stated 'problem' ('people need to know prayer times') is a generic universal need with; Multiple well-established, widely-used FREE prayer-time apps already dominate this exact u; No evidence of a)", "candidate": "TEST_BAD", "verdict": "REJECTED", "round": 1}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 4_KILLER_ROUND_1 finished in 150.7s ===", "stage": "4_KILLER_ROUND_1"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 5_GAP_DETECTION_R1 started ===", "stage": "5_GAP_DETECTION_R1"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 5_GAP_DETECTION_R1 finished in 0.0s ===", "stage": "5_GAP_DETECTION_R1"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "ORCHESTRATOR", "message": "no evidence gaps detected — skipping additional research"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 8_SYNTHESIS started ===", "stage": "8_SYNTHESIS"}
+{"ts": "2026-09-26T10:39:32", "level": "INFO", "actor": "OPPORTUNITY_SYNTHESIZER[synthesizer]", "message": "started", "agent": "synthesizer", "stage": "synthesis"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "OPPORTUNITY_SYNTHESIZER", "message": "completed in 97.3s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=3 cost=$0.166 pid=2043", "agent": "synthesizer", "searches": 0, "cost": 0.16607499999999997}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "OPPORTUNITY_SYNTHESIZER", "message": "0 golden, 2 hidden gems, 0 foreign models"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 8_SYNTHESIS finished in 97.3s ===", "stage": "8_SYNTHESIS"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 9_REPORT started ===", "stage": "9_REPORT"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "REPORT", "message": "written to /home/user/Noname51hgghsg/opportunity-hunter/reports/selftest_live_report.md"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "ORCHESTRATOR", "message": "=== STAGE 9_REPORT finished in 0.0s ===", "stage": "9_REPORT"}
+{"ts": "2026-09-26T10:41:09", "level": "INFO", "actor": "ORCHESTRATOR", "message": "run finished: {\"agent_processes_launched\": 11, \"agent_tasks_executed\": 10, \"distinct_agent_types_run\": 10, \"agent_tasks_succeeded\": 9, \"agent_tasks_failed\": 1, \"agent_tasks_skipped\": 0, \"agent_cache_hits\": 0, \"web_searches\": 21, \"web_fetches\": 6, \"search_cache_hits\": 0, \"budget_blocked_tool_calls\": 1, \"raw_signals\": 4, \"after_exact_dedup\": 4, \"candidates_validated\": 3, \"backlog\": 2, \"gap_research_requests\": 0, \"survived_killer\": 0, \"rejected_by_killer\": 3, \"undecided\": 0, \"total_cost_usd\": 2.018}"}

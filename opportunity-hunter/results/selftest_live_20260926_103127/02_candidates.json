@@ -1,0 +1,204 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "C01",
+      "title": "Low-cost ZATCA Phase 2 e-invoicing compliance middleware for micro/small Saudi merchants",
+      "problem": "Saudi SMEs (retail, restaurants, professional services, contractors) are being swept into mandatory ZATCA e-invoicing Phase 2 (real-time XML invoicing, cryptographic stamp, QR code, Fatoora ERP integration). Wave 24 lowered the mandatory threshold to SAR 375,000 annual revenue, pulling in large numbers of small businesses with no in-house IT capability for API integration, XML schema compliance or certificate management.",
+      "customer": "Micro and small Saudi businesses newly in ZATCA Phase 2 scope (annual revenue as low as SAR 375,000) currently invoicing manually or with basic accounting software",
+      "segment": "B2B",
+      "sector": "SMB compliance / retail / professional services",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S002"
+      ],
+      "potential_solution": "Lightweight, very-low-cost ZATCA Phase 2 integration middleware/plugin targeted at micro and small merchants under SAR 1M revenue who are priced out of enterprise ERP vendors — simple onboarding, WhatsApp/Arabic support, flat low monthly fee",
+      "business_model": "SaaS subscription (flat low monthly fee) or one-time setup + small monthly compliance fee",
+      "priority": 8,
+      "priority_rationale": "A regulatory mandate (not a discretionary want) creates a forced, recurring, ever-expanding need as thresholds drop, guaranteeing demand durability. Multiple established competitors (Wafeq, Qeemah Cloud, InvoiceQ, Tally) give STRONG_INDIRECT evidence that SMEs already pay for this class of solution, de-risking the business-model question. Severity and frequency are both rated HIGH. The MVP is buildable by a solo founder as API/middleware without requiring a hard licence (ZATCA compliance is a requirement to satisfy, not a licence to obtain). Priority is not maximal because the space is already fairly crowded, exact micro-merchant price points are unverified, and it is unclear how much of the market is already captured by incumbents vs. genuinely underserved micro-merchants.",
+      "open_questions": [
+        "What price points can micro-merchants (<SAR 1M revenue) actually afford/pay for compliance software?",
+        "How saturated is the micro-merchant segment already vs. mid-size firms served by Wafeq/Qeemah/InvoiceQ?",
+        "Does ZATCA itself offer a free/simplified integration path that would undercut a paid tool?",
+        "What certification/onboarding process does ZATCA require for a new third-party solution provider, and is it feasible for a solo founder?"
+      ],
+      "source_agents": [
+        "b2b_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "ZATCA Phase 2 Wave 24 lowers mandatory e-invoicing integration threshold to SAR 375,000 revenue with a 30 June 2026 deadline, pulling many SMEs into scope for the first time",
+          "url": "https://out2sol.global/blog/zatca-e-invoicing-phase-2-integration-explained/",
+          "source_title": "ZATCA E-Invoicing Phase 2 (2026): Wave 24 Guidelines & Integration",
+          "summary": "Blog describing Wave 24 threshold reduction and integration deadline for Saudi SMEs, per search snippet/page summary",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "2026"
+        },
+        {
+          "claim": "Non-compliance penalties range from SAR 5,000 to 50,000 per violation; missing QR code can trigger fines up to SAR 10,000 per invoice; repeat offenders risk temporary VAT registration suspension",
+          "url": "https://tallysolutions.com/mena/saudi-vat/zatca-phase-2-penalties-what-saudi-small-business-must-know/",
+          "source_title": "ZATCA Phase 2 Penalties: What Saudi Small Business Must Know",
+          "summary": "Vendor article detailing concrete penalty amounts for non-compliant SMEs, per search snippet",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Most small businesses lack a dedicated IT team capable of handling the required API integration, XML schema compliance and cryptographic certificate management for Phase 2",
+          "url": "https://constantlabs.ai/insights/zatca-e-invoicing-phase-2-guide/",
+          "source_title": "ZATCA E-Invoicing Phase 2: An Integration Guide for Saudi Businesses in 2026",
+          "summary": "Integration guide stating SMEs lack technical capacity for compliant integration, per search snippet",
+          "evidence_type": "WEAK",
+          "published": "2026"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/e-invoicing-in-saudi-arabia/preparing-for-e-invoicing/zatca-e-invoicing-phase-2",
+          "notes": "Accounting/e-invoicing SaaS with ZATCA Phase 2 guidance and integration"
+        },
+        {
+          "name": "Qeemah Cloud",
+          "url": "https://qeemahcloud.com/en/blog/complete-zatca-phase-2-einvoicing-requirements-guide/",
+          "notes": "ZATCA compliance guide/vendor"
+        },
+        {
+          "name": "InvoiceQ",
+          "url": "https://invoiceq.com/en/e-invoicing-articles/zatca-non-compliance-penalty/",
+          "notes": "E-invoicing compliance vendor"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Many SMEs delay compliance, rely on generic accounting software not fully integrated with Fatoora, or hire local IT consultancies/vendors ad hoc; some risk penalties by not integrating on time"
+      ],
+      "existing_spend": [
+        "Vendors sell dedicated ZATCA compliance/integration services and multiple established players (Wafeq, Qeemah, InvoiceQ, Tally) already monetize this; exact SME spend figures not found in this session — NO RELIABLE EVIDENCE FOUND for specific price points paid by SMEs"
+      ],
+      "unknowns": [
+        "How saturated the market already is among micro-merchants specifically (vs mid-size firms already served)",
+        "Actual price points micro-SMEs are willing/able to pay for compliance software",
+        "Whether ZATCA itself offers a free basic integration path that undercuts paid solutions"
+      ]
+    },
+    {
+      "candidate_id": "C02",
+      "title": "WhatsApp-based appointment reminder & booking micro-SaaS for small clinics",
+      "problem": "Small private clinics and dental practices in Saudi Arabia experience high patient no-show rates and spend receptionist time manually calling/reminding patients; published Saudi clinical research shows no-show rates up to 39.8% without reminder systems.",
+      "customer": "Small private clinics and dental practices in Saudi Arabia without enterprise-grade clinic management software",
+      "segment": "B2B",
+      "sector": "Clinics / healthcare SMB",
+      "opportunity_type": "EXISTING_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "member_signal_ids": [
+        "S004"
+      ],
+      "potential_solution": "Very low-cost WhatsApp-based appointment reminder + booking micro-SaaS targeted at single-doctor/small clinics, priced below existing local vendors, simple self-serve setup",
+      "business_model": "Low monthly SaaS subscription per clinic, possibly usage-based on WhatsApp messages sent",
+      "priority": 7,
+      "priority_rationale": "DIRECT evidence (a Saudi clinical study showing up to 39.8% no-show rate) confirms the underlying pain is real and quantifiable, and STRONG_INDIRECT evidence (existing local paid vendors Snad, Yolo.clinic, automation-ksa.com) confirms clinics already pay to solve it. Frequency is HIGH (daily/recurring scheduling pain). The MVP fits squarely in the solo-founder EASY/MODERATE band — a WhatsApp Business API integration is buildable within the 500–1000 SAR budget. Ranked just below C01 because severity is only rated MEDIUM (a scheduling inefficiency rather than a forced compliance cost), no confirmed pricing evidence was captured for the specific fee level, and there is already local competition targeting the same small-clinic niche.",
+      "open_questions": [
+        "What do Snad and Yolo.clinic actually charge, and is there room for a materially cheaper alternative?",
+        "Is the 1-2 doctor clinic segment already saturated by free/cheap WhatsApp automation tools?",
+        "Is the 39.8% no-show figure (older study) still representative in 2025-2026, or has it shifted?",
+        "What are the cost/quota constraints of the WhatsApp Business API for a solo founder at small scale, and do they threaten unit economics?"
+      ],
+      "source_agents": [
+        "b2b_hunter"
+      ],
+      "evidence": [
+        {
+          "claim": "A randomized controlled trial in a Saudi outpatient clinic found the no-show rate was 39.8% without SMS reminders versus 26.3% with SMS reminders",
+          "url": "https://www.emro.who.int/emhj-vol-20-2014/volume-20-5/use-of-short-message-service-reminders-to-improve-attendance-at-an-internal-medicine-outpatient-clinic-in-saudi-arabia-a-randomized-controlled-trial.html",
+          "source_title": "Use of short message service reminders to improve attendance at an internal medicine outpatient clinic in Saudi Arabia: a randomized controlled trial",
+          "summary": "Published RCT quantifying no-show reduction from SMS reminders in a Saudi clinic setting",
+          "evidence_type": "DIRECT",
+          "published": "2014 (WHO EMHJ, >3 years old — dated evidence)"
+        },
+        {
+          "claim": "A Saudi client posted a freelance project on Mostaql requesting a custom clinic management program (برنامج إدارة عيادة), indicating clinics seek bespoke/cheaper alternatives to off-the-shelf SaaS",
+          "url": "https://mostaql.com/project/829228-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9",
+          "source_title": "برنامج إدارة عيادة | مستقل",
+          "summary": "Freelance project listing title found via search snippet requesting a clinic management program; page fetch failed (proxy connection refused) so full brief/budget could not be confirmed",
+          "evidence_type": "WEAK",
+          "published": "unknown"
+        },
+        {
+          "claim": "Local vendors (Snad, Yolo.clinic, automation-ksa.com) market clinic automation/booking-with-reminder products specifically for the Saudi market, positioning no-show reduction as a key selling point",
+          "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+          "source_title": "نظام حجز مواعيد العيادات في السعودية — من الاستقبال إلى الفاتورة",
+          "summary": "Saudi vendor blog on clinic appointment booking systems, indicating an active local vendor market",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        }
+      ],
+      "existing_solutions": [
+        {
+          "name": "Snad",
+          "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+          "notes": "Saudi clinic booking/reminder system vendor"
+        },
+        {
+          "name": "Yolo.clinic",
+          "url": "https://yolo.clinic/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9/",
+          "notes": "Clinic appointment/reminder software offering a free version, per search snippet"
+        },
+        {
+          "name": "automation-ksa.com clinic automation",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "notes": "Saudi clinic automation service including booking and reminders"
+        }
+      ],
+      "foreign_models": [],
+      "workarounds": [
+        "Small clinics without budget for these vendors hire freelancers on Mostaql/Khamsat to build custom booking apps, or continue manual phone-based reminders by receptionists"
+      ],
+      "existing_spend": [
+        "NO RELIABLE EVIDENCE FOUND for specific subscription prices paid; existence of multiple competing local vendors (Snad, Yolo.clinic, automation-ksa.com) is indirect evidence that clinics do pay for such tools"
+      ],
+      "unknowns": [
+        "Current (2025-2026) no-show statistics — the only quantified figure found is from a 2014 study",
+        "Whether the market for very small (1-2 doctor) clinics is already saturated by free/cheap tools",
+        "Pricing of existing local competitors (Snad, Yolo.clinic) — not confirmed in this session"
+      ]
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "title": "Paid subscription app showing prayer times in Saudi Arabia (20 SAR/month)",
+      "problem": "People in Saudi Arabia need to know prayer times.",
+      "customer": "Muslim individuals in Saudi Arabia",
+      "segment": "B2C",
+      "sector": "religious apps",
+      "opportunity_type": "NEW_OPPORTUNITY",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "potential_solution": "A mobile app that shows prayer times, 20 SAR/month subscription",
+      "business_model": "consumer subscription 20 SAR/month",
+      "evidence": [],
+      "open_questions": [],
+      "unknowns": [
+        "Would anyone pay when free apps exist?"
+      ],
+      "source_agents": [
+        "selftest_injection"
+      ]
+    }
+  ],
+  "backlog": [
+    {
+      "title": "Tenant/landlord & off-plan buyer dispute resolution assistant (Najiz/REGA guided filing tool)",
+      "member_signal_ids": [
+        "S001"
+      ],
+      "reason_not_prioritized": "Evidence on filing frequency and severity is weak/unverified (no GASTAT/REGA statistics found), monetization is unclear, and the tool would compete directly with free official government channels (Najiz, REGA e-Participation) that the customer could use directly. Also carries legal-advice adjacency risk that needs clarification before building."
+    },
+    {
+      "title": "Subcontractor progress-payment (مستخلصات) tracking SaaS for Saudi construction firms",
+      "member_signal_ids": [
+        "S003"
+      ],
+      "reason_not_prioritized": "No existing competing solutions were found at all, which is a warning sign of untested demand rather than a clean blue ocean; confidence is LOW and evidence mostly WEAK; unclear whether subcontractors would pay for a tracking tool or continue to treat delayed payments as a purely legal/relationship issue; no data found on the actual scale of affected firms."
+    }
+  ],
+  "discarded": [],
+  "merge_notes": "No exact or near-duplicate pains were found across the 4 input signals — each describes a distinct customer segment and problem (tenant/buyer real-estate disputes; ZATCA e-invoicing compliance for SMEs; subcontractor progress-payment delays; clinic patient no-shows), so no signals were merged into a shared candidate. Ranking (limited to 2 by candidate_limit) favored the two signals with the strongest combination of evidence class (DIRECT/STRONG_INDIRECT), proof of existing paid competitors (de-risking willingness-to-pay), high frequency/severity, and solo-founder MVP feasibility within the 500-1000 SAR budget: ZATCA compliance middleware (C01, regulatory-driven, existing paid competitors) and clinic no-show WhatsApp reminders (C02, DIRECT clinical evidence + existing paid local vendors). The real-estate dispute tool (S001) and subcontractor payment tracker (S003) were pushed to backlog due to weaker/unverified evidence and unclear monetization paths. Nothing was discarded outright since all four signals contain at least some plausible evidence and none require a hard licence or heavy field operations."
+}

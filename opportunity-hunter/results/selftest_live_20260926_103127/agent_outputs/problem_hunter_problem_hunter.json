@@ -1,0 +1,88 @@
+{
+  "agent": "problem_hunter",
+  "signals": [
+    {
+      "opportunity_id": "PH-01",
+      "problem": "Tenants and property buyers in Saudi Arabia struggle to resolve disputes with landlords/real-estate developers over delayed property delivery, unreturned deposits, unfinished maintenance, and contract-spec violations. The process (which authority to file with, what evidence to attach, Najiz judicial complaint form, REGA complaint platform) is confusing enough that multiple law firms have published dedicated step-by-step guides, and the government runs at least three separate official complaint channels for this exact issue.",
+      "customer": "Renters and off-plan property buyers dealing with landlords or real-estate developers",
+      "segment": "B2C",
+      "sector": "Real Estate / Legal Services",
+      "market": "Saudi Arabia",
+      "source": "Google search results (law firm content sites, official government service pages)",
+      "evidence": [
+        {
+          "claim": "Saudi government provides a dedicated national complaint service specifically for real-estate disputes",
+          "url": "https://my.gov.sa/ar/services/1684249",
+          "source_title": "شكوى بشأن الخلافات في أمور العقار - my.gov.sa",
+          "summary": "Official Saudi government service page titled 'complaint regarding disputes in real estate matters,' confirming this is common enough to need a standing government channel.",
+          "evidence_type": "DIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "The General Real Estate Authority (REGA) runs its own feedback/complaints platform for real estate disputes, separate from the general government one",
+          "url": "https://eparticipation.my.gov.sa/e-feedback/e-complains/platforms/real-estate-general-authority/",
+          "source_title": "الهيئة العامة للعقار - منصة تفاعل",
+          "summary": "National e-participation portal lists a specific complaints channel dedicated to the real estate regulator, per search snippet.",
+          "evidence_type": "STRONG_INDIRECT",
+          "published": "unknown"
+        },
+        {
+          "claim": "Law firms publish detailed 2026 guides on how tenants/buyers should file complaints against property developers/landlords, including which evidence to gather and which lawsuit type to select in Najiz",
+          "url": "https://lawriyadh.com/%D8%B4%D9%83%D9%88%D9%89-%D8%A7%D9%84%D9%85%D8%B7%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1/",
+          "source_title": "شكوى المطور العقاري في هيئة العقار - lawriyadh.com (2026)",
+          "summary": "A Riyadh law firm's 2026-dated article walks readers through filing a complaint against a real estate developer via REGA/Najiz, covering contract review, evidence collection, and choosing between delivery, termination, refund or compensation outcomes — per search snippet, page itself not fetched (fetch budget exhausted).",
+          "evidence_type": "WEAK",
+          "published": "2026 (per page title)"
+        },
+        {
+          "claim": "Multiple independent law firms (at least 3 distinct domains) have published near-identical 'how to complain about your landlord/developer' guides, indicating recurring search demand",
+          "url": "https://agl.sa/%D8%B1%D9%81%D8%B9-%D8%B4%D9%83%D9%88%D9%89-%D8%B9%D9%84%D9%89-%D9%85%D8%A7%D9%84%D9%83-%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/",
+          "source_title": "كيفية رفع شكوى على مالك العقار في السعودية - agl.sa",
+          "summary": "Second, unrelated law firm publishing the same type of complaint-filing guide, per search snippet — suggests this is a common, repeated pain point people search for online rather than a one-off.",
+          "evidence_type": "WEAK",
+          "published": "2026 (per title)"
+        }
+      ],
+      "existing_solution": [
+        {
+          "name": "Najiz (Saudi Ministry of Justice platform)",
+          "url": "https://my.gov.sa/ar/services/1684249",
+          "notes": "General judicial complaint intake; not specialized for real estate, requires legal knowledge to select correct case type per law firm guides."
+        },
+        {
+          "name": "REGA e-Participation complaints channel",
+          "url": "https://eparticipation.my.gov.sa/e-feedback/e-complains/platforms/real-estate-general-authority/",
+          "notes": "Regulator-level feedback/complaint intake; unclear from search snippet how fast disputes are actually resolved."
+        }
+      ],
+      "workaround": "Renters/buyers hire a lawyer or law firm to walk them through which government channel and case type to use (evidenced by multiple firms monetizing explainer content), or self-navigate Najiz/REGA portals using published guides.",
+      "potential_solution": "A guided Arabic-language web tool (AI-assisted) that interviews the tenant/buyer about their dispute, tells them which authority/case type applies, auto-generates the Najiz complaint text and a checklist of evidence to attach — positioned as a cheaper self-serve alternative to a lawyer consultation.",
+      "business_model": "B2C pay-per-complaint fee or small subscription; possible referral fee to lawyers for complex cases",
+      "opportunity_type": "IMPROVED_MARKET",
+      "time_horizon": "CURRENT_EVIDENCE",
+      "frequency": "UNKNOWN",
+      "severity": "MEDIUM",
+      "existing_spend": "NO RELIABLE EVIDENCE FOUND (law firms clearly monetize consultations on this topic, but no specific price was seen/fetched in this session)",
+      "confidence": "LOW",
+      "unknowns": [
+        "How many real-estate complaints are actually filed per year in Saudi Arabia (no GASTAT/REGA statistic found)",
+        "Whether Najiz/REGA complaint resolution times are actually a pain point or just a one-time filing friction",
+        "What law firms charge for this specific consultation (not verified — page fetch failed)",
+        "Whether affected renters/buyers would pay for a self-serve tool vs. simply using free government portals or asking a lawyer once"
+      ]
+    }
+  ],
+  "queries_used": [
+    "site:reddit.com r/saudiarabia \"تعبت من\" OR \"المشكلة أن\" OR \"ليش ما فيه\"",
+    "\"مين جرب\" OR \"أحد يعرف\" صيانة العقار السعودية شكوى تأخير",
+    "reddit saudiarabia frustrating \"is there an app\" Riyadh Jeddah complaint"
+  ],
+  "limitations": [
+    "Search budget was only 3 web searches and 1 web fetch for this mission — far below what is needed to reliably surface 6-12 independent, well-evidenced recurring pains across multiple life/business domains as the mission brief requests.",
+    "The single web fetch attempt (on a lawriyadh.com legal guide page) failed due to a proxy connection error ('proxy refused the connection'); a retry on a second URL then hit the hard fetch-budget limit, so no page content was actually confirmed by direct fetch in this session — all evidence below is snippet-level only.",
+    "Reddit/forum-specific queries (r/saudiarabia, Arabic frustration phrases like 'تعبت من', 'ليش ما فيه') returned no relevant indexed posts via the web search tool — likely because Reddit content is poorly indexed by this search backend or too login-gated to surface, not because the pain doesn't exist. Could not verify grassroots consumer complaints (app-store reviews, Reddit threads, Mostaql/Khamsat requests) at all this session.",
+    "Only one credible problem area (real-estate landlord/developer dispute complaints) could be triangulated from the three searches run; other domains from the brief (maintenance, schools, government appointments, delivery, cars, rentals, domestic labor, bills) were not explored due to budget exhaustion after the first three queries.",
+    "No statistics (e.g., number of REGA/Najiz real-estate complaints per year, average resolution time, law-firm consultation fees) were found or confirmed — all quantifiable severity/frequency fields are marked UNKNOWN rather than estimated.",
+    "Given the above, only one signal is returned, at LOW confidence, rather than the requested 6-12 — padding with unverified signals was avoided per the evidence-discipline rules."
+  ]
+}

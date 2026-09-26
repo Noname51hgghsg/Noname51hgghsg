@@ -1,0 +1,45 @@
+{
+  "run_id": "selftest_live_20260926_103127",
+  "mode": "selftest_live",
+  "status": "completed",
+  "elapsed_sec": 581.9,
+  "counts": {
+    "agent_processes_launched": 11,
+    "agent_tasks_executed": 10,
+    "distinct_agent_types_run": 10,
+    "agent_tasks_succeeded": 9,
+    "agent_tasks_failed": 1,
+    "agent_tasks_skipped": 0,
+    "agent_cache_hits": 0,
+    "web_searches": 21,
+    "web_fetches": 6,
+    "search_cache_hits": 0,
+    "budget_blocked_tool_calls": 1,
+    "raw_signals": 4,
+    "after_exact_dedup": 4,
+    "candidates_validated": 3,
+    "backlog": 2,
+    "gap_research_requests": 0,
+    "survived_killer": 0,
+    "rejected_by_killer": 3,
+    "undecided": 0,
+    "total_cost_usd": 2.018
+  },
+  "stage_times_sec": {
+    "1_DISCOVERY": 104.3,
+    "2_DEDUPLICATION": 59.0,
+    "3_VALIDATION": 170.5,
+    "4_KILLER_ROUND_1": 150.7,
+    "5_GAP_DETECTION_R1": 0.0,
+    "8_SYNTHESIS": 97.3,
+    "9_REPORT": 0.0
+  },
+  "failures": [
+    {
+      "agent": "broken_test_agent",
+      "label": "broken_test_agent",
+      "status": "failed",
+      "error": "invalid_output: There's an issue with the selected model (nonexistent-model-xyz). It may not exist or you may not have access to it."
+    }
+  ]
+}

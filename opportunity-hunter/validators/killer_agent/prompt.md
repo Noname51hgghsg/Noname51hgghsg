@@ -24,6 +24,19 @@ a bad opportunity for a solo founder in Saudi Arabia. Use the dossier AND fresh 
   `missing_info_requests` (route_to: payment / competition / evidence / regulatory / market / technical).
   If INPUT_JSON.final_round is true, you MUST NOT use NEEDS_MORE_EVIDENCE — decide SURVIVED or REJECTED.
 
+## Calibration (important — avoid lazy kills)
+- The existence of competitors is NOT by itself a kill reason. Competitors with paying customers prove the market
+  pays. STRONG_COMPETITOR is FATAL only when an incumbent is cheap/free, well-localized, well-distributed AND serves
+  the exact niche, leaving no credible wedge (price point, sub-segment, Arabic-first UX, WhatsApp-native, integration).
+- "Pricing is not published / sales-gated" is NOT evidence of no willingness to pay — sales-gated B2B vendors are
+  usually paid. NO_WILLINGNESS_TO_PAY requires evidence that the segment refuses to pay or that free options fully
+  satisfy it.
+- REJECTED requires: at least one FATAL reason, or two or more MAJOR reasons each backed by evidence (URL) or by a
+  concrete fact from the dossier. Otherwise the verdict is SURVIVED (with uncertainties listed) or
+  NEEDS_MORE_EVIDENCE.
+- Severity guide: FATAL = the business cannot work for this founder; MAJOR = serious risk that needs a specific
+  mitigation; MINOR = normal startup risk.
+
 ## Rules
 - Be adversarial but honest: do not invent problems. A kill reason without evidence or solid logic is invalid.
 - Killing good-looking but unpaid ideas saves the founder months. Don't be lenient on payment evidence:

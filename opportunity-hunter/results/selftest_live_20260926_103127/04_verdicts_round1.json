@@ -1,0 +1,156 @@
+{
+  "C01": {
+    "candidate_id": "C01",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The exact target segment (micro/small merchants needing cheap ZATCA Phase 2 compliance) is already served by multiple established, trusted vendors at low or zero price points: Wafeq (SAR 99-149/mo, confirmed via dossier payment_validator), Qoyod (~SAR 100/mo with free trial), and Zoho Invoice which is explicitly marketed as a free ZATCA-compliant e-invoicing solution for small businesses in Saudi Arabia (per fresh search synthesis of zoho.com/sa/invoice/e-invoicing-solution). A solo founder's 'low-cost alternative' pitch is undercut by a globally recognized free option already reachable by the same customers.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://www.zoho.com/sa/invoice/e-invoicing-solution",
+            "summary": "Search-result synthesis states Zoho offers a free e-invoicing solution covering ZATCA compliance for small businesses in Saudi Arabia (STRONG_INDIRECT - seen only as search snippet/summary, not independently fetched)."
+          },
+          {
+            "url": "https://www.qoyod.com/en/blog/e-invoicing/zatca-e-invoicing/",
+            "summary": "Qoyod offers a free account / 14-day free trial with no card required, per search snippet, further eroding a paid low-cost positioning."
+          },
+          {
+            "url": "https://help.wafeq.com/hc/en-sa/articles/22187364508700-What-are-your-pricing-plans-and-available-packages",
+            "summary": "Dossier payment_validator confirms Wafeq Plus tier (ZATCA Phase 2 features) at SAR 119-149/month, an established competitor already serving this exact price band."
+          }
+        ]
+      },
+      {
+        "category": "FOUNDER_MISFIT",
+        "reason": "The dossier's own feasibility_validator flags that a solo founder faces (a) high liability exposure because a bug in XML generation/stamping/timing could cause the CUSTOMER to be fined SAR 5,000-50,000 or face VAT suspension, with no budget for legal/E&O insurance, and (b) an ongoing compliance-engineering burden since ZATCA specs evolve across waves (not a 'ship once' MVP). Combined with a crowded competitive field of better-resourced incumbents, this is a business a solo founder is structurally poorly positioned to run long-term, regardless of build feasibility.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://tallysolutions.com/mena/saudi-vat/zatca-phase-2-penalties-what-saudi-small-business-must-know/",
+            "summary": "Source (WEAK, single-vendor) cited in dossier for penalty ranges (SAR 5,000-50,000) that would fall on the customer -- and by extension create liability pressure -- if the compliance tool has a defect."
+          }
+        ]
+      },
+      {
+        "category": "HARD_CUSTOMER_ACCESS",
+        "reason": "Compliance software is a trust-sensitive purchase for owners fearing real financial penalties; small business owners are more likely to default to a recognized brand (Zoho, Wafeq, Qoyod, Tally) than an unknown solo-built tool, especially given the deadline pressure means they want proven reliability, not the cheapest untested option. This is logical inference, not independently sourced, so rated MINOR on its own but compounds the other two MAJOR reasons.",
+        "severity": "MINOR",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for a free/simplified ZATCA e-invoicing path that would undercut a paid solo-founder tool -- found Zoho Invoice free tier and Qoyod free trial, confirming STRONG_COMPETITOR",
+      "Searched for ZATCA solution-provider accreditation/certification requirements to test REGULATORY barrier -- found taxpayers can use ANY compliant solution, not just ZATCA's indicative list, so this specific regulatory attack vector did NOT succeed as a fatal barrier for a solo founder",
+      "Relied on dossier's feasibility_validator content to attack FOUNDER_MISFIT via liability and ongoing-maintenance burden"
+    ],
+    "remaining_uncertainties": [
+      "Whether Zoho Invoice's free tier truly and fully covers ZATCA Phase 2 real-time clearance/reporting for Saudi merchants, or is a generic invoicing tool with limited local compliance depth (not independently fetched/confirmed this session)",
+      "Whether the ultra-micro merchant segment (SAR 375K-1M revenue) has different price sensitivity/preferences than the slightly larger SMEs served by Wafeq/Qoyod",
+      "Whether ZATCA's own certification/registration process for a NEW third-party solution provider (not appearing on any existing indicative list) is realistically achievable for a solo founder within MVP budget/timeline"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Not applicable -- rejected.",
+    "summary": "Rejected primarily on STRONG_COMPETITOR (an already-crowded field including a free global player, Zoho, plus paid incumbents Wafeq/Qoyod at SAR 99-150/mo) combined with a FOUNDER_MISFIT liability/maintenance burden the dossier's own feasibility_validator flags as 'the real risk.' The regulatory attack vector (accreditation barrier) did not succeed -- ZATCA does not require solution providers to be pre-listed -- but this does not save the candidate given the competitive and liability issues."
+  },
+  "C02": {
+    "candidate_id": "C02",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "The Saudi clinic booking/reminder space is populated by multiple established vendors, several operating beyond a single-country scope: Yolo.clinic (also serves UAE, multi-market clinic management system with automated WhatsApp/SMS reminders bundled in, reportedly offered free via a sales-assisted funnel per earlier evidence), Snad (bundles reminders into all paid plans with a free trial), plus a wider field surfaced this session (Medinous, Clinit, and multiple vendors ranked in 'best clinic software Saudi Arabia 2026' comparison guides). A standalone WhatsApp-reminder micro-SaaS would be competing against comprehensive, already-marketed suites, not a gap.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://yolo.clinic/",
+            "summary": "Yolo Clinic Management System confirmed as a real, multi-market (also UAE) established product with automated appointment booking and smart reminders, per fresh search."
+          },
+          {
+            "url": "https://clinit.app/blog/best-clinic-management-software-saudi-arabia-2026",
+            "summary": "Independent 2026 comparison guide of multiple clinic management vendors serving Saudi Arabia, confirming a populated competitive field."
+          },
+          {
+            "url": "https://medinous.com/clinic-software-in-saudi-arabia/",
+            "summary": "Another established clinic software vendor targeting the Saudi market, surfaced in fresh search, adding to the competitive density."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "Despite a targeted fresh search specifically for Yolo.clinic's pricing, no public price was found -- pricing for Yolo and Snad is sales-gated (contact/quote-based), not self-serve/published, which is a signal of relationship-based enterprise-style sales rather than a simple self-serve SaaS a solo founder can replicate cheaply. Combined with the dossier's own payment_validator verdict of 'PARTIAL' (not YES) for someone_pays_now, and a competitor (Yolo) reportedly offering the exact WhatsApp-reminder feature for free, there is no confirmed evidence that the target micro-clinic segment will pay a new entrant a recurring fee.",
+        "severity": "MAJOR",
+        "evidence": [
+          {
+            "url": "https://yolo.clinic/",
+            "summary": "Fresh search for Yolo.clinic pricing returned no published price -- confirms pricing is not self-serve/transparent, consistent with a sales-assisted (not simple SaaS) go-to-market that a solo founder cannot easily undercut or replicate."
+          }
+        ]
+      },
+      {
+        "category": "HARD_CUSTOMER_ACCESS",
+        "reason": "The prevailing sales motion for clinic software in Saudi Arabia appears to be direct/WhatsApp-contact sales (per Yolo's model and lack of published pricing across vendors) rather than self-serve online signup. Reaching small clinics likely requires outbound relationship-building/field sales, which is expensive and time-consuming for a solo founder without a sales team.",
+        "severity": "MINOR",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Searched for Yolo.clinic pricing to test the candidate's 'priced below existing local vendors' differentiation claim -- found no published pricing, indicating a sales-gated model rather than a simple undercuttable price point",
+      "Cross-checked dossier's competition_validator and payment_validator conclusions (COMPETITIVE market, PARTIAL payment evidence) against fresh search, which surfaced additional established competitors (Medinous, Clinit) not in the original candidate list, reinforcing STRONG_COMPETITOR",
+      "Considered whether the free WhatsApp Business app alone could satisfy most small-clinic needs without any paid SaaS (logical inference, not independently sourced this session)"
+    ],
+    "remaining_uncertainties": [
+      "Whether Yolo.clinic's 'free' offering (per earlier snippet) is genuinely free long-term or a lead-gen/trial tactic that converts to paid later",
+      "True size and reachability of the underserved 1-2 doctor / solo-practitioner clinic niche that might prefer a lightweight self-serve WhatsApp-only tool over full clinic-management suites",
+      "Actual Snad subscription price, never confirmed with a public source in this or prior sessions"
+    ],
+    "missing_info_requests": [],
+    "survival_notes": "Not applicable -- rejected.",
+    "summary": "Rejected on two MAJOR grounds: (1) a more crowded competitive field than the original candidate assumed, including multi-market player Yolo.clinic and several vendors surfaced fresh this session (Medinous, Clinit), some already bundling or reportedly free-offering the exact WhatsApp-reminder feature; and (2) unconfirmed willingness-to-pay at the target micro-clinic tier -- a dedicated pricing search returned no published price, and the dossier's own payment_validator rated payment evidence only PARTIAL. Per the killer-agent rule that unclear/no payment evidence is at least MAJOR, combined with the competitive density, this clears the bar for REJECTED."
+  },
+  "TEST_BAD": {
+    "candidate_id": "TEST_BAD",
+    "verdict": "REJECTED",
+    "kill_reasons": [
+      {
+        "category": "WEAK_PAIN",
+        "reason": "The stated 'problem' ('people need to know prayer times') is a generic universal need with no documented recurring cost, complaint, or failed workaround -- it does not meet the golden-rule bar of a PAIN. The dossier's own evidence_validator and feasibility_validator both independently concluded this fails the pain bar.",
+        "severity": "FATAL",
+        "evidence": []
+      },
+      {
+        "category": "STRONG_COMPETITOR",
+        "reason": "Multiple well-established, widely-used FREE prayer-time apps already dominate this exact use case in Saudi Arabia, including one explicitly marketed as having no ads, no subscription, and no tracking at all.",
+        "severity": "FATAL",
+        "evidence": [
+          {
+            "url": "https://mymasjidal.com/pages/athanplus",
+            "summary": "Athan+ is explicitly marketed as free with no ads, no subscription, no tracking -- a direct free incumbent for the exact feature the candidate proposes to charge 20 SAR/month for."
+          },
+          {
+            "url": "https://apps.apple.com/us/app/muslim-pro-quran-athan/id388389451",
+            "summary": "Muslim Pro is a major, widely-used app with free core prayer-time features covering Saudi Arabia."
+          },
+          {
+            "url": "https://athanpro.com/",
+            "summary": "Athan Pro offers accurate geo-located prayer times, positioned as a free/accurate solution."
+          }
+        ]
+      },
+      {
+        "category": "NO_WILLINGNESS_TO_PAY",
+        "reason": "No evidence of anyone paying for standalone prayer-time display was found by either the discovery agent or the dossier's payment_validator; the candidate itself flags 'would anyone pay when free apps exist' as an unresolved core weakness.",
+        "severity": "FATAL",
+        "evidence": []
+      }
+    ],
+    "attacks_attempted": [
+      "Relied on dossier's already-thorough validator findings (evidence, payment, competition, feasibility all independently concluded reject) -- no fresh search budget spent here given the clear-cut, multiply-confirmed FATAL findings and to conserve budget for the two genuine candidates"
+    ],
+    "remaining_uncertainties": [],
+    "missing_info_requests": [],
+    "survival_notes": "Not applicable -- rejected. This candidate is a deliberate low-quality test injection and is correctly killed by every validator plus this review.",
+    "summary": "Trivially rejected. This is a feature ('show prayer times'), not a pain, and it is directly contradicted by multiple free, well-established incumbents (Muslim Pro, Athan Pro, Athan+) serving Saudi Arabia today, with zero evidence anyone would pay 20 SAR/month for a commodity already free everywhere. All four dossier validators and this killer review independently agree: REJECTED."
+  }
+}

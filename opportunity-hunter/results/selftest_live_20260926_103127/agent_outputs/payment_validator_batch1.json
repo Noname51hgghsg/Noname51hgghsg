@@ -1,0 +1,87 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "someone_pays_now": "YES",
+      "payment_evidence": [
+        {
+          "payer": "Saudi SMEs/merchants needing ZATCA Phase 2 compliance",
+          "pays_for": "E-invoicing/accounting software with ZATCA Phase 2 integration (Plus plan)",
+          "price": "149 (monthly) / 119 (annual, discounted)",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://help.wafeq.com/hc/en-sa/articles/22187364508700-What-are-your-pricing-plans-and-available-packages",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Saudi SMEs/merchants needing ZATCA Phase 2 compliance",
+          "pays_for": "Entry-level accounting software (no Phase 2 e-invoicing) - shows there is a paid tier below Phase2 too",
+          "price": "119 (monthly) / 99 (annual, discounted)",
+          "currency": "SAR",
+          "period": "month",
+          "url": "https://www.wafeq.com/en-sa",
+          "evidence_type": "STRONG_INDIRECT"
+        },
+        {
+          "payer": "Saudi SMEs",
+          "pays_for": "ZATCA-compliant e-invoicing platform subscription (Fatora, Daftra, Asl, E-Fatoora)",
+          "price": "not confirmed in this session",
+          "currency": "SAR",
+          "period": "unknown",
+          "url": "https://fatora.io/en/zatca-2/",
+          "evidence_type": "STRONG_INDIRECT"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Multiple established, actively marketed vendors (Wafeq, Fatora, Daftra, Asl, E-Fatoora, plus the candidate's own listed Qeemah/InvoiceQ) sell ZATCA-compliant invoicing software in Saudi Arabia today, and Wafeq's own help-center pricing page (surfaced via search, direct fetch attempt failed due to proxy block) shows concrete monthly prices (SAR 99-249) with ZATCA Phase 2 features gated to the Plus tier (SAR 119-149/mo). This is strong indirect evidence that Saudi businesses, including smaller ones, already pay monthly fees in a price range compatible with a micro-merchant budget for exactly this compliance need. However, no evidence was found of a price point or paying customer specifically in the ultra-small (<SAR 375k revenue, newly-in-scope Wave 24) segment the candidate targets, so willingness-to-pay at that specific micro tier remains PARTIALLY validated by proxy (adjacent, slightly larger SME segment pays) rather than directly confirmed.",
+      "summary": "Existing ZATCA e-invoicing compliance software market has real, actively sold, priced products (Wafeq confirmed SAR 99-249/month tiers; Fatora/Daftra/Asl/E-Fatoora also market ZATCA integration). This shows the underlying market model (SMEs pay monthly for compliance software) works today. Direct fetch of Wafeq's pricing page failed (proxy refused connection); pricing was obtained via web-search aggregation of the same official help-center URL, so treated as STRONG_INDIRECT rather than a first-hand DIRECT page view in this session."
+    },
+    {
+      "candidate_id": "C02",
+      "someone_pays_now": "PARTIAL",
+      "payment_evidence": [
+        {
+          "payer": "Saudi small clinics/dental practices",
+          "pays_for": "Clinic appointment booking/reminder system (Snad)",
+          "price": "not disclosed - 30-day free trial, no credit card, implies paid plans after trial",
+          "currency": "SAR",
+          "period": "unknown",
+          "url": "https://www.snad.io/purchases",
+          "evidence_type": "WEAK"
+        },
+        {
+          "payer": "Saudi small clinics/dental practices",
+          "pays_for": "Clinic appointment/reminder software (Yolo.clinic)",
+          "price": "free version exists per candidate's own sourced evidence",
+          "currency": "SAR",
+          "period": "n/a",
+          "url": "https://yolo.clinic/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9/",
+          "evidence_type": "WEAK"
+        }
+      ],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "Existence of a competitive local vendor market (Snad, Yolo.clinic, automation-ksa.com) marketing clinic booking/reminder tools is indirect evidence that some clinics pay for this category, but I could not find (this session, search budget exhausted) a confirmed price for Snad, and the candidate's own sourced evidence explicitly notes Yolo.clinic offers a free version - meaning at least one direct competitor undercuts a paid model for the smallest clinics. The only quantified benefit-of-reminders data point (39.8% no-show without SMS reminders) is a 2014 RCT, not current pricing/payment evidence. Net: payment for this category happens somewhere in the market (vendors survive/market), but not confirmed for the specific micro-clinic segment at a specific price, and a free alternative exists - so verdict is PARTIAL, not YES.",
+      "summary": "A local vendor market for clinic booking/reminder software exists in Saudi Arabia (Snad, Yolo.clinic, automation-ksa.com), which is indirect proof the business model can generate revenue, but no confirmed price paid by the target micro-clinic segment was found in this session, and a free competing product (Yolo.clinic) was already identified by the source agent, which weakens confidence that very small clinics will pay a new entrant."
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "someone_pays_now": "NO",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "No evidence was found in this session of anyone paying specifically for basic prayer-time display in Saudi Arabia, and the candidate itself flags this as an open question. This is HYPOTHESIS-level reasoning (not sourced in this session) but well known: prayer times are provided free by numerous mobile apps, built into phone OS clocks/calendars, government/Islamic-affairs apps, and audible mosque adhan across Saudi Arabia, making a 20 SAR/month paid subscription for the bare feature implausible. No pricing page, competitor, or payment evidence supports a paid model for this exact offering.",
+      "summary": "NO RELIABLE EVIDENCE FOUND that anyone pays for a standalone prayer-times app in Saudi Arabia; the core problem statement itself is not a real monetizable pain (prayer times are free and ubiquitous), and no search was needed/run for this because the candidate lacks any plausible payment angle per the task's own stated unknowns. Flagging this as a likely low-quality/injected candidate rather than a validated opportunity."
+    }
+  ],
+  "queries_used": [
+    "Wafeq pricing Saudi Arabia SAR per month ZATCA e-invoicing",
+    "Snad.io pricing سعر نظام حجز مواعيد العيادات السعودية",
+    "مستقل خمسات ربط فاتورة إلكترونية ZATCA فوترة السعر"
+  ],
+  "limitations": [
+    "Search budget capped at 3 queries and fetch budget at 1; the single WebFetch attempt (Wafeq official pricing help page) failed with 'proxy refused the connection', so Wafeq pricing is based on WebSearch tool's aggregation of search snippets from the official URL rather than a first-hand page view in this session - downgraded to STRONG_INDIRECT.",
+    "Could not find confirmed pricing for Snad.io's clinic booking product specifically (only found a general 'Purchasing and Supplier Software' page and a 30-day-free-trial mention); Snad's clinic-specific product page/price was not located.",
+    "Did not verify whether the Mostaql clinic-management freelance project (cited by the source agent for C02) has a disclosed budget, since that was outside this validator's search budget.",
+    "No search was run to hunt for prayer-time app payment evidence for TEST_BAD since the candidate is clearly a low-signal/injected test case with no plausible payment angle; conclusion relies on general knowledge about free prayer-time alternatives rather than a session-sourced URL, and is explicitly labeled HYPOTHESIS.",
+    "Did not check Qeemah Cloud or InvoiceQ (C01) pricing pages directly due to fetch budget exhaustion; relied on the source agent's existing_solutions list plus newly found Fatora/Daftra/Asl/E-Fatoora as additional corroborating vendors."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "Wafeq",
+          "url": "https://www.wafeq.com/en-sa/zatca-e-invoicing-phase-2",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Starting at SAR 99/month when billed annually (per search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "ZATCA Phase 2 compliant e-invoicing (integration, cryptographic stamp) per page title/search snippet",
+          "strengths": "Affordable entry price for an SME accounting suite (~SAR 99/mo), dedicated KSA product page, positioned specifically as ZATCA Phase 2 compliant",
+          "weaknesses": "Full feature set and exact Arabic UI depth not verified directly (pricing page fetch failed - proxy connection refused); it's a full accounting suite, not a lightweight compliance-only plugin"
+        },
+        {
+          "name": "Qoyod",
+          "url": "https://www.qoyod.com/en/e-invoice/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Basic plan ~SAR 1,200/year (~SAR 100/mo) for 1 user; Professional ~SAR 1,800/year for 3 users, incl. fixed assets & multi-warehouse (per Qoyod blog, search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Full ZATCA Phase 2 compliance (per search snippet)",
+          "strengths": "Transparent published pricing, locally built with Arabic-language interface, already positioned as an affordable option for small businesses",
+          "weaknesses": "Per-user/seat pricing model; full accounting suite (heavier than pure invoicing middleware) may be overkill for a single micro-merchant"
+        },
+        {
+          "name": "InvoiceQ",
+          "url": "https://invoiceq.com/en/e-invoicing-articles/zatca-non-compliance-penalty/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN - not verified in this session",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Markets itself around ZATCA compliance/penalty guidance (per candidate's original source list)",
+          "strengths": "Active content marketing on ZATCA penalties, suggesting focus on the compliance-anxiety segment relevant to newly-in-scope SMEs",
+          "weaknesses": "Pricing, Arabic support and product depth not verified in this session"
+        },
+        {
+          "name": "Qeemah Cloud",
+          "url": "https://qeemahcloud.com/en/blog/complete-zatca-phase-2-einvoicing-requirements-guide/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN - not verified in this session",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "ZATCA Phase 2 compliance guidance/vendor (per candidate's original source list)",
+          "strengths": "Existing content/vendor presence targeting ZATCA Phase 2 requirements",
+          "weaknesses": "Pricing and product depth not verified in this session"
+        }
+      ],
+      "gap_description": "Several localized, Arabic-supported ZATCA Phase 2 solutions already exist at fairly low price points (~SAR 69-100/month per search snippet covering Wafeq, Qoyod and also Zoho Books, which was mentioned in a snippet but omitted here for lack of a directly-seen URL). This means the 'cheap ZATCA compliance software' niche is more contested than the candidate assumed, and a generic low-cost SaaS copy would face real incumbents. However, these are full accounting suites built for businesses that already do bookkeeping; a genuinely micro merchant (kiosk, single-location restaurant, sole proprietor near the SAR 375,000 threshold) may find even a SAR 69-100/month accounting suite to be more software than they need, and may prefer a single-purpose, WhatsApp-driven compliance-only tool with no dashboards to learn.",
+      "differentiation_angle": "Position as a pure compliance-only plugin/middleware (not an accounting suite) for the newly-captured micro-merchant tier (SAR 375K-1M revenue): WhatsApp-first Arabic onboarding and support, pay-per-invoice or sub-SAR-50/month pricing, and integration that sits on top of whatever the merchant already uses (even a phone camera/manual entry) rather than requiring them to switch bookkeeping systems. This is a narrower niche than Wafeq/Qoyod target, but unverified whether it's large enough or whether ZATCA has its own free simplified path (open question, not resolved this session).",
+      "summary": "Competition exists and is real (Wafeq, Qoyod, Zoho Books per snippet, plus InvoiceQ/Qeemah), with Arabic-supported options already down to ~SAR 69-100/month (STRONG_INDIRECT, search snippets from Qoyod blog and general pricing guide, not independently fetched). Market state is COMPETITIVE rather than NO_SOLUTION or WEAK_MARKET as the original candidate framing implied. A defensible angle exists only in the ultra-micro/compliance-only niche, and this needs further validation on true price sensitivity and whether ZATCA offers a free onboarding path."
+    },
+    {
+      "candidate_id": "C02",
+      "market_state": "COMPETITIVE",
+      "competitors": [
+        {
+          "name": "Snad",
+          "url": "https://www.snad.io/blog/nizam-hajz-mawaeed-iyadat-saudi",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Booking/reminder feature included in all Snad packages; 30-day free trial offered (per search snippet); exact recurring subscription price not found in this session",
+          "arabic_support": "YES",
+          "saudi_integrations": "Clinic appointment booking system content specifically framed for the Saudi market (per Snad blog, search snippet); explicit WhatsApp integration not confirmed for Snad specifically in this session",
+          "strengths": "Established Saudi-focused vendor already bundling booking+reminders into all plans, free trial lowers adoption friction",
+          "weaknesses": "Pricing not transparently published; product depth/reviews not verified in this session"
+        },
+        {
+          "name": "Yolo.clinic",
+          "url": "https://yolo.clinic/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Reported as offering the clinic appointment booking software for FREE, obtained by contacting the vendor via WhatsApp (per search snippet)",
+          "arabic_support": "YES",
+          "saudi_integrations": "Reminder alerts via SMS, email, and voice/WhatsApp reminders (per search snippet)",
+          "strengths": "Directly undercuts price on the exact feature (WhatsApp-based reminders) the candidate proposes to charge for; fully Arabic, KSA-focused, multi-channel reminders",
+          "weaknesses": "Sustainability/business model behind the 'free' offer is unclear (likely lead-gen or upsell funnel via WhatsApp sales contact); depth of self-serve automation vs. sales-assisted onboarding not verified"
+        },
+        {
+          "name": "automation-ksa.com (clinic automation)",
+          "url": "https://automation-ksa.com/services/clinic-automation",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "UNKNOWN - not verified in this session",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "Clinic automation bundle including booking and reminders (per candidate's original source list)",
+          "strengths": "Bundled automation service offering for Saudi clinics",
+          "weaknesses": "Pricing/reviews not verified"
+        }
+      ],
+      "gap_description": "The strongest signal from this session's searches is that a local competitor (Yolo.clinic) already offers WhatsApp/SMS/voice reminder booking software for FREE (via a WhatsApp-sales-assisted onboarding), and Snad bundles the same capability into all paid plans with a free trial. This directly undercuts a 'very low-cost' positioning, since the reference point for small clinics is not enterprise software but an already-free/cheap local incumbent. The underlying pain (no-show rates, evidenced by an older but DIRECT 2014 Saudi RCT showing 39.8% no-show without reminders) is real, but the 'cheap SaaS' solution shape is already contested at the very bottom of the price range.",
+      "differentiation_angle": "Compete on self-serve simplicity and transparency rather than price alone: instant sign-up with published flat pricing and no sales call (unlike Yolo's WhatsApp-contact-to-get-it-free funnel, which implies friction/sales gatekeeping), a narrow niche focus (e.g., single-dentist/solo-practitioner clinics with a ready-made template), or a no-show analytics angle (showing clinics data-backed reduction) that generic free tools don't emphasize. This is a weaker opportunity than the original framing suggested because 'cheap' is already taken by a free competitor; differentiation must be about friction/UX/niche, not price.",
+      "summary": "Local competitors already exist and at least one (Yolo.clinic) reportedly offers the core WhatsApp-reminder feature for free (search snippet, not independently fetched), while Snad bundles it into paid plans with a free trial. This is a real market with real local players, but the 'low-cost alternative' angle in the original candidate is weakened by a free incumbent; a solo founder would need a UX/niche/self-serve differentiation rather than price alone."
+    },
+    {
+      "candidate_id": "TEST_BAD",
+      "market_state": "SATURATED",
+      "competitors": [
+        {
+          "name": "Muslim Pro",
+          "url": "https://www.muslimpro.com/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Core prayer-time features free for everyone (per search snippet: app.muslimpro.com/prayer-times/saudi-arabia)",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "N/A",
+          "strengths": "Massive existing user base, dedicated Saudi Arabia and per-city prayer time pages, bundles Quran/Qibla/Athan features, free core experience",
+          "weaknesses": "Not directly assessed in this session (e.g., ad load, premium tier details unknown)"
+        },
+        {
+          "name": "Athan Pro",
+          "url": "https://athanpro.com/",
+          "hq_country": "UNKNOWN",
+          "serves_saudi": "YES",
+          "pricing": "Positioned as a free/accurate prayer times app using geo-location (per search snippet); premium tier not confirmed",
+          "arabic_support": "UNKNOWN",
+          "saudi_integrations": "N/A",
+          "strengths": "Accurate geo-location-based prayer times, supports multiple calculation methods (MWL, ISNA, Egypt, Umm al-Qura per snippet)",
+          "weaknesses": "Not directly assessed in this session"
+        }
+      ],
+      "gap_description": "No gap found. Prayer times are a fully commoditized, free feature available in multiple popular, well-established apps (Muslim Pro, Athan Pro) as well as natively in smartphone OS widgets/clocks and countless free local apps. Search results show no evidence of unmet demand or willingness to pay specifically for standalone prayer times.",
+      "differentiation_angle": "None credible identified. A 20 SAR/month subscription for a feature offered free by multiple incumbents with large install bases has no visible defensible value proposition and no evidence of demand for a paid version. Not recommended as a standalone product; this candidate should be rejected.",
+      "summary": "This is a self-test/injected 'bad' candidate and the competitive check confirms it: free, well-established competitors (Muslim Pro, Athan Pro) already dominate this exact use case with no evidence of a paid niche. Market state is SATURATED with free incumbents; no viable differentiation angle found. Recommend rejecting this candidate."
+    }
+  ],
+  "queries_used": [
+    "ZATCA e-invoicing software pricing Saudi small business Wafeq Qoyod Fatoora",
+    "Snad Yolo.clinic pricing تطبيق تذكير مواعيد عيادات السعودية سعر",
+    "مواقيت الصلاة تطبيق مجاني السعودية Muslim Pro Athan free prayer times app"
+  ],
+  "limitations": [
+    "Search budget was capped at 3 web searches and fully used across all three candidates combined; no candidate-specific deep-dive beyond one search each was possible.",
+    "WebFetch attempt on Wafeq's ZATCA pricing page (https://www.wafeq.com/en-sa/zatca-e-invoicing-phase-2) failed with 'proxy refused the connection' — pricing/feature details for Wafeq rely solely on search-result snippets, not a directly fetched page.",
+    "HQ country could not be confirmed in this session for any competitor (Wafeq, Qoyod, InvoiceQ, Qeemah Cloud, Snad, Yolo.clinic, automation-ksa.com, Muslim Pro, Athan Pro); all marked UNKNOWN rather than guessed.",
+    "Zoho Books was mentioned in a search snippet as a low-cost ZATCA-compliant competitor for C01 (from SAR 69/month) but no direct URL for it appeared in the search results returned, so it was omitted from the formal competitor list to avoid citing an unverified URL; this likely understates C01's competitive density slightly.",
+    "Exact recurring subscription prices for Snad, automation-ksa.com, InvoiceQ, and Qeemah Cloud were not found (search snippets only mention free trials or lack pricing detail); could not confirm whether these are truly cheaper or more expensive than a new entrant would need to be.",
+    "Could not verify whether ZATCA itself offers a free/simplified integration path for micro-merchants (an open question already flagged in C01's input) — not resolved due to budget limits.",
+    "Arabic-language support was inferred from search snippets describing sites/products as Arabic-language or KSA-focused; not independently verified via direct page fetch for most competitors.",
+    "For TEST_BAD, did not check whether Muslim Pro/Athan Pro have paid premium tiers (e.g., ad-free) that might be closer analogues to a 20 SAR/month subscription — general web search suggests core prayer-time features are free, but premium-tier pricing was not directly investigated."
+  ]
+}

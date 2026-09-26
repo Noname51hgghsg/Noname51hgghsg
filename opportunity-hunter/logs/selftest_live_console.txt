@@ -1,0 +1,71 @@
+[10:31:27] ORCHESTRATOR run selftest_live_20260926_103127 started (mode=selftest_live, max_parallel=4, budget=$8.0)
+[10:31:27] ORCHESTRATOR === STAGE 1_DISCOVERY started ===
+[10:31:27] PROBLEM_HUNTER[problem_hunter] started
+[10:31:27] B2B_PAIN_HUNTER[b2b_hunter] started
+[10:31:27] BROKEN_TEST_AGENT[broken_test_agent] started
+[10:31:30] WARN BROKEN_TEST_AGENT[broken_test_agent] attempt 1 failed (invalid_output) — retrying: invalid_output: There's an issue with the selected model (nonexistent-model-xyz). It may not exist or you may not have access to it.
+[10:31:37] ERROR BROKEN_TEST_AGENT[broken_test_agent] failed (invalid_output) — not retrying: invalid_output: There's an issue with the selected model (nonexistent-model-xyz). It may not exist or you may not have access to it.
+[10:32:59] PROBLEM_HUNTER completed in 91.7s — searches=3 fetches=1 cache_hits=0 blocked=1 turns=7 cost=$0.193 pid=1088
+[10:33:12] B2B_PAIN_HUNTER completed in 104.3s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.218 pid=1089
+[10:33:12] PROBLEM_HUNTER returned 1 signals (3 queries reported)
+[10:33:12] B2B_PAIN_HUNTER returned 3 signals (3 queries reported)
+[10:33:12] ORCHESTRATOR discovery complete: 2/3 agents succeeded, 4 raw signals
+[10:33:12] ORCHESTRATOR === STAGE 1_DISCOVERY finished in 104.3s ===
+[10:33:12] ORCHESTRATOR === STAGE 2_DEDUPLICATION started ===
+[10:33:12] DEDUP deterministic pass: 4 → 4 signals (0 near-duplicates merged)
+[10:33:12] CONSOLIDATOR[consolidator] started
+[10:34:11] CONSOLIDATOR completed in 59.0s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=2 cost=$0.092 pid=1296
+[10:34:11] ORCHESTRATOR injected test candidate TEST_BAD: Paid subscription app showing prayer times in Saudi Arabia (20 SAR/month)
+[10:34:11] ORCHESTRATOR deduplication complete: 3 candidates, 2 backlog, 0 discarded groups
+[10:34:11] ORCHESTRATOR === STAGE 2_DEDUPLICATION finished in 59.0s ===
+[10:34:11] ORCHESTRATOR === STAGE 3_VALIDATION started ===
+[10:34:11] ORCHESTRATOR dispatching 4 validator jobs (4 validators × 1 batches)
+[10:34:11] PAYMENT_VALIDATOR[batch1] started
+[10:34:11] COMPETITION_VALIDATOR[batch1] started
+[10:34:11] EVIDENCE_VALIDATOR[batch1] started
+[10:34:11] FEASIBILITY_VALIDATOR[batch1] started
+[10:35:45] PAYMENT_VALIDATOR[batch1] completed in 94.0s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.202 pid=1455
+[10:36:12] EVIDENCE_VALIDATOR[batch1] completed in 121.7s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.246 pid=1457
+[10:36:41] COMPETITION_VALIDATOR[batch1] completed in 150.1s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.275 pid=1456
+[10:37:01] FEASIBILITY_VALIDATOR[batch1] completed in 170.5s — searches=3 fetches=1 cache_hits=0 blocked=0 turns=6 cost=$0.281 pid=1458
+[10:37:01] VALIDATION C01: problem_evidence=STRONG_INDIRECT pays_now=YES market=COMPETITIVE complexity=HARD
+[10:37:01] VALIDATION C02: problem_evidence=STRONG_INDIRECT pays_now=PARTIAL market=COMPETITIVE complexity=MODERATE
+[10:37:01] VALIDATION TEST_BAD: problem_evidence=NO_RELIABLE_EVIDENCE_FOUND pays_now=NO market=SATURATED complexity=EASY
+[10:37:01] ORCHESTRATOR === STAGE 3_VALIDATION finished in 170.5s ===
+[10:37:01] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 started ===
+[10:37:01] KILLER_AGENT[r1_batch1] started
+[10:39:32] KILLER_AGENT[r1_batch1] completed in 150.6s — searches=3 fetches=0 cache_hits=0 blocked=0 turns=5 cost=$0.345 pid=1825
+[10:39:32] KILLER_AGENT C01 → REJECTED
+[10:39:32] KILLER_AGENT C02 → REJECTED
+[10:39:32] KILLER_AGENT TEST_BAD → REJECTED (The stated 'problem' ('people need to know prayer times') is a generic universal need with; Multiple well-established, widely-used FREE prayer-time apps already dominate this exact u; No evidence of a)
+[10:39:32] ORCHESTRATOR === STAGE 4_KILLER_ROUND_1 finished in 150.7s ===
+[10:39:32] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 started ===
+[10:39:32] ORCHESTRATOR === STAGE 5_GAP_DETECTION_R1 finished in 0.0s ===
+[10:39:32] ORCHESTRATOR no evidence gaps detected — skipping additional research
+[10:39:32] ORCHESTRATOR === STAGE 8_SYNTHESIS started ===
+[10:39:32] OPPORTUNITY_SYNTHESIZER[synthesizer] started
+[10:41:09] OPPORTUNITY_SYNTHESIZER completed in 97.3s — searches=0 fetches=0 cache_hits=0 blocked=0 turns=3 cost=$0.166 pid=2043
+[10:41:09] OPPORTUNITY_SYNTHESIZER 0 golden, 2 hidden gems, 0 foreign models
+[10:41:09] ORCHESTRATOR === STAGE 8_SYNTHESIS finished in 97.3s ===
+[10:41:09] ORCHESTRATOR === STAGE 9_REPORT started ===
+[10:41:09] REPORT written to /home/user/Noname51hgghsg/opportunity-hunter/reports/selftest_live_report.md
+[10:41:09] ORCHESTRATOR === STAGE 9_REPORT finished in 0.0s ===
+[10:41:09] ORCHESTRATOR run finished: {"agent_processes_launched": 11, "agent_tasks_executed": 10, "distinct_agent_types_run": 10, "agent_tasks_succeeded": 9, "agent_tasks_failed": 1, "agent_tasks_skipped": 0, "agent_cache_hits": 0, "web_searches": 21, "web_fetches": 6, "search_cache_hits": 0, "budget_blocked_tool_calls": 1, "raw_signals": 4, "after_exact_dedup": 4, "candidates_validated": 3, "backlog": 2, "gap_research_requests": 0, "survived_killer": 0, "rejected_by_killer": 3, "undecided": 0, "total_cost_usd": 2.018}
+
+======================================================================
+LIVE SELF-TEST (real claude -p agents + real web search)
+run_id=selftest_live_20260926_103127  elapsed=581.9s
+======================================================================
+  [PASS] 1_orchestrator_runs_end_to_end
+  [PASS] 2_real_agent_processes_ran(distinct PIDs)
+  [PASS] 3_agents_return_schema_valid_json
+  [PASS] 4_results_reach_orchestrator
+  [PASS] 5_parallel_execution(overlapping discovery agents)
+  [PASS] 5b_real_web_searches_performed
+  [PASS] 6_validators_ran
+  [PASS] 7_killer_rejects_bad_opportunity(TEST_BAD)
+  [PASS] 8_synthesizer_report_built
+  [PASS] 9_logs_work
+  [PASS] 10_broken_agent_failed_without_stopping_system
+RESULT: ALL PASSED
+EXIT=0

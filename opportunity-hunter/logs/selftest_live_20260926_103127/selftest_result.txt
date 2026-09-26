@@ -1,0 +1,17 @@
+
+======================================================================
+LIVE SELF-TEST (real claude -p agents + real web search)
+run_id=selftest_live_20260926_103127  elapsed=581.9s
+======================================================================
+  [PASS] 1_orchestrator_runs_end_to_end
+  [PASS] 2_real_agent_processes_ran(distinct PIDs)
+  [PASS] 3_agents_return_schema_valid_json
+  [PASS] 4_results_reach_orchestrator
+  [PASS] 5_parallel_execution(overlapping discovery agents)
+  [PASS] 5b_real_web_searches_performed
+  [PASS] 6_validators_ran
+  [PASS] 7_killer_rejects_bad_opportunity(TEST_BAD)
+  [PASS] 8_synthesizer_report_built
+  [PASS] 9_logs_work
+  [PASS] 10_broken_agent_failed_without_stopping_system
+RESULT: ALL PASSED
