@@ -1,0 +1,356 @@
+{
+ "type": "object",
+ "properties": {
+  "executive_summary": {
+   "type": "string"
+  },
+  "golden_opportunities": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "category": {
+      "type": "string",
+      "enum": [
+       "EXISTING_MARKET",
+       "IMPROVED_MARKET",
+       "LOCAL_ADAPTATION",
+       "NEW_OPPORTUNITY",
+       "FUTURE_OPPORTUNITY"
+      ]
+     },
+     "problem": {
+      "type": "string"
+     },
+     "customer": {
+      "type": "string"
+     },
+     "evidence": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "claim": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string"
+        },
+        "evidence_type": {
+         "type": "string",
+         "enum": [
+          "DIRECT",
+          "STRONG_INDIRECT",
+          "WEAK",
+          "HYPOTHESIS"
+         ]
+        }
+       },
+       "required": [
+        "claim",
+        "url",
+        "evidence_type"
+       ]
+      }
+     },
+     "why_it_exists": {
+      "type": "string"
+     },
+     "existing_alternatives": {
+      "type": "string"
+     },
+     "competitors": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string"
+        },
+        "note": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "name",
+        "url",
+        "note"
+       ]
+      }
+     },
+     "saudi_opportunity": {
+      "type": "string"
+     },
+     "solution": {
+      "type": "string"
+     },
+     "mvp": {
+      "type": "string"
+     },
+     "technology": {
+      "type": "string"
+     },
+     "estimated_cost": {
+      "type": "string"
+     },
+     "complexity": {
+      "type": "string",
+      "enum": [
+       "EASY",
+       "MODERATE",
+       "HARD"
+      ]
+     },
+     "revenue_model": {
+      "type": "string"
+     },
+     "first_customer_strategy": {
+      "type": "string"
+     },
+     "expansion": {
+      "type": "string"
+     },
+     "risks": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "unknowns": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "evidence_quality": {
+      "type": "string",
+      "enum": [
+       "HIGH",
+       "MEDIUM",
+       "LOW"
+      ]
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "candidate_id",
+     "name",
+     "category",
+     "problem",
+     "customer",
+     "evidence",
+     "why_it_exists",
+     "existing_alternatives",
+     "competitors",
+     "saudi_opportunity",
+     "solution",
+     "mvp",
+     "technology",
+     "estimated_cost",
+     "complexity",
+     "revenue_model",
+     "first_customer_strategy",
+     "expansion",
+     "risks",
+     "unknowns",
+     "evidence_quality",
+     "sources"
+    ]
+   }
+  },
+  "hidden_gems": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "one_liner": {
+      "type": "string"
+     },
+     "why_interesting": {
+      "type": "string"
+     },
+     "validation_status": {
+      "type": "string",
+      "enum": [
+       "VALIDATED_SURVIVED",
+       "UNVALIDATED_LEAD"
+      ]
+     },
+     "complexity": {
+      "type": "string",
+      "enum": [
+       "EASY",
+       "MODERATE",
+       "HARD",
+       "UNKNOWN"
+      ]
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "candidate_id",
+     "name",
+     "one_liner",
+     "why_interesting",
+     "validation_status",
+     "complexity",
+     "sources"
+    ]
+   }
+  },
+  "foreign_models": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "model_name": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     },
+     "country": {
+      "type": "string"
+     },
+     "what_it_does": {
+      "type": "string"
+     },
+     "revenue_model": {
+      "type": "string"
+     },
+     "saudi_equivalent_status": {
+      "type": "string"
+     },
+     "adaptation_notes": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "model_name",
+     "url",
+     "country",
+     "what_it_does",
+     "revenue_model",
+     "saudi_equivalent_status",
+     "adaptation_notes",
+     "sources"
+    ]
+   }
+  },
+  "boring_businesses": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "problem": {
+      "type": "string"
+     },
+     "who_pays": {
+      "type": "string"
+     },
+     "evidence": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "name",
+     "problem",
+     "who_pays",
+     "evidence",
+     "sources"
+    ]
+   }
+  },
+  "future_opportunities": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "hypothesis": {
+      "type": "string"
+     },
+     "current_evidence": {
+      "type": "string"
+     },
+     "trigger": {
+      "type": "string"
+     },
+     "horizon": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "name",
+     "hypothesis",
+     "current_evidence",
+     "trigger",
+     "horizon",
+     "sources"
+    ]
+   }
+  },
+  "no_opportunity_statement": {
+   "type": "string",
+   "description": "empty string unless nothing is worth pursuing"
+  }
+ },
+ "required": [
+  "executive_summary",
+  "golden_opportunities",
+  "hidden_gems",
+  "foreign_models",
+  "boring_businesses",
+  "future_opportunities",
+  "no_opportunity_statement"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

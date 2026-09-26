@@ -1,0 +1,10 @@
+name = "problem_hunter"
+display = "PROBLEM_HUNTER"
+stage = "discovery"
+schema = "discovery"
+description = "Everyday problems of people and businesses in Saudi Arabia"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

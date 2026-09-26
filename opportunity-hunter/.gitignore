@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+database/*.db
+database/*.db-*
+results/*/_work/
+results/*/selftest.db*

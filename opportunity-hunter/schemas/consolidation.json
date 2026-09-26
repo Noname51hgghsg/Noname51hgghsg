@@ -1,0 +1,152 @@
+{
+ "type": "object",
+ "properties": {
+  "candidates": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string",
+      "description": "C01, C02 ..."
+     },
+     "title": {
+      "type": "string"
+     },
+     "problem": {
+      "type": "string"
+     },
+     "customer": {
+      "type": "string"
+     },
+     "segment": {
+      "type": "string",
+      "enum": [
+       "B2B",
+       "B2C",
+       "HYBRID"
+      ]
+     },
+     "sector": {
+      "type": "string"
+     },
+     "opportunity_type": {
+      "type": "string",
+      "enum": [
+       "EXISTING_MARKET",
+       "IMPROVED_MARKET",
+       "LOCAL_ADAPTATION",
+       "NEW_OPPORTUNITY",
+       "FUTURE_OPPORTUNITY"
+      ]
+     },
+     "time_horizon": {
+      "type": "string",
+      "enum": [
+       "CURRENT_EVIDENCE",
+       "FUTURE_HYPOTHESIS"
+      ]
+     },
+     "member_signal_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "potential_solution": {
+      "type": "string"
+     },
+     "business_model": {
+      "type": "string"
+     },
+     "priority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+     },
+     "priority_rationale": {
+      "type": "string"
+     },
+     "open_questions": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "candidate_id",
+     "title",
+     "problem",
+     "customer",
+     "segment",
+     "sector",
+     "opportunity_type",
+     "time_horizon",
+     "member_signal_ids",
+     "potential_solution",
+     "business_model",
+     "priority",
+     "priority_rationale",
+     "open_questions"
+    ]
+   }
+  },
+  "backlog": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "title": {
+      "type": "string"
+     },
+     "member_signal_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "reason_not_prioritized": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "title",
+     "member_signal_ids",
+     "reason_not_prioritized"
+    ]
+   }
+  },
+  "discarded": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "signal_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "reason": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "signal_ids",
+     "reason"
+    ]
+   }
+  },
+  "merge_notes": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "candidates",
+  "backlog",
+  "discarded",
+  "merge_notes"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

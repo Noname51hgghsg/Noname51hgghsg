@@ -1,0 +1,84 @@
+{
+ "type": "object",
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string"
+     },
+     "answers": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "question": {
+         "type": "string"
+        },
+        "finding": {
+         "type": "string",
+         "enum": [
+          "FOUND",
+          "PARTIAL",
+          "NO_RELIABLE_EVIDENCE_FOUND"
+         ]
+        },
+        "answer": {
+         "type": "string"
+        },
+        "sources": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "url": {
+            "type": "string"
+           },
+           "title": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "url",
+           "title"
+          ]
+         }
+        }
+       },
+       "required": [
+        "question",
+        "finding",
+        "answer",
+        "sources"
+       ]
+      }
+     }
+    },
+    "required": [
+     "candidate_id",
+     "answers"
+    ]
+   }
+  },
+  "queries_used": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "limitations": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "results",
+  "queries_used",
+  "limitations"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

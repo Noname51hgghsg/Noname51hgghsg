@@ -1,0 +1,10 @@
+name = "ai_opportunity_hunter"
+display = "AI_OPPORTUNITY_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Processes where LLM/OCR/voice/vision/document AI solves a real pain"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

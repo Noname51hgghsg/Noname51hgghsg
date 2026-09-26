@@ -1,0 +1,10 @@
+name = "b2b_hunter"
+display = "B2B_PAIN_HUNTER"
+stage = "discovery"
+schema = "discovery"
+description = "Costly, repetitive operational pains of Saudi companies"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

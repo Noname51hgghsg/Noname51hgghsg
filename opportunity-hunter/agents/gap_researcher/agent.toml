@@ -1,0 +1,10 @@
+name = "gap_researcher"
+display = "GAP_RESEARCHER"
+stage = "gap_research"
+schema = "research"
+description = "Targeted re-research of missing information requested by the Killer agent"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

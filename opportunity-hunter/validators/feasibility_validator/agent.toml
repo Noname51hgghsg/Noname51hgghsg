@@ -1,0 +1,10 @@
+name = "feasibility_validator"
+display = "FEASIBILITY_VALIDATOR"
+stage = "validation"
+schema = "feasibility"
+description = "Can one person build the MVP? stack, cost, complexity, regulation"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 10
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

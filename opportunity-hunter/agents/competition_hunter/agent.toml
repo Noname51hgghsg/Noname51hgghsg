@@ -1,0 +1,10 @@
+name = "competition_hunter"
+display = "COMPETITION_GAP_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Weak markets: solutions exist but are poor/expensive/non-localized"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

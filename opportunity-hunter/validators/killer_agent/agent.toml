@@ -1,0 +1,10 @@
+name = "killer_agent"
+display = "KILLER_AGENT"
+stage = "killer"
+schema = "killer"
+description = "Actively tries to prove each opportunity is bad"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 14
+max_fetches = 8
+max_turns = 60
+max_budget_usd = 3.5

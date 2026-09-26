@@ -1,0 +1,10 @@
+name = "gap_hunter"
+display = "GAP_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Service A + Service B gaps: integration/middleware/automation opportunities"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

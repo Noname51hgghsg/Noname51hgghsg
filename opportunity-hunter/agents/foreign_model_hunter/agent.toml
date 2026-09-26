@@ -1,0 +1,10 @@
+name = "foreign_model_hunter"
+display = "FOREIGN_MODEL_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Proven global startups/SaaS that could be adapted to Saudi"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 14
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

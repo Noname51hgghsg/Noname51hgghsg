@@ -1,0 +1,10 @@
+name = "jobs_signal_hunter"
+display = "JOB_SIGNAL_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Job postings that reveal automatable repetitive work"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

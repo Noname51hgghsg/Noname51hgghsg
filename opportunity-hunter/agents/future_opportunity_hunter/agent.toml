@@ -1,0 +1,10 @@
+name = "future_opportunity_hunter"
+display = "FUTURE_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "Needs likely to emerge in 1–3 years, separating evidence from hypothesis"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 10
+max_fetches = 5
+max_turns = 50
+max_budget_usd = 3.0

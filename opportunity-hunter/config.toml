@@ -1,0 +1,42 @@
+# Opportunity Hunter — runtime configuration
+# All limits here are enforced by code (hunter/runner.py, hunter/search_guard.py),
+# not just written into prompts.
+
+[run]
+market = "Saudi Arabia"
+# Model alias passed to `claude -p --model`. "sonnet" = cost-efficient default.
+model = "sonnet"
+# Maximum number of agent processes running at the same time.
+max_parallel_agents = 6
+# Hard ceiling for the whole run (sum of all agent costs, USD). The orchestrator
+# refuses to launch a new agent if (spent + that agent's cap) would exceed this.
+max_total_budget_usd = 60.0
+# Wall-clock timeout for a single agent process (seconds).
+agent_timeout_sec = 1500
+# Retries for transient failures (timeout, crash, missing/invalid JSON).
+max_retries = 2
+retry_backoff_sec = 5
+# How many consolidated candidates enter the validation funnel.
+candidate_limit = 20
+# Candidates per validator/killer agent call (batching controls cost).
+validation_batch_size = 5
+# Killer -> gap research -> Killer loops.
+max_gap_research_rounds = 1
+# Cache: identical agent calls (same prompt/input/schema) are reused.
+agent_cache_enabled = true
+# Search cache TTL for the shared WebSearch cache (hours).
+search_cache_ttl_hours = 72
+
+[founder]
+team = "solo founder"
+tools = ["Claude Code", "Codex", "APIs", "AI tools", "Cloud services"]
+mvp_budget_sar_min = 500
+mvp_budget_sar_max = 1000
+preference = "EASY or MODERATE MVP; avoid big teams, big capital, heavy field ops, complex infra, hard licences"
+
+# Default per-agent limits (overridable in each agents/*/agent.toml)
+[limits.default]
+max_searches = 10
+max_fetches = 6
+max_turns = 45
+max_budget_usd = 3.0

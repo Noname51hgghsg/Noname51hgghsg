@@ -1,0 +1,10 @@
+name = "market_change_hunter"
+display = "MARKET_CHANGE_AGENT"
+stage = "discovery"
+schema = "discovery"
+description = "New pains created by new Saudi regulations, initiatives and shifts"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

@@ -1,0 +1,142 @@
+{
+ "type": "object",
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string"
+     },
+     "claims": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "claim": {
+         "type": "string"
+        },
+        "classification": {
+         "type": "string",
+         "enum": [
+          "DIRECT",
+          "STRONG_INDIRECT",
+          "WEAK",
+          "HYPOTHESIS",
+          "NO_RELIABLE_EVIDENCE_FOUND"
+         ]
+        },
+        "sources": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "properties": {
+           "url": {
+            "type": "string"
+           },
+           "title": {
+            "type": "string"
+           }
+          },
+          "required": [
+           "url",
+           "title"
+          ]
+         }
+        },
+        "note": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "claim",
+        "classification",
+        "sources",
+        "note"
+       ]
+      }
+     },
+     "problem_evidence_level": {
+      "type": "string",
+      "enum": [
+       "DIRECT",
+       "STRONG_INDIRECT",
+       "WEAK",
+       "HYPOTHESIS",
+       "NO_RELIABLE_EVIDENCE_FOUND"
+      ]
+     },
+     "market_model_evidence_level": {
+      "type": "string",
+      "enum": [
+       "DIRECT",
+       "STRONG_INDIRECT",
+       "WEAK",
+       "HYPOTHESIS",
+       "NO_RELIABLE_EVIDENCE_FOUND"
+      ]
+     },
+     "demand_signals": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "new_sources": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "url": {
+         "type": "string"
+        },
+        "title": {
+         "type": "string"
+        },
+        "summary": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "url",
+        "title",
+        "summary"
+       ]
+      }
+     },
+     "summary": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "candidate_id",
+     "claims",
+     "problem_evidence_level",
+     "market_model_evidence_level",
+     "demand_signals",
+     "new_sources",
+     "summary"
+    ]
+   }
+  },
+  "queries_used": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "limitations": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "results",
+  "queries_used",
+  "limitations"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

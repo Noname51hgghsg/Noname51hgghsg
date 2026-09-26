@@ -1,0 +1,10 @@
+name = "evidence_validator"
+display = "EVIDENCE_VALIDATOR"
+stage = "validation"
+schema = "evidence"
+description = "Checks every key claim and classifies evidence strength"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 14
+max_fetches = 8
+max_turns = 60
+max_budget_usd = 3.5

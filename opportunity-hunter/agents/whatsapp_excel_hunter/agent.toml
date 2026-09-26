@@ -1,0 +1,10 @@
+name = "whatsapp_excel_hunter"
+display = "WHATSAPP_EXCEL_HUNTER"
+stage = "discovery"
+schema = "discovery"
+description = "Businesses running core processes on WhatsApp/Excel/phone/PDF"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 12
+max_fetches = 6
+max_turns = 50
+max_budget_usd = 3.0

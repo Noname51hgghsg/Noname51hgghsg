@@ -1,0 +1,118 @@
+{
+ "type": "object",
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "candidate_id": {
+      "type": "string"
+     },
+     "competitors": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string"
+        },
+        "hq_country": {
+         "type": "string"
+        },
+        "serves_saudi": {
+         "type": "string",
+         "enum": [
+          "YES",
+          "NO",
+          "UNKNOWN"
+         ]
+        },
+        "pricing": {
+         "type": "string"
+        },
+        "arabic_support": {
+         "type": "string",
+         "enum": [
+          "YES",
+          "PARTIAL",
+          "NO",
+          "UNKNOWN"
+         ]
+        },
+        "saudi_integrations": {
+         "type": "string"
+        },
+        "strengths": {
+         "type": "string"
+        },
+        "weaknesses": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "name",
+        "url",
+        "hq_country",
+        "serves_saudi",
+        "pricing",
+        "arabic_support",
+        "saudi_integrations",
+        "strengths",
+        "weaknesses"
+       ]
+      }
+     },
+     "market_state": {
+      "type": "string",
+      "enum": [
+       "NO_SOLUTION",
+       "WEAK_MARKET",
+       "COMPETITIVE",
+       "SATURATED",
+       "UNKNOWN"
+      ]
+     },
+     "gap_description": {
+      "type": "string"
+     },
+     "differentiation_angle": {
+      "type": "string"
+     },
+     "summary": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "candidate_id",
+     "competitors",
+     "market_state",
+     "gap_description",
+     "differentiation_angle",
+     "summary"
+    ]
+   }
+  },
+  "queries_used": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "limitations": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "results",
+  "queries_used",
+  "limitations"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

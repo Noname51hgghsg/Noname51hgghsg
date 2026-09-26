@@ -1,0 +1,230 @@
+{
+ "type": "object",
+ "properties": {
+  "agent": {
+   "type": "string"
+  },
+  "signals": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "opportunity_id": {
+      "type": "string",
+      "description": "agent-local id, e.g. PH-01"
+     },
+     "problem": {
+      "type": "string"
+     },
+     "customer": {
+      "type": "string"
+     },
+     "segment": {
+      "type": "string",
+      "enum": [
+       "B2B",
+       "B2C",
+       "HYBRID"
+      ]
+     },
+     "sector": {
+      "type": "string"
+     },
+     "market": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string",
+      "description": "channel(s) where the pain was observed"
+     },
+     "evidence": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "claim": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string"
+        },
+        "source_title": {
+         "type": "string"
+        },
+        "summary": {
+         "type": "string"
+        },
+        "evidence_type": {
+         "type": "string",
+         "enum": [
+          "DIRECT",
+          "STRONG_INDIRECT",
+          "WEAK",
+          "HYPOTHESIS"
+         ]
+        },
+        "published": {
+         "type": "string",
+         "description": "date or 'unknown'"
+        }
+       },
+       "required": [
+        "claim",
+        "url",
+        "source_title",
+        "summary",
+        "evidence_type",
+        "published"
+       ]
+      }
+     },
+     "existing_solution": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        },
+        "url": {
+         "type": "string"
+        },
+        "notes": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "name",
+        "url",
+        "notes"
+       ]
+      }
+     },
+     "workaround": {
+      "type": "string"
+     },
+     "potential_solution": {
+      "type": "string"
+     },
+     "business_model": {
+      "type": "string"
+     },
+     "opportunity_type": {
+      "type": "string",
+      "enum": [
+       "EXISTING_MARKET",
+       "IMPROVED_MARKET",
+       "LOCAL_ADAPTATION",
+       "NEW_OPPORTUNITY",
+       "FUTURE_OPPORTUNITY"
+      ]
+     },
+     "time_horizon": {
+      "type": "string",
+      "enum": [
+       "CURRENT_EVIDENCE",
+       "FUTURE_HYPOTHESIS"
+      ]
+     },
+     "frequency": {
+      "type": "string",
+      "enum": [
+       "LOW",
+       "MEDIUM",
+       "HIGH",
+       "UNKNOWN"
+      ]
+     },
+     "severity": {
+      "type": "string",
+      "enum": [
+       "LOW",
+       "MEDIUM",
+       "HIGH",
+       "UNKNOWN"
+      ]
+     },
+     "existing_spend": {
+      "type": "string",
+      "description": "what people/companies already pay (money/staff/time) — with source, or NO RELIABLE EVIDENCE FOUND"
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "LOW",
+       "MEDIUM",
+       "HIGH"
+      ]
+     },
+     "unknowns": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "foreign_model": {
+      "type": "object",
+      "properties": {
+       "name": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       },
+       "country": {
+        "type": "string"
+       },
+       "revenue_model": {
+        "type": "string"
+       },
+       "saudi_equivalent": {
+        "type": "string"
+       }
+      },
+      "required": []
+     }
+    },
+    "required": [
+     "opportunity_id",
+     "problem",
+     "customer",
+     "segment",
+     "sector",
+     "market",
+     "source",
+     "evidence",
+     "existing_solution",
+     "workaround",
+     "potential_solution",
+     "business_model",
+     "opportunity_type",
+     "time_horizon",
+     "frequency",
+     "severity",
+     "existing_spend",
+     "confidence",
+     "unknowns"
+    ]
+   }
+  },
+  "queries_used": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "limitations": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "agent",
+  "signals",
+  "queries_used",
+  "limitations"
+ ],
+ "$schema": "http://json-schema.org/draft-07/schema#"
+}

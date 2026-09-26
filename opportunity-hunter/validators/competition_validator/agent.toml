@@ -1,0 +1,10 @@
+name = "competition_validator"
+display = "COMPETITION_VALIDATOR"
+stage = "validation"
+schema = "competition"
+description = "Maps competitors, pricing, localization and the real gap"
+tools = ["WebSearch", "WebFetch"]
+max_searches = 14
+max_fetches = 8
+max_turns = 60
+max_budget_usd = 3.5

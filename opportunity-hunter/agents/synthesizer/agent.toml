@@ -1,0 +1,10 @@
+name = "synthesizer"
+display = "OPPORTUNITY_SYNTHESIZER"
+stage = "synthesis"
+schema = "synthesis"
+description = "Turns surviving, validated candidates into the final opportunity set"
+tools = []
+max_searches = 0
+max_fetches = 0
+max_turns = 6
+max_budget_usd = 4.0
