@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    {
+      "candidate_id": "C02",
+      "summary": "mock",
+      "someone_pays_now": "YES",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    },
+    {
+      "candidate_id": "C03",
+      "summary": "mock",
+      "someone_pays_now": "UNCLEAR",
+      "payment_evidence": [],
+      "labor_cost_signals": [],
+      "willingness_to_pay_assessment": "mock"
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "candidate_id": "C01",
+      "answers": [
+        {
+          "question": "Do clinics pay for reminder tools?",
+          "finding": "FOUND",
+          "answer": "mock",
+          "sources": [
+            {
+              "url": "https://example.org/p",
+              "title": "p"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "C03",
+      "answers": [
+        {
+          "question": "Is anyone in Saudi Arabia/GCC currently paying for a solution to: Contractors track progress payments in Excel? Find prices, paid tools, service fees or salaries.",
+          "finding": "FOUND",
+          "answer": "mock",
+          "sources": [
+            {
+              "url": "https://example.org/p",
+              "title": "p"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "queries_used": [],
+  "limitations": []
+}

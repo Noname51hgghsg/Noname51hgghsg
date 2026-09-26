@@ -1,0 +1,88 @@
+{
+  "executive_summary": "mock",
+  "golden_opportunities": [
+    {
+      "candidate_id": "C01",
+      "name": "Clinics lose revenue to appointment no-shows",
+      "category": "NEW_OPPORTUNITY",
+      "problem": "Clinics lose revenue to appointment no-shows",
+      "customer": "x",
+      "evidence": [],
+      "why_it_exists": "x",
+      "existing_alternatives": "x",
+      "competitors": [],
+      "saudi_opportunity": "x",
+      "solution": "x",
+      "mvp": "x",
+      "technology": "x",
+      "estimated_cost": "x",
+      "complexity": "EASY",
+      "revenue_model": "x",
+      "first_customer_strategy": "x",
+      "expansion": "x",
+      "risks": [],
+      "unknowns": [],
+      "evidence_quality": "MEDIUM",
+      "sources": [
+        "https://invented.example.com/not-collected"
+      ]
+    },
+    {
+      "candidate_id": "C03",
+      "name": "Contractors track progress payments in Excel",
+      "category": "NEW_OPPORTUNITY",
+      "problem": "Contractors track progress payments in Excel",
+      "customer": "x",
+      "evidence": [],
+      "why_it_exists": "x",
+      "existing_alternatives": "x",
+      "competitors": [],
+      "saudi_opportunity": "x",
+      "solution": "x",
+      "mvp": "x",
+      "technology": "x",
+      "estimated_cost": "x",
+      "complexity": "EASY",
+      "revenue_model": "x",
+      "first_customer_strategy": "x",
+      "expansion": "x",
+      "risks": [],
+      "unknowns": [],
+      "evidence_quality": "MEDIUM",
+      "sources": [
+        "https://invented.example.com/not-collected"
+      ]
+    },
+    {
+      "candidate_id": "C04",
+      "name": "b2c_hunter pain about manual reporting",
+      "category": "NEW_OPPORTUNITY",
+      "problem": "b2c_hunter pain about manual reporting",
+      "customer": "x",
+      "evidence": [],
+      "why_it_exists": "x",
+      "existing_alternatives": "x",
+      "competitors": [],
+      "saudi_opportunity": "x",
+      "solution": "x",
+      "mvp": "x",
+      "technology": "x",
+      "estimated_cost": "x",
+      "complexity": "EASY",
+      "revenue_model": "x",
+      "first_customer_strategy": "x",
+      "expansion": "x",
+      "risks": [],
+      "unknowns": [],
+      "evidence_quality": "MEDIUM",
+      "sources": [
+        "https://invented.example.com/not-collected"
+      ]
+    }
+  ],
+  "hidden_gems": [],
+  "foreign_models": [],
+  "boring_businesses": [],
+  "future_opportunities": [],
+  "no_opportunity_statement": ""
+}

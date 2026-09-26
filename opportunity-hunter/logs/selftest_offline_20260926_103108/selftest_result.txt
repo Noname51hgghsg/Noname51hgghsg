@@ -1,0 +1,21 @@
+
+======================================================================
+OFFLINE SELF-TEST (mock backend, no API cost)
+run_id=selftest_offline_20260926_103108  elapsed=11.8s
+======================================================================
+  [PASS] 1_orchestrator_runs_end_to_end
+  [PASS] 2_agent_can_be_run
+  [PASS] 3_agent_returns_valid_json(schema-invalid output rejected then retried)
+  [PASS] 4_results_reach_orchestrator
+  [PASS] 5_parallel_execution
+  [PASS] 6_validators_receive_results
+  [PASS] 7a_killer_receives_validation
+  [PASS] 7b_killer_can_reject
+  [PASS] 7c_gap_research_loop(NEEDS_MORE_EVIDENCE→research→final killer)
+  [PASS] 8_synthesizer_builds_report
+  [PASS] 8b_url_integrity_check_flags_invented_urls
+  [PASS] 9_logs_work
+  [PASS] 10a_failure_isolated(gap_hunter crashed, run continued)
+  [PASS] 10b_transient_failure_retried(b2c_hunter)
+  [PASS] 10c_rejected_not_sent_to_synthesizer
+RESULT: ALL PASSED
